@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="ttadeva" format="1">
+  <advance width="758"/>
+  <unicode hex="091F"/>
+  <outline>
+    <contour>
+      <point x="345" y="713" type="line"/>
+      <point x="380" y="689"/>
+      <point x="424" y="657"/>
+      <point x="424" y="624" type="curve" smooth="yes"/>
+      <point x="424" y="509"/>
+      <point x="112" y="452"/>
+      <point x="112" y="288" type="curve" smooth="yes"/>
+      <point x="112" y="121"/>
+      <point x="306" y="-10"/>
+      <point x="453" y="-10" type="curve" smooth="yes"/>
+      <point x="612" y="-10"/>
+      <point x="723" y="105"/>
+      <point x="723" y="253" type="curve"/>
+      <point x="632" y="334" type="line"/>
+      <point x="593" y="300" type="line"/>
+      <point x="593" y="177"/>
+      <point x="530" y="74"/>
+      <point x="395" y="74" type="curve" smooth="yes"/>
+      <point x="291" y="74"/>
+      <point x="242" y="130"/>
+      <point x="242" y="240" type="curve" smooth="yes"/>
+      <point x="242" y="366"/>
+      <point x="537" y="433"/>
+      <point x="537" y="572" type="curve" smooth="yes"/>
+      <point x="537" y="648"/>
+      <point x="420" y="703"/>
+      <point x="369" y="757" type="curve"/>
+    </contour>
+    <contour>
+      <point x="-60" y="786" type="line"/>
+      <point x="-60" y="748" type="line"/>
+      <point x="10" y="686" type="line"/>
+      <point x="848" y="686" type="line"/>
+      <point x="848" y="724" type="line"/>
+      <point x="778" y="786" type="line"/>
+    </contour>
+  </outline>
+</glyph>

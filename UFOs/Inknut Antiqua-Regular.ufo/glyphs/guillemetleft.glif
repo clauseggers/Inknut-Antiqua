@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="guillemotleft" format="1">
+  <advance width="669"/>
+  <unicode hex="00AB"/>
+  <outline>
+    <contour>
+      <point x="330" y="267" type="line"/>
+      <point x="521" y="86" type="line"/>
+      <point x="556" y="111" type="line"/>
+      <point x="468" y="357" type="line"/>
+      <point x="458" y="217" type="line"/>
+      <point x="556" y="423" type="line"/>
+      <point x="521" y="448" type="line"/>
+    </contour>
+    <component base="guilsinglleft"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+      <integer>5</integer>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>

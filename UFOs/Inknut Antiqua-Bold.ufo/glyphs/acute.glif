@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="acute" format="1">
+  <advance width="380"/>
+  <unicode hex="00B4"/>
+  <outline>
+    <component base="grave" xOffset="420" xScale="-1"/>
+    <contour>
+      <point x="160" y="543" type="move" name="_top"/>
+    </contour>
+  </outline>
+</glyph>

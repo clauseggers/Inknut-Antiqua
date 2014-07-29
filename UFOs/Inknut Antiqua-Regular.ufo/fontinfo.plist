@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ascender</key>
+	<integer>873</integer>
+	<key>capHeight</key>
+	<integer>786</integer>
+	<key>copyright</key>
+	<string>Copyright (c) 2014 by Claus Eggers Sørensen (es@forthehearts.net), with Reserved Font Name 'Inknut Antiqua'.</string>
+	<key>descender</key>
+	<integer>-254</integer>
+	<key>familyName</key>
+	<string>Inknut Antiqua</string>
+	<key>fsType</key>
+	<array>
+		<integer>3</integer>
+	</array>
+	<key>openTypeHeadCreated</key>
+	<string>2014/06/19 13:04:00</string>
+	<key>openTypeNameDesigner</key>
+	<string>Claus Eggers Sørensen</string>
+	<key>openTypeNameDesignerURL</key>
+	<string>http://www.forthehearts.net</string>
+	<key>openTypeNameLicense</key>
+	<string>This Font Software is licensed under the SIL Open Font License Version 1.1. This license is available with a FAQ at http://scripts.sil.org/OFL</string>
+	<key>openTypeNameLicenseURL</key>
+	<string>http://scripts.sil.org/OFL</string>
+	<key>openTypeNameManufacturer</key>
+	<string>Claus Eggers Sørensen</string>
+	<key>openTypeNameManufacturerURL</key>
+	<string>http://www.forthehearts.net</string>
+	<key>openTypeNamePreferredFamilyName</key>
+	<string>Inknut Antiqua</string>
+	<key>openTypeNamePreferredSubfamilyName</key>
+	<string>Regular</string>
+	<key>openTypeOS2VendorID</key>
+	<string>FTH</string>
+	<key>openTypeOS2WeightClass</key>
+	<integer>400</integer>
+	<key>openTypeOS2WidthClass</key>
+	<integer>5</integer>
+	<key>postscriptBlueValues</key>
+	<array>
+		<integer>-20</integer>
+		<integer>0</integer>
+		<integer>531</integer>
+		<integer>551</integer>
+		<integer>571</integer>
+		<integer>591</integer>
+		<integer>786</integer>
+		<integer>806</integer>
+		<integer>873</integer>
+		<integer>893</integer>
+	</array>
+	<key>postscriptOtherBlues</key>
+	<array>
+		<integer>-274</integer>
+		<integer>-254</integer>
+	</array>
+	<key>postscriptStemSnapH</key>
+	<array>
+		<integer>41</integer>
+		<integer>45</integer>
+	</array>
+	<key>postscriptStemSnapV</key>
+	<array>
+		<integer>120</integer>
+		<integer>125</integer>
+	</array>
+	<key>styleMapStyleName</key>
+	<string>regular</string>
+	<key>styleName</key>
+	<string>Regular</string>
+	<key>trademark</key>
+	<string>Inknut Antiqua is a trademark of Claus Eggers Sørensen.</string>
+	<key>unitsPerEm</key>
+	<integer>1000</integer>
+	<key>versionMajor</key>
+	<integer>1</integer>
+	<key>versionMinor</key>
+	<integer>0</integer>
+	<key>xHeight</key>
+	<integer>531</integer>
+</dict>
+</plist>

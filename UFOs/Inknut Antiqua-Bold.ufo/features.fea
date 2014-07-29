@@ -1,0 +1,239 @@
+# Prefix: Languagesystems
+# automatic
+languagesystem DFLT dflt;
+languagesystem dev2 dflt;
+languagesystem grek dflt;
+languagesystem latn dflt;
+languagesystem latn NLD;
+languagesystem latn CAT;
+languagesystem latn ROM;
+languagesystem latn MOL;
+languagesystem latn TRK;
+
+# automatic
+@Uppercase = [ A Aacute Abreve Acircumflex Adieresis Agrave Amacron Aogonek Aring Atilde AE B C Cacute Ccaron Ccedilla Cdotaccent D Eth Dcaron Dcroat E Eacute Ecaron Ecircumflex Edieresis Edotaccent Egrave Emacron Eogonek F G Gbreve Gcommaaccent Gdotaccent H Hbar I IJ Iacute Iacute_J.loclNLD Icircumflex Idieresis Idotaccent Igrave Imacron Iogonek J K Kcommaaccent L Lacute Lcaron Lcommaaccent Ldot Lslash M N Nacute Ncaron Ncommaaccent Eng Ntilde O Oacute Ocircumflex Odieresis Ograve Ohungarumlaut Omacron Oslash Otilde OE P Thorn Q R Racute Rcaron Rcommaaccent S Sacute Scaron Scedilla Scommaaccent Germandbls T Tbar Tcaron Tcedilla Tcommaaccent U Uacute Ucircumflex Udieresis Ugrave Uhungarumlaut Umacron Uogonek Uring V W Wacute Wcircumflex Wdieresis Wgrave X Y Yacute Ycircumflex Ydieresis Ygrave Z Zacute Zcaron Zdotaccent Delta Omega ];
+
+@Case_punctuation = [ periodcentered bullet numbersign emdash endash hyphen softhyphen guillemetleft guillemetright guilsinglleft guilsinglright approxequal asciitilde bulletoperator divide equal greater greaterequal infinity less lessequal logicalnot minus multiply notequal plus plusminus upArrow northEastArrow rightArrow southEastArrow downArrow southWestArrow leftArrow northWestArrow leftRightArrow upDownArrow at asciicircum space nbspace ];
+
+feature aalt {
+# automatic
+feature locl;
+feature subs;
+feature sups;
+feature numr;
+feature dnom;
+feature frac;
+feature ordn;
+feature calt;
+feature case;
+feature salt;
+feature ss01;
+feature ss02;
+feature akhn;
+feature half;
+} aalt;
+
+feature locl {
+# automatic
+script latn;
+language NLD;
+sub iacute j by iacute_j.loclNLD;
+sub Iacute J by Iacute_J.loclNLD;
+language CAT;
+sub  l' periodcentered' l by ldot;
+sub  L' periodcentered' L by Ldot;
+language ROM;
+sub Scedilla by Scommaaccent;
+sub scedilla by scommaaccent;
+sub Tcedilla by Tcommaaccent;
+sub tcedilla by tcommaaccent;
+language MOL;
+sub Scedilla by Scommaaccent;
+sub scedilla by scommaaccent;
+sub Tcedilla by Tcommaaccent;
+sub tcedilla by tcommaaccent;
+language KAZ;
+sub i by idotaccent;
+language TAT;
+sub i by idotaccent;
+language TRK;
+sub i by idotaccent;
+language CRT;
+sub i by idotaccent;
+language AZE;
+sub i by idotaccent;
+} locl;
+
+feature subs {
+# automatic
+sub zero by zeroinferior;
+sub one by oneinferior;
+sub two by twoinferior;
+sub three by threeinferior;
+sub four by fourinferior;
+sub five by fiveinferior;
+sub six by sixinferior;
+sub seven by seveninferior;
+sub eight by eightinferior;
+sub nine by nineinferior;
+} subs;
+
+feature sups {
+# automatic
+sub zero by zerosuperior;
+sub one by onesuperior;
+sub two by twosuperior;
+sub three by threesuperior;
+sub four by foursuperior;
+sub five by fivesuperior;
+sub six by sixsuperior;
+sub seven by sevensuperior;
+sub eight by eightsuperior;
+sub nine by ninesuperior;
+} sups;
+
+feature numr {
+# automatic
+sub zero by zero.numr;
+sub one by one.numr;
+sub two by two.numr;
+sub three by three.numr;
+sub four by four.numr;
+sub five by five.numr;
+sub six by six.numr;
+sub seven by seven.numr;
+sub eight by eight.numr;
+sub nine by nine.numr;
+} numr;
+
+feature dnom {
+# automatic
+sub zero by zero.dnom;
+sub one by one.dnom;
+sub two by two.dnom;
+sub three by three.dnom;
+sub four by four.dnom;
+sub five by five.dnom;
+sub six by six.dnom;
+sub seven by seven.dnom;
+sub eight by eight.dnom;
+sub nine by nine.dnom;
+} dnom;
+
+feature frac {
+# automatic
+lookup FRAC {
+	sub slash by fraction;
+} FRAC;
+lookup UP {
+	sub [zero one two three four five six seven eight nine] by [zero.numr one.numr two.numr three.numr four.numr five.numr six.numr seven.numr eight.numr nine.numr];
+} UP;
+lookup DOWN {
+	sub fraction [zero.numr one.numr two.numr three.numr four.numr five.numr six.numr seven.numr eight.numr nine.numr]' by [zero.dnom one.dnom two.dnom three.dnom four.dnom five.dnom six.dnom seven.dnom eight.dnom nine.dnom];
+	sub [zero.dnom one.dnom two.dnom three.dnom four.dnom five.dnom six.dnom seven.dnom eight.dnom nine.dnom] [zero.numr one.numr two.numr three.numr four.numr five.numr six.numr seven.numr eight.numr nine.numr]' by [zero.dnom one.dnom two.dnom three.dnom four.dnom five.dnom six.dnom seven.dnom eight.dnom nine.dnom];
+} DOWN;
+} frac;
+
+feature ordn {
+# automatic
+sub [zero one two three four five six seven eight nine] [A a]' by ordfeminine;
+sub [zero one two three four five six seven eight nine] [O o]' by ordmasculine;
+} ordn;
+
+feature calt {
+sub @Uppercase germandbls' @Uppercase by germandbls.calt;
+sub @Uppercase @Uppercase germandbls' by germandbls.calt;
+} calt;
+
+feature case {
+sub exclamdown by exclamdown.case;
+sub questiondown by questiondown.case;
+sub ampersand by ampersand.case;
+sub dieresis by dieresis.case;
+sub hungarumlaut by hungarumlaut.case;
+sub macron by macron.case;
+pos @Case_punctuation <120 80 120 0>;
+} case;
+
+feature dlig {
+# automatic
+sub T h by T_h;
+} dlig;
+
+feature liga {
+# automatic
+sub f i by fi;
+sub f l by fl;
+sub f adieresis by f_adieresis.liga;
+sub f b by f_b.liga;
+sub f eth by f_eth.liga;
+sub f f by f_f.liga;
+sub f f adieresis by f_f_adieresis.liga;
+sub f f b by f_f_b.liga;
+sub f f eth by f_f_eth.liga;
+sub f f h by f_f_h.liga;
+sub f f i by f_f_i.liga;
+sub f f idieresis by f_f_idieresis.liga;
+sub f f igrave by f_f_igrave.liga;
+sub f f iogonek by f_f_iogonek.liga;
+sub f f j by f_f_j.liga;
+sub f f k by f_f_k.liga;
+sub f f kcommaaccent by f_f_kcommaaccent.liga;
+sub f f l by f_f_l.liga;
+sub f f lcaron by f_f_lcaron.liga;
+sub f f lcommaaccent by f_f_lcommaaccent.liga;
+sub f f odieresis by f_f_odieresis.liga;
+sub f h by f_h.liga;
+sub f idieresis by f_idieresis.liga;
+sub f igrave by f_igrave.liga;
+sub f iogonek by f_iogonek.liga;
+sub f j by f_j.liga;
+sub f k by f_k.liga;
+sub f kcommaaccent by f_kcommaaccent.liga;
+sub f lcaron by f_lcaron.liga;
+sub f lcommaaccent by f_lcommaaccent.liga;
+sub f odieresis by f_odieresis.liga;
+} liga;
+
+feature salt {
+# automatic
+sub a by a.ss01;
+sub aacute by aacute.ss01;
+sub abreve by abreve.ss01;
+sub acircumflex by acircumflex.ss01;
+sub adieresis by adieresis.ss01;
+sub agrave by agrave.ss01;
+sub amacron by amacron.ss01;
+sub aogonek by aogonek.ss01;
+sub aring by aring.ss01;
+sub atilde by atilde.ss01;
+sub ae by ae.ss01;
+} salt;
+
+feature ss01 {
+# automatic
+sub a by a.ss01;
+sub aacute by aacute.ss01;
+sub abreve by abreve.ss01;
+sub acircumflex by acircumflex.ss01;
+sub adieresis by adieresis.ss01;
+sub agrave by agrave.ss01;
+sub amacron by amacron.ss01;
+sub aogonek by aogonek.ss01;
+sub aring by aring.ss01;
+sub atilde by atilde.ss01;
+sub ae by ae.ss01;
+} ss01;
+
+feature ss02 {
+# automatic
+sub g by g.ss02;
+sub gbreve by gbreve.ss02;
+sub gcommaaccent by gcommaaccent.ss02;
+sub gdotaccent by gdotaccent.ss02;
+} ss02;
+
+feature cpsp {
+pos @Uppercase <120 0 120 0>;
+} cpsp;
+

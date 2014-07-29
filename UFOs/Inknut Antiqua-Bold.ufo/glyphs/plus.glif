@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="plus" format="1">
+  <advance width="555"/>
+  <unicode hex="002B"/>
+  <outline>
+    <component base="minus"/>
+    <component base="minus" xOffset="592" yOffset="37" xScale="0" yScale="0" xyScale="1" yxScale="-1"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+      <integer>8</integer>
+      <key>public.markColor</key>
+      <string>0.5,0.09,0.79,1</string>
+    </dict>
+  </lib>
+</glyph>

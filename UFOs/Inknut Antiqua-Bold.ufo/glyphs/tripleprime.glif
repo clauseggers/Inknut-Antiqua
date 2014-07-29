@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uni2034" format="1">
+  <advance width="1179"/>
+  <unicode hex="2034"/>
+  <outline>
+    <component base="minute"/>
+    <component base="minute" xOffset="340"/>
+    <component base="minute" xOffset="680"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+      <integer>5</integer>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>

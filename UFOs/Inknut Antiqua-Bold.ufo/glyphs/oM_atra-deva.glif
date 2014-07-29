@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="ovowelsigndeva" format="1">
+  <advance width="359"/>
+  <unicode hex="094B"/>
+  <outline>
+    <component base="uni093E"/>
+    <component base="evowelsigndeva" xOffset="-218"/>
+  </outline>
+</glyph>

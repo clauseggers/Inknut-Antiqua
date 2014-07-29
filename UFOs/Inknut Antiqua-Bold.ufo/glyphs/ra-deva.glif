@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="radeva" format="1">
+  <advance width="577"/>
+  <unicode hex="0930"/>
+  <outline>
+    <contour>
+      <point x="273" y="676" type="line"/>
+      <point x="321" y="590"/>
+      <point x="352" y="450"/>
+      <point x="315" y="365" type="curve"/>
+      <point x="417" y="383" type="line"/>
+      <point x="222" y="445"/>
+      <point x="65" y="425"/>
+      <point x="65" y="347" type="curve" smooth="yes"/>
+      <point x="65" y="266"/>
+      <point x="236" y="134"/>
+      <point x="340" y="134" type="curve" smooth="yes"/>
+      <point x="439" y="134"/>
+      <point x="536" y="232"/>
+      <point x="536" y="357" type="curve" smooth="yes"/>
+      <point x="536" y="490"/>
+      <point x="479" y="624"/>
+      <point x="394" y="695" type="curve"/>
+    </contour>
+    <contour>
+      <point x="159" y="214" type="line"/>
+      <point x="572" y="-120" type="line"/>
+      <point x="629" y="-60" type="line"/>
+      <point x="221" y="269" type="line"/>
+    </contour>
+    <contour>
+      <point x="-110" y="786" type="line"/>
+      <point x="-110" y="708" type="line"/>
+      <point x="4" y="616" type="line"/>
+      <point x="709" y="616" type="line"/>
+      <point x="709" y="694" type="line"/>
+      <point x="595" y="786" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+      <integer>1</integer>
+      <key>public.markColor</key>
+      <string>0.99,0.62,0.11,1</string>
+    </dict>
+  </lib>
+</glyph>

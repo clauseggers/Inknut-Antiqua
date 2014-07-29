@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="tadeva" format="1">
+  <advance width="691"/>
+  <unicode hex="0924"/>
+  <outline>
+    <contour>
+      <point x="264" y="465" type="line" smooth="yes"/>
+      <point x="143" y="465"/>
+      <point x="50" y="383"/>
+      <point x="50" y="277" type="curve" smooth="yes"/>
+      <point x="50" y="250"/>
+      <point x="57" y="217"/>
+      <point x="69" y="182" type="curve"/>
+      <point x="208" y="-19" type="line"/>
+      <point x="277" y="26" type="line"/>
+      <point x="230" y="94" type="line" smooth="yes"/>
+      <point x="203" y="134"/>
+      <point x="184" y="165"/>
+      <point x="184" y="202" type="curve" smooth="yes"/>
+      <point x="184" y="251"/>
+      <point x="231" y="285"/>
+      <point x="311" y="285" type="curve" smooth="yes"/>
+      <point x="526" y="285" type="line"/>
+      <point x="526" y="465" type="line"/>
+    </contour>
+    <contour>
+      <point x="-165" y="786" type="line"/>
+      <point x="-165" y="708" type="line"/>
+      <point x="-53" y="616" type="line"/>
+      <point x="522" y="616" type="line"/>
+      <point x="522" y="694" type="line"/>
+      <point x="410" y="786" type="line"/>
+    </contour>
+    <component base="uni093E" xOffset="332"/>
+  </outline>
+</glyph>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="hacek" format="1">
+  <advance width="359"/>
+  <outline>
+    <contour>
+      <point x="221" y="873" type="line"/>
+      <point x="70" y="809" type="line"/>
+      <point x="70" y="738" type="line"/>
+      <point x="184" y="662" type="line"/>
+      <point x="131" y="777" type="line"/>
+      <point x="135" y="722"/>
+      <point x="127" y="678"/>
+      <point x="111" y="631" type="curve"/>
+      <point x="190" y="571" type="line"/>
+      <point x="299" y="687" type="line"/>
+      <point x="299" y="873" type="line"/>
+    </contour>
+    <contour>
+      <point x="57" y="543" type="move" name="_topright"/>
+    </contour>
+  </outline>
+</glyph>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="yen" format="1">
+  <advance width="803"/>
+  <unicode hex="00A5"/>
+  <outline>
+    <contour>
+      <point x="87" y="342" type="line"/>
+      <point x="66" y="301" type="line"/>
+      <point x="711" y="301" type="line"/>
+      <point x="732" y="342" type="line"/>
+    </contour>
+    <contour>
+      <point x="87" y="202" type="line"/>
+      <point x="66" y="161" type="line"/>
+      <point x="711" y="161" type="line"/>
+      <point x="732" y="202" type="line"/>
+    </contour>
+    <component base="Y"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+      <integer>8</integer>
+      <key>public.markColor</key>
+      <string>0.5,0.09,0.79,1</string>
+    </dict>
+  </lib>
+</glyph>
