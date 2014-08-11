@@ -38,6 +38,9 @@
       <point x="988" y="786" type="line"/>
     </contour>
     <component base="padeva"/>
+    <contour>
+      <point x="806" y="63" type="move" name="halant"/>
+    </contour>
   </outline>
   <lib>
     <dict>

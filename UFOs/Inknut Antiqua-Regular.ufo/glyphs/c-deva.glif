@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="uni091A094D" format="1">
-  <advance width="600"/>
+  <advance width="460"/>
   <outline>
+    <contour>
+      <point x="-220" y="786" type="line"/>
+      <point x="-220" y="748" type="line"/>
+      <point x="-150" y="686" type="line"/>
+      <point x="428" y="686" type="line"/>
+      <point x="428" y="724" type="line"/>
+      <point x="358" y="786" type="line"/>
+    </contour>
+    <contour>
+      <point x="40" y="549" type="line"/>
+      <point x="40" y="511" type="line"/>
+      <point x="110" y="449" type="line"/>
+      <point x="358" y="449" type="line"/>
+      <point x="427" y="549" type="line"/>
+    </contour>
+    <component base="uni0935094D" xOffset="140"/>
   </outline>
 </glyph>

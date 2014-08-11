@@ -370,9 +370,11 @@
 		<string>ra-deva</string>
 		<string>rra-deva</string>
 		<string>la-deva</string>
+		<string>la-deva.loclMAR</string>
 		<string>lla-deva</string>
 		<string>va-deva</string>
 		<string>sha-deva</string>
+		<string>sha-deva.loclMAR</string>
 		<string>ssa-deva</string>
 		<string>sa-deva</string>
 		<string>ha-deva</string>
@@ -380,6 +382,7 @@
 		<string>jja-deva</string>
 		<string>ddda-deva</string>
 		<string>bba-deva</string>
+		<string>t_ra-deva</string>
 		<string>aShort-deva</string>
 		<string>a-deva</string>
 		<string>aa-deva</string>
@@ -413,6 +416,7 @@
 		<string>ny-deva</string>
 		<string>nn-deva</string>
 		<string>t-deva</string>
+		<string>t_r-deva</string>
 		<string>th-deva</string>
 		<string>dh-deva</string>
 		<string>n-deva</string>
@@ -424,9 +428,11 @@
 		<string>y-deva</string>
 		<string>rr-deva</string>
 		<string>l-deva</string>
+		<string>l-deva.loclMAR</string>
 		<string>ll-deva</string>
 		<string>v-deva</string>
 		<string>sh-deva</string>
+		<string>sh-deva.loclMAR</string>
 		<string>ss-deva</string>
 		<string>s-deva</string>
 		<string>h-deva</string>
@@ -442,6 +448,7 @@
 		<string>oMatra-deva</string>
 		<string>oMatra_reph-deva</string>
 		<string>oMatra_reph_anusvara-deva</string>
+		<string>oMatra_anusvara-deva</string>
 		<string>auMatra-deva</string>
 		<string>auMatra_reph-deva</string>
 		<string>auMatra_reph_anusvara-deva</string>

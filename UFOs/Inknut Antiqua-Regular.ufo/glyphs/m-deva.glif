@@ -1,6 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="uni092E094D" format="1">
-  <advance width="600"/>
+  <advance width="390"/>
   <outline>
+    <contour>
+      <point x="209" y="786" type="line"/>
+      <point x="209" y="417" type="line"/>
+      <point x="291" y="377" type="line"/>
+      <point x="329" y="377" type="line"/>
+      <point x="329" y="786" type="line"/>
+    </contour>
+    <contour>
+      <point x="583" y="348" type="line"/>
+      <point x="583" y="448" type="line"/>
+      <point x="222" y="448" type="line" smooth="yes"/>
+      <point x="81" y="448"/>
+      <point x="38" y="439"/>
+      <point x="38" y="410" type="curve" smooth="yes"/>
+      <point x="38" y="344"/>
+      <point x="150" y="234"/>
+      <point x="218" y="234" type="curve" smooth="yes"/>
+      <point x="271" y="234"/>
+      <point x="342" y="319"/>
+      <point x="342" y="382" type="curve"/>
+      <point x="305" y="348" type="line"/>
+    </contour>
+    <contour>
+      <point x="-106" y="786" type="line"/>
+      <point x="-106" y="748" type="line"/>
+      <point x="-32" y="686" type="line"/>
+      <point x="583" y="686" type="line"/>
+      <point x="583" y="724" type="line"/>
+      <point x="509" y="786" type="line"/>
+    </contour>
+    <contour>
+      <point x="222" y="0" type="move" name="nukta"/>
+    </contour>
   </outline>
 </glyph>

@@ -3,20 +3,18 @@
   <advance width="718"/>
   <unicode hex="0938"/>
   <outline>
+    <component base="uni0938094D"/>
+    <component base="uni093E" xOffset="390"/>
     <contour>
-      <point x="115" y="286" type="line"/>
-      <point x="468" y="-10" type="line"/>
-      <point x="501" y="27" type="line"/>
-      <point x="147" y="324" type="line"/>
+      <point x="170" y="0" type="move" name="nukta"/>
     </contour>
-    <component base="madeva"/>
   </outline>
   <lib>
     <dict>
       <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
-      <integer>8</integer>
+      <integer>5</integer>
       <key>public.markColor</key>
-      <string>0.5,0.09,0.79,1</string>
+      <string>0.04,0.57,0.04,1</string>
     </dict>
   </lib>
 </glyph>

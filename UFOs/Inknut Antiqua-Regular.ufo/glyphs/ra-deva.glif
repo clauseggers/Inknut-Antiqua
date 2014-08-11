@@ -36,6 +36,15 @@
       <point x="536" y="724" type="line"/>
       <point x="460" y="786" type="line"/>
     </contour>
+    <contour>
+      <point x="170" y="0" type="move" name="nukta"/>
+    </contour>
+    <contour>
+      <point x="255" y="0" type="move" name="bottom"/>
+    </contour>
+    <contour>
+      <point x="255" y="786" type="move" name="top"/>
+    </contour>
   </outline>
   <lib>
     <dict>

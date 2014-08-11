@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="nuktadeva" format="1">
-  <advance width="600"/>
+  <advance width="260"/>
   <unicode hex="093C"/>
   <outline>
+    <contour>
+      <point x="70" y="-49" type="line"/>
+      <point x="70" y="-185" type="line"/>
+      <point x="152" y="-225" type="line"/>
+      <point x="190" y="-225" type="line"/>
+      <point x="190" y="-89" type="line"/>
+      <point x="108" y="-49" type="line"/>
+    </contour>
+    <contour>
+      <point x="130" y="-137" type="move" name="_nukta"/>
+    </contour>
   </outline>
 </glyph>

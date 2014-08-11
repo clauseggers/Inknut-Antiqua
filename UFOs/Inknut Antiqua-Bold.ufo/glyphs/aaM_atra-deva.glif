@@ -11,18 +11,18 @@
       <point x="298" y="786" type="line"/>
     </contour>
     <contour>
-      <point x="-165" y="786" type="line"/>
-      <point x="-165" y="708" type="line"/>
-      <point x="10" y="616" type="line"/>
+      <point x="-95" y="786" type="line"/>
+      <point x="-95" y="708" type="line"/>
+      <point x="80" y="616" type="line"/>
       <point x="484" y="616" type="line"/>
       <point x="484" y="694" type="line"/>
       <point x="309" y="786" type="line"/>
     </contour>
     <contour>
-      <point x="200" y="786" type="move" name="top"/>
+      <point x="98" y="786" type="move" name="top"/>
     </contour>
     <contour>
-      <point x="200" y="0" type="move" name="bottom"/>
+      <point x="98" y="0" type="move" name="bottom"/>
     </contour>
   </outline>
 </glyph>

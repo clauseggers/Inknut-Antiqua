@@ -66,5 +66,17 @@
       <point x="1097" y="724" type="line"/>
       <point x="1027" y="786" type="line"/>
     </contour>
+    <contour>
+      <point x="732" y="63" type="move" name="halant"/>
+    </contour>
+    <contour>
+      <point x="150" y="-20" type="move" name="nukta"/>
+    </contour>
+    <contour>
+      <point x="458" y="786" type="move" name="top"/>
+    </contour>
+    <contour>
+      <point x="458" y="0" type="move" name="bottom"/>
+    </contour>
   </outline>
 </glyph>

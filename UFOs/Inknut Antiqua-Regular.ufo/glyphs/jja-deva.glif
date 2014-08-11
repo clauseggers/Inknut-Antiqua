@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="uni097C" format="1">
-  <advance width="600"/>
+  <advance width="788"/>
   <unicode hex="097C"/>
   <outline>
+    <contour>
+      <point x="598" y="231" type="line"/>
+      <point x="598" y="-125" type="line"/>
+      <point x="680" y="-165" type="line"/>
+      <point x="718" y="-165" type="line"/>
+      <point x="718" y="231" type="line"/>
+    </contour>
+    <component base="jadeva"/>
+    <component base="anudattadeva" xOffset="186"/>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+      <integer>8</integer>
+      <key>public.markColor</key>
+      <string>0.5,0.09,0.79,1</string>
+    </dict>
+  </lib>
 </glyph>

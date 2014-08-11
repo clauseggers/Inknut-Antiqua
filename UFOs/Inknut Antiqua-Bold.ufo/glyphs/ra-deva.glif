@@ -29,12 +29,21 @@
       <point x="221" y="269" type="line"/>
     </contour>
     <contour>
-      <point x="-110" y="786" type="line"/>
-      <point x="-110" y="708" type="line"/>
-      <point x="4" y="616" type="line"/>
-      <point x="709" y="616" type="line"/>
-      <point x="709" y="694" type="line"/>
-      <point x="595" y="786" type="line"/>
+      <point x="-165" y="786" type="line"/>
+      <point x="-165" y="708" type="line"/>
+      <point x="12" y="616" type="line"/>
+      <point x="742" y="616" type="line"/>
+      <point x="742" y="694" type="line"/>
+      <point x="565" y="786" type="line"/>
+    </contour>
+    <contour>
+      <point x="160" y="-81" type="move" name="nukta"/>
+    </contour>
+    <contour>
+      <point x="299" y="0" type="move" name="bottom"/>
+    </contour>
+    <contour>
+      <point x="299" y="786" type="move" name="top"/>
     </contour>
   </outline>
   <lib>

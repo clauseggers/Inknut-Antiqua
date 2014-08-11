@@ -4,6 +4,6 @@
   <unicode hex="094B"/>
   <outline>
     <component base="uni093E"/>
-    <component base="evowelsigndeva" xOffset="-185"/>
+    <component base="evowelsigndeva" xOffset="-181"/>
   </outline>
 </glyph>

@@ -788,12 +788,16 @@
 	<string>l.glif</string>
 	<key>l-deva</key>
 	<string>l-deva.glif</string>
+	<key>l-deva.loclMAR</key>
+	<string>l-deva.loclM_A_R_.glif</string>
 	<key>lVocalic-deva</key>
 	<string>lV_ocalic-deva.glif</string>
 	<key>lVocalicMatra-deva</key>
 	<string>lV_ocalicM_atra-deva.glif</string>
 	<key>la-deva</key>
 	<string>la-deva.glif</string>
+	<key>la-deva.loclMAR</key>
+	<string>la-deva.loclM_A_R_.glif</string>
 	<key>lacute</key>
 	<string>lacute.glif</string>
 	<key>lcaron</key>
@@ -902,6 +906,8 @@
 	<string>oC_andraM_atra-deva.glif</string>
 	<key>oMatra-deva</key>
 	<string>oM_atra-deva.glif</string>
+	<key>oMatra_anusvara-deva</key>
+	<string>oM_atra_anusvara-deva.glif</string>
 	<key>oMatra_reph-deva</key>
 	<string>oM_atra_reph-deva.glif</string>
 	<key>oMatra_reph_anusvara-deva</key>
@@ -1116,8 +1122,12 @@
 	<string>sevensuperior.glif</string>
 	<key>sh-deva</key>
 	<string>sh-deva.glif</string>
+	<key>sh-deva.loclMAR</key>
+	<string>sh-deva.loclM_A_R_.glif</string>
 	<key>sha-deva</key>
 	<string>sha-deva.glif</string>
+	<key>sha-deva.loclMAR</key>
+	<string>sha-deva.loclM_A_R_.glif</string>
 	<key>six</key>
 	<string>six.glif</string>
 	<key>six.dnom</key>
@@ -1150,6 +1160,10 @@
 	<string>t.glif</string>
 	<key>t-deva</key>
 	<string>t-deva.glif</string>
+	<key>t_r-deva</key>
+	<string>t_r-deva.glif</string>
+	<key>t_ra-deva</key>
+	<string>t_ra-deva.glif</string>
 	<key>ta-deva</key>
 	<string>ta-deva.glif</string>
 	<key>tbar</key>

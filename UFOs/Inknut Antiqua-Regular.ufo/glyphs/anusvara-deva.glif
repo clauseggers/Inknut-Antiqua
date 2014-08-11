@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="anusvaradeva" format="1">
-  <advance width="600"/>
+  <advance width="260"/>
   <unicode hex="0902"/>
   <outline>
+    <contour>
+      <point x="70" y="1030" type="line"/>
+      <point x="70" y="894" type="line"/>
+      <point x="152" y="854" type="line"/>
+      <point x="190" y="854" type="line"/>
+      <point x="190" y="990" type="line"/>
+      <point x="108" y="1030" type="line"/>
+    </contour>
+    <contour>
+      <point x="131" y="942" type="move" name="_anusvara-deva"/>
+    </contour>
+    <contour>
+      <point x="70" y="786" type="move" name="_top"/>
+    </contour>
   </outline>
 </glyph>

@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="anudattadeva" format="1">
-  <advance width="600"/>
+  <advance width="601"/>
   <unicode hex="0952"/>
   <outline>
+    <contour>
+      <point x="-110" y="-55" type="line"/>
+      <point x="-110" y="-133" type="line"/>
+      <point x="6" y="-225" type="line"/>
+      <point x="711" y="-225" type="line"/>
+      <point x="711" y="-147" type="line"/>
+      <point x="595" y="-55" type="line"/>
+    </contour>
+    <contour>
+      <point x="300" y="0" type="move" name="_bottom"/>
+    </contour>
   </outline>
 </glyph>

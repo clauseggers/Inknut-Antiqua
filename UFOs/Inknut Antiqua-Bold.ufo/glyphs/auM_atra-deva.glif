@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="uni094C" format="1">
-  <advance width="600"/>
+  <advance width="359"/>
   <unicode hex="094C"/>
   <outline>
+    <component base="uni093E"/>
+    <component base="aivowelsigndeva" xOffset="-320"/>
   </outline>
 </glyph>

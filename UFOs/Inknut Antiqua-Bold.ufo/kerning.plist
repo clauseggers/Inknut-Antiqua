@@ -90,6 +90,16 @@
 		<key>@MMK_R_quotesingle</key>
 		<integer>-70</integer>
 	</dict>
+	<key>@MMK_L_eight.dnom</key>
+	<dict>
+		<key>@MMK_R_four.dnom</key>
+		<integer>-40</integer>
+	</dict>
+	<key>@MMK_L_eight.numr</key>
+	<dict>
+		<key>@MMK_R_four.numr</key>
+		<integer>-40</integer>
+	</dict>
 	<key>@MMK_L_f</key>
 	<dict>
 		<key>@MMK_R_n</key>
