@@ -1,30 +1,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="fonts.css" type="text/css" media="screen" title="no title" charset="utf-8">
 <title>Devangari test</title>
 
 <style type="text/css" media="screen">
 html {
 	-webkit-font-smoothing: subpixel-antialiased;
 	text-rendering: optimizeLegibility;
-
-/*
-	-webkit-font-smoothing: none;
-	-webkit-font-smoothing: antialiased;
-	-webkit-font-smoothing: subpixel-antialiased;
-*/
-
-/*
-	text-rendering: optimizeLegibility;
-	text-rendering: geometricPrecision;
-*/
-}
-
-@font-face {
-	font-family: "InknutAntiqua";
-	src: url("InknutAntiqua-Book.otf");
-	font-weight: 300;
-	font-style: normal;
 }
 
 body {
@@ -52,6 +35,7 @@ body {
 	font-size: 6rem;
 	line-height: 2em;
 	color: rgba(255,0,0,0.5);
+	display: block;
 }
 
 /*
@@ -64,12 +48,21 @@ Chandas font represents Southern (most commonly used today) style of Devanagari 
 	font-size: 7.2rem;
 	line-height: 1.2;
 	color: rgba(0,170,0,0.5);
+	display: block;
 }
 .Model-southern {
 	font-family: "Chandas";
 	font-size: 7.2rem;
 	line-height: 2.2;
 	color: rgba(0,170,0,0.5);
+	display: block;
+}
+.Adobe {
+	font-family: "AdobeDevanagari";
+	font-size: 7.2rem;
+	line-height: 2.2;
+	color: rgba(0,0,170,0.5);
+	display: block;
 }
 
 .ss01 {
@@ -99,15 +92,16 @@ Nukta half-form</br>
 <span class="Glyphs">ग़्क ग्क </span><span class="Model-northern">ग़्क ग्क</span></br>
 <hr>
 <span class="DONE">Mark positioning & half-form</br>
-<span class="Glyphs">गङॢं झॣ </span><span class="Model-northern">ङॢं झॣ </span></br></span>
+<span class="Glyphs">गङॢं झॣ</span><span class="Model-northern">गङॢं झॣ</span></br></span>
 <hr>
 Overlapping reph and chanda. They are allowed to touch and be placed in either order…</br>
-<span class="Glyphs">र्ङॉ </span><span class="Model-northern">र्ङॉ </span></br>
+GS: The only way I see is to make a precomposed glyph. (10.09.14)
+<span class="Glyphs">र्ङॉ </span><span class="Model-northern">र्ङॉ </span><span class="Adobe">र्ङॉ </span></br>
 <hr>
 rr-substitution does not work.
 The nukta position is not inherited from the ra-deva used as a compnent to make kh-deva.
 Reph should be positioned over the inherent vowel stem.</br>
-<span class="Glyphs">र्ऱ्ख़ </span><span class="Model-northern">ऱ्ख़ </span></br>
+<span class="Glyphs">र्ऱ्ख़ </span><span class="Model-northern">ऱ्ख़ </span><span class="Adobe">ऱ्ख़ </span></br>
 <hr>
 <span class="DONE">Virama positioning should be at ‘halant’ anchor, not ‘bottom’ anchor.</br>
 <span class="Glyphs">ढ़्क़ </span><span class="Model-northern">ढ़्क़ </span></br></span>
