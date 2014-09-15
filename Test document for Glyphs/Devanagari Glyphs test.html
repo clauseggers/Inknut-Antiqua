@@ -66,11 +66,11 @@ Chandas font represents Southern (most commonly used today) style of Devanagari 
 }
 
 .ss01 {
-	-moz-font-feature-settings:"kern" 1, "ss01" 1; 
-	-moz-font-feature-settings:"kern=1, ss01=1"; 
-	-ms-font-feature-settings:"kern" 1, "ss01" 1; 
-	-o-font-feature-settings:"kern" 1, "ss01" 1; 
-	-webkit-font-feature-settings:"kern" 1, "ss01" 1; 
+	-moz-font-feature-settings:"kern" 1, "ss01" 1;
+	-moz-font-feature-settings:"kern=1, ss01=1";
+	-ms-font-feature-settings:"kern" 1, "ss01" 1;
+	-o-font-feature-settings:"kern" 1, "ss01" 1;
+	-webkit-font-feature-settings:"kern" 1, "ss01" 1;
 	font-feature-settings:"kern" 1, "ss01" 1;
 }
 .DONE {
@@ -85,52 +85,32 @@ Chandas font represents Southern (most commonly used today) style of Devanagari 
 <body>
 <div id="bodytext">
 <span class="lang" lang="hi">
-Vovelsign U, under stacked conjunct. [13.09.14]</br>
-<span class="Glyphs">द्गु </span><span class="Model-northern">द्गु </span></br>
+
+Conjunct b_ja + nukta = b_za but here the j is misplaced in Glyphs *AND* the b_za conjunct is not rendered in the HTML, rather the half-forms are. [15.09.14]</br>
+<span class="Glyphs">ब्ज ब़्ज </span><span class="Model-northern">वब्ज ब़्ज </span></br>
 <hr>
-Nukta for ka-deva not using ra-deva component nukta anchor [13.09.14]</br>
-<span class="Glyphs">ख़ ऱ </span><span class="Model-northern">ख़ ऱ </span></br></span>
+
+v_ra conjunct not enabled somewhere in the OT-features? [15.09.14]</br>
+<span class="Glyphs">व्र </span><span class="Model-northern">व्र </span></br>
 <hr>
-<span class="DONE">Nukta half-form</br>
-<span class="Glyphs">ग़्क ग्क </span><span class="Model-northern">ग़्क ग्क</span></br></span>
-<hr>
-<span class="DONE">Mark positioning & half-form</br>
-<span class="Glyphs">गङॢं झॣ</span><span class="Model-northern">गङॢं झॣ</span></br></span>
-<hr>
-Overlapping reph and chanda. They are allowed to touch and be placed in either order…</br>
-GS: The only way I see is to make a precomposed glyph. (10.09.14)
-<span class="Glyphs">र्ङॉ </span><span class="Model-northern">र्ङॉ </span><span class="Adobe">र्ङॉ </span></br>
-<hr>
-<span class="DONE">rr-substitution does not work.
-The nukta position is not inherited from the ra-deva used as a compnent to make kh-deva.
-Reph should be positioned over the inherent vowel stem.</br>
-<span class="Glyphs">र्ऱ्ख़ </span><span class="Model-northern">ऱ्ख़ </span><span class="Adobe">ऱ्ख़ </span></br></span>
-<hr>
-<span class="DONE">Virama positioning should be at ‘halant’ anchor, not ‘bottom’ anchor.</br>
-<span class="Glyphs">ढ़्क़ </span><span class="Model-northern">ढ़्क़ </span></br></span>
-<hr>
-Rakar is placed instead of ‘leg’ form ra [14.09.14]</br>
-<span class="Glyphs">म्र </span><span class="Model-northern">म्र </span></br>
-<hr>
-Rakar below: Mark positioning?</br>
+
+Rakar is not placed correctly (should use ‘rakar’ anchor) [15.09.14]</br>
 <span class="Glyphs">द्र </span><span class="Model-northern">द्र </span></br>
 <hr>
-<span class="DONE">Vowel deletion and half-forms do not work in Firefox when a language is set. Safari doesn’t work at all, and in Chrome vowel deletion does work, but the language-specific forms do not (see Sanskrit).</br></br>
-Hindi (effectively = no language set, since Hindi is never defined in the generated fonts)</br>
-<span class="lang" lang="hi"><span class="Glyphs">व्रत अ ऋ ण झ ल श </span></br>
-<span class="Model-southern">व्रत अ ऋ ण झ ल श </span></br></span>
-Marathi</br>
-<span class="lang" lang="mr"><span class="Glyphs">व्रत अ ऋ ण झ ल श </span></br>
-<span class="Model-southern">व्रत अ ऋ ण झ ल श </span></br></span>
-Nepali</br>
-<span class="lang" lang="ne"><span class="Glyphs">व्रत अ ऋ ण झ ल श </span></br>
-<span class="Model-northern">व्रत अ ऋ ण झ ल श </span></br></span>
-Sanskrit</br>
-<span class="lang" lang="sa"><span class="Glyphs">व्रत अ ऋ ण झ ल श </span></br>
-<span class="Model-northern">व्रत अ ऋ ण झ ल श </span></br></span>
-</span>
+
+Rakar is placed instead of m_ra conjunct [14.09.14]</br>
+<span class="Glyphs">म्र </span><span class="Model-northern">म्र </span></br>
 <hr>
-</span>
+
+Bindu+chanda not replaced with chandabindu [15.09.14]</br>
+<span class="Glyphs">शॅं शँ </span><span class="Model-northern">शॅं शँ </span></br>
+<hr>
+
+Overlapping reph and chanda. They are allowed to touch and be placed in either order…</br>
+GS: The only way I see is to make a precomposed glyph. [10.09.14]
+<span class="Glyphs">र्ङॉ </span><span class="Model-northern">र्ङॉ </span><span class="Adobe">र्ङॉ </span></br>
+<hr>
+
 </div>
 
 </body>
