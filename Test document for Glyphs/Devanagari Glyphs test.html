@@ -31,7 +31,7 @@ body {
 	font-feature-settings:"kern" 1, "liga" 1, "dlig" 1;
 }
 .Glyphs {
-	font-family: "InknutAntiqua";
+	font-family: "FontToTest1";
 	font-size: 6rem;
 	line-height: 2em;
 	color: rgba(255,0,0,0.5);
@@ -43,7 +43,7 @@ Download Uttera and Chandas here http://www.sanskritweb.net/cakram/
 Chandas font represents Southern (most commonly used today) style of Devanagari script. And Uttara font represents Northern style of Devanagari Script. These styles are sometimes also called Bombay (Southern, contemporary) and Calcutta (Northern, old) pen families accordingly.
 */
 
-.Model-northern {
+.ModelNorthern {
 	font-family: "Uttara";
 	font-size: 7.2rem;
 	line-height: 1.2;
@@ -85,46 +85,85 @@ Chandas font represents Southern (most commonly used today) style of Devanagari 
 <body>
 <div id="bodytext">
 <span class="lang" lang="hi">
-<span class="DONE">Nukta for all consonants: </br>
-<span class="Glyphs">क़ ख़ ग़ घ़ ङ़ च़ छ़ ज़ झ़ ञ़ ट़ ठ़ ड़ ढ़ ण़ त़ थ़ द़ ऱ ल़ ऴ व़ श़ ष़ स़ </span><span class="Model-northern">क़ ख़ ग़ घ़ ङ़ च़ छ़ ज़ झ़ ञ़ ट़ ठ़ ड़ ढ़ ण़ त़ थ़ द़ ऱ ल़ ऴ व़ श़ ष़ स़ </span></br></span>
+<div>ra + uMatra
+	<span class="Glpyhs">रुपये रुजु एकरूप घाबरू</span>
+	<span class="ModelNorthern">रुपये रुजु एकरूप घाबरू</span>
+	<span class="Adobe">रुपये रुजु एकरूप घाबरू</span>
+</div>
+<div>Some contextual iMatras:
+	<span class="Glyphs">क्कि क्खि क्गि क्चि क्छि क्जि क्झि क्टि क्ठि क्डि क्ढि क्णि क्ति </span>
+	<span class="ModelNorthern">क्कि क्खि क्गि क्चि क्छि क्जि क्झि क्टि क्ठि क्डि क्ढि क्णि क्ति </span>
+	<span class="Adobe">क्कि क्खि क्गि क्चि क्छि क्जि क्झि क्टि क्ठि क्डि क्ढि क्णि क्ति </span>
+</div>
+<div class="DONE">Nukta for all consonants: </br>
+	<span class="Glyphs">क़ ख़ ग़ घ़ ङ़ च़ छ़ ज़ झ़ ञ़ ट़ ठ़ ड़ ढ़ ण़ त़ थ़ द़ ऱ ल़ ऴ व़ श़ ष़ स़ </span>
+	<span class="ModelNorthern">क़ ख़ ग़ घ़ ङ़ च़ छ़ ज़ झ़ ञ़ ट़ ठ़ ड़ ढ़ ण़ त़ थ़ द़ ऱ ल़ ऴ व़ श़ ष़ स़ </span>
+</div>
 <hr>
-Nukta half-form</br>
-<span class="Glyphs">ग़्क ग्क </span><span class="Model-northern">ग़्क ग्क</span></br>
+<div>Nukta half-form
+	<span class="Glyphs">ग़्क ग्क </span>
+	<span class="ModelNorthern">ग़्क ग्क</span>
+</div>
 <hr>
-<span class="DONE">Mark positioning & half-form</br>
-<span class="Glyphs">गङॢं झॣ</span><span class="Model-northern">गङॢं झॣ</span></br></span>
+<div class="DONE">Mark positioning & half-form
+	<span class="Glyphs">गङॢं झॣ</span>
+	<span class="ModelNorthern">गङॢं झॣ</span>
+</div>
 <hr>
+<div>
 Overlapping reph and chanda. They are allowed to touch and be placed in either order…</br>
 GS: The only way I see is to make a precomposed glyph. (10.09.14)
-<span class="Glyphs">र्ङॉ </span><span class="Model-northern">र्ङॉ </span><span class="Adobe">र्ङॉ </span></br>
+	<span class="Glyphs">र्ङॉ </span>
+	<span class="ModelNorthern">र्ङॉ </span>
+	<span class="Adobe">र्ङॉ </span>
+</div>
 <hr>
 rr-substitution does not work.
 The nukta position is not inherited from the ra-deva used as a compnent to make kh-deva.
 Reph should be positioned over the inherent vowel stem.</br>
-<span class="Glyphs">र्ऱ्ख़ </span><span class="Model-northern">ऱ्ख़ </span><span class="Adobe">ऱ्ख़ </span></br>
+	<span class="Glyphs">ऱ्त र्त र्ऱ्ख़ </span>
+	<span class="ModelNorthern">ऱ्त र्त र्ऱ्ख़ </span>
+	<span class="Adobe">ऱ्त र्त र्ऱ्ख़ </span></br>
+	
+	<span class="Glyphs" lang="mr">ऱ्त र्त र्ऱ्ख़ </span>
+	<span class="ModelNorthern" lang="mr">ऱ्त र्त र्ऱ्ख़ </span>
+	<span class="Adobe" lang="mr">ऱ्त र्त र्ऱ्ख़ </span></br>
+	
 <hr>
 <span class="DONE">Virama positioning should be at ‘halant’ anchor, not ‘bottom’ anchor.</br>
-<span class="Glyphs">ढ़्क़ </span><span class="Model-northern">ढ़्क़ </span></br></span>
+	
+<span class="Glyphs">ढ़्क़ </span><span class="ModelNorthern">ढ़्क़ </span><span class="Adobe">ढ़्क़ </span></br></span>
 <hr>
-Should be m_ra-deva conjunct with a nukta on the ra, but because the ra has this nukta, the conjunct is not rendered.</br>
-<span class="Glyphs">म्ऱ म्र </span><span class="Model-northern">म्ऱ म्र </span></br>
+	Should be m_ra-deva conjunct with a nukta on the ra, but because the ra has this nukta, the conjunct is not rendered.</br>
+	GS: this does not work in any of the sample fonts. and it seems to be impossible.
+	<span class="Glyphs">म्ऱ म्र </span>
+	<span class="ModelNorthern">म्ऱ म्र </span></br>
+	<span class="Adobe">म्ऱ म्र </span></br>
 <hr>
 Rakar below: Mark positioning?</br>
-<span class="Glyphs">द्र </span><span class="Model-northern">द्र </span></br>
+<span class="Glyphs">द्र </span><span class="ModelNorthern">द्र </span></br>
 <hr>
 Vowel deletion and half-forms do not work in Firefox when a language is set. Safari doesn’t work at all, and in Chrome vowel deletion does work, but the language-specific forms do not (see Sanskrit).</br></br>
 Hindi (effectively = no language set, since Hindi is never defined in the generated fonts)</br>
-<span class="lang" lang="hi"><span class="Glyphs">व्रत अ ऋ ण झ ल श </span></br>
-<span class="Model-southern">व्रत अ ऋ ण झ ल श </span></br></span>
+<span class="lang" lang="hi">
+	<span class="Glyphs">व्रत अ ऋ ण झ ल श </span>
+	<span class="Model-southern">व्रत अ ऋ ण झ ल श </span>
+</span>
 Marathi</br>
-<span class="lang" lang="mr"><span class="Glyphs">व्रत अ ऋ ण झ ल श </span></br>
-<span class="Model-southern">व्रत अ ऋ ण झ ल श </span></br></span>
+<span class="lang" lang="mr">
+	<span class="Glyphs">व्रत अ ऋ ण झ ल श </span>
+	<span class="Model-southern">व्रत अ ऋ ण झ ल श </span>
+</span>
 Nepali</br>
-<span class="lang" lang="ne"><span class="Glyphs">व्रत अ ऋ ण झ ल श </span></br>
-<span class="Model-northern">व्रत अ ऋ ण झ ल श </span></br></span>
+<span class="lang" lang="ne">
+	<span class="Glyphs">व्रत अ ऋ ण झ ल श </span>
+	<span class="ModelNorthern">व्रत अ ऋ ण झ ल श </span>
+</span>
 Sanskrit</br>
-<span class="lang" lang="sa"><span class="Glyphs">व्रत अ ऋ ण झ ल श </span></br>
-<span class="Model-northern">व्रत अ ऋ ण झ ल श </span></br></span>
+<span class="lang" lang="sa">
+	<span class="Glyphs">व्रत अ ऋ ण झ ल श </span>
+	<span class="ModelNorthern">व्रत अ ऋ ण झ ल श </span>
+</span>
 <hr>
 </span>
 </div>

@@ -1,9 +1,17 @@
 @font-face {
-	font-family: "InknutAntiqua";
-	src: url("InknutAntiqua-Regular.otf");
+	font-family: "FontToTest1";
+	src: url("VesperLibreRob2-Regular.otf");
+/*	src: url("Mangal.volt.ttf");*/
 	font-weight:400;
 	font-style: normal;
 }
+@font-face {
+	font-family: "FontToTest2";
+	src: url("InknutAntiqua1-Regular.otf");
+	font-weight:400;
+	font-style: normal;
+}
+
 @font-face {
 	font-family: "Uttara";
 	src: url("uttara.ttf");
