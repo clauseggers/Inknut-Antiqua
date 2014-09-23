@@ -66,11 +66,11 @@ Chandas font represents Southern (most commonly used today) style of Devanagari 
 }
 
 .ss01 {
-	-moz-font-feature-settings:"kern" 1, "ss01" 1; 
-	-moz-font-feature-settings:"kern=1, ss01=1"; 
-	-ms-font-feature-settings:"kern" 1, "ss01" 1; 
-	-o-font-feature-settings:"kern" 1, "ss01" 1; 
-	-webkit-font-feature-settings:"kern" 1, "ss01" 1; 
+	-moz-font-feature-settings:"kern" 1, "ss01" 1;
+	-moz-font-feature-settings:"kern=1, ss01=1";
+	-ms-font-feature-settings:"kern" 1, "ss01" 1;
+	-o-font-feature-settings:"kern" 1, "ss01" 1;
+	-webkit-font-feature-settings:"kern" 1, "ss01" 1;
 	font-feature-settings:"kern" 1, "ss01" 1;
 }
 .DONE {
@@ -136,11 +136,13 @@ Reph should be positioned over the inherent vowel stem.</br>
 <hr>
 	Should be m_ra-deva conjunct with a nukta on the ra, but because the ra has this nukta, the conjunct is not rendered.</br>
 	GS: this does not work in any of the sample fonts. and it seems to be impossible.
+	Rakar is placed instead of m_ra conjunct [14.09.14]
 	<span class="Glyphs">म्ऱ म्र </span>
 	<span class="ModelNorthern">म्ऱ म्र </span></br>
 	<span class="Adobe">म्ऱ म्र </span></br>
 <hr>
 Rakar below: Mark positioning?</br>
+Rakar is not placed correctly (should use ‘rakar’ anchor) [15.09.14]</br>
 <span class="Glyphs">द्र </span><span class="ModelNorthern">द्र </span></br>
 <hr>
 Vowel deletion and half-forms do not work in Firefox when a language is set. Safari doesn’t work at all, and in Chrome vowel deletion does work, but the language-specific forms do not (see Sanskrit).</br></br>
@@ -164,8 +166,29 @@ Sanskrit</br>
 	<span class="Glyphs">व्रत अ ऋ ण झ ल श </span>
 	<span class="ModelNorthern">व्रत अ ऋ ण झ ल श </span>
 </span>
+
+Kerning(?) issue when setting a language. Seems like the entire kerning feature is turned off when a text is tagged with a language (any language, except Hindi which is not used in the OT-features, hence a text tagged with ‘hi’ falls back to base-devanagari). This is only true for Devanagari, not the latin.</br></br>
+Also the calculation of Velanti (iMatra- and iiMatra ‘bows’) seems to be way off the mark (in general). Could be related to the missing kerning issue? [22.09.14]</br>
+<span class="Glyphs">Hindi ठीकाला </span><span class="ModelNorthern">Hindi ठीकाला </span></br>
+<span class="lang" lang="mr"><span class="Glyphs">Marathi ठीकाला </span><span class="ModelNorthern">Marathi ठीकाला </span></span></br>
 <hr>
-</span>
+
+Conjunct s_t_r_ya seems to work, but s_t_ra does not. [19.09.14]</br>
+<span class="Glyphs">स्त्र्य स्त्र </span><span class="ModelNorthern">स्त्र्य स्त्र  </span></br>
+<hr>
+
+Conjunct b_ja + nukta = b_za but here the j is misplaced in Glyphs *AND* the b_za conjunct is not rendered in the HTML, rather the half-forms are. [15.09.14]</br>
+<span class="Glyphs">ब्ज ब़्ज </span><span class="ModelNorthern">वब्ज ब़्ज </span></br>
+<hr>
+
+v_ra conjunct not enabled somewhere in the OT-features? [15.09.14]</br>
+<span class="Glyphs">व्र </span><span class="ModelNorthern">व्र </span></br>
+<hr>
+
+Bindu+chanda not replaced with chandabindu [15.09.14]</br>
+<span class="Glyphs">शॅं शँ </span><span class="ModelNorthern">शॅं शँ </span></br>
+<hr>
+
 </div>
 
 </body>
