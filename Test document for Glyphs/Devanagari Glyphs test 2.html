@@ -86,12 +86,13 @@ Chandas font represents Southern (most commonly used today) style of Devanagari 
 <div id="bodytext">
 <span class="lang" lang="hi">
 
-For some reason this conjunct does not work in InDesign CS6 and Firefox. It *does* work in Safari. I tried renaming it from s_t_r_ya-deva to s_ta_ra_ya-deva, but get same result, so I changed the name back to the original s_t_r_ya-deva. [24.09.14]</br>
-<span class="Glyphs">स्त्र्य </span><span class="ModelNorthern">स्त्र्य </span></br>
+For some reason these conjuncts do not work in InDesign CS6 nor in Firefox. It *does* work in Safari.
+Conjunct s_ta_ra will not appear in Glyphs, nor in FF and InDesign CS6. Same issue with the longer s_ta_ra_ya-deva conjunct: I tried naming it both s_t_r_ya-deva and s_ta_ra_ya-deva, but get same result. [24.09.14]</br>
+<span class="Glyphs">स्त्र स्त्र्य </span><span class="ModelNorthern">स्त्र स्त्र्य </span></br>
 <hr>
 
-Position of the ‘leg’ component in the pa_ra conjunct is not correct in the generated fonts. It is correct in the Glyphs file. [24.09.14]</br>
-<span class="Glyphs">म्र प्र व्र </span><span class="ModelNorthern">म्र प्र व्र </span></br>
+Position of the ‘leg’ component in the pa_ra conjunct is not correct in the generated fonts. It is correct in the Glyphs file. There is a ‘leg’ anchor in both the aaMatra-deva and the p-deva – the two components that the pa-deva is built from. The pa_ra-deva is built from the pa-deva + the ra-deva.leg [24.09.14]</br>
+<span class="Glyphs">प्र </span><span class="ModelNorthern">प्र </span></br>
 <hr>
 
 Kerning(?) issue when setting a language. Seems like the entire kerning feature is turned off when a text is tagged with a language (any language, except Hindi which is not used in the OT-features, hence a text tagged with ‘hi’ falls back to base-devanagari). This is only true for Devanagari, not the latin.</br></br>
@@ -99,12 +100,6 @@ The kerning also fails in InDesign CS6 if a language that uses Devanagari is set
 Also the calculation of Velanti (iMatra- and iiMatra ‘bows’) seems to be way off the mark (in general). Could be related to the missing kerning issue? [22.09.14]</br>
 <span class="Glyphs">Hindi ठीकाला परकारकहतहएउनका </span></br>
 <span class="lang" lang="mr"><span class="Glyphs">Marathi ठीकाला परकारकहतहएउनका </span></span></br>
-<hr>
-
-Conjunct s_t_r_ya seems to work, but s_t_ra does not. [19.09.14]</br>
-GS: Please use s_ta_ra as the glyph name (as I told you) [24.09.14]
-	<span class="Glyphs">स्त्र्य स्त्र </span>
-	<span class="ModelNorthern">स्त्र्य स्त्र  </span></br>
 <hr>
 
 Conjunct b_ja + nukta = b_za but here the j is misplaced in Glyphs *AND* the b_za conjunct is not rendered in the HTML, rather the half-forms are. [15.09.14]</br>
@@ -115,20 +110,8 @@ GS: This do seem to be a problem with the other fonts, too. [24.09.14]
 <hr>
 
 v_ra conjunct not enabled somewhere in the OT-features? [15.09.14]</br>
-GS: use
+FIXED: use syntax [… v_va_ra_v …]
 <span class="Glyphs">व्र </span><span class="ModelNorthern">व्र </span></br>
-<hr>
-
-Rakar is not placed correctly (should use ‘rakar’ anchor) *or* the d_ra-deva conjunct. [15.09.14]</br>
-<span class="Glyphs">द्र </span><span class="ModelNorthern">द्र </span></br>
-<hr>
-
-Rakar is placed instead of m_ra conjunct [14.09.14]</br>
-<span class="Glyphs">म्र </span><span class="ModelNorthern">म्र </span></br>
-<hr>
-
-Bindu+chanda not replaced with chandabindu [15.09.14]</br>
-<span class="Glyphs">शॅं शँ शें</span><span class="ModelNorthern">शॅं शँ शें</span></br>
 <hr>
 
 Overlapping reph and chanda. They are allowed to touch and be placed in either order…</br>
