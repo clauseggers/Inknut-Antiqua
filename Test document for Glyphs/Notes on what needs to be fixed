@@ -1,0 +1,11 @@
+CES: Reduce lenghts of black velanti.
+
+GS: Have halant/virama component link to the ‘halant’ anchor, not the bottom anchor.
+
+GS: Have the ‘rakar’ component anchor to the ‘rakar’ anchor if such an anchor exists in the base-glyph. If it doesn’t exist, then use the ‘bottom’ anchor in the base-glyph. (Example ष्ट्र)
+
+GS: Issue with wrong position of ra-leg in प्र, but only in the *generated* fonts. In Glyphs itself it looks fine. All the other glyphs using the ra-leg are fine – go figure…
+
+GS: What do we do about collisions like this: उँदै हीँ et cetera…
+
+CES: uuMatra exceptions should also be made into glyphs for the conjuncts of d_uuMatra-deva, ra_uuMatra-deva, and ha_uuMatra-deva. Either that of make some special anchor for these exceptions and control it in an autofeature… (GS?)

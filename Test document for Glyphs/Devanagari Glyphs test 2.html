@@ -86,6 +86,17 @@ Chandas font represents Southern (most commonly used today) style of Devanagari 
 <div id="bodytext">
 <span class="lang" lang="hi">
 
+What do we do about collisions like this below? A calt? [27.09.14]</br>
+<span class="Glyphs">उँदै यौँ हीँ </span></br>
+<span class="ModelNorthern">उँदै यौँ हीँ </span></br>
+<hr>
+
+Also the calculation of Velanti (iMatra- and iiMatra ‘bows’) seems to be off the mark in some rare instances. I have cleaned up the components and anchors in Inknut, but the below examples are still not correct for some reason (could it be that Glyphs does not iterate through the nested components to find the ‘top’ anchor?)
+[27.09.14]</br>
+<span class="Glyphs">ड़ी पि</span></br>
+<span class="ModelNorthern">ड़ी पि</span></br>
+<hr>
+
 ss_pa_ra-deva conjunct not active in Indesign CS6 and Firefox. Does work in Safari. [26.09.14]</br>
 <span class="Glyphs">No lang ष्प्र </span></br>
 <span class="lang" lang="sa"><span class="Glyphs">Sanskrit ष्प्र </span></br>
@@ -108,7 +119,6 @@ Position of the ‘leg’ component in the pa_ra conjunct is not correct in the 
 
 Kerning(?) issue when setting a language. Seems like the entire kerning feature is turned off when a text is tagged with a language (any language, except Hindi which is not used in the OT-features, hence a text tagged with ‘hi’ falls back to base-devanagari). This is only true for Devanagari, not the latin.</br></br>
 The kerning also fails in InDesign CS6 if a language that uses Devanagari is set. [25.10.14]</br></br>
-Also the calculation of Velanti (iMatra- and iiMatra ‘bows’) seems to be way off the mark (in general). Could be related to the missing kerning issue? [22.09.14]</br>
 <span class="Glyphs">Hindi ठीकाला परकारकहतहएउनका </span></br>
 <span class="lang" lang="mr"><span class="Glyphs">Marathi ठीकाला परकारकहतहएउनका </span></span></br>
 <hr>
