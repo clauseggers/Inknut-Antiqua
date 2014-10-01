@@ -2,10 +2,16 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>»Inknut Antiqua« specimen</title>
+
+<!-- jQuery needed for gradient and table highlighting on mouse hover -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+<!-- Gradient in large text color -->
 <script type="text/javascript">
 (function(a){a("head").append('<style type="text/css">.sn-pxg .pxg-set{user-select:none;-moz-user-select:none;-webkit-user-select:none;}.sn-pxg span.pxg-source{position:relative;display:inline-block;z-index:2;}.sn-pxg U.pxg-set,.sn-pxg U.pxg-set S,.sn-pxg U.pxg-set S B{left:0;right:0;top:0;bottom:0;height:inherit;width:inherit;position:absolute;display:inline-block;text-decoration:none;font-weight:inherit;}.sn-pxg U.pxg-set S{overflow:hidden;}.sn-pxg U.pxg-set{text-decoration:none;z-index:1;display:inline-block;position:relative;}</style>');a.fn.pxgradient=function(b){function g(a,b,c){var d=[];for(var f=0;f<3;f++){d[f]=a[f]+Math.round((b[f]-a[f])*c)}return e(d)}function f(a,c){var d=a>0?a/c:0;for(var e=0;e<b.colors.length;e++){fStopPosition=e/(b.colors.length-1);fLastPosition=e>0?(e-1)/(b.colors.length-1):0;if(d==fStopPosition){return b.colors[e]}else if(d<fStopPosition){fCurrentStop=(d-fLastPosition)/(fStopPosition-fLastPosition);return g(b.RGBcolors[e-1],b.RGBcolors[e],fCurrentStop)}}return b.colors[b.colors.length-1]}function e(a){var b="0123456789abcdef";return"#"+b.charAt(parseInt(a[0]/16))+b.charAt(a[0]%16)+b.charAt(parseInt(a[1]/16))+b.charAt(a[1]%16)+b.charAt(parseInt(a[2]/16))+b.charAt(a[2]%16)}function d(a){if("#"==a.substr(0,1)){a=a.substr(1)}if(3==a.length){a=a.substr(0,1)+a.substr(0,1)+a.substr(1,1)+a.substr(1,1)+a.substr(2,1)+a.substr(2,1)}return[parseInt(a.substr(0,2),16),parseInt(a.substr(2,2),16),parseInt(a.substr(4,2),16)]}var b=a.extend({step:10,colors:["#ffcc00","#cc0000","#000000"],dir:"y"},b);b.RGBcolors=[];for(var c=0;c<b.colors.length;c++){b.RGBcolors[c]=d(b.colors[c])}return this.each(function(c,d){var e=a(d);if(!e.hasClass("sn-pxg")){var g=e.html();e.html('<span class="pxg-source" style="visibility: hidden;">'+g+"</span>").append('<u class="pxg-set"></u>');var h=e.find(".pxg-set");var i=e.find(".pxg-source");var j=i.innerWidth();var k=i.innerHeight();i.hide();e.addClass("sn-pxg");if(b.dir=="x"){var l=j}else if(b.dir=="y"){var l=k}var m=Math.floor(l/b.step);var n=m;var o=l-m*b.step;if(o>0){n++}h.css({width:j,height:k});var p=0;var q="";if(b.dir=="x"){for(var c=0;c<n;c++){var r=f(p,l);q+='<s style="height:'+k+"px;width:"+b.step+"px;left:"+p+"px;color:"+r+'"><b style="left:-'+p+"px;width:"+j+"px;height:"+k+'px;">'+g+"</b></s>";p=p+b.step}}else if(b.dir=="y"){for(var c=0;c<n;c++){var r=f(p,l);q+='<s style="width:'+j+"px;height:"+b.step+"px;top:"+p+"px;color:"+r+'"><b style="top:-'+p+"px;height:"+j+"px;height:"+k+'px;">'+g+"</b></s>";p=p+b.step}}h.append(q)}})}})(jQuery)
 </script>
+
+<!-- Gradient for large sample text -->
 <script type="text/javascript">
   $(function(){
     $(".gradient").pxgradient({
@@ -15,6 +21,8 @@
     });
   });
 </script>
+
+<!-- Reflow large sample text after browser window size change -->
 <script type="text/javascript">
 $(window).bind('resize', function(e)
 {
@@ -25,6 +33,24 @@ $(window).bind('resize', function(e)
   }, 100);
 });
 </script>
+
+<!-- Highlight mouse-over column in table -->
+<script type="text/javascript">
+	//<![CDATA[
+	$(function(){
+	$('td').mouseover(function () {
+		$(this).siblings().css('background-color', 'rgba(0,0,0,0.2)');
+		var ind = $(this).index();
+		$('td:nth-child(' + (ind + 1) + ')').css('background-color', 'rgba(0,0,0,0.2)');
+	});
+	$('td').mouseleave(function () {
+		$(this).siblings().css('background-color', '');
+		var ind = $(this).index();
+		$('td:nth-child(' + (ind + 1) + ')').css('background-color', '');
+	});
+	});//]]>
+</script>
+
 <style type="text/css" media="screen">
 html {
 	-webkit-font-smoothing: subpixel-antialiased;
@@ -41,11 +67,30 @@ html {
 	text-rendering: geometricPrecision;
 */
 }
+@font-face {
+	font-family: "InknutAntiqua";
+	src: url("InknutAntiqua-Light.otf");
+	font-weight: 300;
+	font-style: normal;
+}
 
 @font-face {
 	font-family: "InknutAntiqua";
 	src: url("InknutAntiqua-Regular.otf");
 	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: "InknutAntiqua";
+	src: url("InknutAntiqua-Medium.otf");
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "InknutAntiqua";
+	src: url("InknutAntiqua-SemiBold.otf");
+	font-weight: 600;
 	font-style: normal;
 }
 
@@ -56,12 +101,26 @@ html {
 	font-style: normal;
 }
 
+@font-face {
+	font-family: "InknutAntiqua";
+	src: url("InknutAntiqua-ExtraBold.otf");
+	font-weight: 800;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "InknutAntiqua";
+	src: url("InknutAntiqua-Black.otf");
+	font-weight: 900;
+	font-style: normal;
+}
+
 body {
 	background-color: #ffffff;
 	color: #000000;
 	font-family: "InknutAntiqua";
 	font-style: normal;
-	font-weight: 400;
+	font-weight: 300;
 	font-size: 13px;
 	font-size-adjust: 0.50;
 	line-height: 1.5em;
@@ -70,12 +129,12 @@ body {
 	margin-left: 2rem;
 	margin-right: 2rem;
 	margin-bottom: 2rem;
-	-moz-font-feature-settings:"kern" 1, "liga" 1, "dlig" 1; 
-	-moz-font-feature-settings:"kern=1, liga=1, dlig=1"; 
-	-ms-font-feature-settings:"kern" 1, "liga" 1, "dlig" 1; 
-	-o-font-feature-settings:"kern" 1, "liga" 1, "dlig" 1; 
-	-webkit-font-feature-settings:"kern" 1, "liga" 1, "dlig" 1; 
-	font-feature-settings:"kern" 1, "liga" 1, "dlig" 1;
+	-moz-font-feature-settings:"kern" 1, "liga" 1;
+	-moz-font-feature-settings:"kern=1, liga=1";
+	-ms-font-feature-settings:"kern" 1, "liga" 1;
+	-o-font-feature-settings:"kern" 1, "liga" 1;
+	-webkit-font-feature-settings:"kern" 1, "liga" 1;
+	font-feature-settings:"kern" 1, "liga" 1;
 }
 
 p {
@@ -92,7 +151,7 @@ h1 {
 	font-size: 24px;
 	margin-top:2em;
 	margin-bottom:0.2em;
-	font-weight: 700;
+	font-weight: 600;
 	font-style: normal;
 	letter-spacing:-0.5px;
 	line-height: 1;
@@ -103,7 +162,7 @@ header {
 	font-size: 96px;
 	margin-top:0.2em;
 	margin-bottom:0em;
-	font-weight: 400;
+	font-weight: 300;
 	font-style: normal;
 	line-height: 1.2;
 }
@@ -112,7 +171,7 @@ header {
 	font-size: 96px;
 	margin-top:0.2em;
 	margin-bottom:0.6em;
-	font-weight: 400;
+	font-weight: 300;
 	font-style: normal;
 	letter-spacing:-2px;
 	line-height: 1.2;
@@ -136,14 +195,6 @@ div#center {
 	margin-bottom:0;
 	margin-top:0;
 }
-
-/*div#gradient {
-	position:absolute;
-	width: 120%;
-	left:0;
-	right:0;
-	overflow:hidden;
-}*/
 
 .red {
 	color:rgb(255,70,0);
@@ -169,65 +220,87 @@ a:active {
 	text-decoration: underline;
 }
 
+table {
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+/*	table-layout:fixed; */
+	cursor:none;
+}
+
+th {
+	color:rgb(255,255,255);
+	background-color:rgb(0,0,0);
+}
+
+td:hover {
+	color:rgb(255,255,255);
+	background-color:rgb(0,0,0) !important;
+}
+
+th:hover {
+	background-color:rgb(0,0,0) !important;
+}
+
 .fractions {
-	-moz-font-feature-settings:"frac" 1, "kern" 1; 
-	-moz-font-feature-settings:"frac=1, kern=1"; 
-	-ms-font-feature-settings:"frac" 1, "kern" 1; 
-	-o-font-feature-settings:"frac" 1, "kern" 1; 
-	-webkit-font-feature-settings:"frac" 1, "kern" 1; 
+	-moz-font-feature-settings:"frac" 1, "kern" 1;
+	-moz-font-feature-settings:"frac=1, kern=1";
+	-ms-font-feature-settings:"frac" 1, "kern" 1;
+	-o-font-feature-settings:"frac" 1, "kern" 1;
+	-webkit-font-feature-settings:"frac" 1, "kern" 1;
 	font-feature-settings:"frac" 1, "kern" 1;
 }
 .case {
-	-moz-font-feature-settings:"case" 1, "kern" 1; 
-	-moz-font-feature-settings:"case=1, kern=1"; 
-	-ms-font-feature-settings:"case" 1, "kern" 1; 
-	-o-font-feature-settings:"case" 1, "kern" 1; 
-	-webkit-font-feature-settings:"case" 1, "kern" 1; 
+	-moz-font-feature-settings:"case" 1, "kern" 1;
+	-moz-font-feature-settings:"case=1, kern=1";
+	-ms-font-feature-settings:"case" 1, "kern" 1;
+	-o-font-feature-settings:"case" 1, "kern" 1;
+	-webkit-font-feature-settings:"case" 1, "kern" 1;
 	font-feature-settings:"case" 1, "kern" 1;
 }
 
 .dlig {
-	-moz-font-feature-settings:"kern" 1, "liga" 1, "dlig" 1; 
-	-moz-font-feature-settings:"kern=1, liga=1, dlig=1"; 
-	-ms-font-feature-settings:"kern" 1, "liga" 1, "dlig" 1; 
-	-o-font-feature-settings:"kern" 1, "liga" 1, "dlig" 1; 
-	-webkit-font-feature-settings:"kern" 1, "liga" 1, "dlig" 1; 
+	-moz-font-feature-settings:"kern" 1, "liga" 1, "dlig" 1;
+	-moz-font-feature-settings:"kern=1, liga=1, dlig=1";
+	-ms-font-feature-settings:"kern" 1, "liga" 1, "dlig" 1;
+	-o-font-feature-settings:"kern" 1, "liga" 1, "dlig" 1;
+	-webkit-font-feature-settings:"kern" 1, "liga" 1, "dlig" 1;
 	font-feature-settings:"kern" 1, "liga" 1, "dlig" 1;
 }
 
 .nocalt {
-	-moz-font-feature-settings:"calt" 0, "kern" 1; 
-	-moz-font-feature-settings:"calt=0, kern=1"; 
-	-ms-font-feature-settings:"calt" 0, "kern" 1; 
-	-o-font-feature-settings:"calt" 0, "kern" 1; 
-	-webkit-font-feature-settings:"calt" 0, "kern" 1; 
+	-moz-font-feature-settings:"calt" 0, "kern" 1;
+	-moz-font-feature-settings:"calt=0, kern=1";
+	-ms-font-feature-settings:"calt" 0, "kern" 1;
+	-o-font-feature-settings:"calt" 0, "kern" 1;
+	-webkit-font-feature-settings:"calt" 0, "kern" 1;
 	font-feature-settings:"calt" 0, "kern" 1;
 }
 
 .ss01 {
-	-moz-font-feature-settings:"kern" 1, "liga" 1, "ss01" 1; 
-	-moz-font-feature-settings:"kern=1, liga=1, ss01=1"; 
-	-ms-font-feature-settings:"kern" 1, "liga" 1, "ss01" 1; 
-	-o-font-feature-settings:"kern" 1, "liga" 1, "ss01" 1; 
-	-webkit-font-feature-settings:"kern" 1, "liga" 1, "ss01" 1; 
+	-moz-font-feature-settings:"kern" 1, "liga" 1, "ss01" 1;
+	-moz-font-feature-settings:"kern=1, liga=1, ss01=1";
+	-ms-font-feature-settings:"kern" 1, "liga" 1, "ss01" 1;
+	-o-font-feature-settings:"kern" 1, "liga" 1, "ss01" 1;
+	-webkit-font-feature-settings:"kern" 1, "liga" 1, "ss01" 1;
 	font-feature-settings:"kern" 1, "liga" 1, "ss01" 1;
 }
 
 .ss02 {
-	-moz-font-feature-settings:"kern" 1, "liga" 1, "ss02" 1; 
-	-moz-font-feature-settings:"kern=1, liga=1, ss02=1"; 
-	-ms-font-feature-settings:"kern" 1, "liga" 1, "ss02" 1; 
-	-o-font-feature-settings:"kern" 1, "liga" 1, "ss02" 1; 
-	-webkit-font-feature-settings:"kern" 1, "liga" 1, "ss02" 1; 
+	-moz-font-feature-settings:"kern" 1, "liga" 1, "ss02" 1;
+	-moz-font-feature-settings:"kern=1, liga=1, ss02=1";
+	-ms-font-feature-settings:"kern" 1, "liga" 1, "ss02" 1;
+	-o-font-feature-settings:"kern" 1, "liga" 1, "ss02" 1;
+	-webkit-font-feature-settings:"kern" 1, "liga" 1, "ss02" 1;
 	font-feature-settings:"kern" 1, "liga" 1, "ss02" 1;
 }
 
 .ss0102 {
-	-moz-font-feature-settings:"kern" 1, "liga" 1, "ss01" 1, "ss02" 1; 
-	-moz-font-feature-settings:"kern=1, liga=1, ss01=1, ss02=1"; 
-	-ms-font-feature-settings:"kern" 1, "liga" 1, "ss01" 1, "ss02" 1; 
-	-o-font-feature-settings:"kern" 1, "liga" 1, "ss01" 1, "ss02" 1; 
-	-webkit-font-feature-settings:"kern" 1, "liga" 1, "ss01" 1, "ss02" 1; 
+	-moz-font-feature-settings:"kern" 1, "liga" 1, "ss01" 1, "ss02" 1;
+	-moz-font-feature-settings:"kern=1, liga=1, ss01=1, ss02=1";
+	-ms-font-feature-settings:"kern" 1, "liga" 1, "ss01" 1, "ss02" 1;
+	-o-font-feature-settings:"kern" 1, "liga" 1, "ss01" 1, "ss02" 1;
+	-webkit-font-feature-settings:"kern" 1, "liga" 1, "ss01" 1, "ss02" 1;
 	font-feature-settings:"kern" 1, "liga" 1, "ss01" 1, "ss02" 1;
 }
 
@@ -236,9 +309,11 @@ a:active {
 <body>
 <div id="bodytext">
 <span class="banner">Inknut Antiqua</span>
+<span class="banner">हरीतकी पुरानी शैली</span>
 <p>»Inknut Antiqua« is an Antiqua typeface for litterature and long-form text. It is designed to evoke Venetian incunabula and humanist manuscripts. It comes with a complement of typographical sorts and OpenType features for the purpose. The proportions of Inknut Antiqua make it well suited for low-resolution screens.
 <p>The Inknut (<a href="http://en.wikipedia.org/wiki/Terminalia_chebula">Terminalia chebula</a>) called »harad« in Hindi, is a nut-like fruit that can be used for <a href="http://www.nif.org.in/node/977">ink making</a> and is purported to cure blindness. The tree it grows from is native to the Indian sub-continent and south-east Asia.
-<p>Inknut Antiqua supports the following languages: Afrikaans, Albanian, Asu, Basque, Bemba, Bena, Bosnian, Catalan, Chiga, Congo Swahili, Cornish, Croatian, Czech, Danish, Dutch, English, Estonian, Faroese, Filipino, Finnish, French, Galician, Ganda, German, Gusii, Hungarian, Icelandic, Indonesian, Irish, Italian, Jola-Fonyi, Kabuverdianu, Kalenjin, Kinyarwanda, Latvian, Lithuanian, Luo, Luyia, Machame, Makhuwa-Meetto, Makonde, Malagasy, Malay, Maltese, Manx, Morisyen, North Ndebele, Norwegian Bokmål, Norwegian Nynorsk, Nyankole, <a href="http://www.youtube.com/watch?v=mdbG1bh_3x8">Nyankat</a>, Oromo, Polish, Portuguese, Romanian, Romansh, Rombo, Rundi, Rwa, Samburu, Sango, Sangu, Sena, Shambala, Shona, Slovak, Slovenian, Soga, Somali, Spanish, Swahili, Swedish, Swiss German, Taita, Teso, Turkmen, Vunjo, Welsh, and Zulu.
+<p>Inknut Antiqua supports the following languages using the Latin script: Afrikaans, Albanian, Asu, Basque, Bemba, Bena, Bosnian, Catalan, Chiga, Congo Swahili, Cornish, Croatian, Czech, Danish, Dutch, English, Estonian, Faroese, Filipino, Finnish, French, Galician, Ganda, German, Gusii, Hungarian, Icelandic, Indonesian, Irish, Italian, Jola-Fonyi, Kabuverdianu, Kalenjin, Kinyarwanda, Latvian, Lithuanian, Luo, Luyia, Machame, Makhuwa-Meetto, Makonde, Malagasy, Malay, Maltese, Manx, Morisyen, North Ndebele, Norwegian Bokmål, Norwegian Nynorsk, Nyankole, <a href="http://www.youtube.com/watch?v=mdbG1bh_3x8">Nyankat</a>, Oromo, Polish, Portuguese, Romanian, Romansh, Rombo, Rundi, Rwa, Samburu, Sango, Sangu, Sena, Shambala, Shona, Slovak, Slovenian, Soga, Somali, Spanish, Swahili, Swedish, Swiss German, Taita, Teso, Turkmen, Vunjo, Welsh, and Zulu.
+<p>Inknut Antiqua supports the following languages using the Devanagari script: Hindi, Marathi, Nepali, Maithili, Dogri, Bodo, Santhali, Goan Konkani, Maharashtrian Konkani, and Sanskrit.
 <p>Inknut Antiqua is designed by <a href="http://www.forthehearts.net">Claus Eggers Sørensen</a> in 2014, and is published under the <a href="http://scripts.sil.org/OFL">SIL Open Font License Version 1.1.</a>
 <p>Please use the <a href="http://www.mozilla.org/firefox/">Firefox</a> browser to view this specimen, as it contains <a href="https://www.typotheque.com/articles/opentype_features_in_web_browsers_-_tests#locl">OpenType-features that will only render in Firefox.</a></br></br>
 </p>
@@ -252,15 +327,15 @@ för&shy;fär&shy;lig £38.– ❧ živo&shy;ta 47µF &c. großen ↔ hafði sł
 <p><em>Majuscule</em></br>
 <span STYLE="word-wrap: break-word">AÁĂÂÄÀĀĄÅÃÆBCĆČÇĊDÐĎĐEÉĚÊËĖÈĒĘFGĞĢĠHĦIĲÍÎÏİÌĪĮJKĶLĹĽĻĿŁMNŃŇŅŊÑOÓÔÖÒŐŌØÕŒPÞQRŔŘŖSŚŠŞȘẞTŦŤŢȚUÚÛÜÙŰŪŲŮVWẂŴẄẀXYÝŶŸỲZŹŽŻ</span></br></br>
 <em>Minuscule</em></br>
-<span STYLE="word-wrap: break-word">aáăâäàāąåãæ<span class="ss01">aáăâäàāąåãæ</span>bcćčçċdðďđeéěêëėèēęfgğģġ<span class="ss02">gğģġ</span>hħiĳíîïi̇ìīįjkķlĺľļŀłmnńňņŋñoóôöòőōøõœpþqrŕřŗsśšşșßtŧťţțuúûüùűūųůvwẃŵẅẁxyýŷÿỳzźžż</span>
+<span STYLE="word-wrap: break-word">aáăâäàāąåãæ<span class="ss01">aáăâäàāąåãæ</span>bcćčçċdðďđeéěêëėèēęfgğģġ<span class="ss02">gğģġ</span>hħiĳíîïi̇ìīįjkķlĺľļŀłmnńňņŋñoóôöòőōøõœpþqrŕřŗsśšşșſßtŧťţțuúûüùűūųůvwẃŵẅẁxyýŷÿỳzźžż</span>
 </p>
 
 <h1>Ligatures</h1>
 <p><em>Standard ligatures</em></br>
-fi fì fį fï fj fä fö fð ff fb fh fk fķ fl fľ fļ</br>
-ffi ffì ffį ffï ffj ffä ffö ffð ffb ffh ffk ffķ ffl ffľ ffļ</br></br>
+fi fì fį fï fj fä fö fð ff fb fh fk fķ fl fľ fļ ſb ſh ſi ſk ſl ſſ ſt</br>
+ffi ffì ffį ffï ffj ffä ffö ffð ffb ffh ffk ffķ ffl ffľ ffļ ſſi ſſl</br></br>
 <em>Discretionary ligatures</em></br>
-<span class="dlig">Th</span>
+<span class="dlig">Th ct st</span>
 </p>
 
 <h1>Enumeration</h1>
@@ -305,7 +380,7 @@ ffi ffì ffį ffï ffj ffä ffö ffð ffb ffh ffk ffķ ffl ffľ ffļ</br></br>
 <em>Asterisk</em></br>
 * ⁑ ⁂</br></br>
 <em>Dividers</em></br>
-| ¦</br></br>
+। ¦</br></br>
 <em>At & Et</em></br>
 @ & <span class="case">&</span></br></br>
 <em>Markers</em></br>
@@ -338,11 +413,1710 @@ cel·la CEL·LA <span class="red">→</span> <span id="lang" lang="ca">cel·la C
 </p>
 
 <h1>Weights</h1>
-<p><em>Regular</em></br><span class="dlig">
+<p><em>Book</em></br><span class="dlig">
+<span style="font-weight:300;">Thė qűiçķ břòẅŋ føx jùmþş òvęŕ ŧħě łăžŷ ðöğ.</span></br></br>
+<em>Regular</em></br>
 <span style="font-weight:400;">Thė qűiçķ břòẅŋ føx jùmþş òvęŕ ŧħě łăžŷ ðöğ.</span></br></br>
+<em>Medium</em></br>
+<span style="font-weight:500;">Thė qűiçķ břòẅŋ føx jùmþş òvęŕ ŧħě łăžŷ ðöğ.</span></br></br>
+<em>Semi-Bold</em></br>
+<span style="font-weight:600;">Thė qűiçķ břòẅŋ føx jùmþş òvęŕ ŧħě łăžŷ ðöğ.</span></br></br>
 <em>Bold</em></br>
 <span style="font-weight:700;">Thė qűiçķ břòẅŋ føx jùmþş òvęŕ ŧħě łăžŷ ðöğ.</span></br></br>
+<em>Extra-Bold</em></br>
+<span style="font-weight:800;">Thė qűiçķ břòẅŋ føx jùmþş òvęŕ ŧħě łăžŷ ðöğ.</span></br></br>
+<em>Black</em></br>
+<span style="font-weight:900;">Thė qűiçķ břòẅŋ føx jùmþş òvęŕ ŧħě łăžŷ ðöğ.</span></br></br>
 </span></p>
+
+<h1>Devanagari characters</h1>
+<p><em>Hindi character set</em></br>
+<span STYLE="word-wrap: break-word">अ आ इ ई उ ऊ ऋ ए ऍ ऐ ओ ऑ औ क ख ग घ ङ च छ ज झ ञ ट ठ ड ढ ण थ द ध न प फ ब भ म र य र ल व श ष स ह<span></br></br>
+<em>Vovels</em></br>
+<span STYLE="word-wrap: break-word">ऄ अ आ इ ई उ ऊ ऋ ॠ ऌ ॡ ऎ ए ऐ ऒ ओ औ ॳ ॴ ॵ ॶ ॷॉ ॊ ो ौ ी ि</span></br></br>
+<em>Consonants</em></br>
+<span STYLE="word-wrap: break-word">क ख ग घ ङ च छ ज झ ञ ट ठ ड ढ ण त थ द ध न प फ ब भ म य र ऱ ल ळ व श ष स ह क़ ख़ ग़ ज़ ड़ ढ़ फ़ य़ ॹ ॻ ॼ ॾ ॿ</span></br></br>
+<em>Consonants with diacritics</em></br>
+<span STYLE="word-wrap: break-word">
+क का कि की कु कू कृ कॄ कॅ कॆ के कै कॉ कॊ को कौ कॢ कॣ कँ काँ किँ कीँ कुँ कूँ कृँ कॄँ कॅँ कॆँ केँ कैँ कॉँ कॊँ कोँ कौँ कॢँ कॣँ कं कां किं कीं कुं कूं कृं कॄं कॅं कॆं कें कैं कॉं कॊं कों कौं कॢं कॣं कः काः किः कीः कुः कूः कृः कॄः कॅः कॆः केः कैः कॉः कॊः कोः कौः कॢः कॣः र्क र्का र्कि र्की र्कु र्कू र्कृ र्कॄ र्कॅ र्कॆ र्के र्कै र्कॉ र्कॊ र्को र्कौ र्कॢ र्कॣ र्कँ र्काँ र्किँ र्कीँ र्कुँ र्कूँ र्कृँ र्कॄँ र्कॅँ र्कॆँ र्केँ र्कैँ र्कॉँ र्कॊँ र्कोँ र्कौँ र्कॢँ र्कॣँ र्कं र्कां र्किं र्कीं र्कुं र्कूं र्कृं र्कॄं र्कॅं र्कॆं र्कें र्कैं र्कॉं र्कॊं र्कों र्कौं र्कॢं र्कॣं र्कः र्काः र्किः र्कीः र्कुः र्कूः र्कृः र्कॄः र्कॅः र्कॆः र्केः र्कैः र्कॉः र्कॊः र्कोः र्कौः र्कॢः र्कॣः </br>
+</br>
+ख खा खि खी खु खू खृ खॄ खॅ खॆ खे खै खॉ खॊ खो खौ खॢ खॣ खँ खाँ खिँ खीँ खुँ खूँ खृँ खॄँ खॅँ खॆँ खेँ खैँ खॉँ खॊँ खोँ खौँ खॢँ खॣँ खं खां खिं खीं खुं खूं खृं खॄं खॅं खॆं खें खैं खॉं खॊं खों खौं खॢं खॣं खः खाः खिः खीः खुः खूः खृः खॄः खॅः खॆः खेः खैः खॉः खॊः खोः खौः खॢः खॣः र्ख र्खा र्खि र्खी र्खु र्खू र्खृ र्खॄ र्खॅ र्खॆ र्खे र्खै र्खॉ र्खॊ र्खो र्खौ र्खॢ र्खॣ र्खँ र्खाँ र्खिँ र्खीँ र्खुँ र्खूँ र्खृँ र्खॄँ र्खॅँ र्खॆँ र्खेँ र्खैँ र्खॉँ र्खॊँ र्खोँ र्खौँ र्खॢँ र्खॣँ र्खं र्खां र्खिं र्खीं र्खुं र्खूं र्खृं र्खॄं र्खॅं र्खॆं र्खें र्खैं र्खॉं र्खॊं र्खों र्खौं र्खॢं र्खॣं र्खः र्खाः र्खिः र्खीः र्खुः र्खूः र्खृः र्खॄः र्खॅः र्खॆः र्खेः र्खैः र्खॉः र्खॊः र्खोः र्खौः र्खॢः र्खॣः </br>
+</br>
+ग गा गि गी गु गू गृ गॄ गॅ गॆ गे गै गॉ गॊ गो गौ गॢ गॣ गँ गाँ गिँ गीँ गुँ गूँ गृँ गॄँ गॅँ गॆँ गेँ गैँ गॉँ गॊँ गोँ गौँ गॢँ गॣँ गं गां गिं गीं गुं गूं गृं गॄं गॅं गॆं गें गैं गॉं गॊं गों गौं गॢं गॣं गः गाः गिः गीः गुः गूः गृः गॄः गॅः गॆः गेः गैः गॉः गॊः गोः गौः गॢः गॣः र्ग र्गा र्गि र्गी र्गु र्गू र्गृ र्गॄ र्गॅ र्गॆ र्गे र्गै र्गॉ र्गॊ र्गो र्गौ र्गॢ र्गॣ र्गँ र्गाँ र्गिँ र्गीँ र्गुँ र्गूँ र्गृँ र्गॄँ र्गॅँ र्गॆँ र्गेँ र्गैँ र्गॉँ र्गॊँ र्गोँ र्गौँ र्गॢँ र्गॣँ र्गं र्गां र्गिं र्गीं र्गुं र्गूं र्गृं र्गॄं र्गॅं र्गॆं र्गें र्गैं र्गॉं र्गॊं र्गों र्गौं र्गॢं र्गॣं र्गः र्गाः र्गिः र्गीः र्गुः र्गूः र्गृः र्गॄः र्गॅः र्गॆः र्गेः र्गैः र्गॉः र्गॊः र्गोः र्गौः र्गॢः र्गॣः </br>
+</br>
+घ घा घि घी घु घू घृ घॄ घॅ घॆ घे घै घॉ घॊ घो घौ घॢ घॣ घँ घाँ घिँ घीँ घुँ घूँ घृँ घॄँ घॅँ घॆँ घेँ घैँ घॉँ घॊँ घोँ घौँ घॢँ घॣँ घं घां घिं घीं घुं घूं घृं घॄं घॅं घॆं घें घैं घॉं घॊं घों घौं घॢं घॣं घः घाः घिः घीः घुः घूः घृः घॄः घॅः घॆः घेः घैः घॉः घॊः घोः घौः घॢः घॣः र्घ र्घा र्घि र्घी र्घु र्घू र्घृ र्घॄ र्घॅ र्घॆ र्घे र्घै र्घॉ र्घॊ र्घो र्घौ र्घॢ र्घॣ र्घँ र्घाँ र्घिँ र्घीँ र्घुँ र्घूँ र्घृँ र्घॄँ र्घॅँ र्घॆँ र्घेँ र्घैँ र्घॉँ र्घॊँ र्घोँ र्घौँ र्घॢँ र्घॣँ र्घं र्घां र्घिं र्घीं र्घुं र्घूं र्घृं र्घॄं र्घॅं र्घॆं र्घें र्घैं र्घॉं र्घॊं र्घों र्घौं र्घॢं र्घॣं र्घः र्घाः र्घिः र्घीः र्घुः र्घूः र्घृः र्घॄः र्घॅः र्घॆः र्घेः र्घैः र्घॉः र्घॊः र्घोः र्घौः र्घॢः र्घॣः </br>
+</br>
+ङ ङा ङि ङी ङु ङू ङृ ङॄ ङॅ ङॆ ङे ङै ङॉ ङॊ ङो ङौ ङॢ ङॣ ङँ ङाँ ङिँ ङीँ ङुँ ङूँ ङृँ ङॄँ ङॅँ ङॆँ ङेँ ङैँ ङॉँ ङॊँ ङोँ ङौँ ङॢँ ङॣँ ङं ङां ङिं ङीं ङुं ङूं ङृं ङॄं ङॅं ङॆं ङें ङैं ङॉं ङॊं ङों ङौं ङॢं ङॣं ङः ङाः ङिः ङीः ङुः ङूः ङृः ङॄः ङॅः ङॆः ङेः ङैः ङॉः ङॊः ङोः ङौः ङॢः ङॣः र्ङ र्ङा र्ङि र्ङी र्ङु र्ङू र्ङृ र्ङॄ र्ङॅ र्ङॆ र्ङे र्ङै र्ङॉ र्ङॊ र्ङो र्ङौ र्ङॢ र्ङॣ र्ङँ र्ङाँ र्ङिँ र्ङीँ र्ङुँ र्ङूँ र्ङृँ र्ङॄँ र्ङॅँ र्ङॆँ र्ङेँ र्ङैँ र्ङॉँ र्ङॊँ र्ङोँ र्ङौँ र्ङॢँ र्ङॣँ र्ङं र्ङां र्ङिं र्ङीं र्ङुं र्ङूं र्ङृं र्ङॄं र्ङॅं र्ङॆं र्ङें र्ङैं र्ङॉं र्ङॊं र्ङों र्ङौं र्ङॢं र्ङॣं र्ङः र्ङाः र्ङिः र्ङीः र्ङुः र्ङूः र्ङृः र्ङॄः र्ङॅः र्ङॆः र्ङेः र्ङैः र्ङॉः र्ङॊः र्ङोः र्ङौः र्ङॢः र्ङॣः </br>
+</br>
+च चा चि ची चु चू चृ चॄ चॅ चॆ चे चै चॉ चॊ चो चौ चॢ चॣ चँ चाँ चिँ चीँ चुँ चूँ चृँ चॄँ चॅँ चॆँ चेँ चैँ चॉँ चॊँ चोँ चौँ चॢँ चॣँ चं चां चिं चीं चुं चूं चृं चॄं चॅं चॆं चें चैं चॉं चॊं चों चौं चॢं चॣं चः चाः चिः चीः चुः चूः चृः चॄः चॅः चॆः चेः चैः चॉः चॊः चोः चौः चॢः चॣः र्च र्चा र्चि र्ची र्चु र्चू र्चृ र्चॄ र्चॅ र्चॆ र्चे र्चै र्चॉ र्चॊ र्चो र्चौ र्चॢ र्चॣ र्चँ र्चाँ र्चिँ र्चीँ र्चुँ र्चूँ र्चृँ र्चॄँ र्चॅँ र्चॆँ र्चेँ र्चैँ र्चॉँ र्चॊँ र्चोँ र्चौँ र्चॢँ र्चॣँ र्चं र्चां र्चिं र्चीं र्चुं र्चूं र्चृं र्चॄं र्चॅं र्चॆं र्चें र्चैं र्चॉं र्चॊं र्चों र्चौं र्चॢं र्चॣं र्चः र्चाः र्चिः र्चीः र्चुः र्चूः र्चृः र्चॄः र्चॅः र्चॆः र्चेः र्चैः र्चॉः र्चॊः र्चोः र्चौः र्चॢः र्चॣः </br>
+</br>
+छ छा छि छी छु छू छृ छॄ छॅ छॆ छे छै छॉ छॊ छो छौ छॢ छॣ छँ छाँ छिँ छीँ छुँ छूँ छृँ छॄँ छॅँ छॆँ छेँ छैँ छॉँ छॊँ छोँ छौँ छॢँ छॣँ छं छां छिं छीं छुं छूं छृं छॄं छॅं छॆं छें छैं छॉं छॊं छों छौं छॢं छॣं छः छाः छिः छीः छुः छूः छृः छॄः छॅः छॆः छेः छैः छॉः छॊः छोः छौः छॢः छॣः र्छ र्छा र्छि र्छी र्छु र्छू र्छृ र्छॄ र्छॅ र्छॆ र्छे र्छै र्छॉ र्छॊ र्छो र्छौ र्छॢ र्छॣ र्छँ र्छाँ र्छिँ र्छीँ र्छुँ र्छूँ र्छृँ र्छॄँ र्छॅँ र्छॆँ र्छेँ र्छैँ र्छॉँ र्छॊँ र्छोँ र्छौँ र्छॢँ र्छॣँ र्छं र्छां र्छिं र्छीं र्छुं र्छूं र्छृं र्छॄं र्छॅं र्छॆं र्छें र्छैं र्छॉं र्छॊं र्छों र्छौं र्छॢं र्छॣं र्छः र्छाः र्छिः र्छीः र्छुः र्छूः र्छृः र्छॄः र्छॅः र्छॆः र्छेः र्छैः र्छॉः र्छॊः र्छोः र्छौः र्छॢः र्छॣः </br>
+</br>
+ज जा जि जी जु जू जृ जॄ जॅ जॆ जे जै जॉ जॊ जो जौ जॢ जॣ जँ जाँ जिँ जीँ जुँ जूँ जृँ जॄँ जॅँ जॆँ जेँ जैँ जॉँ जॊँ जोँ जौँ जॢँ जॣँ जं जां जिं जीं जुं जूं जृं जॄं जॅं जॆं जें जैं जॉं जॊं जों जौं जॢं जॣं जः जाः जिः जीः जुः जूः जृः जॄः जॅः जॆः जेः जैः जॉः जॊः जोः जौः जॢः जॣः र्ज र्जा र्जि र्जी र्जु र्जू र्जृ र्जॄ र्जॅ र्जॆ र्जे र्जै र्जॉ र्जॊ र्जो र्जौ र्जॢ र्जॣ र्जँ र्जाँ र्जिँ र्जीँ र्जुँ र्जूँ र्जृँ र्जॄँ र्जॅँ र्जॆँ र्जेँ र्जैँ र्जॉँ र्जॊँ र्जोँ र्जौँ र्जॢँ र्जॣँ र्जं र्जां र्जिं र्जीं र्जुं र्जूं र्जृं र्जॄं र्जॅं र्जॆं र्जें र्जैं र्जॉं र्जॊं र्जों र्जौं र्जॢं र्जॣं र्जः र्जाः र्जिः र्जीः र्जुः र्जूः र्जृः र्जॄः र्जॅः र्जॆः र्जेः र्जैः र्जॉः र्जॊः र्जोः र्जौः र्जॢः र्जॣः </br>
+</br>
+झ झा झि झी झु झू झृ झॄ झॅ झॆ झे झै झॉ झॊ झो झौ झॢ झॣ झँ झाँ झिँ झीँ झुँ झूँ झृँ झॄँ झॅँ झॆँ झेँ झैँ झॉँ झॊँ झोँ झौँ झॢँ झॣँ झं झां झिं झीं झुं झूं झृं झॄं झॅं झॆं झें झैं झॉं झॊं झों झौं झॢं झॣं झः झाः झिः झीः झुः झूः झृः झॄः झॅः झॆः झेः झैः झॉः झॊः झोः झौः झॢः झॣः र्झ र्झा र्झि र्झी र्झु र्झू र्झृ र्झॄ र्झॅ र्झॆ र्झे र्झै र्झॉ र्झॊ र्झो र्झौ र्झॢ र्झॣ र्झँ र्झाँ र्झिँ र्झीँ र्झुँ र्झूँ र्झृँ र्झॄँ र्झॅँ र्झॆँ र्झेँ र्झैँ र्झॉँ र्झॊँ र्झोँ र्झौँ र्झॢँ र्झॣँ र्झं र्झां र्झिं र्झीं र्झुं र्झूं र्झृं र्झॄं र्झॅं र्झॆं र्झें र्झैं र्झॉं र्झॊं र्झों र्झौं र्झॢं र्झॣं र्झः र्झाः र्झिः र्झीः र्झुः र्झूः र्झृः र्झॄः र्झॅः र्झॆः र्झेः र्झैः र्झॉः र्झॊः र्झोः र्झौः र्झॢः र्झॣः </br>
+</br>
+ञ ञा ञि ञी ञु ञू ञृ ञॄ ञॅ ञॆ ञे ञै ञॉ ञॊ ञो ञौ ञॢ ञॣ ञँ ञाँ ञिँ ञीँ ञुँ ञूँ ञृँ ञॄँ ञॅँ ञॆँ ञेँ ञैँ ञॉँ ञॊँ ञोँ ञौँ ञॢँ ञॣँ ञं ञां ञिं ञीं ञुं ञूं ञृं ञॄं ञॅं ञॆं ञें ञैं ञॉं ञॊं ञों ञौं ञॢं ञॣं ञः ञाः ञिः ञीः ञुः ञूः ञृः ञॄः ञॅः ञॆः ञेः ञैः ञॉः ञॊः ञोः ञौः ञॢः ञॣः र्ञ र्ञा र्ञि र्ञी र्ञु र्ञू र्ञृ र्ञॄ र्ञॅ र्ञॆ र्ञे र्ञै र्ञॉ र्ञॊ र्ञो र्ञौ र्ञॢ र्ञॣ र्ञँ र्ञाँ र्ञिँ र्ञीँ र्ञुँ र्ञूँ र्ञृँ र्ञॄँ र्ञॅँ र्ञॆँ र्ञेँ र्ञैँ र्ञॉँ र्ञॊँ र्ञोँ र्ञौँ र्ञॢँ र्ञॣँ र्ञं र्ञां र्ञिं र्ञीं र्ञुं र्ञूं र्ञृं र्ञॄं र्ञॅं र्ञॆं र्ञें र्ञैं र्ञॉं र्ञॊं र्ञों र्ञौं र्ञॢं र्ञॣं र्ञः र्ञाः र्ञिः र्ञीः र्ञुः र्ञूः र्ञृः र्ञॄः र्ञॅः र्ञॆः र्ञेः र्ञैः र्ञॉः र्ञॊः र्ञोः र्ञौः र्ञॢः र्ञॣः </br>
+</br>
+ट टा टि टी टु टू टृ टॄ टॅ टॆ टे टै टॉ टॊ टो टौ टॢ टॣ टँ टाँ टिँ टीँ टुँ टूँ टृँ टॄँ टॅँ टॆँ टेँ टैँ टॉँ टॊँ टोँ टौँ टॢँ टॣँ टं टां टिं टीं टुं टूं टृं टॄं टॅं टॆं टें टैं टॉं टॊं टों टौं टॢं टॣं टः टाः टिः टीः टुः टूः टृः टॄः टॅः टॆः टेः टैः टॉः टॊः टोः टौः टॢः टॣः र्ट र्टा र्टि र्टी र्टु र्टू र्टृ र्टॄ र्टॅ र्टॆ र्टे र्टै र्टॉ र्टॊ र्टो र्टौ र्टॢ र्टॣ र्टँ र्टाँ र्टिँ र्टीँ र्टुँ र्टूँ र्टृँ र्टॄँ र्टॅँ र्टॆँ र्टेँ र्टैँ र्टॉँ र्टॊँ र्टोँ र्टौँ र्टॢँ र्टॣँ र्टं र्टां र्टिं र्टीं र्टुं र्टूं र्टृं र्टॄं र्टॅं र्टॆं र्टें र्टैं र्टॉं र्टॊं र्टों र्टौं र्टॢं र्टॣं र्टः र्टाः र्टिः र्टीः र्टुः र्टूः र्टृः र्टॄः र्टॅः र्टॆः र्टेः र्टैः र्टॉः र्टॊः र्टोः र्टौः र्टॢः र्टॣः </br>
+</br>
+ठ ठा ठि ठी ठु ठू ठृ ठॄ ठॅ ठॆ ठे ठै ठॉ ठॊ ठो ठौ ठॢ ठॣ ठँ ठाँ ठिँ ठीँ ठुँ ठूँ ठृँ ठॄँ ठॅँ ठॆँ ठेँ ठैँ ठॉँ ठॊँ ठोँ ठौँ ठॢँ ठॣँ ठं ठां ठिं ठीं ठुं ठूं ठृं ठॄं ठॅं ठॆं ठें ठैं ठॉं ठॊं ठों ठौं ठॢं ठॣं ठः ठाः ठिः ठीः ठुः ठूः ठृः ठॄः ठॅः ठॆः ठेः ठैः ठॉः ठॊः ठोः ठौः ठॢः ठॣः र्ठ र्ठा र्ठि र्ठी र्ठु र्ठू र्ठृ र्ठॄ र्ठॅ र्ठॆ र्ठे र्ठै र्ठॉ र्ठॊ र्ठो र्ठौ र्ठॢ र्ठॣ र्ठँ र्ठाँ र्ठिँ र्ठीँ र्ठुँ र्ठूँ र्ठृँ र्ठॄँ र्ठॅँ र्ठॆँ र्ठेँ र्ठैँ र्ठॉँ र्ठॊँ र्ठोँ र्ठौँ र्ठॢँ र्ठॣँ र्ठं र्ठां र्ठिं र्ठीं र्ठुं र्ठूं र्ठृं र्ठॄं र्ठॅं र्ठॆं र्ठें र्ठैं र्ठॉं र्ठॊं र्ठों र्ठौं र्ठॢं र्ठॣं र्ठः र्ठाः र्ठिः र्ठीः र्ठुः र्ठूः र्ठृः र्ठॄः र्ठॅः र्ठॆः र्ठेः र्ठैः र्ठॉः र्ठॊः र्ठोः र्ठौः र्ठॢः र्ठॣः </br>
+</br>
+ड डा डि डी डु डू डृ डॄ डॅ डॆ डे डै डॉ डॊ डो डौ डॢ डॣ डँ डाँ डिँ डीँ डुँ डूँ डृँ डॄँ डॅँ डॆँ डेँ डैँ डॉँ डॊँ डोँ डौँ डॢँ डॣँ डं डां डिं डीं डुं डूं डृं डॄं डॅं डॆं डें डैं डॉं डॊं डों डौं डॢं डॣं डः डाः डिः डीः डुः डूः डृः डॄः डॅः डॆः डेः डैः डॉः डॊः डोः डौः डॢः डॣः र्ड र्डा र्डि र्डी र्डु र्डू र्डृ र्डॄ र्डॅ र्डॆ र्डे र्डै र्डॉ र्डॊ र्डो र्डौ र्डॢ र्डॣ र्डँ र्डाँ र्डिँ र्डीँ र्डुँ र्डूँ र्डृँ र्डॄँ र्डॅँ र्डॆँ र्डेँ र्डैँ र्डॉँ र्डॊँ र्डोँ र्डौँ र्डॢँ र्डॣँ र्डं र्डां र्डिं र्डीं र्डुं र्डूं र्डृं र्डॄं र्डॅं र्डॆं र्डें र्डैं र्डॉं र्डॊं र्डों र्डौं र्डॢं र्डॣं र्डः र्डाः र्डिः र्डीः र्डुः र्डूः र्डृः र्डॄः र्डॅः र्डॆः र्डेः र्डैः र्डॉः र्डॊः र्डोः र्डौः र्डॢः र्डॣः </br>
+</br>
+ढ ढा ढि ढी ढु ढू ढृ ढॄ ढॅ ढॆ ढे ढै ढॉ ढॊ ढो ढौ ढॢ ढॣ ढँ ढाँ ढिँ ढीँ ढुँ ढूँ ढृँ ढॄँ ढॅँ ढॆँ ढेँ ढैँ ढॉँ ढॊँ ढोँ ढौँ ढॢँ ढॣँ ढं ढां ढिं ढीं ढुं ढूं ढृं ढॄं ढॅं ढॆं ढें ढैं ढॉं ढॊं ढों ढौं ढॢं ढॣं ढः ढाः ढिः ढीः ढुः ढूः ढृः ढॄः ढॅः ढॆः ढेः ढैः ढॉः ढॊः ढोः ढौः ढॢः ढॣः र्ढ र्ढा र्ढि र्ढी र्ढु र्ढू र्ढृ र्ढॄ र्ढॅ र्ढॆ र्ढे र्ढै र्ढॉ र्ढॊ र्ढो र्ढौ र्ढॢ र्ढॣ र्ढँ र्ढाँ र्ढिँ र्ढीँ र्ढुँ र्ढूँ र्ढृँ र्ढॄँ र्ढॅँ र्ढॆँ र्ढेँ र्ढैँ र्ढॉँ र्ढॊँ र्ढोँ र्ढौँ र्ढॢँ र्ढॣँ र्ढं र्ढां र्ढिं र्ढीं र्ढुं र्ढूं र्ढृं र्ढॄं र्ढॅं र्ढॆं र्ढें र्ढैं र्ढॉं र्ढॊं र्ढों र्ढौं र्ढॢं र्ढॣं र्ढः र्ढाः र्ढिः र्ढीः र्ढुः र्ढूः र्ढृः र्ढॄः र्ढॅः र्ढॆः र्ढेः र्ढैः र्ढॉः र्ढॊः र्ढोः र्ढौः र्ढॢः र्ढॣः </br>
+</br>
+ण णा णि णी णु णू णृ णॄ णॅ णॆ णे णै णॉ णॊ णो णौ णॢ णॣ णँ णाँ णिँ णीँ णुँ णूँ णृँ णॄँ णॅँ णॆँ णेँ णैँ णॉँ णॊँ णोँ णौँ णॢँ णॣँ णं णां णिं णीं णुं णूं णृं णॄं णॅं णॆं णें णैं णॉं णॊं णों णौं णॢं णॣं णः णाः णिः णीः णुः णूः णृः णॄः णॅः णॆः णेः णैः णॉः णॊः णोः णौः णॢः णॣः र्ण र्णा र्णि र्णी र्णु र्णू र्णृ र्णॄ र्णॅ र्णॆ र्णे र्णै र्णॉ र्णॊ र्णो र्णौ र्णॢ र्णॣ र्णँ र्णाँ र्णिँ र्णीँ र्णुँ र्णूँ र्णृँ र्णॄँ र्णॅँ र्णॆँ र्णेँ र्णैँ र्णॉँ र्णॊँ र्णोँ र्णौँ र्णॢँ र्णॣँ र्णं र्णां र्णिं र्णीं र्णुं र्णूं र्णृं र्णॄं र्णॅं र्णॆं र्णें र्णैं र्णॉं र्णॊं र्णों र्णौं र्णॢं र्णॣं र्णः र्णाः र्णिः र्णीः र्णुः र्णूः र्णृः र्णॄः र्णॅः र्णॆः र्णेः र्णैः र्णॉः र्णॊः र्णोः र्णौः र्णॢः र्णॣः </br>
+</br>
+त ता ति ती तु तू तृ तॄ तॅ तॆ ते तै तॉ तॊ तो तौ तॢ तॣ तँ ताँ तिँ तीँ तुँ तूँ तृँ तॄँ तॅँ तॆँ तेँ तैँ तॉँ तॊँ तोँ तौँ तॢँ तॣँ तं तां तिं तीं तुं तूं तृं तॄं तॅं तॆं तें तैं तॉं तॊं तों तौं तॢं तॣं तः ताः तिः तीः तुः तूः तृः तॄः तॅः तॆः तेः तैः तॉः तॊः तोः तौः तॢः तॣः र्त र्ता र्ति र्ती र्तु र्तू र्तृ र्तॄ र्तॅ र्तॆ र्ते र्तै र्तॉ र्तॊ र्तो र्तौ र्तॢ र्तॣ र्तँ र्ताँ र्तिँ र्तीँ र्तुँ र्तूँ र्तृँ र्तॄँ र्तॅँ र्तॆँ र्तेँ र्तैँ र्तॉँ र्तॊँ र्तोँ र्तौँ र्तॢँ र्तॣँ र्तं र्तां र्तिं र्तीं र्तुं र्तूं र्तृं र्तॄं र्तॅं र्तॆं र्तें र्तैं र्तॉं र्तॊं र्तों र्तौं र्तॢं र्तॣं र्तः र्ताः र्तिः र्तीः र्तुः र्तूः र्तृः र्तॄः र्तॅः र्तॆः र्तेः र्तैः र्तॉः र्तॊः र्तोः र्तौः र्तॢः र्तॣः </br>
+</br>
+थ था थि थी थु थू थृ थॄ थॅ थॆ थे थै थॉ थॊ थो थौ थॢ थॣ थँ थाँ थिँ थीँ थुँ थूँ थृँ थॄँ थॅँ थॆँ थेँ थैँ थॉँ थॊँ थोँ थौँ थॢँ थॣँ थं थां थिं थीं थुं थूं थृं थॄं थॅं थॆं थें थैं थॉं थॊं थों थौं थॢं थॣं थः थाः थिः थीः थुः थूः थृः थॄः थॅः थॆः थेः थैः थॉः थॊः थोः थौः थॢः थॣः र्थ र्था र्थि र्थी र्थु र्थू र्थृ र्थॄ र्थॅ र्थॆ र्थे र्थै र्थॉ र्थॊ र्थो र्थौ र्थॢ र्थॣ र्थँ र्थाँ र्थिँ र्थीँ र्थुँ र्थूँ र्थृँ र्थॄँ र्थॅँ र्थॆँ र्थेँ र्थैँ र्थॉँ र्थॊँ र्थोँ र्थौँ र्थॢँ र्थॣँ र्थं र्थां र्थिं र्थीं र्थुं र्थूं र्थृं र्थॄं र्थॅं र्थॆं र्थें र्थैं र्थॉं र्थॊं र्थों र्थौं र्थॢं र्थॣं र्थः र्थाः र्थिः र्थीः र्थुः र्थूः र्थृः र्थॄः र्थॅः र्थॆः र्थेः र्थैः र्थॉः र्थॊः र्थोः र्थौः र्थॢः र्थॣः </br>
+</br>
+द दा दि दी दु दू दृ दॄ दॅ दॆ दे दै दॉ दॊ दो दौ दॢ दॣ दँ दाँ दिँ दीँ दुँ दूँ दृँ दॄँ दॅँ दॆँ देँ दैँ दॉँ दॊँ दोँ दौँ दॢँ दॣँ दं दां दिं दीं दुं दूं दृं दॄं दॅं दॆं दें दैं दॉं दॊं दों दौं दॢं दॣं दः दाः दिः दीः दुः दूः दृः दॄः दॅः दॆः देः दैः दॉः दॊः दोः दौः दॢः दॣः र्द र्दा र्दि र्दी र्दु र्दू र्दृ र्दॄ र्दॅ र्दॆ र्दे र्दै र्दॉ र्दॊ र्दो र्दौ र्दॢ र्दॣ र्दँ र्दाँ र्दिँ र्दीँ र्दुँ र्दूँ र्दृँ र्दॄँ र्दॅँ र्दॆँ र्देँ र्दैँ र्दॉँ र्दॊँ र्दोँ र्दौँ र्दॢँ र्दॣँ र्दं र्दां र्दिं र्दीं र्दुं र्दूं र्दृं र्दॄं र्दॅं र्दॆं र्दें र्दैं र्दॉं र्दॊं र्दों र्दौं र्दॢं र्दॣं र्दः र्दाः र्दिः र्दीः र्दुः र्दूः र्दृः र्दॄः र्दॅः र्दॆः र्देः र्दैः र्दॉः र्दॊः र्दोः र्दौः र्दॢः र्दॣः </br>
+</br>
+ध धा धि धी धु धू धृ धॄ धॅ धॆ धे धै धॉ धॊ धो धौ धॢ धॣ धँ धाँ धिँ धीँ धुँ धूँ धृँ धॄँ धॅँ धॆँ धेँ धैँ धॉँ धॊँ धोँ धौँ धॢँ धॣँ धं धां धिं धीं धुं धूं धृं धॄं धॅं धॆं धें धैं धॉं धॊं धों धौं धॢं धॣं धः धाः धिः धीः धुः धूः धृः धॄः धॅः धॆः धेः धैः धॉः धॊः धोः धौः धॢः धॣः र्ध र्धा र्धि र्धी र्धु र्धू र्धृ र्धॄ र्धॅ र्धॆ र्धे र्धै र्धॉ र्धॊ र्धो र्धौ र्धॢ र्धॣ र्धँ र्धाँ र्धिँ र्धीँ र्धुँ र्धूँ र्धृँ र्धॄँ र्धॅँ र्धॆँ र्धेँ र्धैँ र्धॉँ र्धॊँ र्धोँ र्धौँ र्धॢँ र्धॣँ र्धं र्धां र्धिं र्धीं र्धुं र्धूं र्धृं र्धॄं र्धॅं र्धॆं र्धें र्धैं र्धॉं र्धॊं र्धों र्धौं र्धॢं र्धॣं र्धः र्धाः र्धिः र्धीः र्धुः र्धूः र्धृः र्धॄः र्धॅः र्धॆः र्धेः र्धैः र्धॉः र्धॊः र्धोः र्धौः र्धॢः र्धॣः </br>
+</br>
+न ना नि नी नु नू नृ नॄ नॅ नॆ ने नै नॉ नॊ नो नौ नॢ नॣ नँ नाँ निँ नीँ नुँ नूँ नृँ नॄँ नॅँ नॆँ नेँ नैँ नॉँ नॊँ नोँ नौँ नॢँ नॣँ नं नां निं नीं नुं नूं नृं नॄं नॅं नॆं नें नैं नॉं नॊं नों नौं नॢं नॣं नः नाः निः नीः नुः नूः नृः नॄः नॅः नॆः नेः नैः नॉः नॊः नोः नौः नॢः नॣः र्न र्ना र्नि र्नी र्नु र्नू र्नृ र्नॄ र्नॅ र्नॆ र्ने र्नै र्नॉ र्नॊ र्नो र्नौ र्नॢ र्नॣ र्नँ र्नाँ र्निँ र्नीँ र्नुँ र्नूँ र्नृँ र्नॄँ र्नॅँ र्नॆँ र्नेँ र्नैँ र्नॉँ र्नॊँ र्नोँ र्नौँ र्नॢँ र्नॣँ र्नं र्नां र्निं र्नीं र्नुं र्नूं र्नृं र्नॄं र्नॅं र्नॆं र्नें र्नैं र्नॉं र्नॊं र्नों र्नौं र्नॢं र्नॣं र्नः र्नाः र्निः र्नीः र्नुः र्नूः र्नृः र्नॄः र्नॅः र्नॆः र्नेः र्नैः र्नॉः र्नॊः र्नोः र्नौः र्नॢः र्नॣः </br>
+</br>
+ऩ ऩा ऩि ऩी ऩु ऩू ऩृ ऩॄ ऩॅ ऩॆ ऩे ऩै ऩॉ ऩॊ ऩो ऩौ ऩॢ ऩॣ ऩँ ऩाँ ऩिँ ऩीँ ऩुँ ऩूँ ऩृँ ऩॄँ ऩॅँ ऩॆँ ऩेँ ऩैँ ऩॉँ ऩॊँ ऩोँ ऩौँ ऩॢँ ऩॣँ ऩं ऩां ऩिं ऩीं ऩुं ऩूं ऩृं ऩॄं ऩॅं ऩॆं ऩें ऩैं ऩॉं ऩॊं ऩों ऩौं ऩॢं ऩॣं ऩः ऩाः ऩिः ऩीः ऩुः ऩूः ऩृः ऩॄः ऩॅः ऩॆः ऩेः ऩैः ऩॉः ऩॊः ऩोः ऩौः ऩॢः ऩॣः र्ऩ र्ऩा र्ऩि र्ऩी र्ऩु र्ऩू र्ऩृ र्ऩॄ र्ऩॅ र्ऩॆ र्ऩे र्ऩै र्ऩॉ र्ऩॊ र्ऩो र्ऩौ र्ऩॢ र्ऩॣ र्ऩँ र्ऩाँ र्ऩिँ र्ऩीँ र्ऩुँ र्ऩूँ र्ऩृँ र्ऩॄँ र्ऩॅँ र्ऩॆँ र्ऩेँ र्ऩैँ र्ऩॉँ र्ऩॊँ र्ऩोँ र्ऩौँ र्ऩॢँ र्ऩॣँ र्ऩं र्ऩां र्ऩिं र्ऩीं र्ऩुं र्ऩूं र्ऩृं र्ऩॄं र्ऩॅं र्ऩॆं र्ऩें र्ऩैं र्ऩॉं र्ऩॊं र्ऩों र्ऩौं र्ऩॢं र्ऩॣं र्ऩः र्ऩाः र्ऩिः र्ऩीः र्ऩुः र्ऩूः र्ऩृः र्ऩॄः र्ऩॅः र्ऩॆः र्ऩेः र्ऩैः र्ऩॉः र्ऩॊः र्ऩोः र्ऩौः र्ऩॢः र्ऩॣः </br>
+</br>
+प पा पि पी पु पू पृ पॄ पॅ पॆ पे पै पॉ पॊ पो पौ पॢ पॣ पँ पाँ पिँ पीँ पुँ पूँ पृँ पॄँ पॅँ पॆँ पेँ पैँ पॉँ पॊँ पोँ पौँ पॢँ पॣँ पं पां पिं पीं पुं पूं पृं पॄं पॅं पॆं पें पैं पॉं पॊं पों पौं पॢं पॣं पः पाः पिः पीः पुः पूः पृः पॄः पॅः पॆः पेः पैः पॉः पॊः पोः पौः पॢः पॣः र्प र्पा र्पि र्पी र्पु र्पू र्पृ र्पॄ र्पॅ र्पॆ र्पे र्पै र्पॉ र्पॊ र्पो र्पौ र्पॢ र्पॣ र्पँ र्पाँ र्पिँ र्पीँ र्पुँ र्पूँ र्पृँ र्पॄँ र्पॅँ र्पॆँ र्पेँ र्पैँ र्पॉँ र्पॊँ र्पोँ र्पौँ र्पॢँ र्पॣँ र्पं र्पां र्पिं र्पीं र्पुं र्पूं र्पृं र्पॄं र्पॅं र्पॆं र्पें र्पैं र्पॉं र्पॊं र्पों र्पौं र्पॢं र्पॣं र्पः र्पाः र्पिः र्पीः र्पुः र्पूः र्पृः र्पॄः र्पॅः र्पॆः र्पेः र्पैः र्पॉः र्पॊः र्पोः र्पौः र्पॢः र्पॣः </br>
+</br>
+फ फा फि फी फु फू फृ फॄ फॅ फॆ फे फै फॉ फॊ फो फौ फॢ फॣ फँ फाँ फिँ फीँ फुँ फूँ फृँ फॄँ फॅँ फॆँ फेँ फैँ फॉँ फॊँ फोँ फौँ फॢँ फॣँ फं फां फिं फीं फुं फूं फृं फॄं फॅं फॆं फें फैं फॉं फॊं फों फौं फॢं फॣं फः फाः फिः फीः फुः फूः फृः फॄः फॅः फॆः फेः फैः फॉः फॊः फोः फौः फॢः फॣः र्फ र्फा र्फि र्फी र्फु र्फू र्फृ र्फॄ र्फॅ र्फॆ र्फे र्फै र्फॉ र्फॊ र्फो र्फौ र्फॢ र्फॣ र्फँ र्फाँ र्फिँ र्फीँ र्फुँ र्फूँ र्फृँ र्फॄँ र्फॅँ र्फॆँ र्फेँ र्फैँ र्फॉँ र्फॊँ र्फोँ र्फौँ र्फॢँ र्फॣँ र्फं र्फां र्फिं र्फीं र्फुं र्फूं र्फृं र्फॄं र्फॅं र्फॆं र्फें र्फैं र्फॉं र्फॊं र्फों र्फौं र्फॢं र्फॣं र्फः र्फाः र्फिः र्फीः र्फुः र्फूः र्फृः र्फॄः र्फॅः र्फॆः र्फेः र्फैः र्फॉः र्फॊः र्फोः र्फौः र्फॢः र्फॣः </br>
+</br>
+ब बा बि बी बु बू बृ बॄ बॅ बॆ बे बै बॉ बॊ बो बौ बॢ बॣ बँ बाँ बिँ बीँ बुँ बूँ बृँ बॄँ बॅँ बॆँ बेँ बैँ बॉँ बॊँ बोँ बौँ बॢँ बॣँ बं बां बिं बीं बुं बूं बृं बॄं बॅं बॆं बें बैं बॉं बॊं बों बौं बॢं बॣं बः बाः बिः बीः बुः बूः बृः बॄः बॅः बॆः बेः बैः बॉः बॊः बोः बौः बॢः बॣः र्ब र्बा र्बि र्बी र्बु र्बू र्बृ र्बॄ र्बॅ र्बॆ र्बे र्बै र्बॉ र्बॊ र्बो र्बौ र्बॢ र्बॣ र्बँ र्बाँ र्बिँ र्बीँ र्बुँ र्बूँ र्बृँ र्बॄँ र्बॅँ र्बॆँ र्बेँ र्बैँ र्बॉँ र्बॊँ र्बोँ र्बौँ र्बॢँ र्बॣँ र्बं र्बां र्बिं र्बीं र्बुं र्बूं र्बृं र्बॄं र्बॅं र्बॆं र्बें र्बैं र्बॉं र्बॊं र्बों र्बौं र्बॢं र्बॣं र्बः र्बाः र्बिः र्बीः र्बुः र्बूः र्बृः र्बॄः र्बॅः र्बॆः र्बेः र्बैः र्बॉः र्बॊः र्बोः र्बौः र्बॢः र्बॣः </br>
+</br>
+भ भा भि भी भु भू भृ भॄ भॅ भॆ भे भै भॉ भॊ भो भौ भॢ भॣ भँ भाँ भिँ भीँ भुँ भूँ भृँ भॄँ भॅँ भॆँ भेँ भैँ भॉँ भॊँ भोँ भौँ भॢँ भॣँ भं भां भिं भीं भुं भूं भृं भॄं भॅं भॆं भें भैं भॉं भॊं भों भौं भॢं भॣं भः भाः भिः भीः भुः भूः भृः भॄः भॅः भॆः भेः भैः भॉः भॊः भोः भौः भॢः भॣः र्भ र्भा र्भि र्भी र्भु र्भू र्भृ र्भॄ र्भॅ र्भॆ र्भे र्भै र्भॉ र्भॊ र्भो र्भौ र्भॢ र्भॣ र्भँ र्भाँ र्भिँ र्भीँ र्भुँ र्भूँ र्भृँ र्भॄँ र्भॅँ र्भॆँ र्भेँ र्भैँ र्भॉँ र्भॊँ र्भोँ र्भौँ र्भॢँ र्भॣँ र्भं र्भां र्भिं र्भीं र्भुं र्भूं र्भृं र्भॄं र्भॅं र्भॆं र्भें र्भैं र्भॉं र्भॊं र्भों र्भौं र्भॢं र्भॣं र्भः र्भाः र्भिः र्भीः र्भुः र्भूः र्भृः र्भॄः र्भॅः र्भॆः र्भेः र्भैः र्भॉः र्भॊः र्भोः र्भौः र्भॢः र्भॣः </br>
+</br>
+म मा मि मी मु मू मृ मॄ मॅ मॆ मे मै मॉ मॊ मो मौ मॢ मॣ मँ माँ मिँ मीँ मुँ मूँ मृँ मॄँ मॅँ मॆँ मेँ मैँ मॉँ मॊँ मोँ मौँ मॢँ मॣँ मं मां मिं मीं मुं मूं मृं मॄं मॅं मॆं में मैं मॉं मॊं मों मौं मॢं मॣं मः माः मिः मीः मुः मूः मृः मॄः मॅः मॆः मेः मैः मॉः मॊः मोः मौः मॢः मॣः र्म र्मा र्मि र्मी र्मु र्मू र्मृ र्मॄ र्मॅ र्मॆ र्मे र्मै र्मॉ र्मॊ र्मो र्मौ र्मॢ र्मॣ र्मँ र्माँ र्मिँ र्मीँ र्मुँ र्मूँ र्मृँ र्मॄँ र्मॅँ र्मॆँ र्मेँ र्मैँ र्मॉँ र्मॊँ र्मोँ र्मौँ र्मॢँ र्मॣँ र्मं र्मां र्मिं र्मीं र्मुं र्मूं र्मृं र्मॄं र्मॅं र्मॆं र्में र्मैं र्मॉं र्मॊं र्मों र्मौं र्मॢं र्मॣं र्मः र्माः र्मिः र्मीः र्मुः र्मूः र्मृः र्मॄः र्मॅः र्मॆः र्मेः र्मैः र्मॉः र्मॊः र्मोः र्मौः र्मॢः र्मॣः </br>
+</br>
+य या यि यी यु यू यृ यॄ यॅ यॆ ये यै यॉ यॊ यो यौ यॢ यॣ यँ याँ यिँ यीँ युँ यूँ यृँ यॄँ यॅँ यॆँ येँ यैँ यॉँ यॊँ योँ यौँ यॢँ यॣँ यं यां यिं यीं युं यूं यृं यॄं यॅं यॆं यें यैं यॉं यॊं यों यौं यॢं यॣं यः याः यिः यीः युः यूः यृः यॄः यॅः यॆः येः यैः यॉः यॊः योः यौः यॢः यॣः र्य र्या र्यि र्यी र्यु र्यू र्यृ र्यॄ र्यॅ र्यॆ र्ये र्यै र्यॉ र्यॊ र्यो र्यौ र्यॢ र्यॣ र्यँ र्याँ र्यिँ र्यीँ र्युँ र्यूँ र्यृँ र्यॄँ र्यॅँ र्यॆँ र्येँ र्यैँ र्यॉँ र्यॊँ र्योँ र्यौँ र्यॢँ र्यॣँ र्यं र्यां र्यिं र्यीं र्युं र्यूं र्यृं र्यॄं र्यॅं र्यॆं र्यें र्यैं र्यॉं र्यॊं र्यों र्यौं र्यॢं र्यॣं र्यः र्याः र्यिः र्यीः र्युः र्यूः र्यृः र्यॄः र्यॅः र्यॆः र्येः र्यैः र्यॉः र्यॊः र्योः र्यौः र्यॢः र्यॣः </br>
+</br>
+र रा रि री रु रू रृ रॄ रॅ रॆ रे रै रॉ रॊ रो रौ रॢ रॣ रँ राँ रिँ रीँ रुँ रूँ रृँ रॄँ रॅँ रॆँ रेँ रैँ रॉँ रॊँ रोँ रौँ रॢँ रॣँ रं रां रिं रीं रुं रूं रृं रॄं रॅं रॆं रें रैं रॉं रॊं रों रौं रॢं रॣं रः राः रिः रीः रुः रूः रृः रॄः रॅः रॆः रेः रैः रॉः रॊः रोः रौः रॢः रॣः र्र र्रा र्रि र्री र्रु र्रू र्रृ र्रॄ र्रॅ र्रॆ र्रे र्रै र्रॉ र्रॊ र्रो र्रौ र्रॢ र्रॣ र्रँ र्राँ र्रिँ र्रीँ र्रुँ र्रूँ र्रृँ र्रॄँ र्रॅँ र्रॆँ र्रेँ र्रैँ र्रॉँ र्रॊँ र्रोँ र्रौँ र्रॢँ र्रॣँ र्रं र्रां र्रिं र्रीं र्रुं र्रूं र्रृं र्रॄं र्रॅं र्रॆं र्रें र्रैं र्रॉं र्रॊं र्रों र्रौं र्रॢं र्रॣं र्रः र्राः र्रिः र्रीः र्रुः र्रूः र्रृः र्रॄः र्रॅः र्रॆः र्रेः र्रैः र्रॉः र्रॊः र्रोः र्रौः र्रॢः र्रॣः </br>
+</br>
+ऱ ऱा ऱि ऱी ऱु ऱू ऱृ ऱॄ ऱॅ ऱॆ ऱे ऱै ऱॉ ऱॊ ऱो ऱौ ऱॢ ऱॣ ऱँ ऱाँ ऱिँ ऱीँ ऱुँ ऱूँ ऱृँ ऱॄँ ऱॅँ ऱॆँ ऱेँ ऱैँ ऱॉँ ऱॊँ ऱोँ ऱौँ ऱॢँ ऱॣँ ऱं ऱां ऱिं ऱीं ऱुं ऱूं ऱृं ऱॄं ऱॅं ऱॆं ऱें ऱैं ऱॉं ऱॊं ऱों ऱौं ऱॢं ऱॣं ऱः ऱाः ऱिः ऱीः ऱुः ऱूः ऱृः ऱॄः ऱॅः ऱॆः ऱेः ऱैः ऱॉः ऱॊः ऱोः ऱौः ऱॢः ऱॣः र्ऱ र्ऱा र्ऱि र्ऱी र्ऱु र्ऱू र्ऱृ र्ऱॄ र्ऱॅ र्ऱॆ र्ऱे र्ऱै र्ऱॉ र्ऱॊ र्ऱो र्ऱौ र्ऱॢ र्ऱॣ र्ऱँ र्ऱाँ र्ऱिँ र्ऱीँ र्ऱुँ र्ऱूँ र्ऱृँ र्ऱॄँ र्ऱॅँ र्ऱॆँ र्ऱेँ र्ऱैँ र्ऱॉँ र्ऱॊँ र्ऱोँ र्ऱौँ र्ऱॢँ र्ऱॣँ र्ऱं र्ऱां र्ऱिं र्ऱीं र्ऱुं र्ऱूं र्ऱृं र्ऱॄं र्ऱॅं र्ऱॆं र्ऱें र्ऱैं र्ऱॉं र्ऱॊं र्ऱों र्ऱौं र्ऱॢं र्ऱॣं र्ऱः र्ऱाः र्ऱिः र्ऱीः र्ऱुः र्ऱूः र्ऱृः र्ऱॄः र्ऱॅः र्ऱॆः र्ऱेः र्ऱैः र्ऱॉः र्ऱॊः र्ऱोः र्ऱौः र्ऱॢः र्ऱॣः </br>
+</br>
+ल ला लि ली लु लू लृ लॄ लॅ लॆ ले लै लॉ लॊ लो लौ लॢ लॣ लँ लाँ लिँ लीँ लुँ लूँ लृँ लॄँ लॅँ लॆँ लेँ लैँ लॉँ लॊँ लोँ लौँ लॢँ लॣँ लं लां लिं लीं लुं लूं लृं लॄं लॅं लॆं लें लैं लॉं लॊं लों लौं लॢं लॣं लः लाः लिः लीः लुः लूः लृः लॄः लॅः लॆः लेः लैः लॉः लॊः लोः लौः लॢः लॣः र्ल र्ला र्लि र्ली र्लु र्लू र्लृ र्लॄ र्लॅ र्लॆ र्ले र्लै र्लॉ र्लॊ र्लो र्लौ र्लॢ र्लॣ र्लँ र्लाँ र्लिँ र्लीँ र्लुँ र्लूँ र्लृँ र्लॄँ र्लॅँ र्लॆँ र्लेँ र्लैँ र्लॉँ र्लॊँ र्लोँ र्लौँ र्लॢँ र्लॣँ र्लं र्लां र्लिं र्लीं र्लुं र्लूं र्लृं र्लॄं र्लॅं र्लॆं र्लें र्लैं र्लॉं र्लॊं र्लों र्लौं र्लॢं र्लॣं र्लः र्लाः र्लिः र्लीः र्लुः र्लूः र्लृः र्लॄः र्लॅः र्लॆः र्लेः र्लैः र्लॉः र्लॊः र्लोः र्लौः र्लॢः र्लॣः </br>
+</br>
+ळ ळा ळि ळी ळु ळू ळृ ळॄ ळॅ ळॆ ळे ळै ळॉ ळॊ ळो ळौ ळॢ ळॣ ळँ ळाँ ळिँ ळीँ ळुँ ळूँ ळृँ ळॄँ ळॅँ ळॆँ ळेँ ळैँ ळॉँ ळॊँ ळोँ ळौँ ळॢँ ळॣँ ळं ळां ळिं ळीं ळुं ळूं ळृं ळॄं ळॅं ळॆं ळें ळैं ळॉं ळॊं ळों ळौं ळॢं ळॣं ळः ळाः ळिः ळीः ळुः ळूः ळृः ळॄः ळॅः ळॆः ळेः ळैः ळॉः ळॊः ळोः ळौः ळॢः ळॣः र्ळ र्ळा र्ळि र्ळी र्ळु र्ळू र्ळृ र्ळॄ र्ळॅ र्ळॆ र्ळे र्ळै र्ळॉ र्ळॊ र्ळो र्ळौ र्ळॢ र्ळॣ र्ळँ र्ळाँ र्ळिँ र्ळीँ र्ळुँ र्ळूँ र्ळृँ र्ळॄँ र्ळॅँ र्ळॆँ र्ळेँ र्ळैँ र्ळॉँ र्ळॊँ र्ळोँ र्ळौँ र्ळॢँ र्ळॣँ र्ळं र्ळां र्ळिं र्ळीं र्ळुं र्ळूं र्ळृं र्ळॄं र्ळॅं र्ळॆं र्ळें र्ळैं र्ळॉं र्ळॊं र्ळों र्ळौं र्ळॢं र्ळॣं र्ळः र्ळाः र्ळिः र्ळीः र्ळुः र्ळूः र्ळृः र्ळॄः र्ळॅः र्ळॆः र्ळेः र्ळैः र्ळॉः र्ळॊः र्ळोः र्ळौः र्ळॢः र्ळॣः </br>
+</br>
+ऴ ऴा ऴि ऴी ऴु ऴू ऴृ ऴॄ ऴॅ ऴॆ ऴे ऴै ऴॉ ऴॊ ऴो ऴौ ऴॢ ऴॣ ऴँ ऴाँ ऴिँ ऴीँ ऴुँ ऴूँ ऴृँ ऴॄँ ऴॅँ ऴॆँ ऴेँ ऴैँ ऴॉँ ऴॊँ ऴोँ ऴौँ ऴॢँ ऴॣँ ऴं ऴां ऴिं ऴीं ऴुं ऴूं ऴृं ऴॄं ऴॅं ऴॆं ऴें ऴैं ऴॉं ऴॊं ऴों ऴौं ऴॢं ऴॣं ऴः ऴाः ऴिः ऴीः ऴुः ऴूः ऴृः ऴॄः ऴॅः ऴॆः ऴेः ऴैः ऴॉः ऴॊः ऴोः ऴौः ऴॢः ऴॣः र्ऴ र्ऴा र्ऴि र्ऴी र्ऴु र्ऴू र्ऴृ र्ऴॄ र्ऴॅ र्ऴॆ र्ऴे र्ऴै र्ऴॉ र्ऴॊ र्ऴो र्ऴौ र्ऴॢ र्ऴॣ र्ऴँ र्ऴाँ र्ऴिँ र्ऴीँ र्ऴुँ र्ऴूँ र्ऴृँ र्ऴॄँ र्ऴॅँ र्ऴॆँ र्ऴेँ र्ऴैँ र्ऴॉँ र्ऴॊँ र्ऴोँ र्ऴौँ र्ऴॢँ र्ऴॣँ र्ऴं र्ऴां र्ऴिं र्ऴीं र्ऴुं र्ऴूं र्ऴृं र्ऴॄं र्ऴॅं र्ऴॆं र्ऴें र्ऴैं र्ऴॉं र्ऴॊं र्ऴों र्ऴौं र्ऴॢं र्ऴॣं र्ऴः र्ऴाः र्ऴिः र्ऴीः र्ऴुः र्ऴूः र्ऴृः र्ऴॄः र्ऴॅः र्ऴॆः र्ऴेः र्ऴैः र्ऴॉः र्ऴॊः र्ऴोः र्ऴौः र्ऴॢः र्ऴॣः </br>
+</br>
+व वा वि वी वु वू वृ वॄ वॅ वॆ वे वै वॉ वॊ वो वौ वॢ वॣ वँ वाँ विँ वीँ वुँ वूँ वृँ वॄँ वॅँ वॆँ वेँ वैँ वॉँ वॊँ वोँ वौँ वॢँ वॣँ वं वां विं वीं वुं वूं वृं वॄं वॅं वॆं वें वैं वॉं वॊं वों वौं वॢं वॣं वः वाः विः वीः वुः वूः वृः वॄः वॅः वॆः वेः वैः वॉः वॊः वोः वौः वॢः वॣः र्व र्वा र्वि र्वी र्वु र्वू र्वृ र्वॄ र्वॅ र्वॆ र्वे र्वै र्वॉ र्वॊ र्वो र्वौ र्वॢ र्वॣ र्वँ र्वाँ र्विँ र्वीँ र्वुँ र्वूँ र्वृँ र्वॄँ र्वॅँ र्वॆँ र्वेँ र्वैँ र्वॉँ र्वॊँ र्वोँ र्वौँ र्वॢँ र्वॣँ र्वं र्वां र्विं र्वीं र्वुं र्वूं र्वृं र्वॄं र्वॅं र्वॆं र्वें र्वैं र्वॉं र्वॊं र्वों र्वौं र्वॢं र्वॣं र्वः र्वाः र्विः र्वीः र्वुः र्वूः र्वृः र्वॄः र्वॅः र्वॆः र्वेः र्वैः र्वॉः र्वॊः र्वोः र्वौः र्वॢः र्वॣः </br>
+</br>
+श शा शि शी शु शू शृ शॄ शॅ शॆ शे शै शॉ शॊ शो शौ शॢ शॣ शँ शाँ शिँ शीँ शुँ शूँ शृँ शॄँ शॅँ शॆँ शेँ शैँ शॉँ शॊँ शोँ शौँ शॢँ शॣँ शं शां शिं शीं शुं शूं शृं शॄं शॅं शॆं शें शैं शॉं शॊं शों शौं शॢं शॣं शः शाः शिः शीः शुः शूः शृः शॄः शॅः शॆः शेः शैः शॉः शॊः शोः शौः शॢः शॣः र्श र्शा र्शि र्शी र्शु र्शू र्शृ र्शॄ र्शॅ र्शॆ र्शे र्शै र्शॉ र्शॊ र्शो र्शौ र्शॢ र्शॣ र्शँ र्शाँ र्शिँ र्शीँ र्शुँ र्शूँ र्शृँ र्शॄँ र्शॅँ र्शॆँ र्शेँ र्शैँ र्शॉँ र्शॊँ र्शोँ र्शौँ र्शॢँ र्शॣँ र्शं र्शां र्शिं र्शीं र्शुं र्शूं र्शृं र्शॄं र्शॅं र्शॆं र्शें र्शैं र्शॉं र्शॊं र्शों र्शौं र्शॢं र्शॣं र्शः र्शाः र्शिः र्शीः र्शुः र्शूः र्शृः र्शॄः र्शॅः र्शॆः र्शेः र्शैः र्शॉः र्शॊः र्शोः र्शौः र्शॢः र्शॣः </br>
+</br>
+ष षा षि षी षु षू षृ षॄ षॅ षॆ षे षै षॉ षॊ षो षौ षॢ षॣ षँ षाँ षिँ षीँ षुँ षूँ षृँ षॄँ षॅँ षॆँ षेँ षैँ षॉँ षॊँ षोँ षौँ षॢँ षॣँ षं षां षिं षीं षुं षूं षृं षॄं षॅं षॆं षें षैं षॉं षॊं षों षौं षॢं षॣं षः षाः षिः षीः षुः षूः षृः षॄः षॅः षॆः षेः षैः षॉः षॊः षोः षौः षॢः षॣः र्ष र्षा र्षि र्षी र्षु र्षू र्षृ र्षॄ र्षॅ र्षॆ र्षे र्षै र्षॉ र्षॊ र्षो र्षौ र्षॢ र्षॣ र्षँ र्षाँ र्षिँ र्षीँ र्षुँ र्षूँ र्षृँ र्षॄँ र्षॅँ र्षॆँ र्षेँ र्षैँ र्षॉँ र्षॊँ र्षोँ र्षौँ र्षॢँ र्षॣँ र्षं र्षां र्षिं र्षीं र्षुं र्षूं र्षृं र्षॄं र्षॅं र्षॆं र्षें र्षैं र्षॉं र्षॊं र्षों र्षौं र्षॢं र्षॣं र्षः र्षाः र्षिः र्षीः र्षुः र्षूः र्षृः र्षॄः र्षॅः र्षॆः र्षेः र्षैः र्षॉः र्षॊः र्षोः र्षौः र्षॢः र्षॣः </br>
+</br>
+स सा सि सी सु सू सृ सॄ सॅ सॆ से सै सॉ सॊ सो सौ सॢ सॣ सँ साँ सिँ सीँ सुँ सूँ सृँ सॄँ सॅँ सॆँ सेँ सैँ सॉँ सॊँ सोँ सौँ सॢँ सॣँ सं सां सिं सीं सुं सूं सृं सॄं सॅं सॆं सें सैं सॉं सॊं सों सौं सॢं सॣं सः साः सिः सीः सुः सूः सृः सॄः सॅः सॆः सेः सैः सॉः सॊः सोः सौः सॢः सॣः र्स र्सा र्सि र्सी र्सु र्सू र्सृ र्सॄ र्सॅ र्सॆ र्से र्सै र्सॉ र्सॊ र्सो र्सौ र्सॢ र्सॣ र्सँ र्साँ र्सिँ र्सीँ र्सुँ र्सूँ र्सृँ र्सॄँ र्सॅँ र्सॆँ र्सेँ र्सैँ र्सॉँ र्सॊँ र्सोँ र्सौँ र्सॢँ र्सॣँ र्सं र्सां र्सिं र्सीं र्सुं र्सूं र्सृं र्सॄं र्सॅं र्सॆं र्सें र्सैं र्सॉं र्सॊं र्सों र्सौं र्सॢं र्सॣं र्सः र्साः र्सिः र्सीः र्सुः र्सूः र्सृः र्सॄः र्सॅः र्सॆः र्सेः र्सैः र्सॉः र्सॊः र्सोः र्सौः र्सॢः र्सॣः </br>
+</br>
+ह हा हि ही हु हू हृ हॄ हॅ हॆ हे है हॉ हॊ हो हौ हॢ हॣ हँ हाँ हिँ हीँ हुँ हूँ हृँ हॄँ हॅँ हॆँ हेँ हैँ हॉँ हॊँ होँ हौँ हॢँ हॣँ हं हां हिं हीं हुं हूं हृं हॄं हॅं हॆं हें हैं हॉं हॊं हों हौं हॢं हॣं हः हाः हिः हीः हुः हूः हृः हॄः हॅः हॆः हेः हैः हॉः हॊः होः हौः हॢः हॣः र्ह र्हा र्हि र्ही र्हु र्हू र्हृ र्हॄ र्हॅ र्हॆ र्हे र्है र्हॉ र्हॊ र्हो र्हौ र्हॢ र्हॣ र्हँ र्हाँ र्हिँ र्हीँ र्हुँ र्हूँ र्हृँ र्हॄँ र्हॅँ र्हॆँ र्हेँ र्हैँ र्हॉँ र्हॊँ र्होँ र्हौँ र्हॢँ र्हॣँ र्हं र्हां र्हिं र्हीं र्हुं र्हूं र्हृं र्हॄं र्हॅं र्हॆं र्हें र्हैं र्हॉं र्हॊं र्हों र्हौं र्हॢं र्हॣं र्हः र्हाः र्हिः र्हीः र्हुः र्हूः र्हृः र्हॄः र्हॅः र्हॆः र्हेः र्हैः र्हॉः र्हॊः र्होः र्हौः र्हॢः र्हॣः </br>
+</br>
+क़ क़ा क़ि क़ी क़ु क़ू क़ृ क़ॄ क़ॅ क़ॆ क़े क़ै क़ॉ क़ॊ क़ो क़ौ क़ॢ क़ॣ क़ँ क़ाँ क़िँ क़ीँ क़ुँ क़ूँ क़ृँ क़ॄँ क़ॅँ क़ॆँ क़ेँ क़ैँ क़ॉँ क़ॊँ क़ोँ क़ौँ क़ॢँ क़ॣँ क़ं क़ां क़िं क़ीं क़ुं क़ूं क़ृं क़ॄं क़ॅं क़ॆं क़ें क़ैं क़ॉं क़ॊं क़ों क़ौं क़ॢं क़ॣं क़ः क़ाः क़िः क़ीः क़ुः क़ूः क़ृः क़ॄः क़ॅः क़ॆः क़ेः क़ैः क़ॉः क़ॊः क़ोः क़ौः क़ॢः क़ॣः र्क़ र्क़ा र्क़ि र्क़ी र्क़ु र्क़ू र्क़ृ र्क़ॄ र्क़ॅ र्क़ॆ र्क़े र्क़ै र्क़ॉ र्क़ॊ र्क़ो र्क़ौ र्क़ॢ र्क़ॣ र्क़ँ र्क़ाँ र्क़िँ र्क़ीँ र्क़ुँ र्क़ूँ र्क़ृँ र्क़ॄँ र्क़ॅँ र्क़ॆँ र्क़ेँ र्क़ैँ र्क़ॉँ र्क़ॊँ र्क़ोँ र्क़ौँ र्क़ॢँ र्क़ॣँ र्क़ं र्क़ां र्क़िं र्क़ीं र्क़ुं र्क़ूं र्क़ृं र्क़ॄं र्क़ॅं र्क़ॆं र्क़ें र्क़ैं र्क़ॉं र्क़ॊं र्क़ों र्क़ौं र्क़ॢं र्क़ॣं र्क़ः र्क़ाः र्क़िः र्क़ीः र्क़ुः र्क़ूः र्क़ृः र्क़ॄः र्क़ॅः र्क़ॆः र्क़ेः र्क़ैः र्क़ॉः र्क़ॊः र्क़ोः र्क़ौः र्क़ॢः र्क़ॣः </br>
+</br>
+ख़ ख़ा ख़ि ख़ी ख़ु ख़ू ख़ृ ख़ॄ ख़ॅ ख़ॆ ख़े ख़ै ख़ॉ ख़ॊ ख़ो ख़ौ ख़ॢ ख़ॣ ख़ँ ख़ाँ ख़िँ ख़ीँ ख़ुँ ख़ूँ ख़ृँ ख़ॄँ ख़ॅँ ख़ॆँ ख़ेँ ख़ैँ ख़ॉँ ख़ॊँ ख़ोँ ख़ौँ ख़ॢँ ख़ॣँ ख़ं ख़ां ख़िं ख़ीं ख़ुं ख़ूं ख़ृं ख़ॄं ख़ॅं ख़ॆं ख़ें ख़ैं ख़ॉं ख़ॊं ख़ों ख़ौं ख़ॢं ख़ॣं ख़ः ख़ाः ख़िः ख़ीः ख़ुः ख़ूः ख़ृः ख़ॄः ख़ॅः ख़ॆः ख़ेः ख़ैः ख़ॉः ख़ॊः ख़ोः ख़ौः ख़ॢः ख़ॣः र्ख़ र्ख़ा र्ख़ि र्ख़ी र्ख़ु र्ख़ू र्ख़ृ र्ख़ॄ र्ख़ॅ र्ख़ॆ र्ख़े र्ख़ै र्ख़ॉ र्ख़ॊ र्ख़ो र्ख़ौ र्ख़ॢ र्ख़ॣ र्ख़ँ र्ख़ाँ र्ख़िँ र्ख़ीँ र्ख़ुँ र्ख़ूँ र्ख़ृँ र्ख़ॄँ र्ख़ॅँ र्ख़ॆँ र्ख़ेँ र्ख़ैँ र्ख़ॉँ र्ख़ॊँ र्ख़ोँ र्ख़ौँ र्ख़ॢँ र्ख़ॣँ र्ख़ं र्ख़ां र्ख़िं र्ख़ीं र्ख़ुं र्ख़ूं र्ख़ृं र्ख़ॄं र्ख़ॅं र्ख़ॆं र्ख़ें र्ख़ैं र्ख़ॉं र्ख़ॊं र्ख़ों र्ख़ौं र्ख़ॢं र्ख़ॣं र्ख़ः र्ख़ाः र्ख़िः र्ख़ीः र्ख़ुः र्ख़ूः र्ख़ृः र्ख़ॄः र्ख़ॅः र्ख़ॆः र्ख़ेः र्ख़ैः र्ख़ॉः र्ख़ॊः र्ख़ोः र्ख़ौः र्ख़ॢः र्ख़ॣः </br>
+</br>
+ग़ ग़ा ग़ि ग़ी ग़ु ग़ू ग़ृ ग़ॄ ग़ॅ ग़ॆ ग़े ग़ै ग़ॉ ग़ॊ ग़ो ग़ौ ग़ॢ ग़ॣ ग़ँ ग़ाँ ग़िँ ग़ीँ ग़ुँ ग़ूँ ग़ृँ ग़ॄँ ग़ॅँ ग़ॆँ ग़ेँ ग़ैँ ग़ॉँ ग़ॊँ ग़ोँ ग़ौँ ग़ॢँ ग़ॣँ ग़ं ग़ां ग़िं ग़ीं ग़ुं ग़ूं ग़ृं ग़ॄं ग़ॅं ग़ॆं ग़ें ग़ैं ग़ॉं ग़ॊं ग़ों ग़ौं ग़ॢं ग़ॣं ग़ः ग़ाः ग़िः ग़ीः ग़ुः ग़ूः ग़ृः ग़ॄः ग़ॅः ग़ॆः ग़ेः ग़ैः ग़ॉः ग़ॊः ग़ोः ग़ौः ग़ॢः ग़ॣः र्ग़ र्ग़ा र्ग़ि र्ग़ी र्ग़ु र्ग़ू र्ग़ृ र्ग़ॄ र्ग़ॅ र्ग़ॆ र्ग़े र्ग़ै र्ग़ॉ र्ग़ॊ र्ग़ो र्ग़ौ र्ग़ॢ र्ग़ॣ र्ग़ँ र्ग़ाँ र्ग़िँ र्ग़ीँ र्ग़ुँ र्ग़ूँ र्ग़ृँ र्ग़ॄँ र्ग़ॅँ र्ग़ॆँ र्ग़ेँ र्ग़ैँ र्ग़ॉँ र्ग़ॊँ र्ग़ोँ र्ग़ौँ र्ग़ॢँ र्ग़ॣँ र्ग़ं र्ग़ां र्ग़िं र्ग़ीं र्ग़ुं र्ग़ूं र्ग़ृं र्ग़ॄं र्ग़ॅं र्ग़ॆं र्ग़ें र्ग़ैं र्ग़ॉं र्ग़ॊं र्ग़ों र्ग़ौं र्ग़ॢं र्ग़ॣं र्ग़ः र्ग़ाः र्ग़िः र्ग़ीः र्ग़ुः र्ग़ूः र्ग़ृः र्ग़ॄः र्ग़ॅः र्ग़ॆः र्ग़ेः र्ग़ैः र्ग़ॉः र्ग़ॊः र्ग़ोः र्ग़ौः र्ग़ॢः र्ग़ॣः </br>
+</br>
+ज़ ज़ा ज़ि ज़ी ज़ु ज़ू ज़ृ ज़ॄ ज़ॅ ज़ॆ ज़े ज़ै ज़ॉ ज़ॊ ज़ो ज़ौ ज़ॢ ज़ॣ ज़ँ ज़ाँ ज़िँ ज़ीँ ज़ुँ ज़ूँ ज़ृँ ज़ॄँ ज़ॅँ ज़ॆँ ज़ेँ ज़ैँ ज़ॉँ ज़ॊँ ज़ोँ ज़ौँ ज़ॢँ ज़ॣँ ज़ं ज़ां ज़िं ज़ीं ज़ुं ज़ूं ज़ृं ज़ॄं ज़ॅं ज़ॆं ज़ें ज़ैं ज़ॉं ज़ॊं ज़ों ज़ौं ज़ॢं ज़ॣं ज़ः ज़ाः ज़िः ज़ीः ज़ुः ज़ूः ज़ृः ज़ॄः ज़ॅः ज़ॆः ज़ेः ज़ैः ज़ॉः ज़ॊः ज़ोः ज़ौः ज़ॢः ज़ॣः र्ज़ र्ज़ा र्ज़ि र्ज़ी र्ज़ु र्ज़ू र्ज़ृ र्ज़ॄ र्ज़ॅ र्ज़ॆ र्ज़े र्ज़ै र्ज़ॉ र्ज़ॊ र्ज़ो र्ज़ौ र्ज़ॢ र्ज़ॣ र्ज़ँ र्ज़ाँ र्ज़िँ र्ज़ीँ र्ज़ुँ र्ज़ूँ र्ज़ृँ र्ज़ॄँ र्ज़ॅँ र्ज़ॆँ र्ज़ेँ र्ज़ैँ र्ज़ॉँ र्ज़ॊँ र्ज़ोँ र्ज़ौँ र्ज़ॢँ र्ज़ॣँ र्ज़ं र्ज़ां र्ज़िं र्ज़ीं र्ज़ुं र्ज़ूं र्ज़ृं र्ज़ॄं र्ज़ॅं र्ज़ॆं र्ज़ें र्ज़ैं र्ज़ॉं र्ज़ॊं र्ज़ों र्ज़ौं र्ज़ॢं र्ज़ॣं र्ज़ः र्ज़ाः र्ज़िः र्ज़ीः र्ज़ुः र्ज़ूः र्ज़ृः र्ज़ॄः र्ज़ॅः र्ज़ॆः र्ज़ेः र्ज़ैः र्ज़ॉः र्ज़ॊः र्ज़ोः र्ज़ौः र्ज़ॢः र्ज़ॣः </br>
+</br>
+ड़ ड़ा ड़ि ड़ी ड़ु ड़ू ड़ृ ड़ॄ ड़ॅ ड़ॆ ड़े ड़ै ड़ॉ ड़ॊ ड़ो ड़ौ ड़ॢ ड़ॣ ड़ँ ड़ाँ ड़िँ ड़ीँ ड़ुँ ड़ूँ ड़ृँ ड़ॄँ ड़ॅँ ड़ॆँ ड़ेँ ड़ैँ ड़ॉँ ड़ॊँ ड़ोँ ड़ौँ ड़ॢँ ड़ॣँ ड़ं ड़ां ड़िं ड़ीं ड़ुं ड़ूं ड़ृं ड़ॄं ड़ॅं ड़ॆं ड़ें ड़ैं ड़ॉं ड़ॊं ड़ों ड़ौं ड़ॢं ड़ॣं ड़ः ड़ाः ड़िः ड़ीः ड़ुः ड़ूः ड़ृः ड़ॄः ड़ॅः ड़ॆः ड़ेः ड़ैः ड़ॉः ड़ॊः ड़ोः ड़ौः ड़ॢः ड़ॣः र्ड़ र्ड़ा र्ड़ि र्ड़ी र्ड़ु र्ड़ू र्ड़ृ र्ड़ॄ र्ड़ॅ र्ड़ॆ र्ड़े र्ड़ै र्ड़ॉ र्ड़ॊ र्ड़ो र्ड़ौ र्ड़ॢ र्ड़ॣ र्ड़ँ र्ड़ाँ र्ड़िँ र्ड़ीँ र्ड़ुँ र्ड़ूँ र्ड़ृँ र्ड़ॄँ र्ड़ॅँ र्ड़ॆँ र्ड़ेँ र्ड़ैँ र्ड़ॉँ र्ड़ॊँ र्ड़ोँ र्ड़ौँ र्ड़ॢँ र्ड़ॣँ र्ड़ं र्ड़ां र्ड़िं र्ड़ीं र्ड़ुं र्ड़ूं र्ड़ृं र्ड़ॄं र्ड़ॅं र्ड़ॆं र्ड़ें र्ड़ैं र्ड़ॉं र्ड़ॊं र्ड़ों र्ड़ौं र्ड़ॢं र्ड़ॣं र्ड़ः र्ड़ाः र्ड़िः र्ड़ीः र्ड़ुः र्ड़ूः र्ड़ृः र्ड़ॄः र्ड़ॅः र्ड़ॆः र्ड़ेः र्ड़ैः र्ड़ॉः र्ड़ॊः र्ड़ोः र्ड़ौः र्ड़ॢः र्ड़ॣः </br>
+</br>
+ढ़ ढ़ा ढ़ि ढ़ी ढ़ु ढ़ू ढ़ृ ढ़ॄ ढ़ॅ ढ़ॆ ढ़े ढ़ै ढ़ॉ ढ़ॊ ढ़ो ढ़ौ ढ़ॢ ढ़ॣ ढ़ँ ढ़ाँ ढ़िँ ढ़ीँ ढ़ुँ ढ़ूँ ढ़ृँ ढ़ॄँ ढ़ॅँ ढ़ॆँ ढ़ेँ ढ़ैँ ढ़ॉँ ढ़ॊँ ढ़ोँ ढ़ौँ ढ़ॢँ ढ़ॣँ ढ़ं ढ़ां ढ़िं ढ़ीं ढ़ुं ढ़ूं ढ़ृं ढ़ॄं ढ़ॅं ढ़ॆं ढ़ें ढ़ैं ढ़ॉं ढ़ॊं ढ़ों ढ़ौं ढ़ॢं ढ़ॣं ढ़ः ढ़ाः ढ़िः ढ़ीः ढ़ुः ढ़ूः ढ़ृः ढ़ॄः ढ़ॅः ढ़ॆः ढ़ेः ढ़ैः ढ़ॉः ढ़ॊः ढ़ोः ढ़ौः ढ़ॢः ढ़ॣः र्ढ़ र्ढ़ा र्ढ़ि र्ढ़ी र्ढ़ु र्ढ़ू र्ढ़ृ र्ढ़ॄ र्ढ़ॅ र्ढ़ॆ र्ढ़े र्ढ़ै र्ढ़ॉ र्ढ़ॊ र्ढ़ो र्ढ़ौ र्ढ़ॢ र्ढ़ॣ र्ढ़ँ र्ढ़ाँ र्ढ़िँ र्ढ़ीँ र्ढ़ुँ र्ढ़ूँ र्ढ़ृँ र्ढ़ॄँ र्ढ़ॅँ र्ढ़ॆँ र्ढ़ेँ र्ढ़ैँ र्ढ़ॉँ र्ढ़ॊँ र्ढ़ोँ र्ढ़ौँ र्ढ़ॢँ र्ढ़ॣँ र्ढ़ं र्ढ़ां र्ढ़िं र्ढ़ीं र्ढ़ुं र्ढ़ूं र्ढ़ृं र्ढ़ॄं र्ढ़ॅं र्ढ़ॆं र्ढ़ें र्ढ़ैं र्ढ़ॉं र्ढ़ॊं र्ढ़ों र्ढ़ौं र्ढ़ॢं र्ढ़ॣं र्ढ़ः र्ढ़ाः र्ढ़िः र्ढ़ीः र्ढ़ुः र्ढ़ूः र्ढ़ृः र्ढ़ॄः र्ढ़ॅः र्ढ़ॆः र्ढ़ेः र्ढ़ैः र्ढ़ॉः र्ढ़ॊः र्ढ़ोः र्ढ़ौः र्ढ़ॢः र्ढ़ॣः </br>
+</br>
+फ़ फ़ा फ़ि फ़ी फ़ु फ़ू फ़ृ फ़ॄ फ़ॅ फ़ॆ फ़े फ़ै फ़ॉ फ़ॊ फ़ो फ़ौ फ़ॢ फ़ॣ फ़ँ फ़ाँ फ़िँ फ़ीँ फ़ुँ फ़ूँ फ़ृँ फ़ॄँ फ़ॅँ फ़ॆँ फ़ेँ फ़ैँ फ़ॉँ फ़ॊँ फ़ोँ फ़ौँ फ़ॢँ फ़ॣँ फ़ं फ़ां फ़िं फ़ीं फ़ुं फ़ूं फ़ृं फ़ॄं फ़ॅं फ़ॆं फ़ें फ़ैं फ़ॉं फ़ॊं फ़ों फ़ौं फ़ॢं फ़ॣं फ़ः फ़ाः फ़िः फ़ीः फ़ुः फ़ूः फ़ृः फ़ॄः फ़ॅः फ़ॆः फ़ेः फ़ैः फ़ॉः फ़ॊः फ़ोः फ़ौः फ़ॢः फ़ॣः र्फ़ र्फ़ा र्फ़ि र्फ़ी र्फ़ु र्फ़ू र्फ़ृ र्फ़ॄ र्फ़ॅ र्फ़ॆ र्फ़े र्फ़ै र्फ़ॉ र्फ़ॊ र्फ़ो र्फ़ौ र्फ़ॢ र्फ़ॣ र्फ़ँ र्फ़ाँ र्फ़िँ र्फ़ीँ र्फ़ुँ र्फ़ूँ र्फ़ृँ र्फ़ॄँ र्फ़ॅँ र्फ़ॆँ र्फ़ेँ र्फ़ैँ र्फ़ॉँ र्फ़ॊँ र्फ़ोँ र्फ़ौँ र्फ़ॢँ र्फ़ॣँ र्फ़ं र्फ़ां र्फ़िं र्फ़ीं र्फ़ुं र्फ़ूं र्फ़ृं र्फ़ॄं र्फ़ॅं र्फ़ॆं र्फ़ें र्फ़ैं र्फ़ॉं र्फ़ॊं र्फ़ों र्फ़ौं र्फ़ॢं र्फ़ॣं र्फ़ः र्फ़ाः र्फ़िः र्फ़ीः र्फ़ुः र्फ़ूः र्फ़ृः र्फ़ॄः र्फ़ॅः र्फ़ॆः र्फ़ेः र्फ़ैः र्फ़ॉः र्फ़ॊः र्फ़ोः र्फ़ौः र्फ़ॢः र्फ़ॣः </br>
+</br>
+य़ य़ा य़ि य़ी य़ु य़ू य़ृ य़ॄ य़ॅ य़ॆ य़े य़ै य़ॉ य़ॊ य़ो य़ौ य़ॢ य़ॣ य़ँ य़ाँ य़िँ य़ीँ य़ुँ य़ूँ य़ृँ य़ॄँ य़ॅँ य़ॆँ य़ेँ य़ैँ य़ॉँ य़ॊँ य़ोँ य़ौँ य़ॢँ य़ॣँ य़ं य़ां य़िं य़ीं य़ुं य़ूं य़ृं य़ॄं य़ॅं य़ॆं य़ें य़ैं य़ॉं य़ॊं य़ों य़ौं य़ॢं य़ॣं य़ः य़ाः य़िः य़ीः य़ुः य़ूः य़ृः य़ॄः य़ॅः य़ॆः य़ेः य़ैः य़ॉः य़ॊः य़ोः य़ौः य़ॢः य़ॣः र्य़ र्य़ा र्य़ि र्य़ी र्य़ु र्य़ू र्य़ृ र्य़ॄ र्य़ॅ र्य़ॆ र्य़े र्य़ै र्य़ॉ र्य़ॊ र्य़ो र्य़ौ र्य़ॢ र्य़ॣ र्य़ँ र्य़ाँ र्य़िँ र्य़ीँ र्य़ुँ र्य़ूँ र्य़ृँ र्य़ॄँ र्य़ॅँ र्य़ॆँ र्य़ेँ र्य़ैँ र्य़ॉँ र्य़ॊँ र्य़ोँ र्य़ौँ र्य़ॢँ र्य़ॣँ र्य़ं र्य़ां र्य़िं र्य़ीं र्य़ुं र्य़ूं र्य़ृं र्य़ॄं र्य़ॅं र्य़ॆं र्य़ें र्य़ैं र्य़ॉं र्य़ॊं र्य़ों र्य़ौं र्य़ॢं र्य़ॣं र्य़ः र्य़ाः र्य़िः र्य़ीः र्य़ुः र्य़ूः र्य़ृः र्य़ॄः र्य़ॅः र्य़ॆः र्य़ेः र्य़ैः र्य़ॉः र्य़ॊः र्य़ोः र्य़ौः र्य़ॢः र्य़ॣः
+</span></br></br>
+<em>Half-forms to consonants</em></br>
+<span STYLE="word-wrap: break-word">
+क्क क्ख क्ग क्घ क्ङ क्च क्छ क्ज क्झ क्ञ क्ट क्ठ क्ड क्ढ क्ण क्त क्थ क्द क्ध क्न क्ऩ क्प क्फ क्ब क्भ क्म क्य क्र क्ऱ क्ल क्ळ क्ऴ क्व क्श क्ष क्स क्ह क्क़ क्ख़ क्ग़ क्ज़ क्ड़ क्ढ़ क्फ़ क्य़ </br>
+ख्क ख्ख ख्ग ख्घ ख्ङ ख्च ख्छ ख्ज ख्झ ख्ञ ख्ट ख्ठ ख्ड ख्ढ ख्ण ख्त ख्थ ख्द ख्ध ख्न ख्ऩ ख्प ख्फ ख्ब ख्भ ख्म ख्य ख्र ख्ऱ ख्ल ख्ळ ख्ऴ ख्व ख्श ख्ष ख्स ख्ह ख्क़ ख्ख़ ख्ग़ ख्ज़ ख्ड़ ख्ढ़ ख्फ़ ख्य़ </br>
+ग्क ग्ख ग्ग ग्घ ग्ङ ग्च ग्छ ग्ज ग्झ ग्ञ ग्ट ग्ठ ग्ड ग्ढ ग्ण ग्त ग्थ ग्द ग्ध ग्न ग्ऩ ग्प ग्फ ग्ब ग्भ ग्म ग्य ग्र ग्ऱ ग्ल ग्ळ ग्ऴ ग्व ग्श ग्ष ग्स ग्ह ग्क़ ग्ख़ ग्ग़ ग्ज़ ग्ड़ ग्ढ़ ग्फ़ ग्य़ </br>
+घ्क घ्ख घ्ग घ्घ घ्ङ घ्च घ्छ घ्ज घ्झ घ्ञ घ्ट घ्ठ घ्ड घ्ढ घ्ण घ्त घ्थ घ्द घ्ध घ्न घ्ऩ घ्प घ्फ घ्ब घ्भ घ्म घ्य घ्र घ्ऱ घ्ल घ्ळ घ्ऴ घ्व घ्श घ्ष घ्स घ्ह घ्क़ घ्ख़ घ्ग़ घ्ज़ घ्ड़ घ्ढ़ घ्फ़ घ्य़ </br>
+ङ्क ङ्ख ङ्ग ङ्घ ङ्ङ ङ्च ङ्छ ङ्ज ङ्झ ङ्ञ ङ्ट ङ्ठ ङ्ड ङ्ढ ङ्ण ङ्त ङ्थ ङ्द ङ्ध ङ्न ङ्ऩ ङ्प ङ्फ ङ्ब ङ्भ ङ्म ङ्य ङ्र ङ्ऱ ङ्ल ङ्ळ ङ्ऴ ङ्व ङ्श ङ्ष ङ्स ङ्ह ङ्क़ ङ्ख़ ङ्ग़ ङ्ज़ ङ्ड़ ङ्ढ़ ङ्फ़ ङ्य़ </br>
+च्क च्ख च्ग च्घ च्ङ च्च च्छ च्ज च्झ च्ञ च्ट च्ठ च्ड च्ढ च्ण च्त च्थ च्द च्ध च्न च्ऩ च्प च्फ च्ब च्भ च्म च्य च्र च्ऱ च्ल च्ळ च्ऴ च्व च्श च्ष च्स च्ह च्क़ च्ख़ च्ग़ च्ज़ च्ड़ च्ढ़ च्फ़ च्य़ </br>
+छ्क छ्ख छ्ग छ्घ छ्ङ छ्च छ्छ छ्ज छ्झ छ्ञ छ्ट छ्ठ छ्ड छ्ढ छ्ण छ्त छ्थ छ्द छ्ध छ्न छ्ऩ छ्प छ्फ छ्ब छ्भ छ्म छ्य छ्र छ्ऱ छ्ल छ्ळ छ्ऴ छ्व छ्श छ्ष छ्स छ्ह छ्क़ छ्ख़ छ्ग़ छ्ज़ छ्ड़ छ्ढ़ छ्फ़ छ्य़ </br>
+ज्क ज्ख ज्ग ज्घ ज्ङ ज्च ज्छ ज्ज ज्झ ज्ञ ज्ट ज्ठ ज्ड ज्ढ ज्ण ज्त ज्थ ज्द ज्ध ज्न ज्ऩ ज्प ज्फ ज्ब ज्भ ज्म ज्य ज्र ज्ऱ ज्ल ज्ळ ज्ऴ ज्व ज्श ज्ष ज्स ज्ह ज्क़ ज्ख़ ज्ग़ ज्ज़ ज्ड़ ज्ढ़ ज्फ़ ज्य़ </br>
+झ्क झ्ख झ्ग झ्घ झ्ङ झ्च झ्छ झ्ज झ्झ झ्ञ झ्ट झ्ठ झ्ड झ्ढ झ्ण झ्त झ्थ झ्द झ्ध झ्न झ्ऩ झ्प झ्फ झ्ब झ्भ झ्म झ्य झ्र झ्ऱ झ्ल झ्ळ झ्ऴ झ्व झ्श झ्ष झ्स झ्ह झ्क़ झ्ख़ झ्ग़ झ्ज़ झ्ड़ झ्ढ़ झ्फ़ झ्य़ </br>
+ञ्क ञ्ख ञ्ग ञ्घ ञ्ङ ञ्च ञ्छ ञ्ज ञ्झ ञ्ञ ञ्ट ञ्ठ ञ्ड ञ्ढ ञ्ण ञ्त ञ्थ ञ्द ञ्ध ञ्न ञ्ऩ ञ्प ञ्फ ञ्ब ञ्भ ञ्म ञ्य ञ्र ञ्ऱ ञ्ल ञ्ळ ञ्ऴ ञ्व ञ्श ञ्ष ञ्स ञ्ह ञ्क़ ञ्ख़ ञ्ग़ ञ्ज़ ञ्ड़ ञ्ढ़ ञ्फ़ ञ्य़ </br>
+ट्क ट्ख ट्ग ट्घ ट्ङ ट्च ट्छ ट्ज ट्झ ट्ञ ट्ट ट्ठ ट्ड ट्ढ ट्ण ट्त ट्थ ट्द ट्ध ट्न ट्ऩ ट्प ट्फ ट्ब ट्भ ट्म ट्य ट्र ट्ऱ ट्ल ट्ळ ट्ऴ ट्व ट्श ट्ष ट्स ट्ह ट्क़ ट्ख़ ट्ग़ ट्ज़ ट्ड़ ट्ढ़ ट्फ़ ट्य़ </br>
+ठ्क ठ्ख ठ्ग ठ्घ ठ्ङ ठ्च ठ्छ ठ्ज ठ्झ ठ्ञ ठ्ट ठ्ठ ठ्ड ठ्ढ ठ्ण ठ्त ठ्थ ठ्द ठ्ध ठ्न ठ्ऩ ठ्प ठ्फ ठ्ब ठ्भ ठ्म ठ्य ठ्र ठ्ऱ ठ्ल ठ्ळ ठ्ऴ ठ्व ठ्श ठ्ष ठ्स ठ्ह ठ्क़ ठ्ख़ ठ्ग़ ठ्ज़ ठ्ड़ ठ्ढ़ ठ्फ़ ठ्य़ </br>
+ड्क ड्ख ड्ग ड्घ ड्ङ ड्च ड्छ ड्ज ड्झ ड्ञ ड्ट ड्ठ ड्ड ड्ढ ड्ण ड्त ड्थ ड्द ड्ध ड्न ड्ऩ ड्प ड्फ ड्ब ड्भ ड्म ड्य ड्र ड्ऱ ड्ल ड्ळ ड्ऴ ड्व ड्श ड्ष ड्स ड्ह ड्क़ ड्ख़ ड्ग़ ड्ज़ ड्ड़ ड्ढ़ ड्फ़ ड्य़ </br>
+ढ्क ढ्ख ढ्ग ढ्घ ढ्ङ ढ्च ढ्छ ढ्ज ढ्झ ढ्ञ ढ्ट ढ्ठ ढ्ड ढ्ढ ढ्ण ढ्त ढ्थ ढ्द ढ्ध ढ्न ढ्ऩ ढ्प ढ्फ ढ्ब ढ्भ ढ्म ढ्य ढ्र ढ्ऱ ढ्ल ढ्ळ ढ्ऴ ढ्व ढ्श ढ्ष ढ्स ढ्ह ढ्क़ ढ्ख़ ढ्ग़ ढ्ज़ ढ्ड़ ढ्ढ़ ढ्फ़ ढ्य़ </br>
+ण्क ण्ख ण्ग ण्घ ण्ङ ण्च ण्छ ण्ज ण्झ ण्ञ ण्ट ण्ठ ण्ड ण्ढ ण्ण ण्त ण्थ ण्द ण्ध ण्न ण्ऩ ण्प ण्फ ण्ब ण्भ ण्म ण्य ण्र ण्ऱ ण्ल ण्ळ ण्ऴ ण्व ण्श ण्ष ण्स ण्ह ण्क़ ण्ख़ ण्ग़ ण्ज़ ण्ड़ ण्ढ़ ण्फ़ ण्य़ </br>
+त्क त्ख त्ग त्घ त्ङ त्च त्छ त्ज त्झ त्ञ त्ट त्ठ त्ड त्ढ त्ण त्त त्थ त्द त्ध त्न त्ऩ त्प त्फ त्ब त्भ त्म त्य त्र त्ऱ त्ल त्ळ त्ऴ त्व त्श त्ष त्स त्ह त्क़ त्ख़ त्ग़ त्ज़ त्ड़ त्ढ़ त्फ़ त्य़ </br>
+थ्क थ्ख थ्ग थ्घ थ्ङ थ्च थ्छ थ्ज थ्झ थ्ञ थ्ट थ्ठ थ्ड थ्ढ थ्ण थ्त थ्थ थ्द थ्ध थ्न थ्ऩ थ्प थ्फ थ्ब थ्भ थ्म थ्य थ्र थ्ऱ थ्ल थ्ळ थ्ऴ थ्व थ्श थ्ष थ्स थ्ह थ्क़ थ्ख़ थ्ग़ थ्ज़ थ्ड़ थ्ढ़ थ्फ़ थ्य़ </br>
+द्क द्ख द्ग द्घ द्ङ द्च द्छ द्ज द्झ द्ञ द्ट द्ठ द्ड द्ढ द्ण द्त द्थ द्द द्ध द्न द्ऩ द्प द्फ द्ब द्भ द्म द्य द्र द्ऱ द्ल द्ळ द्ऴ द्व द्श द्ष द्स द्ह द्क़ द्ख़ द्ग़ द्ज़ द्ड़ द्ढ़ द्फ़ द्य़ </br>
+ध्क ध्ख ध्ग ध्घ ध्ङ ध्च ध्छ ध्ज ध्झ ध्ञ ध्ट ध्ठ ध्ड ध्ढ ध्ण ध्त ध्थ ध्द ध्ध ध्न ध्ऩ ध्प ध्फ ध्ब ध्भ ध्म ध्य ध्र ध्ऱ ध्ल ध्ळ ध्ऴ ध्व ध्श ध्ष ध्स ध्ह ध्क़ ध्ख़ ध्ग़ ध्ज़ ध्ड़ ध्ढ़ ध्फ़ ध्य़ </br>
+न्क न्ख न्ग न्घ न्ङ न्च न्छ न्ज न्झ न्ञ न्ट न्ठ न्ड न्ढ न्ण न्त न्थ न्द न्ध न्न न्ऩ न्प न्फ न्ब न्भ न्म न्य न्र न्ऱ न्ल न्ळ न्ऴ न्व न्श न्ष न्स न्ह न्क़ न्ख़ न्ग़ न्ज़ न्ड़ न्ढ़ न्फ़ न्य़ </br>
+ऩ्क ऩ्ख ऩ्ग ऩ्घ ऩ्ङ ऩ्च ऩ्छ ऩ्ज ऩ्झ ऩ्ञ ऩ्ट ऩ्ठ ऩ्ड ऩ्ढ ऩ्ण ऩ्त ऩ्थ ऩ्द ऩ्ध ऩ्न ऩ्ऩ ऩ्प ऩ्फ ऩ्ब ऩ्भ ऩ्म ऩ्य ऩ्र ऩ्ऱ ऩ्ल ऩ्ळ ऩ्ऴ ऩ्व ऩ्श ऩ्ष ऩ्स ऩ्ह ऩ्क़ ऩ्ख़ ऩ्ग़ ऩ्ज़ ऩ्ड़ ऩ्ढ़ ऩ्फ़ ऩ्य़ </br>
+प्क प्ख प्ग प्घ प्ङ प्च प्छ प्ज प्झ प्ञ प्ट प्ठ प्ड प्ढ प्ण प्त प्थ प्द प्ध प्न प्ऩ प्प प्फ प्ब प्भ प्म प्य प्र प्ऱ प्ल प्ळ प्ऴ प्व प्श प्ष प्स प्ह प्क़ प्ख़ प्ग़ प्ज़ प्ड़ प्ढ़ प्फ़ प्य़ </br>
+फ्क फ्ख फ्ग फ्घ फ्ङ फ्च फ्छ फ्ज फ्झ फ्ञ फ्ट फ्ठ फ्ड फ्ढ फ्ण फ्त फ्थ फ्द फ्ध फ्न फ्ऩ फ्प फ्फ फ्ब फ्भ फ्म फ्य फ्र फ्ऱ फ्ल फ्ळ फ्ऴ फ्व फ्श फ्ष फ्स फ्ह फ्क़ फ्ख़ फ्ग़ फ्ज़ फ्ड़ फ्ढ़ फ्फ़ फ्य़ </br>
+ब्क ब्ख ब्ग ब्घ ब्ङ ब्च ब्छ ब्ज ब्झ ब्ञ ब्ट ब्ठ ब्ड ब्ढ ब्ण ब्त ब्थ ब्द ब्ध ब्न ब्ऩ ब्प ब्फ ब्ब ब्भ ब्म ब्य ब्र ब्ऱ ब्ल ब्ळ ब्ऴ ब्व ब्श ब्ष ब्स ब्ह ब्क़ ब्ख़ ब्ग़ ब्ज़ ब्ड़ ब्ढ़ ब्फ़ ब्य़ </br>
+भ्क भ्ख भ्ग भ्घ भ्ङ भ्च भ्छ भ्ज भ्झ भ्ञ भ्ट भ्ठ भ्ड भ्ढ भ्ण भ्त भ्थ भ्द भ्ध भ्न भ्ऩ भ्प भ्फ भ्ब भ्भ भ्म भ्य भ्र भ्ऱ भ्ल भ्ळ भ्ऴ भ्व भ्श भ्ष भ्स भ्ह भ्क़ भ्ख़ भ्ग़ भ्ज़ भ्ड़ भ्ढ़ भ्फ़ भ्य़ </br>
+म्क म्ख म्ग म्घ म्ङ म्च म्छ म्ज म्झ म्ञ म्ट म्ठ म्ड म्ढ म्ण म्त म्थ म्द म्ध म्न म्ऩ म्प म्फ म्ब म्भ म्म म्य म्र म्ऱ म्ल म्ळ म्ऴ म्व म्श म्ष म्स म्ह म्क़ म्ख़ म्ग़ म्ज़ म्ड़ म्ढ़ म्फ़ म्य़ </br>
+य्क य्ख य्ग य्घ य्ङ य्च य्छ य्ज य्झ य्ञ य्ट य्ठ य्ड य्ढ य्ण य्त य्थ य्द य्ध य्न य्ऩ य्प य्फ य्ब य्भ य्म य्य य्र य्ऱ य्ल य्ळ य्ऴ य्व य्श य्ष य्स य्ह य्क़ य्ख़ य्ग़ य्ज़ य्ड़ य्ढ़ य्फ़ य्य़ </br>
+र्क र्ख र्ग र्घ र्ङ र्च र्छ र्ज र्झ र्ञ र्ट र्ठ र्ड र्ढ र्ण र्त र्थ र्द र्ध र्न र्ऩ र्प र्फ र्ब र्भ र्म र्य र्र र्ऱ र्ल र्ळ र्ऴ र्व र्श र्ष र्स र्ह र्क़ र्ख़ र्ग़ र्ज़ र्ड़ र्ढ़ र्फ़ र्य़ </br>
+ऱ्क ऱ्ख ऱ्ग ऱ्घ ऱ्ङ ऱ्च ऱ्छ ऱ्ज ऱ्झ ऱ्ञ ऱ्ट ऱ्ठ ऱ्ड ऱ्ढ ऱ्ण ऱ्त ऱ्थ ऱ्द ऱ्ध ऱ्न ऱ्ऩ ऱ्प ऱ्फ ऱ्ब ऱ्भ ऱ्म ऱ्य ऱ्र ऱ्ऱ ऱ्ल ऱ्ळ ऱ्ऴ ऱ्व ऱ्श ऱ्ष ऱ्स ऱ्ह ऱ्क़ ऱ्ख़ ऱ्ग़ ऱ्ज़ ऱ्ड़ ऱ्ढ़ ऱ्फ़ ऱ्य़ </br>
+ल्क ल्ख ल्ग ल्घ ल्ङ ल्च ल्छ ल्ज ल्झ ल्ञ ल्ट ल्ठ ल्ड ल्ढ ल्ण ल्त ल्थ ल्द ल्ध ल्न ल्ऩ ल्प ल्फ ल्ब ल्भ ल्म ल्य ल्र ल्ऱ ल्ल ल्ळ ल्ऴ ल्व ल्श ल्ष ल्स ल्ह ल्क़ ल्ख़ ल्ग़ ल्ज़ ल्ड़ ल्ढ़ ल्फ़ ल्य़ </br>
+ळ्क ळ्ख ळ्ग ळ्घ ळ्ङ ळ्च ळ्छ ळ्ज ळ्झ ळ्ञ ळ्ट ळ्ठ ळ्ड ळ्ढ ळ्ण ळ्त ळ्थ ळ्द ळ्ध ळ्न ळ्ऩ ळ्प ळ्फ ळ्ब ळ्भ ळ्म ळ्य ळ्र ळ्ऱ ळ्ल ळ्ळ ळ्ऴ ळ्व ळ्श ळ्ष ळ्स ळ्ह ळ्क़ ळ्ख़ ळ्ग़ ळ्ज़ ळ्ड़ ळ्ढ़ ळ्फ़ ळ्य़ </br>
+ऴ्क ऴ्ख ऴ्ग ऴ्घ ऴ्ङ ऴ्च ऴ्छ ऴ्ज ऴ्झ ऴ्ञ ऴ्ट ऴ्ठ ऴ्ड ऴ्ढ ऴ्ण ऴ्त ऴ्थ ऴ्द ऴ्ध ऴ्न ऴ्ऩ ऴ्प ऴ्फ ऴ्ब ऴ्भ ऴ्म ऴ्य ऴ्र ऴ्ऱ ऴ्ल ऴ्ळ ऴ्ऴ ऴ्व ऴ्श ऴ्ष ऴ्स ऴ्ह ऴ्क़ ऴ्ख़ ऴ्ग़ ऴ्ज़ ऴ्ड़ ऴ्ढ़ ऴ्फ़ ऴ्य़ </br>
+व्क व्ख व्ग व्घ व्ङ व्च व्छ व्ज व्झ व्ञ व्ट व्ठ व्ड व्ढ व्ण व्त व्थ व्द व्ध व्न व्ऩ व्प व्फ व्ब व्भ व्म व्य व्र व्ऱ व्ल व्ळ व्ऴ व्व व्श व्ष व्स व्ह व्क़ व्ख़ व्ग़ व्ज़ व्ड़ व्ढ़ व्फ़ व्य़ </br>
+श्क श्ख श्ग श्घ श्ङ श्च श्छ श्ज श्झ श्ञ श्ट श्ठ श्ड श्ढ श्ण श्त श्थ श्द श्ध श्न श्ऩ श्प श्फ श्ब श्भ श्म श्य श्र श्ऱ श्ल श्ळ श्ऴ श्व श्श श्ष श्स श्ह श्क़ श्ख़ श्ग़ श्ज़ श्ड़ श्ढ़ श्फ़ श्य़</br>
+ष्क ष्ख ष्ग ष्घ ष्ङ ष्च ष्छ ष्ज ष्झ ष्ञ ष्ट ष्ठ ष्ड ष्ढ ष्ण ष्त ष्थ ष्द ष्ध ष्न ष्ऩ ष्प ष्फ ष्ब ष्भ ष्म ष्य ष्र ष्ऱ ष्ल ष्ळ ष्ऴ ष्व ष्श ष्ष ष्स ष्ह ष्क़ ष्ख़ ष्ग़ ष्ज़ ष्ड़ ष्ढ़ ष्फ़ ष्य़ </br>
+स्क स्ख स्ग स्घ स्ङ स्च स्छ स्ज स्झ स्ञ स्ट स्ठ स्ड स्ढ स्ण स्त स्थ स्द स्ध स्न स्ऩ स्प स्फ स्ब स्भ स्म स्य स्र स्ऱ स्ल स्ळ स्ऴ स्व स्श स्ष स्स स्ह स्क़ स्ख़ स्ग़ स्ज़ स्ड़ स्ढ़ स्फ़ स्य़ </br>
+ह्क ह्ख ह्ग ह्घ ह्ङ ह्च ह्छ ह्ज ह्झ ह्ञ ह्ट ह्ठ ह्ड ह्ढ ह्ण ह्त ह्थ ह्द ह्ध ह्न ह्ऩ ह्प ह्फ ह्ब ह्भ ह्म ह्य ह्र ह्ऱ ह्ल ह्ळ ह्ऴ ह्व ह्श ह्ष ह्स ह्ह ह्क़ ह्ख़ ह्ग़ ह्ज़ ह्ड़ ह्ढ़ ह्फ़ ह्य़ </br>
+क़्क क़्ख क़्ग क़्घ क़्ङ क़्च क़्छ क़्ज क़्झ क़्ञ क़्ट क़्ठ क़्ड क़्ढ क़्ण क़्त क़्थ क़्द क़्ध क़्न क़्ऩ क़्प क़्फ क़्ब क़्भ क़्म क़्य क़्र क़्ऱ क़्ल क़्ळ क़्ऴ क़्व क़्श क़्ष क़्स क़्ह क़्क़ क़्ख़ क़्ग़ क़्ज़ क़्ड़ क़्ढ़ क़्फ़ क़्य़ </br>
+ख़्क ख़्ख ख़्ग ख़्घ ख़्ङ ख़्च ख़्छ ख़्ज ख़्झ ख़्ञ ख़्ट ख़्ठ ख़्ड ख़्ढ ख़्ण ख़्त ख़्थ ख़्द ख़्ध ख़्न ख़्ऩ ख़्प ख़्फ ख़्ब ख़्भ ख़्म ख़्य ख़्र ख़्ऱ ख़्ल ख़्ळ ख़्ऴ ख़्व ख़्श ख़्ष ख़्स ख़्ह ख़्क़ ख़्ख़ ख़्ग़ ख़्ज़ ख़्ड़ ख़्ढ़ ख़्फ़ ख़्य़ </br>
+ग़्क ग़्ख ग़्ग ग़्घ ग़्ङ ग़्च ग़्छ ग़्ज ग़्झ ग़्ञ ग़्ट ग़्ठ ग़्ड ग़्ढ ग़्ण ग़्त ग़्थ ग़्द ग़्ध ग़्न ग़्ऩ ग़्प ग़्फ ग़्ब ग़्भ ग़्म ग़्य ग़्र ग़्ऱ ग़्ल ग़्ळ ग़्ऴ ग़्व ग़्श ग़्ष ग़्स ग़्ह ग़्क़ ग़्ख़ ग़्ग़ ग़्ज़ ग़्ड़ ग़्ढ़ ग़्फ़ ग़्य़ </br>
+ज़्क ज़्ख ज़्ग ज़्घ ज़्ङ ज़्च ज़्छ ज़्ज ज़्झ ज़्ञ ज़्ट ज़्ठ ज़्ड ज़्ढ ज़्ण ज़्त ज़्थ ज़्द ज़्ध ज़्न ज़्ऩ ज़्प ज़्फ ज़्ब ज़्भ ज़्म ज़्य ज़्र ज़्ऱ ज़्ल ज़्ळ ज़्ऴ ज़्व ज़्श ज़्ष ज़्स ज़्ह ज़्क़ ज़्ख़ ज़्ग़ ज़्ज़ ज़्ड़ ज़्ढ़ ज़्फ़ ज़्य़ </br>
+ड़्क ड़्ख ड़्ग ड़्घ ड़्ङ ड़्च ड़्छ ड़्ज ड़्झ ड़्ञ ड़्ट ड़्ठ ड़्ड ड़्ढ ड़्ण ड़्त ड़्थ ड़्द ड़्ध ड़्न ड़्ऩ ड़्प ड़्फ ड़्ब ड़्भ ड़्म ड़्य ड़्र ड़्ऱ ड़्ल ड़्ळ ड़्ऴ ड़्व ड़्श ड़्ष ड़्स ड़्ह ड़्क़ ड़्ख़ ड़्ग़ ड़्ज़ ड़्ड़ ड़्ढ़ ड़्फ़ ड़्य़ </br>
+ढ़्क ढ़्ख ढ़्ग ढ़्घ ढ़्ङ ढ़्च ढ़्छ ढ़्ज ढ़्झ ढ़्ञ ढ़्ट ढ़्ठ ढ़्ड ढ़्ढ ढ़्ण ढ़्त ढ़्थ ढ़्द ढ़्ध ढ़्न ढ़्ऩ ढ़्प ढ़्फ ढ़्ब ढ़्भ ढ़्म ढ़्य ढ़्र ढ़्ऱ ढ़्ल ढ़्ळ ढ़्ऴ ढ़्व ढ़्श ढ़्ष ढ़्स ढ़्ह ढ़्क़ ढ़्ख़ ढ़्ग़ ढ़्ज़ ढ़्ड़ ढ़्ढ़ ढ़्फ़ ढ़्य़ </br>
+फ़्क फ़्ख फ़्ग फ़्घ फ़्ङ फ़्च फ़्छ फ़्ज फ़्झ फ़्ञ फ़्ट फ़्ठ फ़्ड फ़्ढ फ़्ण फ़्त फ़्थ फ़्द फ़्ध फ़्न फ़्ऩ फ़्प फ़्फ फ़्ब फ़्भ फ़्म फ़्य फ़्र फ़्ऱ फ़्ल फ़्ळ फ़्ऴ फ़्व फ़्श फ़्ष फ़्स फ़्ह फ़्क़ फ़्ख़ फ़्ग़ फ़्ज़ फ़्ड़ फ़्ढ़ फ़्फ़ फ़्य़ </br>
+य़्क य़्ख य़्ग य़्घ य़्ङ य़्च य़्छ य़्ज य़्झ य़्ञ य़्ट य़्ठ य़्ड य़्ढ य़्ण य़्त य़्थ य़्द य़्ध य़्न य़्ऩ य़्प य़्फ य़्ब य़्भ य़्म य़्य य़्र य़्ऱ य़्ल य़्ळ य़्ऴ य़्व य़्श य़्ष य़्स य़्ह य़्क़ य़्ख़ य़्ग़ य़्ज़ य़्ड़ य़्ढ़ य़्फ़ य़्य़
+</span></br></br>
+
+<em>Bi-consonant conjuncts</em></br></div>
+<span STYLE="word-wrap: break-word"><table class="conjuncttable" style="text-align:center; font-size:15px">
+<tbody><tr>
+<th></th>
+<th><span title="ka (IPA:kə)">क</span></th>
+<th><span title="kha (IPA:kʰə)">ख</span></th>
+<th><span title="ga (IPA:ɡə)">ग</span></th>
+<th><span title="gha (IPA:ɡʱə)">घ</span></th>
+<th><span title="ṅa (IPA:ŋə)">ङ</span></th>
+<th><span title="ca (IPA:cɕə)">च</span></th>
+<th><span title="cha (IPA:cɕʰə)">छ</span></th>
+<th><span title="ja (IPA:ɟʝə)">ज</span></th>
+<th><span title="jha (IPA:ɟʝʱə)">झ</span></th>
+<th><span title="ña (IPA:ɲə)">ञ</span></th>
+<th><span title="ṭa (IPA:ʈə)">ट</span></th>
+<th><span title="ṭha (IPA:ʈʰə)">ठ</span></th>
+<th><span title="ḍa (IPA:ɖə)">ड</span></th>
+<th><span title="ḍha (IPA:ɖʱə)">ढ</span></th>
+<th><span title="ṇa (IPA:ɳə)">ण</span></th>
+<th><span title="ta (IPA:t̪ə)">त</span></th>
+<th><span title="tha (IPA:t̪ʰə)">थ</span></th>
+<th><span title="da (IPA:d̪ə)">द</span></th>
+<th><span title="dha (IPA:d̪ʱə)">ध</span></th>
+<th><span title="na (IPA:n̪ə)">न</span></th>
+<th><span title="pa (IPA:pə)">प</span></th>
+<th><span title="pha (IPA:pʰə)">फ</span></th>
+<th><span title="ba (IPA:bə)">ब</span></th>
+<th><span title="bha (IPA:bʱə)">भ</span></th>
+<th><span title="ma (IPA:mə)">म</span></th>
+<th><span title="ya (IPA:jə)">य</span></th>
+<th><span title="ra (IPA:rə)">र</span></th>
+<th><span title="la (IPA:lə)">ल</span></th>
+<th><span title="va (IPA:və)">व</span></th>
+<th><span title="śa (IPA:ʃə)">श</span></th>
+<th><span title="ṣa (IPA:ʂə)">ष</span></th>
+<th><span title="sa (IPA:sə)">स</span></th>
+<th><span title="ha (IPA:hə)">ह</span></th>
+<th><span title="ḷa (IPA:ɭə)">ळ</span></th>
+<th><span title="kṣa (IPA:kʂə)">क्ष</span></th>
+<th><span title="jña (IPA:ɟʝɲə)">ज्ञ</span></th>
+</tr>
+<tr>
+<th><span title="k (IPA:k)">क</span></th>
+<td><span title="kka (IPA:kkə)">क्क</span></td>
+<td><span title="kkha (IPA:kkʰə)">क्ख</span></td>
+<td><span title="kga (IPA:kɡə)">क्ग</span></td>
+<td><span title="kgha (IPA:kɡʱə)">क्घ</span></td>
+<td><span title="kṅa (IPA:kŋə)">क्ङ</span></td>
+<td><span title="kca (IPA:kcɕə)">क्च</span></td>
+<td><span title="kcha (IPA:kcɕʰə)">क्छ</span></td>
+<td><span title="kja (IPA:kɟʝə)">क्ज</span></td>
+<td><span title="kjha (IPA:kɟʝʱə)">क्झ</span></td>
+<td><span title="kña (IPA:kɲə)">क्ञ</span></td>
+<td><span title="kṭa (IPA:kʈə)">क्ट</span></td>
+<td><span title="kṭha (IPA:kʈʰə)">क्ठ</span></td>
+<td><span title="kḍa (IPA:kɖə)">क्ड</span></td>
+<td><span title="kḍha (IPA:kɖʱə)">क्ढ</span></td>
+<td><span title="kṇa (IPA:kɳə)">क्ण</span></td>
+<td><span title="kta (IPA:kt̪ə)">क्त</span></td>
+<td><span title="ktha (IPA:kt̪ʰə)">क्थ</span></td>
+<td><span title="kda (IPA:kd̪ə)">क्द</span></td>
+<td><span title="kdha (IPA:kd̪ʱə)">क्ध</span></td>
+<td><span title="kna (IPA:kn̪ə)">क्न</span></td>
+<td><span title="kpa (IPA:kpə)">क्प</span></td>
+<td><span title="kpha (IPA:kpʰə)">क्फ</span></td>
+<td><span title="kba (IPA:kbə)">क्ब</span></td>
+<td><span title="kbha (IPA:kbʱə)">क्भ</span></td>
+<td><span title="kma (IPA:kmə)">क्म</span></td>
+<td><span title="kya (IPA:kjə)">क्य</span></td>
+<td><span title="kra (IPA:krə)">क्र</span></td>
+<td><span title="kla (IPA:klə)">क्ल</span></td>
+<td><span title="kva (IPA:kvə)">क्व</span></td>
+<td><span title="kśa (IPA:kʃə)">क्श</span></td>
+<td><span title="kṣa (IPA:kʂə)">क्ष</span></td>
+<td><span title="ksa (IPA:ksə)">क्स</span></td>
+<td><span title="kha (IPA:khə)">क्ह</span></td>
+<td><span title="kḷa (IPA:kɭə)">क्ळ</span></td>
+<td><span title="kkṣa (IPA:kkʂə)">क्क्ष</span></td>
+<td><span title="kjña (IPA:kɟʝɲə)">क्ज्ञ</span></td>
+</tr>
+<tr>
+<th><span title="kh (IPA:kʰ)">ख</span></th>
+<td><span title="khka (IPA:kʰkə)">ख्क</span></td>
+<td><span title="khkha (IPA:kʰkʰə)">ख्ख</span></td>
+<td><span title="khga (IPA:kʰɡə)">ख्ग</span></td>
+<td><span title="khgha (IPA:kʰɡʱə)">ख्घ</span></td>
+<td><span title="khṅa (IPA:kʰŋə)">ख्ङ</span></td>
+<td><span title="khca (IPA:kʰcɕə)">ख्च</span></td>
+<td><span title="khcha (IPA:kʰcɕʰə)">ख्छ</span></td>
+<td><span title="khja (IPA:kʰɟʝə)">ख्ज</span></td>
+<td><span title="khjha (IPA:kʰɟʝʱə)">ख्झ</span></td>
+<td><span title="khña (IPA:kʰɲə)">ख्ञ</span></td>
+<td><span title="khṭa (IPA:kʰʈə)">ख्ट</span></td>
+<td><span title="khṭha (IPA:kʰʈʰə)">ख्ठ</span></td>
+<td><span title="khḍa (IPA:kʰɖə)">ख्ड</span></td>
+<td><span title="khḍha (IPA:kʰɖʱə)">ख्ढ</span></td>
+<td><span title="khṇa (IPA:kʰɳə)">ख्ण</span></td>
+<td><span title="khta (IPA:kʰt̪ə)">ख्त</span></td>
+<td><span title="khtha (IPA:kʰt̪ʰə)">ख्थ</span></td>
+<td><span title="khda (IPA:kʰd̪ə)">ख्द</span></td>
+<td><span title="khdha (IPA:kʰd̪ʱə)">ख्ध</span></td>
+<td><span title="khna (IPA:kʰn̪ə)">ख्न</span></td>
+<td><span title="khpa (IPA:kʰpə)">ख्प</span></td>
+<td><span title="khpha (IPA:kʰpʰə)">ख्फ</span></td>
+<td><span title="khba (IPA:kʰbə)">ख्ब</span></td>
+<td><span title="khbha (IPA:kʰbʱə)">ख्भ</span></td>
+<td><span title="khma (IPA:kʰmə)">ख्म</span></td>
+<td><span title="khya (IPA:kʰjə)">ख्य</span></td>
+<td><span title="khra (IPA:kʰrə)">ख्र</span></td>
+<td><span title="khla (IPA:kʰlə)">ख्ल</span></td>
+<td><span title="khva (IPA:kʰvə)">ख्व</span></td>
+<td><span title="khśa (IPA:kʰʃə)">ख्श</span></td>
+<td><span title="khṣa (IPA:kʰʂə)">ख्ष</span></td>
+<td><span title="khsa (IPA:kʰsə)">ख्स</span></td>
+<td><span title="khha (IPA:kʰhə)">ख्ह</span></td>
+<td><span title="khḷa (IPA:kʰɭə)">ख्ळ</span></td>
+<td><span title="khkṣa (IPA:kʰkʂə)">ख्क्ष</span></td>
+<td><span title="khjña (IPA:kʰɟʝɲə)">ख्ज्ञ</span></td>
+</tr>
+<tr>
+<th><span title="g (IPA:ɡ)">ग</span></th>
+<td><span title="gka (IPA:ɡkə)">ग्क</span></td>
+<td><span title="gkha (IPA:ɡkʰə)">ग्ख</span></td>
+<td><span title="gga (IPA:ɡɡə)">ग्ग</span></td>
+<td><span title="ggha (IPA:ɡɡʱə)">ग्घ</span></td>
+<td><span title="gṅa (IPA:ɡŋə)">ग्ङ</span></td>
+<td><span title="gca (IPA:ɡcɕə)">ग्च</span></td>
+<td><span title="gcha (IPA:ɡcɕʰə)">ग्छ</span></td>
+<td><span title="gja (IPA:ɡɟʝə)">ग्ज</span></td>
+<td><span title="gjha (IPA:ɡɟʝʱə)">ग्झ</span></td>
+<td><span title="gña (IPA:ɡɲə)">ग्ञ</span></td>
+<td><span title="gṭa (IPA:ɡʈə)">ग्ट</span></td>
+<td><span title="gṭha (IPA:ɡʈʰə)">ग्ठ</span></td>
+<td><span title="gḍa (IPA:ɡɖə)">ग्ड</span></td>
+<td><span title="gḍha (IPA:ɡɖʱə)">ग्ढ</span></td>
+<td><span title="gṇa (IPA:ɡɳə)">ग्ण</span></td>
+<td><span title="gta (IPA:ɡt̪ə)">ग्त</span></td>
+<td><span title="gtha (IPA:ɡt̪ʰə)">ग्थ</span></td>
+<td><span title="gda (IPA:ɡd̪ə)">ग्द</span></td>
+<td><span title="gdha (IPA:ɡd̪ʱə)">ग्ध</span></td>
+<td><span title="gna (IPA:ɡn̪ə)">ग्न</span></td>
+<td><span title="gpa (IPA:ɡpə)">ग्प</span></td>
+<td><span title="gpha (IPA:ɡpʰə)">ग्फ</span></td>
+<td><span title="gba (IPA:ɡbə)">ग्ब</span></td>
+<td><span title="gbha (IPA:ɡbʱə)">ग्भ</span></td>
+<td><span title="gma (IPA:ɡmə)">ग्म</span></td>
+<td><span title="gya (IPA:ɡjə)">ग्य</span></td>
+<td><span title="gra (IPA:ɡrə)">ग्र</span></td>
+<td><span title="gla (IPA:ɡlə)">ग्ल</span></td>
+<td><span title="gva (IPA:ɡvə)">ग्व</span></td>
+<td><span title="gśa (IPA:ɡʃə)">ग्श</span></td>
+<td><span title="gṣa (IPA:ɡʂə)">ग्ष</span></td>
+<td><span title="gsa (IPA:ɡsə)">ग्स</span></td>
+<td><span title="gha (IPA:ɡhə)">ग्ह</span></td>
+<td><span title="gḷa (IPA:ɡɭə)">ग्ळ</span></td>
+<td><span title="gkṣa (IPA:ɡkʂə)">ग्क्ष</span></td>
+<td><span title="gjña (IPA:ɡɟʝɲə)">ग्ज्ञ</span></td>
+</tr>
+<tr>
+<th><span title="gh (IPA:ɡʱ)">घ</span></th>
+<td><span title="ghka (IPA:ɡʱkə)">घ्क</span></td>
+<td><span title="ghkha (IPA:ɡʱkʰə)">घ्ख</span></td>
+<td><span title="ghga (IPA:ɡʱɡə)">घ्ग</span></td>
+<td><span title="ghgha (IPA:ɡʱɡʱə)">घ्घ</span></td>
+<td><span title="ghṅa (IPA:ɡʱŋə)">घ्ङ</span></td>
+<td><span title="ghca (IPA:ɡʱcɕə)">घ्च</span></td>
+<td><span title="ghcha (IPA:ɡʱcɕʰə)">घ्छ</span></td>
+<td><span title="ghja (IPA:ɡʱɟʝə)">घ्ज</span></td>
+<td><span title="ghjha (IPA:ɡʱɟʝʱə)">घ्झ</span></td>
+<td><span title="ghña (IPA:ɡʱɲə)">घ्ञ</span></td>
+<td><span title="ghṭa (IPA:ɡʱʈə)">घ्ट</span></td>
+<td><span title="ghṭha (IPA:ɡʱʈʰə)">घ्ठ</span></td>
+<td><span title="ghḍa (IPA:ɡʱɖə)">घ्ड</span></td>
+<td><span title="ghḍha (IPA:ɡʱɖʱə)">घ्ढ</span></td>
+<td><span title="ghṇa (IPA:ɡʱɳə)">घ्ण</span></td>
+<td><span title="ghta (IPA:ɡʱt̪ə)">घ्त</span></td>
+<td><span title="ghtha (IPA:ɡʱt̪ʰə)">घ्थ</span></td>
+<td><span title="ghda (IPA:ɡʱd̪ə)">घ्द</span></td>
+<td><span title="ghdha (IPA:ɡʱd̪ʱə)">घ्ध</span></td>
+<td><span title="ghna (IPA:ɡʱn̪ə)">घ्न</span></td>
+<td><span title="ghpa (IPA:ɡʱpə)">घ्प</span></td>
+<td><span title="ghpha (IPA:ɡʱpʰə)">घ्फ</span></td>
+<td><span title="ghba (IPA:ɡʱbə)">घ्ब</span></td>
+<td><span title="ghbha (IPA:ɡʱbʱə)">घ्भ</span></td>
+<td><span title="ghma (IPA:ɡʱmə)">घ्म</span></td>
+<td><span title="ghya (IPA:ɡʱjə)">घ्य</span></td>
+<td><span title="ghra (IPA:ɡʱrə)">घ्र</span></td>
+<td><span title="ghla (IPA:ɡʱlə)">घ्ल</span></td>
+<td><span title="ghva (IPA:ɡʱvə)">घ्व</span></td>
+<td><span title="ghśa (IPA:ɡʱʃə)">घ्श</span></td>
+<td><span title="ghṣa (IPA:ɡʱʂə)">घ्ष</span></td>
+<td><span title="ghsa (IPA:ɡʱsə)">घ्स</span></td>
+<td><span title="ghha (IPA:ɡʱhə)">घ्ह</span></td>
+<td><span title="ghḷa (IPA:ɡʱɭə)">घ्ळ</span></td>
+<td><span title="ghkṣa (IPA:ɡʱkʂə)">घ्क्ष</span></td>
+<td><span title="ghjña (IPA:ɡʱɟʝɲə)">घ्ज्ञ</span></td>
+</tr>
+<tr>
+<th><span title="ṅ (IPA:ŋ)">ङ</span></th>
+<td><span title="ṅka (IPA:ŋkə)">ङ्क</span></td>
+<td><span title="ṅkha (IPA:ŋkʰə)">ङ्ख</span></td>
+<td><span title="ṅga (IPA:ŋɡə)">ङ्ग</span></td>
+<td><span title="ṅgha (IPA:ŋɡʱə)">ङ्घ</span></td>
+<td><span title="ṅṅa (IPA:ŋŋə)">ङ्ङ</span></td>
+<td><span title="ṅca (IPA:ŋcɕə)">ङ्च</span></td>
+<td><span title="ṅcha (IPA:ŋcɕʰə)">ङ्छ</span></td>
+<td><span title="ṅja (IPA:ŋɟʝə)">ङ्ज</span></td>
+<td><span title="ṅjha (IPA:ŋɟʝʱə)">ङ्झ</span></td>
+<td><span title="ṅña (IPA:ŋɲə)">ङ्ञ</span></td>
+<td><span title="ṅṭa (IPA:ŋʈə)">ङ्ट</span></td>
+<td><span title="ṅṭha (IPA:ŋʈʰə)">ङ्ठ</span></td>
+<td><span title="ṅḍa (IPA:ŋɖə)">ङ्ड</span></td>
+<td><span title="ṅḍha (IPA:ŋɖʱə)">ङ्ढ</span></td>
+<td><span title="ṅṇa (IPA:ŋɳə)">ङ्ण</span></td>
+<td><span title="ṅta (IPA:ŋt̪ə)">ङ्त</span></td>
+<td><span title="ṅtha (IPA:ŋt̪ʰə)">ङ्थ</span></td>
+<td><span title="ṅda (IPA:ŋd̪ə)">ङ्द</span></td>
+<td><span title="ṅdha (IPA:ŋd̪ʱə)">ङ्ध</span></td>
+<td><span title="ṅna (IPA:ŋn̪ə)">ङ्न</span></td>
+<td><span title="ṅpa (IPA:ŋpə)">ङ्प</span></td>
+<td><span title="ṅpha (IPA:ŋpʰə)">ङ्फ</span></td>
+<td><span title="ṅba (IPA:ŋbə)">ङ्ब</span></td>
+<td><span title="ṅbha (IPA:ŋbʱə)">ङ्भ</span></td>
+<td><span title="ṅma (IPA:ŋmə)">ङ्म</span></td>
+<td><span title="ṅya (IPA:ŋjə)">ङ्य</span></td>
+<td><span title="ṅra (IPA:ŋrə)">ङ्र</span></td>
+<td><span title="ṅla (IPA:ŋlə)">ङ्ल</span></td>
+<td><span title="ṅva (IPA:ŋvə)">ङ्व</span></td>
+<td><span title="ṅśa (IPA:ŋʃə)">ङ्श</span></td>
+<td><span title="ṅṣa (IPA:ŋʂə)">ङ्ष</span></td>
+<td><span title="ṅsa (IPA:ŋsə)">ङ्स</span></td>
+<td><span title="ṅha (IPA:ŋhə)">ङ्ह</span></td>
+<td><span title="ṅḷa (IPA:ŋɭə)">ङ्ळ</span></td>
+<td><span title="ṅkṣa (IPA:ŋkʂə)">ङ्क्ष</span></td>
+<td><span title="ṅjña (IPA:ŋɟʝɲə)">ङ्ज्ञ</span></td>
+</tr>
+<tr>
+<th><span title="c (IPA:cɕ)">च</span></th>
+<td><span title="cka (IPA:cɕkə)">च्क</span></td>
+<td><span title="ckha (IPA:cɕkʰə)">च्ख</span></td>
+<td><span title="cga (IPA:cɕɡə)">च्ग</span></td>
+<td><span title="cgha (IPA:cɕɡʱə)">च्घ</span></td>
+<td><span title="cṅa (IPA:cɕŋə)">च्ङ</span></td>
+<td><span title="cca (IPA:cɕcɕə)">च्च</span></td>
+<td><span title="ccha (IPA:cɕcɕʰə)">च्छ</span></td>
+<td><span title="cja (IPA:cɕɟʝə)">च्ज</span></td>
+<td><span title="cjha (IPA:cɕɟʝʱə)">च्झ</span></td>
+<td><span title="cña (IPA:cɕɲə)">च्ञ</span></td>
+<td><span title="cṭa (IPA:cɕʈə)">च्ट</span></td>
+<td><span title="cṭha (IPA:cɕʈʰə)">च्ठ</span></td>
+<td><span title="cḍa (IPA:cɕɖə)">च्ड</span></td>
+<td><span title="cḍha (IPA:cɕɖʱə)">च्ढ</span></td>
+<td><span title="cṇa (IPA:cɕɳə)">च्ण</span></td>
+<td><span title="cta (IPA:cɕt̪ə)">च्त</span></td>
+<td><span title="ctha (IPA:cɕt̪ʰə)">च्थ</span></td>
+<td><span title="cda (IPA:cɕd̪ə)">च्द</span></td>
+<td><span title="cdha (IPA:cɕd̪ʱə)">च्ध</span></td>
+<td><span title="cna (IPA:cɕn̪ə)">च्न</span></td>
+<td><span title="cpa (IPA:cɕpə)">च्प</span></td>
+<td><span title="cpha (IPA:cɕpʰə)">च्फ</span></td>
+<td><span title="cba (IPA:cɕbə)">च्ब</span></td>
+<td><span title="cbha (IPA:cɕbʱə)">च्भ</span></td>
+<td><span title="cma (IPA:cɕmə)">च्म</span></td>
+<td><span title="cya (IPA:cɕjə)">च्य</span></td>
+<td><span title="cra (IPA:cɕrə)">च्र</span></td>
+<td><span title="cla (IPA:cɕlə)">च्ल</span></td>
+<td><span title="cva (IPA:cɕvə)">च्व</span></td>
+<td><span title="cśa (IPA:cɕʃə)">च्श</span></td>
+<td><span title="cṣa (IPA:cɕʂə)">च्ष</span></td>
+<td><span title="csa (IPA:cɕsə)">च्स</span></td>
+<td><span title="cha (IPA:cɕhə)">च्ह</span></td>
+<td><span title="cḷa (IPA:cɕɭə)">च्ळ</span></td>
+<td><span title="ckṣa (IPA:cɕkʂə)">च्क्ष</span></td>
+<td><span title="cjña (IPA:cɕɟʝɲə)">च्ज्ञ</span></td>
+</tr>
+<tr>
+<th><span title="ch (IPA:cɕʰ)">छ</span></th>
+<td><span title="chka (IPA:cɕʰkə)">छ्क</span></td>
+<td><span title="chkha (IPA:cɕʰkʰə)">छ्ख</span></td>
+<td><span title="chga (IPA:cɕʰɡə)">छ्ग</span></td>
+<td><span title="chgha (IPA:cɕʰɡʱə)">छ्घ</span></td>
+<td><span title="chṅa (IPA:cɕʰŋə)">छ्ङ</span></td>
+<td><span title="chca (IPA:cɕʰcɕə)">छ्च</span></td>
+<td><span title="chcha (IPA:cɕʰcɕʰə)">छ्छ</span></td>
+<td><span title="chja (IPA:cɕʰɟʝə)">छ्ज</span></td>
+<td><span title="chjha (IPA:cɕʰɟʝʱə)">छ्झ</span></td>
+<td><span title="chña (IPA:cɕʰɲə)">छ्ञ</span></td>
+<td><span title="chṭa (IPA:cɕʰʈə)">छ्ट</span></td>
+<td><span title="chṭha (IPA:cɕʰʈʰə)">छ्ठ</span></td>
+<td><span title="chḍa (IPA:cɕʰɖə)">छ्ड</span></td>
+<td><span title="chḍha (IPA:cɕʰɖʱə)">छ्ढ</span></td>
+<td><span title="chṇa (IPA:cɕʰɳə)">छ्ण</span></td>
+<td><span title="chta (IPA:cɕʰt̪ə)">छ्त</span></td>
+<td><span title="chtha (IPA:cɕʰt̪ʰə)">छ्थ</span></td>
+<td><span title="chda (IPA:cɕʰd̪ə)">छ्द</span></td>
+<td><span title="chdha (IPA:cɕʰd̪ʱə)">छ्ध</span></td>
+<td><span title="chna (IPA:cɕʰn̪ə)">छ्न</span></td>
+<td><span title="chpa (IPA:cɕʰpə)">छ्प</span></td>
+<td><span title="chpha (IPA:cɕʰpʰə)">छ्फ</span></td>
+<td><span title="chba (IPA:cɕʰbə)">छ्ब</span></td>
+<td><span title="chbha (IPA:cɕʰbʱə)">छ्भ</span></td>
+<td><span title="chma (IPA:cɕʰmə)">छ्म</span></td>
+<td><span title="chya (IPA:cɕʰjə)">छ्य</span></td>
+<td><span title="chra (IPA:cɕʰrə)">छ्र</span></td>
+<td><span title="chla (IPA:cɕʰlə)">छ्ल</span></td>
+<td><span title="chva (IPA:cɕʰvə)">छ्व</span></td>
+<td><span title="chśa (IPA:cɕʰʃə)">छ्श</span></td>
+<td><span title="chṣa (IPA:cɕʰʂə)">छ्ष</span></td>
+<td><span title="chsa (IPA:cɕʰsə)">छ्स</span></td>
+<td><span title="chha (IPA:cɕʰhə)">छ्ह</span></td>
+<td><span title="chḷa (IPA:cɕʰɭə)">छ्ळ</span></td>
+<td><span title="chkṣa (IPA:cɕʰkʂə)">छ्क्ष</span></td>
+<td><span title="chjña (IPA:cɕʰɟʝɲə)">छ्ज्ञ</span></td>
+</tr>
+<tr>
+<th><span title="j (IPA:ɟʝ)">ज</span></th>
+<td><span title="jka (IPA:ɟʝkə)">ज्क</span></td>
+<td><span title="jkha (IPA:ɟʝkʰə)">ज्ख</span></td>
+<td><span title="jga (IPA:ɟʝɡə)">ज्ग</span></td>
+<td><span title="jgha (IPA:ɟʝɡʱə)">ज्घ</span></td>
+<td><span title="jṅa (IPA:ɟʝŋə)">ज्ङ</span></td>
+<td><span title="jca (IPA:ɟʝcɕə)">ज्च</span></td>
+<td><span title="jcha (IPA:ɟʝcɕʰə)">ज्छ</span></td>
+<td><span title="jja (IPA:ɟʝɟʝə)">ज्ज</span></td>
+<td><span title="jjha (IPA:ɟʝɟʝʱə)">ज्झ</span></td>
+<td><span title="jña (IPA:ɟʝɲə)">ज्ञ</span></a></td>
+<td><span title="jṭa (IPA:ɟʝʈə)">ज्ट</span></td>
+<td><span title="jṭha (IPA:ɟʝʈʰə)">ज्ठ</span></td>
+<td><span title="jḍa (IPA:ɟʝɖə)">ज्ड</span></td>
+<td><span title="jḍha (IPA:ɟʝɖʱə)">ज्ढ</span></td>
+<td><span title="jṇa (IPA:ɟʝɳə)">ज्ण</span></td>
+<td><span title="jta (IPA:ɟʝt̪ə)">ज्त</span></td>
+<td><span title="jtha (IPA:ɟʝt̪ʰə)">ज्थ</span></td>
+<td><span title="jda (IPA:ɟʝd̪ə)">ज्द</span></td>
+<td><span title="jdha (IPA:ɟʝd̪ʱə)">ज्ध</span></td>
+<td><span title="jna (IPA:ɟʝn̪ə)">ज्न</span></td>
+<td><span title="jpa (IPA:ɟʝpə)">ज्प</span></td>
+<td><span title="jpha (IPA:ɟʝpʰə)">ज्फ</span></td>
+<td><span title="jba (IPA:ɟʝbə)">ज्ब</span></td>
+<td><span title="jbha (IPA:ɟʝbʱə)">ज्भ</span></td>
+<td><span title="jma (IPA:ɟʝmə)">ज्म</span></td>
+<td><span title="jya (IPA:ɟʝjə)">ज्य</span></td>
+<td><span title="jra (IPA:ɟʝrə)">ज्र</span></td>
+<td><span title="jla (IPA:ɟʝlə)">ज्ल</span></td>
+<td><span title="jva (IPA:ɟʝvə)">ज्व</span></td>
+<td><span title="jśa (IPA:ɟʝʃə)">ज्श</span></td>
+<td><span title="jṣa (IPA:ɟʝʂə)">ज्ष</span></td>
+<td><span title="jsa (IPA:ɟʝsə)">ज्स</span></td>
+<td><span title="jha (IPA:ɟʝhə)">ज्ह</span></td>
+<td><span title="jḷa (IPA:ɟʝɭə)">ज्ळ</span></td>
+<td><span title="jkṣa (IPA:ɟʝkʂə)">ज्क्ष</span></td>
+<td><span title="jjña (IPA:ɟʝɟʝɲə)">ज्ज्ञ</span></td>
+</tr>
+<tr>
+<th><span title="jh (IPA:ɟʝʱ)">झ</span></th>
+<td><span title="jhka (IPA:ɟʝʱkə)">झ्क</span></td>
+<td><span title="jhkha (IPA:ɟʝʱkʰə)">झ्ख</span></td>
+<td><span title="jhga (IPA:ɟʝʱɡə)">झ्ग</span></td>
+<td><span title="jhgha (IPA:ɟʝʱɡʱə)">झ्घ</span></td>
+<td><span title="jhṅa (IPA:ɟʝʱŋə)">झ्ङ</span></td>
+<td><span title="jhca (IPA:ɟʝʱcɕə)">झ्च</span></td>
+<td><span title="jhcha (IPA:ɟʝʱcɕʰə)">झ्छ</span></td>
+<td><span title="jhja (IPA:ɟʝʱɟʝə)">झ्ज</span></td>
+<td><span title="jhjha (IPA:ɟʝʱɟʝʱə)">झ्झ</span></td>
+<td><span title="jhña (IPA:ɟʝʱɲə)">झ्ञ</span></td>
+<td><span title="jhṭa (IPA:ɟʝʱʈə)">झ्ट</span></td>
+<td><span title="jhṭha (IPA:ɟʝʱʈʰə)">झ्ठ</span></td>
+<td><span title="jhḍa (IPA:ɟʝʱɖə)">झ्ड</span></td>
+<td><span title="jhḍha (IPA:ɟʝʱɖʱə)">झ्ढ</span></td>
+<td><span title="jhṇa (IPA:ɟʝʱɳə)">झ्ण</span></td>
+<td><span title="jhta (IPA:ɟʝʱt̪ə)">झ्त</span></td>
+<td><span title="jhtha (IPA:ɟʝʱt̪ʰə)">झ्थ</span></td>
+<td><span title="jhda (IPA:ɟʝʱd̪ə)">झ्द</span></td>
+<td><span title="jhdha (IPA:ɟʝʱd̪ʱə)">झ्ध</span></td>
+<td><span title="jhna (IPA:ɟʝʱn̪ə)">झ्न</span></td>
+<td><span title="jhpa (IPA:ɟʝʱpə)">झ्प</span></td>
+<td><span title="jhpha (IPA:ɟʝʱpʰə)">झ्फ</span></td>
+<td><span title="jhba (IPA:ɟʝʱbə)">झ्ब</span></td>
+<td><span title="jhbha (IPA:ɟʝʱbʱə)">झ्भ</span></td>
+<td><span title="jhma (IPA:ɟʝʱmə)">झ्म</span></td>
+<td><span title="jhya (IPA:ɟʝʱjə)">झ्य</span></td>
+<td><span title="jhra (IPA:ɟʝʱrə)">झ्र</span></td>
+<td><span title="jhla (IPA:ɟʝʱlə)">झ्ल</span></td>
+<td><span title="jhva (IPA:ɟʝʱvə)">झ्व</span></td>
+<td><span title="jhśa (IPA:ɟʝʱʃə)">झ्श</span></td>
+<td><span title="jhṣa (IPA:ɟʝʱʂə)">झ्ष</span></td>
+<td><span title="jhsa (IPA:ɟʝʱsə)">झ्स</span></td>
+<td><span title="jhha (IPA:ɟʝʱhə)">झ्ह</span></td>
+<td><span title="jhḷa (IPA:ɟʝʱɭə)">झ्ळ</span></td>
+<td><span title="jhkṣa (IPA:ɟʝʱkʂə)">झ्क्ष</span></td>
+<td><span title="jhjña (IPA:ɟʝʱɟʝɲə)">झ्ज्ञ</span></td>
+</tr>
+<tr>
+<th><span title="ñ (IPA:ɲ)">ञ</span></th>
+<td><span title="ñka (IPA:ɲkə)">ञ्क</span></td>
+<td><span title="ñkha (IPA:ɲkʰə)">ञ्ख</span></td>
+<td><span title="ñga (IPA:ɲɡə)">ञ्ग</span></td>
+<td><span title="ñgha (IPA:ɲɡʱə)">ञ्घ</span></td>
+<td><span title="ñṅa (IPA:ɲŋə)">ञ्ङ</span></td>
+<td><span title="ñca (IPA:ɲcɕə)">ञ्च</span></td>
+<td><span title="ñcha (IPA:ɲcɕʰə)">ञ्छ</span></td>
+<td><span title="ñja (IPA:ɲɟʝə)">ञ्ज</span></td>
+<td><span title="ñjha (IPA:ɲɟʝʱə)">ञ्झ</span></td>
+<td><span title="ñña (IPA:ɲɲə)">ञ्ञ</span></td>
+<td><span title="ñṭa (IPA:ɲʈə)">ञ्ट</span></td>
+<td><span title="ñṭha (IPA:ɲʈʰə)">ञ्ठ</span></td>
+<td><span title="ñḍa (IPA:ɲɖə)">ञ्ड</span></td>
+<td><span title="ñḍha (IPA:ɲɖʱə)">ञ्ढ</span></td>
+<td><span title="ñṇa (IPA:ɲɳə)">ञ्ण</span></td>
+<td><span title="ñta (IPA:ɲt̪ə)">ञ्त</span></td>
+<td><span title="ñtha (IPA:ɲt̪ʰə)">ञ्थ</span></td>
+<td><span title="ñda (IPA:ɲd̪ə)">ञ्द</span></td>
+<td><span title="ñdha (IPA:ɲd̪ʱə)">ञ्ध</span></td>
+<td><span title="ñna (IPA:ɲn̪ə)">ञ्न</span></td>
+<td><span title="ñpa (IPA:ɲpə)">ञ्प</span></td>
+<td><span title="ñpha (IPA:ɲpʰə)">ञ्फ</span></td>
+<td><span title="ñba (IPA:ɲbə)">ञ्ब</span></td>
+<td><span title="ñbha (IPA:ɲbʱə)">ञ्भ</span></td>
+<td><span title="ñma (IPA:ɲmə)">ञ्म</span></td>
+<td><span title="ñya (IPA:ɲjə)">ञ्य</span></td>
+<td><span title="ñra (IPA:ɲrə)">ञ्र</span></td>
+<td><span title="ñla (IPA:ɲlə)">ञ्ल</span></td>
+<td><span title="ñva (IPA:ɲvə)">ञ्व</span></td>
+<td><span title="ñśa (IPA:ɲʃə)">ञ्श</span></td>
+<td><span title="ñṣa (IPA:ɲʂə)">ञ्ष</span></td>
+<td><span title="ñsa (IPA:ɲsə)">ञ्स</span></td>
+<td><span title="ñha (IPA:ɲhə)">ञ्ह</span></td>
+<td><span title="ñḷa (IPA:ɲɭə)">ञ्ळ</span></td>
+<td><span title="ñkṣa (IPA:ɲkʂə)">ञ्क्ष</span></td>
+<td><span title="ñjña (IPA:ɲɟʝɲə)">ञ्ज्ञ</span></td>
+</tr>
+<tr>
+<th><span title="ṭ (IPA:ʈ)">ट</span></th>
+<td><span title="ṭka (IPA:ʈkə)">ट्क</span></td>
+<td><span title="ṭkha (IPA:ʈkʰə)">ट्ख</span></td>
+<td><span title="ṭga (IPA:ʈɡə)">ट्ग</span></td>
+<td><span title="ṭgha (IPA:ʈɡʱə)">ट्घ</span></td>
+<td><span title="ṭṅa (IPA:ʈŋə)">ट्ङ</span></td>
+<td><span title="ṭca (IPA:ʈcɕə)">ट्च</span></td>
+<td><span title="ṭcha (IPA:ʈcɕʰə)">ट्छ</span></td>
+<td><span title="ṭja (IPA:ʈɟʝə)">ट्ज</span></td>
+<td><span title="ṭjha (IPA:ʈɟʝʱə)">ट्झ</span></td>
+<td><span title="ṭña (IPA:ʈɲə)">ट्ञ</span></td>
+<td><span title="ṭṭa (IPA:ʈʈə)">ट्ट</b></span></td>
+<td><span title="ṭṭha (IPA:ʈʈʰə)">ट्ठ</b></span></td>
+<td><span title="ṭḍa (IPA:ʈɖə)">ट्ड</span></td>
+<td><span title="ṭḍha (IPA:ʈɖʱə)">ट्ढ</span></td>
+<td><span title="ṭṇa (IPA:ʈɳə)">ट्ण</span></td>
+<td><span title="ṭta (IPA:ʈt̪ə)">ट्त</span></td>
+<td><span title="ṭtha (IPA:ʈt̪ʰə)">ट्थ</span></td>
+<td><span title="ṭda (IPA:ʈd̪ə)">ट्द</span></td>
+<td><span title="ṭdha (IPA:ʈd̪ʱə)">ट्ध</span></td>
+<td><span title="ṭna (IPA:ʈn̪ə)">ट्न</span></td>
+<td><span title="ṭpa (IPA:ʈpə)">ट्प</span></td>
+<td><span title="ṭpha (IPA:ʈpʰə)">ट्फ</span></td>
+<td><span title="ṭba (IPA:ʈbə)">ट्ब</span></td>
+<td><span title="ṭbha (IPA:ʈbʱə)">ट्भ</span></td>
+<td><span title="ṭma (IPA:ʈmə)">ट्म</span></td>
+<td><span title="ṭya (IPA:ʈjə)">ट्य</span></td>
+<td><span title="ṭra (IPA:ʈrə)">ट्र</span></td>
+<td><span title="ṭla (IPA:ʈlə)">ट्ल</span></td>
+<td><span title="ṭva (IPA:ʈvə)">ट्व</span></td>
+<td><span title="ṭśa (IPA:ʈʃə)">ट्श</span></td>
+<td><span title="ṭṣa (IPA:ʈʂə)">ट्ष</span></td>
+<td><span title="ṭsa (IPA:ʈsə)">ट्स</span></td>
+<td><span title="ṭha (IPA:ʈhə)">ट्ह</span></td>
+<td><span title="ṭḷa (IPA:ʈɭə)">ट्ळ</span></td>
+<td><span title="ṭkṣa (IPA:ʈkʂə)">ट्क्ष</span></td>
+<td><span title="ṭjña (IPA:ʈɟʝɲə)">ट्ज्ञ</span></td>
+</tr>
+<tr>
+<th><span title="ṭh (IPA:ʈʰ)">ठ</span></th>
+<td><span title="ṭhka (IPA:ʈʰkə)">ठ्क</span></td>
+<td><span title="ṭhkha (IPA:ʈʰkʰə)">ठ्ख</span></td>
+<td><span title="ṭhga (IPA:ʈʰɡə)">ठ्ग</span></td>
+<td><span title="ṭhgha (IPA:ʈʰɡʱə)">ठ्घ</span></td>
+<td><span title="ṭhṅa (IPA:ʈʰŋə)">ठ्ङ</span></td>
+<td><span title="ṭhca (IPA:ʈʰcɕə)">ठ्च</span></td>
+<td><span title="ṭhcha (IPA:ʈʰcɕʰə)">ठ्छ</span></td>
+<td><span title="ṭhja (IPA:ʈʰɟʝə)">ठ्ज</span></td>
+<td><span title="ṭhjha (IPA:ʈʰɟʝʱə)">ठ्झ</span></td>
+<td><span title="ṭhña (IPA:ʈʰɲə)">ठ्ञ</span></td>
+<td><span title="ṭhṭa (IPA:ʈʰʈə)">ठ्ट</span></td>
+<td><span title="ṭhṭha (IPA:ʈʰʈʰə)">ठ्ठ</span></td>
+<td><span title="ṭhḍa (IPA:ʈʰɖə)">ठ्ड</span></td>
+<td><span title="ṭhḍha (IPA:ʈʰɖʱə)">ठ्ढ</span></td>
+<td><span title="ṭhṇa (IPA:ʈʰɳə)">ठ्ण</span></td>
+<td><span title="ṭhta (IPA:ʈʰt̪ə)">ठ्त</span></td>
+<td><span title="ṭhtha (IPA:ʈʰt̪ʰə)">ठ्थ</span></td>
+<td><span title="ṭhda (IPA:ʈʰd̪ə)">ठ्द</span></td>
+<td><span title="ṭhdha (IPA:ʈʰd̪ʱə)">ठ्ध</span></td>
+<td><span title="ṭhna (IPA:ʈʰn̪ə)">ठ्न</span></td>
+<td><span title="ṭhpa (IPA:ʈʰpə)">ठ्प</span></td>
+<td><span title="ṭhpha (IPA:ʈʰpʰə)">ठ्फ</span></td>
+<td><span title="ṭhba (IPA:ʈʰbə)">ठ्ब</span></td>
+<td><span title="ṭhbha (IPA:ʈʰbʱə)">ठ्भ</span></td>
+<td><span title="ṭhma (IPA:ʈʰmə)">ठ्म</span></td>
+<td><span title="ṭhya (IPA:ʈʰjə)">ठ्य</span></td>
+<td><span title="ṭhra (IPA:ʈʰrə)">ठ्र</span></td>
+<td><span title="ṭhla (IPA:ʈʰlə)">ठ्ल</span></td>
+<td><span title="ṭhva (IPA:ʈʰvə)">ठ्व</span></td>
+<td><span title="ṭhśa (IPA:ʈʰʃə)">ठ्श</span></td>
+<td><span title="ṭhṣa (IPA:ʈʰʂə)">ठ्ष</span></td>
+<td><span title="ṭhsa (IPA:ʈʰsə)">ठ्स</span></td>
+<td><span title="ṭhha (IPA:ʈʰhə)">ठ्ह</span></td>
+<td><span title="ṭhḷa (IPA:ʈʰɭə)">ठ्ळ</span></td>
+<td><span title="ṭhkṣa (IPA:ʈʰkʂə)">ठ्क्ष</span></td>
+<td><span title="ṭhjña (IPA:ʈʰɟʝɲə)">ठ्ज्ञ</span></td>
+</tr>
+<tr>
+<th><span title="ḍ (IPA:ɖ)">ड</span></th>
+<td><span title="ḍka (IPA:ɖkə)">ड्क</span></td>
+<td><span title="ḍkha (IPA:ɖkʰə)">ड्ख</span></td>
+<td><span title="ḍga (IPA:ɖɡə)">ड्ग</span></td>
+<td><span title="ḍgha (IPA:ɖɡʱə)">ड्घ</span></td>
+<td><span title="ḍṅa (IPA:ɖŋə)">ड्ङ</span></td>
+<td><span title="ḍca (IPA:ɖcɕə)">ड्च</span></td>
+<td><span title="ḍcha (IPA:ɖcɕʰə)">ड्छ</span></td>
+<td><span title="ḍja (IPA:ɖɟʝə)">ड्ज</span></td>
+<td><span title="ḍjha (IPA:ɖɟʝʱə)">ड्झ</span></td>
+<td><span title="ḍña (IPA:ɖɲə)">ड्ञ</span></td>
+<td><span title="ḍṭa (IPA:ɖʈə)">ड्ट</span></td>
+<td><span title="ḍṭha (IPA:ɖʈʰə)">ड्ठ</span></td>
+<td><span title="ḍḍa (IPA:ɖɖə)">ड्ड</span></td>
+<td><span title="ḍḍha (IPA:ɖɖʱə)">ड्ढ</span></td>
+<td><span title="ḍṇa (IPA:ɖɳə)">ड्ण</span></td>
+<td><span title="ḍta (IPA:ɖt̪ə)">ड्त</span></td>
+<td><span title="ḍtha (IPA:ɖt̪ʰə)">ड्थ</span></td>
+<td><span title="ḍda (IPA:ɖd̪ə)">ड्द</span></td>
+<td><span title="ḍdha (IPA:ɖd̪ʱə)">ड्ध</span></td>
+<td><span title="ḍna (IPA:ɖn̪ə)">ड्न</span></td>
+<td><span title="ḍpa (IPA:ɖpə)">ड्प</span></td>
+<td><span title="ḍpha (IPA:ɖpʰə)">ड्फ</span></td>
+<td><span title="ḍba (IPA:ɖbə)">ड्ब</span></td>
+<td><span title="ḍbha (IPA:ɖbʱə)">ड्भ</span></td>
+<td><span title="ḍma (IPA:ɖmə)">ड्म</span></td>
+<td><span title="ḍya (IPA:ɖjə)">ड्य</span></td>
+<td><span title="ḍra (IPA:ɖrə)">ड्र</span></td>
+<td><span title="ḍla (IPA:ɖlə)">ड्ल</span></td>
+<td><span title="ḍva (IPA:ɖvə)">ड्व</span></td>
+<td><span title="ḍśa (IPA:ɖʃə)">ड्श</span></td>
+<td><span title="ḍṣa (IPA:ɖʂə)">ड्ष</span></td>
+<td><span title="ḍsa (IPA:ɖsə)">ड्स</span></td>
+<td><span title="ḍha (IPA:ɖhə)">ड्ह</span></td>
+<td><span title="ḍḷa (IPA:ɖɭə)">ड्ळ</span></td>
+<td><span title="ḍkṣa (IPA:ɖkʂə)">ड्क्ष</span></td>
+<td><span title="ḍjña (IPA:ɖɟʝɲə)">ड्ज्ञ</span></td>
+</tr>
+<tr>
+<th><span title="ḍh (IPA:ɖʱ)">ढ</span></th>
+<td><span title="ḍhka (IPA:ɖʱkə)">ढ्क</span></td>
+<td><span title="ḍhkha (IPA:ɖʱkʰə)">ढ्ख</span></td>
+<td><span title="ḍhga (IPA:ɖʱɡə)">ढ्ग</span></td>
+<td><span title="ḍhgha (IPA:ɖʱɡʱə)">ढ्घ</span></td>
+<td><span title="ḍhṅa (IPA:ɖʱŋə)">ढ्ङ</span></td>
+<td><span title="ḍhca (IPA:ɖʱcɕə)">ढ्च</span></td>
+<td><span title="ḍhcha (IPA:ɖʱcɕʰə)">ढ्छ</span></td>
+<td><span title="ḍhja (IPA:ɖʱɟʝə)">ढ्ज</span></td>
+<td><span title="ḍhjha (IPA:ɖʱɟʝʱə)">ढ्झ</span></td>
+<td><span title="ḍhña (IPA:ɖʱɲə)">ढ्ञ</span></td>
+<td><span title="ḍhṭa (IPA:ɖʱʈə)">ढ्ट</span></td>
+<td><span title="ḍhṭha (IPA:ɖʱʈʰə)">ढ्ठ</span></td>
+<td><span title="ḍhḍa (IPA:ɖʱɖə)">ढ्ड</span></td>
+<td><span title="ḍhḍha (IPA:ɖʱɖʱə)">ढ्ढ</span></td>
+<td><span title="ḍhṇa (IPA:ɖʱɳə)">ढ्ण</span></td>
+<td><span title="ḍhta (IPA:ɖʱt̪ə)">ढ्त</span></td>
+<td><span title="ḍhtha (IPA:ɖʱt̪ʰə)">ढ्थ</span></td>
+<td><span title="ḍhda (IPA:ɖʱd̪ə)">ढ्द</span></td>
+<td><span title="ḍhdha (IPA:ɖʱd̪ʱə)">ढ्ध</span></td>
+<td><span title="ḍhna (IPA:ɖʱn̪ə)">ढ्न</span></td>
+<td><span title="ḍhpa (IPA:ɖʱpə)">ढ्प</span></td>
+<td><span title="ḍhpha (IPA:ɖʱpʰə)">ढ्फ</span></td>
+<td><span title="ḍhba (IPA:ɖʱbə)">ढ्ब</span></td>
+<td><span title="ḍhbha (IPA:ɖʱbʱə)">ढ्भ</span></td>
+<td><span title="ḍhma (IPA:ɖʱmə)">ढ्म</span></td>
+<td><span title="ḍhya (IPA:ɖʱjə)">ढ्य</span></td>
+<td><span title="ḍhra (IPA:ɖʱrə)">ढ्र</span></td>
+<td><span title="ḍhla (IPA:ɖʱlə)">ढ्ल</span></td>
+<td><span title="ḍhva (IPA:ɖʱvə)">ढ्व</span></td>
+<td><span title="ḍhśa (IPA:ɖʱʃə)">ढ्श</span></td>
+<td><span title="ḍhṣa (IPA:ɖʱʂə)">ढ्ष</span></td>
+<td><span title="ḍhsa (IPA:ɖʱsə)">ढ्स</span></td>
+<td><span title="ḍhha (IPA:ɖʱhə)">ढ्ह</span></td>
+<td><span title="ḍhḷa (IPA:ɖʱɭə)">ढ्ळ</span></td>
+<td><span title="ḍhkṣa (IPA:ɖʱkʂə)">ढ्क्ष</span></td>
+<td><span title="ḍhjña (IPA:ɖʱɟʝɲə)">ढ्ज्ञ</span></td>
+</tr>
+<tr>
+<th><span title="ṇ (IPA:ɳ)">ण</span></th>
+<td><span title="ṇka (IPA:ɳkə)">ण्क</span></td>
+<td><span title="ṇkha (IPA:ɳkʰə)">ण्ख</span></td>
+<td><span title="ṇga (IPA:ɳɡə)">ण्ग</span></td>
+<td><span title="ṇgha (IPA:ɳɡʱə)">ण्घ</span></td>
+<td><span title="ṇṅa (IPA:ɳŋə)">ण्ङ</span></td>
+<td><span title="ṇca (IPA:ɳcɕə)">ण्च</span></td>
+<td><span title="ṇcha (IPA:ɳcɕʰə)">ण्छ</span></td>
+<td><span title="ṇja (IPA:ɳɟʝə)">ण्ज</span></td>
+<td><span title="ṇjha (IPA:ɳɟʝʱə)">ण्झ</span></td>
+<td><span title="ṇña (IPA:ɳɲə)">ण्ञ</span></td>
+<td><span title="ṇṭa (IPA:ɳʈə)">ण्ट</span></td>
+<td><span title="ṇṭha (IPA:ɳʈʰə)">ण्ठ</span></td>
+<td><span title="ṇḍa (IPA:ɳɖə)">ण्ड</span></td>
+<td><span title="ṇḍha (IPA:ɳɖʱə)">ण्ढ</span></td>
+<td><span title="ṇṇa (IPA:ɳɳə)">ण्ण</span></td>
+<td><span title="ṇta (IPA:ɳt̪ə)">ण्त</span></td>
+<td><span title="ṇtha (IPA:ɳt̪ʰə)">ण्थ</span></td>
+<td><span title="ṇda (IPA:ɳd̪ə)">ण्द</span></td>
+<td><span title="ṇdha (IPA:ɳd̪ʱə)">ण्ध</span></td>
+<td><span title="ṇna (IPA:ɳn̪ə)">ण्न</span></td>
+<td><span title="ṇpa (IPA:ɳpə)">ण्प</span></td>
+<td><span title="ṇpha (IPA:ɳpʰə)">ण्फ</span></td>
+<td><span title="ṇba (IPA:ɳbə)">ण्ब</span></td>
+<td><span title="ṇbha (IPA:ɳbʱə)">ण्भ</span></td>
+<td><span title="ṇma (IPA:ɳmə)">ण्म</span></td>
+<td><span title="ṇya (IPA:ɳjə)">ण्य</span></td>
+<td><span title="ṇra (IPA:ɳrə)">ण्र</span></td>
+<td><span title="ṇla (IPA:ɳlə)">ण्ल</span></td>
+<td><span title="ṇva (IPA:ɳvə)">ण्व</span></td>
+<td><span title="ṇśa (IPA:ɳʃə)">ण्श</span></td>
+<td><span title="ṇṣa (IPA:ɳʂə)">ण्ष</span></td>
+<td><span title="ṇsa (IPA:ɳsə)">ण्स</span></td>
+<td><span title="ṇha (IPA:ɳhə)">ण्ह</span></td>
+<td><span title="ṇḷa (IPA:ɳɭə)">ण्ळ</span></td>
+<td><span title="ṇkṣa (IPA:ɳkʂə)">ण्क्ष</span></td>
+<td><span title="ṇjña (IPA:ɳɟʝɲə)">ण्ज्ञ</span></td>
+</tr>
+<tr>
+<th><span title="t (IPA:t̪)">त</span></th>
+<td><span title="tka (IPA:t̪kə)">त्क</span></td>
+<td><span title="tkha (IPA:t̪kʰə)">त्ख</span></td>
+<td><span title="tga (IPA:t̪ɡə)">त्ग</span></td>
+<td><span title="tgha (IPA:t̪ɡʱə)">त्घ</span></td>
+<td><span title="tṅa (IPA:t̪ŋə)">त्ङ</span></td>
+<td><span title="tca (IPA:t̪cɕə)">त्च</span></td>
+<td><span title="tcha (IPA:t̪cɕʰə)">त्छ</span></td>
+<td><span title="tja (IPA:t̪ɟʝə)">त्ज</span></td>
+<td><span title="tjha (IPA:t̪ɟʝʱə)">त्झ</span></td>
+<td><span title="tña (IPA:t̪ɲə)">त्ञ</span></td>
+<td><span title="tṭa (IPA:t̪ʈə)">त्ट</span></td>
+<td><span title="tṭha (IPA:t̪ʈʰə)">त्ठ</span></td>
+<td><span title="tḍa (IPA:t̪ɖə)">त्ड</span></td>
+<td><span title="tḍha (IPA:t̪ɖʱə)">त्ढ</span></td>
+<td><span title="tṇa (IPA:t̪ɳə)">त्ण</span></td>
+<td><span title="tta (IPA:t̪t̪ə)">त्त</span></td>
+<td><span title="ttha (IPA:t̪t̪ʰə)">त्थ</span></td>
+<td><span title="tda (IPA:t̪d̪ə)">त्द</span></td>
+<td><span title="tdha (IPA:t̪d̪ʱə)">त्ध</span></td>
+<td><span title="tna (IPA:t̪n̪ə)">त्न</span></td>
+<td><span title="tpa (IPA:t̪pə)">त्प</span></td>
+<td><span title="tpha (IPA:t̪pʰə)">त्फ</span></td>
+<td><span title="tba (IPA:t̪bə)">त्ब</span></td>
+<td><span title="tbha (IPA:t̪bʱə)">त्भ</span></td>
+<td><span title="tma (IPA:t̪mə)">त्म</span></td>
+<td><span title="tya (IPA:t̪jə)">त्य</span></td>
+<td><span title="tra (IPA:t̪rə)">त्र</span></td>
+<td><span title="tla (IPA:t̪lə)">त्ल</span></td>
+<td><span title="tva (IPA:t̪və)">त्व</span></td>
+<td><span title="tśa (IPA:t̪ʃə)">त्श</span></td>
+<td><span title="tṣa (IPA:t̪ʂə)">त्ष</span></td>
+<td><span title="tsa (IPA:t̪sə)">त्स</span></td>
+<td><span title="tha (IPA:t̪hə)">त्ह</span></td>
+<td><span title="tḷa (IPA:t̪ɭə)">त्ळ</span></td>
+<td><span title="tkṣa (IPA:t̪kʂə)">त्क्ष</span></td>
+<td><span title="tjña (IPA:t̪ɟʝɲə)">त्ज्ञ</span></td>
+</tr>
+<tr>
+<th><span title="th (IPA:t̪ʰ)">थ</span></th>
+<td><span title="thka (IPA:t̪ʰkə)">थ्क</span></td>
+<td><span title="thkha (IPA:t̪ʰkʰə)">थ्ख</span></td>
+<td><span title="thga (IPA:t̪ʰɡə)">थ्ग</span></td>
+<td><span title="thgha (IPA:t̪ʰɡʱə)">थ्घ</span></td>
+<td><span title="thṅa (IPA:t̪ʰŋə)">थ्ङ</span></td>
+<td><span title="thca (IPA:t̪ʰcɕə)">थ्च</span></td>
+<td><span title="thcha (IPA:t̪ʰcɕʰə)">थ्छ</span></td>
+<td><span title="thja (IPA:t̪ʰɟʝə)">थ्ज</span></td>
+<td><span title="thjha (IPA:t̪ʰɟʝʱə)">थ्झ</span></td>
+<td><span title="thña (IPA:t̪ʰɲə)">थ्ञ</span></td>
+<td><span title="thṭa (IPA:t̪ʰʈə)">थ्ट</span></td>
+<td><span title="thṭha (IPA:t̪ʰʈʰə)">थ्ठ</span></td>
+<td><span title="thḍa (IPA:t̪ʰɖə)">थ्ड</span></td>
+<td><span title="thḍha (IPA:t̪ʰɖʱə)">थ्ढ</span></td>
+<td><span title="thṇa (IPA:t̪ʰɳə)">थ्ण</span></td>
+<td><span title="thta (IPA:t̪ʰt̪ə)">थ्त</span></td>
+<td><span title="ththa (IPA:t̪ʰt̪ʰə)">थ्थ</span></td>
+<td><span title="thda (IPA:t̪ʰd̪ə)">थ्द</span></td>
+<td><span title="thdha (IPA:t̪ʰd̪ʱə)">थ्ध</span></td>
+<td><span title="thna (IPA:t̪ʰn̪ə)">थ्न</span></td>
+<td><span title="thpa (IPA:t̪ʰpə)">थ्प</span></td>
+<td><span title="thpha (IPA:t̪ʰpʰə)">थ्फ</span></td>
+<td><span title="thba (IPA:t̪ʰbə)">थ्ब</span></td>
+<td><span title="thbha (IPA:t̪ʰbʱə)">थ्भ</span></td>
+<td><span title="thma (IPA:t̪ʰmə)">थ्म</span></td>
+<td><span title="thya (IPA:t̪ʰjə)">थ्य</span></td>
+<td><span title="thra (IPA:t̪ʰrə)">थ्र</span></td>
+<td><span title="thla (IPA:t̪ʰlə)">थ्ल</span></td>
+<td><span title="thva (IPA:t̪ʰvə)">थ्व</span></td>
+<td><span title="thśa (IPA:t̪ʰʃə)">थ्श</span></td>
+<td><span title="thṣa (IPA:t̪ʰʂə)">थ्ष</span></td>
+<td><span title="thsa (IPA:t̪ʰsə)">थ्स</span></td>
+<td><span title="thha (IPA:t̪ʰhə)">थ्ह</span></td>
+<td><span title="thḷa (IPA:t̪ʰɭə)">थ्ळ</span></td>
+<td><span title="thkṣa (IPA:t̪ʰkʂə)">थ्क्ष</span></td>
+<td><span title="thjña (IPA:t̪ʰɟʝɲə)">थ्ज्ञ</span></td>
+</tr>
+<tr>
+<th><span title="d (IPA:d̪)">द</span></th>
+<td><span title="dka (IPA:d̪kə)">द्क</span></td>
+<td><span title="dkha (IPA:d̪kʰə)">द्ख</span></td>
+<td><span title="dga (IPA:d̪ɡə)">द्ग</span></td>
+<td><span title="dgha (IPA:d̪ɡʱə)">द्घ</span></td>
+<td><span title="dṅa (IPA:d̪ŋə)">द्ङ</span></td>
+<td><span title="dca (IPA:d̪cɕə)">द्च</span></td>
+<td><span title="dcha (IPA:d̪cɕʰə)">द्छ</span></td>
+<td><span title="dja (IPA:d̪ɟʝə)">द्ज</span></td>
+<td><span title="djha (IPA:d̪ɟʝʱə)">द्झ</span></td>
+<td><span title="dña (IPA:d̪ɲə)">द्ञ</span></td>
+<td><span title="dṭa (IPA:d̪ʈə)">द्ट</span></td>
+<td><span title="dṭha (IPA:d̪ʈʰə)">द्ठ</span></td>
+<td><span title="dḍa (IPA:d̪ɖə)">द्ड</span></td>
+<td><span title="dḍha (IPA:d̪ɖʱə)">द्ढ</span></td>
+<td><span title="dṇa (IPA:d̪ɳə)">द्ण</span></td>
+<td><span title="dta (IPA:d̪t̪ə)">द्त</span></td>
+<td><span title="dtha (IPA:d̪t̪ʰə)">द्थ</span></td>
+<td><span title="dda (IPA:d̪d̪ə)">द्द</span></td>
+<td><span title="ddha (IPA:d̪d̪ʱə)">द्ध</span></td>
+<td><span title="dna (IPA:d̪n̪ə)">द्न</span></td>
+<td><span title="dpa (IPA:d̪pə)">द्प</span></td>
+<td><span title="dpha (IPA:d̪pʰə)">द्फ</span></td>
+<td><span title="dba (IPA:d̪bə)">द्ब</span></td>
+<td><span title="dbha (IPA:d̪bʱə)">द्भ</span></td>
+<td><span title="dma (IPA:d̪mə)">द्म</span></td>
+<td><span title="dya (IPA:d̪jə)">द्य</span></td>
+<td><span title="dra (IPA:d̪rə)">द्र</span></td>
+<td><span title="dla (IPA:d̪lə)">द्ल</span></td>
+<td><span title="dva (IPA:d̪və)">द्व</span></td>
+<td><span title="dśa (IPA:d̪ʃə)">द्श</span></td>
+<td><span title="dṣa (IPA:d̪ʂə)">द्ष</span></td>
+<td><span title="dsa (IPA:d̪sə)">द्स</span></td>
+<td><span title="dha (IPA:d̪hə)">द्ह</span></td>
+<td><span title="dḷa (IPA:d̪ɭə)">द्ळ</span></td>
+<td><span title="dkṣa (IPA:d̪kʂə)">द्क्ष</span></td>
+<td><span title="djña (IPA:d̪ɟʝɲə)">द्ज्ञ</span></td>
+</tr>
+<tr>
+<th><span title="dh (IPA:d̪ʱ)">ध</span></th>
+<td><span title="dhka (IPA:d̪ʱkə)">ध्क</span></td>
+<td><span title="dhkha (IPA:d̪ʱkʰə)">ध्ख</span></td>
+<td><span title="dhga (IPA:d̪ʱɡə)">ध्ग</span></td>
+<td><span title="dhgha (IPA:d̪ʱɡʱə)">ध्घ</span></td>
+<td><span title="dhṅa (IPA:d̪ʱŋə)">ध्ङ</span></td>
+<td><span title="dhca (IPA:d̪ʱcɕə)">ध्च</span></td>
+<td><span title="dhcha (IPA:d̪ʱcɕʰə)">ध्छ</span></td>
+<td><span title="dhja (IPA:d̪ʱɟʝə)">ध्ज</span></td>
+<td><span title="dhjha (IPA:d̪ʱɟʝʱə)">ध्झ</span></td>
+<td><span title="dhña (IPA:d̪ʱɲə)">ध्ञ</span></td>
+<td><span title="dhṭa (IPA:d̪ʱʈə)">ध्ट</span></td>
+<td><span title="dhṭha (IPA:d̪ʱʈʰə)">ध्ठ</span></td>
+<td><span title="dhḍa (IPA:d̪ʱɖə)">ध्ड</span></td>
+<td><span title="dhḍha (IPA:d̪ʱɖʱə)">ध्ढ</span></td>
+<td><span title="dhṇa (IPA:d̪ʱɳə)">ध्ण</span></td>
+<td><span title="dhta (IPA:d̪ʱt̪ə)">ध्त</span></td>
+<td><span title="dhtha (IPA:d̪ʱt̪ʰə)">ध्थ</span></td>
+<td><span title="dhda (IPA:d̪ʱd̪ə)">ध्द</span></td>
+<td><span title="dhdha (IPA:d̪ʱd̪ʱə)">ध्ध</span></td>
+<td><span title="dhna (IPA:d̪ʱn̪ə)">ध्न</span></td>
+<td><span title="dhpa (IPA:d̪ʱpə)">ध्प</span></td>
+<td><span title="dhpha (IPA:d̪ʱpʰə)">ध्फ</span></td>
+<td><span title="dhba (IPA:d̪ʱbə)">ध्ब</span></td>
+<td><span title="dhbha (IPA:d̪ʱbʱə)">ध्भ</span></td>
+<td><span title="dhma (IPA:d̪ʱmə)">ध्म</span></td>
+<td><span title="dhya (IPA:d̪ʱjə)">ध्य</span></td>
+<td><span title="dhra (IPA:d̪ʱrə)">ध्र</span></td>
+<td><span title="dhla (IPA:d̪ʱlə)">ध्ल</span></td>
+<td><span title="dhva (IPA:d̪ʱvə)">ध्व</span></td>
+<td><span title="dhśa (IPA:d̪ʱʃə)">ध्श</span></td>
+<td><span title="dhṣa (IPA:d̪ʱʂə)">ध्ष</span></td>
+<td><span title="dhsa (IPA:d̪ʱsə)">ध्स</span></td>
+<td><span title="dhha (IPA:d̪ʱhə)">ध्ह</span></td>
+<td><span title="dhḷa (IPA:d̪ʱɭə)">ध्ळ</span></td>
+<td><span title="dhkṣa (IPA:d̪ʱkʂə)">ध्क्ष</span></td>
+<td><span title="dhjña (IPA:d̪ʱɟʝɲə)">ध्ज्ञ</span></td>
+</tr>
+<tr>
+<th><span title="n (IPA:n̪)">न</span></th>
+<td><span title="nka (IPA:n̪kə)">न्क</span></td>
+<td><span title="nkha (IPA:n̪kʰə)">न्ख</span></td>
+<td><span title="nga (IPA:n̪ɡə)">न्ग</span></td>
+<td><span title="ngha (IPA:n̪ɡʱə)">न्घ</span></td>
+<td><span title="nṅa (IPA:n̪ŋə)">न्ङ</span></td>
+<td><span title="nca (IPA:n̪cɕə)">न्च</span></td>
+<td><span title="ncha (IPA:n̪cɕʰə)">न्छ</span></td>
+<td><span title="nja (IPA:n̪ɟʝə)">न्ज</span></td>
+<td><span title="njha (IPA:n̪ɟʝʱə)">न्झ</span></td>
+<td><span title="nña (IPA:n̪ɲə)">न्ञ</span></td>
+<td><span title="nṭa (IPA:n̪ʈə)">न्ट</span></td>
+<td><span title="nṭha (IPA:n̪ʈʰə)">न्ठ</span></td>
+<td><span title="nḍa (IPA:n̪ɖə)">न्ड</span></td>
+<td><span title="nḍha (IPA:n̪ɖʱə)">न्ढ</span></td>
+<td><span title="nṇa (IPA:n̪ɳə)">न्ण</span></td>
+<td><span title="nta (IPA:n̪t̪ə)">न्त</span></td>
+<td><span title="ntha (IPA:n̪t̪ʰə)">न्थ</span></td>
+<td><span title="nda (IPA:n̪d̪ə)">न्द</span></td>
+<td><span title="ndha (IPA:n̪d̪ʱə)">न्ध</span></td>
+<td><span title="nna (IPA:n̪n̪ə)">न्न</span></td>
+<td><span title="npa (IPA:n̪pə)">न्प</span></td>
+<td><span title="npha (IPA:n̪pʰə)">न्फ</span></td>
+<td><span title="nba (IPA:n̪bə)">न्ब</span></td>
+<td><span title="nbha (IPA:n̪bʱə)">न्भ</span></td>
+<td><span title="nma (IPA:n̪mə)">न्म</span></td>
+<td><span title="nya (IPA:n̪jə)">न्य</span></td>
+<td><span title="nra (IPA:n̪rə)">न्र</span></td>
+<td><span title="nla (IPA:n̪lə)">न्ल</span></td>
+<td><span title="nva (IPA:n̪və)">न्व</span></td>
+<td><span title="nśa (IPA:n̪ʃə)">न्श</span></td>
+<td><span title="nṣa (IPA:n̪ʂə)">न्ष</span></td>
+<td><span title="nsa (IPA:n̪sə)">न्स</span></td>
+<td><span title="nha (IPA:n̪hə)">न्ह</span></td>
+<td><span title="nḷa (IPA:n̪ɭə)">न्ळ</span></td>
+<td><span title="nkṣa (IPA:n̪kʂə)">न्क्ष</span></td>
+<td><span title="njña (IPA:n̪ɟʝɲə)">न्ज्ञ</span></td>
+</tr>
+<tr>
+<th><span title="p (IPA:p)">प</span></th>
+<td><span title="pka (IPA:pkə)">प्क</span></td>
+<td><span title="pkha (IPA:pkʰə)">प्ख</span></td>
+<td><span title="pga (IPA:pɡə)">प्ग</span></td>
+<td><span title="pgha (IPA:pɡʱə)">प्घ</span></td>
+<td><span title="pṅa (IPA:pŋə)">प्ङ</span></td>
+<td><span title="pca (IPA:pcɕə)">प्च</span></td>
+<td><span title="pcha (IPA:pcɕʰə)">प्छ</span></td>
+<td><span title="pja (IPA:pɟʝə)">प्ज</span></td>
+<td><span title="pjha (IPA:pɟʝʱə)">प्झ</span></td>
+<td><span title="pña (IPA:pɲə)">प्ञ</span></td>
+<td><span title="pṭa (IPA:pʈə)">प्ट</span></td>
+<td><span title="pṭha (IPA:pʈʰə)">प्ठ</span></td>
+<td><span title="pḍa (IPA:pɖə)">प्ड</span></td>
+<td><span title="pḍha (IPA:pɖʱə)">प्ढ</span></td>
+<td><span title="pṇa (IPA:pɳə)">प्ण</span></td>
+<td><span title="pta (IPA:pt̪ə)">प्त</span></td>
+<td><span title="ptha (IPA:pt̪ʰə)">प्थ</span></td>
+<td><span title="pda (IPA:pd̪ə)">प्द</span></td>
+<td><span title="pdha (IPA:pd̪ʱə)">प्ध</span></td>
+<td><span title="pna (IPA:pn̪ə)">प्न</span></td>
+<td><span title="ppa (IPA:ppə)">प्प</span></td>
+<td><span title="ppha (IPA:ppʰə)">प्फ</span></td>
+<td><span title="pba (IPA:pbə)">प्ब</span></td>
+<td><span title="pbha (IPA:pbʱə)">प्भ</span></td>
+<td><span title="pma (IPA:pmə)">प्म</span></td>
+<td><span title="pya (IPA:pjə)">प्य</span></td>
+<td><span title="pra (IPA:prə)">प्र</span></td>
+<td><span title="pla (IPA:plə)">प्ल</span></td>
+<td><span title="pva (IPA:pvə)">प्व</span></td>
+<td><span title="pśa (IPA:pʃə)">प्श</span></td>
+<td><span title="pṣa (IPA:pʂə)">प्ष</span></td>
+<td><span title="psa (IPA:psə)">प्स</span></td>
+<td><span title="pha (IPA:phə)">प्ह</span></td>
+<td><span title="pḷa (IPA:pɭə)">प्ळ</span></td>
+<td><span title="pkṣa (IPA:pkʂə)">प्क्ष</span></td>
+<td><span title="pjña (IPA:pɟʝɲə)">प्ज्ञ</span></td>
+</tr>
+<tr>
+<th><span title="ph (IPA:pʰ)">फ</span></th>
+<td><span title="phka (IPA:pʰkə)">फ्क</span></td>
+<td><span title="phkha (IPA:pʰkʰə)">फ्ख</span></td>
+<td><span title="phga (IPA:pʰɡə)">फ्ग</span></td>
+<td><span title="phgha (IPA:pʰɡʱə)">फ्घ</span></td>
+<td><span title="phṅa (IPA:pʰŋə)">फ्ङ</span></td>
+<td><span title="phca (IPA:pʰcɕə)">फ्च</span></td>
+<td><span title="phcha (IPA:pʰcɕʰə)">फ्छ</span></td>
+<td><span title="phja (IPA:pʰɟʝə)">फ्ज</span></td>
+<td><span title="phjha (IPA:pʰɟʝʱə)">फ्झ</span></td>
+<td><span title="phña (IPA:pʰɲə)">फ्ञ</span></td>
+<td><span title="phṭa (IPA:pʰʈə)">फ्ट</span></td>
+<td><span title="phṭha (IPA:pʰʈʰə)">फ्ठ</span></td>
+<td><span title="phḍa (IPA:pʰɖə)">फ्ड</span></td>
+<td><span title="phḍha (IPA:pʰɖʱə)">फ्ढ</span></td>
+<td><span title="phṇa (IPA:pʰɳə)">फ्ण</span></td>
+<td><span title="phta (IPA:pʰt̪ə)">फ्त</span></td>
+<td><span title="phtha (IPA:pʰt̪ʰə)">फ्थ</span></td>
+<td><span title="phda (IPA:pʰd̪ə)">फ्द</span></td>
+<td><span title="phdha (IPA:pʰd̪ʱə)">फ्ध</span></td>
+<td><span title="phna (IPA:pʰn̪ə)">फ्न</span></td>
+<td><span title="phpa (IPA:pʰpə)">फ्प</span></td>
+<td><span title="phpha (IPA:pʰpʰə)">फ्फ</span></td>
+<td><span title="phba (IPA:pʰbə)">फ्ब</span></td>
+<td><span title="phbha (IPA:pʰbʱə)">फ्भ</span></td>
+<td><span title="phma (IPA:pʰmə)">फ्म</span></td>
+<td><span title="phya (IPA:pʰjə)">फ्य</span></td>
+<td><span title="phra (IPA:pʰrə)">फ्र</span></td>
+<td><span title="phla (IPA:pʰlə)">फ्ल</span></td>
+<td><span title="phva (IPA:pʰvə)">फ्व</span></td>
+<td><span title="phśa (IPA:pʰʃə)">फ्श</span></td>
+<td><span title="phṣa (IPA:pʰʂə)">फ्ष</span></td>
+<td><span title="phsa (IPA:pʰsə)">फ्स</span></td>
+<td><span title="phha (IPA:pʰhə)">फ्ह</span></td>
+<td><span title="phḷa (IPA:pʰɭə)">फ्ळ</span></td>
+<td><span title="phkṣa (IPA:pʰkʂə)">फ्क्ष</span></td>
+<td><span title="phjña (IPA:pʰɟʝɲə)">फ्ज्ञ</span></td>
+</tr>
+<tr>
+<th><span title="b (IPA:b)">ब</span></th>
+<td><span title="bka (IPA:bkə)">ब्क</span></td>
+<td><span title="bkha (IPA:bkʰə)">ब्ख</span></td>
+<td><span title="bga (IPA:bɡə)">ब्ग</span></td>
+<td><span title="bgha (IPA:bɡʱə)">ब्घ</span></td>
+<td><span title="bṅa (IPA:bŋə)">ब्ङ</span></td>
+<td><span title="bca (IPA:bcɕə)">ब्च</span></td>
+<td><span title="bcha (IPA:bcɕʰə)">ब्छ</span></td>
+<td><span title="bja (IPA:bɟʝə)">ब्ज</span></td>
+<td><span title="bjha (IPA:bɟʝʱə)">ब्झ</span></td>
+<td><span title="bña (IPA:bɲə)">ब्ञ</span></td>
+<td><span title="bṭa (IPA:bʈə)">ब्ट</span></td>
+<td><span title="bṭha (IPA:bʈʰə)">ब्ठ</span></td>
+<td><span title="bḍa (IPA:bɖə)">ब्ड</span></td>
+<td><span title="bḍha (IPA:bɖʱə)">ब्ढ</span></td>
+<td><span title="bṇa (IPA:bɳə)">ब्ण</span></td>
+<td><span title="bta (IPA:bt̪ə)">ब्त</span></td>
+<td><span title="btha (IPA:bt̪ʰə)">ब्थ</span></td>
+<td><span title="bda (IPA:bd̪ə)">ब्द</span></td>
+<td><span title="bdha (IPA:bd̪ʱə)">ब्ध</span></td>
+<td><span title="bna (IPA:bn̪ə)">ब्न</span></td>
+<td><span title="bpa (IPA:bpə)">ब्प</span></td>
+<td><span title="bpha (IPA:bpʰə)">ब्फ</span></td>
+<td><span title="bba (IPA:bbə)">ब्ब</span></td>
+<td><span title="bbha (IPA:bbʱə)">ब्भ</span></td>
+<td><span title="bma (IPA:bmə)">ब्म</span></td>
+<td><span title="bya (IPA:bjə)">ब्य</span></td>
+<td><span title="bra (IPA:brə)">ब्र</span></td>
+<td><span title="bla (IPA:blə)">ब्ल</span></td>
+<td><span title="bva (IPA:bvə)">ब्व</span></td>
+<td><span title="bśa (IPA:bʃə)">ब्श</span></td>
+<td><span title="bṣa (IPA:bʂə)">ब्ष</span></td>
+<td><span title="bsa (IPA:bsə)">ब्स</span></td>
+<td><span title="bha (IPA:bhə)">ब्ह</span></td>
+<td><span title="bḷa (IPA:bɭə)">ब्ळ</span></td>
+<td><span title="bkṣa (IPA:bkʂə)">ब्क्ष</span></td>
+<td><span title="bjña (IPA:bɟʝɲə)">ब्ज्ञ</span></td>
+</tr>
+<tr>
+<th><span title="bh (IPA:bʱ)">भ</span></th>
+<td><span title="bhka (IPA:bʱkə)">भ्क</span></td>
+<td><span title="bhkha (IPA:bʱkʰə)">भ्ख</span></td>
+<td><span title="bhga (IPA:bʱɡə)">भ्ग</span></td>
+<td><span title="bhgha (IPA:bʱɡʱə)">भ्घ</span></td>
+<td><span title="bhṅa (IPA:bʱŋə)">भ्ङ</span></td>
+<td><span title="bhca (IPA:bʱcɕə)">भ्च</span></td>
+<td><span title="bhcha (IPA:bʱcɕʰə)">भ्छ</span></td>
+<td><span title="bhja (IPA:bʱɟʝə)">भ्ज</span></td>
+<td><span title="bhjha (IPA:bʱɟʝʱə)">भ्झ</span></td>
+<td><span title="bhña (IPA:bʱɲə)">भ्ञ</span></td>
+<td><span title="bhṭa (IPA:bʱʈə)">भ्ट</span></td>
+<td><span title="bhṭha (IPA:bʱʈʰə)">भ्ठ</span></td>
+<td><span title="bhḍa (IPA:bʱɖə)">भ्ड</span></td>
+<td><span title="bhḍha (IPA:bʱɖʱə)">भ्ढ</span></td>
+<td><span title="bhṇa (IPA:bʱɳə)">भ्ण</span></td>
+<td><span title="bhta (IPA:bʱt̪ə)">भ्त</span></td>
+<td><span title="bhtha (IPA:bʱt̪ʰə)">भ्थ</span></td>
+<td><span title="bhda (IPA:bʱd̪ə)">भ्द</span></td>
+<td><span title="bhdha (IPA:bʱd̪ʱə)">भ्ध</span></td>
+<td><span title="bhna (IPA:bʱn̪ə)">भ्न</span></td>
+<td><span title="bhpa (IPA:bʱpə)">भ्प</span></td>
+<td><span title="bhpha (IPA:bʱpʰə)">भ्फ</span></td>
+<td><span title="bhba (IPA:bʱbə)">भ्ब</span></td>
+<td><span title="bhbha (IPA:bʱbʱə)">भ्भ</span></td>
+<td><span title="bhma (IPA:bʱmə)">भ्म</span></td>
+<td><span title="bhya (IPA:bʱjə)">भ्य</span></td>
+<td><span title="bhra (IPA:bʱrə)">भ्र</span></td>
+<td><span title="bhla (IPA:bʱlə)">भ्ल</span></td>
+<td><span title="bhva (IPA:bʱvə)">भ्व</span></td>
+<td><span title="bhśa (IPA:bʱʃə)">भ्श</span></td>
+<td><span title="bhṣa (IPA:bʱʂə)">भ्ष</span></td>
+<td><span title="bhsa (IPA:bʱsə)">भ्स</span></td>
+<td><span title="bhha (IPA:bʱhə)">भ्ह</span></td>
+<td><span title="bhḷa (IPA:bʱɭə)">भ्ळ</span></td>
+<td><span title="bhkṣa (IPA:bʱkʂə)">भ्क्ष</span></td>
+<td><span title="bhjña (IPA:bʱɟʝɲə)">भ्ज्ञ</span></td>
+</tr>
+<tr>
+<th><span title="m (IPA:m)">म</span></th>
+<td><span title="mka (IPA:mkə)">म्क</span></td>
+<td><span title="mkha (IPA:mkʰə)">म्ख</span></td>
+<td><span title="mga (IPA:mɡə)">म्ग</span></td>
+<td><span title="mgha (IPA:mɡʱə)">म्घ</span></td>
+<td><span title="mṅa (IPA:mŋə)">म्ङ</span></td>
+<td><span title="mca (IPA:mcɕə)">म्च</span></td>
+<td><span title="mcha (IPA:mcɕʰə)">म्छ</span></td>
+<td><span title="mja (IPA:mɟʝə)">म्ज</span></td>
+<td><span title="mjha (IPA:mɟʝʱə)">म्झ</span></td>
+<td><span title="mña (IPA:mɲə)">म्ञ</span></td>
+<td><span title="mṭa (IPA:mʈə)">म्ट</span></td>
+<td><span title="mṭha (IPA:mʈʰə)">म्ठ</span></td>
+<td><span title="mḍa (IPA:mɖə)">म्ड</span></td>
+<td><span title="mḍha (IPA:mɖʱə)">म्ढ</span></td>
+<td><span title="mṇa (IPA:mɳə)">म्ण</span></td>
+<td><span title="mta (IPA:mt̪ə)">म्त</span></td>
+<td><span title="mtha (IPA:mt̪ʰə)">म्थ</span></td>
+<td><span title="mda (IPA:md̪ə)">म्द</span></td>
+<td><span title="mdha (IPA:md̪ʱə)">म्ध</span></td>
+<td><span title="mna (IPA:mn̪ə)">म्न</span></td>
+<td><span title="mpa (IPA:mpə)">म्प</span></td>
+<td><span title="mpha (IPA:mpʰə)">म्फ</span></td>
+<td><span title="mba (IPA:mbə)">म्ब</span></td>
+<td><span title="mbha (IPA:mbʱə)">म्भ</span></td>
+<td><span title="mma (IPA:mmə)">म्म</span></td>
+<td><span title="mya (IPA:mjə)">म्य</span></td>
+<td><span title="mra (IPA:mrə)">म्र</span></td>
+<td><span title="mla (IPA:mlə)">म्ल</span></td>
+<td><span title="mva (IPA:mvə)">म्व</span></td>
+<td><span title="mśa (IPA:mʃə)">म्श</span></td>
+<td><span title="mṣa (IPA:mʂə)">म्ष</span></td>
+<td><span title="msa (IPA:msə)">म्स</span></td>
+<td><span title="mha (IPA:mhə)">म्ह</span></td>
+<td><span title="mḷa (IPA:mɭə)">म्ळ</span></td>
+<td><span title="mkṣa (IPA:mkʂə)">म्क्ष</span></td>
+<td><span title="mjña (IPA:mɟʝɲə)">म्ज्ञ</span></td>
+</tr>
+<tr>
+<th><span title="y (IPA:j)">य</span></th>
+<td><span title="yka (IPA:jkə)">य्क</span></td>
+<td><span title="ykha (IPA:jkʰə)">य्ख</span></td>
+<td><span title="yga (IPA:jɡə)">य्ग</span></td>
+<td><span title="ygha (IPA:jɡʱə)">य्घ</span></td>
+<td><span title="yṅa (IPA:jŋə)">य्ङ</span></td>
+<td><span title="yca (IPA:jcɕə)">य्च</span></td>
+<td><span title="ycha (IPA:jcɕʰə)">य्छ</span></td>
+<td><span title="yja (IPA:jɟʝə)">य्ज</span></td>
+<td><span title="yjha (IPA:jɟʝʱə)">य्झ</span></td>
+<td><span title="yña (IPA:jɲə)">य्ञ</span></td>
+<td><span title="yṭa (IPA:jʈə)">य्ट</span></td>
+<td><span title="yṭha (IPA:jʈʰə)">य्ठ</span></td>
+<td><span title="yḍa (IPA:jɖə)">य्ड</span></td>
+<td><span title="yḍha (IPA:jɖʱə)">य्ढ</span></td>
+<td><span title="yṇa (IPA:jɳə)">य्ण</span></td>
+<td><span title="yta (IPA:jt̪ə)">य्त</span></td>
+<td><span title="ytha (IPA:jt̪ʰə)">य्थ</span></td>
+<td><span title="yda (IPA:jd̪ə)">य्द</span></td>
+<td><span title="ydha (IPA:jd̪ʱə)">य्ध</span></td>
+<td><span title="yna (IPA:jn̪ə)">य्न</span></td>
+<td><span title="ypa (IPA:jpə)">य्प</span></td>
+<td><span title="ypha (IPA:jpʰə)">य्फ</span></td>
+<td><span title="yba (IPA:jbə)">य्ब</span></td>
+<td><span title="ybha (IPA:jbʱə)">य्भ</span></td>
+<td><span title="yma (IPA:jmə)">य्म</span></td>
+<td><span title="yya (IPA:jjə)">य्य</span></td>
+<td><span title="yra (IPA:jrə)">य्र</span></td>
+<td><span title="yla (IPA:jlə)">य्ल</span></td>
+<td><span title="yva (IPA:jvə)">य्व</span></td>
+<td><span title="yśa (IPA:jʃə)">य्श</span></td>
+<td><span title="yṣa (IPA:jʂə)">य्ष</span></td>
+<td><span title="ysa (IPA:jsə)">य्स</span></td>
+<td><span title="yha (IPA:jhə)">य्ह</span></td>
+<td><span title="yḷa (IPA:jɭə)">य्ळ</span></td>
+<td><span title="ykṣa (IPA:jkʂə)">य्क्ष</span></td>
+<td><span title="yjña (IPA:jɟʝɲə)">य्ज्ञ</span></td>
+</tr>
+<tr>
+<th><span title="r (IPA:r)">र</span></th>
+<td><span title="rka (IPA:rkə)">र्क</span></td>
+<td><span title="rkha (IPA:rkʰə)">र्ख</span></td>
+<td><span title="rga (IPA:rɡə)">र्ग</span></td>
+<td><span title="rgha (IPA:rɡʱə)">र्घ</span></td>
+<td><span title="rṅa (IPA:rŋə)">र्ङ</span></td>
+<td><span title="rca (IPA:rcɕə)">र्च</span></td>
+<td><span title="rcha (IPA:rcɕʰə)">र्छ</span></td>
+<td><span title="rja (IPA:rɟʝə)">र्ज</span></td>
+<td><span title="rjha (IPA:rɟʝʱə)">र्झ</span></td>
+<td><span title="rña (IPA:rɲə)">र्ञ</span></td>
+<td><span title="rṭa (IPA:rʈə)">र्ट</span></td>
+<td><span title="rṭha (IPA:rʈʰə)">र्ठ</span></td>
+<td><span title="rḍa (IPA:rɖə)">र्ड</span></td>
+<td><span title="rḍha (IPA:rɖʱə)">र्ढ</span></td>
+<td><span title="rṇa (IPA:rɳə)">र्ण</span></td>
+<td><span title="rta (IPA:rt̪ə)">र्त</span></td>
+<td><span title="rtha (IPA:rt̪ʰə)">र्थ</span></td>
+<td><span title="rda (IPA:rd̪ə)">र्द</span></td>
+<td><span title="rdha (IPA:rd̪ʱə)">र्ध</span></td>
+<td><span title="rna (IPA:rn̪ə)">र्न</span></td>
+<td><span title="rpa (IPA:rpə)">र्प</span></td>
+<td><span title="rpha (IPA:rpʰə)">र्फ</span></td>
+<td><span title="rba (IPA:rbə)">र्ब</span></td>
+<td><span title="rbha (IPA:rbʱə)">र्भ</span></td>
+<td><span title="rma (IPA:rmə)">र्म</span></td>
+<td><span title="rya (IPA:rjə)">र्य</span></td>
+<td><span title="rra (IPA:rrə)">र्र</span></td>
+<td><span title="rla (IPA:rlə)">र्ल</span></td>
+<td><span title="rva (IPA:rvə)">र्व</span></td>
+<td><span title="rśa (IPA:rʃə)">र्श</span></td>
+<td><span title="rṣa (IPA:rʂə)">र्ष</span></td>
+<td><span title="rsa (IPA:rsə)">र्स</span></td>
+<td><span title="rha (IPA:rhə)">र्ह</span></td>
+<td><span title="rḷa (IPA:rɭə)">र्ळ</span></td>
+<td><span title="rkṣa (IPA:rkʂə)">र्क्ष</span></td>
+<td><span title="rjña (IPA:rɟʝɲə)">र्ज्ञ</span></td>
+</tr>
+<tr>
+<th><span title="l (IPA:l)">ल</span></th>
+<td><span title="lka (IPA:lkə)">ल्क</span></td>
+<td><span title="lkha (IPA:lkʰə)">ल्ख</span></td>
+<td><span title="lga (IPA:lɡə)">ल्ग</span></td>
+<td><span title="lgha (IPA:lɡʱə)">ल्घ</span></td>
+<td><span title="lṅa (IPA:lŋə)">ल्ङ</span></td>
+<td><span title="lca (IPA:lcɕə)">ल्च</span></td>
+<td><span title="lcha (IPA:lcɕʰə)">ल्छ</span></td>
+<td><span title="lja (IPA:lɟʝə)">ल्ज</span></td>
+<td><span title="ljha (IPA:lɟʝʱə)">ल्झ</span></td>
+<td><span title="lña (IPA:lɲə)">ल्ञ</span></td>
+<td><span title="lṭa (IPA:lʈə)">ल्ट</span></td>
+<td><span title="lṭha (IPA:lʈʰə)">ल्ठ</span></td>
+<td><span title="lḍa (IPA:lɖə)">ल्ड</span></td>
+<td><span title="lḍha (IPA:lɖʱə)">ल्ढ</span></td>
+<td><span title="lṇa (IPA:lɳə)">ल्ण</span></td>
+<td><span title="lta (IPA:lt̪ə)">ल्त</span></td>
+<td><span title="ltha (IPA:lt̪ʰə)">ल्थ</span></td>
+<td><span title="lda (IPA:ld̪ə)">ल्द</span></td>
+<td><span title="ldha (IPA:ld̪ʱə)">ल्ध</span></td>
+<td><span title="lna (IPA:ln̪ə)">ल्न</span></td>
+<td><span title="lpa (IPA:lpə)">ल्प</span></td>
+<td><span title="lpha (IPA:lpʰə)">ल्फ</span></td>
+<td><span title="lba (IPA:lbə)">ल्ब</span></td>
+<td><span title="lbha (IPA:lbʱə)">ल्भ</span></td>
+<td><span title="lma (IPA:lmə)">ल्म</span></td>
+<td><span title="lya (IPA:ljə)">ल्य</span></td>
+<td><span title="lra (IPA:lrə)">ल्र</span></td>
+<td><span title="lla (IPA:llə)">ल्ल</span></td>
+<td><span title="lva (IPA:lvə)">ल्व</span></td>
+<td><span title="lśa (IPA:lʃə)">ल्श</span></td>
+<td><span title="lṣa (IPA:lʂə)">ल्ष</span></td>
+<td><span title="lsa (IPA:lsə)">ल्स</span></td>
+<td><span title="lha (IPA:lhə)">ल्ह</span></td>
+<td><span title="lḷa (IPA:lɭə)">ल्ळ</span></td>
+<td><span title="lkṣa (IPA:lkʂə)">ल्क्ष</span></td>
+<td><span title="ljña (IPA:lɟʝɲə)">ल्ज्ञ</span></td>
+</tr>
+<tr>
+<th><span title="v (IPA:v)">व</span></th>
+<td><span title="vka (IPA:vkə)">व्क</span></td>
+<td><span title="vkha (IPA:vkʰə)">व्ख</span></td>
+<td><span title="vga (IPA:vɡə)">व्ग</span></td>
+<td><span title="vgha (IPA:vɡʱə)">व्घ</span></td>
+<td><span title="vṅa (IPA:vŋə)">व्ङ</span></td>
+<td><span title="vca (IPA:vcɕə)">व्च</span></td>
+<td><span title="vcha (IPA:vcɕʰə)">व्छ</span></td>
+<td><span title="vja (IPA:vɟʝə)">व्ज</span></td>
+<td><span title="vjha (IPA:vɟʝʱə)">व्झ</span></td>
+<td><span title="vña (IPA:vɲə)">व्ञ</span></td>
+<td><span title="vṭa (IPA:vʈə)">व्ट</span></td>
+<td><span title="vṭha (IPA:vʈʰə)">व्ठ</span></td>
+<td><span title="vḍa (IPA:vɖə)">व्ड</span></td>
+<td><span title="vḍha (IPA:vɖʱə)">व्ढ</span></td>
+<td><span title="vṇa (IPA:vɳə)">व्ण</span></td>
+<td><span title="vta (IPA:vt̪ə)">व्त</span></td>
+<td><span title="vtha (IPA:vt̪ʰə)">व्थ</span></td>
+<td><span title="vda (IPA:vd̪ə)">व्द</span></td>
+<td><span title="vdha (IPA:vd̪ʱə)">व्ध</span></td>
+<td><span title="vna (IPA:vn̪ə)">व्न</span></td>
+<td><span title="vpa (IPA:vpə)">व्प</span></td>
+<td><span title="vpha (IPA:vpʰə)">व्फ</span></td>
+<td><span title="vba (IPA:vbə)">व्ब</span></td>
+<td><span title="vbha (IPA:vbʱə)">व्भ</span></td>
+<td><span title="vma (IPA:vmə)">व्म</span></td>
+<td><span title="vya (IPA:vjə)">व्य</span></td>
+<td><span title="vra (IPA:vrə)">व्र</span></td>
+<td><span title="vla (IPA:vlə)">व्ल</span></td>
+<td><span title="vva (IPA:vvə)">व्व</span></td>
+<td><span title="vśa (IPA:vʃə)">व्श</span></td>
+<td><span title="vṣa (IPA:vʂə)">व्ष</span></td>
+<td><span title="vsa (IPA:vsə)">व्स</span></td>
+<td><span title="vha (IPA:vhə)">व्ह</span></td>
+<td><span title="vḷa (IPA:vɭə)">व्ळ</span></td>
+<td><span title="vkṣa (IPA:vkʂə)">व्क्ष</span></td>
+<td><span title="vjña (IPA:vɟʝɲə)">व्ज्ञ</span></td>
+</tr>
+<tr>
+<th><span title="ś (IPA:ʃ)">श</span></th>
+<td><span title="śka (IPA:ʃkə)">श्क</span></td>
+<td><span title="śkha (IPA:ʃkʰə)">श्ख</span></td>
+<td><span title="śga (IPA:ʃɡə)">श्ग</span></td>
+<td><span title="śgha (IPA:ʃɡʱə)">श्घ</span></td>
+<td><span title="śṅa (IPA:ʃŋə)">श्ङ</span></td>
+<td><span title="śca (IPA:ʃcɕə)">श्च</span></td>
+<td><span title="ścha (IPA:ʃcɕʰə)">श्छ</span></td>
+<td><span title="śja (IPA:ʃɟʝə)">श्ज</span></td>
+<td><span title="śjha (IPA:ʃɟʝʱə)">श्झ</span></td>
+<td><span title="śña (IPA:ʃɲə)">श्ञ</span></td>
+<td><span title="śṭa (IPA:ʃʈə)">श्ट</span></td>
+<td><span title="śṭha (IPA:ʃʈʰə)">श्ठ</span></td>
+<td><span title="śḍa (IPA:ʃɖə)">श्ड</span></td>
+<td><span title="śḍha (IPA:ʃɖʱə)">श्ढ</span></td>
+<td><span title="śṇa (IPA:ʃɳə)">श्ण</span></td>
+<td><span title="śta (IPA:ʃt̪ə)">श्त</span></td>
+<td><span title="śtha (IPA:ʃt̪ʰə)">श्थ</span></td>
+<td><span title="śda (IPA:ʃd̪ə)">श्द</span></td>
+<td><span title="śdha (IPA:ʃd̪ʱə)">श्ध</span></td>
+<td><span title="śna (IPA:ʃn̪ə)">श्न</span></td>
+<td><span title="śpa (IPA:ʃpə)">श्प</span></td>
+<td><span title="śpha (IPA:ʃpʰə)">श्फ</span></td>
+<td><span title="śba (IPA:ʃbə)">श्ब</span></td>
+<td><span title="śbha (IPA:ʃbʱə)">श्भ</span></td>
+<td><span title="śma (IPA:ʃmə)">श्म</span></td>
+<td><span title="śya (IPA:ʃjə)">श्य</span></td>
+<td><span title="śra (IPA:ʃrə)">श्र</span></td>
+<td><span title="śla (IPA:ʃlə)">श्ल</span></td>
+<td><span title="śva (IPA:ʃvə)">श्व</span></td>
+<td><span title="śśa (IPA:ʃʃə)">श्श</span></td>
+<td><span title="śṣa (IPA:ʃʃə)">श्ष</span></td>
+<td><span title="śsa (IPA:ʃsə)">श्स</span></td>
+<td><span title="śha (IPA:ʃhə)">श्ह</span></td>
+<td><span title="śḷa (IPA:ʃɭə)">श्ळ</span></td>
+<td><span title="śkṣa (IPA:ʃkʃə)">श्क्ष</span></td>
+<td><span title="śjña (IPA:ʃɟʝɲə)">श्ज्ञ</span></td>
+</tr>
+<tr>
+<th><span title="ṣ (IPA:ʂ)">ष</span></th>
+<td><span title="ṣka (IPA:ʃkə)">ष्क</span></td>
+<td><span title="ṣkha (IPA:ʃkʰə)">ष्ख</span></td>
+<td><span title="ṣga (IPA:ʃɡə)">ष्ग</span></td>
+<td><span title="ṣgha (IPA:ʃɡʱə)">ष्घ</span></td>
+<td><span title="ṣṅa (IPA:ʃŋə)">ष्ङ</span></td>
+<td><span title="ṣca (IPA:ʃcɕə)">ष्च</span></td>
+<td><span title="ṣcha (IPA:ʃcɕʰə)">ष्छ</span></td>
+<td><span title="ṣja (IPA:ʃɟʝə)">ष्ज</span></td>
+<td><span title="ṣjha (IPA:ʃɟʝʱə)">ष्झ</span></td>
+<td><span title="ṣña (IPA:ʃɲə)">ष्ञ</span></td>
+<td><span title="ṣṭa (IPA:ʃʈə)">ष्ट</span></td>
+<td><span title="ṣṭha (IPA:ʃʈʰə)">ष्ठ</span></td>
+<td><span title="ṣḍa (IPA:ʃɖə)">ष्ड</span></td>
+<td><span title="ṣḍha (IPA:ʃɖʱə)">ष्ढ</span></td>
+<td><span title="ṣṇa (IPA:ʃɳə)">ष्ण</span></td>
+<td><span title="ṣta (IPA:ʃt̪ə)">ष्त</span></td>
+<td><span title="ṣtha (IPA:ʃt̪ʰə)">ष्थ</span></td>
+<td><span title="ṣda (IPA:ʃd̪ə)">ष्द</span></td>
+<td><span title="ṣdha (IPA:ʃd̪ʱə)">ष्ध</span></td>
+<td><span title="ṣna (IPA:ʃn̪ə)">ष्न</span></td>
+<td><span title="ṣpa (IPA:ʃpə)">ष्प</span></td>
+<td><span title="ṣpha (IPA:ʃpʰə)">ष्फ</span></td>
+<td><span title="ṣba (IPA:ʃbə)">ष्ब</span></td>
+<td><span title="ṣbha (IPA:ʃbʱə)">ष्भ</span></td>
+<td><span title="ṣma (IPA:ʃmə)">ष्म</span></td>
+<td><span title="ṣya (IPA:ʃjə)">ष्य</span></td>
+<td><span title="ṣra (IPA:ʃrə)">ष्र</span></td>
+<td><span title="ṣla (IPA:ʃlə)">ष्ल</span></td>
+<td><span title="ṣva (IPA:ʃvə)">ष्व</span></td>
+<td><span title="ṣśa (IPA:ʃʃə)">ष्श</span></td>
+<td><span title="\1ṣa (IPA:ʃʃə)">ष्ष</span></td>
+<td><span title="ṣsa (IPA:ʃsə)">ष्स</span></td>
+<td><span title="ṣha (IPA:ʃhə)">ष्ह</span></td>
+<td><span title="ṣḷa (IPA:ʃɭə)">ष्ळ</span></td>
+<td><span title="ṣkṣa (IPA:ʃkʃə)">ष्क्ष</span></td>
+<td><span title="ṣjña (IPA:ʃɟʝɲə)">ष्ज्ञ</span></td>
+</tr>
+<tr>
+<th><span title="s (IPA:s)">स</span></th>
+<td><span title="ska (IPA:skə)">स्क</span></td>
+<td><span title="skha (IPA:skʰə)">स्ख</span></td>
+<td><span title="sga (IPA:sɡə)">स्ग</span></td>
+<td><span title="sgha (IPA:sɡʱə)">स्घ</span></td>
+<td><span title="sṅa (IPA:sŋə)">स्ङ</span></td>
+<td><span title="sca (IPA:scɕə)">स्च</span></td>
+<td><span title="scha (IPA:scɕʰə)">स्छ</span></td>
+<td><span title="sja (IPA:sɟʝə)">स्ज</span></td>
+<td><span title="sjha (IPA:sɟʝʱə)">स्झ</span></td>
+<td><span title="sña (IPA:sɲə)">स्ञ</span></td>
+<td><span title="sṭa (IPA:sʈə)">स्ट</span></td>
+<td><span title="sṭha (IPA:sʈʰə)">स्ठ</span></td>
+<td><span title="sḍa (IPA:sɖə)">स्ड</span></td>
+<td><span title="sḍha (IPA:sɖʱə)">स्ढ</span></td>
+<td><span title="sṇa (IPA:sɳə)">स्ण</span></td>
+<td><span title="sta (IPA:st̪ə)">स्त</span></td>
+<td><span title="stha (IPA:st̪ʰə)">स्थ</span></td>
+<td><span title="sda (IPA:sd̪ə)">स्द</span></td>
+<td><span title="sdha (IPA:sd̪ʱə)">स्ध</span></td>
+<td><span title="sna (IPA:sn̪ə)">स्न</span></td>
+<td><span title="spa (IPA:spə)">स्प</span></td>
+<td><span title="spha (IPA:spʰə)">स्फ</span></td>
+<td><span title="sba (IPA:sbə)">स्ब</span></td>
+<td><span title="sbha (IPA:sbʱə)">स्भ</span></td>
+<td><span title="sma (IPA:smə)">स्म</span></td>
+<td><span title="sya (IPA:sjə)">स्य</span></td>
+<td><span title="sra (IPA:srə)">स्र</span></td>
+<td><span title="sla (IPA:slə)">स्ल</span></td>
+<td><span title="sva (IPA:svə)">स्व</span></td>
+<td><span title="sśa (IPA:sʃə)">स्श</span></td>
+<td><span title="sṣa (IPA:sʂə)">स्ष</span></td>
+<td><span title="ssa (IPA:ssə)">स्स</span></td>
+<td><span title="sha (IPA:shə)">स्ह</span></td>
+<td><span title="sḷa (IPA:sɭə)">स्ळ</span></td>
+<td><span title="skṣa (IPA:skʂə)">स्क्ष</span></td>
+<td><span title="sjña (IPA:sɟʝɲə)">स्ज्ञ</span></td>
+</tr>
+<tr>
+<th><span title="h (IPA:h)">ह</span></th>
+<td><span title="hka (IPA:hkə)">ह्क</span></td>
+<td><span title="hkha (IPA:hkʰə)">ह्ख</span></td>
+<td><span title="hga (IPA:hɡə)">ह्ग</span></td>
+<td><span title="hgha (IPA:hɡʱə)">ह्घ</span></td>
+<td><span title="hṅa (IPA:hŋə)">ह्ङ</span></td>
+<td><span title="hca (IPA:hcɕə)">ह्च</span></td>
+<td><span title="hcha (IPA:hcɕʰə)">ह्छ</span></td>
+<td><span title="hja (IPA:hɟʝə)">ह्ज</span></td>
+<td><span title="hjha (IPA:hɟʝʱə)">ह्झ</span></td>
+<td><span title="hña (IPA:hɲə)">ह्ञ</span></td>
+<td><span title="hṭa (IPA:hʈə)">ह्ट</span></td>
+<td><span title="hṭha (IPA:hʈʰə)">ह्ठ</span></td>
+<td><span title="hḍa (IPA:hɖə)">ह्ड</span></td>
+<td><span title="hḍha (IPA:hɖʱə)">ह्ढ</span></td>
+<td><span title="hṇa (IPA:hɳə)">ह्ण</span></td>
+<td><span title="hta (IPA:ht̪ə)">ह्त</span></td>
+<td><span title="htha (IPA:ht̪ʰə)">ह्थ</span></td>
+<td><span title="hda (IPA:hd̪ə)">ह्द</span></td>
+<td><span title="hdha (IPA:hd̪ʱə)">ह्ध</span></td>
+<td><span title="hna (IPA:hn̪ə)">ह्न</span></td>
+<td><span title="hpa (IPA:hpə)">ह्प</span></td>
+<td><span title="hpha (IPA:hpʰə)">ह्फ</span></td>
+<td><span title="hba (IPA:hbə)">ह्ब</span></td>
+<td><span title="hbha (IPA:hbʱə)">ह्भ</span></td>
+<td><span title="hma (IPA:hmə)">ह्म</span></td>
+<td><span title="hya (IPA:hjə)">ह्य</span></td>
+<td><span title="hra (IPA:hrə)">ह्र</span></td>
+<td><span title="hla (IPA:hlə)">ह्ल</span></td>
+<td><span title="hva (IPA:hvə)">ह्व</span></td>
+<td><span title="hśa (IPA:hʃə)">ह्श</span></td>
+<td><span title="hṣa (IPA:hʂə)">ह्ष</span></td>
+<td><span title="hsa (IPA:hsə)">ह्स</span></td>
+<td><span title="hha (IPA:hhə)">ह्ह</span></td>
+<td><span title="hḷa (IPA:hɭə)">ह्ळ</span></td>
+<td><span title="hkṣa (IPA:hkʂə)">ह्क्ष</span></td>
+<td><span title="hjña (IPA:hɟʝɲə)">ह्ज्ञ</span></td>
+</tr>
+<tr>
+<th><span title="ḷ (IPA:ɭ)">ळ</span></th>
+<td><span title="ḷka (IPA:ɭkə)">ळ्क</span></td>
+<td><span title="ḷkha (IPA:ɭkʰə)">ळ्ख</span></td>
+<td><span title="ḷga (IPA:ɭɡə)">ळ्ग</span></td>
+<td><span title="ḷgha (IPA:ɭɡʱə)">ळ्घ</span></td>
+<td><span title="ḷṅa (IPA:ɭŋə)">ळ्ङ</span></td>
+<td><span title="ḷca (IPA:ɭcɕə)">ळ्च</span></td>
+<td><span title="ḷcha (IPA:ɭcɕʰə)">ळ्छ</span></td>
+<td><span title="ḷja (IPA:ɭɟʝə)">ळ्ज</span></td>
+<td><span title="ḷjha (IPA:ɭɟʝʱə)">ळ्झ</span></td>
+<td><span title="ḷña (IPA:ɭɲə)">ळ्ञ</span></td>
+<td><span title="ḷṭa (IPA:ɭʈə)">ळ्ट</span></td>
+<td><span title="ḷṭha (IPA:ɭʈʰə)">ळ्ठ</span></td>
+<td><span title="ḷḍa (IPA:ɭɖə)">ळ्ड</span></td>
+<td><span title="ḷḍha (IPA:ɭɖʱə)">ळ्ढ</span></td>
+<td><span title="ḷṇa (IPA:ɭɳə)">ळ्ण</span></td>
+<td><span title="ḷta (IPA:ɭt̪ə)">ळ्त</span></td>
+<td><span title="ḷtha (IPA:ɭt̪ʰə)">ळ्थ</span></td>
+<td><span title="ḷda (IPA:ɭd̪ə)">ळ्द</span></td>
+<td><span title="ḷdha (IPA:ɭd̪ʱə)">ळ्ध</span></td>
+<td><span title="ḷna (IPA:ɭn̪ə)">ळ्न</span></td>
+<td><span title="ḷpa (IPA:ɭpə)">ळ्प</span></td>
+<td><span title="ḷpha (IPA:ɭpʰə)">ळ्फ</span></td>
+<td><span title="ḷba (IPA:ɭbə)">ळ्ब</span></td>
+<td><span title="ḷbha (IPA:ɭbʱə)">ळ्भ</span></td>
+<td><span title="ḷma (IPA:ɭmə)">ळ्म</span></td>
+<td><span title="ḷya (IPA:ɭjə)">ळ्य</span></td>
+<td><span title="ḷra (IPA:ɭrə)">ळ्र</span></td>
+<td><span title="ḷla (IPA:ɭlə)">ळ्ल</span></td>
+<td><span title="ḷva (IPA:ɭvə)">ळ्व</span></td>
+<td><span title="ḷśa (IPA:ɭʃə)">ळ्श</span></td>
+<td><span title="ḷṣa (IPA:ɭʂə)">ळ्ष</span></td>
+<td><span title="ḷsa (IPA:ɭsə)">ळ्स</span></td>
+<td><span title="ḷha (IPA:ɭhə)">ळ्ह</span></td>
+<td><span title="ḷḷa (IPA:ɭɭə)">ळ्ळ</span></td>
+<td><span title="ḷkṣa (IPA:ɭkʂə)">ळ्क्ष</span></td>
+<td><span title="ḷjña (IPA:ɭɟʝɲə)">ळ्ज्ञ</span></td>
+</tr>
+</tbody></table></span>
+</p>
+
+<div id="bodytext">
+<h1>Enumeration</h1>
+<p><em>Hindi figures</em></br>
+०१२३४५६७८९</br></br>
+<em>Marathi figures</em></br>
+<div id="lang" lang="mr">०१२३४५६७८९</span><br></br>
+<em>Punctuation</em></br>
+।॥॰</br></br>
+<em>Other marks</em></br>
+◌ ࿕ ࿘ ࿕ ࿗ ऽ ॐ</p>
+
+<div id="lang" lang="hi"><h1>Hindi</h1>
+<p><em>खलील जिब्रान »तूफान«</em></br>
+</br>
+-अनुवादक नरेन्द्र चौधरी</br>
+</br>
+यूसूफ अल-फाख़री की आयु तब तीस वर्ष की थी, जब उन्होंने संसार को त्याग दिया और उत्तरी लेबनान में वह कदेसा की घाटी के समीप एक एकांत आश्रम में रहने लगे। आपपास के देहातों में यूसुफ के बारे में तरह-तरह की किवदन्तियां सुनने में आती थीं। कइयों का कहना था कि वे एक धनी-मानी परिवार के थे और किसी स्त्री से प्रेम करने लगे थे, जिसने उनके साथ विश्वासघात किया। अत: (जीवन से) निराश हो उन्होंने एकान्तवास ग्रहण कर लिया। कुछ लोगों का कहना था कि वे एक कवि थे और कोलाहलपूर्ण नगर को त्यागकर वे इस आश्रम में इसलिए रहने लगे कि यहां (एकान्त में) अपने विचारों को संकलित कर सकें और अपनी ईश्वरीय प्रेरणाओं को छन्दोबद्ध कर सकें। परन्तु कइयों का यह विश्वास था कि वे एक रहस्यमय व्यक्ति थे और उन्हें अध्यात्म में ही संतोष मिलता था, यद्यपि अधिकांश लोगों क यह मत था कि वे पागल थे।
+<p>जहां तक मेरा सम्बन्ध है, इस मनुष्य के बारे में मैं किसी निश्चय पर न पहुंच पाया, क्योंकि मैं जानता था कि उसके हृदय में कोई गहरा रहस्य छिपा है, जिसक ज्ञान कल्पना-मात्र से प्राप्त नहीं किया जा सकता। एक अरसे से मैं इस अनोखे मनुष्य से भेटं करने की सोच रहा था। मैंने अनेक प्रकार से इनसे मित्रता स्थापित करने का प्रयास किया; इसलिए कि मैं इनकी वास्तविकता को जान सकूं और यह पूछकर कि इनके जीवन का क्या ध्येय है, इनकी कहानी को जान लूं। किन्तु मेरे सभी प्रयास विफल रहे। जब मैं प्रथम बार उनसे मिलने गया तो वे लेबनान के पवित्र देवदारों के जंगल में घूस रहे थे। मैंने उन्हें चुने हुए शब्दों की सुन्दरतम भाषा में उनका अभिवादन किया, किन्तु उन्होंने उत्तर में जरा-सा सिर झुकाया और लम्बे डग भरते हुए आगे निकल गये।
+<p>दूसरी बार मैंने उन्हें आश्रम के एक छोटे-से अंगूरों के बगीचे के बीच में खड़े देखा। मैं फिर उनके निकट गया। और इस प्रकार कहते हुए उनका अभिनन्दन किया, "देहात के लोग कहा करते हैं कि इस आश्रम का निर्माण चौदहवीं में सीरिया-निवासियों के एक सम्प्रदाय ने किया था। क्या आप इसके इतिहास के बारे में कुछ जानते है?"
+<p>उन्होंने उदासीन भाव में उत्तर दिया, "मैं नहीं जानता कि उस आश्रम को किसने बनवाया और सन ही मुझे यह जानने की परवा है।" उन्होंने मेरी ओर से पीठ फेर जली और बोले, "तुम अपने बाप-दादों से क्यों नहीं पूछते, जो मुझसे अधिक बूढ़े हैं और जो इन घाटियों के इतिहास से मुझसे कहीं अधिक परिचित हैं?"
+<p>अपने प्रयास को बिल्कुल ही व्यर्थ समझकर मैं लौट आया।
+<p>इस प्रकार दो वर्ष व्यतीत हो गये। उस निराले मनुष्य की झक्की जिन्दगी ने मेरे मस्तिष्क में घर कर लिया और वह बार-बार मेरे सपनों में आ-आकर मुझे तंग करने लगा।
+<p>शरद् ऋतु में एक दिन, जब मैं यूसुफ-अल फ़ाखरीके आश्रम के पास की पहाड़ियों तथा घाटियों में घूमता फिर रहा था, अचानक एक प्रचण्ड आंधी और मूसलाधार वर्षा ने मुझे घेर लिया और तूफान मुझे एक ऐसी नाव की भांति इधर-से-उधर भटकाने लगा, जिसकी पतवार टूट गई हो और जिसका मस्तूल सागर के तूफानी झकोरों से छिन्न-भिन्न हो गया हो। बड़ी कठिनाई से मैंने अपने पैरों को यूसुफ साहब के आश्रम की ओर बढ़ाया और मन-ही-मन सोचने लगा, "बड़े दिनों की प्रतीक्षा के बाद यह एक अवसर हाथ लगा है। मेरे वहां घुसने के लिए तूफान एक बहाना बन जायगा और अपने भीगे हुए वस्त्रों के कारण मैं वहां काफी समय तक टिक सकूंगा।"
+<p>जब मैं आश्रम में पहुंचा तो मेरी स्थिति अत्यन्त ही दयनीय हो गई थी। मैंने आश्रम के द्वार को खटखटाया तो जिनकी खोज में मैं था, उन्होंने ही द्वार खोला। अपने एक हाथ में वह ऐसे मरणसन्न पक्षी को लिये हुए थे, जिसके सिर में चोट आई थी और पंख कट गये थे। मैंने यह कहकर उनकी अभ्यर्थना की, "कृपया मेरे इस बिना आज्ञा के प्रवेश और कष्ट के लिए क्षमा करें। अपने घर से बहुत दूर तूफान में मैं बुरी तरह फंस गया था।"
+<p>त्यौरी चढ़ाकर उन्होंने कहा, " इस निर्जन वन में अनेक गुफांए हैं, जहां तुम शरण ले सकते थे।" किन्तु जो भी हो, उन्होंने द्वार बन्द नहीं किया। मेरे हृदय की धड़कन पहले से ही बढ़ने लगी; क्योंकि शीघ्र ही मेरी सबसे बड़ी तमन्ना पूर्ण होने जा रही थी। उन्होंने पक्षी के सिर को अत्यन्त ही सावधानी से सहलाना शुरु किया और इस प्रकार अपने एक ऐसे गुण को प्रकट करने लगे, जो मुझे अति प्रिय था। मुझे इस मनुष्य के दो प्रकार के परस्पर विरोधी गुण-दया और निष्ठुरता-को एक साथ देखकर आश्चर्य हो रहा था। हमें ज्ञात हुआ कि हम गहरी निस्तब्धता के बीच खड़े है। उन्हें मेरी उपस्थिति पर क्रोध आ रहा था और मैं वहां ठहरे रहना चाहता था।
+<p>ऐसा प्रतीत होता है कि उन्होंने मेरे विचारों को भांप लिया, क्योंकि उन्होंने ऊपर (आकाश) की ओर देखा और कहा, "तूफान साफ है और खट्टा (बुरे मनुष्य का) मांस खाना नहीं चाहता। तुम इससे बचना क्यों चाहते हो?"
+<p>कुछ व्यंग्य से मैंने कहा, "हो सकता है, तूफान खट्टी और नमकीन वस्तुएं न खाना चाहता हो, किन्तु प्रत्येक पदार्थ को वह ठण्ड़ा तथा शक्तिहीन बना देने पर तुला है और निस्संदेह यह वह मुझे फिर से पकड़ लेगा तो अपने में समाये बिना न छोड़ेगा।"
+<p>उनके चेहरे का भाव यह कहते-कहते अत्यन्त कठोर हो गया, "यदि तूफान ने तुम्हें निगल लिया होता तो तुम्हारा बड़ा सम्मान किया होता, जिसके तुम योग्य भी नहीं हो।"
+<p>मैंने स्वीकारते हुए कहा, "हां श्रीमान! मैं इसीलिए तूफान से छिप गया कि कहीं ऐसा सम्मान न पा जाऊं, जिसके कि मैं योग्य ही नहीं हूं।"
+<p>इस चेष्टा में कि वे अपने चेहरे पर की मुस्कान मुझसे छिपा सकें, उन्होंने अपना मुंह फेर लिया। तब वे अंगीठी के पास रखी हुई एक लकड़ी की बेंच की ओर बढ़े और मुझसे कहा कि मैं विश्राम करुं और अपने वस्त्रों को सूखा लूं। अपने उल्लास को मैं बड़ी कठिनाई से छिपा सका।
+<p>मैंने उन्हें धन्यावाद दिया और स्थान ग्रहण किया। वे भी मेरे सामने ही एक बेंच पर, जो पत्थर को काटकर बनाई गई थी, बैठ गये। वे अपनी उंगलियों को एक मिट्टी के बरतन में, जिसमें एक प्रकार का तेल रखा हुआ था, बार-बार डुबोने लगे और उस पक्षी के सिर तथा पंखों पर मलने लगे।
+<p>बिना ऊपर को देखे ही बोले, "शक्तिशाली वायु ने इस पक्षी को जीवन-मृत्यु के बीच पत्थरों पर दे मारा था।",
+<p>तुलना-सी करते हुए मैंने उत्तर दिया, "और भयानक तुफान ने इससे पहले कि मेरा सिर चकनाचूर हो जाय और मेरे पैर टूट जायं मुझे भटकाकर आपके द्वार पर भेज दिया।" गम्भीरतापूर्वक उन्होंने मेरी ओर देखा और बोले, "मेरी तो यही चाह है कि मनुष्य पक्षियों का स्वभाव अपनाये और तूफान मनुष्य के पैर तोड़ डाले; मनुष्य का झुकाव भय और कायरता की ओर है और जैसे ही वह अनुभव करता है कि तूफान जाग गया है, यह रेगते-रेंगते गुफाओं और खाइयों में घुस जाता है। अपने को छिपा लेता हैं।"
+<p>मेरा उद्देश्य था कि उनके स्वत: स्वीकृत एकान्तवास की कहानी जान लूं। इसीलिए मैंने उन्हें यह कहकर उत्तेजित किया, "हां! पक्षी के पास ऐसा सम्मान और साहस है, जो मनुष्य के पास नहीं। मनुष्य विधान तथा सामाजिक आचारों के साये में वास करता है, जो उसने अपने लिए स्वयं बनाये हैं: किन्तु पक्षी उसी स्वतन्त्र –शाश्वत विधान के अधीन रहते हैं, जिसके कारण पृथ्वी सूर्य के चारों ओर रास्ते पर निरन्तर घूमती रहती है।"
+<p>उनके नेत्र और चेहरा चमकने लगे, मानों मुझसे उन्होंने एक समझदार शिष्य को पा लिया हो। वे बोले, "अति सुन्दर! यदि तुम्हे स्वयं अपने शब्दों पर विश्वास है तो तुम्हें सभ्यता और उसके दूषित विधान तथा अति प्राचीन परम्पराओं को तुरन्त ही त्याग देना चाहिए और पक्षियों की तरह ऐसे शून्य स्थान में रहना चाहिए, जहां आकाश और पृथ्वी के महान विधान के अतिरिक्त कुछ भी न हो।
+<p>"विश्वास रखना एक सुन्दर बात है; किन्तु उस विश्वास को प्रयोग में लाना साहस का काम है। अनेक मनुष्य ऐसे हैं, जो सागर की गर्जन के समान चीखते रहते हैं, किन्तु उनका जीवन खोखला और प्रवाहहीन होता है जैसे कि सड़ती हुई दल-दल, और अनेक ऐसे हैं, जो अपने सिरों को पर्वत की चोटी से भी ऊपर उठाये चलते हैं, किन्तु उनकी आत्माएं कन्दराओं के अन्धकार में सोती पड़ी रहती हैं।"
+<p>वे कांपते हुए अपनी जगह से उठे और पक्षी को खिड़की के ऊपर एक तह किये हुए कपड़े पर रख आये। तब उन्होंने कुछ सूखी लकड़ियां अंगीठी में डाल दीं। और बोले, "अपने जूतों को उतार दो और अपने पैरों को सेंक लो, क्योंकि भीगे रहना आदमी के स्वास्थय के लिए हानिकारक है। तुम अपने वस्त्रों को ठीक से सूखा लो और आराम से बैठो।"
+<p>यूसुफ साहब के इस निरन्तर आतिथ्य ने मेरी आशाओं को उभार दिया। मैं आग के और समीप खिसक गया और मेरे भीगे कुरते से पानी भाप बनकर उड़ने लगा। जब वह भूरे आकाश को निहारते हुए ड्योढ़ी पर खड़े रहे मेरा मस्तिष्क उनके आन्तरिक रहस्यों को खोजता दौड़ रहा था। मैंने एक अनजान की तरह उनसे पूछा, "क्या आप बहुत दिनों से यहां रह रहे है?"
+<p>मेरी ओर देखे बिना ही उन्होंने शान्त स्वर में कहा, "मैं इस स्थान पर तब आया था, जब यह पृथ्वी निराकार तथा शून्य थी, जब इसके रहस्यों पर अन्धकार छाया हुआ था, और ईश्वर की आत्मा पानी की संतह पर तैरती थी।"
+<p>यह सूनकर मैं अवाक् रह गया। क्षुब्ध और अस्त-व्यस्त ज्ञान को समेटने का संघर्ष करते हुए मन-ही-मन मैं बोला, "कितने अजीब व्यक्ति हैं ये और कितना कठिन है इनके वास्तविकता को पाना! किन्तु मुझे सावधानी के साथ, धीरे-धीरे और संतोष रखकर तबतक चोट करनी होगी, जबतक इनकी मूकता बातचीत में न बदल जाय और इनके विचित्रता समझ में न आ जाय!"
+<p>रात्रि अपनी अन्धकार की चादर उन घाटियों पर फैला रही थी। मतवाला तूफान चिंघाड़ रहा था और वर्षा बढ़ती ही जा रही थीं। मैं सोचने लगा कि बाइबिल वाली बाढ़ चैतन्य को नष्ट करने और ईश्चर की धरती पर से मनुष्य की गंदगी को धोने के लिए फिर से आ रही है॥
+<p>ऐसा प्रतीत होने लगा कि तत्वों की क्रान्ति ने यूसुफ साहब के हृदय में एक ऐसी शान्ति उत्पन्न की है, जो प्राय: स्वभाव पर अपना असर छोड़ जाती है और एकान्तता को प्रसन्नता से प्रतिबिम्बित कर जाती है। उन्होंने दो मोमबत्तियां सुलगायीं और तब मेरे सम्मुख शराब की एक सुराही और एक बड़ी तश्तरी में रोटी मक्खन, जैतून के फल, मधु और कुछ सूखे मेवे लाकर रक्खे। तब वह मेरे पास बैठ गये और खाने की थोड़ी मात्रा के लिए–उसकी सादगी के लिए नहीं- क्षमा मांग कर, उन्होंने मुझसे भोजन करने को कहा।
+<p>हम उस समझी–बूझी निस्तब्धता में हवा के विलाप तथा वर्षा के चीत्कार को सुनते हुए साथ-साथ भोजन करने लगे। साथ ही मैं उनके चेहने को घूरता रहा और उनके हृदय के रहस्यों को कुरेद-कुरेदकर निकालने का प्रयास करता रहा। उनके असाधारण अस्तित्व के सम्भव कारण को भी सोचता रहा। भोजन समाप्त करके उन्होंने अंगीठी पर से एक पीतल की केतली उठाई और उसमें से शुद्ध सुगन्धित कॉफी दो प्यालों में उड़ेल दी। तब उन्होंने एक छोटे-से लड़की के बक्स को खोला और 'भाई' शब्द से सम्बोधित कर, उसमे से एक सिगरेट भेंट की। कॉफी पीते हुए मैंने सिगरेट ले ली, किन्तु जो कुछ भी मेरी आंखे देख रही थी, उस पर मुझे विश्वास नहीं हो रहा था।
+<p>उन्होंने मेरी ओर मुस्कराते हुए देखा और अपनी सिगरेट का एक लम्बा कश खींचकर तथा काफी की एक चुस्की लेकर उन्होंने कहा, "अवश्य ही तुम-मदिरा, कॉफी और सिगरेट यहां पाकर सोच में पड़ गये हो और मेरे खान-पान तथा ऐश आराम पर उन्हीं लोगों में से एक हो, जो इन बातों में विश्चास करते हैं। कि लोगों से दूर रहने पर मनुष्य जीवन से भी दूर हो जाता है। और ऐसे मनुष्य को उस जीवन के सभी सुखों से वंचित रहना चाहिए।"
+<p>, मैंने तुरन्त स्वीकार कर लिया, "हां! ज्ञानियों का यही कहना है कि जो केवल ईश्वर की प्रार्थना करने के लिए संसार को त्याग देता है, वह जीवन के समस्त सुख और आनन्द को अपने पीछे छोड़ आता है, केवल ईश्वर द्वारा निर्मित वस्तुओं पर सन्तोष करता है और पानी और पौधों पर ही जीवित रहता है।"
+<p>जरा रुककर गहन विचारों में निमग्न वे बोले, "मैं ईश्वर की भक्ति तो उसके जीवों के बीच रहकर भी कर सकता था, क्योंकि उसे तो मैं हमेशा से अपने माता-पिता के घर पर भी देखता आया हूं। मैंने मनुष्यों का त्याग केवल इसलिए किया कि उनका और मेरा स्वभाव मिलता न था और उनकी कल्पना मेरी कल्पनाओं से मेल नहीं खाती थीं। मैंने आदमी को इसीलिए छोड़ा क्योंकि मैंने देखा कि मेरी आत्मा के पहियों से जोर से टकरा रहे हैं और दूसरी दिशा में घूमते हुए दूसरी आत्माओ के पहियों से जोर से टकरा रहे है। मैंने मानव –सभ्यता को छोड़ि दिया, क्योकि मैंने देखा कि वह एक ऐसा पेड़ हैं, जो अत्यन्त पुराना और भ्रष्ट हो चुका है, किन्तु है शक्तिशाली तथा भयानक। उसकी जड़ें पृथ्वी के अंधकार में बन्द हैं और उसकी शाखांए बादलों में खो गई हैं। किन्तु उसके फूल लोभ, अधर्म और पाप से बने हैं और फल दु:ख संतोष और भय से। धार्मिक मनुष्यों ने यह बीड़ा उठाया हैं। उसके स्वाभाव को बदल देगें, किन्तु वे सफल नहीं हो पाये हैं। वे निराश तथा दुखी होकर मृत्यु को प्राप्त हुए।"
+<p>यूसुफ साहब अंगीठी की ओर थोड़ा-सा झुके, मानों अपने शब्दों की प्रतिक्रिया जानने की प्रतीक्षा में हों। मैंने सोचा कि श्रोता ही बने रहना सर्वोत्तम है। वे कहने लगे, "नहीं, मैंने एकान्तवास इसलिए नहीं अपनाया कि मैं एक संन्यासी की भांति जीवन व्यतीत करूं, क्योंकि प्रार्थना, जो हृदय का गीत है, चाहे सहस्त्रों की चीख-पुकार की अवाज से भी घिरी हो, ईश्वर के कानों तक अवश्य पहुंच जायेगी।
+<p>"एक बैरागी का जीवन बिताना तो शरीर और आत्मा को कष्ट देना है तथा इच्छाओं का गला घोंटना है। यह एक ऐसा अस्तित्व है, जिसके मैं नितान्त विरुद्ध हूं; क्योंकि ईश्वर ने आत्माओं के मंदिर के रूप में ही शरीर का निमार्ण किया है। और हमारा यह कर्तव्य है कि उसे विश्वास को, जो परमात्मा ने हमें प्रदान किया हैं, योग्यतपूर्वक बनाये रखें।
+<p>"नहीं, मेरे भाई, मैंने परमार्थ के लिए एकान्तवास नहीं अपनाया, अपनाया तो केवल इसलिए कि आदमी और उसके विधान से, उसके विचारों तथा उसकी शिकायतों से उसके दु:ख और विलापों से दूर रहूं।
+<p>"मैंने एकान्तवास इसलिए अपनाया कि उन मनुष्यों के चेहरे न देख सकूं, जो अपना विक्रय करते हैं और उसी मूल्य से ऐसी वस्तुंए खरीदते है, जो आध्यात्मिक तथा भौतिक दोनों ही रुप उनसे भी घटिया हैं।
+<p>"मैंने एकान्तवास इसलिए ग्रहण किया कि कहीं उन स्त्रियों से मेरी भेटं न हो जाए, जो अपने ओठों पर अनेकविध मुस्कान फैलाये गर्व से घूमती रहती हैं- जबकि उनके सहस्त्रों हृदयों की गहराइयों में बस एक ही उद्देश्य विद्यमान है।
+</br></p></div>
+<center></br>⁂</br></center>
+
+<div id="lang" lang="mr"><h1>Marathi</h1>
+<p><em>सोळा सोमवार व्रतकथा</em></br>
+आटपाट नगर होतं. त्या नगरांत एक महादेवाचं देऊळ होत. एके दिवशी काय झालं? शिवपार्वती फिरतां फिरतां त्या देवळात आली. सारीपाट खेळू लागली, "डाव कोणी जिंकला?" म्हणून पार्वतीनं गुरवाला विचारलं. त्यानं शंकराचं नाव सांगितलं. पार्वतीला राग आला. गुरवाला "तूं कोडी होशील" म्हणून शाप दिला. तशा त्याला असह्य वेदना होऊं लागल्या. पुढं एके दिवशीं काय झालं ? देऊळीं स्वर्गींच्या अप्सरा आल्या. त्यांनी गुरव कोडी पाहिला. त्याला कारण पुशिलं. गुरवानं गिरिजेचा शाप सांगितला. त्या म्हणाल्या, "भिऊं नको. घाबरू नको. तूं सोळा सोमवारांचं व्रत कर, म्हणजे तुझं कोड जाईल." गुरव म्हणाला, "तें व्रत कसं करावं?" अप्सरांनी सांगितलं, "सारा दिवस उपवास करावा. संध्याकाळी आंघोळ करावी. शंकराची पूजा करावी. नंतर अर्धा शेर कणीक घेऊन त्यांत तूप गूळ घालावा व तें खावं. मीठ त्या दिवशी खाऊं नये. त्याप्रमाणं सोळा सोमवार करावे. सतरावे सोमवारी पांच शेर कणीक घ्यावी, त्यांत तूप गूळ घालून चूर्मा करावा. तो देवळीं न्यावा. भक्तीनं शंकराची षोडशोपचारें पूजा करावी. नंतर चूर्म्याचा नैवेद्य दाखवावा. पुढं त्याचे तीन भाग करावे. एक भाग देवाला द्यावा, दुसरा भाग देउळीं ब्राह्मणांना वाटावा किंवा गाईला चारावा, तिसरा भाग आपण घरी घेऊन जाऊन सहकुटुंबी भोजन करावं." असं सांगून त्या नाहीशा झाल्या. पुढं गुरवानं ते व्रत केलं, गुरव चांगला झाला.
+<p>पुढं काही दिवसांनी शंकरपार्वती पुन्हां त्या देउळीं आलीं. पार्वतीनं गुरवाला कुष्ठरहित पाहिलं. तिनं गुरवाला विचारलं, "तुझं कोड कशानं गेलं?" गुरवानं सांगितलं, "मी सोळा सोमवारांचं व्रत केलं, त्यानं माझं कोड गेलं." पार्वतीला आश्चर्य वाटलं. तिनं आपला रागावून गेलेला मुलगा कार्तिकस्वामी परत यावा म्हणून हें व्रत केलं. समाप्तीनंतर कार्तिक-स्वामी लागलीच येऊन भेटला. दोघांना आनंद झाला. त्यानं आईला विचारलं, "आई आई, मी तर तुझ्यावर रागावून गेलो होतो, आणि मला पुन्हां तुझ्या भेटीची इच्छा झाली, याचं कारण काय?" पार्वतीनं त्याला सोळा सोमवारच्या व्रताचा महिमा सांगितला. पुढें कार्तिकस्वामीनं तें व्रत केलं.
+<p>त्याचा एक ब्राह्मण मित्र फार दिवस देशांतराला गेला होता त्याची व ह्याची सहज रस्त्यांत भेट झाली. पुढें कार्तिकस्वामीनं हें व्रत त्या ब्राह्मणाला सांगितलं. त्यानं लग्नाचा हेतु मनांत धरला. मनोभावे सोळा सोमवारांचं व्रत केलं. समाप्तीनंतर तो प्रवासाला निघाला. फिरतां फिरतां एका नगरांत आला. तिथं काय चमत्कार झाला? तिथल्या राजाच्या मुलीचं लग्न होतं. लग्नाला अनेक देशांचे राजपुत्र आले होते. मंडप चांगले सुशोभित केले आहेत. लग्नाची वेळ झाली आहे. पुढं राजानं हत्तिणीच्या सोंडेत माळ दिली. माळ ज्याच्या गळ्यांत हत्तिण घालील, त्याला आपली मुलगी द्यायची असा राजाचा पण होता. तिथं आपला हा ब्राह्मण ती मौज पहायला गेला होता. पुढं कर्मधर्मसंयोगानं ती माळ हत्तिणीनं ह्याच ब्राह्मणाच्या गळ्यांत घातली, तशी राजानं आपली मुलगी त्याला दिली. दोघांचं लग्न लावलं, व नवरानवरींची बोळवण केली.
+<p>पुढं काय झालं? राजाची मुलगी मोठी झाली. तशीं दोघं नवराबायको एका दिवशी खोलींत बसली आहेत, तसं बायकोनं नवर्‍याला विचारलं, "कोणत्या पुण्यानं मी आपणांस प्राप्त झालें?" त्यानं तिला सोळा सोमवारांच्या व्रताचा महिमा सांगितला. त्या व्रताची प्रचीति पाहण्याकरितां पुत्रप्राप्तीचा हेतु मनात धरला व तें व्रत ती करूं लागली. तसा तिला सुंदर मुलगा झाला. तो मोठा झाल्यावर त्यानं आईला विचारलं की, "मी कोणत्या पुण्यानं तुला प्राप्त झालों?" तिनं त्याला व्रताचा महिमा सांगितला. त्यानं राज्यप्राप्तीची इच्छा मनांत धरली. तो व्रत करू लागला व देशपर्यटनाला निघाला. इकडे काय चमत्कार झाला? फिरतां फिरतां तो एका नगरांत गेला. त्या राजाला मुलगा नव्हता. एक मुलगी मात्र होती. तेव्हां कोणीतरी एकादा सुंदर व गुणवान असा नवरा मुलगा पाहून त्याला आपली मुलगी द्यावी, व राज्यही त्यालाच द्यावं, असा त्यानं विचार केला. अनायासं त्या पुत्राची गांठ पडली. राजानं त्याला पाहिलं तो राजचिन्हं त्याच्या दृष्टीस पडलीं. राजानं त्याला आपल्या घरी आणलं, कन्यादान केलं व त्याला आपल्या राज्यावर बसवलं.
+<p>इतकं होतं आहे तों त्या ब्राह्मणाचा सतरावा सोमवार आला. ब्राह्मणपुत्र देऊळी गेला. घरीं बायकोला निरोप पाठविला की, पांच शेर कणकीचा चुर्मा पाठवून दे. राणीनं आपला थोरपणा मनांत आणला. चुर्म्याला लोक हसतील, म्हणून एका तबकांत पांचशें रुपये भरून ते पाठवून दिले. चुर्मा वेळेवर आला नाहीं, व्रतभंग झाला म्हणून देवाला राग आला. त्याने राजाला दृष्टांतदिला. तो काय दिला? राणीला घरात ठेवशील तर राज्याला मुकशील. दारिद्यानं पिडशील. असा शाप दिला. पुढं दुसरे दिवशीं ही गोष्ट राजानं प्रधानाला सांगितली. तो म्हणाला, महाराज, "राज्य हें तिच्या बापाचं. आपण असं करू लागलो तर लोक दोष देतील, याकरितां असं करणं अयोग्य आहे. राजा म्हणाला, ईश्वराचा दृष्टान्त, अमान्य करणं हेंही अयोग्य आहे. " मग उभयतांनी विचार केला. तिला नगरांतून हाकलून लावलं.
+<p>पुढं ती दीन झाली, रस्त्यानं जाऊं लागली. जातां जातां एका नगरात गेली. तिथं एका म्हातारीच्या घरी उतरली. तिनं तिला ठेवून घेतलं, खाऊंपिऊं घातलं. पुढं काय झालं ? एके दिवशीं म्हातारीन तिला चिवटं विकायला पाठवलं. दैवाची गति विचित्र आहे! बाजारांत ती चालली. मोठा वारा आला, सर्व चिवटं उडून गेलीं. तिनं घरीं येऊन म्हातारीला सांगितलं. तिनं तिला घरांतून हांकलून लावलं. तिथून निघाली तों एका तेल्याच्या घरी गेली. तिथं तेलाच्या घागरी भरल्या होत्या. त्यांजवर तिची नजर गेली. तसं त्यांतलं सगळं तेल नाहीसं झालं. म्हणून तेल्यानं तिला घालवून दिलं. पुढं तिथून निघाली. वाटेनं जाऊ लागली. जातां जातां एक नदी लागली. त्या नदीला पाणी पुष्कळ होतं. पण तिची दृष्टि त्याजवर गेल्याबरोबर सर्व पाणी आटून गेलं. पुढं जातां जातां एक सुंदर तळं लागलं. त्याजवर तिची दृष्टि गेली, तसे पाण्यांत किडे पडले. पाणी नासून गेलं. रोजच्यासारखे तळ्यावर गुराखी आले. नासकं पाणी पाहून मागं परतले. गुरंढोरं तान्हेली राहिली. पुढं काय झालं? एक गोसावी आला. त्यानं तिला पाहिलं. कोण कुठची म्हणून सगळी हकीकत विचारली. तिनं सगळी हकीकत सांगितली. गोसाव्यानं तिला धर्मकन्या मानलं व आपले घरी घेऊन आला. तिथं राहून ती कामधंदा करू लागली. तशी जिकडे तिकडे तिची दृष्टि जाऊं लागली. ज्यांत तिची दृष्टि जाई त्यांत किडे पडावे, कांही जिनसा आपोआप नाहीशा व्हाव्या, असा चमत्कार होऊ लागला. मग गोसाव्यानं विचार केला, अंतदृष्टि लावली. तिच्या पदरी व्रत मोडल्याचं पाप आहे असं त्यानं जाणलं. तें नाहीसं केल्याशिवाय तिची दृष्टि चांगली होणार नाहीं असं ठरवलं. मग त्यानं शंकराची प्रार्थना केली. देव प्रसन्न झाले. गोसाव्यानं राणीबद्दल प्रार्थना केली. शंकरानं तिला सोळा सोमवारांचं व्रत करायला सांगितलं व आपण अंतर्धान पावले. पुढं गोसाव्यानं तिच्याकडून सोळा सोमवारांचं व्रत करविलं, तसा परमेश्वराचा कोप नाहींसा झाला.
+<p>तिच्या नवर्‍याला तिच्या भेटीची इच्छा उद्भवली. दूत चोहिंकडे शोधाला पाठवले. शोधतां शोधतां तिथ आले. गोसाव्याच्या मठींत राणीला पाहिलं. तसंच जाऊन त्यांनीं सांगितलं. त्याला मोठा आनंद झाला. राजा प्रधानसुद्धा गोसाव्याकडे आला. गोसाव्याला साष्टांग नमस्कार केला. वस्त्रप्रावर्ण देऊन संतोषित केलं. गोसावी म्हणाला, राजा राजा, ही माझी धर्मकन्या. मी इतके दिवस तिला माहेरी ठेवून घेतलं होतं, ती तुझी स्त्री आपले घरी घेऊन जा, व चांगल्या रीतीनं पाणिग्रहण करून सुखानं नांद." राजानं होय म्हटलं. गोसाव्याला जोड्यानं नमस्कार केला व राणीला घेऊन आपल्या नगरीं आला. पुढं मोठा उत्सव केला. दानदक्षिणा देऊन ब्राह्मण संतुष्ट केले. राजाराणींची भेट झाली. आनंदानं रामराज्य करूं लागलीं.
+<p>तसे तुम्ही शंकराला प्रसन्न करून रामराज्य करा. ही साठां उत्तरांची कहाणी पांचां उत्तरीं देवाब्राह्मणांचे द्वारीं, गाईंचे गोठीं, पिंपळाचे पारीं, सुफळ संपूर्ण.
+</br></p></div>
+<center></br>⁂</br></center>
+
+<div id="lang" lang="bh"><h1>Maithili</h1>
+<p>
+</br></p>
+<center></br>⁂</br></center>
+
+<div id="lang" lang="dgr"><h1>Dogri</h1>
+<p>
+</br></p>
+<center></br>⁂</br></center>
+
+<div id="lang" lang="brx"><h1>Bodo</h1>
+<p>
+</br></p>
+<center></br>⁂</br></center>
+
+<div id="lang" lang="sat"><h1>Santhali</h1>
+<p>
+</br></p>
+<center></br>⁂</br></center>
+
+<div id="lang" lang="gom"><h1>Goan Konkani</h1>
+<p>
+</br></p>
+<center></br>⁂</br></center>
+
+<div id="lang" lang="knn"><h1>Maharashtrian Konkani</h1>
+<p>
+</br></p>
+<center></br>⁂</br></center>
+
+<div id="lang" lang="sa"><h1>Sanskrit</h1>
+<p><em>॥ नरसिंह स्तोत्र ( नारायण पण्डित ) ॥</em></br>
+उदयरवि सहस्रद्योतितं रूक्षवीक्षं प्रळय जलधिनादं कल्पकृद्वह्नि वक्त्रम् ।</br>
+सुरपतिरिपु वक्षश्छेद रक्तोक्षिताङ्गं प्रणतभयहरं तं नारसिंहं नमामि ॥</br>
+प्रळयरवि कराळाकार रुक्चक्रवालं विरळय दुरुरोची रोचिताशांतराल ।</br>
+प्रतिभयतम कोपात्त्युत्कटोच्चाट्टहासिन् दह दह नरसिंहासह्यवीर्याहितंमे ॥१॥</br>
+सरस रभसपादा पातभाराभिराव प्रचकितचल सप्तद्वन्द्व लोकस्तुतस्त्त्वम् ।</br>
+रिपुरुधिर निषेकेणैव शोणाङ्घ्रिशालिन् दह दह नरसिंहासह्यवीर्याहितंमे ॥२॥</br>
+तव घनघनघोषो घोरमाघ्राय जङ्घा परिघ मलघु मूरु व्याजतेजो गिरिञ्च ।</br>
+घनविघटतमागाद्दैत्य जङ्घालसङ्घो दह दह नरसिंहासह्यवीर्याहितंमे ॥३॥</br>
+कटकि कटकराजद्धाट्ट काग्र्यस्थलाभा प्रकट पट तटित्ते सत्कटिस्थातिपट्वी ।</br>
+कटुक कटुक दुष्टाटोप दृष्टिप्रमुष्टौ दह दह नरसिंहासह्यवीर्याहितंमे ॥४॥</br>
+प्रखर नखर वज्रोत्खात रोक्षारिवक्षः शिखरि शिखर रक्त्यराक्तसंदोह देह ।</br>
+सुवलिभ शुभ कुक्षे भद्र गंभीरनाभे  दह दह नरसिंहासह्यवीर्याहितंमे ॥५॥</br>
+स्फुरयति तव साक्षात्सैव नक्षत्रमाला क्षपित दितिज वक्षो व्याप्तनक्षत्रमागर्म् ।</br>
+अरिदरधर जान्वासक्त हस्तद्वयाहो दह दह नरसिंहासह्यवीर्याहितंमे ॥६॥</br>
+कटुविकट सटौघोद्घट्टनाद्भ्रष्टभूयो घनपटल विशालाकाश लब्धावकाशम् ।</br>
+करपरिघ विमदर् प्रोद्यमं ध्यायतस्ते दह दह नरसिंहासह्यवीर्याहितंमे ॥७॥</br>
+हठलुठ दल घिष्टोत्कण्ठदष्टोष्ठ विद्युत् सटशठ कठिनोरः पीठभित्सुष्ठुनिष्ठाम् ।</br>
+पठतिनुतव कण्ठाधिष्ठ घोरांत्रमाला दह दह नरसिंहासह्यवीर्याहितंमे ॥८॥</br>
+हृत बहुमिहि राभासह्यसंहाररंहो हुतवह बहुहेति ह्रेपिकानंत हेति ।</br>
+अहित विहित मोहं संवहन् सैंहमास्यम् दह दह नरसिंहासह्यवीर्याहितंमे ॥९॥</br>
+गुरुगुरुगिरिराजत्कंदरांतगर्तेव दिनमणि मणिशृङ्गे वंतवह्निप्रदीप्ते ।</br>
+दधदति कटुदंष्प्रे भीषणोज्जिह्व वक्त्रे दह दह नरसिंहासह्यवीर्याहितंमे ॥१०॥</br>
+अधरित विबुधाब्धि ध्यानधैयर्ं विदीध्य द्विविध विबुधधी श्रद्धापितेंद्रारिनाशम्</br> ।
+विदधदति कटाहोद्घट्टनेद्धाट्टहासं दह दह नरसिंहासह्यवीर्याहितंमे ॥११॥</br>
+त्रिभुवन तृणमात्र त्राण तृष्णंतु नेत्र त्रयमति लघिताचिर्विर्ष्ट पाविष्टपादम् ।</br>
+नवतर रवि ताम्रं धारयन् रूक्षवीक्षं दह दह नरसिंहासह्यवीर्याहितंमे ॥१२॥</br>
+भ्रमद भिभव भूभृद्भूरिभूभारसद्भिद् भिदनभिनव विदभ्रू विभ्र मादभ्र शुभ्र ।</br>
+ऋभुभव भय भेत्तभार्सि भो भो विभाभिदर्ह दह नरसिंहासह्यवीर्याहितंमे ॥१३॥</br>
+श्रवण खचित चञ्चत्कुण्ड लोच्चण्डगण्ड भ्रुकुटि कटुललाट श्रेष्ठनासारुणोष्ठ ।</br>
+वरद सुरद राजत्केसरोत्सारि तारे दह दह नरसिंहासह्यवीर्याहितंमे ॥१४॥</br>
+प्रविकच कचराजद्रत्न कोटीरशालिन् गलगत गलदुस्रोदार रत्नाङ्गदाढ्य ।</br>
+कनक कटक काञ्ची शिञ्जिनी मुद्रिकावन् दह दह नरसिंहासह्यवीर्याहितंमे ॥१५॥</br>
+अरिदरमसि खेटौ बाणचापे गदां सन्मुसलमपि दधानः पाशवयार्ंकुशौ च ।</br>
+करयुगल धृतान्त्रस्रग्विभिन्नारिवक्षो दह दह नरसिंहासह्यवीर्याहितंमे ॥१६॥</br>
+चट चट चट दूरं मोहय भ्रामयारिन् कडि कडि कडि कायं ज्वारय स्फोटयस्व ।</br>
+जहि जहि जहि वेगं शात्रवं सानुबंधं दह दह नरसिंहासह्यवीर्याहितंमे ॥१७॥</br>
+विधिभव विबुधेश भ्रामकाग्नि स्फुलिङ्ग प्रसवि विकट दंष्प्रोज्जिह्ववक्त्र त्रिनेत्र ।</br>
+कल कल कलकामं पाहिमां तेसुभक्तं दह दह नरसिंहासह्यवीर्याहितंमे ॥१८॥</br>
+कुरु कुरु करुणां तां साङ्कुरां दैत्यपूते दिश दिश विशदांमे शाश्वतीं देवदृष्टिम् ।</br>
+जय जय जय मुर्तेऽनार्त जेतव्य पक्षं दह दह नरसिंहासह्यवीर्याहितंमे ॥१९॥</br>
+स्तुतिरिहमहितघ्नी सेवितानारसिंही तनुरिवपरिशांता मालिनी साऽभितोऽलम् ।</br>
+तदखिल गुरुमाग्र्य श्रीधरूपालसद्भिः सुनिय मनय कृत्यैः सद्गुणैर्नित्ययुक्ताः ॥२०॥</br>
+लिकुच तिलकसूनुः सद्धितार्थानुसारी नरहरि नुतिमेतां शत्रुसंहार हेतुम् ।</br>
+अकृत सकल पापध्वंसिनीं यः पठेत्तां व्रजति नृहरिलोकं कामलोभाद्यसक्तः ॥२१॥</br>
+<p>इति कविकुलतिलक श्री त्रिविक्रमपण्डिताचार्यसुत</br>
+<p>नारायणपण्डिताचार्य विरचितम् श्री नरसिंह स्तुतिः संपूणर्म्</br>
+<p>॥भारतीरमणमुख्यप्राणांतगर्त श्री कृष्णापर्णमस्तु ॥
+</br></p>
+<center></br>⁂</br></center>
+
+<div id="lang" lang="ne"><h1>Nepali</h1>
+<p>जीवनीकार, समालोचक तथा अन्वेषक[सम्पादन गर्ने]
+नेपाली साहित्यजगत्मा पहिलो जीवनीलेखक मोतीराम भट्ट हुन्। १९४८ सालमा भट्टले भानुभक्त आचार्यको जीवनीको पुस्तक लेखेका थिए। नेपाली साहित्यका आदि समालोचक नै मोतीराम भट्ट थिए। यिनले र्सवप्रथम भानुभक्तको रचनाको समालोचना गरी नेपाली साहित्यमा समालोचनाको आरम्भ गरेका थिए। भानुभक्तको जीवन-चरित्रमा खालि भानुभक्त आचार्यको जीवनीमात्र प्रस्तुत नगरी आचार्य का कवित्वशक्तिको मोतिरामले समालोचना गरेका छन्। त्यसै कृतिमा मोतीरामले भानुभक्तलाई आदरस्वरूप आदिकविको नामाङ्कन गरेका छन्। तर भानुभक्तभन्दा अघि पनि नेपाली भाषामा कविता लेख्ने कविहरू भएको हुँदा भानुभक्तलाई जातीय कवि भने न्याय होला। हुन त यसबारेमा मोतीराम भट्टले लेखेका पनि छन्- गोर्खाभाषामा हुन त धेरै नामका कवि भानुभक्तभन्दा पहिले भये तर कविताको मर्म जानी भाषापद्य लेखने कविहरूमा आदिकवि भानुभक्त नै हुन्।
+<p>मोतीराम भट्ट नेपाली साहित्यका प्रथम अन्वेषक पनि हुन्। उनले नै भानुभक्तको बालकाण्ड रामायण फेला पारे। १७ वर्षको उमेर पार गरिसकेपछि उनी प्रायः भानुभक्तीय निष्ठामा एकोहोरो भएर लागे। त्यसै बेलादेखि उनले भानुभक्तसम्बन्धी जीवनी लेखे, पाण्डुलिपि खोजे। मोतीरामले नै भानुभक्तका वधूशिक्षा,भक्तमाला’,प्रश्नोत्तर’ र रामगीतालाई प्रकाशनमा ल्याएका थिए। यिनले भानुभक्तको अत्यन्तै गहिरिएर खोजिनीति गरे। भानुभक्तका अतिरिक्त यिनले बिहारीलाल, छविलाल, पतञ्जलि आदि व्यक्तिहरू पनि कवि भएको सूचना जनसमक्ष पुर्‍याएका थिए।
+<p>साहित्य-सृजनामा यी आफ्ना दौँतरीहरूलाई नै अगि सारिरहन्थे। आफ्ना पूर्वज, समकालीन र पछाडिका मान्छेको उनी खुवै प्रशंसा गर्थे। यिनले भानुभक्तलाई कहीँ आदिकवि भनेका छन्, कहीँ कविकुलमुकुट भनेका छन् भने कहीँ चाहिँ चक्रचूडामणि पनि भनेका छन्। त्यसैगरी यिनले राजीवलोचन जोशीलाई कवि शिरोमणि र पद्मविलास पन्तलाई कवि भनेर सम्बोधन गरेका छन्। मोतिराम भट्टले आफूले मनले खाएको व्यक्तिको स्तुति गरेर कविता पनि लेखिदिन्थे। उनले भानुभक्त, राजीवलोचन र पद्मविलासको काव्यात्मक महिमा निकै राम्ररी गाएका छन्।</br>
+
+<p>कवि, गजलकार तथा गायक[सम्पादन गर्ने]
+<p>मोतीराम भट्टले श्रृङ्गर, भक्ति तथा राष्ट्रियताका विषयमा थुप्रै कविताहरू लेखे श्रृङ्गारिक कविताका चाहिँ उनी निर्मा ता नै बने। श्लोकसङ्ग्रह र मनोद्वेग प्रवाहमा मोतिराम भट्टका थुप्रै श्रृङ्गारिक कविता रहेका छन्। पिकदूत’ भट्टको श्रृङ्गाररसको अर्को काव्य हो। मोतीराम भट्टले नै नेपाली भाषामा गजलको आविष्कार गरे। यिनले नेपाली भाषामा थुप्रै गजल लेखेर लोकप्रिय बनाएका छन्। त्यस बेला यिनको गजललेखनबाट लक्ष्मीदत्त पन्त, गोपीनाथ लोहनी, नरदेव पाण्डे पनि आकर्षित भए र उनीहरूले पनि गजल लेख्न थाले। भट्टकै प्रेरणाबाट शम्भुप्रसाद ढुङ्गेल, भीमनिधि तिवारी र मवीवि शाहले पनि नेपाली काव्यविधामा गजललाई महत्त्वपूर्ण किसिमले प्राथमिकता दिए। भट्ट गजलकार मात्र नभएर गायक पनि थिए। त्यसबेला दरबारमा उर्दूका गीतगजल गाएको देखेर यिनले नेपाली गजलगीत लेखे र गाएर पनि प्रस्तुत गर्न थाले। दरबारमा पनि क्रमशः मोतीराम भट्टले लेखेका गजल चल्न थाले :
+<p>यता हेर्‍यो यतै मेरा नजर्मा राम प्यारा छन् उता हेर्‍यो उतै मेरा नजर्मा राम प्यारा छन्। समस्यापूर्ति कार तथा सङ्गठनकर्ता[सम्पादन गर्ने] समस्यापूर्ति कविता लेख्ने जाँगर चलेपछि अरूलाई पनि यस विषयमा केन्द्रित गर्न उनले काठमाडौ तथा बनारस दुवै ठाउँमा मित्रमण्डलीको स्थापना गरे। संस्कृत वाङ्मयको पुरानो चलनलाई नेपाली भाषामा कायम गराउन उनी खुबै जुटे र समस्यापूर्तिको कविता सर्वप्रथम भट्टले नै आफै लेखे। बनारसमा बसेको बेला यिनले आफ्ना हितैषी साथीहरू तेजबहादुर, काशीनाथ, रङ्गनाथ, चेत सिंह र पद्मविलासलाई पनि समस्यापूर्तिका कविता लेख्न निपूर्ण बनाए। यिनले काठमाडौमा राजीवलोचन जोशी, भोजराज पाण्डे, डोलेश्वर, लक्ष्मीदत्त पन्त, नरदेव पाण्डे, कालीप्रसाद, देवराज र गोपीनाथ लोहनी आदिलाई पनि सङ्गठनात्मक रूपमा समस्यापूर्तिको कविता लेख्न वातावरण जुटाए। वास्तवमा उनीहरू पनि क्रमशः क्रमशः समस्यापूर्ति ’ कविता लेख्न निपुण भएका थिए।
+<p>नाटककार तथा निर्देशक[सम्पादन गर्ने] मोतिराम भट्टले नेपाली भाषामा शकुन्तला’, प्रियदर्शिका र पद्मावती’ गरी तीनवटा नाटक लेखेका थिए। हुन त यिनले उर्दूमा पनि नाटक लेखेका थिए। शकुन्तला नाटक यिनले आफ्ना साथी देवशमशेर ज.ब.रा.को. अनुरोधमा लेखन र निर्देशन गरेका थिए। यिनले निर्देशन गरेको यो नाटक प्रधानमन्त्री वीरशमशेर ज.ब.रा.ले पनि हेरे। यो नाटक दरबारबाट पुनः बाहिर निस्केन। भनिन्छ देवशमशेरबाट नै यस नाटकलाई दबाइएको हुन सक्छ। जे होस् , मोतिराम भट्ट नाटकलेखनमा जति कुशल थिए निर्देशनकलामा पनि त्यति नै पोख्त थिए।
+<p>सम्पादक, छापाखाना र पत्रिकाका प्रबन्धक तथा पुस्तकालयका निर्माता[सम्पादन गर्ने] मोतिराम भट्टले प्रायः भानुभक्त आचार्यका कृतिहरूको मात्र सम्पादन गरेको पाइन्छ। भानुभक्तको बालकाण्ड रामायण यिनैको सक्रियता, सौजन्य र भूमिगत सम्पादनमा प्रकाशित भएको थियो। भानुभक्तकृत भाषा रामायणको यिनैले सम्पादन गरेका थिए। त्यसैगरी मोतिरामले भानुभक्तका भक्तमाला, रामगीता, प्रश्नोत्तरा र वधूशिक्षाको पनि सम्पादन गरेका थिए।
+<p>मोतिराम भट्टले नै पहिलो नेपाली मासिक पत्रिकाको प्रकाशनको प्रबन्ध गरे। यिनले निकालेको पत्रिकाको नाउँ थियो- गोरखा भारतजीवन र यो पत्रिका बनारसबाट प्रकाशित भएको थियो। यिनले बनारसका आफ्ना हितैषी मित्र रामकृष्ण बर्माको सहयोग लिएर भारतजीवननामक छापाखाना स्थापना गराए। त्यस छापाखानालाई यिनैले जिम्मा लिई यिनी आफू त्यसको प्रबन्धकका रूपमा बसे। भट्टले त्यही छापाखानाबाट भानुभक्तका कृतिहरू पनि छपाए। भट्टले यस छापाखानाबाट यसका स्वामी रामकृष्ण बर्मा लाई पनि निक्कै आर्थिक लाभ पुर्याएका थिए।
+<p>मोतिरामले नेपालमा आफ्ना मामा कृष्णदेव पाण्डे र आफ्ना अभिन्न मित्र धीरेन्द्रसँग मिली ठहिटीमा पाशुपत छापाखानाको स्थापना गरे। १९५० सालमा खोलिएको यो छापाखाना त्यति बेलाको नेपालको प्रसिद्ध छापाखाना मानिएको छ। पाशुपत छापाखानाको स्थापनापश्चात् त्यहाँबाट नेपाली भाषासाहित्यका थुप्रै पुस्तक र पत्रिकाहरू छापिन थाले। आफ्ना मामा कृष्णदेव पाण्डेसँग मिलेर आफ्नो नाउँसमेत जोडी काठमाडौको ठहिटीमा यिनले एउटा पुस्तकालयको स्थापना गरे- मोतीकृष्ण कम्पनी। यिनले त्यस पुस्तकालयमा नेपाली भाषाका यथेष्ट पुस्तकहरू जोड्न थाले। मोतीकृष्ण कम्पनीबाट पुस्तकहरू पनि बेचिने कार्य हुन्थ्यो। उनले नेपाली भाषाको पहिलो पुस्तकालयको निर्माण गरेर नेपाली भाषासाहित्यको सेवा गरेका थिए।
+<p>मोतिराम भट्ट नेपाली साहित्यप्रदेशका एउटा अलौ किक व्यक्तित्व थिए। उनी नेपाली भाषासाहित्यको सृजना, स•ठनका प्रेरक, श्रद्धेय र आधिकारिक पुरुष थिए। पढ्दै , पुस्तक लेख्तै, सम्पादन गर्दै, पत्रिका चलाउँदै , पुस्तकालय खोल्दै , छापाखानाको स्थापना गर्दै, अरूलाई लेख्न प्रेरणा दिँदै यिनले नेपाली धर्ती लाई बिर्सि नसक्नुको गुन लगाएका छन्। नेपालका लागि मरिमेट्ने उनी ठूला सपूत थिए। आफ्नो जीवनको अथक मिहिनेत, बौद्धिक कसरत र हिम्मतका कारणले उनी नेपाली माटोमा चिरस्मरणीय छन्। उनको योगदानका कारणले उनी यस देशका राष्ट्रिय विभूति बनेका छन्। उनका नाउँमा कैयौँ सङ्घसंस्था, बाटाघाटाको निर्माण भएका छन्। उनका नाउँमा हुलाक टिकट निकालिएको छ। उनैको नाउमा युवावर्ष मोती पुरस्कारसमेत स्थापना भएको छ जुन पुरस्कार नेपाली साहित्यका युवा पिँडीको सर्वोच्च पुरस्कारका रूपमा रहेको छ।
+<p>बहुमुखी प्रतिभाका धनी मोतिराम भट्ट राष्ट्रभाषा नेपालीका पहिलो उत्थापक थिए। मोतिरामको सृजना, गोडमेल र जलमलका कारणले नेपाली भाषाले आजको स्थिति ओगटेको हो। उनको यो मुलुकप्रति अत्यन्तै ठूलो सद्भावना थियो। उनी कट्टर राष्ट्रवादी थिए [२]
+<p>अचल् झन्डा फर्कोस् फरफर गरी कान्तिपुरिमा
+रिपूको मन् थर्कोस् थरथर गरी छीन घरिमा
+यवन्ले राज गर्दा कति पतित हिन्दूस्थल भयो
+फगत् यो नेपाल्को मुलुक बचि कंचन् रहिगयो।
+</br></p>
+<center></br>⁂</br></center>
 
 <h1>Latin poetry</h1>
 <p><center><em><span class="case">P. OVIDI NASONIS METAMORPHOSEON LIBER PRIMVS</span></em></br></br>
@@ -611,14 +2385,14 @@ Aber wie, Heiberg ein Bahnbrecher? Er war allerdings sehr viel weniger ein solch
 Er schrieb sie freilich gerade in der Zeit, als jener heiße Kampf entbrannte; doch hat das vielleicht nicht so sehr den maß- und geschmackvollen Realismus, der seine Dichtungen kennzeichnet, hervorgerufen, als sein durch seine Vergangenheit geschärfter Wirklichkeitssinn. Er »war« Realist, er wurd’ es nicht erst. Denn er hatte gelebt, und er hatte erlebt, eh’ er die Feder ergriff; er war ein reifer Mann, als er sein erstes Buch schrieb; er erfüllte buchstäblich die Forderung der Concourts, (wenn ich nicht irre, waren es die beiden Brüder, welche sie aufstellten,) daß man erst vierzig Jahre zählen müsse, bevor man sich Realist nennen dürfe. Aber Realist! Meines Wissens hat sich Heiberg nie so genannt, und da seine Bücher nicht „die einzige Berechtigung des Realismus“ beweisen wollten, da er sich nicht auf ein einseitiges Dogmenverkünden und Dogmenbeweisen kapriziert hatte, sondern in Wahrheit nichts anderes als wirken, nämlich die Sinne und die Seele des Lesers nach seinem Willen regieren, sie mit den Bildern und Vorstellungen, welche seine Ideen forderten, füllen wollte—etwas, was bis jetzt alle Dichter seit Homer, ohne Ausnahme, erstrebten —, so nahte seinen Büchern das Publikum sich unbefangen und ohne jegliche Voreingenommenheit. Dem Publikum ist es nämlich in der That ja ganz gleichgültig, wer vor ihm steht, ob es ein Idealist, Romantiker, Realist oder was immer sei—als ob überhaupt die Wirklichkeit diese Gegensätze so scharf begrenzt anseinanderhielte!—es will nur eins: es will bezwungen sein; der Leser wünscht zu fühlen, daß der Künstler Gewalt über ihn habe, er will sein Gefangener sein…
 Heiberg bezwang das Publikum; er fesselte es mit Rosenguirlanden in seinen entzückenden Plaudereien; aber aus seinen folgenden Büchern—ich denke hier besonders an den „Apotheker Heinrich“—langte es mitunter zugleich wie ein Paar grauer Schattenarme, die sich Einem unvermerkt um den Hals schlangen, fester und fester… und die uns mit unheimlicher Gewalt tiefer und tiefer in das Buch und seine Geschichten hineinzusehen zwangen, bis langsam sich die Spannung löste und ein hinreißender Humor uns den Alp von der tiefaufatmenden Brust wälzte… Was sag’ ich? in das Buch? In das Leben, in das Leben, wie es ist! In allen seinen folgenden Arbeiten, wenn auch in einzelnen bisweilen die Kraft des Dichters nachzulassen schien, steckte ein Element der Ursprünglichkeit, ein naives, leidenschaftliches Ergreifen der Dinge, wie es Einem lange nicht vorgekommen. Und dabei doch wieder: man fühlte sich so wohl bei Heiberg; er hat etwas Aristokratisches, Vornehmes, Weltmännisches; bei ihm vereinigte sich Weltton mit Frische, heitere Laune mit einer schneidenden Satire. Auch seine berückendsten Schilderungen waren durch einen goldechten Humor verklärt. Dieser Humor gerade ist das Auszeichnende der schriftstellerischen Persönlichkeit Heibergs: nicht viele Dichter der gegenwärtigen Zeit können sich zu diesem Erlösungsmittel durchringen, sie werden immer zwischen den schmerzvollsten Gegensätzen hin und her geschleudert, und erleichtert seufzen sie auf, wenn ihnen ein Begünstigter begegnet, und horchen auf ihn, um zu lernen, wie man das schwere Leben leicht nimmt.<p>
 Und dringender wurde nun allgemach das Fragen: Wer ist dieser Mann? Wo kommt er her? Nicht müßige Neugierde blos war es, die so forschte. Denn, um es mit einem groben und beschränkten Wort zu sagen: Was Einer ißt, das ist er. Meine Leser verstehen sicher, was ich meine.<p></br>
-	
+
 <em>Man erfuhr nach und nach folgendes</em></br>
 Hermann Heiberg ist am 17. November 1840 in Schleswig, der jetzigen Provinzialhauptstadt, als Sohn eines Rechtsanwalts geboren. Die Heibergs, eine angesehene Patrizierfamilie, spielten in der kleinen Stadt seit langem eine große Rolle. Heibergs Mutter, die noch lebt, entstammt dem gräflichen Hause Baudissin-Knoop. Er verlebte eine sehr glückliche Jugend, man ließ ihm als Knaben Luft und Licht … und er war ein frischer, fröhlicher Junge, kein Stuben- und Ofenhocker. Seine Jugend wirft denn auch einen lichten, lachenden Schein in all seine Bücher,… er ist einer der größten und naturwahrsten Kinderdarsteller der Gegenwart, ebenso wie er die Kleinstadt, in der eben seine Jugend dahinfloß, meisterhaft zu vergegenwärtigen weiß. Nachdem Heiberg das Gymnasium seiner Vaterstadt durchlaufen hatte, wollte er das Studium der Rechte ergreifen; doch verhinderten die damaligen Wirrnisse in Schleswig-Holstein und andere Umstände die Ausführung dieses Entschlusses. Heiberg ward Kaufmann und zwar Buchhändler. Seine Lehrjahre, die er später im „Januskopf“, diesem vortrefflichen Buchhändlerroman, geschildert hat, absolvierte er in Kiel. Dann übernahm er in Schleswig die selbständige Leitung einer von seinem Vater begründeten, aber bisher von fremder Hand verwalteten Buchhandlung, die er wenige Jahre später, nachdem er inzwischen ein Jahr in Köln gewesen, als Eigentum an sich brachte. Nach dem Krieg von 1866 verkaufte er sein aufblühendes und mit einer eigenen Druckerei versehenes Geschäft, um nach Berlin zu übersiedeln. Hier ward er vorerst geschäftlicher Leiter der Nordd. Allg. Ztg., dann der Spenerschen Zeitung, doch bald wurde der energische und tüchtige Mann in die Direktion der Preußischen Bankanstalt berufen. In seiner neuen Stellung sammelte er die vielseitigsten Erfahrungen, zumal sie ihn zu häufigen und ausgedehnten Reisen durch Deutschland, die Schweiz, Holland, Belgien, Dänemark, Frankreich und England veranlaßte. Wo ist ein Schriftsteller mit einer so eigentümlichen und bewegten Vergangenheit, ein Schriftsteller, der als thätiger Mann im Leben stand, nicht es als müßiger Zuschauer beobachtete?… Die Bank liquidierte; er stellte sich auf eigne Füße und beschäftigte sich vorwiegend mit der Einleitung zur Finanzierung von Eisenbahn- und Tramway-Unternehmungen; erhielt auch einige male allein oder im Verein mit anderen bedeutsame Vertretungen—so war er z.B. einmal vorübergehend Bevollmächtigter der chinesischen Regierung für eine Finanzierung in London —, zog sich aber endlich doch, mehrfach um die Früchte seines Fleißes und seiner Geschicklichkeit gebracht und grenzenlos angewidert von allem, was „Geschäft“ heißt, zurück. Im Jahre 1881 schrieb er dann, „um meine mißmutigen Gedanken zu töten,“ wie er sagt, jene reizenden „Plaudereien mit der Herzogin von Seeland.“ Der große Erfolg, den dieses anmutige und originelle Buch fand, ermunterte ihn zum Weiterschaffen, und so lebt er denn noch jetzt als Schriftsteller in Berlin W., an der Seite einer liebenswürdigen Frau, mit der er sich 1865 vermählt hat, umgeben von einem blühenden Kinderkreis, rastlos und erfolgreich thätig.<p>
 Hiermit legt der Verein der Bücherfreunde der deutschen Leserwelt sein neuestes Werk vor.</p>
 <center></br></br>⁂</br></center>
 
 <h1>English</h1>
-<p><em>Francis Henry Gribble “Lausanne”</em></br>
+<span class="dlig"><p><em>Francis Henry Gribble “Lausanne”</em></br>
 Though Lausanne is so near Geneva, its history, in historical times, has been widely different from that of the neighbouring town. Geneva enjoyed a modified independence from an early date, and became completely independent early in the sixteenth century. Lausanne, until nearly 300 years later, endured the domination, first of Savoy, and subsequently of Berne. <span class="red">❡</span> The early history is obscure and full of vexed questions as well as unfamiliar names; but the central fact is that the Counts of Savoy—they were not promoted to be Dukes of Savoy until later—took possession of the Canton of Vaud, as well as of the Chablais and the lower Valais, after the death of the last of the Zaeringen, at the beginning of the thirteenth century. For the next 300 years they exercised overlordship, limited by the charters of the towns, and, in the case of Lausanne, by the jurisdiction of the Bishop—a complicated state of things which the Swiss historical societies may be left to unravel. <span class="red">❡</span> It seems clear, however, that the Savoyards were no hard taskmasters. ‘The country of Vaud,’ says its historian, Louis Vulliemin, ‘was happy and proud to belong to them. They exacted little from it, and accorded it their powerful protection. The various States used to assemble at Moudon, the central town, summoned by the Council of Moudon, or by the Governor of Vaud, acting as the representative of the Prince. There was no palace. They met in an inn, or in the house of one of the citizens of the neighbourhood. Often they assembled in such small numbers that, for lack of a quorum, no decision could be taken… No burdensome or unduly progressive measures were adopted. As a rule, the good old customs were confirmed. When a departure from them was resolved upon, it became law by receiving the sanction of the Prince. The business of the herald was to see that it was proclaimed, in the proper places, in a loud and intelligible voice. The Prince had sworn an oath to impose no new legislation that was not in accordance with the will of the nation as expressed by the estates of the realm.’ <span class="red">❡</span> The most notable of the Governors was Peter of Savoy—the same Peter of Savoy whom we meet in English history, fighting in the civil wars of the days of Simon de Montfort. His headquarters were in the Castle of Chillon, where he not only dispensed justice, but also amended the criminal law. It was the barbarous rule of the time that an offender who had been fined for a misdemeanour should have his nose cut off if he were unable to pay; Peter compelled even the Bishops to abandon that cruel custom. For the rest, to quote Vulliemin: ‘He received his vassals in the great hall of the Castle, where their coats of arms hung on the wall around that of the House of Savoy. The blowing of a horn announced that the meal was served. The ladies arrived in their emblazoned best. The chaplain read the grace from a volume bound in violet and gold—the precious depositary of Divine law and ecclesiastical ritual. After the feast came the hour of merry recreations. The Court fool and the minstrels took their seats by the side of the Prince, and the nobility thus passed their lives in junketing.’</br></br>
 <em>This is the same writer’s picture of the lives of the burghers:</em></br>
 ‘At Lausanne the three estates met in the month of May. In 1398 they submitted to a fresh drafting of the “Plaid général,” which defined the respective rights of bishop, canons, and burghers. Three days were devoted to the hearing of suits. On the fourth day the Plaid, accompanied by elders, went the round of the streets, and ordered the necessary repairs. All the citizens were required to follow, carrying axes or stakes, so as to be able to lend a hand when required. The Bishop regaled the artificers with bread, wine, and eggs. In return, the blacksmiths had to shoe his horses, the saddlers to provide him with spurs and bridles, and the coachbuilders to supply him with a carriage. Three times a year the Seneschal passed in front of the cobblers’ shops, and touched with his rod the pair of boots which he selected for his lordship. In time of war the prelate’s army had to serve the Prince for a day and a night without pay, and as much longer as they might be wanted for wages. The Bishop’s business was to ransom prisoners, protect the citizens from all injustice, and go to war on their behalf if necessary.</p>
@@ -644,6 +2418,49 @@ And be it further enacted, That nothing in this act shall be construed to extend
 And be it further enacted, That any person or persons who shall print or publish and manuscript, without the consent and approbation of the author or proprietor thereof, first had and obtained as aforesaid, (if such author or proprietor be a citizen of or resident in these United States) shall be liable to suffer and pay to the said author or proprietor all damages occasioned by such injury, to be recovered by a special action on the case founded upon this act, in any court having cognizance thereof.</br></br>
 § 7</br>
 And be it further enacted, That if any person or persons shall be sued or prosecuted for any matter, act or thing done under or by virtue of this act, he or they may plead the general issue, and give the special matter in evidence.</p>
+<center></br></br>⁂</br></center>
+
+<h1>In CONGRESS, July 4, 1776.</h1></br>
+</br>
+<em>A DECLARATION</br>
+By the REPRESENTATIVES of the</br>
+UNITED STATES OF AMERICA,</br>
+In GENERAL CONGRESS assembled.</em></br></br>
+<p>WHEN in the Courſe of human Events, it becomes neceſſary for one People to diſſolve the Political Bands which have connected them with another, and to aſſume among the Powers of the Earth, the ſeparate and equal Station to which the Laws of Nature and of Nature’s God entitle them, a decent Reſpect to the Opinions of Mankind requires that they ſhould declare the cauſes which impel them to the Separation.
+<p>We hold theſe Truths to be ſelf-evident, that all Men are created equal, that they are endowed by their Creator with certain unalienable Rights, that among theſe are Life, Liberty and the Purſuit of happineſs— That to ſecure theſe Rights, Governments are inſtituted among Men, deriving their juſt Powers from the Conſent of the Governed. That whenever any Form of Government becomes deſtructive of theſe Ends, it is the Right of the People to alter or to aboliſh it, and to inſtitute new Government, laying its Foundation on ſuch Principles and organizing its Powers in ſuch Form, as to them ſhall ſeem moſt likely to effect their Safety and Happineſs. Prudence, indeed, will dictate that Governments long eſtabliſhed ſhould not be changed for light and tranſient Cauſes; and accordingly all Experience hath ſhown that Mankind are more diſpoſed to ſuffer, while Evils are ſufferable, than to right themſelves by aboliſhing the Forms to which they are accuſtomed. But when a long Train of Abuſes and Uſurpations, purſuing invariably the ſame Object, evinces a Deſign to reduce them under abſolute Deſpotiſm, it is their Right, it is their Duty, to throw off ſuch Government, and to provide new Guards for their future Security. Such has been the patient Sufferance of theſe Colonies; and ſuch is now the Neceſſity which conſtrains them to alter their former Syſtems of Government. The Hiſtory of the preſent King of Great-Britain is a Hiſtory of repeated Injuries and Uſurpations, all having in direct Object the Eſtabliſhment of an abſolute Tyranny over theſe States. To prove this, let Facts be ſubmitted to a candid World.
+<p>He has refuſed his Aſſent to Laws, the moſt wholeſome and neceſſary for the public Good.
+<p>He has forbidden his Governors to paſs Laws of immediate and preſſing Importance, unleſs ſuſpended in their Operation till his Aſſent ſhould be obtained; and when ſo ſuſpended, he has utterly neglected to attend to them.
+
+<p>He has called together Legiſlative Bodies at Places unuſual, uncomfortable, and diſtant from the Depoſitory of their public Records, for the ſole Purpoſe of fatiguing them into Compliance with his Meaſures.
+<p>He has diſſolved Repreſentative Houſes repeatedly, for oppoſing with manly Firmneſs his Invaſions on the Rights of the People.
+<p>He has refuſed for a long Time, after ſuch Diſſolutions, to cauſe others to be elected; whereby the Legiſlative Powers, incapable of Annihilation, have returned to the People at large for their exerciſe; the State remaining in the meantime expoſed to all the Dangers of Invaſion from without, and Convulſions within.
+<p>He has endeavored to prevent the Population of theſe States; for that Purpoſe obſtructing the Laws for Naturalization of Foreigners; refuſing to paſs others to encourage their Migration hither, and raiſing the Conditions of new Appropriations of Lands.
+<p>He has obſtructed the Adminiſtration of Juſtice, by refuſing his Aſſent to Laws for eſtabliſhing Judiciary Powers.
+<p>He has made Judges dependent on his Will alone, for the Tenure of their Offices, and the Amount and Payment of their Salaries.
+<p>He has erected a Multitude of new Offices, and ſent hither Swarms of Officers to haraſs our People, and eat out their Subſtance.
+<p>He has kept among us, in Times of Peace, Standing Armies without the conſent of our Legiſlature.
+<p>He has affected to render the Military independent of and ſuperior to the Civil Power.
+<p>He has combined with others to ſubject us to a Juriſdiction foreign to our Conſtitution, and unacknowledged by our Laws; giving his Aſſent to their Acts of pretended Legiſlation:
+<p>For quartering large Bodies of Armed Troops among us:
+<p>For protecting them, by a mock Trial, from Puniſhment for any Murders which they ſhould commit on the Inhabitants of theſe States:
+<p>For cutting off our Trade with all Parts of the World:
+<p>For impoſing Taxes on us without our Conſent:
+<p>For depriving us, in many Caſes, of the Benefits of Trial by Jury:
+<p>For tranſporting us beyond Seas to be tried for pretended Offenſes:
+<p>For aboliſhing the free Syſtem of Engliſh Laws in a neighboring Province, eſtabliſhing therein an arbitrary Government, and enlarging its Boundaries ſo as to render it at once an Example and fit Inſtrument for introducing the ſame abſolute Rule in theſe Colonies:
+<p>For taking away our Charters, aboliſhing our moſt valuable Laws, and altering fundamentally the Forms of our Governments:
+<p>For ſuſpending our own legiſlatures, and declaring themſelves inveſted with power to legiſlate for us in all caſes whatſoever.
+<p>He has abdicated government here, by declaring us out of his protection and waging war againſt us.
+<p>He has plundered our ſeas, ravaged our coaſts, burned our towns, and deſtroyed the lives of our people.
+<p>He is at this time tranſporting large armies of foreign mercenaries to complete the works of death, deſolation and tyranny, already begun with circumſtances of cruelty and perfidy ſcarcely paralleled in the moſt barbarous ages, and totally unworthy of the head of a civilized nation.
+<p>He has conſtrained our fellow citizens taken captive on the high ſeas to bear arms againſt their country, to become the executioners of their friends and brethren, or to fall themſelves by their hands.
+<p>He has excited domeſtic inſurrections amongſt us, and has endeavored to bring on the inhabitants of our frontiers, the mercileſs Indian ſavages, whoſe known rule of warfare, is undiſtinguiſhed deſtruction of all ages, ſexes and conditions.
+<p>In every ſtage of theſe oppreſſions we have petitioned for redreſs in the moſt humble terms: our repeated petitions have been anſwered only by repeated injury. A prince, whoſe character is thus marked by every act which may define a tyrant, is unfit to be the ruler of a free people.
+<p>Nor have we been wanting in attention to our Britiſh brethren. We have warned them from time to time of attempts by their legiſlature to extend an unwarrantable juriſdiction over us. We have reminded them of the circumſtances of our emigration and ſettlement here. We have appealed to their native juſtice and magnanimity, and we have conjured them by the ties of our common kindred to diſavow theſe uſurpations, which, would inevitably interrupt our connections and correſpondence. We muſt, therefore, acquieſce in the neceſſity, which denounces our ſeparation, and hold them, as we hold the reſt of mankind, enemies in war, in peace friends.
+<p>We, therefore, the repreſentatives of the United States of America, in General Congreſs, aſſembled, appealing to the Supreme Judge of the world for the rectitude of our intentions, do, in the name, and by the authority of the good people of theſe colonies, ſolemnly publiſh and declare, that theſe united colonies are, and of right ought to be free and independent ſtates; that they are abſolved from all allegiance to the Britiſh Crown, and that all political connection between them and the ſtate of Great Britain, is and ought to be totally diſſolved; and that as free and independent ſtates, they have full power to levey war, conclude peace, contract alliances, eſtabliſh commerce, and to do all other acts and things which independent ſtates may of right do. And for the ſupport of this declaration, with a firm reliance on the protection of Divine Providence, we mutually pledge to each other our lives, our fortunes and our ſacred honor.</br></br>
+Signed by Order and in Behalf of the Congress,</br>
+JOHN HANCOCK, President.</p></span>
+<center></br></br>⁂</br></center>
 
 <h1>Danish, pre-reform</h1>
 <p><em>„Kongens Fald“ af Johannes V. Jensen</em></br>

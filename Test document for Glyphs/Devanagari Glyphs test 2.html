@@ -92,13 +92,12 @@ Conjuncts d_bha_ra, d_ba_ra, and d_va_ra not rendered. [29.09.14]</br>
 <hr>
 
 ra + rVocalic should render as the rVocalic with a reph on top, and ra + rrVocalic should render as rrVocalic with a reph on top.</br></br>
-For Marathi la + rVocalic should render the lVocalic, and la + rrVocalic should render llVocalic. For Hindi the rVocalic and rrVocalic should just be placed below the stem. [28.09.14]</br></br>
-(Is this possibly something that should be solved by naming the rVocalic, rrVocalic lVocalic, and llVocalic differently?)</br>
-<span class="Glyphs">Hindi रृ रॄ लृ लॄ ल </span></br>
-<span class="lang" lang="mr"><span class="Glyphs">Marathi रृ रॄ लृ लॄ ल </span></br></span>
-<span class="ModelNorthern">रृ रॄ लृ लॄ ल </span></br>
-<span class="ModelSouthern">रृ रॄ लृ लॄ ल </span></br>
-<span class="Adobe">रृ रॄ लृ लॄ ल </span></br>
+For Marathi, la + lVocalic should render the lVocalic, and la + llVocalic should render llVocalic. For Hindi the lVocalic and llVocalic should just be placed below the stem. I made two glyphs called la_lVocalicMatra-deva.loclMAR and la_llVocalicMatra-deva.loclMAR, where lVocalic and llVocalic are placed as components, but they are not rendered in MR for la+l/llVocalic [01.10.14]</br></br>
+<span class="Glyphs">HI रृ रॄ ल लृ लॄ ऌ ॡ </span></br>
+<span class="lang" lang="mr"><span class="Glyphs">MR रृ रॄ ल लृ लॄ ऌ ॡ </span></br></span>
+<span class="ModelNorthern">रृ रॄ ल लृ लॄ ऌ ॡ </span></br>
+<span class="ModelSouthern">रृ रॄ ल लृ लॄ ऌ ॡ </span></br>
+<span class="Adobe">रृ रॄ ल लृ लॄ ऌ ॡ </span></br>
 <hr>
 
 The special glyphs for da_uuMatra-deva, (ra_uuMatra-deva) and ha_uuMatra-deva are not used in combination with half-forms/conjuncts – or the wrong anchor is used. Please see ‘Notes on what needs to be fixed.txt’ on this anchor issue. [28.09.14]</br>
@@ -142,8 +141,8 @@ Conjunct s_ta_ra will not appear in Glyphs, nor in FF and InDesign CS6. Same iss
 <span class="Glyphs">स्त्र स्त्र्य न्त्र </span><span class="ModelNorthern">स्त्र स्त्र्य न्त्र </span></br>
 <hr>
 
-Position of the ‘leg’ component in the pa_ra conjunct is not correct in the generated fonts. It is correct in the Glyphs file. There is a ‘leg’ anchor in both the aaMatra-deva and the p-deva – the two components that the pa-deva is built from. The pa_ra-deva is built from the pa-deva + the ra-deva.leg [24.09.14]</br>
-<span class="Glyphs">प्र </span><span class="ModelNorthern">प्र </span></br>
+Position of the ‘leg’ component in the pa_ra and va_ra conjuncts are not correct in the generated fonts. It is correct in the Glyphs file. There is a ‘leg’ anchor in both the aaMatra-deva and the p-deva – the two components that the pa-deva is built from. The pa_ra-deva is built from the pa-deva + the ra-deva.leg [24.09.14]</br>
+<span class="Glyphs">प्र व्र </span><span class="ModelNorthern">प्र व्र </span></br>
 <hr>
 
 Kerning(?) issue when setting a language. Seems like the entire kerning feature is turned off when a text is tagged with a language (any language, except Hindi which is not used in the OT-features, hence a text tagged with ‘hi’ falls back to base-devanagari). This is only true for Devanagari, not the latin.</br></br>
