@@ -166,6 +166,17 @@ FIXED: use syntax [… v_va_ra_v …]
 I have made the compound diacritics as separate glyphs, and I can see that they are in the CCMP feature, but they do not render, neither in InDesign nor in Firefox. Please refer to the last page of the InDesign test-document for more examples. [01.10.14]</br></br>
 GS: The only way I see is to make a precomposed glyph. [10.09.14]</br></br>
 CES: Trying to make these compound diacritics as components… [29.10.14]</br></br>
+CES: So I have made a selection of compound diacritial glyphs, and put this code in ABVS:</br>
+script dev2;</br>
+lookup Abvs1_devanagari {</br>
+	sub [aiMatra-deva anusvara-deva eCandraMatra-deva] [aiMatra-deva anusvara-deva eCandraMatra-deva] [aiMatra-deva anusvara-deva eCandraMatra-deva] by aiMatra_candraBindu-deva;</br>
+} Abvs1_devanagari;</br></br>
+
+This works in Glyphs, but not in InDesign CS6 nor in Firefox [02.10.14].
+</br></br>
+
+<span class="Glyphs"> दैंॅ   दॅैं   दंॅै   दॅंै   दॅैं   दैॅं</span></br>
+
 <span class="Glyphs">र्घ र्घॅ र्घं र्घऀ र्घॆ र्घॆं र्घॆॅं र्घँ र्घॅं र्घॕ </br>
 र्घा र्घाॅ र्घां र्घाऀ र्घाॆ र्घाॆं र्घाॆॅं र्घाँ र्घाॅं र्घाॕ घौँ </span></br>
 <span class="ModelNorthern">र्घ र्घॅ र्घं र्घऀ र्घॆ र्घॆं र्घॆॅं र्घँ र्घॅं र्घॕ </br>
