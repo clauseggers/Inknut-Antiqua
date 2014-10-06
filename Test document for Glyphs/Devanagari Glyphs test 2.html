@@ -87,6 +87,18 @@ Chandas font represents Southern (most commonly used today) style of Devanagari 
 <span class="lang" lang="hi">
 
 Conjuncts d_bha_ra, d_ba_ra, and d_va_ra not rendered. [29.09.14]</br>
+CES [05.10.14]: Solution follows:</br>
+You have made RKRF add all those conjunct that end in ra-deva to the Rkrf1 lookup. Since RKRF is fired before CJCT you need to add conjuncts resulting from the ‘Rkrf1’ lookup to the CJCT.
+</br>
+Example for the sequence ‘da-deva halant-deva bha-deva halant-deva ra-deva’:</br>
+First the sequence ‘bha-deva halant-deva ra-deva’ is made into a conjunct in the RKRF feature, in the first lookup ‘Rkrf1’:</br>
+	sub bha-deva halant-deva ra-deva by bha_ra-deva;</br>
+Then in the CJCT the sequence ‘da-deva halant-deva bha_ra-deva’ *should* be turned into the conjunct d_bha_ra-deva, like so:</br>
+	sub da-deva halant-deva bha_ra-deva by d_bha_ra-deva;</br>
+</br>
+Same deal for all occurences of these ra-conjuncts made in the RKRF. Remember that in some cases, such as ‘bha_ra_ya-deva’, you have to do a full substitution (including halants) in CJCT:</br>
+	sub bha_ra-deva halant-deva ya-deva by bha_ra_ya-deva;</br>
+</br>
 <span class="Glyphs">द्भ द्भ्र द्ब द्ब्र द्व्र </span></br>
 <span class="ModelNorthern">द्भ द्भ्र द्ब द्ब्र द्व्र </span></br>
 <hr>
