@@ -32,8 +32,8 @@ body {
 }
 .Glyphs {
 	font-family: "FontToTest2";
-	font-size: 6rem;
-	line-height: 2em;
+	font-size: 3rem;
+	line-height: 1.2em;
 	color: rgba(255,0,0,0.5);
 	display: block;
 }
@@ -45,22 +45,22 @@ Chandas font represents Southern (most commonly used today) style of Devanagari 
 
 .ModelNorthern {
 	font-family: "Uttara";
-	font-size: 7.2rem;
+	font-size: 4rem;
 	line-height: 1.2;
 	color: rgba(0,170,0,0.5);
 	display: block;
 }
 .ModelSouthern {
 	font-family: "Chandas";
-	font-size: 7.2rem;
-	line-height: 2.2;
+	font-size: 4rem;
+	line-height: 1.2;
 	color: rgba(0,170,0,0.5);
 	display: block;
 }
 .Adobe {
 	font-family: "AdobeDevanagari";
-	font-size: 7.2rem;
-	line-height: 2.2;
+	font-size: 4rem;
+	line-height: 1.2;
 	color: rgba(0,0,170,0.5);
 	display: block;
 }
@@ -84,7 +84,6 @@ Chandas font represents Southern (most commonly used today) style of Devanagari 
 
 <body>
 <div id="bodytext">
-<span class="lang" lang="hi">
 
 Conjuncts d_bha_ra, d_ba_ra, and d_va_ra not rendered. [29.09.14]</br>
 CES [05.10.14]: Solution follows:</br>
@@ -100,7 +99,31 @@ Same deal for all occurences of these ra-conjuncts made in the RKRF. Remember th
 	sub bha_ra-deva halant-deva ya-deva by bha_ra_ya-deva;</br>
 </br>
 <span class="Glyphs">द्भ द्भ्र द्ब द्ब्र द्व्र </span></br>
-<span class="ModelNorthern">द्भ द्भ्र द्ब द्ब्र द्व्र </span></br>
+<span class="ModelSouthern">द्भ द्भ्र द्ब द्ब्र द्व्र </span></br>
+<hr>
+
+Test of GSUB of special Devanagari-style latin punctuation. Is in the LOCL feature. Works for Hindi and Marathi – except the last glyph in a string of latin preceeding the nagari (which makes some sense), but not if that character is a beginning quote mark.</br></br>
+Kerning also works, which is somewhat weird as it does not work in other contexts.</br></br>
+Sanskrit does for some reason not work.</br></br>
+NB: This feature does not work in InDesign CS6. It must be because InDesign’s implementation is buggy. [06.10.14]</br></br>
+<span class="lang" lang="hi"><span class="Glyphs">HI ‘रृ’ “रॄ” ल- लृ–!!!???,.;</span></span></br>
+<span class="lang" lang="mr"><span class="Glyphs">MR ‘रृ’ “रॄ” ल- लृ–!!!???,.</span></span></br>
+<span class="lang" lang="sa"><span class="Glyphs">SA ‘रृ’ “रॄ” ल- लृ–!!!???,.</span></span></br>
+<span class="Glyphs">NO LANG ‘रृ’ “रॄ” ल- लृ–!!!???,.</span></span></br>
+<span class="ModelNorthern">DFLT ‘रृ’ “रॄ” ल- लृ–!!!???,.;:</span></br>
+<span class="ModelSouthern">DFLT ‘रृ’ “रॄ” ल- लृ–!!!???,.;:</span></br>
+<span class="Adobe">NO LANG ‘रृ’ “रॄ” ल- लृ–!!!???,.;:</span></br>
+<hr>
+
+Test of SS01 which switches relevant glyphs from Southern style to Northern style. [06.10.14]</br></br>
+<span class="lang" lang="hi"><span class="Glyphs">HI ऄ ॲ अ आ ऋ ॠ ॳ ॶ ॷ झ ण ल </span></span></br>
+<span class="lang" lang="hi"><span class="Glyphs"><span class="ss01">HI+SS01 ऄ ॲ अ आ ऋ ॠ ॳ ॶ ॷ झ ण ल </span></span></<span></span></br>
+<span class="lang" lang="mr"><span class="Glyphs">MR ऄ ॲ अ आ ऋ ॠ ॳ ॶ ॷ झ ण ल </span></span></br>
+<span class="lang" lang="mr"><span class="Glyphs"><span class="ss01">MR+SS01 ऄ ॲ अ आ ऋ ॠ ॳ ॶ ॷ झ ण ल </span></span></span></br>
+<span class="lang" lang="sa"><span class="Glyphs">SA ऄ ॲ अ आ ऋ ॠ ॳ ॶ ॷ झ ण ल </span></span></br>
+<span class="lang" lang="sa"><span class="Glyphs"><span class="ss01">SA+SS01 ऄ ॲ अ आ ऋ ॠ ॳ ॶ ॷ झ ण ल </span></span></span></br>
+<span class="Glyphs">DFLT ऄ ॲ अ आ ऋ ॠ ॳ ॶ ॷ झ ण ल </span></br>
+<span class="ModelNorthern">DFLT ऄ ॲ अ आ ऋ ॠ ॳ ॶ ॷ झ ण ल </span></br>
 <hr>
 
 ra + rVocalic should render as the rVocalic with a reph on top, and ra + rrVocalic should render as rrVocalic with a reph on top.</br></br>
