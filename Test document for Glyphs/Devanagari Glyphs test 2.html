@@ -102,6 +102,56 @@ Same deal for all occurences of these ra-conjuncts made in the RKRF. Remember th
 <span class="ModelSouthern">द्भ द्भ्र द्ब द्ब्र द्व्र </span></br>
 <hr>
 
+It would appear that a base-character + virama + ra should substitute the virama + ra with the rr-deva glyph. (CES: I need to find out if this is correct ortography or not something tells me it is, because the feature is in the font, but appears to be overridden by InDesign and Firefox.)</br></br>
+Conjunct ga_ra_ya-deva is not rendered, instead a ra with virama is.</br></br>
+Second issue is the placement of the virama under the ra and da. Please have a look at the ‘Notes on what needs to be fixed.txt’ document where I discuss these anchor issues. [28.09.14]</br></br>
+CES [07.10.14]: Solution follows:</br>
+The RPHF feature should have a special exception for Marathi where ra+halant is GSUB’d with reph-deva.loclMAR instead of reph-deva:</br>
+script dev2;</br>
+lookup Rphf_deva {</br>
+	sub ra-deva halant-deva by reph-deva;</br>
+} Rphf_deva;</br>
+language SAN;</br>
+lookup Rphf_deva;</br>
+language MAR  exclude_dflt;</br>
+lookup Rphf_MAR {</br>
+	sub ra-deva halant-deva by reph-deva.loclMAR;</br>
+} Rphf_MAR;</br>
+language NEP;</br>
+lookup Rphf_deva;</br>
+
+script deva;</br>
+lookup Rphf_deva;</br>
+language SAN;</br>
+lookup Rphf_deva;</br>
+language MAR  exclude_dflt;</br>
+lookup Rphf_MAR;</br>
+language NEP;</br>
+lookup Rphf_deva;</br></br>
+
+<span class="lang" lang="mr"><span class="Glyphs">MR पर्‍ प्र्प पर्‍या ग्र्य द् र् </span></span></br>
+<span class="ModelNorthern">पर्‍ प्र्प पर्‍या ग्र्य द् र् </span></br>
+<span class="ModelSouthern">पर्‍ प्र्प पर्‍या ग्र्य द् र् </span></br>
+<span class="Adobe">पर्‍ प्र्प पर्‍या ग्र्य द् र् </span></br>
+<hr>
+
+ra + rVocalic should render as the rVocalic with a reph on top, and ra + rrVocalic should render as rrVocalic with a reph on top.</br></br>
+For Marathi, la + lVocalic should render the lVocalic, and la + llVocalic should render llVocalic. For Hindi the lVocalic and llVocalic should just be placed below the stem. I made two glyphs called la_lVocalicMatra-deva.loclMAR and la_llVocalicMatra-deva.loclMAR, where lVocalic and llVocalic are placed as components, but they are not rendered in MR for la+l/llVocalic [01.10.14]</br></br>
+
+CES [07.10.14]: Solution follows:</br>
+Simple GSUB in CJCT:</br>
+sub ra-deva rVocalicMatra-deva by rVocalic-deva;</br>
+sub ra-deva rrVocalicMatra-deva by rrVocalic-deva;</br>
+sub la-deva.loclMAR rVocalicMatra-deva by lVocalic-deva;</br>
+sub la-deva.loclMAR rrVocalicMatra-deva by llVocalic-deva;</br>
+</br>
+<span class="Glyphs">HI रृ रॄ ल लृ लॄ ऌ ॡ </span></br>
+<span class="lang" lang="mr"><span class="Glyphs">MR रृ रॄ ल लृ लॄ ऌ ॡ </span></br></span>
+<span class="ModelNorthern">रृ रॄ ल लृ लॄ ऌ ॡ </span></br>
+<span class="ModelSouthern">रृ रॄ ल लृ लॄ ऌ ॡ </span></br>
+<span class="Adobe">रृ रॄ ल लृ लॄ ऌ ॡ </span></br>
+<hr>
+
 Test of GSUB of special Devanagari-style latin punctuation. Is in the LOCL feature. Works for Hindi and Marathi – except the last glyph in a string of latin preceeding the nagari (which makes some sense), but not if that character is a beginning quote mark.</br></br>
 Kerning also works, which is somewhat weird as it does not work in other contexts.</br></br>
 Sanskrit does for some reason not work.</br></br>
@@ -126,27 +176,9 @@ Test of SS01 which switches relevant glyphs from Southern style to Northern styl
 <span class="ModelNorthern">DFLT ऄ ॲ अ आ ऋ ॠ ॳ ॶ ॷ झ ण ल </span></br>
 <hr>
 
-ra + rVocalic should render as the rVocalic with a reph on top, and ra + rrVocalic should render as rrVocalic with a reph on top.</br></br>
-For Marathi, la + lVocalic should render the lVocalic, and la + llVocalic should render llVocalic. For Hindi the lVocalic and llVocalic should just be placed below the stem. I made two glyphs called la_lVocalicMatra-deva.loclMAR and la_llVocalicMatra-deva.loclMAR, where lVocalic and llVocalic are placed as components, but they are not rendered in MR for la+l/llVocalic [01.10.14]</br></br>
-<span class="Glyphs">HI रृ रॄ ल लृ लॄ ऌ ॡ </span></br>
-<span class="lang" lang="mr"><span class="Glyphs">MR रृ रॄ ल लृ लॄ ऌ ॡ </span></br></span>
-<span class="ModelNorthern">रृ रॄ ल लृ लॄ ऌ ॡ </span></br>
-<span class="ModelSouthern">रृ रॄ ल लृ लॄ ऌ ॡ </span></br>
-<span class="Adobe">रृ रॄ ल लृ लॄ ऌ ॡ </span></br>
-<hr>
-
 The special glyphs for da_uuMatra-deva, (ra_uuMatra-deva) and ha_uuMatra-deva are not used in combination with half-forms/conjuncts – or the wrong anchor is used. Please see ‘Notes on what needs to be fixed.txt’ on this anchor issue. [28.09.14]</br>
 <span class="Glyphs">दू न्दू हू न्हू </span></br>
 <span class="ModelNorthern">दू न्दू हू न्हू </span></br>
-<hr>
-
-It would appear that a base-character + virama + ra should substitute the virama + ra with the rr-deva glyph. (CES: I need to find out if this is correct ortography or not something tells me it is, because the feature is in the font, but appears to be overridden by InDesign and Firefox.)</br></br>
-Conjunct ga_ra_ya-deva is not rendered, instead a ra with virama is.</br></br>
-Second issue is the placement of the virama under the ra and da. Please have a look at the ‘Notes on what needs to be fixed.txt’ document where I discuss these anchor issues. [28.09.14]</br>
-<span class="lang" lang="mr"><span class="Glyphs">MR पर्‍ प्र्प पर्‍या ग्र्य द् र् </span></span></br>
-<span class="ModelNorthern">पर्‍ प्र्प पर्‍या ग्र्य द् र् </span></br>
-<span class="ModelSouthern">पर्‍ प्र्प पर्‍या ग्र्य द् र् </span></br>
-<span class="Adobe">पर्‍ प्र्प पर्‍या ग्र्य द् र् </span></br>
 <hr>
 
 What do we do about collisions like this below? A calt GSUB to a seperate glyph? [27.09.14]</br></br>
