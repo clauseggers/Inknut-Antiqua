@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="aaMatra-deva" format="1">
+  <advance width="328"/>
+  <unicode hex="093E"/>
+  <outline>
+    <contour>
+      <point x="0" y="786" type="line"/>
+      <point x="0" y="748" type="line"/>
+      <point x="70" y="686" type="line"/>
+      <point x="418" y="686" type="line"/>
+      <point x="418" y="724" type="line"/>
+      <point x="348" y="786" type="line"/>
+    </contour>
+    <component base="stem-deva"/>
+  </outline>
+</glyph>
