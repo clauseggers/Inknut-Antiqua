@@ -1,4 +1,4 @@
 *.otf
 *.ttf
-!/Fonts%20%26%20Specimen/*.otf
-!/Fonts%20%26%20Specimen/*.ttf
+!/Fonts%20%26%20Specimen
+!/Fonts%20%26%20Specimen
