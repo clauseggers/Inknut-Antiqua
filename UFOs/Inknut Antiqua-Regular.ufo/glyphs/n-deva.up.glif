@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="n-deva.up" format="1">
+  <advance width="350"/>
+  <outline>
+    <contour>
+      <point x="229" y="549" type="line" smooth="yes"/>
+      <point x="105" y="549"/>
+      <point x="65" y="540"/>
+      <point x="65" y="511" type="curve" smooth="yes"/>
+      <point x="65" y="449"/>
+      <point x="165" y="325"/>
+      <point x="225" y="325" type="curve" smooth="yes"/>
+      <point x="272" y="325"/>
+      <point x="339" y="417"/>
+      <point x="339" y="483" type="curve"/>
+      <point x="302" y="449" type="line"/>
+      <point x="590" y="449" type="line"/>
+      <point x="590" y="487" type="line"/>
+      <point x="513" y="549" type="line"/>
+    </contour>
+    <contour>
+      <point x="-110" y="786" type="line"/>
+      <point x="-110" y="748" type="line"/>
+      <point x="-34" y="686" type="line"/>
+      <point x="588" y="686" type="line"/>
+      <point x="588" y="724" type="line"/>
+      <point x="511" y="786" type="line"/>
+    </contour>
+    <contour>
+      <point x="508" y="452" type="move" name="leg"/>
+    </contour>
+    <contour>
+      <point x="231" y="0" type="move" name="nukta"/>
+    </contour>
+  </outline>
+</glyph>

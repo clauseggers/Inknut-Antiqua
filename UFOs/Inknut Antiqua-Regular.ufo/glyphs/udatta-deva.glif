@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="udattadeva" format="1">
+<glyph name="udatta-deva" format="1">
   <advance width="240"/>
   <unicode hex="0951"/>
   <outline>
     <contour>
-      <point x="60" y="1133" type="line"/>
-      <point x="60" y="732" type="line"/>
-      <point x="180" y="732" type="line"/>
-      <point x="180" y="1093" type="line"/>
-      <point x="98" y="1133" type="line"/>
+      <point x="60" y="1333" type="line"/>
+      <point x="98" y="1333" type="line"/>
+      <point x="180" y="1293" type="line"/>
+      <point x="180" y="912" type="line"/>
+      <point x="142" y="912" type="line"/>
+      <point x="60" y="952" type="line"/>
     </contour>
     <contour>
-      <point x="119" y="786" type="move" name="_top"/>
+      <point x="60" y="786" type="move" name="_top"/>
     </contour>
   </outline>
 </glyph>

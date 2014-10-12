@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="candraBinduHalant-deva" format="1">
+  <advance width="1266"/>
+  <unicode hex="A8F3"/>
+  <outline>
+    <contour>
+      <point x="474" y="370"/>
+      <point x="436" y="366"/>
+      <point x="397" y="358" type="curve"/>
+      <point x="397" y="320" type="line"/>
+      <point x="467" y="258" type="line"/>
+      <point x="509" y="267"/>
+      <point x="542" y="271"/>
+      <point x="574" y="271" type="curve" smooth="yes"/>
+      <point x="646" y="271"/>
+      <point x="700" y="250"/>
+      <point x="755" y="203" type="curve" smooth="yes"/>
+      <point x="1417" y="-364" type="line"/>
+      <point x="1449" y="-326" type="line"/>
+      <point x="767" y="258" type="line" smooth="yes"/>
+      <point x="665" y="345"/>
+      <point x="609" y="370"/>
+      <point x="512" y="370" type="curve" smooth="yes"/>
+    </contour>
+    <component base="spacingCandraBindu-deva"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+      <integer>8</integer>
+      <key>public.markColor</key>
+      <string>0.5,0.09,0.79,1</string>
+    </dict>
+  </lib>
+</glyph>

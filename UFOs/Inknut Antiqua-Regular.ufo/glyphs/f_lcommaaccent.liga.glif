@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="f_lcommaaccent.liga" format="1">
-  <advance width="768"/>
+  <advance width="777"/>
   <outline>
     <component base="fl"/>
-    <component base="uni0326" xOffset="450"/>
+    <component base="commaaccent" xOffset="449"/>
   </outline>
   <lib>
     <dict>

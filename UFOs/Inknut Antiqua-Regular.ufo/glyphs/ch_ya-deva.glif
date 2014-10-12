@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="ch_ya-deva" format="1">
+  <advance width="1412"/>
+  <outline>
+    <contour>
+      <point x="830" y="786" type="line"/>
+      <point x="830" y="748" type="line"/>
+      <point x="900" y="686" type="line"/>
+      <point x="1284" y="686" type="line"/>
+      <point x="1284" y="724" type="line"/>
+      <point x="1214" y="786" type="line"/>
+    </contour>
+    <component base="cha-deva"/>
+    <component base="y-deva.loop-connect" xOffset="1034"/>
+    <component base="aaMatra-deva" xOffset="1084"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+      <integer>8</integer>
+      <key>public.markColor</key>
+      <string>0.5,0.09,0.79,1</string>
+    </dict>
+  </lib>
+</glyph>

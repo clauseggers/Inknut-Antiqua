@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="ya-deva.connect-short" format="1">
+  <advance width="772"/>
+  <outline>
+    <contour>
+      <point x="-208" y="573" type="line"/>
+      <point x="-208" y="403" type="line"/>
+      <point x="69" y="403" type="line" smooth="yes"/>
+      <point x="97" y="403"/>
+      <point x="110" y="391"/>
+      <point x="110" y="376" type="curve" smooth="yes"/>
+      <point x="110" y="349"/>
+      <point x="87" y="335"/>
+      <point x="63" y="332" type="curve"/>
+      <point x="13" y="267" type="line"/>
+      <point x="53" y="206"/>
+      <point x="221" y="113"/>
+      <point x="372" y="113" type="curve" smooth="yes"/>
+      <point x="550" y="113"/>
+      <point x="610" y="202"/>
+      <point x="707" y="297" type="curve"/>
+      <point x="524" y="388" type="line"/>
+      <point x="482" y="308"/>
+      <point x="387" y="233"/>
+      <point x="302" y="233" type="curve" smooth="yes"/>
+      <point x="270" y="233"/>
+      <point x="245" y="246"/>
+      <point x="225" y="277" type="curve"/>
+      <point x="200" y="216" type="line"/>
+      <point x="268" y="218"/>
+      <point x="356" y="282"/>
+      <point x="356" y="345" type="curve" smooth="yes"/>
+      <point x="356" y="455"/>
+      <point x="108" y="573"/>
+      <point x="-31" y="573" type="curve" smooth="yes"/>
+    </contour>
+    <contour>
+      <point x="-211" y="786" type="line"/>
+      <point x="-211" y="708" type="line"/>
+      <point x="-34" y="616" type="line"/>
+      <point x="711" y="616" type="line"/>
+      <point x="711" y="694" type="line"/>
+      <point x="534" y="786" type="line"/>
+    </contour>
+    <component base="aaMatra-deva" xOffset="413"/>
+    <contour>
+      <point x="178" y="-40" type="move" name="nukta"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+      <integer>7</integer>
+      <key>public.markColor</key>
+      <string>0.18,0.16,0.78,1</string>
+    </dict>
+  </lib>
+</glyph>

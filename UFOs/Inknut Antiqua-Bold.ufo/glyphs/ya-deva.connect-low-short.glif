@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="ya-deva.connect-low-short" format="1">
+  <advance width="752"/>
+  <outline>
+    <contour>
+      <point x="-201" y="533" type="line"/>
+      <point x="-201" y="363" type="line"/>
+      <point x="49" y="363" type="line" smooth="yes"/>
+      <point x="77" y="363"/>
+      <point x="90" y="351"/>
+      <point x="90" y="336" type="curve" smooth="yes"/>
+      <point x="90" y="309"/>
+      <point x="67" y="295"/>
+      <point x="43" y="292" type="curve"/>
+      <point x="-7" y="227" type="line"/>
+      <point x="33" y="166"/>
+      <point x="201" y="73"/>
+      <point x="352" y="73" type="curve" smooth="yes"/>
+      <point x="530" y="73"/>
+      <point x="590" y="162"/>
+      <point x="687" y="257" type="curve"/>
+      <point x="504" y="348" type="line"/>
+      <point x="462" y="268"/>
+      <point x="367" y="193"/>
+      <point x="282" y="193" type="curve" smooth="yes"/>
+      <point x="250" y="193"/>
+      <point x="225" y="206"/>
+      <point x="205" y="237" type="curve"/>
+      <point x="180" y="176" type="line"/>
+      <point x="248" y="178"/>
+      <point x="336" y="242"/>
+      <point x="336" y="305" type="curve" smooth="yes"/>
+      <point x="336" y="415"/>
+      <point x="88" y="533"/>
+      <point x="-51" y="533" type="curve" smooth="yes"/>
+    </contour>
+    <contour>
+      <point x="-141" y="786" type="line"/>
+      <point x="-141" y="708" type="line"/>
+      <point x="36" y="616" type="line"/>
+      <point x="691" y="616" type="line"/>
+      <point x="691" y="694" type="line"/>
+      <point x="514" y="786" type="line"/>
+    </contour>
+    <component base="aaMatra-deva" xOffset="393"/>
+    <contour>
+      <point x="158" y="-80" type="move" name="nukta"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+      <integer>7</integer>
+      <key>public.markColor</key>
+      <string>0.18,0.16,0.78,1</string>
+    </dict>
+  </lib>
+</glyph>

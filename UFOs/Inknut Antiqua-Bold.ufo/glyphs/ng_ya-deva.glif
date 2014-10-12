@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="ng_ya-deva" format="1">
+  <advance width="1318"/>
+  <outline>
+    <contour>
+      <point x="612" y="198" type="line"/>
+      <point x="682" y="128"/>
+      <point x="808" y="52"/>
+      <point x="924" y="52" type="curve" smooth="yes"/>
+      <point x="1096" y="52"/>
+      <point x="1155" y="146"/>
+      <point x="1249" y="246" type="curve"/>
+      <point x="1066" y="337" type="line"/>
+      <point x="1025" y="252"/>
+      <point x="935" y="172"/>
+      <point x="854" y="172" type="curve" smooth="yes"/>
+      <point x="819" y="172"/>
+      <point x="791" y="185"/>
+      <point x="768" y="212" type="curve"/>
+    </contour>
+    <component base="nga-deva"/>
+    <component base="aaMatra-deva" xOffset="959"/>
+    <contour>
+      <point x="989" y="231" type="move" name="leg"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+      <integer>8</integer>
+      <key>public.markColor</key>
+      <string>0.5,0.09,0.79,1</string>
+    </dict>
+  </lib>
+</glyph>

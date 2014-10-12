@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="ng-deva.top" format="1">
+  <advance width="969"/>
+  <outline>
+    <contour>
+      <point x="781" y="525" type="line"/>
+      <point x="781" y="367" type="line"/>
+      <point x="903" y="320" type="line"/>
+      <point x="981" y="320" type="line"/>
+      <point x="981" y="478" type="line"/>
+      <point x="859" y="525" type="line"/>
+    </contour>
+    <contour>
+      <point x="485" y="786" type="line"/>
+      <point x="485" y="708" type="line"/>
+      <point x="662" y="616" type="line"/>
+      <point x="1134" y="616" type="line"/>
+      <point x="1134" y="694" type="line"/>
+      <point x="957" y="786" type="line"/>
+    </contour>
+    <component base="dd-deva.top"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+      <integer>5</integer>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>

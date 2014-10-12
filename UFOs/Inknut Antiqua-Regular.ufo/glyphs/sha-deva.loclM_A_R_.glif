@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="shadeva.loclMAR" format="1">
+<glyph name="sha-deva.loclMAR" format="1">
   <advance width="848"/>
   <outline>
-    <component base="uni0936094D.loclMAR"/>
-    <component base="uni093E" xOffset="520"/>
+    <component base="sh-deva.loclMAR"/>
+    <component base="aaMatra-deva" xOffset="520"/>
   </outline>
   <lib>
     <dict>

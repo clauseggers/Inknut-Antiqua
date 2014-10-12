@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="sadeva" format="1">
-  <advance width="718"/>
+<glyph name="sa-deva" format="1">
+  <advance width="824"/>
   <unicode hex="0938"/>
   <outline>
-    <component base="uni0938094D"/>
-    <component base="uni093E" xOffset="390"/>
-    <contour>
-      <point x="170" y="0" type="move" name="nukta"/>
-    </contour>
+    <component base="ra-deva"/>
+    <component base="rr-deva.short-high" xOffset="446"/>
+    <component base="aaMatra-deva" xOffset="496"/>
   </outline>
   <lib>
     <dict>

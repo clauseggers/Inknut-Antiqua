@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="ssadeva" format="1">
+<glyph name="ssa-deva" format="1">
   <advance width="728"/>
   <unicode hex="0937"/>
   <outline>
-    <component base="uni0937094D"/>
-    <component base="uni093E" xOffset="369"/>
+    <component base="ss-deva"/>
+    <component base="aaMatra-deva" xOffset="369"/>
   </outline>
   <lib>
     <dict>

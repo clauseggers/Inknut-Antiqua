@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="sh_matra_vocalicR-deva" format="1">
+  <advance width="979"/>
+  <outline>
+    <component base="sh-deva.high2"/>
+    <component base="aaMatra-deva" xOffset="620"/>
+    <component base="rVocalicMatra-deva" xOffset="507"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.Export</key>
+      <false/>
+      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+      <integer>5</integer>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>

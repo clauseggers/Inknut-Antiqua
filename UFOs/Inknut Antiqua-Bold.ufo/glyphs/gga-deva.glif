@@ -1,17 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="uni097B" format="1">
-  <advance width="960"/>
+<glyph name="gga-deva" format="1">
+  <advance width="919"/>
   <unicode hex="097B"/>
   <outline>
     <contour>
-      <point x="699" y="71" type="line"/>
-      <point x="699" y="-178" type="line"/>
-      <point x="821" y="-225" type="line"/>
-      <point x="899" y="-225" type="line"/>
-      <point x="899" y="71" type="line"/>
+      <point x="658" y="786" type="line"/>
+      <point x="658" y="-70" type="line"/>
+      <point x="780" y="-225" type="line"/>
+      <point x="858" y="-225" type="line"/>
+      <point x="858" y="786" type="line"/>
     </contour>
-    <component base="gadeva"/>
-    <component base="anudattadeva" xOffset="188"/>
+    <contour>
+      <point x="465" y="786" type="line"/>
+      <point x="465" y="708" type="line"/>
+      <point x="640" y="616" type="line"/>
+      <point x="1044" y="616" type="line"/>
+      <point x="1044" y="694" type="line"/>
+      <point x="869" y="786" type="line"/>
+    </contour>
+    <component base="g-deva"/>
+    <component base="anudatta-deva" xOffset="147"/>
+    <contour>
+      <point x="677" y="332" type="move" name="leg-low"/>
+    </contour>
+    <contour>
+      <point x="662" y="436" type="move" name="leg"/>
+    </contour>
+    <contour>
+      <point x="658" y="786" type="move" name="top"/>
+    </contour>
+    <contour>
+      <point x="658" y="786" type="move" name="right"/>
+    </contour>
+    <contour>
+      <point x="658" y="-254" type="move" name="bottom"/>
+    </contour>
   </outline>
   <lib>
     <dict>

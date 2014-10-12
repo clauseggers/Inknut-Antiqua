@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="ngadeva" format="1">
-  <advance width="912"/>
+<glyph name="nga-deva" format="1">
+  <advance width="832"/>
   <unicode hex="0919"/>
   <outline>
     <contour>
-      <point x="745" y="556" type="line"/>
-      <point x="745" y="420" type="line"/>
-      <point x="827" y="380" type="line"/>
-      <point x="865" y="380" type="line"/>
-      <point x="865" y="516" type="line"/>
-      <point x="783" y="556" type="line"/>
+      <point x="715" y="556" type="line"/>
+      <point x="715" y="420" type="line"/>
+      <point x="797" y="380" type="line"/>
+      <point x="835" y="380" type="line"/>
+      <point x="835" y="516" type="line"/>
+      <point x="753" y="556" type="line"/>
     </contour>
     <contour>
       <point x="584" y="786" type="line"/>
@@ -19,7 +19,7 @@
       <point x="1002" y="724" type="line"/>
       <point x="932" y="786" type="line"/>
     </contour>
-    <component base="ddadeva"/>
+    <component base="dda-deva"/>
   </outline>
   <lib>
     <dict>

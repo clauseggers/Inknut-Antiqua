@@ -57,8 +57,8 @@ Chandas font represents Southern (most commonly used today) style of Devanagari 
 	color: rgba(0,170,0,0.5);
 	display: block;
 }
-.Adobe {
-	font-family: "AdobeDevanagari";
+.AdobeDevanagari {
+	font-family: "Adobe Devanagari";
 	font-size: 4rem;
 	line-height: 1.2;
 	color: rgba(0,0,170,0.5);
@@ -85,6 +85,15 @@ Chandas font represents Southern (most commonly used today) style of Devanagari 
 <body>
 <div id="bodytext">
 
+CES [11.10.14]</br>
+When a nukta is in the syllable, the conjuncts containing ra (conjuncts with the ‘leg’) are not rendered with a nukta, but rather with the consonant, a nukta, and a rakar.</br></br>
+
+<span class="Glyphs">DFLT ख्र ख़्र ख़्र ज्र ज़्र ज़्र ग्र ग़्र ग़्र य्र य़्र य़्र </span></br>
+<span class="lang" lang="mr"><span class="Glyphs">MR ख्र ख़्र ख़्र ज्र ज़्र ज़्र ग्र ग़्र ग़्र य्र य़्र य़्र </span></br></span>
+<span class="ModelSouthern">ख्र ख़्र ख़्र ज्र ज़्र ज़्र ग्र ग़्र ग़्र य्र य़्र य़्र </span></br>
+<hr>
+
+FIXED!</br>
 Conjuncts d_bha_ra, d_ba_ra, and d_va_ra not rendered. [29.09.14]</br>
 CES [05.10.14]: Solution follows:</br>
 You have made RKRF add all those conjunct that end in ra-deva to the Rkrf1 lookup. Since RKRF is fired before CJCT you need to add conjuncts resulting from the ‘Rkrf1’ lookup to the CJCT.
@@ -101,6 +110,15 @@ Same deal for all occurences of these ra-conjuncts made in the RKRF. Remember th
 <span class="Glyphs">द्भ द्भ्र द्ब द्ब्र द्व्र </span></br>
 <span class="ModelSouthern">द्भ द्भ्र द्ब द्ब्र द्व्र </span></br>
 <hr>
+
+CES [11.10.14] Georg it would appear that the fixes you made in regard to the use of ‘rakar’ made the fix underneath not work, so I added these strings of longer syllables to have something more structured to test. If you open this HTML-file in Sublime Text you get to see the individual characters of the Devanagari text-strings which is quite handy.</br></br>
+Half-forms of ra-conjuncts are not used. They should be used in the normal way half-forms and conjunct are listed in the ‘half’ and ‘cjct’ features.</br></br>
+Exampel: ta-deva halant-deva ra-deva halant-deva pa-deva (त्र्प) should in the ‘half’ feature have "sub ta_ra-deva halant-deva by t_r-deva;" and in the ‘cjct’ feature have "sub t-deva reph-deva by t_r-deva;"
+</br></br>
+<span class="Glyphs">DFLT त् त्र त्र्प र्प्र र् र्त र्त्र र्त्र्प र्त्र्प्र</span></br>
+<span class="lang" lang="mr"><span class="Glyphs">MR त् त्र त्र्प र्प्र र् र्त र्त्र र्त्र्प र्त्र्प्र </span></br></span>
+<span class="ModelSouthern">DFLT त् त्र त्र्प र्प्र र् र्त र्त्र र्त्र्प र्त्र्प्र</span></br>
+<span class="AdobeDevanagari">DFLT त् त्र त्र्प र्प्र र् र्त र्त्र र्त्र्प र्त्र्प्र</span></br></br>
 
 It would appear that a base-character + virama + ra should substitute the virama + ra with the rr-deva glyph. (CES: I need to find out if this is correct ortography or not something tells me it is, because the feature is in the font, but appears to be overridden by InDesign and Firefox.)</br></br>
 Conjunct ga_ra_ya-deva is not rendered, instead a ra with virama is.</br></br>
@@ -129,29 +147,39 @@ lookup Rphf_MAR;</br>
 language NEP;</br>
 lookup Rphf_deva;</br></br>
 
+<span class="Glyphs">DFLT पर्‍ प्र्प पर्‍या ग्र्य द् र् </span></br>
 <span class="lang" lang="mr"><span class="Glyphs">MR पर्‍ प्र्प पर्‍या ग्र्य द् र् </span></span></br>
 <span class="ModelNorthern">पर्‍ प्र्प पर्‍या ग्र्य द् र् </span></br>
 <span class="ModelSouthern">पर्‍ प्र्प पर्‍या ग्र्य द् र् </span></br>
-<span class="Adobe">पर्‍ प्र्प पर्‍या ग्र्य द् र् </span></br>
+<span class="AdobeDevanagari">पर्‍ प्र्प पर्‍या ग्र्य द् र् </span></br>
 <hr>
+
+CES [07.10.14]: Georg you didn’t include this bit of feature-code in the auto-feature generator. If I add it manually, then the rephs are not attached to the ‘top’ anchor. The ‘top’ anchor is placed in the stem of the aaMatra which is the stem-component in rVocalic and rrVocalic, so that should work as in all the rest of the glyphs using the aaMatra component…</br>
+In the ‘ss01’ variations, the aaMatra is placed twice, but then Glyphs should just use the ‘top’ anchor from the last instance of the aaMatra (the right-most).</br></br>
 
 ra + rVocalic should render as the rVocalic with a reph on top, and ra + rrVocalic should render as rrVocalic with a reph on top.</br></br>
 For Marathi, la + lVocalic should render the lVocalic, and la + llVocalic should render llVocalic. For Hindi the lVocalic and llVocalic should just be placed below the stem. I made two glyphs called la_lVocalicMatra-deva.loclMAR and la_llVocalicMatra-deva.loclMAR, where lVocalic and llVocalic are placed as components, but they are not rendered in MR for la+l/llVocalic [01.10.14]</br></br>
 
 CES [07.10.14]: Solution follows:</br>
 Simple GSUB in CJCT:</br>
-sub ra-deva rVocalicMatra-deva by rVocalic-deva;</br>
-sub ra-deva rrVocalicMatra-deva by rrVocalic-deva;</br>
-sub la-deva.loclMAR rVocalicMatra-deva by lVocalic-deva;</br>
-sub la-deva.loclMAR rrVocalicMatra-deva by llVocalic-deva;</br>
+script dev2;</br>
+lookup cjct_vocalic {</br>
+	sub ra-deva' [rVocalicMatra-deva rrVocalicMatra-deva] by reph-deva;</br>
+	sub reph-deva [rVocalicMatra-deva rrVocalicMatra-deva]' by [rVocalic-deva rrVocalic-deva];</br>
+} cjct_vocalic;</br></br>
+
+And then add that lookup to MAR and SAN.</br>
 </br>
 <span class="Glyphs">HI रृ रॄ ल लृ लॄ ऌ ॡ </span></br>
 <span class="lang" lang="mr"><span class="Glyphs">MR रृ रॄ ल लृ लॄ ऌ ॡ </span></br></span>
+<span class="ss01"><span class="Glyphs">HI+ss01 रृ रॄ ल लृ लॄ ऌ ॡ </span></br>
+<span class="lang" lang="mr"><span class="Glyphs">MR+ss01 रृ रॄ ल लृ लॄ ऌ ॡ </span></br></span></span>
 <span class="ModelNorthern">रृ रॄ ल लृ लॄ ऌ ॡ </span></br>
 <span class="ModelSouthern">रृ रॄ ल लृ लॄ ऌ ॡ </span></br>
-<span class="Adobe">रृ रॄ ल लृ लॄ ऌ ॡ </span></br>
+<span class="AdobeDevanagari">रृ रॄ ल लृ लॄ ऌ ॡ </span></br>
 <hr>
 
+‘Solved’ by adding SS10 to force this.</br>
 Test of GSUB of special Devanagari-style latin punctuation. Is in the LOCL feature. Works for Hindi and Marathi – except the last glyph in a string of latin preceeding the nagari (which makes some sense), but not if that character is a beginning quote mark.</br></br>
 Kerning also works, which is somewhat weird as it does not work in other contexts.</br></br>
 Sanskrit does for some reason not work.</br></br>
@@ -162,9 +190,10 @@ NB: This feature does not work in InDesign CS6. It must be because InDesign’s 
 <span class="Glyphs">NO LANG ‘रृ’ “रॄ” ल- लृ–!!!???,.</span></span></br>
 <span class="ModelNorthern">DFLT ‘रृ’ “रॄ” ल- लृ–!!!???,.;:</span></br>
 <span class="ModelSouthern">DFLT ‘रृ’ “रॄ” ल- लृ–!!!???,.;:</span></br>
-<span class="Adobe">NO LANG ‘रृ’ “रॄ” ल- लृ–!!!???,.;:</span></br>
+<span class="AdobeDevanagari">NO LANG ‘रृ’ “रॄ” ल- लृ–!!!???,.;:</span></br>
 <hr>
 
+WORKS!</br>
 Test of SS01 which switches relevant glyphs from Southern style to Northern style. [06.10.14]</br></br>
 <span class="lang" lang="hi"><span class="Glyphs">HI ऄ ॲ अ आ ऋ ॠ ॳ ॶ ॷ झ ण ल </span></span></br>
 <span class="lang" lang="hi"><span class="Glyphs"><span class="ss01">HI+SS01 ऄ ॲ अ आ ऋ ॠ ॳ ॶ ॷ झ ण ल </span></span></<span></span></br>
@@ -203,11 +232,13 @@ rr_ya-deva conjunct not active. I tried naming it r_ya-deva and ra_ya-deva but t
 <span class="ModelNorthern">र्‍य </span></br>
 <hr>
 
-For some reason these conjuncts do not work in InDesign CS6 nor in Firefox. It *does* work in Safari.
+FIXED!</br>
+For some reason these conjuncts do not work in InDesign CS6 nor in Firefox. It *does* work in Safari.</br>
 Conjunct s_ta_ra will not appear in Glyphs, nor in FF and InDesign CS6. Same issue with the longer s_ta_ra_ya-deva and n_ta_ra-deva conjuncts. I tried naming it both s_t_r_ya-deva and s_ta_ra_ya-deva, but get same result. [24.09.14]</br></br>
 <span class="Glyphs">स्त्र स्त्र्य न्त्र </span><span class="ModelNorthern">स्त्र स्त्र्य न्त्र </span></br>
 <hr>
 
+FIXED! (by adding an anchor)</br>
 Position of the ‘leg’ component in the pa_ra and va_ra conjuncts are not correct in the generated fonts. It is correct in the Glyphs file. There is a ‘leg’ anchor in both the aaMatra-deva and the p-deva – the two components that the pa-deva is built from. The pa_ra-deva is built from the pa-deva + the ra-deva.leg [24.09.14]</br></br>
 <span class="Glyphs">प्र व्र </span><span class="ModelNorthern">प्र व्र </span></br>
 <hr>
@@ -222,7 +253,7 @@ Conjunct b_ja + nukta = b_za but here the j is misplaced in Glyphs *AND* the b_z
 GS: This do seem to be a problem with the other fonts, too. [24.09.14]</br></br>
 <span class="Glyphs">वब्ज ब़्ज </span>
 <span class="ModelNorthern">वब्ज ब़्ज </span></br>
-<span class="Adobe">वब्ज ब़्ज </span></br>
+<span class="AdobeDevanagari">वब्ज ब़्ज </span></br>
 <hr>
 
 v_ra conjunct not enabled somewhere in the OT-features? [15.09.14]</br></br>
@@ -248,7 +279,7 @@ This works in Glyphs, but not in InDesign CS6 nor in Firefox [02.10.14].
 र्घा र्घाॅ र्घां र्घाऀ र्घाॆ र्घाॆं र्घाॆॅं र्घाँ र्घाॅं र्घाॕ घौँ </span></br>
 <span class="ModelNorthern">र्घ र्घॅ र्घं र्घऀ र्घॆ र्घॆं र्घॆॅं र्घँ र्घॅं र्घॕ </br>
 र्घा र्घाॅ र्घां र्घाऀ र्घाॆ र्घाॆं र्घाॆॅं र्घाँ र्घाॅं र्घाॕ </span></br>
-<span class="Adobe">र्घ र्घॅ र्घं र्घऀ र्घॆ र्घॆं र्घॆॅं र्घँ र्घॅं र्घॕ </br>
+<span class="AdobeDevanagari">र्घ र्घॅ र्घं र्घऀ र्घॆ र्घॆं र्घॆॅं र्घँ र्घॅं र्घॕ </br>
 र्घा र्घाॅ र्घां र्घाऀ र्घाॆ र्घाॆं र्घाॆॅं र्घाँ र्घाॅं र्घाॕ घौँ </span></br>
 <hr>
 

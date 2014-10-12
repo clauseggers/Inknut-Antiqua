@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="ng_kha-deva" format="1">
+  <advance width="1305"/>
+  <outline>
+    <contour>
+      <point x="851" y="786" type="line"/>
+      <point x="851" y="708" type="line"/>
+      <point x="1026" y="616" type="line"/>
+      <point x="1430" y="616" type="line"/>
+      <point x="1430" y="694" type="line"/>
+      <point x="1255" y="786" type="line"/>
+    </contour>
+    <contour>
+      <point x="722" y="50"/>
+      <point x="657" y="-22"/>
+      <point x="657" y="-113" type="curve" smooth="yes"/>
+      <point x="657" y="-255"/>
+      <point x="845" y="-364"/>
+      <point x="984" y="-364" type="curve" smooth="yes"/>
+      <point x="1122" y="-364"/>
+      <point x="1166" y="-275"/>
+      <point x="1239" y="-180" type="curve"/>
+      <point x="1056" y="-89" type="line"/>
+      <point x="1000" y="-163"/>
+      <point x="967" y="-232"/>
+      <point x="914" y="-232" type="curve" smooth="yes"/>
+      <point x="887" y="-232"/>
+      <point x="873" y="-211"/>
+      <point x="873" y="-171" type="curve" smooth="yes"/>
+      <point x="873" y="-120"/>
+      <point x="895" y="-89"/>
+      <point x="935" y="-89" type="curve" smooth="yes"/>
+      <point x="953" y="-89"/>
+      <point x="969" y="-91"/>
+      <point x="990" y="-95" type="curve"/>
+      <point x="990" y="-17" type="line"/>
+      <point x="823" y="75" type="line"/>
+    </contour>
+    <contour>
+      <point x="293" y="102" type="line"/>
+      <point x="365" y="44"/>
+      <point x="412" y="-47"/>
+      <point x="364" y="-102" type="curve"/>
+      <point x="466" y="-84" type="line"/>
+      <point x="271" y="-22"/>
+      <point x="114" y="-42"/>
+      <point x="114" y="-120" type="curve" smooth="yes"/>
+      <point x="114" y="-201"/>
+      <point x="285" y="-333"/>
+      <point x="389" y="-333" type="curve" smooth="yes"/>
+      <point x="488" y="-333"/>
+      <point x="585" y="-245"/>
+      <point x="585" y="-150" type="curve" smooth="yes"/>
+      <point x="585" y="-40"/>
+      <point x="502" y="54"/>
+      <point x="373" y="101" type="curve"/>
+    </contour>
+    <contour>
+      <point x="208" y="-253" type="line"/>
+      <point x="637" y="-600" type="line"/>
+      <point x="694" y="-540" type="line"/>
+      <point x="270" y="-198" type="line"/>
+    </contour>
+    <contour>
+      <point x="1044" y="786" type="line"/>
+      <point x="1044" y="-435" type="line"/>
+      <point x="994" y="-500" type="line"/>
+      <point x="1166" y="-590" type="line"/>
+      <point x="1244" y="-590" type="line"/>
+      <point x="1244" y="786" type="line"/>
+    </contour>
+    <component base="ng-deva.top"/>
+    <contour>
+      <point x="1063" y="-148" type="move" name="leg-low"/>
+    </contour>
+    <contour>
+      <point x="1048" y="-44" type="move" name="leg"/>
+    </contour>
+    <contour>
+      <point x="299" y="-515" type="move" name="nukta"/>
+    </contour>
+    <contour>
+      <point x="1044" y="786" type="move" name="top"/>
+    </contour>
+    <contour>
+      <point x="1044" y="-584" type="move" name="bottom"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+      <integer>8</integer>
+      <key>public.markColor</key>
+      <string>0.5,0.09,0.79,1</string>
+    </dict>
+  </lib>
+</glyph>

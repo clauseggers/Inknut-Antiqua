@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="exclam.deva" format="1">
+  <advance width="443"/>
+  <outline>
+    <contour>
+      <point x="190" y="769" type="line"/>
+      <point x="235" y="243" type="line"/>
+      <point x="295" y="243" type="line"/>
+      <point x="353" y="688" type="line"/>
+      <point x="221" y="805" type="line"/>
+    </contour>
+    <component base="period.deva" xOffset="75"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+      <integer>8</integer>
+      <key>public.markColor</key>
+      <string>0.5,0.09,0.79,1</string>
+    </dict>
+  </lib>
+</glyph>

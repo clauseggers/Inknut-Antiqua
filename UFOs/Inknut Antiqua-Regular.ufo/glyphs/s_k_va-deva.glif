@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="s_k_va-deva" format="1">
+  <advance width="1801"/>
+  <outline>
+    <component base="s-deva.short2"/>
+    <component base="k-deva" xOffset="496"/>
+    <component base="va-deva" xOffset="1153"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+      <integer>5</integer>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>

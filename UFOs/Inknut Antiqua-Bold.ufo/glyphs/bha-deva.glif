@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="bhadeva" format="1">
-  <advance width="929"/>
+<glyph name="bha-deva" format="1">
+  <advance width="879"/>
   <unicode hex="092D"/>
   <outline>
-    <component base="uni092D094D"/>
-    <component base="uni093E" xOffset="570"/>
+    <component base="bh-deva.init"/>
+    <component base="aaMatra-deva" xOffset="520"/>
   </outline>
   <lib>
     <dict>

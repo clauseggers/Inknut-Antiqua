@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="rr-deva.low" format="1">
+  <advance width="0"/>
+  <outline>
+    <contour>
+      <point x="171" y="326"/>
+      <point x="120" y="300"/>
+      <point x="71" y="300" type="curve" smooth="yes"/>
+      <point x="-8" y="300"/>
+      <point x="-82" y="343"/>
+      <point x="-179" y="424" type="curve"/>
+      <point x="-209" y="386" type="line"/>
+      <point x="39" y="192" type="line"/>
+      <point x="50" y="188"/>
+      <point x="68" y="184"/>
+      <point x="93" y="184" type="curve" smooth="yes"/>
+      <point x="140" y="184"/>
+      <point x="215" y="203"/>
+      <point x="311" y="283" type="curve"/>
+      <point x="311" y="321" type="line"/>
+      <point x="241" y="383" type="line"/>
+    </contour>
+    <contour>
+      <point x="-410" y="786" type="line"/>
+      <point x="-410" y="748" type="line"/>
+      <point x="-340" y="686" type="line"/>
+      <point x="291" y="686" type="line"/>
+      <point x="291" y="724" type="line"/>
+      <point x="221" y="786" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+      <integer>7</integer>
+      <key>public.markColor</key>
+      <string>0.18,0.16,0.78,1</string>
+    </dict>
+  </lib>
+</glyph>

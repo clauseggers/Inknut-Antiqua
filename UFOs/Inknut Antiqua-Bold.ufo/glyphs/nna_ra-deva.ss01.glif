@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="nna_ra-deva.ss01" format="1">
+  <advance width="1314"/>
+  <outline>
+    <component base="nn-deva.ss01"/>
+    <component base="aaMatra-deva" xOffset="955"/>
+    <component base="r-deva.leg-short" xOffset="626" yOffset="-66"/>
+    <contour>
+      <point x="1314" y="0" type="move" name="bottom"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+      <integer>8</integer>
+      <key>public.markColor</key>
+      <string>0.5,0.09,0.79,1</string>
+    </dict>
+  </lib>
+</glyph>

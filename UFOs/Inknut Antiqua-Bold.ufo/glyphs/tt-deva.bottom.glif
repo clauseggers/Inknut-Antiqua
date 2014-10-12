@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="tt-deva.bottom" format="1">
+  <advance width="861"/>
+  <outline>
+    <contour>
+      <point x="349" y="119" type="line" smooth="yes"/>
+      <point x="208" y="119"/>
+      <point x="82" y="44"/>
+      <point x="82" y="-50" type="curve" smooth="yes"/>
+      <point x="82" y="-182"/>
+      <point x="295" y="-323"/>
+      <point x="498" y="-324" type="curve" smooth="yes"/>
+      <point x="604" y="-324"/>
+      <point x="718" y="-288"/>
+      <point x="790" y="-231" type="curve"/>
+      <point x="790" y="-153" type="line"/>
+      <point x="623" y="-61" type="line"/>
+      <point x="532" y="-164"/>
+      <point x="442" y="-209"/>
+      <point x="361" y="-209" type="curve" smooth="yes"/>
+      <point x="311" y="-204"/>
+      <point x="298" y="-185"/>
+      <point x="298" y="-155" type="curve" smooth="yes"/>
+      <point x="298" y="-94"/>
+      <point x="355" y="-51"/>
+      <point x="437" y="-51" type="curve" smooth="yes"/>
+      <point x="561" y="-51" type="line"/>
+      <point x="561" y="119" type="line"/>
+    </contour>
+    <contour>
+      <point x="361" y="198" type="line"/>
+      <point x="361" y="42" type="line"/>
+      <point x="483" y="-5" type="line"/>
+      <point x="561" y="-5" type="line"/>
+      <point x="561" y="198" type="line"/>
+    </contour>
+    <contour>
+      <point x="929" y="-120" type="move" name="halant"/>
+    </contour>
+    <contour>
+      <point x="150" y="-399" type="move" name="nukta"/>
+    </contour>
+    <contour>
+      <point x="361" y="132" type="move" name="_bottom"/>
+    </contour>
+    <contour>
+      <point x="407" y="-324" type="move" name="bottom"/>
+    </contour>
+  </outline>
+</glyph>

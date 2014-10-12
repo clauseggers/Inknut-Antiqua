@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="kh-deva.long" format="1">
+  <advance width="1007"/>
+  <outline>
+    <component base="ra-deva"/>
+    <component base="v-deva.long" xOffset="587"/>
+    <contour>
+      <point x="160" y="-81" type="move" name="nukta"/>
+    </contour>
+    <contour>
+      <point x="84" y="0" type="move" name="bottom"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+      <integer>5</integer>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>

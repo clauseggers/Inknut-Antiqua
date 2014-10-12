@@ -2,7 +2,7 @@
 <glyph name="germandbls.calt" format="1">
   <advance width="949"/>
   <outline>
-    <component base="uni1E9E"/>
+    <component base="Germandbls"/>
   </outline>
   <lib>
     <dict>

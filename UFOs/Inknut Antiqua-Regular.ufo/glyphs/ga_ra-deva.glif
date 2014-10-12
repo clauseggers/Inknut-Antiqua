@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="ga_ra-deva" format="1">
+  <advance width="768"/>
+  <outline>
+    <component base="ga-deva"/>
+    <component base="r-deva.leg" xOffset="178" yOffset="-38"/>
+    <contour>
+      <point x="543" y="-176" type="move" name="nukta"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+      <integer>5</integer>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="velanti-deva.28" format="1">
+  <advance width="395"/>
+  <outline>
+    <contour>
+      <point x="1594" y="1085"/>
+      <point x="636" y="960"/>
+      <point x="78" y="701" type="curve"/>
+      <point x="307" y="652" type="line"/>
+      <point x="740" y="828"/>
+      <point x="1687" y="913"/>
+      <point x="2705" y="913" type="curve" smooth="yes"/>
+      <point x="3596" y="913"/>
+      <point x="4485" y="847"/>
+      <point x="5481" y="721" type="curve"/>
+      <point x="5513" y="776" type="line"/>
+      <point x="4420" y="978"/>
+      <point x="3503" y="1085"/>
+      <point x="2589" y="1085" type="curve" smooth="yes"/>
+    </contour>
+    <contour>
+      <point x="294" y="786" type="move" name="_left"/>
+    </contour>
+    <contour>
+      <point x="4919" y="786" type="move" name="_right"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+      <integer>4</integer>
+      <key>public.markColor</key>
+      <string>0.67,0.95,0.38,1</string>
+    </dict>
+  </lib>
+</glyph>

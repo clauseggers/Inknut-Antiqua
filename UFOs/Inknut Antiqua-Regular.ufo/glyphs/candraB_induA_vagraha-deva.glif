@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="candraBinduAvagraha-deva" format="1">
+  <advance width="1215"/>
+  <unicode hex="A8F7"/>
+  <outline>
+    <contour>
+      <point x="627" y="337" type="line" smooth="yes"/>
+      <point x="524" y="337"/>
+      <point x="407" y="250"/>
+      <point x="407" y="174" type="curve" smooth="yes"/>
+      <point x="412" y="95"/>
+      <point x="614" y="-10"/>
+      <point x="614" y="-77" type="curve" smooth="yes"/>
+      <point x="614" y="-115"/>
+      <point x="583" y="-146"/>
+      <point x="542" y="-149" type="curve" smooth="yes"/>
+      <point x="484" y="-149"/>
+      <point x="427" y="-124"/>
+      <point x="369" y="-74" type="curve" smooth="yes"/>
+      <point x="249" y="29" type="line"/>
+      <point x="217" y="-9" type="line"/>
+      <point x="508" y="-258" type="line"/>
+      <point x="526" y="-262"/>
+      <point x="563" y="-266"/>
+      <point x="587" y="-266" type="curve" smooth="yes"/>
+      <point x="665" y="-264"/>
+      <point x="744" y="-196"/>
+      <point x="744" y="-132" type="curve" smooth="yes"/>
+      <point x="744" y="-52"/>
+      <point x="542" y="45"/>
+      <point x="537" y="119" type="curve" smooth="yes"/>
+      <point x="537" y="180"/>
+      <point x="623" y="237"/>
+      <point x="678" y="237" type="curve" smooth="yes"/>
+      <point x="865" y="237" type="line"/>
+      <point x="865" y="275" type="line"/>
+      <point x="795" y="337" type="line"/>
+    </contour>
+    <component base="spacingCandraBindu-deva"/>
+  </outline>
+</glyph>

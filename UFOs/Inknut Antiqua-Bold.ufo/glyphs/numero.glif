@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="uni2116" format="1">
+<glyph name="numero" format="1">
   <advance width="1624"/>
   <unicode hex="2116"/>
   <outline>
@@ -16,7 +16,7 @@
       <point x="1604" y="81" type="line"/>
     </contour>
     <component base="N"/>
-    <component base="o" xOffset="949" yOffset="363" xScale="0.90" yScale="0.80"/>
+    <component base="o" xOffset="949" yOffset="363" xScale="0.9" yScale="0.8"/>
   </outline>
   <lib>
     <dict>

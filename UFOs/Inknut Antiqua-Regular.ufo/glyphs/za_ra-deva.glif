@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="za_ra-deva" format="1">
+  <advance width="828"/>
+  <outline>
+    <component base="j-deva"/>
+    <component base="nukta-deva" xOffset="198" yOffset="-39"/>
+    <component base="aaMatra-deva" xOffset="500"/>
+    <component base="r-deva.leg-short" xOffset="234" yOffset="-299"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+      <integer>5</integer>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>

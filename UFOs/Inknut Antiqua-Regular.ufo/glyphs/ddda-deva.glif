@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="uni097E" format="1">
-  <advance width="772"/>
+<glyph name="ddda-deva" format="1">
+  <advance width="712"/>
   <unicode hex="097E"/>
   <outline>
-    <component base="ddadeva"/>
-    <component base="anudattadeva" xOffset="230"/>
+    <component base="dda-deva"/>
+    <component base="anudatta-deva" xOffset="220"/>
   </outline>
   <lib>
     <dict>

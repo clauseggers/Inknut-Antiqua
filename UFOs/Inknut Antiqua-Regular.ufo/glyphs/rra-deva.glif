@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="rradeva" format="1">
+<glyph name="rra-deva" format="1">
   <advance width="446"/>
   <unicode hex="0931"/>
   <outline>
-    <component base="radeva"/>
-    <component base="nuktadeva" xOffset="40" yOffset="137"/>
+    <component base="ra-deva"/>
+    <component base="nukta-deva" xOffset="50" yOffset="137"/>
   </outline>
   <lib>
     <dict>

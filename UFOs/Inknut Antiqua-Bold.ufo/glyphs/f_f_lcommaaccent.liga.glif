@@ -3,7 +3,7 @@
   <advance width="1257"/>
   <outline>
     <component base="f_f_l.liga"/>
-    <component base="uni0326" xOffset="854"/>
+    <component base="commaaccent" xOffset="854"/>
   </outline>
   <lib>
     <dict>

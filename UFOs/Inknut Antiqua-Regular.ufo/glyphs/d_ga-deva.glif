@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="d_ga-deva" format="1">
+  <advance width="678"/>
+  <outline>
+    <component base="da-deva"/>
+    <component base="g-deva.bottom" xOffset="-116"/>
+    <contour>
+      <point x="465" y="0" type="move" name="rakar"/>
+    </contour>
+    <contour>
+      <point x="444" y="-120" type="move" name="bottom"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+      <integer>8</integer>
+      <key>public.markColor</key>
+      <string>0.5,0.09,0.79,1</string>
+    </dict>
+  </lib>
+</glyph>

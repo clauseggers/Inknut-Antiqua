@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="iideva" format="1">
-  <advance width="772"/>
+<glyph name="ii-deva" format="1">
+  <advance width="713"/>
   <unicode hex="0908"/>
   <outline>
-    <component base="ideva"/>
-    <component base="uni0930094D" xOffset="214"/>
+    <component base="i-deva"/>
+    <component base="reph-deva" xOffset="212"/>
   </outline>
   <lib>
     <dict>

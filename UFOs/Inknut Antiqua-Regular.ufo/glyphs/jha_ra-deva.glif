@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="jha_ra-deva" format="1">
+  <advance width="1030"/>
+  <outline>
+    <contour>
+      <point x="783" y="113"/>
+      <point x="656" y="24"/>
+      <point x="547" y="-30" type="curve"/>
+      <point x="547" y="-68" type="line"/>
+      <point x="617" y="-130" type="line"/>
+      <point x="730" y="-69"/>
+      <point x="864" y="26"/>
+      <point x="954" y="104" type="curve"/>
+      <point x="954" y="142" type="line"/>
+      <point x="875" y="192" type="line"/>
+    </contour>
+    <component base="jha-deva"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+      <integer>1</integer>
+      <key>public.markColor</key>
+      <string>0.99,0.62,0.11,1</string>
+    </dict>
+  </lib>
+</glyph>

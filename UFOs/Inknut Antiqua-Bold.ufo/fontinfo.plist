@@ -7,7 +7,7 @@
 	<key>capHeight</key>
 	<integer>786</integer>
 	<key>copyright</key>
-	<string>Copyright (c) 2014 by Claus Eggers Sørensen (es@forthehearts.net), with Reserved Font Name 'Inknut Antiqua'.</string>
+	<string>Copyright (c) 2014 by Claus Eggers Sørensen (es@forthehearts.net).</string>
 	<key>descender</key>
 	<integer>-254</integer>
 	<key>familyName</key>
@@ -17,7 +17,7 @@
 		<integer>3</integer>
 	</array>
 	<key>openTypeHeadCreated</key>
-	<string>2014/06/19 13:04:00</string>
+	<string>2014/09/29 16:52:40</string>
 	<key>openTypeNameDesigner</key>
 	<string>Claus Eggers Sørensen</string>
 	<key>openTypeNameDesignerURL</key>
@@ -33,11 +33,11 @@
 	<key>openTypeNamePreferredFamilyName</key>
 	<string>Inknut Antiqua</string>
 	<key>openTypeNamePreferredSubfamilyName</key>
-	<string>Regular</string>
+	<string>Light</string>
 	<key>openTypeOS2VendorID</key>
 	<string>FTH</string>
 	<key>openTypeOS2WeightClass</key>
-	<integer>400</integer>
+	<integer>300</integer>
 	<key>openTypeOS2WidthClass</key>
 	<integer>5</integer>
 	<key>postscriptBlueValues</key>
@@ -73,7 +73,7 @@
 	<key>styleName</key>
 	<string>Regular</string>
 	<key>trademark</key>
-	<string>Inknut Antiqua is a trademark of Claus Eggers Sørensen.</string>
+	<string>Inknut and Inknut Antiqua are trademarks of Claus Eggers Sørensen.</string>
 	<key>unitsPerEm</key>
 	<integer>1000</integer>
 	<key>versionMajor</key>

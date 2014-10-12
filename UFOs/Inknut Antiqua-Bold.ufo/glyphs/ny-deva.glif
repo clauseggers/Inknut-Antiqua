@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="uni091E094D" format="1">
-  <advance width="550"/>
+<glyph name="ny-deva" format="1">
+  <advance width="560"/>
   <outline>
+    <contour>
+      <point x="-165" y="786" type="line"/>
+      <point x="-165" y="708" type="line"/>
+      <point x="11" y="616" type="line"/>
+      <point x="815" y="616" type="line"/>
+      <point x="815" y="694" type="line"/>
+      <point x="639" y="786" type="line"/>
+    </contour>
     <contour>
       <point x="225" y="556"/>
       <point x="141" y="522"/>
@@ -33,25 +41,18 @@
       <point x="286" y="556" type="curve" smooth="yes"/>
     </contour>
     <contour>
-      <point x="625" y="426"/>
-      <point x="550" y="366"/>
+      <point x="620" y="418"/>
+      <point x="544" y="366"/>
       <point x="485" y="366" type="curve"/>
       <point x="555" y="236" type="line"/>
-      <point x="708" y="236"/>
-      <point x="758" y="315"/>
-      <point x="840" y="400" type="curve"/>
+      <point x="717" y="239"/>
+      <point x="784" y="259"/>
+      <point x="843" y="321" type="curve"/>
+      <point x="843" y="399" type="line"/>
       <point x="667" y="491" type="line"/>
     </contour>
     <contour>
-      <point x="-165" y="786" type="line"/>
-      <point x="-165" y="708" type="line"/>
-      <point x="11" y="616" type="line"/>
-      <point x="815" y="616" type="line"/>
-      <point x="815" y="694" type="line"/>
-      <point x="639" y="786" type="line"/>
-    </contour>
-    <contour>
-      <point x="339" y="-110" type="move" name="nukta"/>
+      <point x="339" y="-130" type="move" name="nukta"/>
     </contour>
   </outline>
 </glyph>

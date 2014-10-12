@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="aideva" format="1">
-  <advance width="710"/>
+<glyph name="ai-deva" format="1">
+  <advance width="613"/>
   <unicode hex="0910"/>
   <outline>
-    <component base="edeva"/>
-    <component base="evowelsigndeva" xOffset="181"/>
+    <component base="e-deva"/>
+    <component base="eMatra-deva" xOffset="119"/>
   </outline>
   <lib>
     <dict>

@@ -2,8 +2,8 @@
 <glyph name="dieresis.case" format="1">
   <advance width="668"/>
   <outline>
-    <component base="period" xOffset="3" yOffset="664" xScale="0.90" yScale="0.95"/>
-    <component base="period" xOffset="373" yOffset="664" xScale="0.90" yScale="0.95"/>
+    <component base="period" xOffset="3" yOffset="664" xScale="0.9" yScale="0.95"/>
+    <component base="period" xOffset="373" yOffset="664" xScale="0.9" yScale="0.95"/>
     <contour>
       <point x="334" y="543" type="move" name="_top"/>
     </contour>

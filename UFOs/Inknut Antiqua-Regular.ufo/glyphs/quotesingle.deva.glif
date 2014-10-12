@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="quotesingle.deva" format="1">
+  <advance width="438"/>
+  <outline>
+    <contour>
+      <point x="185" y="769" type="line"/>
+      <point x="230" y="434" type="line"/>
+      <point x="290" y="434" type="line"/>
+      <point x="348" y="688" type="line"/>
+      <point x="216" y="805" type="line"/>
+    </contour>
+  </outline>
+</glyph>

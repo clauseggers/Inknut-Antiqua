@@ -5,7 +5,7 @@
   <outline>
     <component base="D"/>
     <component base="macron" xOffset="250" yOffset="414" xScale="0" yScale="0"/>
-    <component base="macron.case" xOffset="-84" yOffset="-382" xScale="1.10"/>
+    <component base="macron.case" xOffset="250" yOffset="414" xScale="0" yScale="0"/>
   </outline>
   <lib>
     <dict>

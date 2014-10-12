@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="uni092B" format="1">
-  <advance width="968"/>
+<glyph name="pha-deva" format="1">
+  <advance width="1038"/>
   <unicode hex="092B"/>
   <outline>
     <contour>
@@ -33,13 +33,19 @@
       <point x="440" y="786" type="line"/>
       <point x="440" y="748" type="line"/>
       <point x="510" y="686" type="line"/>
-      <point x="1058" y="686" type="line"/>
-      <point x="1058" y="724" type="line"/>
-      <point x="988" y="786" type="line"/>
+      <point x="1098" y="686" type="line"/>
+      <point x="1098" y="724" type="line"/>
+      <point x="1028" y="786" type="line"/>
     </contour>
-    <component base="padeva"/>
+    <component base="pa-deva"/>
     <contour>
       <point x="806" y="63" type="move" name="halant"/>
+    </contour>
+    <contour>
+      <point x="416" y="399" type="move" name="leg"/>
+    </contour>
+    <contour>
+      <point x="194" y="78" type="move" name="nukta"/>
     </contour>
   </outline>
   <lib>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="avagraha-deva" format="1">
+  <advance width="767"/>
+  <unicode hex="093D"/>
+  <outline>
+    <contour>
+      <point x="444" y="786" type="line" smooth="yes"/>
+      <point x="327" y="786"/>
+      <point x="161" y="669"/>
+      <point x="161" y="586" type="curve" smooth="yes"/>
+      <point x="161" y="460"/>
+      <point x="534" y="328"/>
+      <point x="534" y="226" type="curve" smooth="yes"/>
+      <point x="534" y="185"/>
+      <point x="469" y="142"/>
+      <point x="406" y="142" type="curve" smooth="yes"/>
+      <point x="351" y="142"/>
+      <point x="278" y="172"/>
+      <point x="217" y="221" type="curve" smooth="yes"/>
+      <point x="68" y="341" type="line"/>
+      <point x="15" y="278" type="line"/>
+      <point x="361" y="-2" type="line"/>
+      <point x="389" y="-7"/>
+      <point x="417" y="-9"/>
+      <point x="443" y="-9" type="curve" smooth="yes"/>
+      <point x="587" y="-9"/>
+      <point x="750" y="98"/>
+      <point x="750" y="193" type="curve" smooth="yes"/>
+      <point x="750" y="313"/>
+      <point x="377" y="433"/>
+      <point x="377" y="538" type="curve" smooth="yes"/>
+      <point x="377" y="578"/>
+      <point x="440" y="618"/>
+      <point x="504" y="618" type="curve" smooth="yes"/>
+      <point x="917" y="616" type="line"/>
+      <point x="917" y="694" type="line"/>
+      <point x="742" y="786" type="line"/>
+    </contour>
+    <contour>
+      <point x="424" y="786" type="move" name="top"/>
+    </contour>
+    <contour>
+      <point x="419" y="0" type="move" name="bottom"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+      <integer>1</integer>
+      <key>public.markColor</key>
+      <string>0.99,0.62,0.11,1</string>
+    </dict>
+  </lib>
+</glyph>

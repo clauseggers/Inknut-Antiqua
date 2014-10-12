@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="va-deva.bottom" format="1">
+  <advance width="831"/>
+  <outline>
+    <contour>
+      <point x="506" y="194" type="line"/>
+      <point x="506" y="-269" type="line"/>
+      <point x="456" y="-334" type="line"/>
+      <point x="628" y="-424" type="line"/>
+      <point x="706" y="-424" type="line"/>
+      <point x="706" y="234" type="line"/>
+    </contour>
+    <contour>
+      <point x="146" y="136"/>
+      <point x="81" y="64"/>
+      <point x="81" y="-27" type="curve" smooth="yes"/>
+      <point x="81" y="-166"/>
+      <point x="281" y="-273"/>
+      <point x="428" y="-273" type="curve" smooth="yes"/>
+      <point x="577" y="-273"/>
+      <point x="624" y="-186"/>
+      <point x="703" y="-94" type="curve"/>
+      <point x="520" y="-3" type="line"/>
+      <point x="450" y="-87"/>
+      <point x="407" y="-166"/>
+      <point x="338" y="-166" type="curve" smooth="yes"/>
+      <point x="300" y="-166"/>
+      <point x="277" y="-142"/>
+      <point x="277" y="-105" type="curve" smooth="yes"/>
+      <point x="277" y="-41"/>
+      <point x="308" y="-3"/>
+      <point x="359" y="-3" type="curve" smooth="yes"/>
+      <point x="377" y="-3"/>
+      <point x="393" y="-5"/>
+      <point x="414" y="-9" type="curve"/>
+      <point x="414" y="69" type="line"/>
+      <point x="247" y="161" type="line"/>
+    </contour>
+    <contour>
+      <point x="327" y="130" type="move" name="_bottom"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+      <integer>7</integer>
+      <key>public.markColor</key>
+      <string>0.18,0.16,0.78,1</string>
+    </dict>
+  </lib>
+</glyph>

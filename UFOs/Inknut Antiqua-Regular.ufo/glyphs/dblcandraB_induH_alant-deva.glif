@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="dblcandraBinduHalant-deva" format="1">
+  <advance width="1266"/>
+  <unicode hex="A8F4"/>
+  <outline>
+    <component base="candraBindu-deva" xOffset="260" yOffset="-270"/>
+    <component base="candraBindu-deva" xOffset="260" yOffset="258"/>
+    <component base="eMatra-deva" xOffset="217" yOffset="786"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+      <integer>8</integer>
+      <key>public.markColor</key>
+      <string>0.5,0.09,0.79,1</string>
+    </dict>
+  </lib>
+</glyph>

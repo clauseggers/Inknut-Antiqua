@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="f_iogonek.liga" format="1">
-  <advance width="768"/>
+  <advance width="777"/>
   <outline>
     <component base="fi"/>
-    <component base="ogonek" xOffset="451"/>
+    <component base="ogonek" xOffset="450"/>
   </outline>
   <lib>
     <dict>

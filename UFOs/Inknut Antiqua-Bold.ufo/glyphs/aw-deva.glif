@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="uni0975" format="1">
-  <advance width="600"/>
+<glyph name="aw-deva" format="1">
+  <advance width="1482"/>
   <unicode hex="0975"/>
   <outline>
+    <component base="a-deva"/>
+    <component base="awMatra-deva" xOffset="1123"/>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+      <integer>5</integer>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
 </glyph>

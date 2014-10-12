@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="chadeva" format="1">
-  <advance width="994"/>
+<glyph name="cha-deva" format="1">
+  <advance width="964"/>
   <unicode hex="091B"/>
   <outline>
     <contour>
@@ -9,13 +9,7 @@
       <point x="814" y="516" type="line"/>
       <point x="814" y="786" type="line"/>
     </contour>
-    <component base="uni091B094D"/>
-    <contour>
-      <point x="896" y="63" type="move" name="halant"/>
-    </contour>
-    <contour>
-      <point x="694" y="786" type="move" name="top"/>
-    </contour>
+    <component base="ch-deva"/>
   </outline>
   <lib>
     <dict>

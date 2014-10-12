@@ -2,7 +2,17 @@
 <glyph name="oMatra_reph_anusvara-deva" format="1">
   <advance width="359"/>
   <outline>
-    <component base="ovowelsigndeva"/>
-    <component base="uni0930094D_anusvaradeva" xOffset="-152"/>
+    <component base="oMatra-deva"/>
+    <component base="reph_anusvara-deva" xOffset="-164"/>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.Export</key>
+      <false/>
+      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+      <integer>5</integer>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
 </glyph>

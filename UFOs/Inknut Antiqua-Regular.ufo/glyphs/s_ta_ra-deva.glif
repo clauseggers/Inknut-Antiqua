@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="s_ta_ra-deva" format="1">
+  <advance width="955"/>
+  <outline>
+    <contour>
+      <point x="674" y="494"/>
+      <point x="536" y="390"/>
+      <point x="416" y="304" type="curve"/>
+      <point x="416" y="266" type="line"/>
+      <point x="486" y="204" type="line"/>
+      <point x="610" y="298"/>
+      <point x="755" y="408"/>
+      <point x="853" y="498" type="curve"/>
+      <point x="853" y="536" type="line"/>
+      <point x="774" y="586" type="line"/>
+    </contour>
+    <contour>
+      <point x="723" y="282"/>
+      <point x="645" y="213"/>
+      <point x="563" y="147" type="curve"/>
+      <point x="563" y="109" type="line"/>
+      <point x="636" y="46" type="line"/>
+      <point x="719" y="118"/>
+      <point x="800" y="191"/>
+      <point x="868" y="273" type="curve"/>
+      <point x="868" y="311" type="line"/>
+      <point x="790" y="358" type="line"/>
+    </contour>
+    <contour>
+      <point x="510" y="620"/>
+      <point x="431" y="578"/>
+      <point x="301" y="476" type="curve"/>
+      <point x="301" y="438" type="line"/>
+      <point x="371" y="376" type="line"/>
+      <point x="500" y="482"/>
+      <point x="563" y="530"/>
+      <point x="644" y="530" type="curve" smooth="yes"/>
+      <point x="668" y="530"/>
+      <point x="692" y="522"/>
+      <point x="728" y="491" type="curve" smooth="yes"/>
+      <point x="768" y="456" type="line"/>
+      <point x="803" y="492" type="line"/>
+      <point x="735" y="549" type="line" smooth="yes"/>
+      <point x="661" y="611"/>
+      <point x="627" y="620"/>
+      <point x="574" y="620" type="curve" smooth="yes"/>
+    </contour>
+    <contour>
+      <point x="180" y="786" type="line"/>
+      <point x="180" y="748" type="line"/>
+      <point x="250" y="686" type="line"/>
+      <point x="853" y="686" type="line"/>
+      <point x="853" y="724" type="line"/>
+      <point x="783" y="786" type="line"/>
+    </contour>
+    <component base="ra-deva"/>
+    <component base="aaMatra-deva" xOffset="627"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+      <integer>8</integer>
+      <key>public.markColor</key>
+      <string>0.5,0.09,0.79,1</string>
+    </dict>
+  </lib>
+</glyph>

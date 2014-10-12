@@ -1,7 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="ecandravowelsigndeva" format="1">
-  <advance width="600"/>
+<glyph name="eCandraMatra-deva" format="1">
+  <advance width="659"/>
   <unicode hex="0945"/>
   <outline>
+    <contour>
+      <point x="48" y="1216" type="line"/>
+      <point x="43" y="1193"/>
+      <point x="40" y="1167"/>
+      <point x="40" y="1141" type="curve" smooth="yes"/>
+      <point x="40" y="1038"/>
+      <point x="207" y="933"/>
+      <point x="371" y="933" type="curve" smooth="yes"/>
+      <point x="521" y="933"/>
+      <point x="632" y="1021"/>
+      <point x="651" y="1136" type="curve"/>
+      <point x="560" y="1217" type="line"/>
+      <point x="521" y="1183" type="line"/>
+      <point x="502" y="1080"/>
+      <point x="428" y="1017"/>
+      <point x="313" y="1017" type="curve" smooth="yes"/>
+      <point x="217" y="1017"/>
+      <point x="170" y="1044"/>
+      <point x="170" y="1103" type="curve" smooth="yes"/>
+      <point x="170" y="1123"/>
+      <point x="174" y="1149"/>
+      <point x="178" y="1168" type="curve"/>
+      <point x="80" y="1253" type="line"/>
+    </contour>
+    <contour>
+      <point x="651" y="1136" type="move" name="_right"/>
+    </contour>
+    <contour>
+      <point x="40" y="1141" type="move" name="_left"/>
+    </contour>
+    <contour>
+      <point x="276" y="786" type="move" name="_top"/>
+    </contour>
+    <contour>
+      <point x="337" y="1226" type="move" name="anusvara"/>
+    </contour>
   </outline>
 </glyph>

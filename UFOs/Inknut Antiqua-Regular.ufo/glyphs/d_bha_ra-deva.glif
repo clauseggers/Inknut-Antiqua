@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="d_bha_ra-deva" format="1">
+  <advance width="848"/>
+  <outline>
+    <component base="d_bha-deva"/>
+    <component base="r-deva.leg-short" xOffset="393" yOffset="-327"/>
+    <contour>
+      <point x="703" y="-183" type="move" name="bottom"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+      <integer>8</integer>
+      <key>public.markColor</key>
+      <string>0.5,0.09,0.79,1</string>
+    </dict>
+  </lib>
+</glyph>

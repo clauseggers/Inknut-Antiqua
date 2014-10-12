@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="reph_candraBindu-deva" format="1">
+  <advance width="600"/>
+  <outline>
+    <component base="reph-deva.tall"/>
+    <component base="eCandraMatra-deva" xOffset="-389"/>
+    <component base="anusvara-deva" xOffset="-183" yOffset="184"/>
+    <contour>
+      <point x="282" y="786" type="move" name="_top"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+      <integer>5</integer>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>

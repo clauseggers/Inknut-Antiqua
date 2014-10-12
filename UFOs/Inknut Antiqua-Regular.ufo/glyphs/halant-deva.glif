@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="viramadeva" format="1">
+<glyph name="halant-deva" format="1">
   <advance width="600"/>
   <unicode hex="094D"/>
   <outline>
     <contour>
-      <point x="145" y="-67" type="line"/>
-      <point x="498" y="-363" type="line"/>
-      <point x="531" y="-326" type="line"/>
-      <point x="178" y="-30" type="line"/>
+      <point x="170" y="-156" type="line"/>
+      <point x="432" y="-387" type="line"/>
+      <point x="465" y="-350" type="line"/>
+      <point x="202" y="-118" type="line"/>
     </contour>
     <contour>
       <point x="0" y="0" type="move" name="_bottom"/>
     </contour>
     <contour>
-      <point x="178" y="-30" type="move" name="_halant"/>
+      <point x="202" y="-118" type="move" name="_halant"/>
     </contour>
   </outline>
 </glyph>

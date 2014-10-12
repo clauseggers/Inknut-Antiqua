@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="uni094E" format="1">
-  <advance width="600"/>
+<glyph name="prishthaMatraE-deva" format="1">
+  <advance width="328"/>
   <unicode hex="094E"/>
   <outline>
+    <contour>
+      <point x="163" y="786" type="line"/>
+      <point x="163" y="748" type="line"/>
+      <point x="233" y="686" type="line"/>
+      <point x="418" y="686" type="line"/>
+      <point x="418" y="724" type="line"/>
+      <point x="348" y="786" type="line"/>
+    </contour>
+    <component base="stem-deva"/>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+      <integer>8</integer>
+      <key>public.markColor</key>
+      <string>0.5,0.09,0.79,1</string>
+    </dict>
+  </lib>
 </glyph>

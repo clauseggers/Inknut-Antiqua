@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="ttha-headless-deva" format="1">
+  <advance width="965"/>
+  <outline>
+    <contour>
+      <point x="500" y="419" type="line"/>
+      <point x="591" y="419"/>
+      <point x="637" y="381"/>
+      <point x="637" y="312" type="curve" smooth="yes"/>
+      <point x="637" y="197"/>
+      <point x="571" y="124"/>
+      <point x="465" y="124" type="curve" smooth="yes"/>
+      <point x="374" y="124"/>
+      <point x="328" y="162"/>
+      <point x="328" y="231" type="curve" smooth="yes"/>
+      <point x="328" y="315"/>
+      <point x="391" y="363"/>
+      <point x="467" y="363" type="curve" smooth="yes"/>
+      <point x="591" y="363" type="line"/>
+      <point x="591" y="533" type="line"/>
+      <point x="379" y="533" type="line" smooth="yes"/>
+      <point x="250" y="533"/>
+      <point x="112" y="437"/>
+      <point x="112" y="309" type="curve" smooth="yes"/>
+      <point x="112" y="151"/>
+      <point x="320" y="-10"/>
+      <point x="523" y="-10" type="curve" smooth="yes"/>
+      <point x="713" y="-10"/>
+      <point x="853" y="93"/>
+      <point x="853" y="234" type="curve" smooth="yes"/>
+      <point x="853" y="392"/>
+      <point x="645" y="553"/>
+      <point x="442" y="553" type="curve"/>
+    </contour>
+    <contour>
+      <point x="391" y="656" type="line"/>
+      <point x="391" y="496" type="line"/>
+      <point x="513" y="449" type="line"/>
+      <point x="591" y="449" type="line"/>
+      <point x="591" y="656" type="line"/>
+    </contour>
+    <contour>
+      <point x="899" y="63" type="move" name="halant"/>
+    </contour>
+    <contour>
+      <point x="160" y="-141" type="move" name="nukta"/>
+    </contour>
+    <contour>
+      <point x="391" y="583" type="move" name="_bottom"/>
+    </contour>
+    <contour>
+      <point x="517" y="0" type="move" name="bottom"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+      <integer>7</integer>
+      <key>public.markColor</key>
+      <string>0.18,0.16,0.78,1</string>
+    </dict>
+  </lib>
+</glyph>

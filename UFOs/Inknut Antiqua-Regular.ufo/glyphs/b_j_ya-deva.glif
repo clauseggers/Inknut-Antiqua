@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="b_j_ya-deva" format="1">
+  <advance width="1428"/>
+  <outline>
+    <component base="b-deva.up"/>
+    <component base="j-deva.short2" xOffset="296"/>
+    <component base="ya-deva" xOffset="696"/>
+    <contour>
+      <point x="170" y="78" type="move" name="nukta"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+      <integer>5</integer>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>

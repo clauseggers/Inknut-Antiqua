@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="uni093F0930094D" format="1">
+<glyph name="iMatra_reph-deva" format="1">
   <advance width="328"/>
   <outline>
-    <component base="uni093F"/>
-    <component base="uni0930094D" xOffset="601"/>
+    <component base="iMatra-deva"/>
+    <component base="reph-deva.tall" xOffset="-144"/>
   </outline>
   <lib>
     <dict>
+      <key>com.schriftgestaltung.Glyphs.Export</key>
+      <false/>
       <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
-      <integer>0</integer>
+      <integer>5</integer>
       <key>public.markColor</key>
-      <string>0.85,0.26,0.06,1</string>
+      <string>0.04,0.57,0.04,1</string>
     </dict>
   </lib>
 </glyph>

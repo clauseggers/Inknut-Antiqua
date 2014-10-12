@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="ngadeva" format="1">
-  <advance width="1009"/>
+<glyph name="nga-deva" format="1">
+  <advance width="959"/>
   <unicode hex="0919"/>
   <outline>
     <contour>
@@ -19,7 +19,7 @@
       <point x="1134" y="694" type="line"/>
       <point x="957" y="786" type="line"/>
     </contour>
-    <component base="ddadeva"/>
+    <component base="dda-deva"/>
   </outline>
   <lib>
     <dict>

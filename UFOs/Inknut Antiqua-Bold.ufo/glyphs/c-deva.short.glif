@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="c-deva.short" format="1">
+  <advance width="540"/>
+  <outline>
+    <contour>
+      <point x="-165" y="786" type="line"/>
+      <point x="-165" y="708" type="line"/>
+      <point x="11" y="616" type="line"/>
+      <point x="415" y="616" type="line"/>
+      <point x="415" y="694" type="line"/>
+      <point x="269" y="786" type="line"/>
+    </contour>
+    <contour>
+      <point x="35" y="555" type="line"/>
+      <point x="35" y="477" type="line"/>
+      <point x="211" y="385" type="line"/>
+      <point x="783" y="385" type="line"/>
+      <point x="783" y="463" type="line"/>
+      <point x="607" y="555" type="line"/>
+    </contour>
+    <component base="v-deva.short" xOffset="170"/>
+  </outline>
+</glyph>

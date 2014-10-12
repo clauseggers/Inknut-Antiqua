@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="ghadeva" format="1">
+<glyph name="gha-deva" format="1">
   <advance width="854"/>
   <unicode hex="0918"/>
   <outline>
-    <component base="uni0918094D"/>
-    <component base="uni093E" xOffset="526"/>
+    <component base="gh-deva"/>
+    <component base="aaMatra-deva" xOffset="526"/>
+    <contour>
+      <point x="583" y="249" type="move" name="leg"/>
+    </contour>
   </outline>
   <lib>
     <dict>

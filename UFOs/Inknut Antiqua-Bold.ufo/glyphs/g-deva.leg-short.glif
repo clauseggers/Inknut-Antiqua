@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="g-deva.leg-short" format="1">
+  <advance width="728"/>
+  <outline>
+    <contour>
+      <point x="384" y="344"/>
+      <point x="309" y="283"/>
+      <point x="242" y="221" type="curve" smooth="yes"/>
+      <point x="210" y="191"/>
+      <point x="185" y="162"/>
+      <point x="185" y="134" type="curve" smooth="yes"/>
+      <point x="185" y="52"/>
+      <point x="352" y="-54"/>
+      <point x="443" y="-55" type="curve" smooth="yes"/>
+      <point x="572" y="-56"/>
+      <point x="547" y="71"/>
+      <point x="454" y="219" type="curve"/>
+      <point x="414" y="94" type="line"/>
+      <point x="466" y="148"/>
+      <point x="530" y="207"/>
+      <point x="582" y="262" type="curve"/>
+      <point x="572" y="340" type="line"/>
+      <point x="446" y="398" type="line"/>
+    </contour>
+    <contour>
+      <point x="446" y="398" type="move" name="_g-deva.leg"/>
+    </contour>
+    <contour>
+      <point x="446" y="398" type="move" name="_leg"/>
+    </contour>
+    <contour>
+      <point x="446" y="398" type="move" name="_g-leg"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+      <integer>1</integer>
+      <key>public.markColor</key>
+      <string>0.99,0.62,0.11,1</string>
+    </dict>
+  </lib>
+</glyph>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="arrowup" format="1">
+<glyph name="upArrow" format="1">
   <advance width="584"/>
   <unicode hex="2191"/>
   <outline>
-    <component base="arrowleft" xOffset="-18" yOffset="671" xScale="0" yScale="0" xyScale="-1" yxScale="1"/>
+    <component base="leftArrow" xOffset="-18" yOffset="671" xScale="0" yScale="0" xyScale="-1" yxScale="1"/>
   </outline>
   <lib>
     <dict>

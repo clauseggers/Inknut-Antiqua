@@ -284,6 +284,7 @@
 		<string>scommaaccent</string>
 		<string>germandbls</string>
 		<string>germandbls.calt</string>
+		<string>longs</string>
 		<string>t</string>
 		<string>tbar</string>
 		<string>tcaron</string>
@@ -315,6 +316,7 @@
 		<string>zcaron</string>
 		<string>zdotaccent</string>
 		<string>T_h</string>
+		<string>c_t</string>
 		<string>f_adieresis.liga</string>
 		<string>f_b.liga</string>
 		<string>f_eth.liga</string>
@@ -346,126 +348,833 @@
 		<string>f_odieresis.liga</string>
 		<string>fi</string>
 		<string>fl</string>
+		<string>longs_t.liga</string>
+		<string>s_t</string>
+		<string>longs_b.liga</string>
+		<string>longs_h.liga</string>
+		<string>longs_i.liga</string>
+		<string>longs_k.liga</string>
+		<string>longs_l.liga</string>
+		<string>longs_longs.liga</string>
+		<string>longs_longs_i.liga</string>
+		<string>longs_longs_l.liga</string>
 		<string>ordfeminine</string>
 		<string>ordmasculine</string>
 		<string>Delta</string>
 		<string>Omega</string>
 		<string>mu</string>
 		<string>pi</string>
-		<string>ka-deva</string>
-		<string>kha-deva</string>
-		<string>ga-deva</string>
-		<string>gha-deva</string>
-		<string>nga-deva</string>
-		<string>ca-deva</string>
-		<string>cha-deva</string>
-		<string>ja-deva</string>
-		<string>jha-deva</string>
-		<string>nya-deva</string>
-		<string>tta-deva</string>
-		<string>ttha-deva</string>
-		<string>dda-deva</string>
-		<string>ddha-deva</string>
-		<string>nna-deva</string>
-		<string>ta-deva</string>
-		<string>tha-deva</string>
-		<string>da-deva</string>
-		<string>dha-deva</string>
-		<string>na-deva</string>
-		<string>pa-deva</string>
-		<string>pha-deva</string>
-		<string>ba-deva</string>
-		<string>bha-deva</string>
-		<string>ma-deva</string>
-		<string>ya-deva</string>
-		<string>ra-deva</string>
-		<string>rra-deva</string>
-		<string>la-deva</string>
-		<string>la-deva.loclMAR</string>
-		<string>lla-deva</string>
-		<string>va-deva</string>
-		<string>sha-deva</string>
-		<string>sha-deva.loclMAR</string>
-		<string>ssa-deva</string>
-		<string>sa-deva</string>
-		<string>ha-deva</string>
-		<string>gga-deva</string>
-		<string>jja-deva</string>
-		<string>ddda-deva</string>
-		<string>bba-deva</string>
-		<string>t_ra-deva</string>
+		<string>aCandra-deva</string>
 		<string>aShort-deva</string>
+		<string>aShort-deva.ss01</string>
+		<string>aCandra-deva.ss01</string>
 		<string>a-deva</string>
+		<string>a-deva.ss01</string>
 		<string>aa-deva</string>
+		<string>aa-deva.ss01</string>
 		<string>i-deva</string>
 		<string>ii-deva</string>
 		<string>u-deva</string>
 		<string>uu-deva</string>
 		<string>rVocalic-deva</string>
+		<string>rVocalic-deva.ss01</string>
 		<string>rrVocalic-deva</string>
+		<string>rrVocalic-deva.ss01</string>
 		<string>lVocalic-deva</string>
 		<string>llVocalic-deva</string>
+		<string>eCandra-deva</string>
 		<string>eShort-deva</string>
 		<string>e-deva</string>
 		<string>ai-deva</string>
+		<string>oCandra-deva</string>
 		<string>oShort-deva</string>
 		<string>o-deva</string>
 		<string>au-deva</string>
 		<string>oe-deva</string>
+		<string>oe-deva.ss01</string>
 		<string>ooe-deva</string>
 		<string>aw-deva</string>
 		<string>ue-deva</string>
+		<string>ue-deva.ss01</string>
 		<string>uue-deva</string>
-		<string>k-deva</string>
-		<string>kh-deva</string>
-		<string>g-deva</string>
-		<string>gh-deva</string>
-		<string>c-deva</string>
-		<string>ch-deva</string>
-		<string>j-deva</string>
-		<string>jh-deva</string>
-		<string>ny-deva</string>
-		<string>nn-deva</string>
-		<string>t-deva</string>
-		<string>t_r-deva</string>
-		<string>th-deva</string>
-		<string>dh-deva</string>
-		<string>n-deva</string>
-		<string>p-deva</string>
-		<string>ph-deva</string>
-		<string>b-deva</string>
-		<string>bh-deva</string>
-		<string>m-deva</string>
-		<string>y-deva</string>
-		<string>rr-deva</string>
-		<string>l-deva</string>
-		<string>l-deva.loclMAR</string>
-		<string>ll-deva</string>
-		<string>v-deva</string>
-		<string>sh-deva</string>
-		<string>sh-deva.loclMAR</string>
-		<string>ss-deva</string>
-		<string>s-deva</string>
-		<string>h-deva</string>
+		<string>uue-deva.ss01</string>
 		<string>aaMatra-deva</string>
-		<string>iMatra_reph-deva</string>
-		<string>iMatra_reph_anusvara-deva</string>
 		<string>iMatra-deva</string>
+		<string>iMatra-deva.01</string>
+		<string>iMatra-deva.02</string>
+		<string>iMatra-deva.03</string>
+		<string>iMatra-deva.04</string>
+		<string>iMatra-deva.05</string>
+		<string>iMatra-deva.06</string>
+		<string>iMatra-deva.07</string>
+		<string>iMatra-deva.08</string>
+		<string>iMatra-deva.09</string>
+		<string>iMatra-deva.10</string>
+		<string>iMatra-deva.11</string>
+		<string>iMatra-deva.12</string>
+		<string>iMatra-deva.13</string>
+		<string>iMatra-deva.14</string>
+		<string>iMatra-deva.15</string>
+		<string>iMatra-deva.16</string>
+		<string>iMatra-deva.17</string>
+		<string>iMatra-deva.18</string>
+		<string>iMatra-deva.19</string>
+		<string>iMatra-deva.20</string>
+		<string>iMatra-deva.21</string>
+		<string>iMatra-deva.22</string>
+		<string>iMatra-deva.23</string>
+		<string>iMatra-deva.24</string>
+		<string>iMatra-deva.25</string>
+		<string>iMatra-deva.26</string>
+		<string>iMatra-deva.27</string>
+		<string>iMatra-deva.28</string>
+		<string>iMatra-deva.29</string>
+		<string>iMatra-deva.30</string>
 		<string>iiMatra-deva</string>
-		<string>iiMatra_reph-deva</string>
-		<string>iiMatra_reph_anusvara-deva</string>
+		<string>iiMatra-deva.01</string>
+		<string>iiMatra-deva.02</string>
+		<string>iiMatra-deva.03</string>
+		<string>iiMatra-deva.04</string>
+		<string>iiMatra-deva.05</string>
+		<string>iiMatra-deva.06</string>
+		<string>iiMatra-deva.07</string>
+		<string>iiMatra-deva.08</string>
+		<string>iiMatra-deva.09</string>
+		<string>iiMatra-deva.10</string>
+		<string>iiMatra-deva.11</string>
+		<string>iiMatra-deva.12</string>
+		<string>iiMatra-deva.13</string>
+		<string>iiMatra-deva.14</string>
+		<string>iiMatra-deva.15</string>
+		<string>iiMatra-deva.16</string>
+		<string>iiMatra-deva.17</string>
+		<string>iiMatra-deva.18</string>
+		<string>iiMatra-deva.19</string>
+		<string>iiMatra-deva.20</string>
+		<string>iiMatra-deva.21</string>
+		<string>iiMatra-deva.22</string>
+		<string>iiMatra-deva.23</string>
+		<string>iiMatra-deva.24</string>
+		<string>iiMatra-deva.25</string>
+		<string>iiMatra-deva.26</string>
+		<string>iiMatra-deva.27</string>
+		<string>iiMatra-deva.28</string>
+		<string>iiMatra-deva.29</string>
+		<string>iiMatra-deva.30</string>
 		<string>oCandraMatra-deva</string>
 		<string>oShortMatra-deva</string>
 		<string>oMatra-deva</string>
-		<string>oMatra_reph-deva</string>
-		<string>oMatra_reph_anusvara-deva</string>
-		<string>oMatra_anusvara-deva</string>
 		<string>auMatra-deva</string>
-		<string>auMatra_reph-deva</string>
-		<string>auMatra_reph_anusvara-deva</string>
 		<string>prishthaMatraE-deva</string>
 		<string>ooeMatra-deva</string>
 		<string>awMatra-deva</string>
+		<string>iMatra_reph-deva</string>
+		<string>iMatra_reph_anusvara-deva</string>
+		<string>iiMatra_reph-deva</string>
+		<string>iiMatra_reph_anusvara-deva</string>
+		<string>oMatra_reph-deva</string>
+		<string>oMatra_reph_anusvara-deva</string>
+		<string>oMatra_anusvara-deva</string>
+		<string>auMatra_reph-deva</string>
+		<string>auMatra_reph_anusvara-deva</string>
+		<string>ka-deva</string>
+		<string>ka-deva.bottom</string>
+		<string>kha-deva</string>
+		<string>ga-deva</string>
+		<string>gha-deva</string>
+		<string>gha-deva.bottom</string>
+		<string>nga-deva</string>
+		<string>ca-deva</string>
+		<string>cha-deva</string>
+		<string>ja-deva</string>
+		<string>jha-deva</string>
+		<string>jha-deva.ss01</string>
+		<string>nya-deva</string>
+		<string>tta-deva</string>
+		<string>ttha-deva</string>
+		<string>dda-deva</string>
+		<string>dda-deva.short</string>
+		<string>dda-deva.short2</string>
+		<string>ddha-deva</string>
+		<string>nna-deva</string>
+		<string>nna-deva.ss01</string>
+		<string>ta-deva</string>
+		<string>tha-deva</string>
+		<string>tha-deva.high</string>
+		<string>da-deva</string>
+		<string>da-deva.knotless</string>
+		<string>da-deva.strokeless</string>
+		<string>dha-deva</string>
+		<string>na-deva</string>
+		<string>na-deva.bottom</string>
+		<string>na-deva.low</string>
+		<string>nnna-deva</string>
+		<string>pa-deva</string>
+		<string>pha-deva</string>
+		<string>ba-deva</string>
+		<string>bha-deva</string>
+		<string>bha-deva.fina</string>
+		<string>ma-deva</string>
+		<string>ma-deva.bottom</string>
+		<string>ya-deva</string>
+		<string>ya-deva.connect</string>
+		<string>ya-deva.connect-low</string>
+		<string>ya-deva.connect-low-short</string>
+		<string>ya-deva.connect-short</string>
+		<string>ra-deva</string>
+		<string>rra-deva</string>
+		<string>la-deva</string>
+		<string>la-deva.loclMAR</string>
+		<string>la-deva.ss01</string>
+		<string>lla-deva</string>
+		<string>llla-deva</string>
+		<string>va-deva</string>
+		<string>va-deva.bottom</string>
+		<string>sha-deva</string>
+		<string>sha-deva.loclMAR</string>
+		<string>ssa-deva</string>
+		<string>sa-deva</string>
+		<string>ha-deva</string>
+		<string>qa-deva</string>
+		<string>khha-deva</string>
+		<string>ghha-deva</string>
+		<string>za-deva</string>
+		<string>dddha-deva</string>
+		<string>rha-deva</string>
+		<string>fa-deva</string>
+		<string>yya-deva</string>
+		<string>zha-deva</string>
+		<string>gga-deva</string>
+		<string>jja-deva</string>
+		<string>ddda-deva</string>
+		<string>bba-deva</string>
+		<string>ka_ra-deva</string>
+		<string>k_ka-deva</string>
+		<string>k_kha-deva</string>
+		<string>k_ca-deva</string>
+		<string>k_ja-deva</string>
+		<string>k_tta-deva</string>
+		<string>k_nna-deva</string>
+		<string>k_nna-deva.ss01</string>
+		<string>k_ta-deva</string>
+		<string>k_ta-deva.bottom</string>
+		<string>k_ta_ra-deva</string>
+		<string>k_t_ta-deva</string>
+		<string>k_t_ya-deva</string>
+		<string>k_t_va-deva</string>
+		<string>k_tha-deva</string>
+		<string>k_da-deva</string>
+		<string>k_na-deva</string>
+		<string>k_pa-deva</string>
+		<string>k_pa_ra-deva</string>
+		<string>k_pha-deva</string>
+		<string>k_ma-deva</string>
+		<string>k_ya-deva</string>
+		<string>k_la-deva</string>
+		<string>k_va-deva</string>
+		<string>k_v_ya-deva</string>
+		<string>k_sha-deva</string>
+		<string>k_ssa-deva</string>
+		<string>k_ssa_ra-deva</string>
+		<string>k_ss-deva</string>
+		<string>k_ss-deva.long</string>
+		<string>k_ss-deva.low</string>
+		<string>k_ss_ma-deva</string>
+		<string>k_ss_ya-deva</string>
+		<string>k_ss_va-deva</string>
+		<string>k_sa-deva</string>
+		<string>k_s_tta-deva</string>
+		<string>k_s_dda-deva</string>
+		<string>k_s_ta-deva</string>
+		<string>k_s_pa-deva</string>
+		<string>k_s_pa_ra-deva</string>
+		<string>k_s_p_la-deva</string>
+		<string>kha_ra-deva</string>
+		<string>kh_kha-deva</string>
+		<string>kh_ta-deva</string>
+		<string>kh_na-deva</string>
+		<string>kh_ma-deva</string>
+		<string>kh_ya-deva</string>
+		<string>kh_va-deva</string>
+		<string>kh_sha-deva</string>
+		<string>ga_ra-deva</string>
+		<string>ga_ra_ya-deva</string>
+		<string>g_ga-deva</string>
+		<string>g_gha-deva</string>
+		<string>g_ja-deva</string>
+		<string>g_nna-deva</string>
+		<string>g_nna-deva.ss01</string>
+		<string>g_da-deva</string>
+		<string>g_dha-deva</string>
+		<string>g_dh_ya-deva</string>
+		<string>g_dh_va-deva</string>
+		<string>g_na-deva</string>
+		<string>g_n_ya-deva</string>
+		<string>g_ba-deva</string>
+		<string>g_bha-deva</string>
+		<string>g_bh_ya-deva</string>
+		<string>g_ma-deva</string>
+		<string>g_ya-deva</string>
+		<string>g_la-deva</string>
+		<string>g_va-deva</string>
+		<string>g_sa-deva</string>
+		<string>gha_ra-deva</string>
+		<string>gh_na-deva</string>
+		<string>gh_ma-deva</string>
+		<string>gh_ya-deva</string>
+		<string>ng_ka-deva</string>
+		<string>ng_ka_ra-deva</string>
+		<string>ng_k_ssa-deva</string>
+		<string>ng_kha-deva</string>
+		<string>ng_ga-deva</string>
+		<string>ng_ga_ra-deva</string>
+		<string>ng_gha-deva</string>
+		<string>ng_gha_ra-deva</string>
+		<string>ng_ma-deva</string>
+		<string>ng_ma-deva.001</string>
+		<string>ng_ya-deva</string>
+		<string>ca_ra-deva</string>
+		<string>c_ca-deva</string>
+		<string>c_cha-deva</string>
+		<string>c_ch_va-deva</string>
+		<string>c_na-deva</string>
+		<string>c_ma-deva</string>
+		<string>c_ya-deva</string>
+		<string>ch_na-deva</string>
+		<string>ch_ya-deva</string>
+		<string>ch_va-deva</string>
+		<string>ja_ra-deva</string>
+		<string>j_hook-deva</string>
+		<string>j_ka-deva</string>
+		<string>j_ja-deva</string>
+		<string>j_j_nya-deva</string>
+		<string>j_j_ya-deva</string>
+		<string>j_j_va-deva</string>
+		<string>j_jha-deva</string>
+		<string>j_jha-deva.ss01</string>
+		<string>j_nya-deva</string>
+		<string>j_ny-deva</string>
+		<string>j_ny-deva.short</string>
+		<string>j_ny_ya-deva</string>
+		<string>j_tta-deva</string>
+		<string>j_dda-deva</string>
+		<string>j_ta-deva</string>
+		<string>j_da-deva</string>
+		<string>j_na-deva</string>
+		<string>j_ba-deva</string>
+		<string>j_ma-deva</string>
+		<string>j_ya-deva</string>
+		<string>j_va-deva</string>
+		<string>jha_ra-deva</string>
+		<string>jha_ra-deva.ss01</string>
+		<string>jh_na-deva</string>
+		<string>jh_na-deva.ss01</string>
+		<string>jh_ma-deva</string>
+		<string>jh_ma-deva.ss01</string>
+		<string>jh_ya-deva</string>
+		<string>jh_ya-deva.ss01</string>
+		<string>nya_ra-deva</string>
+		<string>ny_ca-deva</string>
+		<string>ny_c_ya-deva</string>
+		<string>ny_cha-deva</string>
+		<string>ny_ja-deva</string>
+		<string>ny_j_ya-deva</string>
+		<string>ny_sha-deva</string>
+		<string>tt_tta-deva</string>
+		<string>tt_tt_ya-deva</string>
+		<string>tt_ttha-deva</string>
+		<string>tt_ddha-deva</string>
+		<string>tt_na-deva</string>
+		<string>tt_ma-deva</string>
+		<string>tt_ya-deva</string>
+		<string>tt_va-deva</string>
+		<string>tth_ttha-deva</string>
+		<string>tth_tth_ya-deva</string>
+		<string>tth_na-deva</string>
+		<string>tth_ma-deva</string>
+		<string>tth_ya-deva</string>
+		<string>dd_ka-deva</string>
+		<string>dd_gha-deva</string>
+		<string>dd_tta-deva</string>
+		<string>dd_ttha-deva</string>
+		<string>dd_dda-deva</string>
+		<string>dd_dd_ya-deva</string>
+		<string>dd_ddha-deva</string>
+		<string>dd_na-deva</string>
+		<string>dd_ma-deva</string>
+		<string>dd_ya-deva</string>
+		<string>dd_va-deva</string>
+		<string>ddh_ddha-deva</string>
+		<string>ddh_ddh_ya-deva</string>
+		<string>ddh_da-deva</string>
+		<string>ddh_na-deva</string>
+		<string>ddh_ma-deva</string>
+		<string>ddh_ya-deva</string>
+		<string>nna_ra-deva</string>
+		<string>nna_ra-deva.ss01</string>
+		<string>nn_tta-deva</string>
+		<string>nn_tta-deva.ss01</string>
+		<string>nn_ttha-deva</string>
+		<string>nn_ttha-deva.ss01</string>
+		<string>nn_dda-deva</string>
+		<string>nn_dda-deva.ss01</string>
+		<string>nn_ddha-deva</string>
+		<string>nn_ddha-deva.ss01</string>
+		<string>nn_nna-deva</string>
+		<string>nn_nna-deva.ss01</string>
+		<string>nn_ma-deva</string>
+		<string>nn_ma-deva.ss01</string>
+		<string>nn_ya-deva</string>
+		<string>nn_ya-deva.ss01</string>
+		<string>nn_va-deva</string>
+		<string>nn_va-deva.ss01</string>
+		<string>ta_ra-deva</string>
+		<string>ta_ra_ya-deva</string>
+		<string>t_ka-deva</string>
+		<string>t_ka_ra-deva</string>
+		<string>t_k_ya-deva</string>
+		<string>t_k_va-deva</string>
+		<string>t_k_ssa-deva</string>
+		<string>t_kha-deva</string>
+		<string>t_kha_ra-deva</string>
+		<string>t_kh_na-deva</string>
+		<string>t_ta-deva</string>
+		<string>t_t-deva</string>
+		<string>t_t-deva.high</string>
+		<string>t_t-deva.short</string>
+		<string>t_t_ya-deva</string>
+		<string>t_t_va-deva</string>
+		<string>t_tha-deva</string>
+		<string>t_d_ya-deva</string>
+		<string>t_na-deva</string>
+		<string>t_n_ya-deva</string>
+		<string>t_pa-deva</string>
+		<string>t_pa_ra-deva</string>
+		<string>t_p_la-deva</string>
+		<string>t_pha-deva</string>
+		<string>t_ma-deva</string>
+		<string>t_m_ya-deva</string>
+		<string>t_ya-deva</string>
+		<string>t_r-deva</string>
+		<string>t_r-deva.low</string>
+		<string>t_r-deva.short</string>
+		<string>t_la-deva</string>
+		<string>t_va-deva</string>
+		<string>t_sa-deva</string>
+		<string>t_s_na-deva</string>
+		<string>t_s_ya-deva</string>
+		<string>t_s_va-deva</string>
+		<string>tha_ra-deva</string>
+		<string>th_na-deva</string>
+		<string>th_ya-deva</string>
+		<string>th_va-deva</string>
+		<string>da_ra-deva</string>
+		<string>da_ra_ya-deva</string>
+		<string>da_uuMatra-deva</string>
+		<string>da_rVocalicMatra-deva</string>
+		<string>d_ga-deva</string>
+		<string>d_ga_ra-deva</string>
+		<string>d_gha-deva</string>
+		<string>d_da-deva</string>
+		<string>d_d_ya-deva</string>
+		<string>d_dha-deva</string>
+		<string>d_dha_rVocalicMatra-deva</string>
+		<string>d_dh_ya-deva</string>
+		<string>d_na-deva</string>
+		<string>d_na-deva.ss02</string>
+		<string>d_ba-deva</string>
+		<string>d_ba_ra-deva</string>
+		<string>d_bha-deva</string>
+		<string>d_bha_ra-deva</string>
+		<string>d_bh_ya-deva</string>
+		<string>d_ma-deva</string>
+		<string>d_ya-deva</string>
+		<string>d_va-deva</string>
+		<string>d_va_ra-deva</string>
+		<string>d_v_ya-deva</string>
+		<string>dha_ra-deva</string>
+		<string>dh_na-deva</string>
+		<string>dh_n_ya-deva</string>
+		<string>dh_ma-deva</string>
+		<string>dh_ya-deva</string>
+		<string>dh_va-deva</string>
+		<string>dh_va_ra-deva</string>
+		<string>na_ra-deva</string>
+		<string>n_ka-deva</string>
+		<string>n_k_sa-deva</string>
+		<string>n_ca-deva</string>
+		<string>n_tta-deva</string>
+		<string>n_dda-deva</string>
+		<string>n_ta-deva</string>
+		<string>n_ta_ra-deva</string>
+		<string>n_t_ya-deva</string>
+		<string>n_t_sa-deva</string>
+		<string>n_tha-deva</string>
+		<string>n_th_ya-deva</string>
+		<string>n_th_va-deva</string>
+		<string>n_da-deva</string>
+		<string>n_da_ra-deva</string>
+		<string>n_d_va-deva</string>
+		<string>n_dha-deva</string>
+		<string>n_dh_ya-deva</string>
+		<string>n_dh_ra-deva</string>
+		<string>n_dh_va-deva</string>
+		<string>n_na-deva</string>
+		<string>n_n_ya-deva</string>
+		<string>n_pa-deva</string>
+		<string>n_pa_ra-deva</string>
+		<string>n_pha-deva</string>
+		<string>n_bha-deva</string>
+		<string>n_ma-deva</string>
+		<string>n_m_ya-deva</string>
+		<string>n_ya-deva</string>
+		<string>n_la-deva</string>
+		<string>n_va-deva</string>
+		<string>n_sa-deva</string>
+		<string>n_s_tta-deva</string>
+		<string>n_ha-deva</string>
+		<string>n_h_ya-deva</string>
+		<string>pa_ra-deva</string>
+		<string>p_tta-deva</string>
+		<string>p_ttha-deva</string>
+		<string>p_ta-deva</string>
+		<string>p_t_ya-deva</string>
+		<string>p_na-deva</string>
+		<string>p_pa-deva</string>
+		<string>p_pha-deva</string>
+		<string>p_ma-deva</string>
+		<string>p_ya-deva</string>
+		<string>p_ra_pa-deva</string>
+		<string>p_r-deva</string>
+		<string>p_la-deva</string>
+		<string>p_va-deva</string>
+		<string>p_sa-deva</string>
+		<string>pha_ra-deva</string>
+		<string>ph_ja-deva</string>
+		<string>ph_tta-deva</string>
+		<string>ph_ta-deva</string>
+		<string>ph_na-deva</string>
+		<string>ph_pa-deva</string>
+		<string>ph_pha-deva</string>
+		<string>ph_ya-deva</string>
+		<string>ph_la-deva</string>
+		<string>ph_sha-deva</string>
+		<string>ba_ra-deva</string>
+		<string>b_ja-deva</string>
+		<string>b_j_ya-deva</string>
+		<string>b_ta-deva</string>
+		<string>b_da-deva</string>
+		<string>b_dha-deva</string>
+		<string>b_dh_va-deva</string>
+		<string>b_na-deva</string>
+		<string>b_ba-deva</string>
+		<string>b_bha-deva</string>
+		<string>b_bha_ra-deva</string>
+		<string>b_ya-deva</string>
+		<string>b_la-deva</string>
+		<string>b_l_ya-deva</string>
+		<string>b_va-deva</string>
+		<string>b_sha-deva</string>
+		<string>b_sa-deva</string>
+		<string>b_za-deva</string>
+		<string>bha_ra-deva</string>
+		<string>bha_ra_ya-deva</string>
+		<string>bh_na-deva</string>
+		<string>bh_ya-deva</string>
+		<string>bh_va-deva</string>
+		<string>ma_ra-deva</string>
+		<string>m_ta-deva</string>
+		<string>m_da-deva</string>
+		<string>m_na-deva</string>
+		<string>m_pa-deva</string>
+		<string>m_pa_ra-deva</string>
+		<string>m_ba-deva</string>
+		<string>m_ba_ra-deva</string>
+		<string>m_b_ya-deva</string>
+		<string>m_bha-deva</string>
+		<string>m_bha_ra-deva</string>
+		<string>m_ma-deva</string>
+		<string>m_ya-deva</string>
+		<string>m_la-deva</string>
+		<string>m_va-deva</string>
+		<string>m_sha-deva</string>
+		<string>m_sa-deva</string>
+		<string>m_ha-deva</string>
+		<string>ya_ra-deva</string>
+		<string>y_na-deva</string>
+		<string>y_ya-deva</string>
+		<string>ra_uMatra-deva</string>
+		<string>ra_uuMatra-deva</string>
+		<string>rr_ya-deva</string>
+		<string>rr_ha-deva</string>
+		<string>la_ra-deva</string>
+		<string>la_lVocalicMatra-deva.loclMAR</string>
+		<string>la_llVocalicMatra-deva.loclMAR</string>
+		<string>l_ka-deva</string>
+		<string>l_k_ya-deva</string>
+		<string>l_kha-deva</string>
+		<string>l_ga-deva</string>
+		<string>l_c_ya-deva</string>
+		<string>l_ja-deva</string>
+		<string>l_tta-deva</string>
+		<string>l_ttha-deva</string>
+		<string>l_dda-deva</string>
+		<string>l_ddha-deva</string>
+		<string>l_ta-deva</string>
+		<string>l_tha-deva</string>
+		<string>l_th_ya-deva</string>
+		<string>l_da-deva</string>
+		<string>l_da_ra-deva</string>
+		<string>l_pa-deva</string>
+		<string>l_pha-deva</string>
+		<string>l_ba-deva</string>
+		<string>l_bha-deva</string>
+		<string>l_ma-deva</string>
+		<string>l_ya-deva</string>
+		<string>l_la-deva</string>
+		<string>l_l_ya-deva</string>
+		<string>l_va-deva</string>
+		<string>l_v_dda-deva</string>
+		<string>l_sa-deva</string>
+		<string>l_ha-deva</string>
+		<string>l_h_ya-deva</string>
+		<string>l_za-deva</string>
+		<string>lla_ra-deva</string>
+		<string>ll_ya-deva</string>
+		<string>va_ra-deva</string>
+		<string>v_na-deva</string>
+		<string>v_ya-deva</string>
+		<string>v_la-deva</string>
+		<string>v_va-deva</string>
+		<string>v_ha-deva</string>
+		<string>sha_ra-deva</string>
+		<string>sha_ra_ya-deva</string>
+		<string>sh_ka-deva</string>
+		<string>sh_ca-deva</string>
+		<string>sh_cha-deva</string>
+		<string>sh_tta-deva</string>
+		<string>sh_ta-deva</string>
+		<string>sh_na-deva</string>
+		<string>sh_ma-deva</string>
+		<string>sh_ya-deva</string>
+		<string>sh_la-deva</string>
+		<string>sh_va-deva</string>
+		<string>sh_sha-deva</string>
+		<string>sh_qa-deva</string>
+		<string>ssa_ra-deva</string>
+		<string>ss_ka-deva</string>
+		<string>ss_ka_ra-deva</string>
+		<string>ss_tta-deva</string>
+		<string>ss_tt_ya-deva</string>
+		<string>ss_tt_va-deva</string>
+		<string>ss_ttha-deva</string>
+		<string>ss_tth_ya-deva</string>
+		<string>ss_nna-deva</string>
+		<string>ss_nna-deva.ss01</string>
+		<string>ss_nn_ya-deva</string>
+		<string>ss_nn_ya-deva.ss01</string>
+		<string>ss_pa-deva</string>
+		<string>ss_pa_ra-deva</string>
+		<string>ss_pha-deva</string>
+		<string>ss_ma-deva</string>
+		<string>ss_m_ya-deva</string>
+		<string>ss_ya-deva</string>
+		<string>ss_va-deva</string>
+		<string>ss_ssa-deva</string>
+		<string>sa_ra-deva</string>
+		<string>s_ka-deva</string>
+		<string>s_ka_ra-deva</string>
+		<string>s_k_va-deva</string>
+		<string>s_kha-deva</string>
+		<string>s_cha-deva</string>
+		<string>s_ja-deva</string>
+		<string>s_tta-deva</string>
+		<string>s_ta-deva</string>
+		<string>s_ta_ra-deva</string>
+		<string>s_ta_ra_ya-deva</string>
+		<string>s_t_ya-deva</string>
+		<string>s_t_va-deva</string>
+		<string>s_tha-deva</string>
+		<string>s_th_ya-deva</string>
+		<string>s_da-deva</string>
+		<string>s_na-deva</string>
+		<string>s_pa-deva</string>
+		<string>s_pa_ra-deva</string>
+		<string>s_pha-deva</string>
+		<string>s_ba-deva</string>
+		<string>s_ma-deva</string>
+		<string>s_m_ya-deva</string>
+		<string>s_ya-deva</string>
+		<string>s_la-deva</string>
+		<string>s_va-deva</string>
+		<string>s_sa-deva</string>
+		<string>ha_ra-deva</string>
+		<string>ha_uuMatra-deva</string>
+		<string>ha_rVocalicMatra-deva</string>
+		<string>h_nna-deva</string>
+		<string>h_nna-deva.ss01</string>
+		<string>h_na-deva</string>
+		<string>h_ma-deva</string>
+		<string>h_m_ya-deva</string>
+		<string>h_ya-deva</string>
+		<string>h_la-deva</string>
+		<string>h_va-deva</string>
+		<string>qa_ra-deva</string>
+		<string>q_ta-deva</string>
+		<string>q_pha-deva</string>
+		<string>q_ba-deva</string>
+		<string>q_ma-deva</string>
+		<string>q_qa-deva</string>
+		<string>q_fa-deva</string>
+		<string>khha_ra-deva</string>
+		<string>khh_ta-deva</string>
+		<string>khh_ma-deva</string>
+		<string>khh_ya-deva</string>
+		<string>khh_va-deva</string>
+		<string>khh_sha-deva</string>
+		<string>khh_sa-deva</string>
+		<string>ghha_ra-deva</string>
+		<string>za_ra-deva</string>
+		<string>z_ya-deva</string>
+		<string>z_za-deva</string>
+		<string>fa_ra-deva</string>
+		<string>f_ta-deva</string>
+		<string>f_sa-deva</string>
+		<string>f_za-deva</string>
+		<string>f_fa-deva</string>
+		<string>yya_ra-deva</string>
+		<string>iMatra_stem-deva</string>
+		<string>ng_k_t_ta-deva</string>
+		<string>sh_matra_vocalicR-deva</string>
+		<string>k-deva</string>
+		<string>k-deva.long</string>
+		<string>k-deva.short</string>
+		<string>kh-deva</string>
+		<string>kh-deva.long</string>
+		<string>g-deva</string>
+		<string>g-deva.bottom</string>
+		<string>g-deva.leg</string>
+		<string>g-deva.leg-short</string>
+		<string>gh-deva</string>
+		<string>ng-deva.top</string>
+		<string>c-deva</string>
+		<string>c-deva.long</string>
+		<string>c-deva.long2</string>
+		<string>c-deva.low</string>
+		<string>c-deva.short</string>
+		<string>ch-deva</string>
+		<string>j-deva</string>
+		<string>j-deva.long</string>
+		<string>j-deva.long-up</string>
+		<string>j-deva.long-up2</string>
+		<string>j-deva.long2</string>
+		<string>j-deva.short</string>
+		<string>j-deva.short2</string>
+		<string>jh-deva</string>
+		<string>jh-deva.high.ss01</string>
+		<string>jh-deva.short</string>
+		<string>jh-deva.ss01</string>
+		<string>ny-deva</string>
+		<string>ny-deva.long</string>
+		<string>ny-deva.low</string>
+		<string>ny-deva.low-short</string>
+		<string>ny-deva.no-link</string>
+		<string>tt-deva.bottom</string>
+		<string>tt-deva.top</string>
+		<string>tth-deva.bottom</string>
+		<string>tth-deva.top</string>
+		<string>dd-deva.bottom</string>
+		<string>dd-deva.top</string>
+		<string>ddh-deva.bottom</string>
+		<string>ddh-deva.top</string>
+		<string>nn-deva</string>
+		<string>nn-deva.ss01</string>
+		<string>t-deva</string>
+		<string>t-deva.long</string>
+		<string>t-deva.low</string>
+		<string>t-deva.short</string>
+		<string>th-deva</string>
+		<string>th-deva.high</string>
+		<string>th-deva.high-short</string>
+		<string>th-deva.short</string>
+		<string>d-deva.bottom</string>
+		<string>d-deva.top</string>
+		<string>dh-deva</string>
+		<string>dh-deva.short</string>
+		<string>n-deva</string>
+		<string>n-deva.long</string>
+		<string>n-deva.low</string>
+		<string>n-deva.short</string>
+		<string>n-deva.short2</string>
+		<string>n-deva.short3</string>
+		<string>n-deva.short4</string>
+		<string>n-deva.up</string>
+		<string>nnn-deva</string>
+		<string>p-deva</string>
+		<string>p-deva.short</string>
+		<string>p-deva.short2</string>
+		<string>p-deva.short3</string>
+		<string>ph-deva</string>
+		<string>b-deva</string>
+		<string>b-deva.long</string>
+		<string>b-deva.short-low</string>
+		<string>b-deva.short2</string>
+		<string>b-deva.short3</string>
+		<string>b-deva.short4</string>
+		<string>b-deva.up</string>
+		<string>bh-deva</string>
+		<string>bh-deva.init</string>
+		<string>bh-deva.medi</string>
+		<string>m-deva</string>
+		<string>m-deva.front-short</string>
+		<string>m-deva.short</string>
+		<string>m-deva.short-low</string>
+		<string>m-deva.short2</string>
+		<string>y-deva</string>
+		<string>y-deva.loop-connect</string>
+		<string>y-deva.short</string>
+		<string>r-deva.leg</string>
+		<string>r-deva.leg-short</string>
+		<string>rr-deva</string>
+		<string>rr-deva.long</string>
+		<string>rr-deva.long-high</string>
+		<string>rr-deva.low</string>
+		<string>rr-deva.short</string>
+		<string>rr-deva.short-high</string>
+		<string>rr-deva.short2</string>
+		<string>l-deva</string>
+		<string>l-deva.halfform</string>
+		<string>l-deva.loclMAR</string>
+		<string>l-deva.low</string>
+		<string>ll-deva</string>
+		<string>lll-deva</string>
+		<string>v-deva</string>
+		<string>v-deva.long</string>
+		<string>v-deva.long2</string>
+		<string>v-deva.low</string>
+		<string>v-deva.short</string>
+		<string>v-deva.short-low</string>
+		<string>v-deva.short2</string>
+		<string>sh-deva</string>
+		<string>sh-deva.down</string>
+		<string>sh-deva.high</string>
+		<string>sh-deva.high2</string>
+		<string>sh-deva.high3</string>
+		<string>sh-deva.high4</string>
+		<string>sh-deva.loclMAR</string>
+		<string>ss-deva</string>
+		<string>ss-deva.short</string>
+		<string>ss-deva.short2</string>
+		<string>ss-deva.short3</string>
+		<string>s-deva</string>
+		<string>s-deva.long</string>
+		<string>s-deva.low</string>
+		<string>s-deva.short</string>
+		<string>s-deva.short2</string>
+		<string>h-deva</string>
+		<string>h-deva.up</string>
+		<string>q-deva</string>
+		<string>q-deva.short</string>
 		<string>zero</string>
 		<string>one</string>
 		<string>two</string>
@@ -526,6 +1235,20 @@
 		<string>sevensuperior</string>
 		<string>eightsuperior</string>
 		<string>ninesuperior</string>
+		<string>zero-deva</string>
+		<string>one-deva</string>
+		<string>two-deva</string>
+		<string>three-deva</string>
+		<string>four-deva</string>
+		<string>five-deva</string>
+		<string>six-deva</string>
+		<string>seven-deva</string>
+		<string>eight-deva</string>
+		<string>nine-deva</string>
+		<string>five-deva.loclMAR</string>
+		<string>eight-deva.loclMAR</string>
+		<string>nine-deva.loclMAR</string>
+		<string>one-deva.ss01</string>
 		<string>One-roman</string>
 		<string>Two-roman</string>
 		<string>Three-roman</string>
@@ -547,13 +1270,27 @@
 		<string>backslash</string>
 		<string>periodcentered</string>
 		<string>bullet</string>
+		<string>periodcentered.case</string>
+		<string>bullet.case</string>
 		<string>exclamdown.case</string>
+		<string>numbersign.case</string>
 		<string>questiondown.case</string>
 		<string>colon</string>
 		<string>comma</string>
+		<string>periodcentered.deva</string>
+		<string>colon.deva</string>
+		<string>comma.deva</string>
+		<string>ellipsis.deva</string>
+		<string>exclam.deva</string>
+		<string>period.deva</string>
+		<string>question.deva</string>
+		<string>quotedbl.deva</string>
+		<string>quotesingle.deva</string>
+		<string>semicolon.deva</string>
 		<string>ellipsis</string>
 		<string>exclam</string>
 		<string>exclamdown</string>
+		<string>flowerpunctuationmark</string>
 		<string>numbersign</string>
 		<string>period</string>
 		<string>question</string>
@@ -568,12 +1305,28 @@
 		<string>braceright</string>
 		<string>bracketleft</string>
 		<string>bracketright</string>
+		<string>parenleft.deva</string>
+		<string>parenright.deva</string>
 		<string>parenleft</string>
 		<string>parenright</string>
+		<string>emdash.case</string>
+		<string>endash.case</string>
+		<string>hyphen.case</string>
+		<string>softhyphen.case</string>
+		<string>hyphen.deva</string>
+		<string>softhyphen.deva</string>
 		<string>emdash</string>
 		<string>endash</string>
 		<string>hyphen</string>
 		<string>softhyphen</string>
+		<string>guillemetleft.case</string>
+		<string>guillemetright.case</string>
+		<string>guilsinglleft.case</string>
+		<string>guilsinglright.case</string>
+		<string>quotedblleft.deva</string>
+		<string>quotedblright.deva</string>
+		<string>quoteleft.deva</string>
+		<string>quoteright.deva</string>
 		<string>guillemetleft</string>
 		<string>guillemetright</string>
 		<string>guilsinglleft</string>
@@ -586,8 +1339,17 @@
 		<string>quoteright</string>
 		<string>quotesinglbase</string>
 		<string>tripleprime</string>
+		<string>glottalstop-deva</string>
+		<string>danda-deva</string>
+		<string>dbldanda-deva</string>
+		<string>abbreviation-deva</string>
+		<string>space.deva</string>
+		<string>nbspace.deva</string>
 		<string>space</string>
 		<string>nbspace</string>
+		<string>zerowidthjoiner</string>
+		<string>zerowidthnonjoiner</string>
+		<string>.notdef</string>
 		<string>cent</string>
 		<string>currency</string>
 		<string>dollar</string>
@@ -600,6 +1362,22 @@
 		<string>approxequal</string>
 		<string>asciitilde</string>
 		<string>bulletoperator</string>
+		<string>approxequal.case</string>
+		<string>asciitilde.case</string>
+		<string>bulletoperator.case</string>
+		<string>divide.case</string>
+		<string>equal.case</string>
+		<string>greater.case</string>
+		<string>greaterequal.case</string>
+		<string>infinity.case</string>
+		<string>less.case</string>
+		<string>lessequal.case</string>
+		<string>logicalnot.case</string>
+		<string>minus.case</string>
+		<string>multiply.case</string>
+		<string>notequal.case</string>
+		<string>plus.case</string>
+		<string>plusminus.case</string>
 		<string>divide</string>
 		<string>divisionslash</string>
 		<string>equal</string>
@@ -633,6 +1411,16 @@
 		<string>northWestArrow</string>
 		<string>leftRightArrow</string>
 		<string>upDownArrow</string>
+		<string>upArrow.case</string>
+		<string>northEastArrow.case</string>
+		<string>rightArrow.case</string>
+		<string>southEastArrow.case</string>
+		<string>downArrow.case</string>
+		<string>southWestArrow.case</string>
+		<string>leftArrow.case</string>
+		<string>northWestArrow.case</string>
+		<string>leftRightArrow.case</string>
+		<string>upDownArrow.case</string>
 		<string>dottedCircle</string>
 		<string>lozenge</string>
 		<string>reversedRotatedFloralHeartBullet</string>
@@ -642,6 +1430,7 @@
 		<string>pointingindexupwhite</string>
 		<string>pointingindexrightwhite</string>
 		<string>pointingindexdownwhite</string>
+		<string>wheelOfDharma</string>
 		<string>curvedStemParagraphSignOrnament</string>
 		<string>floralHeart</string>
 		<string>rotatedFloralHeartBullet</string>
@@ -661,10 +1450,17 @@
 		<string>numero</string>
 		<string>asciicircum</string>
 		<string>ampersand.case</string>
+		<string>asciicircum.case</string>
 		<string>dagger</string>
 		<string>daggerdbl</string>
+		<string>leftFacingSvasti</string>
+		<string>leftFacingSvastiWithDots</string>
 		<string>minute</string>
+		<string>rightFacingSvasti</string>
+		<string>rightFacingSvastiWithDots</string>
 		<string>second</string>
+		<string>avagraha-deva</string>
+		<string>om-deva</string>
 		<string>acute</string>
 		<string>breve</string>
 		<string>caron</string>
@@ -683,7 +1479,14 @@
 		<string>ring</string>
 		<string>tilde</string>
 		<string>commaaccent</string>
+		<string>apostrophemod</string>
 		<string>visarga-deva</string>
+		<string>spacingCandraBindu-deva</string>
+		<string>candraBinduHalant-deva</string>
+		<string>dblcandraBinduHalant-deva</string>
+		<string>candraBinduTwo-deva</string>
+		<string>candraBinduThree-deva</string>
+		<string>candraBinduAvagraha-deva</string>
 		<string>uMatra-deva</string>
 		<string>uuMatra-deva</string>
 		<string>rVocalicMatra-deva</string>
@@ -694,17 +1497,19 @@
 		<string>candraBindu-deva</string>
 		<string>eShortMatra-deva</string>
 		<string>eMatra-deva</string>
-		<string>eMatra_anusvara-deva</string>
-		<string>eMatra_reph-deva</string>
 		<string>eMatra_reph_anusvara-deva</string>
 		<string>aiMatra-deva</string>
-		<string>aiMatra_Anusvara-deva</string>
+		<string>aiMatra_eCandraMatra-deva</string>
+		<string>aiMatra_candraBindu-deva</string>
+		<string>aiMatra_anusvara-deva</string>
 		<string>aiMatra_reph-deva</string>
 		<string>aiMatra_reph_anusvara-deva</string>
 		<string>anusvara-deva</string>
 		<string>halant-deva</string>
 		<string>nukta-deva</string>
 		<string>reph-deva</string>
+		<string>reph_eCandraMatra-deva</string>
+		<string>reph_candraBindu-deva</string>
 		<string>reph_anusvara-deva</string>
 		<string>rakar-deva</string>
 		<string>rakar_uMatra-deva</string>
@@ -719,7 +1524,45 @@
 		<string>grave-deva</string>
 		<string>acute-deva</string>
 		<string>reph-deva.loclMAR</string>
+		<string>reph-deva.tall</string>
+		<string>eMatra_anusvara-deva</string>
+		<string>eMatra_reph-deva</string>
+		<string>tta-headless-deva</string>
+		<string>ttha-headless-deva</string>
+		<string>wMatra-deva</string>
 		<string>hacek</string>
+		<string>velanti-deva</string>
+		<string>velanti-deva.02</string>
+		<string>velanti-deva.04</string>
+		<string>velanti-deva.05</string>
+		<string>velanti-deva.06</string>
+		<string>velanti-deva.07</string>
+		<string>velanti-deva.08</string>
+		<string>velanti-deva.09</string>
+		<string>velanti-deva.10</string>
+		<string>velanti-deva.11</string>
+		<string>velanti-deva.12</string>
+		<string>velanti-deva.13</string>
+		<string>velanti-deva.14</string>
+		<string>velanti-deva.15</string>
+		<string>velanti-deva.16</string>
+		<string>velanti-deva.17</string>
+		<string>velanti-deva.18</string>
+		<string>velanti-deva.19</string>
+		<string>velanti-deva.20</string>
+		<string>velanti-deva.21</string>
+		<string>velanti-deva.22</string>
+		<string>velanti-deva.23</string>
+		<string>velanti-deva.24</string>
+		<string>velanti-deva.25</string>
+		<string>velanti-deva.26</string>
+		<string>velanti-deva.27</string>
+		<string>velanti-deva.28</string>
+		<string>velanti-deva.29</string>
+		<string>velanti-deva.30</string>
+		<string>velanti-deva.01</string>
+		<string>velanti-deva.03</string>
+		<string>stem-deva</string>
 	</array>
 </dict>
 </plist>

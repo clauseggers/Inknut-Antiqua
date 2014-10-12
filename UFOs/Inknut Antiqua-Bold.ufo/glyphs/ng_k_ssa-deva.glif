@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="ng_k_ssa-deva" format="1">
+  <advance width="969"/>
+  <outline>
+    <contour>
+      <point x="28" y="71"/>
+      <point x="-44" y="3"/>
+      <point x="-44" y="-65" type="curve" smooth="yes"/>
+      <point x="-44" y="-175"/>
+      <point x="86" y="-239"/>
+      <point x="275" y="-333" type="curve"/>
+      <point x="319" y="-269" type="line"/>
+      <point x="199" y="-207"/>
+      <point x="172" y="-179"/>
+      <point x="172" y="-103" type="curve" smooth="yes"/>
+      <point x="172" y="-72"/>
+      <point x="181" y="-54"/>
+      <point x="202" y="-54" type="curve" smooth="yes"/>
+      <point x="217" y="-54"/>
+      <point x="231" y="-74"/>
+      <point x="231" y="-102" type="curve" smooth="yes"/>
+      <point x="231" y="-234"/>
+      <point x="-82" y="-306"/>
+      <point x="-83" y="-487" type="curve" smooth="yes"/>
+      <point x="-82" y="-617"/>
+      <point x="130" y="-745"/>
+      <point x="360" y="-745" type="curve" smooth="yes"/>
+      <point x="455" y="-745"/>
+      <point x="512" y="-690"/>
+      <point x="514" y="-634" type="curve" smooth="yes"/>
+      <point x="513" y="-531"/>
+      <point x="370" y="-429"/>
+      <point x="277" y="-429" type="curve" smooth="yes"/>
+      <point x="180" y="-429"/>
+      <point x="194" y="-571"/>
+      <point x="231" y="-662" type="curve"/>
+      <point x="282" y="-588" type="line"/>
+      <point x="205" y="-653"/>
+      <point x="131" y="-602"/>
+      <point x="129" y="-536" type="curve" smooth="yes"/>
+      <point x="126" y="-429"/>
+      <point x="426" y="-314"/>
+      <point x="429" y="-190" type="curve" smooth="yes"/>
+      <point x="430" y="-51"/>
+      <point x="262" y="71"/>
+      <point x="132" y="71" type="curve" smooth="yes"/>
+    </contour>
+    <contour>
+      <point x="210" y="-691" type="line"/>
+      <point x="523" y="-944" type="line"/>
+      <point x="580" y="-884" type="line"/>
+      <point x="272" y="-636" type="line"/>
+    </contour>
+    <contour>
+      <point x="531" y="-276"/>
+      <point x="474" y="-288"/>
+      <point x="404" y="-288" type="curve" smooth="yes"/>
+      <point x="366" y="-288"/>
+      <point x="325" y="-273"/>
+      <point x="268" y="-253" type="curve"/>
+      <point x="254" y="-309" type="line"/>
+      <point x="425" y="-446" type="line"/>
+      <point x="442" y="-449"/>
+      <point x="459" y="-451"/>
+      <point x="476" y="-451" type="curve" smooth="yes"/>
+      <point x="553" y="-451"/>
+      <point x="629" y="-451"/>
+      <point x="774" y="-376" type="curve"/>
+      <point x="774" y="-298" type="line"/>
+      <point x="607" y="-226" type="line"/>
+    </contour>
+    <contour>
+      <point x="592" y="171" type="line"/>
+      <point x="592" y="-590" type="line"/>
+      <point x="542" y="-655" type="line"/>
+      <point x="714" y="-745" type="line"/>
+      <point x="792" y="-745" type="line"/>
+      <point x="792" y="171" type="line"/>
+    </contour>
+    <component base="ng-deva.top"/>
+    <contour>
+      <point x="596" y="-259" type="move" name="leg"/>
+    </contour>
+    <contour>
+      <point x="592" y="-695" type="move" name="bottom"/>
+    </contour>
+    <contour>
+      <point x="611" y="-363" type="move" name="leg-low"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+      <integer>8</integer>
+      <key>public.markColor</key>
+      <string>0.5,0.09,0.79,1</string>
+    </dict>
+  </lib>
+</glyph>

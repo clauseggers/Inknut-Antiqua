@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="m_b_ya-deva" format="1">
+  <advance width="1478"/>
+  <outline>
+    <component base="m-deva.short"/>
+    <component base="b-deva" xOffset="376"/>
+    <component base="ya-deva" xOffset="746"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+      <integer>5</integer>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>
