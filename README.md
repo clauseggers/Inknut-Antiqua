@@ -6,9 +6,11 @@ The Inknut (Terminalia chebula) called »harad« in Hindi, is a nut-like fruit t
 
 ## Supported languages
 
-Inknut Antiqua supports the following languages using the Latin script: Afrikaans, Albanian, Asu, Basque, Bemba, Bena, Bosnian, Catalan, Chiga, Congo Swahili, Cornish, Croatian, Czech, Danish, Dutch, English, Estonian, Faroese, Filipino, Finnish, French, Galician, Ganda, German, Gusii, Hungarian, Icelandic, Indonesian, Irish, Italian, Jola-Fonyi, Kabuverdianu, Kalenjin, Kinyarwanda, Latvian, Lithuanian, Luo, Luyia, Machame, Makhuwa-Meetto, Makonde, Malagasy, Malay, Maltese, Manx, Morisyen, North Ndebele, Norwegian Bokmål, Norwegian Nynorsk, Nyankole, Nyankat, Oromo, Polish, Portuguese, Romanian, Romansh, Rombo, Rundi, Rwa, Samburu, Sango, Sangu, Sena, Shambala, Shona, Slovak, Slovenian, Soga, Somali, Spanish, Swahili, Swedish, Swiss German, Taita, Teso, Turkmen, Vunjo, Welsh, and Zulu.
+**Inknut Antiqua supports the following languages using the Latin script**
+Afrikaans, Albanian, Asu, Basque, Bemba, Bena, Bosnian, Catalan, Chiga, Congo Swahili, Cornish, Croatian, Czech, Danish, Dutch, English, Estonian, Faroese, Filipino, Finnish, French, Galician, Ganda, German, Gusii, Hungarian, Icelandic, Indonesian, Irish, Italian, Jola-Fonyi, Kabuverdianu, Kalenjin, Kinyarwanda, Latvian, Lithuanian, Luo, Luyia, Machame, Makhuwa-Meetto, Makonde, Malagasy, Malay, Maltese, Manx, Morisyen, North Ndebele, Norwegian Bokmål, Norwegian Nynorsk, Nyankole, Nyankat, Oromo, Polish, Portuguese, Romanian, Romansh, Rombo, Rundi, Rwa, Samburu, Sango, Sangu, Sena, Shambala, Shona, Slovak, Slovenian, Soga, Somali, Spanish, Swahili, Swedish, Swiss German, Taita, Teso, Turkmen, Vunjo, Welsh, and Zulu.
 
-Inknut Antiqua supports the following languages using the Devanagari script: Bodo, Dogri, Goan Konkani, Hindi, Kashmiri, Maharashtrian Konkani, Maithili, Marathi, Nepali, Sanskrit, Santhali, and Sindhi.
+**Inknut Antiqua supports the following languages using the Devanagari script**
+Bodo, Dogri, Goan Konkani, Hindi, Kashmiri, Maharashtrian Konkani, Maithili, Marathi, Nepali, Sanskrit, Santhali, and Sindhi.
 
 Inknut Antiqua is designed by **[Claus Eggers Sørensen](http://forthehearts.net/)** in 2014, and is published under the [SIL Open Font License Version 1.1](https://github.com/clauseggers/Inknut-Antiqua/blob/master/OFL.txt).
 
