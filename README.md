@@ -10,6 +10,6 @@ Inknut Antiqua supports the following languages using the Latin script: Afrikaan
 
 Inknut Antiqua supports the following languages using the Devanagari script: Bodo, Dogri, Goan Konkani, Hindi, Kashmiri, Maharashtrian Konkani, Maithili, Marathi, Nepali, Sanskrit, Santhali, and Sindhi.
 
-Inknut Antiqua is designed by **[Claus Eggers Sørensen](http://forthehearts.net/)** in 2014, and is published under the **![SIL Open Font License Version 1.1](https://raw.githubusercontent.com/clauseggers/Inknut-Antiqua/blob/master/OFL.txt)**.
+Inknut Antiqua is designed by **[Claus Eggers Sørensen](http://forthehearts.net/)** in 2014, and is published under the **![SIL Open Font License Version 1.1](https://raw.githubusercontent.com/clauseggers/Inknut-Antiqua/master/OFL.txt)**.
 
-You will find the UFOs of the masters in the  **![UFOs](https://raw.githubusercontent.com/clauseggers/Inknut-Antiqua/tree/master/UFOs)** folder, and a web-specimen with CFF-OTF fonts in the folder **![Fonts & Specimen](https://raw.githubusercontent.com/clauseggers/Inknut-Antiqua/blob/master/Fonts%20%26%20Specimen/Inknut%20Antiqua%20SPECIMEN%20FINAL.html)**. Please use Firefox to view this specimen, as only Firefox support localised text.
+You will find the UFOs of the masters in the  **![UFOs](https://raw.githubusercontent.com/clauseggers/Inknut-Antiqua/master/UFOs)** folder, and a web-specimen with CFF-OTF fonts in the folder **![Fonts & Specimen](https://raw.githubusercontent.com/clauseggers/Inknut-Antiqua/master/Fonts%20%26%20Specimen/Inknut%20Antiqua%20SPECIMEN%20FINAL.html)**. Please use Firefox to view this specimen, as only Firefox support localised text.
