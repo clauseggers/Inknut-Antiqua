@@ -29,7 +29,7 @@ code = "space nbspace";
 name = Space;
 }
 );
-copyright = "Copyright (c) 2014 by Claus Eggers S\U00F8rensen (es@forthehearts.net), with Reserved Font Name \U2018Inknut\U2019 and 'Inknut Antiqua'.";
+copyright = "Copyright (c) 2014 by Claus Eggers S\U00F8rensen (es@forthehearts.net)";
 customParameters = (
 {
 name = openTypeOS2VendorID;
