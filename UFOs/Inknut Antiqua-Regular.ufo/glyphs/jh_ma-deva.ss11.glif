@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="jh_ma-deva.ss11" format="1">
+  <advance width="1362"/>
+  <outline>
+    <contour>
+      <point x="643" y="518" type="line"/>
+      <point x="643" y="418" type="line"/>
+      <point x="794" y="418" type="line" smooth="yes"/>
+      <point x="901" y="418"/>
+      <point x="944" y="388"/>
+      <point x="1059" y="298" type="curve"/>
+      <point x="1089" y="336" type="line"/>
+      <point x="866" y="510" type="line"/>
+      <point x="827" y="517"/>
+      <point x="788" y="518"/>
+      <point x="768" y="518" type="curve" smooth="yes"/>
+    </contour>
+    <component base="na-deva.low" xOffset="684"/>
+    <component base="jh-deva.high.ss11"/>
+    <contour>
+      <point x="242" y="78" type="move" name="nukta"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+      <integer>7</integer>
+      <key>public.markColor</key>
+      <string>0.18,0.16,0.78,1</string>
+    </dict>
+  </lib>
+</glyph>
