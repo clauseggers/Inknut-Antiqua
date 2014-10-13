@@ -10,22 +10,24 @@
 	<string>Copyright (c) 2014 by Claus Eggers Sørensen (es@forthehearts.net).</string>
 	<key>descender</key>
 	<integer>-254</integer>
+	<key>description</key>
+	<string>»Inknut Antiqua« is an Antiqua typeface for litterature and long-form text. It is designed to evoke Venetian incunabula and humanist manuscripts. It comes with a complement of typographical sorts and OpenType features for the purpose. The proportions of Inknut Antiqua make it well suited for low-resolution screens.</string>
 	<key>familyName</key>
 	<string>Inknut Antiqua</string>
 	<key>fsType</key>
 	<array>
 		<integer>3</integer>
 	</array>
+	<key>license</key>
+	<string>This Font Software is licensed under the SIL Open Font License Version 1.1. This license is available with a FAQ at http://scripts.sil.org/OFL</string>
+	<key>licenseURL</key>
+	<string>http://scripts.sil.org/OFL</string>
 	<key>openTypeHeadCreated</key>
 	<string>2014/09/29 16:52:40</string>
 	<key>openTypeNameDesigner</key>
 	<string>Claus Eggers Sørensen</string>
 	<key>openTypeNameDesignerURL</key>
 	<string>http://www.forthehearts.net</string>
-	<key>openTypeNameLicense</key>
-	<string>This Font Software is licensed under the SIL Open Font License Version 1.1. This license is available with a FAQ at http://scripts.sil.org/OFL</string>
-	<key>openTypeNameLicenseURL</key>
-	<string>http://scripts.sil.org/OFL</string>
 	<key>openTypeNameManufacturer</key>
 	<string>Claus Eggers Sørensen</string>
 	<key>openTypeNameManufacturerURL</key>
@@ -34,8 +36,6 @@
 	<string>Inknut Antiqua</string>
 	<key>openTypeNamePreferredSubfamilyName</key>
 	<string>Light</string>
-	<key>openTypeOS2VendorID</key>
-	<string>FTH</string>
 	<key>openTypeOS2WeightClass</key>
 	<integer>300</integer>
 	<key>openTypeOS2WidthClass</key>
@@ -76,6 +76,8 @@
 	<string>Inknut and Inknut Antiqua are trademarks of Claus Eggers Sørensen.</string>
 	<key>unitsPerEm</key>
 	<integer>1000</integer>
+	<key>vendorID</key>
+	<string>FTH</string>
 	<key>versionMajor</key>
 	<integer>1</integer>
 	<key>versionMinor</key>
