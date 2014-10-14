@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="sh_ya-deva" format="1">
-  <advance width="1172"/>
+  <advance width="1182"/>
   <outline>
     <component base="sh-deva.high"/>
-    <component base="ya-deva" xOffset="440"/>
+    <component base="ya-deva" xOffset="450"/>
     <contour>
-      <point x="533" y="399" type="move" name="leg"/>
+      <point x="577" y="399" type="move" name="leg"/>
     </contour>
   </outline>
   <lib>

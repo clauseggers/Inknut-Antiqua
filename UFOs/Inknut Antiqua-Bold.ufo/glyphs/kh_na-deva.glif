@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="kh_na-deva" format="1">
-  <advance width="1802"/>
+  <advance width="1812"/>
   <outline>
     <component base="kh-deva.long"/>
-    <component base="na-deva" xOffset="997"/>
+    <component base="na-deva" xOffset="1007"/>
   </outline>
   <lib>
     <dict>

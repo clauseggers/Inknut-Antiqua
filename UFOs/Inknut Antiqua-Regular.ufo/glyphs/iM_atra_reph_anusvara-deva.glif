@@ -4,7 +4,7 @@
   <outline>
     <component base="iMatra-deva"/>
     <component base="reph-deva.tall" xOffset="-144"/>
-    <component base="anusvara-deva" xOffset="-308"/>
+    <component base="anusvara-deva" xOffset="72" yOffset="391"/>
   </outline>
   <lib>
     <dict>

@@ -6,6 +6,9 @@
     <component base="eCandraMatra-deva"/>
     <component base="anusvara-deva" xOffset="206" yOffset="184"/>
     <contour>
+      <point x="40" y="1141" type="move" name="_left"/>
+    </contour>
+    <contour>
       <point x="276" y="786" type="move" name="_top"/>
     </contour>
   </outline>

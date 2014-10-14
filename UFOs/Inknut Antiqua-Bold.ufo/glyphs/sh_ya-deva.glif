@@ -5,7 +5,7 @@
     <component base="sh-deva.high"/>
     <component base="ya-deva" xOffset="590"/>
     <contour>
-      <point x="724" y="422" type="move" name="leg"/>
+      <point x="698" y="422" type="move" name="leg"/>
     </contour>
   </outline>
   <lib>

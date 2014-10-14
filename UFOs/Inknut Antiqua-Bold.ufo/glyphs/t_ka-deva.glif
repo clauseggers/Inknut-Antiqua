@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="t_ka-deva" format="1">
-  <advance width="1398"/>
+  <advance width="1408"/>
   <outline>
     <component base="t-deva.short"/>
-    <component base="ka-deva" xOffset="321"/>
+    <component base="ka-deva" xOffset="331"/>
   </outline>
   <lib>
     <dict>

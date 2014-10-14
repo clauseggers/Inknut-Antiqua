@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="eMatra-deva" format="1">
-  <advance width="600"/>
+  <advance width="266"/>
   <unicode hex="0947"/>
   <outline>
     <contour>
@@ -26,10 +26,13 @@
       <point x="296" y="786" type="move" name="top"/>
     </contour>
     <contour>
-      <point x="-235" y="1185" type="move" name="_chandraBindu"/>
+      <point x="310" y="786" type="move" name="_top"/>
     </contour>
     <contour>
-      <point x="310" y="786" type="move" name="_top"/>
+      <point x="182" y="1158" type="move" name="left"/>
+    </contour>
+    <contour>
+      <point x="-235" y="1185" type="move" name="_chandraBindu"/>
     </contour>
   </outline>
 </glyph>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="dblcandraBinduHalant-deva" format="1">
-  <advance width="1514"/>
+  <advance width="1494"/>
   <unicode hex="A8F4"/>
   <outline>
-    <component base="candraBindu-deva" xOffset="300" yOffset="-320"/>
-    <component base="candraBindu-deva" xOffset="300" yOffset="263"/>
-    <component base="eMatra-deva" xOffset="314" yOffset="846"/>
+    <component base="eMatra-deva" xOffset="770" yOffset="-1280"/>
+    <component base="spacingCandraBindu-deva" yOffset="-527"/>
+    <component base="spacingCandraBindu-deva" yOffset="3"/>
   </outline>
   <lib>
     <dict>

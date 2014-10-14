@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="s_t_va-deva" format="1">
-  <advance width="1667"/>
+  <advance width="1677"/>
   <outline>
     <component base="s-deva.short2"/>
     <component base="t-deva.short" xOffset="597"/>
-    <component base="va-deva" xOffset="918"/>
+    <component base="va-deva" xOffset="928"/>
   </outline>
   <lib>
     <dict>

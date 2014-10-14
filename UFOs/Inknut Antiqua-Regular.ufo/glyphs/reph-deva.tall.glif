@@ -28,10 +28,13 @@
       <point x="344" y="1256" type="curve" smooth="yes"/>
     </contour>
     <contour>
+      <point x="262" y="1136" type="move" name="right"/>
+    </contour>
+    <contour>
       <point x="289" y="786" type="move" name="_imatra"/>
     </contour>
     <contour>
-      <point x="-94" y="786" type="move" name="top"/>
+      <point x="286" y="1177" type="move" name="top"/>
     </contour>
     <contour>
       <point x="425" y="961" type="move" name="anusvara"/>
@@ -40,7 +43,7 @@
       <point x="282" y="786" type="move" name="_top"/>
     </contour>
     <contour>
-      <point x="262" y="1136" type="move" name="right"/>
+      <point x="369" y="959" type="move" name="left"/>
     </contour>
   </outline>
 </glyph>

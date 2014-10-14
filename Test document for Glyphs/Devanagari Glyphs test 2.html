@@ -85,31 +85,17 @@ Chandas font represents Southern (most commonly used today) style of Devanagari 
 <body>
 <div id="bodytext">
 
-CES [11.10.14]</br>
-When a nukta is in the syllable, the conjuncts containing ra (conjuncts with the ‘leg’) are not rendered with a nukta, but rather with the consonant, a nukta, and a rakar.</br></br>
+CES [14.10.14]</br>
+The sequence ra+halant+zerowidthjoiner is no longer rendered correctly with the ‘eyelash’ ra. The first cluster is without the ZWJ, and the second with the ZWJ. The second should render the ‘eyelash’ ra.</br></br>
+Also the Marathi string somehow manages to switch the order of the ya and the ra-deva.loclMR, and then delete the space character between the clusters. Also for Marathi *both* clusters should have the ra+halant substituted with the ‘eyelash’ ra.</br></br>
+<span class="Glyphs">DFLT र्य र्‍य र्त्र्प</span></br>
+<span class="lang" lang="mr"><span class="Glyphs">MR र्य र्‍य र्त्र्प</span></br></span>
+<span class="AdobeDevanagari">DFLT र्य र्‍य र्त्र्प</span></br>
+<span class="lang" lang="mr"><span class="AdobeDevanagari">MR र्य र्‍य र्त्र्प</span></br></span>
 
-<span class="Glyphs">DFLT ख्र ख़्र ख़्र ज्र ज़्र ज़्र ग्र ग़्र ग़्र य्र य़्र य़्र </span></br>
-<span class="lang" lang="mr"><span class="Glyphs">MR ख्र ख़्र ख़्र ज्र ज़्र ज़्र ग्र ग़्र ग़्र य्र य़्र य़्र </span></br></span>
-<span class="ModelSouthern">ख्र ख़्र ख़्र ज्र ज़्र ज़्र ग्र ग़्र ग़्र य्र य़्र य़्र </span></br>
-<hr>
-
-FIXED!</br>
-Conjuncts d_bha_ra, d_ba_ra, and d_va_ra not rendered. [29.09.14]</br>
-CES [05.10.14]: Solution follows:</br>
-You have made RKRF add all those conjunct that end in ra-deva to the Rkrf1 lookup. Since RKRF is fired before CJCT you need to add conjuncts resulting from the ‘Rkrf1’ lookup to the CJCT.
-</br>
-Example for the sequence ‘da-deva halant-deva bha-deva halant-deva ra-deva’:</br>
-First the sequence ‘bha-deva halant-deva ra-deva’ is made into a conjunct in the RKRF feature, in the first lookup ‘Rkrf1’:</br>
-	sub bha-deva halant-deva ra-deva by bha_ra-deva;</br>
-Then in the CJCT the sequence ‘da-deva halant-deva bha_ra-deva’ *should* be turned into the conjunct d_bha_ra-deva, like so:</br>
-	sub da-deva halant-deva bha_ra-deva by d_bha_ra-deva;</br>
-</br>
-Same deal for all occurences of these ra-conjuncts made in the RKRF. Remember that in some cases, such as ‘bha_ra_ya-deva’, you have to do a full substitution (including halants) in CJCT:</br>
-	sub bha_ra-deva halant-deva ya-deva by bha_ra_ya-deva;</br>
-</br>
-<span class="Glyphs">द्भ द्भ्र द्ब द्ब्र द्व्र </span></br>
-<span class="ModelSouthern">द्भ द्भ्र द्ब द्ब्र द्व्र </span></br>
-<hr>
+The half-form of the conjunct ta_ra-deva is named t_r-deva, and since does not render I’m guessing it has the wrong name. Since ta_ra-deva is already taken for the full-form conjunct, what should the half-form then be called? [14.10.14]</br></br>
+<span class="Glyphs">र्य र्त्र्प ऱ्य </span></br>
+<span class="ModelNorthern">र्य र्त्र्प ऱ्य </span></br>
 
 CES [11.10.14] Georg it would appear that the fixes you made in regard to the use of ‘rakar’ made the fix underneath not work, so I added these strings of longer syllables to have something more structured to test. If you open this HTML-file in Sublime Text you get to see the individual characters of the Devanagari text-strings which is quite handy.</br></br>
 Half-forms of ra-conjuncts are not used. They should be used in the normal way half-forms and conjunct are listed in the ‘half’ and ‘cjct’ features.</br></br>
@@ -118,7 +104,8 @@ Exampel: ta-deva halant-deva ra-deva halant-deva pa-deva (त्र्प) shoul
 <span class="Glyphs">DFLT त् त्र त्र्प र्प्र र् र्त र्त्र र्त्र्प र्त्र्प्र</span></br>
 <span class="lang" lang="mr"><span class="Glyphs">MR त् त्र त्र्प र्प्र र् र्त र्त्र र्त्र्प र्त्र्प्र </span></br></span>
 <span class="ModelSouthern">DFLT त् त्र त्र्प र्प्र र् र्त र्त्र र्त्र्प र्त्र्प्र</span></br>
-<span class="AdobeDevanagari">DFLT त् त्र त्र्प र्प्र र् र्त र्त्र र्त्र्प र्त्र्प्र</span></br></br>
+<span class="AdobeDevanagari">DFLT त् त्र त्र्प र्प्र र् र्त र्त्र र्त्र्प र्त्र्प्र</span></br>
+<span class="lang" lang="mr"><span class="AdobeDevanagari">MR त् त्र त्र्प र्प्र र् र्त र्त्र र्त्र्प र्त्र्प्र </span></span></br></br>
 
 It would appear that a base-character + virama + ra should substitute the virama + ra with the rr-deva glyph. (CES: I need to find out if this is correct ortography or not something tells me it is, because the feature is in the font, but appears to be overridden by InDesign and Firefox.)</br></br>
 Conjunct ga_ra_ya-deva is not rendered, instead a ra with virama is.</br></br>
@@ -152,6 +139,32 @@ lookup Rphf_deva;</br></br>
 <span class="ModelNorthern">पर्‍ प्र्प पर्‍या ग्र्य द् र् </span></br>
 <span class="ModelSouthern">पर्‍ प्र्प पर्‍या ग्र्य द् र् </span></br>
 <span class="AdobeDevanagari">पर्‍ प्र्प पर्‍या ग्र्य द् र् </span></br>
+<hr>
+
+CES [11.10.14]</br>
+When a nukta is in the syllable, the conjuncts containing ra (conjuncts with the ‘leg’) are not rendered with a nukta, but rather with the consonant, a nukta, and a rakar.</br></br>
+
+<span class="Glyphs">DFLT ख्र ख़्र ख़्र ज्र ज़्र ज़्र ग्र ग़्र ग़्र य्र य़्र य़्र </span></br>
+<span class="lang" lang="mr"><span class="Glyphs">MR ख्र ख़्र ख़्र ज्र ज़्र ज़्र ग्र ग़्र ग़्र य्र य़्र य़्र </span></br></span>
+<span class="ModelSouthern">ख्र ख़्र ख़्र ज्र ज़्र ज़्र ग्र ग़्र ग़्र य्र य़्र य़्र </span></br>
+<hr>
+
+FIXED!</br>
+Conjuncts d_bha_ra, d_ba_ra, and d_va_ra not rendered. [29.09.14]</br>
+CES [05.10.14]: Solution follows:</br>
+You have made RKRF add all those conjunct that end in ra-deva to the Rkrf1 lookup. Since RKRF is fired before CJCT you need to add conjuncts resulting from the ‘Rkrf1’ lookup to the CJCT.
+</br>
+Example for the sequence ‘da-deva halant-deva bha-deva halant-deva ra-deva’:</br>
+First the sequence ‘bha-deva halant-deva ra-deva’ is made into a conjunct in the RKRF feature, in the first lookup ‘Rkrf1’:</br>
+	sub bha-deva halant-deva ra-deva by bha_ra-deva;</br>
+Then in the CJCT the sequence ‘da-deva halant-deva bha_ra-deva’ *should* be turned into the conjunct d_bha_ra-deva, like so:</br>
+	sub da-deva halant-deva bha_ra-deva by d_bha_ra-deva;</br>
+</br>
+Same deal for all occurences of these ra-conjuncts made in the RKRF. Remember that in some cases, such as ‘bha_ra_ya-deva’, you have to do a full substitution (including halants) in CJCT:</br>
+	sub bha_ra-deva halant-deva ya-deva by bha_ra_ya-deva;</br>
+</br>
+<span class="Glyphs">द्भ द्भ्र द्ब द्ब्र द्व्र </span></br>
+<span class="ModelSouthern">द्भ द्भ्र द्ब द्ब्र द्व्र </span></br>
 <hr>
 
 CES [07.10.14]: Georg you didn’t include this bit of feature-code in the auto-feature generator. If I add it manually, then the rephs are not attached to the ‘top’ anchor. The ‘top’ anchor is placed in the stem of the aaMatra which is the stem-component in rVocalic and rrVocalic, so that should work as in all the rest of the glyphs using the aaMatra component…</br>
@@ -206,30 +219,27 @@ Test of SS01 which switches relevant glyphs from Southern style to Northern styl
 <span class="ModelNorthern">DFLT ऄ ॲ अ आ ऋ ॠ ॳ ॶ ॷ झ ण ल </span></br>
 <hr>
 
-The special glyphs for da_uuMatra-deva, (ra_uuMatra-deva) and ha_uuMatra-deva are not used in combination with half-forms/conjuncts – or the wrong anchor is used. Please see ‘Notes on what needs to be fixed.txt’ on this anchor issue. [28.09.14]</br>
+The special glyphs for da_uuMatra-deva, (ra_uuMatra-deva) and ha_uuMatra-deva are not used in combination with half-forms/conjuncts – or the wrong anchor is used. Please see ‘Notes on what needs to be fixed.txt’ on this anchor issue. [28.09.14]</br></br>
 <span class="Glyphs">दू न्दू हू न्हू </span></br>
 <span class="ModelNorthern">दू न्दू हू न्हू </span></br>
 <hr>
 
-What do we do about collisions like this below? A calt GSUB to a seperate glyph? [27.09.14]</br></br>
+LARGELY FIXED… I have made several changes to the CCMP and ABVS that in concert with legated matras solve most situations.[14.10.14]</br></br>
+What do we do about collisions like this below? A calt GSUB to a separate glyph? [27.09.14]</br></br>
 <span class="Glyphs">उँदै यौँ हीँ </span></br>
 <span class="ModelNorthern">उँदै यौँ हीँ </span></br>
 <hr>
 
-Also the calculation of Velanti (iMatra- and iiMatra ‘bows’) seems to be off the mark in some rare instances. I have cleaned up the components and anchors in Inknut, but the below examples are still not correct for some reason (could it be that Glyphs does not iterate through the nested components to find the ‘top’ anchor?) [27.09.14]</br></br>
+The calculation of Velanti (iMatra- and iiMatra ‘bows’) seems to be off the mark in some rare instances. I have cleaned up the components and anchors in Inknut, but the below examples are still not correct for some reason (could it be that Glyphs does not iterate through the nested components to find the ‘top’ anchor?) [27.09.14]</br></br>
 <span class="Glyphs">ड़ी पि ष्ट्री टी </span></br>
 <span class="ModelNorthern">ड़ी पि ष्ट्री टी </span></br>
 <hr>
 
+FIXED!</br>
 ss_pa_ra-deva conjunct not active in Indesign CS6 and Firefox. Does work in Safari. [26.09.14]</br></br>
 <span class="Glyphs">No lang ष्प्र </span></br>
 <span class="lang" lang="sa"><span class="Glyphs">Sanskrit ष्प्र </span></br>
 <span class="ModelNorthern">Sanskrit ष्प्र </span></span></br>
-<hr>
-
-rr_ya-deva conjunct not active. I tried naming it r_ya-deva and ra_ya-deva but they all fail to render. [25.09.14]</br></br>
-<span class="Glyphs">र्‍य </span></br>
-<span class="ModelNorthern">र्‍य </span></br>
 <hr>
 
 FIXED!</br>
@@ -249,18 +259,13 @@ The kerning also fails in InDesign CS6 if a language that uses Devanagari is set
 <span class="lang" lang="mr"><span class="Glyphs">Marathi ठीकाला परकारकहतहएउनका </span></span></br>
 <hr>
 
-Conjunct b_ja + nukta = b_za but here the j is misplaced in Glyphs *AND* the b_za conjunct is not rendered in the HTML, rather the half-forms are. [15.09.14]</br></br>
-GS: This do seem to be a problem with the other fonts, too. [24.09.14]</br></br>
-<span class="Glyphs">वब्ज ब़्ज </span>
-<span class="ModelNorthern">वब्ज ब़्ज </span></br>
-<span class="AdobeDevanagari">वब्ज ब़्ज </span></br>
-<hr>
-
+FIXED!</br>
 v_ra conjunct not enabled somewhere in the OT-features? [15.09.14]</br></br>
 FIXED: use syntax [… v_va_ra_v …]</br></br>
 <span class="Glyphs">व्र </span><span class="ModelNorthern">व्र </span></br>
 <hr>
 
+LARGELY FIXED… I have made several changes to the CCMP and ABVS that in concert with legated matras solve most situations.[14.10.14]</br></br>
 I have made the compound diacritics as separate glyphs, and I can see that they are in the CCMP feature, but they do not render, neither in InDesign nor in Firefox. Please refer to the last page of the InDesign test-document for more examples. [01.10.14]</br></br>
 GS: The only way I see is to make a precomposed glyph. [10.09.14]</br></br>
 CES: Trying to make these compound diacritics as components… [29.10.14]</br></br>

@@ -2,8 +2,8 @@
 <glyph name="reph_eCandraMatra-deva" format="1">
   <advance width="600"/>
   <outline>
-    <component base="reph-deva.tall"/>
-    <component base="eCandraMatra-deva" xOffset="-389"/>
+    <component base="reph-deva.low"/>
+    <component base="eCandraMatra-deva" xOffset="10" yOffset="252"/>
     <contour>
       <point x="281" y="786" type="move" name="_top"/>
     </contour>

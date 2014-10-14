@@ -5,6 +5,9 @@
   <outline>
     <component base="a-deva"/>
     <component base="aaMatra-deva" xOffset="1123"/>
+    <contour>
+      <point x="1222" y="786" type="move" name="top"/>
+    </contour>
   </outline>
   <lib>
     <dict>

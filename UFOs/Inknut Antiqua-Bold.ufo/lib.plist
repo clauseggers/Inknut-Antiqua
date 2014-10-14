@@ -1175,6 +1175,7 @@
 		<string>h-deva.up</string>
 		<string>q-deva</string>
 		<string>q-deva.short</string>
+		<string>r-deva</string>
 		<string>zero</string>
 		<string>one</string>
 		<string>two</string>
@@ -1343,10 +1344,12 @@
 		<string>danda-deva</string>
 		<string>dbldanda-deva</string>
 		<string>abbreviation-deva</string>
+		<string>highspacingdot-deva</string>
 		<string>space.deva</string>
 		<string>nbspace.deva</string>
 		<string>space</string>
 		<string>nbspace</string>
+		<string>zerowidthspace</string>
 		<string>zerowidthjoiner</string>
 		<string>zerowidthnonjoiner</string>
 		<string>.notdef</string>
@@ -1496,13 +1499,16 @@
 		<string>eCandraMatra-deva</string>
 		<string>candraBindu-deva</string>
 		<string>eShortMatra-deva</string>
+		<string>eShortMatra_eCandraMatra-deva</string>
+		<string>eShortMatra_candraBindu-deva</string>
 		<string>eMatra-deva</string>
+		<string>eMatra_eCandraMatra-deva</string>
+		<string>eMatra_candraBindu-deva</string>
 		<string>eMatra_reph_anusvara-deva</string>
 		<string>aiMatra-deva</string>
 		<string>aiMatra_eCandraMatra-deva</string>
 		<string>aiMatra_candraBindu-deva</string>
 		<string>aiMatra_anusvara-deva</string>
-		<string>aiMatra_reph-deva</string>
 		<string>aiMatra_reph_anusvara-deva</string>
 		<string>anusvara-deva</string>
 		<string>halant-deva</string>
@@ -1524,9 +1530,11 @@
 		<string>grave-deva</string>
 		<string>acute-deva</string>
 		<string>reph-deva.loclMAR</string>
+		<string>reph-deva.low</string>
 		<string>reph-deva.tall</string>
 		<string>eMatra_anusvara-deva</string>
 		<string>eMatra_reph-deva</string>
+		<string>aiMatra_reph-deva</string>
 		<string>tta-headless-deva</string>
 		<string>ttha-headless-deva</string>
 		<string>wMatra-deva</string>

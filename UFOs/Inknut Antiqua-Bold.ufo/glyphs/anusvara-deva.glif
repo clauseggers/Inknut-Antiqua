@@ -15,9 +15,6 @@
       <point x="143" y="1057" type="move" name="_anusvara"/>
     </contour>
     <contour>
-      <point x="40" y="1160" type="move" name="top"/>
-    </contour>
-    <contour>
       <point x="40" y="786" type="move" name="_top"/>
     </contour>
   </outline>

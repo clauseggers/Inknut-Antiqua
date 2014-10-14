@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="eShortMatra_candraBindu-deva" format="1">
+  <advance width="600"/>
+  <outline>
+    <component base="eShortMatra-deva"/>
+    <component base="candraBindu-deva" xOffset="118"/>
+    <contour>
+      <point x="310" y="786" type="move" name="_top"/>
+    </contour>
+  </outline>
+</glyph>

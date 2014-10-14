@@ -2,9 +2,9 @@
 <glyph name="reph_candraBindu-deva" format="1">
   <advance width="600"/>
   <outline>
-    <component base="reph-deva.tall"/>
-    <component base="eCandraMatra-deva" xOffset="-389"/>
-    <component base="anusvara-deva" xOffset="-183" yOffset="184"/>
+    <component base="reph-deva.low"/>
+    <component base="eCandraMatra-deva" xOffset="10" yOffset="252"/>
+    <component base="anusvara-deva" xOffset="216" yOffset="436"/>
     <contour>
       <point x="282" y="786" type="move" name="_top"/>
     </contour>

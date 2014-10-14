@@ -335,7 +335,7 @@
 		<key>@MMK_R_aaMatra-deva</key>
 		<integer>-40</integer>
 		<key>@MMK_R_c-deva</key>
-		<integer>-110</integer>
+		<integer>-80</integer>
 		<key>@MMK_R_colon.deva</key>
 		<integer>-20</integer>
 		<key>@MMK_R_dh-deva</key>
@@ -609,7 +609,7 @@
 		<key>@MMK_R_tta-deva</key>
 		<integer>-50</integer>
 		<key>@MMK_R_va-deva</key>
-		<integer>-50</integer>
+		<integer>-10</integer>
 	</dict>
 	<key>@MMK_L_s-deva.low</key>
 	<dict>
@@ -672,7 +672,9 @@
 		<key>@MMK_R_rr-deva.short</key>
 		<integer>131</integer>
 		<key>@MMK_R_va-deva</key>
-		<integer>30</integer>
+		<integer>40</integer>
+		<key>ka_ra-deva</key>
+		<integer>100</integer>
 	</dict>
 	<key>@MMK_L_th-deva.short</key>
 	<dict>

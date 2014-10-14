@@ -774,6 +774,10 @@
 	<string>eM_atra-deva.glif</string>
 	<key>eMatra_anusvara-deva</key>
 	<string>eM_atra_anusvara-deva.glif</string>
+	<key>eMatra_candraBindu-deva</key>
+	<string>eM_atra_candraB_indu-deva.glif</string>
+	<key>eMatra_eCandraMatra-deva</key>
+	<string>eM_atra_eC_andraM_atra-deva.glif</string>
 	<key>eMatra_reph-deva</key>
 	<string>eM_atra_reph-deva.glif</string>
 	<key>eMatra_reph_anusvara-deva</key>
@@ -782,6 +786,10 @@
 	<string>eS_hort-deva.glif</string>
 	<key>eShortMatra-deva</key>
 	<string>eS_hortM_atra-deva.glif</string>
+	<key>eShortMatra_candraBindu-deva</key>
+	<string>eS_hortM_atra_candraB_indu-deva.glif</string>
+	<key>eShortMatra_eCandraMatra-deva</key>
+	<string>eS_hortM_atra_eC_andraM_atra-deva.glif</string>
 	<key>eacute</key>
 	<string>eacute.glif</string>
 	<key>ecaron</key>
@@ -1114,6 +1122,8 @@
 	<string>halant-deva.glif</string>
 	<key>hbar</key>
 	<string>hbar.glif</string>
+	<key>highspacingdot-deva</key>
+	<string>highspacingdot-deva.glif</string>
 	<key>hungarumlaut</key>
 	<string>hungarumlaut.glif</string>
 	<key>hungarumlaut.case</key>
@@ -2246,6 +2256,8 @@
 	<string>quotesingle.deva.glif</string>
 	<key>r</key>
 	<string>r.glif</string>
+	<key>r-deva</key>
+	<string>r-deva.glif</string>
 	<key>r-deva.leg</key>
 	<string>r-deva.leg.glif</string>
 	<key>r-deva.leg-short</key>
@@ -2282,6 +2294,8 @@
 	<string>reph-deva.glif</string>
 	<key>reph-deva.loclMAR</key>
 	<string>reph-deva.loclM_A_R_.glif</string>
+	<key>reph-deva.low</key>
+	<string>reph-deva.low.glif</string>
 	<key>reph-deva.tall</key>
 	<string>reph-deva.tall.glif</string>
 	<key>reph_anusvara-deva</key>
@@ -2998,6 +3012,8 @@
 	<string>zerowidthjoiner.glif</string>
 	<key>zerowidthnonjoiner</key>
 	<string>zerowidthnonjoiner.glif</string>
+	<key>zerowidthspace</key>
+	<string>zerowidthspace.glif</string>
 	<key>zha-deva</key>
 	<string>zha-deva.glif</string>
 </dict>
