@@ -5,7 +5,7 @@
     <component base="y-deva.short"/>
     <component base="ya-deva" xOffset="405"/>
     <contour>
-      <point x="244" y="0" type="move" name="nukta"/>
+      <point x="233" y="0" type="move" name="nukta"/>
     </contour>
   </outline>
   <lib>

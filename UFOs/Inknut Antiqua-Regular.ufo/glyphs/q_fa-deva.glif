@@ -4,7 +4,7 @@
   <outline>
     <component base="q-deva.short"/>
     <component base="pha-deva" xOffset="667"/>
-    <component base="nukta-deva" xOffset="731" yOffset="215"/>
+    <component base="nukta-deva" xOffset="768" yOffset="175"/>
   </outline>
   <lib>
     <dict>

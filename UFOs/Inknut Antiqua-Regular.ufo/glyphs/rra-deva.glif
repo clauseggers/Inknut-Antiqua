@@ -5,6 +5,9 @@
   <outline>
     <component base="ra-deva"/>
     <component base="nukta-deva" xOffset="50" yOffset="137"/>
+    <contour>
+      <point x="202" y="-67" type="move" name="bottom"/>
+    </contour>
   </outline>
   <lib>
     <dict>

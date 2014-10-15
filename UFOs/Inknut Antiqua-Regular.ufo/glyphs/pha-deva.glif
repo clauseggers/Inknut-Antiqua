@@ -44,9 +44,6 @@
     <contour>
       <point x="416" y="399" type="move" name="leg"/>
     </contour>
-    <contour>
-      <point x="194" y="78" type="move" name="nukta"/>
-    </contour>
   </outline>
   <lib>
     <dict>

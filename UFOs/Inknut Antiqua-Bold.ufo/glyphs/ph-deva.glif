@@ -29,7 +29,7 @@
     </contour>
     <component base="pa-deva"/>
     <contour>
-      <point x="181" y="91" type="move" name="nukta"/>
+      <point x="282" y="-120" type="move" name="nukta"/>
     </contour>
   </outline>
 </glyph>

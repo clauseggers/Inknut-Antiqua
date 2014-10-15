@@ -27,7 +27,7 @@
     </contour>
     <component base="eShortMatra-deva" xOffset="-212"/>
     <contour>
-      <point x="102" y="786" type="move" name="_top"/>
+      <point x="98" y="786" type="move" name="_top"/>
     </contour>
   </outline>
 </glyph>

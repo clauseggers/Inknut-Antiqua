@@ -27,7 +27,7 @@
       <point x="556" y="786" type="line"/>
     </contour>
     <contour>
-      <point x="294" y="-120" type="move" name="nukta"/>
+      <point x="295" y="-120" type="move" name="nukta"/>
     </contour>
   </outline>
 </glyph>

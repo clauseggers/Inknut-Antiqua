@@ -1513,6 +1513,17 @@
 		<string>anusvara-deva</string>
 		<string>halant-deva</string>
 		<string>nukta-deva</string>
+		<string>nukta_uMatra-deva</string>
+		<string>nukta_uuMatra-deva</string>
+		<string>nukta_rVocalicMatra-deva</string>
+		<string>nukta_rrVocalicMatra-deva</string>
+		<string>nukta_lVocalicMatra-deva</string>
+		<string>nukta_llVocalicMatra-deva</string>
+		<string>nukta_rakar-deva</string>
+		<string>nukta_rakar_uMatra-deva</string>
+		<string>nukta_rakar_uuMatra-deva</string>
+		<string>nukta_ueMatra-deva</string>
+		<string>nukta_uueMatra-deva</string>
 		<string>reph-deva</string>
 		<string>reph_eCandraMatra-deva</string>
 		<string>reph_candraBindu-deva</string>
@@ -1532,6 +1543,8 @@
 		<string>reph-deva.loclMAR</string>
 		<string>reph-deva.low</string>
 		<string>reph-deva.tall</string>
+		<string>eShortMatra_reph-deva</string>
+		<string>eShortMatra_reph_anusvara-deva</string>
 		<string>eMatra_anusvara-deva</string>
 		<string>eMatra_reph-deva</string>
 		<string>aiMatra_reph-deva</string>

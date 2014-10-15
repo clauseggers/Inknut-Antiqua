@@ -55,7 +55,7 @@
       <point x="405" y="113" type="move" name="outstroke"/>
     </contour>
     <contour>
-      <point x="214" y="158" type="move" name="bottom"/>
+      <point x="214" y="0" type="move" name="bottom"/>
     </contour>
   </outline>
 </glyph>

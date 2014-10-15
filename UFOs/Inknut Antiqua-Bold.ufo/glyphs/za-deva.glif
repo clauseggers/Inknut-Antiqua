@@ -4,7 +4,10 @@
   <unicode hex="095B"/>
   <outline>
     <component base="ja-deva"/>
-    <component base="nukta-deva" xOffset="160" yOffset="-52"/>
+    <component base="nukta-deva" xOffset="160" yOffset="-85"/>
+    <contour>
+      <point x="646" y="0" type="move" name="bottom"/>
+    </contour>
   </outline>
   <lib>
     <dict>

@@ -67,7 +67,7 @@
       <point x="692" y="-53" type="move" name="halant"/>
     </contour>
     <contour>
-      <point x="110" y="-110" type="move" name="nukta"/>
+      <point x="86" y="-80" type="move" name="nukta"/>
     </contour>
     <contour>
       <point x="488" y="786" type="move" name="top"/>

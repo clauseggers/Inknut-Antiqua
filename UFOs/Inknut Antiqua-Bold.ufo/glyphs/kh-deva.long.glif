@@ -5,10 +5,7 @@
     <component base="ra-deva"/>
     <component base="v-deva.long" xOffset="587"/>
     <contour>
-      <point x="160" y="-81" type="move" name="nukta"/>
-    </contour>
-    <contour>
-      <point x="84" y="0" type="move" name="bottom"/>
+      <point x="292" y="-120" type="move" name="nukta"/>
     </contour>
   </outline>
   <lib>

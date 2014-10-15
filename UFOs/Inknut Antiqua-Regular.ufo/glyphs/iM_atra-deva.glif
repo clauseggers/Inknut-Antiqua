@@ -4,9 +4,9 @@
   <unicode hex="093F"/>
   <outline>
     <component base="iMatra_stem-deva"/>
-    <component base="velanti-deva" xOffset="-7"/>
+    <component base="velanti-deva" xOffset="180"/>
     <contour>
-      <point x="941" y="786" type="move" name="imatra"/>
+      <point x="881" y="786" type="move" name="imatra"/>
     </contour>
   </outline>
   <lib>

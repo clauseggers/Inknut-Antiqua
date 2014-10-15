@@ -7,6 +7,9 @@
     <contour>
       <point x="579" y="786" type="move" name="imatra"/>
     </contour>
+    <contour>
+      <point x="863" y="786" type="move" name="top"/>
+    </contour>
   </outline>
   <lib>
     <dict>

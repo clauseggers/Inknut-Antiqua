@@ -4,9 +4,12 @@
   <unicode hex="0940"/>
   <outline>
     <component base="aaMatra-deva"/>
-    <component base="velanti-deva" xOffset="-746"/>
+    <component base="velanti-deva" xOffset="-111"/>
     <contour>
       <point x="-597" y="786" type="move" name="iimatra"/>
+    </contour>
+    <contour>
+      <point x="326" y="786" type="move" name="top"/>
     </contour>
   </outline>
   <lib>

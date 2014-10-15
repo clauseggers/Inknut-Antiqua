@@ -12,7 +12,7 @@
     </contour>
     <component base="ll-deva"/>
     <contour>
-      <point x="701" y="786" type="move" name="top"/>
+      <point x="642" y="786" type="move" name="top"/>
     </contour>
   </outline>
   <lib>

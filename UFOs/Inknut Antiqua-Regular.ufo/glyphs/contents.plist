@@ -790,6 +790,10 @@
 	<string>eS_hortM_atra_candraB_indu-deva.glif</string>
 	<key>eShortMatra_eCandraMatra-deva</key>
 	<string>eS_hortM_atra_eC_andraM_atra-deva.glif</string>
+	<key>eShortMatra_reph-deva</key>
+	<string>eS_hortM_atra_reph-deva.glif</string>
+	<key>eShortMatra_reph_anusvara-deva</key>
+	<string>eS_hortM_atra_reph_anusvara-deva.glif</string>
 	<key>eacute</key>
 	<string>eacute.glif</string>
 	<key>ecaron</key>
@@ -1966,6 +1970,28 @@
 	<string>ntilde.glif</string>
 	<key>nukta-deva</key>
 	<string>nukta-deva.glif</string>
+	<key>nukta_lVocalicMatra-deva</key>
+	<string>nukta_lV_ocalicM_atra-deva.glif</string>
+	<key>nukta_llVocalicMatra-deva</key>
+	<string>nukta_llV_ocalicM_atra-deva.glif</string>
+	<key>nukta_rVocalicMatra-deva</key>
+	<string>nukta_rV_ocalicM_atra-deva.glif</string>
+	<key>nukta_rakar-deva</key>
+	<string>nukta_rakar-deva.glif</string>
+	<key>nukta_rakar_uMatra-deva</key>
+	<string>nukta_rakar_uM_atra-deva.glif</string>
+	<key>nukta_rakar_uuMatra-deva</key>
+	<string>nukta_rakar_uuM_atra-deva.glif</string>
+	<key>nukta_rrVocalicMatra-deva</key>
+	<string>nukta_rrV_ocalicM_atra-deva.glif</string>
+	<key>nukta_uMatra-deva</key>
+	<string>nukta_uM_atra-deva.glif</string>
+	<key>nukta_ueMatra-deva</key>
+	<string>nukta_ueM_atra-deva.glif</string>
+	<key>nukta_uuMatra-deva</key>
+	<string>nukta_uuM_atra-deva.glif</string>
+	<key>nukta_uueMatra-deva</key>
+	<string>nukta_uueM_atra-deva.glif</string>
 	<key>numbersign</key>
 	<string>numbersign.glif</string>
 	<key>numbersign.case</key>

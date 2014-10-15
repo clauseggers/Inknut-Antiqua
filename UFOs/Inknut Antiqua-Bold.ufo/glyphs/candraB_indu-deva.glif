@@ -9,7 +9,10 @@
       <point x="64" y="1158" type="move" name="_left"/>
     </contour>
     <contour>
-      <point x="324" y="786" type="move" name="_top"/>
+      <point x="327" y="1275" type="move" name="top"/>
+    </contour>
+    <contour>
+      <point x="327" y="786" type="move" name="_top"/>
     </contour>
   </outline>
   <lib>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="nukta_rVocalicMatra-deva" format="1">
+  <advance width="600"/>
+  <outline>
+    <component base="nukta-deva"/>
+    <component base="rVocalicMatra-deva" xOffset="222"/>
+    <contour>
+      <point x="140" y="-139" type="move" name="_nukta"/>
+    </contour>
+  </outline>
+</glyph>

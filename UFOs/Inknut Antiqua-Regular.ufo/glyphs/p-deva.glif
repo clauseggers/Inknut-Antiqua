@@ -32,7 +32,7 @@
       <point x="416" y="399" type="move" name="leg"/>
     </contour>
     <contour>
-      <point x="154" y="0" type="move" name="nukta"/>
+      <point x="231" y="38" type="move" name="nukta"/>
     </contour>
   </outline>
 </glyph>

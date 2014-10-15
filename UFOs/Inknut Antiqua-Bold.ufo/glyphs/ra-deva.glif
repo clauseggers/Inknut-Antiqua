@@ -46,7 +46,7 @@
       <point x="262" y="0" type="move" name="halant"/>
     </contour>
     <contour>
-      <point x="262" y="-120" type="move" name="nukta"/>
+      <point x="292" y="-120" type="move" name="nukta"/>
     </contour>
     <contour>
       <point x="239" y="786" type="move" name="top"/>
@@ -55,7 +55,7 @@
       <point x="406" y="156" type="move" name="outstroke"/>
     </contour>
     <contour>
-      <point x="221" y="123" type="move" name="bottom"/>
+      <point x="221" y="0" type="move" name="bottom"/>
     </contour>
   </outline>
 </glyph>

@@ -44,7 +44,7 @@
       <point x="460" y="333" type="move" name="leg"/>
     </contour>
     <contour>
-      <point x="242" y="0" type="move" name="nukta"/>
+      <point x="233" y="-50" type="move" name="nukta"/>
     </contour>
   </outline>
 </glyph>

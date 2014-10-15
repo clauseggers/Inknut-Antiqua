@@ -6,7 +6,10 @@
     <component base="kh-deva"/>
     <component base="aaMatra-deva" xOffset="756"/>
     <contour>
-      <point x="180" y="0" type="move" name="nukta"/>
+      <point x="120" y="0" type="move" name="nukta"/>
+    </contour>
+    <contour>
+      <point x="894" y="0" type="move" name="bottom"/>
     </contour>
   </outline>
   <lib>

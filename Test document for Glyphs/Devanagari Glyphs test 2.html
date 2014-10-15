@@ -85,6 +85,14 @@ Chandas font represents Southern (most commonly used today) style of Devanagari 
 <body>
 <div id="bodytext">
 
+CES [15.10.14]</br>
+A decomposition of the vowel-modifiers is done in CCMP, and all of them work except for the awMatra, which does not re-compose for some reason. Issue present in both InDesign and Firefox. (I can also see that I need to specify the languages that are not DFLT, because the CCMP is only for the implied DFLT for now.)</br></br>
+<span class="Glyphs">DFLT ि ी ॉ ॊ ो ौ ऻ ॏ </span></br>
+<span class="lang" lang="mr"><span class="Glyphs">MR ि ी ॉ ॊ ो ौ ऻ ॏ </span></br></span>
+<span class="AdobeDevanagari">DFLT ि ी ॉ ॊ ो ौ ऻ ॏ </span></br>
+<span class="lang" lang="mr"><span class="AdobeDevanagari">MR ि ी ॉ ॊ ो ौ ऻ ॏ </span></br></span>
+<hr>
+
 CES [14.10.14]</br>
 The sequence ra+halant+zerowidthjoiner is no longer rendered correctly with the ‘eyelash’ ra. The first cluster is without the ZWJ, and the second with the ZWJ. The second should render the ‘eyelash’ ra.</br></br>
 Also the Marathi string somehow manages to switch the order of the ya and the ra-deva.loclMR, and then delete the space character between the clusters. Also for Marathi *both* clusters should have the ra+halant substituted with the ‘eyelash’ ra.</br></br>

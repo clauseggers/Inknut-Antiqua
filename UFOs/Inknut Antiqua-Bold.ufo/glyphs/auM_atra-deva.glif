@@ -4,14 +4,17 @@
   <unicode hex="094C"/>
   <outline>
     <component base="aaMatra-deva"/>
-    <component base="aiMatra-deva" xOffset="-419"/>
+    <component base="aiMatra-deva" xOffset="-455"/>
+    <contour>
+      <point x="180" y="786" type="move" name="top"/>
+    </contour>
   </outline>
   <lib>
     <dict>
       <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
-      <integer>5</integer>
+      <integer>8</integer>
       <key>public.markColor</key>
-      <string>0.04,0.57,0.04,1</string>
+      <string>0.5,0.09,0.79,1</string>
     </dict>
   </lib>
 </glyph>

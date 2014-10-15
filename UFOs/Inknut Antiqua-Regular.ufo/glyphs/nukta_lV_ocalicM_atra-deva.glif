@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="nukta_lVocalicMatra-deva" format="1">
+  <advance width="600"/>
+  <outline>
+    <component base="nukta-deva" xOffset="-220"/>
+    <component base="lVocalicMatra-deva" xOffset="-23"/>
+    <contour>
+      <point x="-89" y="-137" type="move" name="_nukta"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+      <integer>8</integer>
+      <key>public.markColor</key>
+      <string>0.5,0.09,0.79,1</string>
+    </dict>
+  </lib>
+</glyph>

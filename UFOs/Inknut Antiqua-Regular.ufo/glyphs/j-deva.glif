@@ -18,12 +18,6 @@
       <point x="678" y="786" type="line"/>
     </contour>
     <component base="j_hook-deva" xOffset="40"/>
-    <contour>
-      <point x="328" y="-176" type="move" name="nukta"/>
-    </contour>
-    <contour>
-      <point x="336" y="0" type="move" name="bottom"/>
-    </contour>
   </outline>
   <lib>
     <dict>
