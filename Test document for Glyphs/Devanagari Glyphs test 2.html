@@ -45,21 +45,21 @@ Chandas font represents Southern (most commonly used today) style of Devanagari 
 
 .ModelNorthern {
 	font-family: "Uttara";
-	font-size: 4rem;
+	font-size: 3.2rem;
 	line-height: 1.2;
 	color: rgba(0,170,0,0.5);
 	display: block;
 }
 .ModelSouthern {
 	font-family: "Chandas";
-	font-size: 4rem;
+	font-size: 3.2rem;
 	line-height: 1.2;
 	color: rgba(0,170,0,0.5);
 	display: block;
 }
 .AdobeDevanagari {
 	font-family: "Adobe Devanagari";
-	font-size: 4rem;
+	font-size: 4.7rem;
 	line-height: 1.2;
 	color: rgba(0,0,170,0.5);
 	display: block;
@@ -73,6 +73,25 @@ Chandas font represents Southern (most commonly used today) style of Devanagari 
 	-webkit-font-feature-settings:"kern" 1, "ss01" 1;
 	font-feature-settings:"kern" 1, "ss01" 1;
 }
+
+.ss10 {
+	-moz-font-feature-settings:"kern" 1, "ss10" 1;
+	-moz-font-feature-settings:"kern=1, ss10=1";
+	-ms-font-feature-settings:"kern" 1, "ss10" 1;
+	-o-font-feature-settings:"kern" 1, "ss10" 1;
+	-webkit-font-feature-settings:"kern" 1, "ss10" 1;
+	font-feature-settings:"kern" 1, "ss10" 1;
+}
+
+.ss11 {
+	-moz-font-feature-settings:"kern" 1, "ss11" 1;
+	-moz-font-feature-settings:"kern=1, ss11=1";
+	-ms-font-feature-settings:"kern" 1, "ss11" 1;
+	-o-font-feature-settings:"kern" 1, "ss11" 1;
+	-webkit-font-feature-settings:"kern" 1, "ss11" 1;
+	font-feature-settings:"kern" 1, "ss11" 1;
+}
+
 .DONE {
 	text-decoration: line-through;
 	color: rgba(100,100,100,0.5) !important;
@@ -86,7 +105,7 @@ Chandas font represents Southern (most commonly used today) style of Devanagari 
 <div id="bodytext">
 
 CES [15.10.14]</br>
-A decomposition of the vowel-modifiers is done in CCMP, and all of them work except for the awMatra, which does not re-compose for some reason. Issue present in both InDesign and Firefox. (I can also see that I need to specify the languages that are not DFLT, because the CCMP is only for the implied DFLT for now.)</br></br>
+A decomposition of the vowel-modifiers is done in CCMP, and all of them work except for the awMatra, which does not re-compose for some reason. Issue present in both InDesign and Firefox.</br></br>
 <span class="Glyphs">DFLT ि ी ॉ ॊ ो ौ ऻ ॏ </span></br>
 <span class="lang" lang="mr"><span class="Glyphs">MR ि ी ॉ ॊ ो ौ ऻ ॏ </span></br></span>
 <span class="AdobeDevanagari">DFLT ि ी ॉ ॊ ो ौ ऻ ॏ </span></br>
@@ -100,6 +119,14 @@ Also the Marathi string somehow manages to switch the order of the ya and the ra
 <span class="lang" lang="mr"><span class="Glyphs">MR र्य र्‍य र्त्र्प</span></br></span>
 <span class="AdobeDevanagari">DFLT र्य र्‍य र्त्र्प</span></br>
 <span class="lang" lang="mr"><span class="AdobeDevanagari">MR र्य र्‍य र्त्र्प</span></br></span>
+
+ZeroWidthJoiner examples. The ZWJ is placed after the virama in the last ra+pa and rra+pa combinations, and behind the last ra+viram and the last rra+virama:</br>
+<span class="Glyphs">DFLT रप र्प र‍प र्‍ ऱप ऱ्प ऱ‍प ऱ्‍</span></br>
+<span class="lang" lang="mr"><span class="Glyphs">MR रप र्प र‍प र्‍ ऱप ऱ्प ऱ‍प ऱ्‍</span></br></span>
+<span class="AdobeDevanagari">DFLT रप र्प र‍प र्‍ ऱप ऱ्प ऱ‍प ऱ्‍</span></br>
+<span class="lang" lang="mr"><span class="AdobeDevanagari">MR रप र्प र‍प र्‍ ऱप ऱ्प ऱ‍प ऱ्‍</span></br></span>
+<span class="ModelNorthern">DFLT रप र्प र‍प र्‍ ऱप ऱ्प ऱ‍प ऱ्‍</span></br>
+<span class="ModelSouthern">DFLT रप र्प र‍प र्‍ ऱप ऱ्प ऱ‍प ऱ्‍</span></br>
 
 The half-form of the conjunct ta_ra-deva is named t_r-deva, and since does not render I’m guessing it has the wrong name. Since ta_ra-deva is already taken for the full-form conjunct, what should the half-form then be called? [14.10.14]</br></br>
 <span class="Glyphs">र्य र्त्र्प ऱ्य </span></br>
@@ -149,6 +176,7 @@ lookup Rphf_deva;</br></br>
 <span class="AdobeDevanagari">पर्‍ प्र्प पर्‍या ग्र्य द् र् </span></br>
 <hr>
 
+FIXED!</br>
 CES [11.10.14]</br>
 When a nukta is in the syllable, the conjuncts containing ra (conjuncts with the ‘leg’) are not rendered with a nukta, but rather with the consonant, a nukta, and a rakar.</br></br>
 
@@ -193,8 +221,8 @@ And then add that lookup to MAR and SAN.</br>
 </br>
 <span class="Glyphs">HI रृ रॄ ल लृ लॄ ऌ ॡ </span></br>
 <span class="lang" lang="mr"><span class="Glyphs">MR रृ रॄ ल लृ लॄ ऌ ॡ </span></br></span>
-<span class="ss01"><span class="Glyphs">HI+ss01 रृ रॄ ल लृ लॄ ऌ ॡ </span></br>
-<span class="lang" lang="mr"><span class="Glyphs">MR+ss01 रृ रॄ ल लृ लॄ ऌ ॡ </span></br></span></span>
+<span class="ss11"><span class="Glyphs">HI+ss11 रृ रॄ ल लृ लॄ ऌ ॡ </span></br>
+<span class="lang" lang="mr"><span class="Glyphs">MR+ss11 रृ रॄ ल लृ लॄ ऌ ॡ </span></br></span></span>
 <span class="ModelNorthern">रृ रॄ ल लृ लॄ ऌ ॡ </span></br>
 <span class="ModelSouthern">रृ रॄ ल लृ लॄ ऌ ॡ </span></br>
 <span class="AdobeDevanagari">रृ रॄ ल लृ लॄ ऌ ॡ </span></br>
@@ -205,25 +233,25 @@ Test of GSUB of special Devanagari-style latin punctuation. Is in the LOCL featu
 Kerning also works, which is somewhat weird as it does not work in other contexts.</br></br>
 Sanskrit does for some reason not work.</br></br>
 NB: This feature does not work in InDesign CS6. It must be because InDesign’s implementation is buggy. [06.10.14]</br></br>
-<span class="lang" lang="hi"><span class="Glyphs">HI ‘रृ’ “रॄ” ल- लृ–!!!???,.;</span></span></br>
+<span class="ss10"><span class="lang" lang="hi"><span class="Glyphs">HI ‘रृ’ “रॄ” ल- लृ–!!!???,.;</span></span></br>
 <span class="lang" lang="mr"><span class="Glyphs">MR ‘रृ’ “रॄ” ल- लृ–!!!???,.</span></span></br>
 <span class="lang" lang="sa"><span class="Glyphs">SA ‘रृ’ “रॄ” ल- लृ–!!!???,.</span></span></br>
 <span class="Glyphs">NO LANG ‘रृ’ “रॄ” ल- लृ–!!!???,.</span></span></br>
 <span class="ModelNorthern">DFLT ‘रृ’ “रॄ” ल- लृ–!!!???,.;:</span></br>
 <span class="ModelSouthern">DFLT ‘रृ’ “रॄ” ल- लृ–!!!???,.;:</span></br>
-<span class="AdobeDevanagari">NO LANG ‘रृ’ “रॄ” ल- लृ–!!!???,.;:</span></br>
+<span class="AdobeDevanagari">NO LANG ‘रृ’ “रॄ” ल- लृ–!!!???,.;:</span></br></span>
 <hr>
 
 WORKS!</br>
-Test of SS01 which switches relevant glyphs from Southern style to Northern style. [06.10.14]</br></br>
+Test of SS11 which switches relevant glyphs from Southern style to Northern style. [06.10.14]</br></br>
 <span class="lang" lang="hi"><span class="Glyphs">HI ऄ ॲ अ आ ऋ ॠ ॳ ॶ ॷ झ ण ल </span></span></br>
-<span class="lang" lang="hi"><span class="Glyphs"><span class="ss01">HI+SS01 ऄ ॲ अ आ ऋ ॠ ॳ ॶ ॷ झ ण ल </span></span></<span></span></br>
+<span class="lang" lang="hi"><span class="Glyphs"><span class="ss11">HI+SS11 ऄ ॲ अ आ ऋ ॠ ॳ ॶ ॷ झ ण ल </span></span></<span></span></br>
 <span class="lang" lang="mr"><span class="Glyphs">MR ऄ ॲ अ आ ऋ ॠ ॳ ॶ ॷ झ ण ल </span></span></br>
-<span class="lang" lang="mr"><span class="Glyphs"><span class="ss01">MR+SS01 ऄ ॲ अ आ ऋ ॠ ॳ ॶ ॷ झ ण ल </span></span></span></br>
+<span class="lang" lang="mr"><span class="Glyphs"><span class="ss11">MR+SS11 ऄ ॲ अ आ ऋ ॠ ॳ ॶ ॷ झ ण ल </span></span></span></br>
 <span class="lang" lang="sa"><span class="Glyphs">SA ऄ ॲ अ आ ऋ ॠ ॳ ॶ ॷ झ ण ल </span></span></br>
-<span class="lang" lang="sa"><span class="Glyphs"><span class="ss01">SA+SS01 ऄ ॲ अ आ ऋ ॠ ॳ ॶ ॷ झ ण ल </span></span></span></br>
+<span class="lang" lang="sa"><span class="Glyphs"><span class="ss11">SA+SS11 ऄ ॲ अ आ ऋ ॠ ॳ ॶ ॷ झ ण ल </span></span></span></br>
 <span class="Glyphs">DFLT ऄ ॲ अ आ ऋ ॠ ॳ ॶ ॷ झ ण ल </span></br>
-<span class="Glyphs"><span class="ss01">DFLT+SS01 ऄ ॲ अ आ ऋ ॠ ॳ ॶ ॷ झ ण ल </span></span></br>
+<span class="Glyphs"><span class="ss11">DFLT+SS11 ऄ ॲ अ आ ऋ ॠ ॳ ॶ ॷ झ ण ल </span></span></br>
 <span class="ModelNorthern">DFLT ऄ ॲ अ आ ऋ ॠ ॳ ॶ ॷ झ ण ल </span></br>
 <hr>
 
@@ -232,15 +260,18 @@ The special glyphs for da_uuMatra-deva, (ra_uuMatra-deva) and ha_uuMatra-deva ar
 <span class="ModelNorthern">दू न्दू हू न्हू </span></br>
 <hr>
 
-LARGELY FIXED… I have made several changes to the CCMP and ABVS that in concert with legated matras solve most situations.[14.10.14]</br></br>
+LARGELY FIXED…</br>
+I have made several changes to the CCMP and ABVS that in concert with legated matras solve most situations.[14.10.14]</br>
 What do we do about collisions like this below? A calt GSUB to a separate glyph? [27.09.14]</br></br>
 <span class="Glyphs">उँदै यौँ हीँ </span></br>
 <span class="ModelNorthern">उँदै यौँ हीँ </span></br>
 <hr>
 
+FIXED!</br>
+It was my fault, I had set the iMatra and iiMatra to be of lenghts inbetween the numbered variations. I changed them to be narrower than the xMatra.01… valantis.</br></br>
 The calculation of Velanti (iMatra- and iiMatra ‘bows’) seems to be off the mark in some rare instances. I have cleaned up the components and anchors in Inknut, but the below examples are still not correct for some reason (could it be that Glyphs does not iterate through the nested components to find the ‘top’ anchor?) [27.09.14]</br></br>
-<span class="Glyphs">ड़ी पि ष्ट्री टी </span></br>
-<span class="ModelNorthern">ड़ी पि ष्ट्री टी </span></br>
+<span class="Glyphs">ड़ी पि ष्ट्री टी क़ीँ  </span></br>
+<span class="ModelNorthern">ड़ी पि ष्ट्री टी क़ीँ  </span></br>
 <hr>
 
 FIXED!</br>
@@ -273,7 +304,8 @@ FIXED: use syntax [… v_va_ra_v …]</br></br>
 <span class="Glyphs">व्र </span><span class="ModelNorthern">व्र </span></br>
 <hr>
 
-LARGELY FIXED… I have made several changes to the CCMP and ABVS that in concert with legated matras solve most situations.[14.10.14]</br></br>
+LARGELY FIXED…</br>
+I have made several changes to the CCMP and ABVS that in concert with legated matras solve most situations.[14.10.14]</br></br>
 I have made the compound diacritics as separate glyphs, and I can see that they are in the CCMP feature, but they do not render, neither in InDesign nor in Firefox. Please refer to the last page of the InDesign test-document for more examples. [01.10.14]</br></br>
 GS: The only way I see is to make a precomposed glyph. [10.09.14]</br></br>
 CES: Trying to make these compound diacritics as components… [29.10.14]</br></br>
