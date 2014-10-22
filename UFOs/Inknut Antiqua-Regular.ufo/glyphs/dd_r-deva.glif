@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="dd_r-deva" format="1">
+  <advance width="712"/>
+  <outline>
+    <component base="dda-deva"/>
+    <component base="rakar-deva" xOffset="196"/>
+    <component base="halant-deva" xOffset="445" yOffset="-136"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+      <integer>5</integer>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>

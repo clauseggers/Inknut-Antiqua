@@ -5,6 +5,9 @@
     <component base="dh-deva"/>
     <component base="r-deva.leg" xOffset="230" yOffset="2"/>
     <component base="aaMatra-deva" xOffset="524"/>
+    <contour>
+      <point x="589" y="-176" type="move" name="nukta"/>
+    </contour>
   </outline>
   <lib>
     <dict>

@@ -53,7 +53,7 @@
       <point x="783" y="786" type="line"/>
     </contour>
     <contour>
-      <point x="220" y="-120" type="move" name="nukta"/>
+      <point x="217" y="-71" type="move" name="nukta"/>
     </contour>
     <contour>
       <point x="539" y="0" type="move" name="bottom"/>

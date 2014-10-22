@@ -3,7 +3,7 @@
   <advance width="782"/>
   <outline>
     <component base="th-deva"/>
-    <component base="g-deva.leg" xOffset="169" yOffset="-28"/>
+    <component base="g-deva.leg" xOffset="195" yOffset="7"/>
     <component base="aaMatra-deva" xOffset="454"/>
     <contour>
       <point x="178" y="-163" type="move" name="nukta"/>

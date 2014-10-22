@@ -2,7 +2,7 @@
 <glyph name="rr-deva" format="1">
   <advance width="464"/>
   <outline>
-    <component base="reph-deva.loclMAR"/>
+    <component base="raEyelash-deva"/>
     <component base="nukta-deva" xOffset="212" yOffset="79"/>
   </outline>
   <lib>

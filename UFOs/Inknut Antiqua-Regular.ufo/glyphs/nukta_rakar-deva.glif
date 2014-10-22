@@ -3,7 +3,7 @@
   <advance width="600"/>
   <outline>
     <component base="rakar-deva" xOffset="15"/>
-    <component base="nukta-deva" xOffset="246" yOffset="-167"/>
+    <component base="nukta-deva" xOffset="239" yOffset="-173"/>
   </outline>
   <lib>
     <dict>

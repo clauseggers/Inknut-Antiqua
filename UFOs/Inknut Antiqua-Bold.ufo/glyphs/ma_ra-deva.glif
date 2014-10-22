@@ -5,7 +5,7 @@
     <component base="ma-deva"/>
     <component base="r-deva.leg" xOffset="250" yOffset="-99"/>
     <contour>
-      <point x="745" y="-254" type="move" name="nukta"/>
+      <point x="754" y="-163" type="move" name="nukta"/>
     </contour>
   </outline>
   <lib>

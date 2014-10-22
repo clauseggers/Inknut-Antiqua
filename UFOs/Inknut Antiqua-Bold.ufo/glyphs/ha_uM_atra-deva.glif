@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="ha_uMatra-deva" format="1">
+  <advance width="681"/>
+  <outline>
+    <component base="ha-deva"/>
+    <component base="uMatra-deva" xOffset="-10" yOffset="-100"/>
+  </outline>
+</glyph>

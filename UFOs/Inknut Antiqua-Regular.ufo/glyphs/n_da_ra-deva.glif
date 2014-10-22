@@ -5,6 +5,9 @@
     <component base="n-deva.short3"/>
     <component base="da-deva.strokeless" xOffset="330"/>
     <component base="rakar-deva" xOffset="588"/>
+    <contour>
+      <point x="231" y="0" type="move" name="nukta"/>
+    </contour>
   </outline>
   <lib>
     <dict>

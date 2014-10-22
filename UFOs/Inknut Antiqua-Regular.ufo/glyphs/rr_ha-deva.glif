@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="rr_ha-deva" format="1">
-  <advance width="944"/>
+  <advance width="924"/>
   <outline>
     <component base="rr-deva"/>
-    <component base="ha-deva" xOffset="366"/>
+    <component base="ha-deva" xOffset="346"/>
   </outline>
   <lib>
     <dict>

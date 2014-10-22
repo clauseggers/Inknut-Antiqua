@@ -12,6 +12,9 @@
       <point x="118" y="-35" type="line"/>
     </contour>
     <contour>
+      <point x="140" y="-139" type="move" name="_nukta-left"/>
+    </contour>
+    <contour>
       <point x="140" y="-139" type="move" name="_nukta"/>
     </contour>
   </outline>

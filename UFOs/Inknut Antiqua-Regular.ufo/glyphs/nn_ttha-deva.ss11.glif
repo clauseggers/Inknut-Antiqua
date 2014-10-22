@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="nn_ttha-deva.ss11" format="1">
-  <advance width="1430"/>
+  <advance width="1429"/>
   <outline>
     <component base="nn-deva.ss11"/>
     <component base="ttha-deva" xOffset="615"/>

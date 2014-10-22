@@ -3,7 +3,10 @@
   <advance width="1077"/>
   <outline>
     <component base="lla-deva"/>
-    <component base="rakar-deva" xOffset="437"/>
+    <component base="rakar-deva" xOffset="437" yOffset="30"/>
+    <contour>
+      <point x="307" y="-81" type="move" name="nukta"/>
+    </contour>
   </outline>
   <lib>
     <dict>

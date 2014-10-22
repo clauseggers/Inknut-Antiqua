@@ -4,6 +4,9 @@
   <outline>
     <component base="k-deva.short"/>
     <component base="pa_ra-deva" xOffset="707"/>
+    <contour>
+      <point x="220" y="-120" type="move" name="nukta"/>
+    </contour>
   </outline>
   <lib>
     <dict>

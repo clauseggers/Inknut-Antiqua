@@ -3,12 +3,6 @@
   <advance width="600"/>
   <outline>
     <contour>
-      <point x="316" y="-83" type="line"/>
-      <point x="614" y="-324" type="line"/>
-      <point x="671" y="-264" type="line"/>
-      <point x="378" y="-28" type="line"/>
-    </contour>
-    <contour>
       <point x="59" y="-217" type="line"/>
       <point x="181" y="-264" type="line"/>
       <point x="259" y="-264" type="line"/>
@@ -16,13 +10,25 @@
       <point x="187" y="46" type="line"/>
     </contour>
     <contour>
+      <point x="328" y="-93" type="line"/>
+      <point x="651" y="-264" type="line"/>
+      <point x="701" y="-199" type="line"/>
+      <point x="378" y="-28" type="line"/>
+    </contour>
+    <contour>
+      <point x="401" y="-254" type="move" name="halant"/>
+    </contour>
+    <contour>
+      <point x="454" y="-374" type="move" name="nukta"/>
+    </contour>
+    <contour>
       <point x="165" y="0" type="move" name="_bottom"/>
     </contour>
     <contour>
-      <point x="298" y="-170" type="move" name="bottom"/>
+      <point x="191" y="0" type="move" name="_rakar"/>
     </contour>
     <contour>
-      <point x="191" y="0" type="move" name="_rakar"/>
+      <point x="298" y="-170" type="move" name="bottom"/>
     </contour>
   </outline>
 </glyph>

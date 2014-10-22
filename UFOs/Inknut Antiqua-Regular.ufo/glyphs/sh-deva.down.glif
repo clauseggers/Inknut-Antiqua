@@ -34,6 +34,9 @@
       <point x="230" y="806" type="curve" smooth="yes"/>
     </contour>
     <contour>
+      <point x="579" y="361" type="move" name="leg"/>
+    </contour>
+    <contour>
       <point x="374" y="105" type="move" name="nukta"/>
     </contour>
   </outline>

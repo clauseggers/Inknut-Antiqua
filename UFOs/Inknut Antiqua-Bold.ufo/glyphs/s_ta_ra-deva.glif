@@ -55,6 +55,9 @@
     </contour>
     <component base="ra-deva"/>
     <component base="aaMatra-deva" xOffset="902"/>
+    <contour>
+      <point x="292" y="-120" type="move" name="nukta"/>
+    </contour>
   </outline>
   <lib>
     <dict>

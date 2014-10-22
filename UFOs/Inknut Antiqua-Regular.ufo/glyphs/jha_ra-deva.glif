@@ -15,6 +15,9 @@
       <point x="875" y="192" type="line"/>
     </contour>
     <component base="jha-deva"/>
+    <contour>
+      <point x="844" y="-180" type="move" name="bottom"/>
+    </contour>
   </outline>
   <lib>
     <dict>

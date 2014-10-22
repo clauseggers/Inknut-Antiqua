@@ -16,7 +16,7 @@
     </contour>
     <component base="jha-deva"/>
     <contour>
-      <point x="1131" y="0" type="move" name="bottom"/>
+      <point x="909" y="-180" type="move" name="bottom"/>
     </contour>
   </outline>
   <lib>

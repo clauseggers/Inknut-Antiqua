@@ -3,12 +3,20 @@
   <advance width="1031"/>
   <outline>
     <contour>
-      <point x="502" y="448" type="line"/>
-      <point x="502" y="410" type="line"/>
-      <point x="576" y="348" type="line"/>
-      <point x="926" y="348" type="line"/>
-      <point x="926" y="386" type="line"/>
-      <point x="852" y="448" type="line"/>
+      <point x="520" y="448" type="line"/>
+      <point x="520" y="410" type="line"/>
+      <point x="594" y="348" type="line"/>
+      <point x="944" y="348" type="line"/>
+      <point x="944" y="386" type="line"/>
+      <point x="870" y="448" type="line"/>
+    </contour>
+    <contour>
+      <point x="520" y="786" type="line"/>
+      <point x="520" y="748" type="line"/>
+      <point x="594" y="686" type="line"/>
+      <point x="944" y="686" type="line"/>
+      <point x="944" y="724" type="line"/>
+      <point x="870" y="786" type="line"/>
     </contour>
     <component base="aaMatra-deva" xOffset="703"/>
     <component base="t_r-deva"/>

@@ -18,6 +18,9 @@
       <point x="659" y="786" type="line"/>
     </contour>
     <component base="j_hook-deva"/>
+    <contour>
+      <point x="658" y="150" type="move" name="leg"/>
+    </contour>
   </outline>
   <lib>
     <dict>

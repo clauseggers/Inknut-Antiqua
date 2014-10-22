@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="l_v_dda-deva" format="1">
-  <advance width="1581"/>
+  <advance width="1611"/>
   <outline>
     <component base="l-deva"/>
-    <component base="v-deva.long" xOffset="579"/>
-    <component base="dda-deva.short2" xOffset="879"/>
+    <component base="v-deva.long" xOffset="609"/>
+    <component base="dda-deva.short2" xOffset="909"/>
   </outline>
   <lib>
     <dict>

@@ -3,7 +3,7 @@
   <advance width="1456"/>
   <outline>
     <component base="ph-deva"/>
-    <component base="nukta-deva" xOffset="144" yOffset="17"/>
+    <component base="nukta-deva" xOffset="101" yOffset="175"/>
     <component base="za-deva" xOffset="628"/>
   </outline>
   <lib>

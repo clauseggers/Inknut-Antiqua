@@ -87,10 +87,10 @@
       <point x="718" y="786" type="line"/>
     </contour>
     <contour>
-      <point x="168" y="-163" type="move" name="nukta"/>
+      <point x="143" y="-100" type="move" name="nukta"/>
     </contour>
     <contour>
-      <point x="149" y="-120" type="move" name="bottom"/>
+      <point x="363" y="-66" type="move" name="bottom"/>
     </contour>
     <contour>
       <point x="518" y="786" type="move" name="top"/>

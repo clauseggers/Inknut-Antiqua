@@ -5,7 +5,7 @@
     <component base="ss-deva"/>
     <component base="pa_ra-deva" xOffset="370"/>
     <contour>
-      <point x="743" y="-176" type="move" name="nukta"/>
+      <point x="318" y="0" type="move" name="nukta"/>
     </contour>
   </outline>
   <lib>

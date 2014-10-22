@@ -51,13 +51,16 @@
       <point x="442" y="248" type="curve" smooth="yes"/>
     </contour>
     <contour>
+      <point x="374" y="-120" type="move" name="halant"/>
+    </contour>
+    <contour>
       <point x="180" y="-120" type="move" name="nukta"/>
     </contour>
     <contour>
-      <point x="388" y="786" type="move" name="top"/>
+      <point x="465" y="0" type="move" name="rakar"/>
     </contour>
     <contour>
-      <point x="465" y="0" type="move" name="rakar"/>
+      <point x="388" y="786" type="move" name="top"/>
     </contour>
     <contour>
       <point x="388" y="0" type="move" name="bottom"/>

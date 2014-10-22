@@ -64,7 +64,7 @@
       <point x="279" y="883" type="curve" smooth="yes"/>
     </contour>
     <contour>
-      <point x="278" y="-50" type="move" name="nukta"/>
+      <point x="278" y="0" type="move" name="nukta"/>
     </contour>
   </outline>
   <lib>

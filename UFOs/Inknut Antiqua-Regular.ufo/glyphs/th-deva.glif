@@ -54,7 +54,7 @@
       <point x="216" y="806" type="curve" smooth="yes"/>
     </contour>
     <contour>
-      <point x="583" y="371" type="move" name="leg"/>
+      <point x="609" y="406" type="move" name="leg"/>
     </contour>
     <contour>
       <point x="234" y="0" type="move" name="nukta"/>

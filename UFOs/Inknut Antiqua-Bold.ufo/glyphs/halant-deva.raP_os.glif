@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="halant-deva.raPos" format="1">
+  <advance width="600"/>
+  <outline>
+    <component base="halant-deva"/>
+    <contour>
+      <point x="110" y="-98" type="move" name="_bottom"/>
+    </contour>
+  </outline>
+</glyph>

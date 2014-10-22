@@ -2,7 +2,7 @@
 <glyph name="ng_k_t_ta-deva" format="1">
   <advance width="2435"/>
   <outline>
-    <component base="nga-deva"/>
+    <component base="ng-deva"/>
     <component base="k-deva" xOffset="842"/>
     <component base="t-deva" xOffset="1499"/>
     <component base="ta-deva" xOffset="1773"/>

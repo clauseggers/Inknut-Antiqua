@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="k_ss_ma-deva" format="1">
-  <advance width="1250"/>
+  <advance width="1270"/>
   <outline>
     <component base="k_ss-deva.low"/>
     <component base="m-deva.front-short" xOffset="486"/>
-    <component base="aaMatra-deva" xOffset="922"/>
+    <component base="aaMatra-deva" xOffset="942"/>
   </outline>
   <lib>
     <dict>

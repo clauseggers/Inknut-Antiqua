@@ -4,9 +4,9 @@
   <outline>
     <component base="sh-deva.down"/>
     <component base="aaMatra-deva" xOffset="427"/>
-    <component base="r-deva.leg" xOffset="165" yOffset="-28"/>
+    <component base="r-deva.leg" xOffset="165" yOffset="-38"/>
     <contour>
-      <point x="535" y="-176" type="move" name="nukta"/>
+      <point x="515" y="-176" type="move" name="nukta"/>
     </contour>
   </outline>
   <lib>

@@ -10,6 +10,14 @@
       <point x="1188" y="330" type="line"/>
       <point x="1011" y="422" type="line"/>
     </contour>
+    <contour>
+      <point x="612" y="786" type="line"/>
+      <point x="612" y="708" type="line"/>
+      <point x="789" y="616" type="line"/>
+      <point x="1188" y="616" type="line"/>
+      <point x="1188" y="694" type="line"/>
+      <point x="1011" y="786" type="line"/>
+    </contour>
     <component base="aaMatra-deva" xOffset="514"/>
     <component base="t_r-deva"/>
     <component base="rVocalicMatra-deva" xOffset="821" yOffset="264"/>

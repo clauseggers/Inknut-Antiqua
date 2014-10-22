@@ -42,13 +42,6 @@
       <point x="295" y="549" type="line"/>
     </contour>
     <contour>
-      <point x="458" y="786" type="line"/>
-      <point x="458" y="30" type="line"/>
-      <point x="540" y="-10" type="line"/>
-      <point x="578" y="-10" type="line"/>
-      <point x="578" y="786" type="line"/>
-    </contour>
-    <contour>
       <point x="-60" y="786" type="line"/>
       <point x="-60" y="748" type="line"/>
       <point x="10" y="686" type="line"/>
@@ -56,14 +49,12 @@
       <point x="881" y="724" type="line"/>
       <point x="811" y="786" type="line"/>
     </contour>
+    <component base="aaMatra-deva" xOffset="320"/>
     <contour>
-      <point x="203" y="-120" type="move" name="nukta"/>
+      <point x="488" y="371" type="move" name="leg"/>
     </contour>
     <contour>
-      <point x="458" y="0" type="move" name="bottom"/>
-    </contour>
-    <contour>
-      <point x="458" y="786" type="move" name="top"/>
+      <point x="196" y="0" type="move" name="nukta"/>
     </contour>
   </outline>
   <lib>

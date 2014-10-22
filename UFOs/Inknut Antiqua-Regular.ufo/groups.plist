@@ -339,8 +339,6 @@
 		<string>gga-deva</string>
 		<string>jja-deva</string>
 		<string>bba-deva</string>
-		<string>k_kha-deva</string>
-		<string>k_ja-deva</string>
 		<string>k_nna-deva</string>
 		<string>k_nna-deva.ss11</string>
 		<string>k_t_ya-deva</string>
@@ -538,7 +536,6 @@
 		<string>p_ma-deva</string>
 		<string>p_ya-deva</string>
 		<string>p_ra_pa-deva</string>
-		<string>p_r-deva</string>
 		<string>p_la-deva</string>
 		<string>p_va-deva</string>
 		<string>p_sa-deva</string>
@@ -617,6 +614,7 @@
 		<string>v_ya-deva</string>
 		<string>v_la-deva</string>
 		<string>v_va-deva</string>
+		<string>sha_VocalicMatra-deva</string>
 		<string>sha_ra-deva</string>
 		<string>sha_ra_ya-deva</string>
 		<string>sh_ca-deva</string>
@@ -691,9 +689,11 @@
 		<string>f_fa-deva</string>
 		<string>yya_ra-deva</string>
 		<string>iMatra_stem-deva</string>
+		<string>k_kha-deva</string>
+		<string>k_ja-deva</string>
 		<string>ng_k_t_ta-deva</string>
-		<string>sh_matra_vocalicR-deva</string>
 		<string>jh-deva.high.ss11</string>
+		<string>raEyelash_ya-deva</string>
 	</array>
 	<key>@MMK_L_asciicircum</key>
 	<array>
@@ -719,6 +719,7 @@
 	</array>
 	<key>@MMK_L_bh-deva.init</key>
 	<array>
+		<string>bh_r-deva</string>
 		<string>bh-deva</string>
 		<string>bh-deva.init</string>
 	</array>
@@ -737,6 +738,7 @@
 	<key>@MMK_L_ch-deva</key>
 	<array>
 		<string>cha-deva</string>
+		<string>ch_r-deva</string>
 		<string>s_cha-deva</string>
 		<string>ch-deva</string>
 	</array>
@@ -794,11 +796,13 @@
 		<string>dd_dda-deva</string>
 		<string>dd_ddha-deva</string>
 		<string>dd_na-deva</string>
+		<string>dd_r-deva</string>
 		<string>nn_dda-deva</string>
 		<string>nn_dda-deva.ss11</string>
 		<string>n_dda-deva</string>
 		<string>l_dda-deva</string>
 		<string>l_v_dda-deva</string>
+		<string>dd-deva</string>
 		<string>dd-deva.top</string>
 	</array>
 	<key>@MMK_L_ddha-deva</key>
@@ -813,12 +817,14 @@
 		<string>ddh_ddha-deva</string>
 		<string>ddh_da-deva</string>
 		<string>ddh_na-deva</string>
+		<string>ddh_r-deva</string>
 		<string>nn_ddha-deva</string>
 		<string>da_ra-deva</string>
 		<string>da_uuMatra-deva</string>
 		<string>da_rVocalicMatra-deva</string>
 		<string>d_ga-deva</string>
 		<string>d_ga_ra-deva</string>
+		<string>d_r-deva</string>
 		<string>d_va-deva</string>
 		<string>d_va_ra-deva</string>
 		<string>n_da-deva</string>
@@ -829,13 +835,16 @@
 		<string>l_da-deva</string>
 		<string>l_da_ra-deva</string>
 		<string>s_da-deva</string>
+		<string>ddh-deva</string>
 		<string>ddh-deva.bottom</string>
 		<string>ddh-deva.top</string>
+		<string>d-deva</string>
 		<string>d-deva.bottom</string>
 		<string>d-deva.top</string>
 	</array>
 	<key>@MMK_L_dh-deva</key>
 	<array>
+		<string>dh_r-deva</string>
 		<string>dh-deva</string>
 	</array>
 	<key>@MMK_L_dh-deva.short</key>
@@ -901,7 +910,9 @@
 	</array>
 	<key>@MMK_L_g-deva</key>
 	<array>
+		<string>g_r-deva</string>
 		<string>g-deva</string>
+		<string>ghh-deva</string>
 	</array>
 	<key>@MMK_L_g.ss02</key>
 	<array>
@@ -909,6 +920,16 @@
 		<string>gbreve.ss02</string>
 		<string>gcommaaccent.ss02</string>
 		<string>gdotaccent.ss02</string>
+	</array>
+	<key>@MMK_L_gh-deva</key>
+	<array>
+		<string>gh_r-deva</string>
+		<string>gh-deva</string>
+	</array>
+	<key>@MMK_L_h-deva</key>
+	<array>
+		<string>h_r-deva</string>
+		<string>h-deva.half</string>
 	</array>
 	<key>@MMK_L_h_va-deva</key>
 	<array>
@@ -923,6 +944,8 @@
 		<string>l_ha-deva</string>
 		<string>v_ha-deva</string>
 		<string>ha_uuMatra-deva</string>
+		<string>h-deva</string>
+		<string>raEyelash_ha-deva</string>
 	</array>
 	<key>@MMK_L_hacek</key>
 	<array>
@@ -962,6 +985,17 @@
 		<string>f_f_j.liga</string>
 		<string>f_j.liga</string>
 	</array>
+	<key>@MMK_L_j-deva</key>
+	<array>
+		<string>j_r-deva</string>
+		<string>j-deva</string>
+		<string>z-deva</string>
+	</array>
+	<key>@MMK_L_jh-deva</key>
+	<array>
+		<string>jh_r-deva</string>
+		<string>jh-deva</string>
+	</array>
 	<key>@MMK_L_jha-deva.loclSAN</key>
 	<array>
 		<string>jha-deva.ss11</string>
@@ -977,6 +1011,12 @@
 		<string>f_k.liga</string>
 		<string>f_kcommaaccent.liga</string>
 		<string>longs_k.liga</string>
+	</array>
+	<key>@MMK_L_k-deva</key>
+	<array>
+		<string>k_r-deva</string>
+		<string>q_r-deva</string>
+		<string>k-deva</string>
 	</array>
 	<key>@MMK_L_k-deva.long</key>
 	<array>
@@ -995,7 +1035,6 @@
 		<string>qa-deva</string>
 		<string>fa-deva</string>
 		<string>ka_ra-deva</string>
-		<string>k_ka-deva</string>
 		<string>k_ca-deva</string>
 		<string>k_ta-deva</string>
 		<string>k_ta_ra-deva</string>
@@ -1016,6 +1055,8 @@
 		<string>l_ka-deva</string>
 		<string>l_pha-deva</string>
 		<string>lla_ra-deva</string>
+		<string>ll_r-deva</string>
+		<string>lll_r-deva</string>
 		<string>sh_ka-deva</string>
 		<string>sh_qa-deva</string>
 		<string>ss_ka-deva</string>
@@ -1028,7 +1069,9 @@
 		<string>q_pha-deva</string>
 		<string>q_qa-deva</string>
 		<string>q_fa-deva</string>
+		<string>k_ka-deva</string>
 		<string>ll-deva</string>
+		<string>lll-deva</string>
 	</array>
 	<key>@MMK_L_l</key>
 	<array>
@@ -1044,12 +1087,18 @@
 		<string>longs_l.liga</string>
 		<string>longs_longs_l.liga</string>
 	</array>
+	<key>@MMK_L_l-deva.halfform</key>
+	<array>
+		<string>l_r-deva</string>
+		<string>l-deva.halfform</string>
+	</array>
 	<key>@MMK_L_l-deva.loclMAR</key>
 	<array>
 		<string>l-deva.loclMAR</string>
 	</array>
 	<key>@MMK_L_m-deva</key>
 	<array>
+		<string>m_r-deva</string>
 		<string>m-deva</string>
 		<string>m-deva.front-short</string>
 	</array>
@@ -1085,6 +1134,12 @@
 		<string>f_h.liga</string>
 		<string>longs_h.liga</string>
 	</array>
+	<key>@MMK_L_n-deva.up</key>
+	<array>
+		<string>n_r-deva</string>
+		<string>nnn_r-deva</string>
+		<string>n-deva.up</string>
+	</array>
 	<key>@MMK_L_nga-deva</key>
 	<array>
 		<string>nga-deva</string>
@@ -1092,6 +1147,8 @@
 		<string>ng_k_ssa-deva</string>
 		<string>ng_ga-deva</string>
 		<string>ng_gha-deva</string>
+		<string>ng_r-deva</string>
+		<string>ng-deva</string>
 		<string>ng-deva.top</string>
 	</array>
 	<key>@MMK_L_nine.dnom</key>
@@ -1106,11 +1163,17 @@
 	</array>
 	<key>@MMK_L_nn-deva</key>
 	<array>
+		<string>nn_r-deva</string>
 		<string>nn-deva</string>
 	</array>
 	<key>@MMK_L_nn-deva.loclSAN</key>
 	<array>
 		<string>nn-deva.ss11</string>
+	</array>
+	<key>@MMK_L_ny-deva</key>
+	<array>
+		<string>ny_r-deva</string>
+		<string>ny-deva</string>
 	</array>
 	<key>@MMK_L_o</key>
 	<array>
@@ -1161,6 +1224,8 @@
 	</array>
 	<key>@MMK_L_p-deva</key>
 	<array>
+		<string>p_r-deva</string>
+		<string>ss_r-deva</string>
 		<string>p-deva</string>
 		<string>ss-deva</string>
 	</array>
@@ -1204,6 +1269,12 @@
 		<string>comma.deva</string>
 		<string>ellipsis.deva</string>
 		<string>period.deva</string>
+	</array>
+	<key>@MMK_L_ph-deva</key>
+	<array>
+		<string>ph_r-deva</string>
+		<string>ph-deva</string>
+		<string>f-deva</string>
 	</array>
 	<key>@MMK_L_pointingindexleftwhite</key>
 	<array>
@@ -1251,12 +1322,12 @@
 	<array>
 		<string>ra-deva</string>
 		<string>rra-deva</string>
+		<string>ra_halant-deva</string>
 	</array>
 	<key>@MMK_L_rr-deva</key>
 	<array>
 		<string>rr-deva</string>
-		<string>r-deva</string>
-		<string>reph-deva.loclMAR</string>
+		<string>raEyelash-deva</string>
 	</array>
 	<key>@MMK_L_rr-deva.long</key>
 	<array>
@@ -1315,6 +1386,7 @@
 	</array>
 	<key>@MMK_L_sh-deva.down</key>
 	<array>
+		<string>sh_r-deva</string>
 		<string>sh-deva.down</string>
 	</array>
 	<key>@MMK_L_sh-deva.high2</key>
@@ -1364,6 +1436,16 @@
 		<string>t_t-deva.short</string>
 		<string>t-deva.short</string>
 	</array>
+	<key>@MMK_L_t_r-deva</key>
+	<array>
+		<string>t_r-deva</string>
+		<string>s_r-deva</string>
+	</array>
+	<key>@MMK_L_th-deva</key>
+	<array>
+		<string>th_r-deva</string>
+		<string>th-deva</string>
+	</array>
 	<key>@MMK_L_th-deva.high-short</key>
 	<array>
 		<string>th-deva.high-short</string>
@@ -1385,13 +1467,13 @@
 	<key>@MMK_L_tta-deva</key>
 	<array>
 		<string>tta-deva</string>
-		<string>k_tta-deva</string>
 		<string>k_s_tta-deva</string>
 		<string>j_tta-deva</string>
 		<string>tt_tta-deva</string>
 		<string>tt_ttha-deva</string>
 		<string>tt_ddha-deva</string>
 		<string>tt_na-deva</string>
+		<string>tt_r-deva</string>
 		<string>dd_tta-deva</string>
 		<string>nn_tta-deva</string>
 		<string>nn_tta-deva.ss11</string>
@@ -1401,6 +1483,8 @@
 		<string>l_tta-deva</string>
 		<string>sh_tta-deva</string>
 		<string>s_tta-deva</string>
+		<string>k_tta-deva</string>
+		<string>tt-deva</string>
 		<string>tt-deva.top</string>
 		<string>tta-headless-deva</string>
 	</array>
@@ -1409,9 +1493,11 @@
 		<string>ttha-deva</string>
 		<string>tth_ttha-deva</string>
 		<string>tth_na-deva</string>
+		<string>tth_r-deva</string>
 		<string>nn_ttha-deva</string>
 		<string>nn_ttha-deva.ss11</string>
 		<string>l_ttha-deva</string>
+		<string>tth-deva</string>
 		<string>tth-deva.top</string>
 		<string>ttha-headless-deva</string>
 	</array>
@@ -1486,11 +1572,16 @@
 	</array>
 	<key>@MMK_L_v-deva</key>
 	<array>
+		<string>kh_r-deva</string>
+		<string>c_r-deva</string>
+		<string>b_r-deva</string>
+		<string>v_r-deva</string>
 		<string>kh-deva</string>
 		<string>c-deva</string>
 		<string>b-deva</string>
 		<string>v-deva</string>
 		<string>v-deva.low</string>
+		<string>khh-deva</string>
 	</array>
 	<key>@MMK_L_v-deva.long</key>
 	<array>
@@ -1510,6 +1601,12 @@
 	<array>
 		<string>b-deva.short4</string>
 		<string>v-deva.short2</string>
+	</array>
+	<key>@MMK_L_y-deva</key>
+	<array>
+		<string>y_r-deva</string>
+		<string>y-deva</string>
+		<string>yy-deva</string>
 	</array>
 	<key>@MMK_L_z</key>
 	<array>
@@ -1842,6 +1939,7 @@
 		<string>bha_ra_ya-deva</string>
 		<string>bh_na-deva</string>
 		<string>bh_ya-deva</string>
+		<string>bh_r-deva</string>
 		<string>bh_va-deva</string>
 		<string>bh-deva</string>
 		<string>bh-deva.init</string>
@@ -1864,6 +1962,7 @@
 		<string>c_na-deva</string>
 		<string>c_ma-deva</string>
 		<string>c_ya-deva</string>
+		<string>c_r-deva</string>
 		<string>t_ta-deva</string>
 		<string>t_t-deva</string>
 		<string>t_t-deva.high</string>
@@ -1909,6 +2008,7 @@
 		<string>ddh_na-deva</string>
 		<string>ddh_ma-deva</string>
 		<string>ddh_ya-deva</string>
+		<string>ddh_r-deva</string>
 		<string>da_ra-deva</string>
 		<string>da_uuMatra-deva</string>
 		<string>da_rVocalicMatra-deva</string>
@@ -1917,8 +2017,11 @@
 		<string>d_na-deva</string>
 		<string>d_ba-deva</string>
 		<string>d_ba_ra-deva</string>
+		<string>d_r-deva</string>
+		<string>ddh-deva</string>
 		<string>ddh-deva.bottom</string>
 		<string>ddh-deva.top</string>
+		<string>d-deva</string>
 		<string>d-deva.bottom</string>
 		<string>d-deva.top</string>
 	</array>
@@ -1942,6 +2045,7 @@
 		<string>ng_ma-deva</string>
 		<string>ng_ma-deva.001</string>
 		<string>ng_ya-deva</string>
+		<string>ng_r-deva</string>
 		<string>dd_ka-deva</string>
 		<string>dd_gha-deva</string>
 		<string>dd_tta-deva</string>
@@ -1952,9 +2056,12 @@
 		<string>dd_na-deva</string>
 		<string>dd_ma-deva</string>
 		<string>dd_ya-deva</string>
+		<string>dd_r-deva</string>
 		<string>dd_va-deva</string>
 		<string>ng_k_t_ta-deva</string>
+		<string>ng-deva</string>
 		<string>ng-deva.top</string>
+		<string>dd-deva</string>
 		<string>dd-deva.top</string>
 	</array>
 	<key>@MMK_R_dda-deva.short</key>
@@ -1970,6 +2077,7 @@
 		<string>dh_n_ya-deva</string>
 		<string>dh_ma-deva</string>
 		<string>dh_ya-deva</string>
+		<string>dh_r-deva</string>
 		<string>dh_va-deva</string>
 		<string>dh_va_ra-deva</string>
 		<string>dh-deva</string>
@@ -2093,6 +2201,7 @@
 		<string>kh_ta-deva</string>
 		<string>kh_ma-deva</string>
 		<string>kh_ya-deva</string>
+		<string>kh_r-deva</string>
 		<string>kh_sha-deva</string>
 		<string>ga_ra-deva</string>
 		<string>ga_ra_ya-deva</string>
@@ -2112,6 +2221,7 @@
 		<string>g_bh_ya-deva</string>
 		<string>g_ma-deva</string>
 		<string>g_ya-deva</string>
+		<string>g_r-deva</string>
 		<string>g_la-deva</string>
 		<string>g_va-deva</string>
 		<string>g_sa-deva</string>
@@ -2157,12 +2267,14 @@
 		<string>n_ma-deva</string>
 		<string>n_m_ya-deva</string>
 		<string>n_ya-deva</string>
+		<string>n_r-deva</string>
 		<string>n_la-deva</string>
 		<string>n_va-deva</string>
 		<string>n_sa-deva</string>
 		<string>n_s_tta-deva</string>
 		<string>n_ha-deva</string>
 		<string>n_h_ya-deva</string>
+		<string>nnn_r-deva</string>
 		<string>ma_ra-deva</string>
 		<string>m_ta-deva</string>
 		<string>m_da-deva</string>
@@ -2176,12 +2288,14 @@
 		<string>m_bha_ra-deva</string>
 		<string>m_ma-deva</string>
 		<string>m_ya-deva</string>
+		<string>m_r-deva</string>
 		<string>m_la-deva</string>
 		<string>m_va-deva</string>
 		<string>m_sha-deva</string>
 		<string>m_sa-deva</string>
 		<string>m_ha-deva</string>
 		<string>ra_uMatra-deva</string>
+		<string>ra_halant-deva</string>
 		<string>sa_ra-deva</string>
 		<string>s_ka-deva</string>
 		<string>s_ka_ra-deva</string>
@@ -2206,6 +2320,7 @@
 		<string>s_ma-deva</string>
 		<string>s_m_ya-deva</string>
 		<string>s_ya-deva</string>
+		<string>s_r-deva</string>
 		<string>s_la-deva</string>
 		<string>s_va-deva</string>
 		<string>s_sa-deva</string>
@@ -2242,6 +2357,8 @@
 		<string>s-deva.low</string>
 		<string>s-deva.short</string>
 		<string>s-deva.short2</string>
+		<string>khh-deva</string>
+		<string>ghh-deva</string>
 	</array>
 	<key>@MMK_R_gha-deva</key>
 	<array>
@@ -2251,8 +2368,10 @@
 		<string>gh_na-deva</string>
 		<string>gh_ma-deva</string>
 		<string>gh_ya-deva</string>
+		<string>gh_r-deva</string>
 		<string>ch_na-deva</string>
 		<string>ch_ya-deva</string>
+		<string>ch_r-deva</string>
 		<string>ch_va-deva</string>
 		<string>d_da-deva</string>
 		<string>d_d_ya-deva</string>
@@ -2273,9 +2392,11 @@
 		<string>h_ma-deva</string>
 		<string>h_m_ya-deva</string>
 		<string>h_ya-deva</string>
+		<string>h_r-deva</string>
 		<string>h_la-deva</string>
 		<string>h_va-deva</string>
 		<string>h-deva</string>
+		<string>h-deva.half</string>
 		<string>h-deva.up</string>
 	</array>
 	<key>@MMK_R_hyphen</key>
@@ -2302,6 +2423,7 @@
 		<string>jh_na-deva</string>
 		<string>jh_ma-deva</string>
 		<string>jh_ya-deva</string>
+		<string>jh_r-deva</string>
 		<string>jh-deva</string>
 		<string>jh-deva.short</string>
 	</array>
@@ -2337,6 +2459,7 @@
 		<string>j_ba-deva</string>
 		<string>j_ma-deva</string>
 		<string>j_ya-deva</string>
+		<string>j_r-deva</string>
 		<string>j_va-deva</string>
 		<string>za_ra-deva</string>
 		<string>z_ya-deva</string>
@@ -2348,6 +2471,7 @@
 		<string>j-deva.long2</string>
 		<string>j-deva.short</string>
 		<string>j-deva.short2</string>
+		<string>z-deva</string>
 	</array>
 	<key>@MMK_R_jha-deva.loclSAN</key>
 	<array>
@@ -2419,8 +2543,9 @@
 		<string>rr_ya-deva</string>
 		<string>rr_ha-deva</string>
 		<string>rr-deva</string>
-		<string>r-deva</string>
-		<string>reph-deva.loclMAR</string>
+		<string>raEyelash-deva</string>
+		<string>raEyelash_ya-deva</string>
+		<string>raEyelash_ha-deva</string>
 	</array>
 	<key>@MMK_R_nga-deva</key>
 	<array>
@@ -2442,6 +2567,7 @@
 		<string>nya_ra-deva</string>
 		<string>ny_c_ya-deva</string>
 		<string>ny_cha-deva</string>
+		<string>ny_r-deva</string>
 		<string>ny_sha-deva</string>
 		<string>ny-deva</string>
 		<string>ny-deva.long</string>
@@ -2542,6 +2668,7 @@
 		<string>nn_ddha-deva</string>
 		<string>nn_nna-deva</string>
 		<string>nn_ma-deva</string>
+		<string>nn_r-deva</string>
 		<string>nn_va-deva</string>
 		<string>pa_ra-deva</string>
 		<string>p_na-deva</string>
@@ -2562,11 +2689,13 @@
 		<string>ph_pa-deva</string>
 		<string>ph_pha-deva</string>
 		<string>ph_ya-deva</string>
+		<string>ph_r-deva</string>
 		<string>ph_la-deva</string>
 		<string>ph_sha-deva</string>
 		<string>ssa_ra-deva</string>
 		<string>ss_ka_ra-deva</string>
 		<string>ss_tth_ya-deva</string>
+		<string>ss_r-deva</string>
 		<string>fa_ra-deva</string>
 		<string>f_ta-deva</string>
 		<string>f_sa-deva</string>
@@ -2582,6 +2711,7 @@
 		<string>ss-deva.short</string>
 		<string>ss-deva.short2</string>
 		<string>ss-deva.short3</string>
+		<string>f-deva</string>
 	</array>
 	<key>@MMK_R_percent</key>
 	<array>
@@ -2678,6 +2808,7 @@
 	</array>
 	<key>@MMK_R_sh-deva</key>
 	<array>
+		<string>sha_VocalicMatra-deva</string>
 		<string>sha_ra-deva</string>
 		<string>sha_ra_ya-deva</string>
 		<string>sh_ka-deva</string>
@@ -2688,11 +2819,11 @@
 		<string>sh_na-deva</string>
 		<string>sh_ma-deva</string>
 		<string>sh_ya-deva</string>
+		<string>sh_r-deva</string>
 		<string>sh_la-deva</string>
 		<string>sh_va-deva</string>
 		<string>sh_sha-deva</string>
 		<string>sh_qa-deva</string>
-		<string>sh_matra_vocalicR-deva</string>
 		<string>sh-deva</string>
 		<string>sh-deva.down</string>
 		<string>sh-deva.high</string>
@@ -2790,6 +2921,7 @@
 		<string>tha_ra-deva</string>
 		<string>th_na-deva</string>
 		<string>th_ya-deva</string>
+		<string>th_r-deva</string>
 		<string>th_va-deva</string>
 		<string>th-deva</string>
 		<string>th-deva.high</string>
@@ -2817,13 +2949,17 @@
 		<string>tt_na-deva</string>
 		<string>tt_ma-deva</string>
 		<string>tt_ya-deva</string>
+		<string>tt_r-deva</string>
 		<string>tt_va-deva</string>
 		<string>tth_ttha-deva</string>
 		<string>tth_tth_ya-deva</string>
 		<string>tth_na-deva</string>
 		<string>tth_ma-deva</string>
 		<string>tth_ya-deva</string>
+		<string>tth_r-deva</string>
+		<string>tt-deva</string>
 		<string>tt-deva.top</string>
+		<string>tth-deva</string>
 		<string>tth-deva.top</string>
 		<string>tta-headless-deva</string>
 		<string>ttha-headless-deva</string>
@@ -2890,10 +3026,6 @@
 		<string>qa-deva</string>
 		<string>bba-deva</string>
 		<string>ka_ra-deva</string>
-		<string>k_ka-deva</string>
-		<string>k_kha-deva</string>
-		<string>k_ja-deva</string>
-		<string>k_tta-deva</string>
 		<string>k_nna-deva</string>
 		<string>k_nna-deva.ss11</string>
 		<string>k_t_va-deva</string>
@@ -2905,6 +3037,7 @@
 		<string>k_pha-deva</string>
 		<string>k_ma-deva</string>
 		<string>k_ya-deva</string>
+		<string>k_r-deva</string>
 		<string>k_la-deva</string>
 		<string>k_va-deva</string>
 		<string>k_v_ya-deva</string>
@@ -2929,6 +3062,7 @@
 		<string>b_bha-deva</string>
 		<string>b_bha_ra-deva</string>
 		<string>b_ya-deva</string>
+		<string>b_r-deva</string>
 		<string>b_la-deva</string>
 		<string>b_l_ya-deva</string>
 		<string>b_va-deva</string>
@@ -2959,6 +3093,7 @@
 		<string>l_bha-deva</string>
 		<string>l_ma-deva</string>
 		<string>l_ya-deva</string>
+		<string>l_r-deva</string>
 		<string>l_la-deva</string>
 		<string>l_l_ya-deva</string>
 		<string>l_va-deva</string>
@@ -2969,9 +3104,12 @@
 		<string>l_za-deva</string>
 		<string>lla_ra-deva</string>
 		<string>ll_ya-deva</string>
+		<string>ll_r-deva</string>
+		<string>lll_r-deva</string>
 		<string>va_ra-deva</string>
 		<string>v_na-deva</string>
 		<string>v_ya-deva</string>
+		<string>v_r-deva</string>
 		<string>v_la-deva</string>
 		<string>v_va-deva</string>
 		<string>v_ha-deva</string>
@@ -2980,8 +3118,13 @@
 		<string>q_pha-deva</string>
 		<string>q_ba-deva</string>
 		<string>q_ma-deva</string>
+		<string>q_r-deva</string>
 		<string>q_qa-deva</string>
 		<string>q_fa-deva</string>
+		<string>k_ka-deva</string>
+		<string>k_kha-deva</string>
+		<string>k_ja-deva</string>
+		<string>k_tta-deva</string>
 		<string>k-deva</string>
 		<string>k-deva.long</string>
 		<string>k-deva.short</string>
@@ -3019,9 +3162,11 @@
 		<string>ya_ra-deva</string>
 		<string>y_na-deva</string>
 		<string>y_ya-deva</string>
+		<string>y_r-deva</string>
 		<string>yya_ra-deva</string>
 		<string>y-deva</string>
 		<string>y-deva.short</string>
+		<string>yy-deva</string>
 	</array>
 	<key>@MMK_R_ya-deva.connect-low</key>
 	<array>

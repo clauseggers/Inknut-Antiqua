@@ -52,6 +52,9 @@
       <point x="629" y="515" type="line"/>
     </contour>
     <contour>
+      <point x="618" y="324" type="move" name="leg"/>
+    </contour>
+    <contour>
       <point x="292" y="-90" type="move" name="nukta"/>
     </contour>
   </outline>

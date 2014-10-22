@@ -2,8 +2,9 @@
 <glyph name="d_ga_ra-deva" format="1">
   <advance width="781"/>
   <outline>
-    <component base="da_ra-deva"/>
+    <component base="da-deva.strokeless"/>
     <component base="g-deva.bottom" xOffset="-193"/>
+    <component base="rakar-deva" xOffset="297"/>
   </outline>
   <lib>
     <dict>
