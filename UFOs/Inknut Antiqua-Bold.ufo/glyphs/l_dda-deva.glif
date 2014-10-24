@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="l_dda-deva" format="1">
-  <advance width="1469"/>
+  <advance width="1429"/>
   <outline>
     <component base="l-deva"/>
-    <component base="dda-deva.short" xOffset="670"/>
+    <component base="dda-deva.short" xOffset="640"/>
   </outline>
   <lib>
     <dict>

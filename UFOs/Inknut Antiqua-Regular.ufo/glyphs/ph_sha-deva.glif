@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="ph_sha-deva" format="1">
-  <advance width="1457"/>
+  <advance width="1497"/>
   <outline>
     <component base="ph-deva"/>
-    <component base="sha-deva" xOffset="628"/>
+    <component base="sha-deva" xOffset="668"/>
   </outline>
   <lib>
     <dict>
+      <key>com.schriftgestaltung.Glyphs.Export</key>
+      <false/>
       <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
       <integer>5</integer>
       <key>public.markColor</key>

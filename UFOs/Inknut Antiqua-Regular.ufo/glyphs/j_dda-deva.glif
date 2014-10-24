@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="j_dda-deva" format="1">
-  <advance width="1192"/>
+  <advance width="1212"/>
   <outline>
     <component base="j-deva.long-up2"/>
     <component base="dda-deva.short" xOffset="530"/>

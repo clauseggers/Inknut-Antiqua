@@ -18,7 +18,7 @@
       <point x="687" y="242"/>
       <point x="644" y="290" type="curve"/>
     </contour>
-    <component base="ng-deva"/>
+    <component base="nga-deva"/>
     <component base="aaMatra-deva" xOffset="832"/>
     <contour>
       <point x="899" y="275" type="move" name="leg"/>

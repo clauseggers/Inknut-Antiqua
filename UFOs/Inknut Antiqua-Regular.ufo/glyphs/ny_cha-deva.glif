@@ -3,7 +3,7 @@
   <advance width="1446"/>
   <outline>
     <component base="ny-deva.low-short"/>
-    <component base="cha-deva" xOffset="482"/>
+    <component base="cha-deva" xOffset="452"/>
   </outline>
   <lib>
     <dict>

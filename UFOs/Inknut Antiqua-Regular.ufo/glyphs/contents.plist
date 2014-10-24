@@ -2510,6 +2510,10 @@
 	<string>s_sa-deva.glif</string>
 	<key>s_t</key>
 	<string>s_t.glif</string>
+	<key>s_t_r-deva</key>
+	<string>s_t_r-deva.glif</string>
+	<key>s_t_r-deva.loclMAR</key>
+	<string>s_t_r-deva.loclM_A_R_.glif</string>
 	<key>s_t_va-deva</key>
 	<string>s_t_va-deva.glif</string>
 	<key>s_t_ya-deva</key>
@@ -2520,6 +2524,8 @@
 	<string>s_ta_ra-deva.glif</string>
 	<key>s_ta_ra_ya-deva</key>
 	<string>s_ta_ra_ya-deva.glif</string>
+	<key>s_ta_ra_ya-deva.loclMAR</key>
+	<string>s_ta_ra_ya-deva.loclM_A_R_.glif</string>
 	<key>s_th_ya-deva</key>
 	<string>s_th_ya-deva.glif</string>
 	<key>s_tha-deva</key>

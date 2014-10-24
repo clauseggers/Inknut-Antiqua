@@ -3,7 +3,7 @@
   <advance width="1410"/>
   <outline>
     <component base="sh-deva.high"/>
-    <component base="cha-deva" xOffset="446"/>
+    <component base="cha-deva" xOffset="416"/>
   </outline>
   <lib>
     <dict>

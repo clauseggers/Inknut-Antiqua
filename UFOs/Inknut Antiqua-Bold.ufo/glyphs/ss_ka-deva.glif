@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="ss_ka-deva" format="1">
-  <advance width="1396"/>
+  <advance width="1456"/>
   <outline>
     <component base="ss-deva"/>
-    <component base="ka-deva" xOffset="319"/>
+    <component base="ka-deva" xOffset="379"/>
   </outline>
   <lib>
     <dict>
+      <key>com.schriftgestaltung.Glyphs.Export</key>
+      <false/>
       <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
       <integer>5</integer>
       <key>public.markColor</key>

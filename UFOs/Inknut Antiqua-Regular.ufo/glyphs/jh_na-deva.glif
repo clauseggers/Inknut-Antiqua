@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="jh_na-deva" format="1">
-  <advance width="1330"/>
+  <advance width="1321"/>
   <outline>
     <component base="jh-deva.short"/>
-    <component base="na-deva" xOffset="662"/>
+    <component base="na-deva" xOffset="653"/>
   </outline>
   <lib>
     <dict>

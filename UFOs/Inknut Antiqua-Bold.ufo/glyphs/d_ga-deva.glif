@@ -3,7 +3,7 @@
   <advance width="781"/>
   <outline>
     <component base="da-deva"/>
-    <component base="g-deva.bottom" xOffset="-182"/>
+    <component base="g-deva.bottom" xOffset="-312"/>
     <contour>
       <point x="488" y="0" type="move" name="rakar"/>
     </contour>

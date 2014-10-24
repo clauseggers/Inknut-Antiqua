@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="f_za-deva" format="1">
-  <advance width="1456"/>
+  <advance width="1506"/>
   <outline>
     <component base="ph-deva"/>
     <component base="nukta-deva" xOffset="101" yOffset="175"/>
-    <component base="za-deva" xOffset="628"/>
+    <component base="za-deva" xOffset="678"/>
   </outline>
   <lib>
     <dict>

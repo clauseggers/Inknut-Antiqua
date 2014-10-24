@@ -14,7 +14,7 @@
       <point x="488" y="0" type="move" name="rakar"/>
     </contour>
     <contour>
-      <point x="399" y="0" type="move" name="bottom"/>
+      <point x="269" y="0" type="move" name="bottom"/>
     </contour>
     <contour>
       <point x="776" y="-61" type="move" name="outstroke"/>
