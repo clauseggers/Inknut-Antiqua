@@ -1,6 +1,6 @@
 {
 DisplayStrings = (
-"/jha-deva/aaMatra-deva/nya-deva/halant-deva/ja-deva/halant-deva/nya-deva/oMatra-deva/avagraha-deva/tta-deva/auMatra-deva/ttha-deva/iiMatra-deva/dda-deva/dda-deva/nna-deva/halant-deva/ddha-deva/nna-deva/visarga-deva"
+"/ng_k_ssa-deva.ss11    /nga-deva/halant-deva/ka-deva/halant-deva/ssa-deva  \012\012 /ja-deva/halant-deva/ta-deva/halant-deva/ta-deva/la-deva/halant-deva/ca-deva/halant-deva/ya-deva  \012/ta-deva  /halant-deva/ddha-deva/la-deva/aaMatra-deva/aaMatra-deva/aaMatra-deva/ta-deva/k_ssa-deva.ss11/aaMatra-deva/aaMatra-deva/aaMatra-deva/ya-deva/la-deva   /ka-deva/halant-deva/ssa-deva  /ka-deva/halant-deva/nna-deva"
 );
 classes = (
 {
@@ -93,7 +93,7 @@ name = DevaRemoveReph;
 features = (
 {
 automatic = 1;
-code = "feature locl;\012feature subs;\012feature sups;\012feature numr;\012feature dnom;\012feature frac;\012feature ordn;\012feature calt;\012feature case;\012feature salt;\012feature ss01;\012feature ss02;\012feature ss10;\012feature ss11;\012feature ss12;\012feature nukt;\012feature akhn;\012feature rphf;\012feature rkrf;\012feature blwf;\012feature half;\012feature vatu;\012feature blws;\012feature haln;\012feature pres;\012feature abvs;\012";
+code = "feature locl;\012feature subs;\012feature sups;\012feature numr;\012feature dnom;\012feature frac;\012feature ordn;\012feature calt;\012feature case;\012feature rlig;\012feature salt;\012feature ss01;\012feature ss02;\012feature ss10;\012feature ss11;\012feature ss12;\012feature nukt;\012feature akhn;\012feature rphf;\012feature rkrf;\012feature blwf;\012feature half;\012feature vatu;\012feature haln;\012feature blws;\012feature abvs;\012feature pres;\012";
 name = aalt;
 },
 {
@@ -162,6 +162,7 @@ name = fina;
 {
 code = "script latn;\012language NLD;\012sub i j by ij;\012sub I J by IJ;\012language CAT;\012sub  l' periodcentered' l by ldot;\012sub  L' periodcentered' L by Ldot;";
 name = rlig;
+notes = "script latn;\012language NLD;\012sub i j by ij;\012sub I J by IJ;\012language CAT;\012sub  l' periodcentered' l by ldot;\012sub  L' periodcentered' L by Ldot;";
 },
 {
 automatic = 1;
@@ -195,7 +196,7 @@ notes = "SS01 is a way for users to force the use of Davanagari-styled Latin pun
 },
 {
 automatic = 1;
-code = "sub aCandra-deva by aCandra-deva.ss11;\012sub aShort-deva by aShort-deva.ss11;\012sub a-deva by a-deva.ss11;\012sub aa-deva by aa-deva.ss11;\012sub rVocalic-deva by rVocalic-deva.ss11;\012sub rrVocalic-deva by rrVocalic-deva.ss11;\012sub oe-deva by oe-deva.ss11;\012sub ue-deva by ue-deva.ss11;\012sub uue-deva by uue-deva.ss11;\012sub jha-deva by jha-deva.ss11;\012sub nna-deva by nna-deva.ss11;\012sub la-deva by la-deva.ss11;\012sub k_nna-deva by k_nna-deva.ss11;\012sub j_jha-deva by j_jha-deva.ss11;\012sub jha_ra-deva by jha_ra-deva.ss11;\012sub jh_na-deva by jh_na-deva.ss11;\012sub jh_ma-deva by jh_ma-deva.ss11;\012sub jh_ya-deva by jh_ya-deva.ss11;\012sub nna_ra-deva by nna_ra-deva.ss11;\012sub nn_dda-deva by nn_dda-deva.ss11;\012sub h_nna-deva by h_nna-deva.ss11;\012sub jh-deva by jh-deva.ss11;\012sub nn-deva by nn-deva.ss11;\012sub one-deva by one-deva.ss11;\012";
+code = "sub aCandra-deva by aCandra-deva.ss11;\012sub aShort-deva by aShort-deva.ss11;\012sub a-deva by a-deva.ss11;\012sub aa-deva by aa-deva.ss11;\012sub rVocalic-deva by rVocalic-deva.ss11;\012sub rrVocalic-deva by rrVocalic-deva.ss11;\012sub oe-deva by oe-deva.ss11;\012sub ue-deva by ue-deva.ss11;\012sub uue-deva by uue-deva.ss11;\012sub jha-deva by jha-deva.ss11;\012sub nna-deva by nna-deva.ss11;\012sub la-deva by la-deva.ss11;\012sub k_nna-deva by k_nna-deva.ss11;\012sub k_ssa-deva by k_ssa-deva.ss11;\012sub ng_k_ssa-deva by ng_k_ssa-deva.ss11;\012sub j_jha-deva by j_jha-deva.ss11;\012sub jha_ra-deva by jha_ra-deva.ss11;\012sub jh_na-deva by jh_na-deva.ss11;\012sub jh_ma-deva by jh_ma-deva.ss11;\012sub jh_ya-deva by jh_ya-deva.ss11;\012sub nna_ra-deva by nna_ra-deva.ss11;\012sub nn_dda-deva by nn_dda-deva.ss11;\012sub h_nna-deva by h_nna-deva.ss11;\012sub jh-deva by jh-deva.ss11;\012sub nn-deva by nn-deva.ss11;\012sub one-deva by one-deva.ss11;\012";
 name = ss11;
 notes = "Northern-style Devanagari lettershapes.";
 },
@@ -259,15 +260,15 @@ code = "sub ra-deva uMatra-deva  by ra_uMatra-deva;\012sub ra-deva uuMatra-deva 
 name = blws;
 },
 {
+code = "script dev2;\012lookup eyelashRa {\012\011# If ZWJ has been filtered out (Core Text):\012\011sub raEyelash-deva ya-deva by raEyelash_ya-deva;\012\011sub raEyelash-deva ha-deva by raEyelash_ha-deva;\012\011\012\011# Else:\012\011sub raEyelash-deva zerowidthjoiner ya-deva by raEyelash_ya-deva;\012\011sub raEyelash-deva zerowidthjoiner ha-deva by raEyelash_ha-deva;\012} eyelashRa;\012\012lookup Pres_conjuncts {\012#\011sub k-deva s-deva pa_ra-deva by k_s_pa_ra-deva;\012\011sub k-deva s-deva p-deva la-deva by k_s_p_la-deva;\012\011sub s-deva t_r-deva zerowidthjoiner by s_t_r-deva.loclMAR;\012\011sub s-deva t_r-deva by s_t_r-deva;\012\011sub s-deva t_r-deva ya-deva by s_ta_ra_ya-deva;\012\011sub k-deva ta_ra-deva by k_ta_ra-deva;\012\011sub k-deva t-deva ta-deva by k_t_ta-deva;\012\011sub k-deva t-deva ya-deva by k_t_ya-deva;\012\011sub k-deva t-deva va-deva by k_t_va-deva;\012\011sub k-deva pa_ra-deva by k_pa_ra-deva;\012#\011sub k-deva v-deva ya-deva by k_v_ya-deva;\012\011sub k-deva ssa_ra-deva by k_ssa_ra-deva;\012\011sub k-deva ss-deva ma-deva by k_ss_ma-deva;\012\011sub k-deva ss-deva ya-deva by k_ss_ya-deva;\012\011sub k-deva ss-deva va-deva by k_ss_va-deva;\012\011sub k-deva s-deva tta-deva by k_s_tta-deva;\012\011sub k-deva s-deva dda-deva by k_s_dda-deva;\012\011sub k-deva s-deva ta-deva by k_s_ta-deva;\012#\011sub k-deva s-deva pa-deva by k_s_pa-deva;\012\011sub g_r-deva ya-deva by ga_ra_ya-deva;\012#\011sub g-deva dh-deva ya-deva by g_dh_ya-deva;\012#\011sub g-deva dh-deva va-deva by g_dh_va-deva;\012#\011sub g-deva n-deva ya-deva by g_n_ya-deva;\012\011sub g-deva bh-deva ya-deva by g_bh_ya-deva;\012\011sub ng-deva ka_ra-deva by ng_ka_ra-deva;\012\011sub ng-deva k-deva ssa-deva by ng_k_ssa-deva;\012\011sub ng-deva ga_ra-deva by ng_ga_ra-deva;\012\011sub ng-deva gha_ra-deva by ng_gha_ra-deva;\012#\011sub c-deva ch-deva va-deva by c_ch_va-deva;\012\011sub j-deva j-deva nya-deva by j_j_nya-deva;\012\011sub j-deva j-deva ya-deva by j_j_ya-deva;\012\011sub j-deva j-deva va-deva by j_j_va-deva;\012\011sub j-deva ny-deva ya-deva by j_ny_ya-deva;\012\011sub ny-deva c-deva ya-deva by ny_c_ya-deva;\012\011sub ny-deva j-deva ya-deva by ny_j_ya-deva;\012\011sub tt-deva tt-deva ya-deva by tt_tt_ya-deva;\012\011sub tth-deva tth-deva ya-deva by tth_tth_ya-deva;\012\011sub dd-deva dd-deva ya-deva by dd_dd_ya-deva;\012\011sub ddh-deva ddh-deva ya-deva by ddh_ddh_ya-deva;\012\011sub t_r-deva ya-deva by ta_ra_ya-deva;\012\011sub t-deva ka_ra-deva by t_ka_ra-deva;\012\011sub t-deva k-deva ya-deva by t_k_ya-deva;\012\011sub t-deva k-deva va-deva by t_k_va-deva;\012#\011sub t-deva k-deva ssa-deva by t_k_ssa-deva;\012\011sub t-deva kha_ra-deva by t_kha_ra-deva;\012\011sub t-deva kh-deva na-deva by t_kh_na-deva;\012\011sub t-deva t-deva ya-deva by t_t_ya-deva;\012\011sub t-deva t-deva va-deva by t_t_va-deva;\012\011sub t-deva d-deva ya-deva by t_d_ya-deva;\012\011sub t-deva n-deva ya-deva by t_n_ya-deva;\012\011sub t-deva pa_ra-deva by t_pa_ra-deva;\012\011sub t-deva p-deva la-deva by t_p_la-deva;\012\011sub t-deva m-deva ya-deva by t_m_ya-deva;\012\011sub t-deva s-deva na-deva by t_s_na-deva;\012\011sub t-deva s-deva ya-deva by t_s_ya-deva;\012\011sub t-deva s-deva va-deva by t_s_va-deva;\012\011sub d_r-deva ya-deva by da_ra_ya-deva;\012\011sub d-deva ga_ra-deva by d_ga_ra-deva;\012\011sub d-deva d-deva ya-deva by d_d_ya-deva;\012\011sub d-deva dha-deva rVocalicMatra-deva by d_dha_rVocalicMatra-deva;\012\011sub d-deva dh-deva ya-deva by d_dh_ya-deva;\012\011sub d-deva ba_ra-deva by d_ba_ra-deva;\012\011sub d-deva bh-deva ya-deva by d_bh_ya-deva;\012\011sub d-deva va_ra-deva by d_va_ra-deva;\012\011sub d-deva v-deva ya-deva by d_v_ya-deva;\012\011sub dh-deva n-deva ya-deva by dh_n_ya-deva;\012\011sub dh-deva va_ra-deva by dh_va_ra-deva;\012\011sub n-deva k-deva sa-deva by n_k_sa-deva;\012\011sub n-deva ta_ra-deva by n_ta_ra-deva;\012\011sub n-deva t-deva ya-deva by n_t_ya-deva;\012\011sub n-deva t-deva sa-deva by n_t_sa-deva;\012\011sub n-deva th-deva ya-deva by n_th_ya-deva;\012\011sub n-deva th-deva va-deva by n_th_va-deva;\012\011sub n-deva da_ra-deva by n_da_ra-deva;\012\011sub n-deva d-deva va-deva by n_d_va-deva;\012\011sub n-deva dh-deva ya-deva by n_dh_ya-deva;\012\011sub n-deva dha_ra-deva by n_dh_ra-deva;\012\011sub n-deva dh-deva va-deva by n_dh_va-deva;\012\011sub n-deva n-deva ya-deva by n_n_ya-deva;\012\011sub n-deva pa_ra-deva by n_pa_ra-deva;\012\011sub n-deva m-deva ya-deva by n_m_ya-deva;\012\011sub n-deva s-deva tta-deva by n_s_tta-deva;\012\011sub n-deva h-deva ya-deva by n_h_ya-deva;\012\011sub p-deva t-deva ya-deva by p_t_ya-deva;\012\011sub p_r-deva pa-deva by p_ra_pa-deva;\012\011sub b-deva j-deva ya-deva by b_j_ya-deva;\012\011sub b-deva dh-deva va-deva by b_dh_va-deva;\012\011sub b-deva bha_ra-deva by b_bha_ra-deva;\012#\011sub b-deva l-deva ya-deva by b_l_ya-deva;\012\011sub bh_r-deva ya-deva by bha_ra_ya-deva;\012#\011sub m-deva pa_ra-deva by m_pa_ra-deva;\012\011sub m-deva ba_ra-deva by m_ba_ra-deva;\012\011sub m-deva b-deva ya-deva by m_b_ya-deva;\012\011sub m-deva bha_ra-deva by m_bha_ra-deva;\012#\011sub l-deva k-deva ya-deva by l_k_ya-deva;\012\011sub l-deva c-deva ya-deva by l_c_ya-deva;\012\011sub l-deva th-deva ya-deva by l_th_ya-deva;\012\011sub l-deva da_ra-deva by l_da_ra-deva;\012#\011sub l-deva l-deva ya-deva by l_l_ya-deva;\012\011sub l-deva v-deva dda-deva by l_v_dda-deva;\012\011sub l-deva h-deva ya-deva by l_h_ya-deva;\012\011sub sh_r-deva ya-deva by sha_ra_ya-deva;\012\011sub ss-deva ka_ra-deva by ss_ka_ra-deva;\012\011sub ss-deva tt-deva ya-deva by ss_tt_ya-deva;\012\011sub ss-deva tt-deva va-deva by ss_tt_va-deva;\012\011sub ss-deva tth-deva ya-deva by ss_tth_ya-deva;\012#\011sub ss-deva nn-deva ya-deva by ss_nn_ya-deva;\012\011sub ss-deva pa_ra-deva by ss_pa_ra-deva;\012\011sub ss-deva m-deva ya-deva by ss_m_ya-deva;\012\011sub s-deva ka_ra-deva by s_ka_ra-deva;\012\011sub s-deva k-deva va-deva by s_k_va-deva;\012\011sub s-deva ta_ra-deva by s_ta_ra-deva;\012\011sub s-deva t-deva ya-deva by s_t_ya-deva;\012\011sub s-deva t-deva va-deva by s_t_va-deva;\012\011sub s-deva th-deva ya-deva by s_th_ya-deva;\012\011sub s-deva pa_ra-deva by s_pa_ra-deva;\012\011sub s-deva m-deva ya-deva by s_m_ya-deva;\012\011sub h-deva m-deva ya-deva by h_m_ya-deva;\012\011sub k-deva ra-deva by ka_ra-deva;\012\011sub k-deva ca-deva by k_ca-deva;\012\011sub k-deva nna-deva by k_nna-deva;\012\011sub k-deva ta-deva by k_ta-deva;\012\011sub k-deva tha-deva by k_tha-deva;\012#\011sub k-deva da-deva by k_da-deva;\012#\011sub k-deva na-deva by k_na-deva;\012\011sub k-deva pa-deva by k_pa-deva;\012\011sub k-deva pha-deva by k_pha-deva;\012\011sub k-deva ma-deva by k_ma-deva;\012\011sub k-deva ya-deva by k_ya-deva;\012\011sub k-deva ra_halant-deva by k_r-deva;\012#\011sub k-deva la-deva by k_la-deva;\012#\011sub k-deva va-deva by k_va-deva;\012#\011sub k-deva sha-deva by k_sha-deva;\012\011sub k-deva ssa-deva by k_ssa-deva;\012\011sub k-deva ss-deva by k_ss-deva;\012#\011sub k-deva sa-deva by k_sa-deva;\012\011sub kh-deva ra-deva by kha_ra-deva;\012\011sub kh-deva kha-deva by kh_kha-deva;\012#\011sub kh-deva ta-deva by kh_ta-deva;\012\011sub kh-deva na-deva by kh_na-deva;\012\011sub kh-deva ma-deva by kh_ma-deva;\012\011sub kh-deva ya-deva by kh_ya-deva;\012\011sub kh-deva ra_halant-deva by kh_r-deva;\012#\011sub kh-deva va-deva by kh_va-deva;\012\011sub kh-deva sha-deva by kh_sha-deva;\012\011sub g-deva ra-deva by ga_ra-deva;\012#\011sub g-deva ga-deva by g_ga-deva;\012#\011sub g-deva gha-deva by g_gha-deva;\012#\011sub g-deva ja-deva by g_ja-deva;\012#\011sub g-deva nna-deva by g_nna-deva;\012#\011sub g-deva da-deva by g_da-deva;\012#\011sub g-deva dha-deva by g_dha-deva;\012\011sub g-deva na-deva by g_na-deva;\012#\011sub g-deva ba-deva by g_ba-deva;\012\011sub g-deva bha-deva by g_bha-deva;\012#\011sub g-deva ma-deva by g_ma-deva;\012#\011sub g-deva ya-deva by g_ya-deva;\012\011sub g-deva ra_halant-deva by g_r-deva;\012#\011sub g-deva la-deva by g_la-deva;\012#\011sub g-deva va-deva by g_va-deva;\012#\011sub g-deva sa-deva by g_sa-deva;\012\011sub gh-deva ra-deva by gha_ra-deva;\012#\011sub gh-deva na-deva by gh_na-deva;\012#\011sub gh-deva ma-deva by gh_ma-deva;\012#\011sub gh-deva ya-deva by gh_ya-deva;\012\011sub gh-deva ra_halant-deva by gh_r-deva;\012\011sub ng-deva ka-deva by ng_ka-deva;\012\011sub ng-deva kha-deva by ng_kha-deva;\012\011sub ng-deva ga-deva by ng_ga-deva;\012\011sub ng-deva gha-deva by ng_gha-deva;\012\011sub ng-deva ma-deva by ng_ma-deva;\012\011sub ng-deva ya-deva by ng_ya-deva;\012\011sub ng-deva ra_halant-deva by ng_r-deva;\012\011sub ca-deva ra-deva by ca_ra-deva;\012\011sub c-deva ca-deva by c_ca-deva;\012\011sub c-deva cha-deva by c_cha-deva;\012\011sub c-deva na-deva by c_na-deva;\012\011sub c-deva ma-deva by c_ma-deva;\012\011sub c-deva ya-deva by c_ya-deva;\012\011sub c-deva ra_halant-deva by c_r-deva;\012#\011sub ch-deva na-deva by ch_na-deva;\012\011sub ch-deva ya-deva by ch_ya-deva;\012\011sub ch-deva ra_halant-deva by ch_r-deva;\012#\011sub ch-deva va-deva by ch_va-deva;\012\011sub j-deva ra-deva by ja_ra-deva;\012\011sub j-deva ka-deva by j_ka-deva;\012\011sub j-deva ja-deva by j_ja-deva;\012\011sub j-deva jha-deva by j_jha-deva;\012\011sub j-deva nya-deva by j_nya-deva;\012\011sub j-deva ny-deva by j_ny-deva;\012\011sub j-deva tta-deva by j_tta-deva;\012\011sub j-deva dda-deva by j_dda-deva;\012\011sub j-deva ta-deva by j_ta-deva;\012\011sub j-deva da-deva by j_da-deva;\012\011sub j-deva na-deva by j_na-deva;\012\011sub j-deva ba-deva by j_ba-deva;\012\011sub j-deva ma-deva by j_ma-deva;\012\011sub j-deva ya-deva by j_ya-deva;\012\011sub j-deva ra_halant-deva by j_r-deva;\012\011sub j-deva va-deva by j_va-deva;\012\011sub jh-deva ra-deva by jha_ra-deva;\012\011sub jh-deva na-deva by jh_na-deva;\012\011sub jh-deva ma-deva by jh_ma-deva;\012\011sub jh-deva ya-deva by jh_ya-deva;\012\011sub jh-deva ra_halant-deva by jh_r-deva;\012\011sub ny-deva ra-deva by nya_ra-deva;\012\011sub ny-deva ca-deva by ny_ca-deva;\012\011sub ny-deva cha-deva by ny_cha-deva;\012\011sub ny-deva ja-deva by ny_ja-deva;\012\011sub ny-deva ra_halant-deva by ny_r-deva;\012\011sub ny-deva sha-deva by ny_sha-deva;\012\011sub tt-deva tta-deva by tt_tta-deva;\012\011sub tt-deva ttha-deva by tt_ttha-deva;\012\011sub tt-deva ddha-deva by tt_ddha-deva;\012\011sub tt-deva na-deva by tt_na-deva;\012\011sub tt-deva ma-deva by tt_ma-deva;\012\011sub tt-deva ya-deva by tt_ya-deva;\012\011sub tt-deva ra_halant-deva by tt_r-deva;\012\011sub tt-deva va-deva by tt_va-deva;\012\011sub tth-deva ttha-deva by tth_ttha-deva;\012\011sub tth-deva na-deva by tth_na-deva;\012\011sub tth-deva ma-deva by tth_ma-deva;\012\011sub tth-deva ya-deva by tth_ya-deva;\012\011sub tth-deva ra_halant-deva by tth_r-deva;\012\011sub dd-deva ka-deva by dd_ka-deva;\012\011sub dd-deva gha-deva by dd_gha-deva;\012\011sub dd-deva tta-deva by dd_tta-deva;\012\011sub dd-deva ttha-deva by dd_ttha-deva;\012\011sub dd-deva dda-deva by dd_dda-deva;\012\011sub dd-deva ddha-deva by dd_ddha-deva;\012\011sub dd-deva na-deva by dd_na-deva;\012\011sub dd-deva ma-deva by dd_ma-deva;\012\011sub dd-deva ya-deva by dd_ya-deva;\012\011sub dd-deva ra_halant-deva by dd_r-deva;\012\011sub dd-deva va-deva by dd_va-deva;\012\011sub ddh-deva ddha-deva by ddh_ddha-deva;\012\011sub ddh-deva da-deva by ddh_da-deva;\012\011sub ddh-deva na-deva by ddh_na-deva;\012\011sub ddh-deva ma-deva by ddh_ma-deva;\012\011sub ddh-deva ya-deva by ddh_ya-deva;\012\011sub ddh-deva ra_halant-deva by ddh_r-deva;\012\011sub nn-deva ra-deva by nna_ra-deva;\012#\011sub nn-deva tta-deva by nn_tta-deva;\012#\011sub nn-deva ttha-deva by nn_ttha-deva;\012\011sub nn-deva dda-deva by nn_dda-deva;\012#\011sub nn-deva ddha-deva by nn_ddha-deva;\012#\011sub nn-deva nna-deva by nn_nna-deva;\012#\011sub nn-deva ma-deva by nn_ma-deva;\012#\011sub nn-deva ya-deva by nn_ya-deva;\012\011sub nn-deva ra_halant-deva by nn_r-deva;\012#\011sub nn-deva va-deva by nn_va-deva;\012\011sub t-deva ra-deva by ta_ra-deva;\012\011sub t-deva ka-deva by t_ka-deva;\012\011sub t-deva kha-deva by t_kha-deva;\012\011sub t-deva ta-deva by t_ta-deva;\012\011sub t-deva t-deva by t_t-deva;\012\011sub t-deva tha-deva by t_tha-deva;\012\011sub t-deva na-deva by t_na-deva;\012\011sub t-deva pa-deva by t_pa-deva;\012\011sub t-deva pha-deva by t_pha-deva;\012\011sub t-deva ma-deva by t_ma-deva;\012\011sub t-deva ya-deva by t_ya-deva;\012\011sub t-deva ra_halant-deva by t_r-deva;\012\011sub t-deva la-deva by t_la-deva;\012\011sub t-deva va-deva by t_va-deva;\012\011sub t-deva sa-deva by t_sa-deva;\012\011sub th-deva ra-deva by tha_ra-deva;\012\011sub th-deva na-deva by th_na-deva;\012\011sub th-deva ya-deva by th_ya-deva;\012\011sub th-deva ra_halant-deva by th_r-deva;\012\011sub th-deva va-deva by th_va-deva;\012\011sub d-deva ra-deva by da_ra-deva;\012\011sub da-deva uuMatra-deva by da_uuMatra-deva;\012\011sub da-deva rVocalicMatra-deva by da_rVocalicMatra-deva;\012\011sub d-deva ga-deva by d_ga-deva;\012\011sub d-deva gha-deva by d_gha-deva;\012\011sub d-deva da-deva by d_da-deva;\012\011sub d-deva dha-deva by d_dha-deva;\012\011sub d-deva na-deva by d_na-deva;\012\011sub d-deva ba-deva by d_ba-deva;\012\011sub d-deva bha-deva by d_bha-deva;\012\011\011sub d-deva bha_ra-deva by d_bha_ra-deva;\012\011sub d-deva ma-deva by d_ma-deva;\012\011sub d-deva ya-deva by d_ya-deva;\012\011sub d-deva ra_halant-deva by d_r-deva;\012\011sub d-deva va-deva by d_va-deva;\012\011sub dh-deva ra-deva by dha_ra-deva;\012\011sub dh-deva na-deva by dh_na-deva;\012#\011sub dh-deva ma-deva by dh_ma-deva;\012\011sub dh-deva ya-deva by dh_ya-deva;\012\011sub dh-deva ra_halant-deva by dh_r-deva;\012\011sub dh-deva va-deva by dh_va-deva;\012\011sub n-deva ra-deva by na_ra-deva;\012\011sub n-deva ka-deva by n_ka-deva;\012\011sub n-deva ca-deva by n_ca-deva;\012#\011sub n-deva tta-deva by n_tta-deva;\012\011sub n-deva dda-deva by n_dda-deva;\012\011sub n-deva ta-deva by n_ta-deva;\012\011sub n-deva tha-deva by n_tha-deva;\012\011sub n-deva da-deva by n_da-deva;\012\011sub n-deva dha-deva by n_dha-deva;\012\011sub n-deva na-deva by n_na-deva;\012\011sub n-deva pa-deva by n_pa-deva;\012\011sub n-deva pha-deva by n_pha-deva;\012\011sub n-deva bha-deva by n_bha-deva;\012\011sub n-deva ma-deva by n_ma-deva;\012\011sub n-deva ya-deva by n_ya-deva;\012\011sub n-deva ra_halant-deva by n_r-deva;\012\011sub n-deva la-deva by n_la-deva;\012\011sub n-deva va-deva by n_va-deva;\012#\011sub n-deva sa-deva by n_sa-deva;\012#\011sub n-deva ha-deva by n_ha-deva;\012\011sub nnn-deva ra_halant-deva by nnn_r-deva;\012\011sub p-deva ra-deva by pa_ra-deva;\012\011sub p-deva tta-deva by p_tta-deva;\012\011sub p-deva ttha-deva by p_ttha-deva;\012\011sub p-deva ta-deva by p_ta-deva;\012\011sub p-deva na-deva by p_na-deva;\012#\011sub p-deva pa-deva by p_pa-deva;\012#\011sub p-deva pha-deva by p_pha-deva;\012\011sub p-deva ma-deva by p_ma-deva;\012\011sub p-deva ya-deva by p_ya-deva;\012\011sub p-deva ra_halant-deva by p_r-deva;\012\011sub p-deva la-deva by p_la-deva;\012\011sub p-deva va-deva by p_va-deva;\012\011sub p-deva sa-deva by p_sa-deva;\012\011sub ph-deva ra-deva by pha_ra-deva;\012#\011sub ph-deva ja-deva by ph_ja-deva;\012#\011sub ph-deva tta-deva by ph_tta-deva;\012#\011sub ph-deva ta-deva by ph_ta-deva;\012#\011sub ph-deva na-deva by ph_na-deva;\012#\011sub ph-deva pa-deva by ph_pa-deva;\012#\011sub ph-deva pha-deva by ph_pha-deva;\012\011sub ph-deva ya-deva by ph_ya-deva;\012\011sub ph-deva ra_halant-deva by ph_r-deva;\012#\011sub ph-deva la-deva by ph_la-deva;\012#\011sub ph-deva sha-deva by ph_sha-deva;\012\011sub b-deva ra-deva by ba_ra-deva;\012\011sub b-deva ja-deva by b_ja-deva;\012#\011sub b-deva ta-deva by b_ta-deva;\012\011sub b-deva da-deva by b_da-deva;\012\011sub b-deva dha-deva by b_dha-deva;\012#\011sub b-deva na-deva by b_na-deva;\012#\011sub b-deva ba-deva by b_ba-deva;\012\011sub b-deva bha-deva by b_bha-deva;\012\011sub b-deva ya-deva by b_ya-deva;\012\011sub b-deva ra_halant-deva by b_r-deva;\012#\011sub b-deva la-deva by b_la-deva;\012#\011sub b-deva va-deva by b_va-deva;\012\011sub b-deva sha-deva by b_sha-deva;\012\011sub b-deva sa-deva by b_sa-deva;\012\011sub b-deva za-deva by b_za-deva;\012\011sub bh-deva ra-deva by bha_ra-deva;\012\011sub bh-deva na-deva by bh_na-deva;\012\011sub bh-deva ya-deva by bh_ya-deva;\012\011sub bh-deva ra_halant-deva by bh_r-deva;\012#\011sub bh-deva va-deva by bh_va-deva;\012\011sub m-deva ra-deva by ma_ra-deva;\012#\011sub m-deva ta-deva by m_ta-deva;\012\011sub m-deva da-deva by m_da-deva;\012#\011sub m-deva na-deva by m_na-deva;\012#\011sub m-deva pa-deva by m_pa-deva;\012\011sub m-deva ba-deva by m_ba-deva;\012\011sub m-deva bha-deva by m_bha-deva;\012#\011sub m-deva ma-deva by m_ma-deva;\012\011sub m-deva ya-deva by m_ya-deva;\012\011sub m-deva ra_halant-deva by m_r-deva;\012\011sub m-deva la-deva by m_la-deva;\012\011sub m-deva va-deva by m_va-deva;\012\011sub m-deva sha-deva by m_sha-deva;\012\011sub m-deva sa-deva by m_sa-deva;\012\011sub m-deva ha-deva by m_ha-deva;\012\011sub y-deva ra-deva by ya_ra-deva;\012\011sub y-deva na-deva by y_na-deva;\012\011sub y-deva ya-deva by y_ya-deva;\012\011sub y-deva ra_halant-deva by y_r-deva;\012\011sub ra-deva uMatra-deva by ra_uMatra-deva;\012\011sub ra-deva uuMatra-deva by ra_uuMatra-deva;\012\011sub ra-deva rVocalicMatra-deva by rVocalic-deva;\012\011sub ra-deva rrVocalicMatra-deva by rrVocalic-deva;\012\011sub rr-deva ya-deva by rr_ya-deva;\012\011sub rr-deva ha-deva by rr_ha-deva;\012\011sub l-deva ra-deva by la_ra-deva;\012#\011sub l-deva ka-deva by l_ka-deva;\012#\011sub l-deva kha-deva by l_kha-deva;\012#\011sub l-deva ga-deva by l_ga-deva;\012#\011sub l-deva ja-deva by l_ja-deva;\012#\011sub l-deva tta-deva by l_tta-deva;\012#\011sub l-deva ttha-deva by l_ttha-deva;\012\011sub l-deva dda-deva by l_dda-deva;\012#\011sub l-deva ddha-deva by l_ddha-deva;\012#\011sub l-deva ta-deva by l_ta-deva;\012\011sub l-deva tha-deva by l_tha-deva;\012#\011sub l-deva da-deva by l_da-deva;\012#\011sub l-deva pa-deva by l_pa-deva;\012#\011sub l-deva pha-deva by l_pha-deva;\012#\011sub l-deva ba-deva by l_ba-deva;\012\011sub l-deva bha-deva by l_bha-deva;\012#\011sub l-deva ma-deva by l_ma-deva;\012#\011sub l-deva ya-deva by l_ya-deva;\012\011sub l-deva ra_halant-deva by l_r-deva;\012#\011sub l-deva la-deva by l_la-deva;\012#\011sub l-deva va-deva by l_va-deva;\012#\011sub l-deva sa-deva by l_sa-deva;\012#\011sub l-deva ha-deva by l_ha-deva;\012\011sub l-deva za-deva by l_za-deva;\012\011sub ll-deva ra-deva by lla_ra-deva;\012#\011sub ll-deva ya-deva by ll_ya-deva;\012\011sub ll-deva ra_halant-deva by ll_r-deva;\012\011sub lll-deva ra_halant-deva by lll_r-deva;\012\011sub v-deva ra-deva by va_ra-deva;\012\011sub v-deva na-deva by v_na-deva;\012\011sub v-deva ya-deva by v_ya-deva;\012\011sub v-deva ra_halant-deva by v_r-deva;\012#\011sub v-deva la-deva by v_la-deva;\012#\011sub v-deva va-deva by v_va-deva;\012\011sub v-deva ha-deva by v_ha-deva;\012\011sub sh-deva ra-deva by sha_ra-deva;\012\011sub sh-deva ka-deva by sh_ka-deva;\012\011sub sh-deva ca-deva by sh_ca-deva;\012\011sub sh-deva cha-deva by sh_cha-deva;\012\011sub sh-deva tta-deva by sh_tta-deva;\012\011sub sh-deva ta-deva by sh_ta-deva;\012\011sub sh-deva na-deva by sh_na-deva;\012\011sub sh-deva ma-deva by sh_ma-deva;\012\011sub sh-deva ya-deva by sh_ya-deva;\012\011sub sh-deva ra_halant-deva by sh_r-deva;\012\011sub sh-deva la-deva by sh_la-deva;\012\011sub sh-deva va-deva by sh_va-deva;\012\011sub sh-deva sha-deva by sh_sha-deva;\012\011sub sh-deva qa-deva by sh_qa-deva;\012\011sub ss-deva ra-deva by ssa_ra-deva;\012#\011sub ss-deva ka-deva by ss_ka-deva;\012\011sub ss-deva tta-deva by ss_tta-deva;\012\011sub ss-deva ttha-deva by ss_ttha-deva;\012#\011sub ss-deva nna-deva by ss_nna-deva;\012#\011sub ss-deva pa-deva by ss_pa-deva;\012#\011sub ss-deva pha-deva by ss_pha-deva;\012\011sub ss-deva ma-deva by ss_ma-deva;\012\011sub ss-deva ya-deva by ss_ya-deva;\012\011sub ss-deva ra_halant-deva by ss_r-deva;\012#\011sub ss-deva va-deva by ss_va-deva;\012#\011sub ss-deva ssa-deva by ss_ssa-deva;\012\011sub s-deva ra-deva by sa_ra-deva;\012\011sub s-deva ka-deva by s_ka-deva;\012\011sub s-deva kha-deva by s_kha-deva;\012\011sub s-deva cha-deva by s_cha-deva;\012\011sub s-deva ja-deva by s_ja-deva;\012\011sub s-deva tta-deva by s_tta-deva;\012\011sub s-deva ta-deva by s_ta-deva;\012\011sub s-deva tha-deva by s_tha-deva;\012\011sub s-deva da-deva by s_da-deva;\012\011sub s-deva na-deva by s_na-deva;\012#\011sub s-deva pa-deva by s_pa-deva;\012\011sub s-deva pha-deva by s_pha-deva;\012\011sub s-deva ba-deva by s_ba-deva;\012\011sub s-deva ma-deva by s_ma-deva;\012\011sub s-deva ya-deva by s_ya-deva;\012\011sub s-deva ra_halant-deva by s_r-deva;\012\011sub s-deva la-deva by s_la-deva;\012\011sub s-deva va-deva by s_va-deva;\012\011sub s-deva sa-deva by s_sa-deva;\012\011sub h-deva ra-deva by ha_ra-deva;\012\011sub ha-deva uuMatra-deva by ha_uuMatra-deva;\012\011sub ha-deva rVocalicMatra-deva by ha_rVocalicMatra-deva;\012\011sub h-deva nna-deva by h_nna-deva;\012\011sub h-deva na-deva by h_na-deva;\012\011sub h-deva ma-deva by h_ma-deva;\012\011sub h-deva ya-deva by h_ya-deva;\012\011sub h-deva ra_halant-deva by h_r-deva;\012\011sub h-deva la-deva by h_la-deva;\012\011sub h-deva va-deva by h_va-deva;\012\011sub q-deva ra-deva by qa_ra-deva;\012\011sub q-deva ta-deva by q_ta-deva;\012\011sub q-deva pha-deva by q_pha-deva;\012\011sub q-deva ba-deva by q_ba-deva;\012\011sub q-deva ma-deva by q_ma-deva;\012\011sub q-deva ra_halant-deva by q_r-deva;\012\011sub q-deva qa-deva by q_qa-deva;\012\011sub q-deva fa-deva by q_fa-deva;\012\011sub khh-deva ra-deva by khha_ra-deva;\012\011sub khh-deva ta-deva by khh_ta-deva;\012\011sub khh-deva ma-deva by khh_ma-deva;\012\011sub khh-deva ya-deva by khh_ya-deva;\012\011sub khh-deva va-deva by khh_va-deva;\012\011sub khh-deva sha-deva by khh_sha-deva;\012\011sub khh-deva sa-deva by khh_sa-deva;\012\011sub ghh-deva ra-deva by ghha_ra-deva;\012\011sub z-deva ra-deva by za_ra-deva;\012\011sub z-deva ya-deva by z_ya-deva;\012\011sub z-deva za-deva by z_za-deva;\012\011sub f-deva ra-deva by fa_ra-deva;\012\011sub f-deva ta-deva by f_ta-deva;\012\011sub f-deva sa-deva by f_sa-deva;\012\011sub f-deva za-deva by f_za-deva;\012\011sub f-deva fa-deva by f_fa-deva;\012\011sub yy-deva ra-deva by yya_ra-deva;\012} Pres_conjuncts;\012\012\012lookup Imatra2_devanagari {\012\011sub [iMatra-deva]' [khh_ya-deva s_ja-deva s_ba-deva s_m_ya-deva s-deva.short kh_kha-deva s_ya-deva ma-deva.bottom s_r-deva s_pa_ra-deva kh-deva kh_ya-deva s-deva.short2 s_th_ya-deva iMatra_stem-deva khh_va-deva ra-deva kh_sha-deva khha-deva kh_r-deva s_cha-deva s_ta_ra-deva kh-deva.long s_t_ya-deva s_kha-deva sa-deva s_va-deva s_na-deva khh_ma-deva s_tha-deva ra_uMatra-deva khh_sha-deva kha_ra-deva kha-deva rra-deva kh_na-deva s_ma-deva s_ka_ra-deva khh-deva khh_ta-deva s_ta-deva kh_ma-deva s_la-deva s_t_va-deva khha_ra-deva s_da-deva s_k_va-deva s_t_r-deva.loclMAR s_ta_ra_ya-deva s-deva khh_sa-deva s_t_r-deva s-deva.low s_sa-deva s_ka-deva ra_uuMatra-deva s_pha-deva ra_halant-deva s_ta_ra_ya-deva.loclMAR s-deva.long sa_ra-deva s_tta-deva] by [iMatra-deva.01];\012\011sub [iMatra-deva]' [ha-deva ha_uMatra-deva h-deva h_m_ya-deva ha_uuMatra-deva] by [iMatra-deva.02];\012\011sub [iMatra-deva]' [d_va-deva t_s_ya-deva d_na-deva dda-deva.short q_ma-deva f_za-deva k_r-deva pa-deva dda-deva.short2 ddh_ya-deva tt_ttha-deva ph_ya-deva k_s_ta-deva ba_ra-deva ph_r-deva ddh_ddha-deva va_ra-deva q_ta-deva k_s_p_la-deva da-deva.knotless qa_ra-deva qa-deva d-deva t_kha_ra-deva k-deva k_tha-deva t_s_na-deva ha_rVocalicMatra-deva d_da-deva tth_ya-deva tt_va-deva d_ga_ra-deva t_s_va-deva tt_na-deva pha-deva f-deva ddh_na-deva tth_r-deva tt_tta-deva pha_ra-deva ba-deva q_ba-deva ddha-deva t_sa-deva tt_ma-deva p_sa-deva ddh_ddh_ya-deva ddh_ma-deva ka-deva ddh_da-deva q_qa-deva d_ba-deva bba-deva tth_na-deva da_rVocalicMatra-deva ta-deva tth_tth_ya-deva q_r-deva nnna-deva f_fa-deva k_t_va-deva tth-deva.top q-deva da_uuMatra-deva t_kh_na-deva da-deva tth_ma-deva v_na-deva ka_ra-deva da-deva.strokeless ssa-deva ddh_r-deva ttha-deva tt_r-deva fa_ra-deva k_nna-deva.ss11 pa_ra-deva ph-deva ssa_ra-deva d_r-deva d_va_ra-deva ddh-deva.top tt_ddha-deva k_s_tta-deva va-deva f_ta-deva tt-deva tta-deva k_s_dda-deva t_kha-deva na-deva rha-deva da_ra-deva d-deva.top tt_tt_ya-deva tt-deva.top d_ga-deva fa-deva tth_ttha-deva ddh-deva tt_ya-deva d_ba_ra-deva f_sa-deva k_ya-deva tth-deva] by [iMatra-deva.03];\012\011sub [iMatra-deva]' [ddda-deva ss_ttha-deva ng_ka_ra-deva q_pha-deva jh-deva dd_ka-deva k_nna-deva jha_ra-deva la_lVocalicMatra-deva.loclMAR k_pa-deva la-deva.loclMAR ng_ma-deva q-deva.short ng-deva jh_na-deva ya-deva ss_tt_ya-deva n_s_tta-deva dd_ya-deva k-deva.short jh_ma-deva ya-deva.connect-low-short ng-deva.top k_pa_ra-deva ng_ka-deva dd_tta-deva ss_tth_ya-deva ta_ra-deva yya_ra-deva ng_r-deva ng_ma-deva.001 dd_ttha-deva ss_tta-deva dd_r-deva nga-deva yya-deva ya_ra-deva k_ma-deva ya-deva.connect-low dd_gha-deva ng_ya-deva jh_r-deva ng_k_ssa-deva ss_tt_va-deva ya-deva.connect-short p_tta-deva k_pha-deva dd_va-deva dd_na-deva dd_dda-deva la_llVocalicMatra-deva.loclMAR jh_ya-deva k_ca-deva ng_ga_ra-deva p_ttha-deva dd_ma-deva k-deva.long dda-deva dd-deva jh-deva.short jha-deva dd-deva.top na_ra-deva ng_ga-deva y_na-deva na-deva.low q_fa-deva dddha-deva dd_ddha-deva] by [iMatra-deva.04];\012\011sub [iMatra-deva]' [ng_gha-deva tha_ra-deva jh-deva.ss11 ga-deva d_dha_rVocalicMatra-deva ng_gha_ra-deva ga_ra-deva jh_na-deva.ss11 d_bha_ra-deva h_na-deva th_na-deva d_dha-deva gga-deva j_nya-deva m_sa-deva jh-deva.high.ss11 jh_ya-deva.ss11 ghha-deva p_ta-deva tha-deva.high tha-deva g_na-deva d_bha-deva bha-deva.fina ha_ra-deva sha_ra-deva ma_ra-deva k_ta-deva jha_ra-deva.ss11 n_na-deva ma-deva bha-deva jha-deva.ss11 sha_VocalicMatra-deva k_t_ta-deva d_na-deva.ss12 ghha_ra-deva bha_ra-deva b_sa-deva ya-deva.connect] by [iMatra-deva];\012\011sub [iMatra-deva]' [llla-deva lla_ra-deva n_ca-deva h_va-deva nya-deva nya_ra-deva k_t_ya-deva za-deva sh_ca-deva t_ta-deva ja-deva ja_ra-deva ca_ra-deva ca-deva sha-deva d_gha-deva za_ra-deva lla-deva h_nna-deva zha-deva] by [iMatra-deva.05];\012\011sub [iMatra-deva]' [gha_ra-deva la_ra-deva ny_ca-deva dha-deva h_la-deva v_ha-deva la-deva.ss11 gha-deva jja-deva k_ta_ra-deva d_ya-deva la-deva da_ra_ya-deva dha_ra-deva rr_ha-deva sha-deva.loclMAR k_ssa-deva] by [iMatra-deva.06];\012\011sub [iMatra-deva]' [n_da-deva nna-deva t_va-deva t_na-deva p_na-deva t_ka_ra-deva m_da-deva ch-deva ch_r-deva t_k_va-deva ny_ja-deva n_da_ra-deva t_pha-deva t_ka-deva cha-deva m_ha-deva t_k_ya-deva t_pa-deva ch_ya-deva nna_ra-deva] by [iMatra-deva.07];\012\011sub [iMatra-deva]' [ss_ka_ra-deva dd_dd_ya-deva p_va-deva d_ma-deva h_ma-deva k_ssa_ra-deva n_d_va-deva nn_nna-deva.ss11 nna-deva.ss11 b_da-deva] by [iMatra-deva.08];\012\011sub [iMatra-deva]' [n_t_sa-deva n_ka-deva n_k_sa-deva j_tta-deva d_d_ya-deva sh_tta-deva ss_pa_ra-deva n_pa-deva p_ra_pa-deva n_va-deva n_dda-deva t_pa_ra-deva t_ya-deva p_ya-deva h_nna-deva.ss11 h_ya-deva n_pa_ra-deva ss_ya-deva n_pha-deva j_da-deva n_ta_ra-deva n_ta-deva] by [iMatra-deva.09];\012\011sub [iMatra-deva]' [d_bh_ya-deva t_t_va-deva m_ba_ra-deva t_ma-deva p_ma-deva n_ya-deva ss_ma-deva m_ba-deva d_dh_ya-deva t_tha-deva bh_na-deva m_va-deva nna_ra-deva.ss11] by [iMatra-deva.10];\012\011sub [iMatra-deva]' [d_v_ya-deva sh_ta-deva j_ba-deva th_va-deva p_t_ya-deva n_dha-deva n_dh_ra-deva sh_ka-deva j_ny_ya-deva t_d_ya-deva n_bha-deva ta_ra_ya-deva n_tha-deva y_ya-deva sh_qa-deva m_ya-deva j_va-deva rr_ya-deva j_na-deva n_n_ya-deva dh_va-deva c_ca-deva dh_va_ra-deva n_ma-deva sh_va-deva sh_na-deva m_bha_ra-deva m_bha-deva j_ka-deva] by [iMatra-deva.11];\012\011sub [iMatra-deva]' [b_za-deva b_ja-deva b_bha_ra-deva j_ya-deva b_ya-deva z_ya-deva v_ya-deva b_dha-deva l_da_ra-deva t_la-deva p_la-deva b_bha-deva g_bha-deva b_sha-deva ng_kha-deva t_t_ya-deva ga_ra_ya-deva] by [iMatra-deva.12];\012\011sub [iMatra-deva]' [n_la-deva ny_sha-deva bha_ra_ya-deva sh_ma-deva j_dda-deva t_n_ya-deva m_sha-deva sha_ra_ya-deva dh_ya-deva c_na-deva k_ss_va-deva sh_ya-deva bh_ya-deva th_ya-deva j_jha-deva.ss11 dh_na-deva j_ta-deva j_jha-deva] by [iMatra-deva.13];\012\011sub [iMatra-deva]' [c_ya-deva k_ss_ya-deva m_la-deva nn_dda-deva.ss11 nn_dda-deva sh_sha-deva j_ma-deva l_dda-deva ny_j_ya-deva] by [iMatra-deva.14];\012\011sub [iMatra-deva]' [c_ma-deva k_ss_ma-deva] by [iMatra-deva.15];\012\011sub [iMatra-deva]' [sh_la-deva z_za-deva n_t_ya-deva j_j_nya-deva l_bha-deva sh_cha-deva] by [iMatra-deva.16];\012\011sub [iMatra-deva]' [j_ja-deva n_h_ya-deva jh_ma-deva.ss11 t_m_ya-deva ny_cha-deva ss_m_ya-deva l_za-deva] by [iMatra-deva.17];\012\011sub [iMatra-deva]' [b_j_ya-deva n_m_ya-deva t_p_la-deva n_th_va-deva l_c_ya-deva l_tha-deva n_dh_va-deva c_cha-deva] by [iMatra-deva.18];\012\011sub [iMatra-deva]' [m_b_ya-deva b_dh_va-deva] by [iMatra-deva.19];\012\011sub [iMatra-deva]' [n_dh_ya-deva n_th_ya-deva] by [iMatra-deva.20];\012\011sub [iMatra-deva]' [l_v_dda-deva g_bh_ya-deva j_j_va-deva] by [iMatra-deva.21];\012\011sub [iMatra-deva]' [dh_n_ya-deva l_h_ya-deva] by [iMatra-deva.22];\012\011sub [iMatra-deva]' [j_j_ya-deva ny_c_ya-deva] by [iMatra-deva.23];\012\011sub [iMatra-deva]' [l_th_ya-deva] by [iMatra-deva.27];\012} Imatra2_devanagari;\012\012lookup Iimatra_devanagari {\012\011sub [n_la-deva b_j_ya-deva d_bh_ya-deva ny_sha-deva bha_ra_ya-deva ddda-deva c_ya-deva gha_ra-deva n_da-deva d_va-deva ng_gha-deva n_m_ya-deva k_ss_ya-deva sh_ma-deva ss_ttha-deva tha_ra-deva ng_ka_ra-deva d_na-deva dh_n_ya-deva l_th_ya-deva jh-deva.ss11 ga-deva dda-deva.short d_dha_rVocalicMatra-deva ng_gha_ra-deva ga_ra-deva d_v_ya-deva jh-deva b_za-deva dd_ka-deva s-deva.short j_dda-deva t_t_va-deva k_r-deva t_n_ya-deva nna-deva m_sha-deva j_ja-deva dd_dd_ya-deva d_bha_ra-deva t_va-deva pa-deva sh_ta-deva m_b_ya-deva j_j_ya-deva ma-deva.bottom b_ja-deva p_va-deva j_ba-deva dda-deva.short2 m_ba_ra-deva b_bha_ra-deva t_na-deva n_ca-deva tt_ttha-deva ba_ra-deva p_na-deva h_va-deva ph_r-deva sh_la-deva la_ra-deva th_va-deva ddh_ddha-deva z_za-deva d_ma-deva va_ra-deva ha-deva q-deva.short h_na-deva p_t_ya-deva ny_ca-deva j_ya-deva ya-deva th_na-deva t_p_la-deva d_dha-deva nya-deva m_la-deva n_dha-deva nya_ra-deva b_ya-deva gga-deva da-deva.knotless m_da-deva j_nya-deva nn_dda-deva.ss11 n_h_ya-deva ch-deva d-deva nn_dda-deva ch_r-deva k-deva n_dh_ra-deva t_ma-deva j_tta-deva jh_ma-deva.ss11 d_d_ya-deva p_ma-deva ny_ja-deva n_da_ra-deva k-deva.short z_ya-deva ha_uMatra-deva v_ya-deva b_dha-deva h_ma-deva za-deva jh-deva.high.ss11 sh_ca-deva d_da-deva ya-deva.connect-low-short iMatra_stem-deva n_dh_ya-deva dha-deva n_ya-deva l_v_dda-deva tt_va-deva d_ga_ra-deva sha_ra_ya-deva n_th_va-deva ra-deva ng-deva.top j_ny_ya-deva tt_na-deva t_ta-deva l_da_ra-deva t_m_ya-deva ghha-deva p_ta-deva ss_ma-deva tha-deva.high ng_ka-deva sh_tta-deva dh_ya-deva tha-deva g_na-deva t_la-deva n_t_ya-deva t_d_ya-deva dd_tta-deva ss_pa_ra-deva d_bha-deva f-deva ddh_na-deva c_na-deva n_bha-deva p_la-deva ja-deva j_j_nya-deva ta_ra_ya-deva ja_ra-deva ta_ra-deva k_ss_va-deva tt_tta-deva h_la-deva g_bh_ya-deva ca_ra-deva yya_ra-deva bha-deva.fina n_tha-deva dd_ttha-deva ba-deva l_h_ya-deva ny_cha-deva j_j_va-deva n_pa-deva v_ha-deva sh_ya-deva m_ba-deva ddha-deva ss_tta-deva dd_r-deva sh_sha-deva bh_ya-deva yya-deva b_bha-deva ya_ra-deva y_ya-deva ya-deva.connect-low ha_ra-deva dd_gha-deva c_ma-deva l_c_ya-deva k_ssa_ra-deva n_d_va-deva h-deva m_ya-deva ddh_da-deva l_tha-deva sha_ra-deva la-deva.ss11 ss_m_ya-deva cha-deva d_ba-deva nn_nna-deva.ss11 j_va-deva ca-deva bba-deva rr_ya-deva g_bha-deva gha-deva da_rVocalicMatra-deva j_na-deva ta-deva jh_r-deva jja-deva ng_k_ssa-deva ma_ra-deva d_dh_ya-deva rra-deva q_r-deva nnna-deva ss_tt_va-deva d_ya-deva l_za-deva p_ra_pa-deva k_ss_ma-deva sha-deva ya-deva.connect-short p_tta-deva la-deva b_sha-deva l_bha-deva dd_va-deva q-deva da_uuMatra-deva da-deva dd_na-deva nna-deva.ss11 v_na-deva dd_dda-deva n_va-deva ha_uuMatra-deva m_ha-deva n_dda-deva t_pa_ra-deva j_ma-deva ng_kha-deva n_dh_va-deva n_na-deva t_ya-deva da-deva.strokeless ssa-deva d_gha-deva p_ya-deva n_n_ya-deva ddh_r-deva t_t_ya-deva da_ra_ya-deva dha_ra-deva ma-deva h_nna-deva.ss11 h_ya-deva rr_ha-deva th_ya-deva dh_va-deva tt_r-deva pa_ra-deva ga_ra_ya-deva ph-deva sha-deva.loclMAR ng_ga_ra-deva p_ttha-deva za_ra-deva ssa_ra-deva dh_na-deva c_ca-deva d_r-deva bha-deva d_va_ra-deva ddh-deva.top tt_ddha-deva t_tha-deva j_ta-deva l_dda-deva k-deva.long n_pa_ra-deva dda-deva va-deva s-deva dd-deva ss_ya-deva dh_va_ra-deva jh-deva.short c_cha-deva tt-deva s-deva.low sha_VocalicMatra-deva n_ma-deva tta-deva sh_va-deva j_da-deva dd-deva.top ny_j_ya-deva na-deva t_pa-deva rha-deva da_ra-deva d-deva.top b_da-deva na_ra-deva sh_na-deva d_na-deva.ss12 ny_c_ya-deva ng_ga-deva h_nna-deva tt-deva.top y_na-deva n_ta_ra-deva bh_na-deva zha-deva ra_uuMatra-deva na-deva.low m_va-deva m_bha_ra-deva d_ga-deva ra_halant-deva k_ssa-deva nna_ra-deva.ss11 b_dh_va-deva ddh-deva ghha_ra-deva n_th_ya-deva d_ba_ra-deva nna_ra-deva m_bha-deva n_ta-deva sh_cha-deva dddha-deva bha_ra-deva dd_ddha-deva ya-deva.connect] [iiMatra-deva]' by [iiMatra-deva.01];\012\011sub [llla-deva lla_ra-deva la_lVocalicMatra-deva.loclMAR la-deva.loclMAR ng-deva s-deva.short2 ha_rVocalicMatra-deva ng_r-deva nga-deva tth_na-deva tth-deva.top la_llVocalicMatra-deva.loclMAR lla-deva tth_ttha-deva s-deva.long] [iiMatra-deva]' by [iiMatra-deva.02];\012\011sub [s_r-deva tth_r-deva ttha-deva dd_ma-deva tth-deva] [iiMatra-deva]' by [iiMatra-deva.03];\012\011sub [ss_ka_ra-deva jh_na-deva.ss11 jha_ra-deva n_ka-deva t_ka_ra-deva kh-deva ss_tt_ya-deva qa_ra-deva qa-deva sh_ka-deva pha-deva t_pha-deva kh_r-deva ss_tth_ya-deva pha_ra-deva sh_qa-deva ddh_ma-deva t_ka-deva ka-deva k_ta-deva k_ta_ra-deva ka_ra-deva jha_ra-deva.ss11 khh-deva j_jha-deva.ss11 fa_ra-deva k_ca-deva jha-deva.ss11 jha-deva n_pha-deva k_t_ta-deva fa-deva j_jha-deva j_ka-deva] [iiMatra-deva]' by [iiMatra-deva.04];\012\011sub [ng_ya-deva ch_ya-deva] [iiMatra-deva]' by [iiMatra-deva.05];\012\011sub [k_ma-deva] [iiMatra-deva]' by [iiMatra-deva.06];\012\011sub [k_pa-deva k_pa_ra-deva s_na-deva sa_ra-deva] [iiMatra-deva]' by [iiMatra-deva.07];\012\011sub [ph_ya-deva jh_na-deva s_ta_ra-deva t_k_ya-deva f_ta-deva k_ya-deva] [iiMatra-deva]' by [iiMatra-deva.08];\012\011sub [q_ta-deva t_k_va-deva k_t_ya-deva jh_ya-deva.ss11 q_ba-deva s_t_r-deva.loclMAR] [iiMatra-deva]' by [iiMatra-deva.09];\012\011sub [t_kha_ra-deva dd_ya-deva t_s_na-deva khha-deva kha_ra-deva kha-deva h_m_ya-deva jh_ya-deva khha_ra-deva t_kha-deva] [iiMatra-deva]' by [iiMatra-deva.10];\012\011sub [s_ja-deva s_ba-deva q_ma-deva ddh_ya-deva s_pa_ra-deva jh_ma-deva t_s_va-deva s_va-deva s_da-deva] [iiMatra-deva]' by [iiMatra-deva.11];\012\011sub [n_k_sa-deva n_s_tta-deva s_ta-deva f_sa-deva s_tta-deva] [iiMatra-deva]' by [iiMatra-deva.12];\012\011sub [t_s_ya-deva f_za-deva k_nna-deva s_ya-deva tth_tth_ya-deva s_ma-deva s_sa-deva tt_tt_ya-deva tt_ya-deva] [iiMatra-deva]' by [iiMatra-deva.13];\012\011sub [k_tha-deva tth_ya-deva ddh_ddh_ya-deva s_tha-deva k_t_va-deva k_nna-deva.ss11] [iiMatra-deva]' by [iiMatra-deva.14];\012\011sub [q_pha-deva k_pha-deva s_la-deva q_fa-deva] [iiMatra-deva]' by [iiMatra-deva.16];\012\011sub [khh_ta-deva s_t_va-deva] [iiMatra-deva]' by [iiMatra-deva.17];\012\011sub [khh_va-deva s_cha-deva q_qa-deva f_fa-deva t_kh_na-deva] [iiMatra-deva]' by [iiMatra-deva.18];\012\011sub [k_s_ta-deva s_t_ya-deva kh_na-deva s_ka_ra-deva k_s_tta-deva] [iiMatra-deva]' by [iiMatra-deva.19];\012\011sub [khh_ya-deva s_m_ya-deva kh_ya-deva s_kha-deva khh_ma-deva s_ta_ra_ya-deva k_s_dda-deva s_ka-deva s_pha-deva] [iiMatra-deva]' by [iiMatra-deva.20];\012\011sub [kh_sha-deva khh_sha-deva kh_ma-deva khh_sa-deva] [iiMatra-deva]' by [iiMatra-deva.21];\012\011sub [s_th_ya-deva] [iiMatra-deva]' by [iiMatra-deva.23];\012\011sub [s_k_va-deva] [iiMatra-deva]' by [iiMatra-deva.25];\012\011sub [s_ta_ra_ya-deva.loclMAR] [iiMatra-deva]' by [iiMatra-deva.26];\012\011sub [kh_kha-deva] [iiMatra-deva]' by [iiMatra-deva.28];\012\011sub [k_s_p_la-deva] [iiMatra-deva]' by [iiMatra-deva.29];\012} Iimatra_devanagari;\012\012language MAR;\012lookup Imatra2_devanagari;\012lookup Iimatra_devanagari;\012language SAN;\012lookup Imatra2_devanagari;\012lookup Iimatra_devanagari;\012language NEP;\012lookup Imatra2_devanagari;\012lookup Iimatra_devanagari;\012\012script deva;\012lookup Imatra2_devanagari;\012lookup Iimatra_devanagari;\012language MAR;\012lookup Imatra2_devanagari;\012lookup Iimatra_devanagari;\012language SAN;\012lookup Imatra2_devanagari;\012lookup Iimatra_devanagari;\012language NEP;\012lookup Imatra2_devanagari;\012lookup Iimatra_devanagari;";
+name = pres;
+notes = "Added the lookups for eyelashRa and Conjuncts. The conjuncts are moved from the CJCT-feature to have traditional i/iiMatra ortography. Please see note in CJCT regarding.\012\012\012language MAR;\012lookup Pres_conjuncts;\012lookup Imatra1_devanagari;\012lookup Imatra2_devanagari;\012language SAN;\012lookup Pres_conjuncts;\012lookup Imatra1_devanagari;\012lookup Imatra2_devanagari;\012language NEP;\012lookup Pres_conjuncts;\012lookup Imatra1_devanagari;\012lookup Imatra2_devanagari;\012\012script deva;\012lookup Pres_conjuncts;\012lookup Imatra1_devanagari;\012lookup Imatra2_devanagari;\012language MAR;\012lookup Pres_conjuncts;\012lookup Imatra1_devanagari;\012lookup Imatra2_devanagari;\012language SAN;\012lookup Pres_conjuncts;\012lookup Imatra1_devanagari;\012lookup Imatra2_devanagari;\012language NEP;\012lookup Pres_conjuncts;\012lookup Imatra1_devanagari;\012lookup Imatra2_devanagari;";
+},
+{
 automatic = 1;
 code = "script dev2;\012lookup Abvs1_devanagari {\012\011sub eCandraMatra-deva anusvara-deva by candraBindu-deva;\012\011sub eShortMatra-deva eCandraMatra-deva by eShortMatra_eCandraMatra-deva;\012\011sub eShortMatra-deva candraBindu-deva by eShortMatra_candraBindu-deva;\012\011sub eMatra-deva eCandraMatra-deva by eMatra_eCandraMatra-deva;\012\011sub eMatra-deva candraBindu-deva by eMatra_candraBindu-deva;\012\011sub eMatra-deva reph-deva anusvara-deva by eMatra_reph_anusvara-deva;\012\011sub aiMatra-deva eCandraMatra-deva by aiMatra_eCandraMatra-deva;\012\011sub aiMatra-deva candraBindu-deva by aiMatra_candraBindu-deva;\012\011sub aiMatra-deva anusvara-deva by aiMatra_anusvara-deva;\012\011sub aiMatra-deva reph-deva anusvara-deva by aiMatra_reph_anusvara-deva;\012\011sub nukta-deva uMatra-deva by nukta_uMatra-deva;\012\011sub nukta-deva uuMatra-deva by nukta_uuMatra-deva;\012\011sub nukta-deva rVocalicMatra-deva by nukta_rVocalicMatra-deva;\012\011sub nukta-deva rrVocalicMatra-deva by nukta_rrVocalicMatra-deva;\012\011sub nukta-deva lVocalicMatra-deva by nukta_lVocalicMatra-deva;\012\011sub nukta-deva llVocalicMatra-deva by nukta_llVocalicMatra-deva;\012\011sub nukta-deva rakar-deva by nukta_rakar-deva;\012\011sub nukta-deva rakar-deva uMatra-deva by nukta_rakar_uMatra-deva;\012\011sub nukta-deva rakar-deva uuMatra-deva by nukta_rakar_uuMatra-deva;\012\011sub nukta-deva ueMatra-deva by nukta_ueMatra-deva;\012\011sub nukta-deva uueMatra-deva by nukta_uueMatra-deva;\012\011sub reph-deva eCandraMatra-deva by reph_eCandraMatra-deva;\012\011sub reph-deva candraBindu-deva by reph_candraBindu-deva;\012\011sub reph-deva anusvara-deva by reph_anusvara-deva;\012\011sub rakar-deva uMatra-deva by rakar_uMatra-deva;\012\011sub rakar-deva uuMatra-deva by rakar_uuMatra-deva;\012\011sub rakar-deva halant-deva by rakar_halant-deva;\012} Abvs1_devanagari;\012\012language MAR;\012lookup Abvs1_devanagari;\012language SAN;\012lookup Abvs1_devanagari;\012language NEP;\012lookup Abvs1_devanagari;\012\012script deva;\012lookup Abvs1_devanagari;\012language MAR;\012lookup Abvs1_devanagari;\012language SAN;\012lookup Abvs1_devanagari;\012language NEP;\012lookup Abvs1_devanagari;\012";
 name = abvs;
 notes = "I am brute-force solving this by making ligatures of the above matras, using anchors to link them together. This solves most of the cases where there are several above matras (eg. in Sanskrit). It also works automatically for stacking matras (in many cases, but not all). It even works for those cases where the user have typed in something that is not correct (\U2018the cat walking across the keyboard cases\U2019).";
-},
-{
-code = "script dev2;\012lookup eyelashRa {\012\011# If ZWJ has been filtered out (Core Text):\012\011sub raEyelash-deva ya-deva by raEyelash_ya-deva;\012\011sub raEyelash-deva ha-deva by raEyelash_ha-deva;\012\011\012\011# Else:\012\011sub raEyelash-deva zerowidthjoiner ya-deva by raEyelash_ya-deva;\012\011sub raEyelash-deva zerowidthjoiner ha-deva by raEyelash_ha-deva;\012} eyelashRa;\012\012lookup Pres_conjuncts {\012#\011sub k-deva s-deva pa_ra-deva by k_s_pa_ra-deva;\012\011sub k-deva s-deva p-deva la-deva by k_s_p_la-deva;\012\011sub s-deva t_r-deva zerowidthjoiner by s_t_r-deva.loclMAR;\012\011sub s-deva t_r-deva by s_t_r-deva;\012\011sub s-deva t_r-deva ya-deva by s_ta_ra_ya-deva;\012\011sub k-deva ta_ra-deva by k_ta_ra-deva;\012\011sub k-deva t-deva ta-deva by k_t_ta-deva;\012\011sub k-deva t-deva ya-deva by k_t_ya-deva;\012\011sub k-deva t-deva va-deva by k_t_va-deva;\012\011sub k-deva pa_ra-deva by k_pa_ra-deva;\012#\011sub k-deva v-deva ya-deva by k_v_ya-deva;\012\011sub k-deva ssa_ra-deva by k_ssa_ra-deva;\012\011sub k-deva ss-deva ma-deva by k_ss_ma-deva;\012\011sub k-deva ss-deva ya-deva by k_ss_ya-deva;\012\011sub k-deva ss-deva va-deva by k_ss_va-deva;\012\011sub k-deva s-deva tta-deva by k_s_tta-deva;\012\011sub k-deva s-deva dda-deva by k_s_dda-deva;\012\011sub k-deva s-deva ta-deva by k_s_ta-deva;\012#\011sub k-deva s-deva pa-deva by k_s_pa-deva;\012\011sub g_r-deva ya-deva by ga_ra_ya-deva;\012#\011sub g-deva dh-deva ya-deva by g_dh_ya-deva;\012#\011sub g-deva dh-deva va-deva by g_dh_va-deva;\012#\011sub g-deva n-deva ya-deva by g_n_ya-deva;\012\011sub g-deva bh-deva ya-deva by g_bh_ya-deva;\012\011sub ng-deva ka_ra-deva by ng_ka_ra-deva;\012\011sub ng-deva k-deva ssa-deva by ng_k_ssa-deva;\012\011sub ng-deva ga_ra-deva by ng_ga_ra-deva;\012\011sub ng-deva gha_ra-deva by ng_gha_ra-deva;\012#\011sub c-deva ch-deva va-deva by c_ch_va-deva;\012\011sub j-deva j-deva nya-deva by j_j_nya-deva;\012\011sub j-deva j-deva ya-deva by j_j_ya-deva;\012\011sub j-deva j-deva va-deva by j_j_va-deva;\012\011sub j-deva ny-deva ya-deva by j_ny_ya-deva;\012\011sub ny-deva c-deva ya-deva by ny_c_ya-deva;\012\011sub ny-deva j-deva ya-deva by ny_j_ya-deva;\012\011sub tt-deva tt-deva ya-deva by tt_tt_ya-deva;\012\011sub tth-deva tth-deva ya-deva by tth_tth_ya-deva;\012\011sub dd-deva dd-deva ya-deva by dd_dd_ya-deva;\012\011sub ddh-deva ddh-deva ya-deva by ddh_ddh_ya-deva;\012\011sub t_r-deva ya-deva by ta_ra_ya-deva;\012\011sub t-deva ka_ra-deva by t_ka_ra-deva;\012\011sub t-deva k-deva ya-deva by t_k_ya-deva;\012\011sub t-deva k-deva va-deva by t_k_va-deva;\012#\011sub t-deva k-deva ssa-deva by t_k_ssa-deva;\012\011sub t-deva kha_ra-deva by t_kha_ra-deva;\012\011sub t-deva kh-deva na-deva by t_kh_na-deva;\012\011sub t-deva t-deva ya-deva by t_t_ya-deva;\012\011sub t-deva t-deva va-deva by t_t_va-deva;\012\011sub t-deva d-deva ya-deva by t_d_ya-deva;\012\011sub t-deva n-deva ya-deva by t_n_ya-deva;\012\011sub t-deva pa_ra-deva by t_pa_ra-deva;\012\011sub t-deva p-deva la-deva by t_p_la-deva;\012\011sub t-deva m-deva ya-deva by t_m_ya-deva;\012\011sub t-deva s-deva na-deva by t_s_na-deva;\012\011sub t-deva s-deva ya-deva by t_s_ya-deva;\012\011sub t-deva s-deva va-deva by t_s_va-deva;\012\011sub d_r-deva ya-deva by da_ra_ya-deva;\012\011sub d-deva ga_ra-deva by d_ga_ra-deva;\012\011sub d-deva d-deva ya-deva by d_d_ya-deva;\012\011sub d-deva dha-deva rVocalicMatra-deva by d_dha_rVocalicMatra-deva;\012\011sub d-deva dh-deva ya-deva by d_dh_ya-deva;\012\011sub d-deva ba_ra-deva by d_ba_ra-deva;\012\011sub d-deva bh-deva ya-deva by d_bh_ya-deva;\012\011sub d-deva va_ra-deva by d_va_ra-deva;\012\011sub d-deva v-deva ya-deva by d_v_ya-deva;\012\011sub dh-deva n-deva ya-deva by dh_n_ya-deva;\012\011sub dh-deva va_ra-deva by dh_va_ra-deva;\012\011sub n-deva k-deva sa-deva by n_k_sa-deva;\012\011sub n-deva ta_ra-deva by n_ta_ra-deva;\012\011sub n-deva t-deva ya-deva by n_t_ya-deva;\012\011sub n-deva t-deva sa-deva by n_t_sa-deva;\012\011sub n-deva th-deva ya-deva by n_th_ya-deva;\012\011sub n-deva th-deva va-deva by n_th_va-deva;\012\011sub n-deva da_ra-deva by n_da_ra-deva;\012\011sub n-deva d-deva va-deva by n_d_va-deva;\012\011sub n-deva dh-deva ya-deva by n_dh_ya-deva;\012\011sub n-deva dha_ra-deva by n_dh_ra-deva;\012\011sub n-deva dh-deva va-deva by n_dh_va-deva;\012\011sub n-deva n-deva ya-deva by n_n_ya-deva;\012\011sub n-deva pa_ra-deva by n_pa_ra-deva;\012\011sub n-deva m-deva ya-deva by n_m_ya-deva;\012\011sub n-deva s-deva tta-deva by n_s_tta-deva;\012\011sub n-deva h-deva ya-deva by n_h_ya-deva;\012\011sub p-deva t-deva ya-deva by p_t_ya-deva;\012\011sub p_r-deva pa-deva by p_ra_pa-deva;\012\011sub b-deva j-deva ya-deva by b_j_ya-deva;\012\011sub b-deva dh-deva va-deva by b_dh_va-deva;\012\011sub b-deva bha_ra-deva by b_bha_ra-deva;\012#\011sub b-deva l-deva ya-deva by b_l_ya-deva;\012\011sub bh_r-deva ya-deva by bha_ra_ya-deva;\012#\011sub m-deva pa_ra-deva by m_pa_ra-deva;\012\011sub m-deva ba_ra-deva by m_ba_ra-deva;\012\011sub m-deva b-deva ya-deva by m_b_ya-deva;\012\011sub m-deva bha_ra-deva by m_bha_ra-deva;\012#\011sub l-deva k-deva ya-deva by l_k_ya-deva;\012\011sub l-deva c-deva ya-deva by l_c_ya-deva;\012\011sub l-deva th-deva ya-deva by l_th_ya-deva;\012\011sub l-deva da_ra-deva by l_da_ra-deva;\012#\011sub l-deva l-deva ya-deva by l_l_ya-deva;\012\011sub l-deva v-deva dda-deva by l_v_dda-deva;\012\011sub l-deva h-deva ya-deva by l_h_ya-deva;\012\011sub sh_r-deva ya-deva by sha_ra_ya-deva;\012\011sub ss-deva ka_ra-deva by ss_ka_ra-deva;\012\011sub ss-deva tt-deva ya-deva by ss_tt_ya-deva;\012\011sub ss-deva tt-deva va-deva by ss_tt_va-deva;\012\011sub ss-deva tth-deva ya-deva by ss_tth_ya-deva;\012#\011sub ss-deva nn-deva ya-deva by ss_nn_ya-deva;\012\011sub ss-deva pa_ra-deva by ss_pa_ra-deva;\012\011sub ss-deva m-deva ya-deva by ss_m_ya-deva;\012\011sub s-deva ka_ra-deva by s_ka_ra-deva;\012\011sub s-deva k-deva va-deva by s_k_va-deva;\012\011sub s-deva ta_ra-deva by s_ta_ra-deva;\012\011sub s-deva t-deva ya-deva by s_t_ya-deva;\012\011sub s-deva t-deva va-deva by s_t_va-deva;\012\011sub s-deva th-deva ya-deva by s_th_ya-deva;\012\011sub s-deva pa_ra-deva by s_pa_ra-deva;\012\011sub s-deva m-deva ya-deva by s_m_ya-deva;\012\011sub h-deva m-deva ya-deva by h_m_ya-deva;\012\011sub k-deva ra-deva by ka_ra-deva;\012\011sub k-deva ca-deva by k_ca-deva;\012\011sub k-deva nna-deva by k_nna-deva;\012\011sub k-deva ta-deva by k_ta-deva;\012\011sub k-deva tha-deva by k_tha-deva;\012#\011sub k-deva da-deva by k_da-deva;\012#\011sub k-deva na-deva by k_na-deva;\012\011sub k-deva pa-deva by k_pa-deva;\012\011sub k-deva pha-deva by k_pha-deva;\012\011sub k-deva ma-deva by k_ma-deva;\012\011sub k-deva ya-deva by k_ya-deva;\012\011sub k-deva ra_halant-deva by k_r-deva;\012#\011sub k-deva la-deva by k_la-deva;\012#\011sub k-deva va-deva by k_va-deva;\012#\011sub k-deva sha-deva by k_sha-deva;\012\011sub k-deva ssa-deva by k_ssa-deva;\012\011sub k-deva ss-deva by k_ss-deva;\012#\011sub k-deva sa-deva by k_sa-deva;\012\011sub kh-deva ra-deva by kha_ra-deva;\012\011sub kh-deva kha-deva by kh_kha-deva;\012#\011sub kh-deva ta-deva by kh_ta-deva;\012\011sub kh-deva na-deva by kh_na-deva;\012\011sub kh-deva ma-deva by kh_ma-deva;\012\011sub kh-deva ya-deva by kh_ya-deva;\012\011sub kh-deva ra_halant-deva by kh_r-deva;\012#\011sub kh-deva va-deva by kh_va-deva;\012\011sub kh-deva sha-deva by kh_sha-deva;\012\011sub g-deva ra-deva by ga_ra-deva;\012#\011sub g-deva ga-deva by g_ga-deva;\012#\011sub g-deva gha-deva by g_gha-deva;\012#\011sub g-deva ja-deva by g_ja-deva;\012#\011sub g-deva nna-deva by g_nna-deva;\012#\011sub g-deva da-deva by g_da-deva;\012#\011sub g-deva dha-deva by g_dha-deva;\012\011sub g-deva na-deva by g_na-deva;\012#\011sub g-deva ba-deva by g_ba-deva;\012\011sub g-deva bha-deva by g_bha-deva;\012#\011sub g-deva ma-deva by g_ma-deva;\012#\011sub g-deva ya-deva by g_ya-deva;\012\011sub g-deva ra_halant-deva by g_r-deva;\012#\011sub g-deva la-deva by g_la-deva;\012#\011sub g-deva va-deva by g_va-deva;\012#\011sub g-deva sa-deva by g_sa-deva;\012\011sub gh-deva ra-deva by gha_ra-deva;\012#\011sub gh-deva na-deva by gh_na-deva;\012#\011sub gh-deva ma-deva by gh_ma-deva;\012#\011sub gh-deva ya-deva by gh_ya-deva;\012\011sub gh-deva ra_halant-deva by gh_r-deva;\012\011sub ng-deva ka-deva by ng_ka-deva;\012\011sub ng-deva kha-deva by ng_kha-deva;\012\011sub ng-deva ga-deva by ng_ga-deva;\012\011sub ng-deva gha-deva by ng_gha-deva;\012\011sub ng-deva ma-deva by ng_ma-deva;\012\011sub ng-deva ya-deva by ng_ya-deva;\012\011sub ng-deva ra_halant-deva by ng_r-deva;\012\011sub ca-deva ra-deva by ca_ra-deva;\012\011sub c-deva ca-deva by c_ca-deva;\012\011sub c-deva cha-deva by c_cha-deva;\012\011sub c-deva na-deva by c_na-deva;\012\011sub c-deva ma-deva by c_ma-deva;\012\011sub c-deva ya-deva by c_ya-deva;\012\011sub c-deva ra_halant-deva by c_r-deva;\012#\011sub ch-deva na-deva by ch_na-deva;\012\011sub ch-deva ya-deva by ch_ya-deva;\012\011sub ch-deva ra_halant-deva by ch_r-deva;\012#\011sub ch-deva va-deva by ch_va-deva;\012\011sub j-deva ra-deva by ja_ra-deva;\012\011sub j-deva ka-deva by j_ka-deva;\012\011sub j-deva ja-deva by j_ja-deva;\012\011sub j-deva jha-deva by j_jha-deva;\012\011sub j-deva nya-deva by j_nya-deva;\012\011sub j-deva ny-deva by j_ny-deva;\012\011sub j-deva tta-deva by j_tta-deva;\012\011sub j-deva dda-deva by j_dda-deva;\012\011sub j-deva ta-deva by j_ta-deva;\012\011sub j-deva da-deva by j_da-deva;\012\011sub j-deva na-deva by j_na-deva;\012\011sub j-deva ba-deva by j_ba-deva;\012\011sub j-deva ma-deva by j_ma-deva;\012\011sub j-deva ya-deva by j_ya-deva;\012\011sub j-deva ra_halant-deva by j_r-deva;\012\011sub j-deva va-deva by j_va-deva;\012\011sub jh-deva ra-deva by jha_ra-deva;\012\011sub jh-deva na-deva by jh_na-deva;\012\011sub jh-deva ma-deva by jh_ma-deva;\012\011sub jh-deva ya-deva by jh_ya-deva;\012\011sub jh-deva ra_halant-deva by jh_r-deva;\012\011sub ny-deva ra-deva by nya_ra-deva;\012\011sub ny-deva ca-deva by ny_ca-deva;\012\011sub ny-deva cha-deva by ny_cha-deva;\012\011sub ny-deva ja-deva by ny_ja-deva;\012\011sub ny-deva ra_halant-deva by ny_r-deva;\012\011sub ny-deva sha-deva by ny_sha-deva;\012\011sub tt-deva tta-deva by tt_tta-deva;\012\011sub tt-deva ttha-deva by tt_ttha-deva;\012\011sub tt-deva ddha-deva by tt_ddha-deva;\012\011sub tt-deva na-deva by tt_na-deva;\012\011sub tt-deva ma-deva by tt_ma-deva;\012\011sub tt-deva ya-deva by tt_ya-deva;\012\011sub tt-deva ra_halant-deva by tt_r-deva;\012\011sub tt-deva va-deva by tt_va-deva;\012\011sub tth-deva ttha-deva by tth_ttha-deva;\012\011sub tth-deva na-deva by tth_na-deva;\012\011sub tth-deva ma-deva by tth_ma-deva;\012\011sub tth-deva ya-deva by tth_ya-deva;\012\011sub tth-deva ra_halant-deva by tth_r-deva;\012\011sub dd-deva ka-deva by dd_ka-deva;\012\011sub dd-deva gha-deva by dd_gha-deva;\012\011sub dd-deva tta-deva by dd_tta-deva;\012\011sub dd-deva ttha-deva by dd_ttha-deva;\012\011sub dd-deva dda-deva by dd_dda-deva;\012\011sub dd-deva ddha-deva by dd_ddha-deva;\012\011sub dd-deva na-deva by dd_na-deva;\012\011sub dd-deva ma-deva by dd_ma-deva;\012\011sub dd-deva ya-deva by dd_ya-deva;\012\011sub dd-deva ra_halant-deva by dd_r-deva;\012\011sub dd-deva va-deva by dd_va-deva;\012\011sub ddh-deva ddha-deva by ddh_ddha-deva;\012\011sub ddh-deva da-deva by ddh_da-deva;\012\011sub ddh-deva na-deva by ddh_na-deva;\012\011sub ddh-deva ma-deva by ddh_ma-deva;\012\011sub ddh-deva ya-deva by ddh_ya-deva;\012\011sub ddh-deva ra_halant-deva by ddh_r-deva;\012\011sub nn-deva ra-deva by nna_ra-deva;\012#\011sub nn-deva tta-deva by nn_tta-deva;\012#\011sub nn-deva ttha-deva by nn_ttha-deva;\012\011sub nn-deva dda-deva by nn_dda-deva;\012#\011sub nn-deva ddha-deva by nn_ddha-deva;\012#\011sub nn-deva nna-deva by nn_nna-deva;\012#\011sub nn-deva ma-deva by nn_ma-deva;\012#\011sub nn-deva ya-deva by nn_ya-deva;\012\011sub nn-deva ra_halant-deva by nn_r-deva;\012#\011sub nn-deva va-deva by nn_va-deva;\012\011sub t-deva ra-deva by ta_ra-deva;\012\011sub t-deva ka-deva by t_ka-deva;\012\011sub t-deva kha-deva by t_kha-deva;\012\011sub t-deva ta-deva by t_ta-deva;\012\011sub t-deva t-deva by t_t-deva;\012\011sub t-deva tha-deva by t_tha-deva;\012\011sub t-deva na-deva by t_na-deva;\012\011sub t-deva pa-deva by t_pa-deva;\012\011sub t-deva pha-deva by t_pha-deva;\012\011sub t-deva ma-deva by t_ma-deva;\012\011sub t-deva ya-deva by t_ya-deva;\012\011sub t-deva ra_halant-deva by t_r-deva;\012\011sub t-deva la-deva by t_la-deva;\012\011sub t-deva va-deva by t_va-deva;\012\011sub t-deva sa-deva by t_sa-deva;\012\011sub th-deva ra-deva by tha_ra-deva;\012\011sub th-deva na-deva by th_na-deva;\012\011sub th-deva ya-deva by th_ya-deva;\012\011sub th-deva ra_halant-deva by th_r-deva;\012\011sub th-deva va-deva by th_va-deva;\012\011sub d-deva ra-deva by da_ra-deva;\012\011sub da-deva uuMatra-deva by da_uuMatra-deva;\012\011sub da-deva rVocalicMatra-deva by da_rVocalicMatra-deva;\012\011sub d-deva ga-deva by d_ga-deva;\012\011sub d-deva gha-deva by d_gha-deva;\012\011sub d-deva da-deva by d_da-deva;\012\011sub d-deva dha-deva by d_dha-deva;\012\011sub d-deva na-deva by d_na-deva;\012\011sub d-deva ba-deva by d_ba-deva;\012\011sub d-deva bha-deva by d_bha-deva;\012\011\011sub d-deva bha_ra-deva by d_bha_ra-deva;\012\011sub d-deva ma-deva by d_ma-deva;\012\011sub d-deva ya-deva by d_ya-deva;\012\011sub d-deva ra_halant-deva by d_r-deva;\012\011sub d-deva va-deva by d_va-deva;\012\011sub dh-deva ra-deva by dha_ra-deva;\012\011sub dh-deva na-deva by dh_na-deva;\012#\011sub dh-deva ma-deva by dh_ma-deva;\012\011sub dh-deva ya-deva by dh_ya-deva;\012\011sub dh-deva ra_halant-deva by dh_r-deva;\012\011sub dh-deva va-deva by dh_va-deva;\012\011sub n-deva ra-deva by na_ra-deva;\012\011sub n-deva ka-deva by n_ka-deva;\012\011sub n-deva ca-deva by n_ca-deva;\012#\011sub n-deva tta-deva by n_tta-deva;\012\011sub n-deva dda-deva by n_dda-deva;\012\011sub n-deva ta-deva by n_ta-deva;\012\011sub n-deva tha-deva by n_tha-deva;\012\011sub n-deva da-deva by n_da-deva;\012\011sub n-deva dha-deva by n_dha-deva;\012\011sub n-deva na-deva by n_na-deva;\012\011sub n-deva pa-deva by n_pa-deva;\012\011sub n-deva pha-deva by n_pha-deva;\012\011sub n-deva bha-deva by n_bha-deva;\012\011sub n-deva ma-deva by n_ma-deva;\012\011sub n-deva ya-deva by n_ya-deva;\012\011sub n-deva ra_halant-deva by n_r-deva;\012\011sub n-deva la-deva by n_la-deva;\012\011sub n-deva va-deva by n_va-deva;\012#\011sub n-deva sa-deva by n_sa-deva;\012#\011sub n-deva ha-deva by n_ha-deva;\012\011sub nnn-deva ra_halant-deva by nnn_r-deva;\012\011sub p-deva ra-deva by pa_ra-deva;\012\011sub p-deva tta-deva by p_tta-deva;\012\011sub p-deva ttha-deva by p_ttha-deva;\012\011sub p-deva ta-deva by p_ta-deva;\012\011sub p-deva na-deva by p_na-deva;\012#\011sub p-deva pa-deva by p_pa-deva;\012#\011sub p-deva pha-deva by p_pha-deva;\012\011sub p-deva ma-deva by p_ma-deva;\012\011sub p-deva ya-deva by p_ya-deva;\012\011sub p-deva ra_halant-deva by p_r-deva;\012\011sub p-deva la-deva by p_la-deva;\012\011sub p-deva va-deva by p_va-deva;\012\011sub p-deva sa-deva by p_sa-deva;\012\011sub ph-deva ra-deva by pha_ra-deva;\012#\011sub ph-deva ja-deva by ph_ja-deva;\012#\011sub ph-deva tta-deva by ph_tta-deva;\012#\011sub ph-deva ta-deva by ph_ta-deva;\012#\011sub ph-deva na-deva by ph_na-deva;\012#\011sub ph-deva pa-deva by ph_pa-deva;\012#\011sub ph-deva pha-deva by ph_pha-deva;\012\011sub ph-deva ya-deva by ph_ya-deva;\012\011sub ph-deva ra_halant-deva by ph_r-deva;\012#\011sub ph-deva la-deva by ph_la-deva;\012#\011sub ph-deva sha-deva by ph_sha-deva;\012\011sub b-deva ra-deva by ba_ra-deva;\012\011sub b-deva ja-deva by b_ja-deva;\012#\011sub b-deva ta-deva by b_ta-deva;\012\011sub b-deva da-deva by b_da-deva;\012\011sub b-deva dha-deva by b_dha-deva;\012#\011sub b-deva na-deva by b_na-deva;\012#\011sub b-deva ba-deva by b_ba-deva;\012\011sub b-deva bha-deva by b_bha-deva;\012\011sub b-deva ya-deva by b_ya-deva;\012\011sub b-deva ra_halant-deva by b_r-deva;\012#\011sub b-deva la-deva by b_la-deva;\012#\011sub b-deva va-deva by b_va-deva;\012\011sub b-deva sha-deva by b_sha-deva;\012\011sub b-deva sa-deva by b_sa-deva;\012\011sub b-deva za-deva by b_za-deva;\012\011sub bh-deva ra-deva by bha_ra-deva;\012\011sub bh-deva na-deva by bh_na-deva;\012\011sub bh-deva ya-deva by bh_ya-deva;\012\011sub bh-deva ra_halant-deva by bh_r-deva;\012#\011sub bh-deva va-deva by bh_va-deva;\012\011sub m-deva ra-deva by ma_ra-deva;\012#\011sub m-deva ta-deva by m_ta-deva;\012\011sub m-deva da-deva by m_da-deva;\012#\011sub m-deva na-deva by m_na-deva;\012#\011sub m-deva pa-deva by m_pa-deva;\012\011sub m-deva ba-deva by m_ba-deva;\012\011sub m-deva bha-deva by m_bha-deva;\012#\011sub m-deva ma-deva by m_ma-deva;\012\011sub m-deva ya-deva by m_ya-deva;\012\011sub m-deva ra_halant-deva by m_r-deva;\012\011sub m-deva la-deva by m_la-deva;\012\011sub m-deva va-deva by m_va-deva;\012\011sub m-deva sha-deva by m_sha-deva;\012\011sub m-deva sa-deva by m_sa-deva;\012\011sub m-deva ha-deva by m_ha-deva;\012\011sub y-deva ra-deva by ya_ra-deva;\012\011sub y-deva na-deva by y_na-deva;\012\011sub y-deva ya-deva by y_ya-deva;\012\011sub y-deva ra_halant-deva by y_r-deva;\012\011sub ra-deva uMatra-deva by ra_uMatra-deva;\012\011sub ra-deva uuMatra-deva by ra_uuMatra-deva;\012\011sub ra-deva rVocalicMatra-deva by rVocalic-deva;\012\011sub ra-deva rrVocalicMatra-deva by rrVocalic-deva;\012\011sub rr-deva ya-deva by rr_ya-deva;\012\011sub rr-deva ha-deva by rr_ha-deva;\012\011sub l-deva ra-deva by la_ra-deva;\012#\011sub l-deva ka-deva by l_ka-deva;\012#\011sub l-deva kha-deva by l_kha-deva;\012#\011sub l-deva ga-deva by l_ga-deva;\012#\011sub l-deva ja-deva by l_ja-deva;\012#\011sub l-deva tta-deva by l_tta-deva;\012#\011sub l-deva ttha-deva by l_ttha-deva;\012\011sub l-deva dda-deva by l_dda-deva;\012#\011sub l-deva ddha-deva by l_ddha-deva;\012#\011sub l-deva ta-deva by l_ta-deva;\012\011sub l-deva tha-deva by l_tha-deva;\012#\011sub l-deva da-deva by l_da-deva;\012#\011sub l-deva pa-deva by l_pa-deva;\012#\011sub l-deva pha-deva by l_pha-deva;\012#\011sub l-deva ba-deva by l_ba-deva;\012\011sub l-deva bha-deva by l_bha-deva;\012#\011sub l-deva ma-deva by l_ma-deva;\012#\011sub l-deva ya-deva by l_ya-deva;\012\011sub l-deva ra_halant-deva by l_r-deva;\012#\011sub l-deva la-deva by l_la-deva;\012#\011sub l-deva va-deva by l_va-deva;\012#\011sub l-deva sa-deva by l_sa-deva;\012#\011sub l-deva ha-deva by l_ha-deva;\012\011sub l-deva za-deva by l_za-deva;\012\011sub ll-deva ra-deva by lla_ra-deva;\012#\011sub ll-deva ya-deva by ll_ya-deva;\012\011sub ll-deva ra_halant-deva by ll_r-deva;\012\011sub lll-deva ra_halant-deva by lll_r-deva;\012\011sub v-deva ra-deva by va_ra-deva;\012\011sub v-deva na-deva by v_na-deva;\012\011sub v-deva ya-deva by v_ya-deva;\012\011sub v-deva ra_halant-deva by v_r-deva;\012#\011sub v-deva la-deva by v_la-deva;\012#\011sub v-deva va-deva by v_va-deva;\012\011sub v-deva ha-deva by v_ha-deva;\012\011sub sh-deva ra-deva by sha_ra-deva;\012\011sub sh-deva ka-deva by sh_ka-deva;\012\011sub sh-deva ca-deva by sh_ca-deva;\012\011sub sh-deva cha-deva by sh_cha-deva;\012\011sub sh-deva tta-deva by sh_tta-deva;\012\011sub sh-deva ta-deva by sh_ta-deva;\012\011sub sh-deva na-deva by sh_na-deva;\012\011sub sh-deva ma-deva by sh_ma-deva;\012\011sub sh-deva ya-deva by sh_ya-deva;\012\011sub sh-deva ra_halant-deva by sh_r-deva;\012\011sub sh-deva la-deva by sh_la-deva;\012\011sub sh-deva va-deva by sh_va-deva;\012\011sub sh-deva sha-deva by sh_sha-deva;\012\011sub sh-deva qa-deva by sh_qa-deva;\012\011sub ss-deva ra-deva by ssa_ra-deva;\012#\011sub ss-deva ka-deva by ss_ka-deva;\012\011sub ss-deva tta-deva by ss_tta-deva;\012\011sub ss-deva ttha-deva by ss_ttha-deva;\012#\011sub ss-deva nna-deva by ss_nna-deva;\012#\011sub ss-deva pa-deva by ss_pa-deva;\012#\011sub ss-deva pha-deva by ss_pha-deva;\012\011sub ss-deva ma-deva by ss_ma-deva;\012\011sub ss-deva ya-deva by ss_ya-deva;\012\011sub ss-deva ra_halant-deva by ss_r-deva;\012#\011sub ss-deva va-deva by ss_va-deva;\012#\011sub ss-deva ssa-deva by ss_ssa-deva;\012\011sub s-deva ra-deva by sa_ra-deva;\012\011sub s-deva ka-deva by s_ka-deva;\012\011sub s-deva kha-deva by s_kha-deva;\012\011sub s-deva cha-deva by s_cha-deva;\012\011sub s-deva ja-deva by s_ja-deva;\012\011sub s-deva tta-deva by s_tta-deva;\012\011sub s-deva ta-deva by s_ta-deva;\012\011sub s-deva tha-deva by s_tha-deva;\012\011sub s-deva da-deva by s_da-deva;\012\011sub s-deva na-deva by s_na-deva;\012#\011sub s-deva pa-deva by s_pa-deva;\012\011sub s-deva pha-deva by s_pha-deva;\012\011sub s-deva ba-deva by s_ba-deva;\012\011sub s-deva ma-deva by s_ma-deva;\012\011sub s-deva ya-deva by s_ya-deva;\012\011sub s-deva ra_halant-deva by s_r-deva;\012\011sub s-deva la-deva by s_la-deva;\012\011sub s-deva va-deva by s_va-deva;\012\011sub s-deva sa-deva by s_sa-deva;\012\011sub h-deva ra-deva by ha_ra-deva;\012\011sub ha-deva uuMatra-deva by ha_uuMatra-deva;\012\011sub ha-deva rVocalicMatra-deva by ha_rVocalicMatra-deva;\012\011sub h-deva nna-deva by h_nna-deva;\012\011sub h-deva na-deva by h_na-deva;\012\011sub h-deva ma-deva by h_ma-deva;\012\011sub h-deva ya-deva by h_ya-deva;\012\011sub h-deva ra_halant-deva by h_r-deva;\012\011sub h-deva la-deva by h_la-deva;\012\011sub h-deva va-deva by h_va-deva;\012\011sub q-deva ra-deva by qa_ra-deva;\012\011sub q-deva ta-deva by q_ta-deva;\012\011sub q-deva pha-deva by q_pha-deva;\012\011sub q-deva ba-deva by q_ba-deva;\012\011sub q-deva ma-deva by q_ma-deva;\012\011sub q-deva ra_halant-deva by q_r-deva;\012\011sub q-deva qa-deva by q_qa-deva;\012\011sub q-deva fa-deva by q_fa-deva;\012\011sub khh-deva ra-deva by khha_ra-deva;\012\011sub khh-deva ta-deva by khh_ta-deva;\012\011sub khh-deva ma-deva by khh_ma-deva;\012\011sub khh-deva ya-deva by khh_ya-deva;\012\011sub khh-deva va-deva by khh_va-deva;\012\011sub khh-deva sha-deva by khh_sha-deva;\012\011sub khh-deva sa-deva by khh_sa-deva;\012\011sub ghh-deva ra-deva by ghha_ra-deva;\012\011sub z-deva ra-deva by za_ra-deva;\012\011sub z-deva ya-deva by z_ya-deva;\012\011sub z-deva za-deva by z_za-deva;\012\011sub f-deva ra-deva by fa_ra-deva;\012\011sub f-deva ta-deva by f_ta-deva;\012\011sub f-deva sa-deva by f_sa-deva;\012\011sub f-deva za-deva by f_za-deva;\012\011sub f-deva fa-deva by f_fa-deva;\012\011sub yy-deva ra-deva by yya_ra-deva;\012} Pres_conjuncts;\012\012\012lookup Imatra2_devanagari {\012\011sub [iMatra-deva]' [khh_ya-deva s_ja-deva s_ba-deva s_m_ya-deva s-deva.short kh_kha-deva s_ya-deva ma-deva.bottom s_r-deva s_pa_ra-deva kh-deva kh_ya-deva s-deva.short2 s_th_ya-deva iMatra_stem-deva khh_va-deva ra-deva kh_sha-deva khha-deva kh_r-deva s_cha-deva s_ta_ra-deva kh-deva.long s_t_ya-deva s_kha-deva sa-deva s_va-deva s_na-deva khh_ma-deva s_tha-deva ra_uMatra-deva khh_sha-deva kha_ra-deva kha-deva rra-deva kh_na-deva s_ma-deva s_ka_ra-deva khh-deva khh_ta-deva s_ta-deva kh_ma-deva s_la-deva s_t_va-deva khha_ra-deva s_da-deva s_k_va-deva s_t_r-deva.loclMAR s_ta_ra_ya-deva s-deva khh_sa-deva s_t_r-deva s-deva.low s_sa-deva s_ka-deva ra_uuMatra-deva s_pha-deva ra_halant-deva s_ta_ra_ya-deva.loclMAR s-deva.long sa_ra-deva s_tta-deva] by [iMatra-deva.01];\012\011sub [iMatra-deva]' [ha-deva ha_uMatra-deva h-deva h_m_ya-deva ha_uuMatra-deva] by [iMatra-deva.02];\012\011sub [iMatra-deva]' [d_va-deva t_s_ya-deva d_na-deva dda-deva.short q_ma-deva f_za-deva k_r-deva pa-deva dda-deva.short2 ddh_ya-deva tt_ttha-deva ph_ya-deva k_s_ta-deva ba_ra-deva ph_r-deva ddh_ddha-deva va_ra-deva q_ta-deva k_s_p_la-deva da-deva.knotless qa_ra-deva qa-deva d-deva t_kha_ra-deva k-deva k_tha-deva t_s_na-deva ha_rVocalicMatra-deva d_da-deva tth_ya-deva tt_va-deva d_ga_ra-deva t_s_va-deva tt_na-deva pha-deva f-deva ddh_na-deva tth_r-deva tt_tta-deva pha_ra-deva ba-deva q_ba-deva ddha-deva t_sa-deva tt_ma-deva p_sa-deva ddh_ddh_ya-deva ddh_ma-deva ka-deva ddh_da-deva q_qa-deva d_ba-deva bba-deva tth_na-deva da_rVocalicMatra-deva ta-deva tth_tth_ya-deva q_r-deva nnna-deva f_fa-deva k_t_va-deva tth-deva.top q-deva da_uuMatra-deva t_kh_na-deva da-deva tth_ma-deva v_na-deva ka_ra-deva da-deva.strokeless ssa-deva ddh_r-deva ttha-deva tt_r-deva fa_ra-deva k_nna-deva.ss11 pa_ra-deva ph-deva ssa_ra-deva d_r-deva d_va_ra-deva ddh-deva.top tt_ddha-deva k_s_tta-deva va-deva f_ta-deva tt-deva tta-deva k_s_dda-deva t_kha-deva na-deva rha-deva da_ra-deva d-deva.top tt_tt_ya-deva tt-deva.top d_ga-deva fa-deva tth_ttha-deva ddh-deva tt_ya-deva d_ba_ra-deva f_sa-deva k_ya-deva tth-deva] by [iMatra-deva.03];\012\011sub [iMatra-deva]' [ddda-deva ss_ttha-deva ng_ka_ra-deva q_pha-deva jh-deva dd_ka-deva k_nna-deva jha_ra-deva la_lVocalicMatra-deva.loclMAR k_pa-deva la-deva.loclMAR ng_ma-deva q-deva.short ng-deva jh_na-deva ya-deva ss_tt_ya-deva n_s_tta-deva dd_ya-deva k-deva.short jh_ma-deva ya-deva.connect-low-short ng-deva.top k_pa_ra-deva ng_ka-deva dd_tta-deva ss_tth_ya-deva ta_ra-deva yya_ra-deva ng_r-deva ng_ma-deva.001 dd_ttha-deva ss_tta-deva dd_r-deva nga-deva yya-deva ya_ra-deva k_ma-deva ya-deva.connect-low dd_gha-deva ng_ya-deva jh_r-deva ng_k_ssa-deva ss_tt_va-deva ya-deva.connect-short p_tta-deva k_pha-deva dd_va-deva dd_na-deva dd_dda-deva la_llVocalicMatra-deva.loclMAR jh_ya-deva k_ca-deva ng_ga_ra-deva p_ttha-deva dd_ma-deva k-deva.long dda-deva dd-deva jh-deva.short jha-deva dd-deva.top na_ra-deva ng_ga-deva y_na-deva na-deva.low q_fa-deva dddha-deva dd_ddha-deva] by [iMatra-deva.04];\012\011sub [iMatra-deva]' [ng_gha-deva tha_ra-deva jh-deva.ss11 ga-deva d_dha_rVocalicMatra-deva ng_gha_ra-deva ga_ra-deva jh_na-deva.ss11 d_bha_ra-deva h_na-deva th_na-deva d_dha-deva gga-deva j_nya-deva m_sa-deva jh-deva.high.ss11 jh_ya-deva.ss11 ghha-deva p_ta-deva tha-deva.high tha-deva g_na-deva d_bha-deva bha-deva.fina ha_ra-deva sha_ra-deva ma_ra-deva k_ta-deva jha_ra-deva.ss11 n_na-deva ma-deva bha-deva jha-deva.ss11 sha_VocalicMatra-deva k_t_ta-deva d_na-deva.ss12 ghha_ra-deva bha_ra-deva b_sa-deva ya-deva.connect] by [iMatra-deva];\012\011sub [iMatra-deva]' [llla-deva lla_ra-deva n_ca-deva h_va-deva nya-deva nya_ra-deva k_t_ya-deva za-deva sh_ca-deva t_ta-deva ja-deva ja_ra-deva ca_ra-deva ca-deva sha-deva d_gha-deva za_ra-deva lla-deva h_nna-deva zha-deva] by [iMatra-deva.05];\012\011sub [iMatra-deva]' [gha_ra-deva la_ra-deva ny_ca-deva dha-deva h_la-deva v_ha-deva la-deva.ss11 gha-deva jja-deva k_ta_ra-deva d_ya-deva la-deva da_ra_ya-deva dha_ra-deva rr_ha-deva sha-deva.loclMAR k_ssa-deva] by [iMatra-deva.06];\012\011sub [iMatra-deva]' [n_da-deva nna-deva t_va-deva t_na-deva p_na-deva t_ka_ra-deva m_da-deva ch-deva ch_r-deva t_k_va-deva ny_ja-deva n_da_ra-deva t_pha-deva t_ka-deva cha-deva m_ha-deva t_k_ya-deva t_pa-deva ch_ya-deva nna_ra-deva] by [iMatra-deva.07];\012\011sub [iMatra-deva]' [ss_ka_ra-deva dd_dd_ya-deva p_va-deva d_ma-deva h_ma-deva k_ssa_ra-deva n_d_va-deva nn_nna-deva.ss11 nna-deva.ss11 b_da-deva] by [iMatra-deva.08];\012\011sub [iMatra-deva]' [n_t_sa-deva n_ka-deva n_k_sa-deva j_tta-deva d_d_ya-deva sh_tta-deva ss_pa_ra-deva n_pa-deva p_ra_pa-deva n_va-deva n_dda-deva t_pa_ra-deva t_ya-deva p_ya-deva h_nna-deva.ss11 h_ya-deva n_pa_ra-deva ss_ya-deva n_pha-deva j_da-deva n_ta_ra-deva n_ta-deva] by [iMatra-deva.09];\012\011sub [iMatra-deva]' [d_bh_ya-deva t_t_va-deva m_ba_ra-deva t_ma-deva p_ma-deva n_ya-deva ss_ma-deva m_ba-deva d_dh_ya-deva t_tha-deva bh_na-deva m_va-deva nna_ra-deva.ss11] by [iMatra-deva.10];\012\011sub [iMatra-deva]' [d_v_ya-deva sh_ta-deva j_ba-deva th_va-deva p_t_ya-deva n_dha-deva n_dh_ra-deva sh_ka-deva j_ny_ya-deva t_d_ya-deva n_bha-deva ta_ra_ya-deva n_tha-deva y_ya-deva sh_qa-deva m_ya-deva j_va-deva rr_ya-deva j_na-deva n_n_ya-deva dh_va-deva c_ca-deva dh_va_ra-deva n_ma-deva sh_va-deva sh_na-deva m_bha_ra-deva m_bha-deva j_ka-deva] by [iMatra-deva.11];\012\011sub [iMatra-deva]' [b_za-deva b_ja-deva b_bha_ra-deva j_ya-deva b_ya-deva z_ya-deva v_ya-deva b_dha-deva l_da_ra-deva t_la-deva p_la-deva b_bha-deva g_bha-deva b_sha-deva ng_kha-deva t_t_ya-deva ga_ra_ya-deva] by [iMatra-deva.12];\012\011sub [iMatra-deva]' [n_la-deva ny_sha-deva bha_ra_ya-deva sh_ma-deva j_dda-deva t_n_ya-deva m_sha-deva sha_ra_ya-deva dh_ya-deva c_na-deva k_ss_va-deva sh_ya-deva bh_ya-deva th_ya-deva j_jha-deva.ss11 dh_na-deva j_ta-deva j_jha-deva] by [iMatra-deva.13];\012\011sub [iMatra-deva]' [c_ya-deva k_ss_ya-deva m_la-deva nn_dda-deva.ss11 nn_dda-deva sh_sha-deva j_ma-deva l_dda-deva ny_j_ya-deva] by [iMatra-deva.14];\012\011sub [iMatra-deva]' [c_ma-deva k_ss_ma-deva] by [iMatra-deva.15];\012\011sub [iMatra-deva]' [sh_la-deva z_za-deva n_t_ya-deva j_j_nya-deva l_bha-deva sh_cha-deva] by [iMatra-deva.16];\012\011sub [iMatra-deva]' [j_ja-deva n_h_ya-deva jh_ma-deva.ss11 t_m_ya-deva ny_cha-deva ss_m_ya-deva l_za-deva] by [iMatra-deva.17];\012\011sub [iMatra-deva]' [b_j_ya-deva n_m_ya-deva t_p_la-deva n_th_va-deva l_c_ya-deva l_tha-deva n_dh_va-deva c_cha-deva] by [iMatra-deva.18];\012\011sub [iMatra-deva]' [m_b_ya-deva b_dh_va-deva] by [iMatra-deva.19];\012\011sub [iMatra-deva]' [n_dh_ya-deva n_th_ya-deva] by [iMatra-deva.20];\012\011sub [iMatra-deva]' [l_v_dda-deva g_bh_ya-deva j_j_va-deva] by [iMatra-deva.21];\012\011sub [iMatra-deva]' [dh_n_ya-deva l_h_ya-deva] by [iMatra-deva.22];\012\011sub [iMatra-deva]' [j_j_ya-deva ny_c_ya-deva] by [iMatra-deva.23];\012\011sub [iMatra-deva]' [l_th_ya-deva] by [iMatra-deva.27];\012} Imatra2_devanagari;\012\012lookup Iimatra_devanagari {\012\011sub [n_la-deva b_j_ya-deva d_bh_ya-deva ny_sha-deva bha_ra_ya-deva ddda-deva c_ya-deva gha_ra-deva n_da-deva d_va-deva ng_gha-deva n_m_ya-deva k_ss_ya-deva sh_ma-deva ss_ttha-deva tha_ra-deva ng_ka_ra-deva d_na-deva dh_n_ya-deva l_th_ya-deva jh-deva.ss11 ga-deva dda-deva.short d_dha_rVocalicMatra-deva ng_gha_ra-deva ga_ra-deva d_v_ya-deva jh-deva b_za-deva dd_ka-deva s-deva.short j_dda-deva t_t_va-deva k_r-deva t_n_ya-deva nna-deva m_sha-deva j_ja-deva dd_dd_ya-deva d_bha_ra-deva t_va-deva pa-deva sh_ta-deva m_b_ya-deva j_j_ya-deva ma-deva.bottom b_ja-deva p_va-deva j_ba-deva dda-deva.short2 m_ba_ra-deva b_bha_ra-deva t_na-deva n_ca-deva tt_ttha-deva ba_ra-deva p_na-deva h_va-deva ph_r-deva sh_la-deva la_ra-deva th_va-deva ddh_ddha-deva z_za-deva d_ma-deva va_ra-deva ha-deva q-deva.short h_na-deva p_t_ya-deva ny_ca-deva j_ya-deva ya-deva th_na-deva t_p_la-deva d_dha-deva nya-deva m_la-deva n_dha-deva nya_ra-deva b_ya-deva gga-deva da-deva.knotless m_da-deva j_nya-deva nn_dda-deva.ss11 n_h_ya-deva ch-deva d-deva nn_dda-deva ch_r-deva k-deva n_dh_ra-deva t_ma-deva j_tta-deva jh_ma-deva.ss11 d_d_ya-deva p_ma-deva ny_ja-deva n_da_ra-deva k-deva.short z_ya-deva ha_uMatra-deva v_ya-deva b_dha-deva h_ma-deva za-deva jh-deva.high.ss11 sh_ca-deva d_da-deva ya-deva.connect-low-short iMatra_stem-deva n_dh_ya-deva dha-deva n_ya-deva l_v_dda-deva tt_va-deva d_ga_ra-deva sha_ra_ya-deva n_th_va-deva ra-deva ng-deva.top j_ny_ya-deva tt_na-deva t_ta-deva l_da_ra-deva t_m_ya-deva ghha-deva p_ta-deva ss_ma-deva tha-deva.high ng_ka-deva sh_tta-deva dh_ya-deva tha-deva g_na-deva t_la-deva n_t_ya-deva t_d_ya-deva dd_tta-deva ss_pa_ra-deva d_bha-deva f-deva ddh_na-deva c_na-deva n_bha-deva p_la-deva ja-deva j_j_nya-deva ta_ra_ya-deva ja_ra-deva ta_ra-deva k_ss_va-deva tt_tta-deva h_la-deva g_bh_ya-deva ca_ra-deva yya_ra-deva bha-deva.fina n_tha-deva dd_ttha-deva ba-deva l_h_ya-deva ny_cha-deva j_j_va-deva n_pa-deva v_ha-deva sh_ya-deva m_ba-deva ddha-deva ss_tta-deva dd_r-deva sh_sha-deva bh_ya-deva yya-deva b_bha-deva ya_ra-deva y_ya-deva ya-deva.connect-low ha_ra-deva dd_gha-deva c_ma-deva l_c_ya-deva k_ssa_ra-deva n_d_va-deva h-deva m_ya-deva ddh_da-deva l_tha-deva sha_ra-deva la-deva.ss11 ss_m_ya-deva cha-deva d_ba-deva nn_nna-deva.ss11 j_va-deva ca-deva bba-deva rr_ya-deva g_bha-deva gha-deva da_rVocalicMatra-deva j_na-deva ta-deva jh_r-deva jja-deva ng_k_ssa-deva ma_ra-deva d_dh_ya-deva rra-deva q_r-deva nnna-deva ss_tt_va-deva d_ya-deva l_za-deva p_ra_pa-deva k_ss_ma-deva sha-deva ya-deva.connect-short p_tta-deva la-deva b_sha-deva l_bha-deva dd_va-deva q-deva da_uuMatra-deva da-deva dd_na-deva nna-deva.ss11 v_na-deva dd_dda-deva n_va-deva ha_uuMatra-deva m_ha-deva n_dda-deva t_pa_ra-deva j_ma-deva ng_kha-deva n_dh_va-deva n_na-deva t_ya-deva da-deva.strokeless ssa-deva d_gha-deva p_ya-deva n_n_ya-deva ddh_r-deva t_t_ya-deva da_ra_ya-deva dha_ra-deva ma-deva h_nna-deva.ss11 h_ya-deva rr_ha-deva th_ya-deva dh_va-deva tt_r-deva pa_ra-deva ga_ra_ya-deva ph-deva sha-deva.loclMAR ng_ga_ra-deva p_ttha-deva za_ra-deva ssa_ra-deva dh_na-deva c_ca-deva d_r-deva bha-deva d_va_ra-deva ddh-deva.top tt_ddha-deva t_tha-deva j_ta-deva l_dda-deva k-deva.long n_pa_ra-deva dda-deva va-deva s-deva dd-deva ss_ya-deva dh_va_ra-deva jh-deva.short c_cha-deva tt-deva s-deva.low sha_VocalicMatra-deva n_ma-deva tta-deva sh_va-deva j_da-deva dd-deva.top ny_j_ya-deva na-deva t_pa-deva rha-deva da_ra-deva d-deva.top b_da-deva na_ra-deva sh_na-deva d_na-deva.ss12 ny_c_ya-deva ng_ga-deva h_nna-deva tt-deva.top y_na-deva n_ta_ra-deva bh_na-deva zha-deva ra_uuMatra-deva na-deva.low m_va-deva m_bha_ra-deva d_ga-deva ra_halant-deva k_ssa-deva nna_ra-deva.ss11 b_dh_va-deva ddh-deva ghha_ra-deva n_th_ya-deva d_ba_ra-deva nna_ra-deva m_bha-deva n_ta-deva sh_cha-deva dddha-deva bha_ra-deva dd_ddha-deva ya-deva.connect] [iiMatra-deva]' by [iiMatra-deva.01];\012\011sub [llla-deva lla_ra-deva la_lVocalicMatra-deva.loclMAR la-deva.loclMAR ng-deva s-deva.short2 ha_rVocalicMatra-deva ng_r-deva nga-deva tth_na-deva tth-deva.top la_llVocalicMatra-deva.loclMAR lla-deva tth_ttha-deva s-deva.long] [iiMatra-deva]' by [iiMatra-deva.02];\012\011sub [s_r-deva tth_r-deva ttha-deva dd_ma-deva tth-deva] [iiMatra-deva]' by [iiMatra-deva.03];\012\011sub [ss_ka_ra-deva jh_na-deva.ss11 jha_ra-deva n_ka-deva t_ka_ra-deva kh-deva ss_tt_ya-deva qa_ra-deva qa-deva sh_ka-deva pha-deva t_pha-deva kh_r-deva ss_tth_ya-deva pha_ra-deva sh_qa-deva ddh_ma-deva t_ka-deva ka-deva k_ta-deva k_ta_ra-deva ka_ra-deva jha_ra-deva.ss11 khh-deva j_jha-deva.ss11 fa_ra-deva k_ca-deva jha-deva.ss11 jha-deva n_pha-deva k_t_ta-deva fa-deva j_jha-deva j_ka-deva] [iiMatra-deva]' by [iiMatra-deva.04];\012\011sub [ng_ya-deva ch_ya-deva] [iiMatra-deva]' by [iiMatra-deva.05];\012\011sub [k_ma-deva] [iiMatra-deva]' by [iiMatra-deva.06];\012\011sub [k_pa-deva k_pa_ra-deva s_na-deva sa_ra-deva] [iiMatra-deva]' by [iiMatra-deva.07];\012\011sub [ph_ya-deva jh_na-deva s_ta_ra-deva t_k_ya-deva f_ta-deva k_ya-deva] [iiMatra-deva]' by [iiMatra-deva.08];\012\011sub [q_ta-deva t_k_va-deva k_t_ya-deva jh_ya-deva.ss11 q_ba-deva s_t_r-deva.loclMAR] [iiMatra-deva]' by [iiMatra-deva.09];\012\011sub [t_kha_ra-deva dd_ya-deva t_s_na-deva khha-deva kha_ra-deva kha-deva h_m_ya-deva jh_ya-deva khha_ra-deva t_kha-deva] [iiMatra-deva]' by [iiMatra-deva.10];\012\011sub [s_ja-deva s_ba-deva q_ma-deva ddh_ya-deva s_pa_ra-deva jh_ma-deva t_s_va-deva s_va-deva s_da-deva] [iiMatra-deva]' by [iiMatra-deva.11];\012\011sub [n_k_sa-deva n_s_tta-deva s_ta-deva f_sa-deva s_tta-deva] [iiMatra-deva]' by [iiMatra-deva.12];\012\011sub [t_s_ya-deva f_za-deva k_nna-deva s_ya-deva tth_tth_ya-deva s_ma-deva s_sa-deva tt_tt_ya-deva tt_ya-deva] [iiMatra-deva]' by [iiMatra-deva.13];\012\011sub [k_tha-deva tth_ya-deva ddh_ddh_ya-deva s_tha-deva k_t_va-deva k_nna-deva.ss11] [iiMatra-deva]' by [iiMatra-deva.14];\012\011sub [q_pha-deva k_pha-deva s_la-deva q_fa-deva] [iiMatra-deva]' by [iiMatra-deva.16];\012\011sub [khh_ta-deva s_t_va-deva] [iiMatra-deva]' by [iiMatra-deva.17];\012\011sub [khh_va-deva s_cha-deva q_qa-deva f_fa-deva t_kh_na-deva] [iiMatra-deva]' by [iiMatra-deva.18];\012\011sub [k_s_ta-deva s_t_ya-deva kh_na-deva s_ka_ra-deva k_s_tta-deva] [iiMatra-deva]' by [iiMatra-deva.19];\012\011sub [khh_ya-deva s_m_ya-deva kh_ya-deva s_kha-deva khh_ma-deva s_ta_ra_ya-deva k_s_dda-deva s_ka-deva s_pha-deva] [iiMatra-deva]' by [iiMatra-deva.20];\012\011sub [kh_sha-deva khh_sha-deva kh_ma-deva khh_sa-deva] [iiMatra-deva]' by [iiMatra-deva.21];\012\011sub [s_th_ya-deva] [iiMatra-deva]' by [iiMatra-deva.23];\012\011sub [s_k_va-deva] [iiMatra-deva]' by [iiMatra-deva.25];\012\011sub [s_ta_ra_ya-deva.loclMAR] [iiMatra-deva]' by [iiMatra-deva.26];\012\011sub [kh_kha-deva] [iiMatra-deva]' by [iiMatra-deva.28];\012\011sub [k_s_p_la-deva] [iiMatra-deva]' by [iiMatra-deva.29];\012} Iimatra_devanagari;\012\012language MAR;\012lookup Imatra2_devanagari;\012lookup Iimatra_devanagari;\012language SAN;\012lookup Imatra2_devanagari;\012lookup Iimatra_devanagari;\012language NEP;\012lookup Imatra2_devanagari;\012lookup Iimatra_devanagari;\012\012script deva;\012lookup Imatra2_devanagari;\012lookup Iimatra_devanagari;\012language MAR;\012lookup Imatra2_devanagari;\012lookup Iimatra_devanagari;\012language SAN;\012lookup Imatra2_devanagari;\012lookup Iimatra_devanagari;\012language NEP;\012lookup Imatra2_devanagari;\012lookup Iimatra_devanagari;";
-name = pres;
-notes = "Added the lookups for eyelashRa and Conjuncts. The conjuncts are moved from the CJCT-feature to have traditional i/iiMatra ortography. Please see note in CJCT regarding.\012\012\012language MAR;\012lookup Pres_conjuncts;\012lookup Imatra1_devanagari;\012lookup Imatra2_devanagari;\012language SAN;\012lookup Pres_conjuncts;\012lookup Imatra1_devanagari;\012lookup Imatra2_devanagari;\012language NEP;\012lookup Pres_conjuncts;\012lookup Imatra1_devanagari;\012lookup Imatra2_devanagari;\012\012script deva;\012lookup Pres_conjuncts;\012lookup Imatra1_devanagari;\012lookup Imatra2_devanagari;\012language MAR;\012lookup Pres_conjuncts;\012lookup Imatra1_devanagari;\012lookup Imatra2_devanagari;\012language SAN;\012lookup Pres_conjuncts;\012lookup Imatra1_devanagari;\012lookup Imatra2_devanagari;\012language NEP;\012lookup Pres_conjuncts;\012lookup Imatra1_devanagari;\012lookup Imatra2_devanagari;";
 },
 {
 code = "\012";
@@ -40060,7 +40061,7 @@ rightKerningGroup = "aaMatra-deva";
 },
 {
 glyphname = "aaMatra-deva";
-lastChange = "2014-10-24 11:41:59 +0000";
+lastChange = "2014-10-25 15:50:53 +0000";
 layers = (
 {
 background = {
@@ -58827,7 +58828,7 @@ rightMetricsKey = "ka-deva";
 {
 color = 5;
 glyphname = "la-deva.ss11";
-lastChange = "2014-10-13 09:03:07 +0000";
+lastChange = "2014-10-25 15:45:36 +0000";
 layers = (
 {
 anchors = (
@@ -63636,7 +63637,7 @@ rightMetricsKey = "r-deva";
 {
 color = 7;
 glyphname = "k_ssa-deva";
-lastChange = "2014-09-30 17:29:16 +0000";
+lastChange = "2014-10-25 15:47:23 +0000";
 layers = (
 {
 background = {
@@ -63817,6 +63818,318 @@ width = 1035;
 leftKerningGroup = "k_ssa-deva";
 rightKerningGroup = "aaMatra-deva";
 rightMetricsKey = "ssa-deva";
+},
+{
+color = 7;
+glyphname = "k_ssa-deva.ss11";
+layers = (
+{
+anchors = (
+{
+name = nukta;
+position = "{299, -120}";
+}
+);
+background = {
+paths = (
+{
+closed = 1;
+nodes = (
+"335 806 OFFCURVE",
+"257 734 OFFCURVE",
+"257 658 CURVE SMOOTH",
+"257 542 OFFCURVE",
+"377 478 OFFCURVE",
+"510 396 CURVE SMOOTH",
+"785 227 LINE",
+"820 283 LINE",
+"524 466 LINE SMOOTH",
+"425 523 OFFCURVE",
+"387 575 OFFCURVE",
+"387 630 CURVE SMOOTH",
+"387 679 OFFCURVE",
+"412 726 OFFCURVE",
+"457 726 CURVE SMOOTH",
+"484 726 OFFCURVE",
+"498 693 OFFCURVE",
+"498 671 CURVE SMOOTH",
+"498 526 OFFCURVE",
+"190 428 OFFCURVE",
+"188 274 CURVE SMOOTH",
+"186 120 OFFCURVE",
+"358 -10 OFFCURVE",
+"551 -10 CURVE SMOOTH",
+"621 -10 OFFCURVE",
+"665 25 OFFCURVE",
+"665 70 CURVE SMOOTH",
+"665 151 OFFCURVE",
+"557 248 OFFCURVE",
+"476 248 CURVE SMOOTH",
+"391 248 OFFCURVE",
+"418 141 OFFCURVE",
+"441 61 CURVE",
+"471 113 LINE",
+"384 84 OFFCURVE",
+"305 114 OFFCURVE",
+"306 219 CURVE SMOOTH",
+"307 357 OFFCURVE",
+"612 467 OFFCURVE",
+"612 603 CURVE SMOOTH",
+"612 690 OFFCURVE",
+"507 806 OFFCURVE",
+"407 806 CURVE SMOOTH"
+);
+},
+{
+closed = 1;
+nodes = (
+"415 72 LINE",
+"724 -192 LINE",
+"758 -156 LINE",
+"447 110 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"691 488 OFFCURVE",
+"640 462 OFFCURVE",
+"591 462 CURVE SMOOTH",
+"561 462 OFFCURVE",
+"538 466 OFFCURVE",
+"502 483 CURVE",
+"486 426 LINE",
+"579 354 LINE",
+"590 350 OFFCURVE",
+"608 346 OFFCURVE",
+"633 346 CURVE SMOOTH",
+"675 346 OFFCURVE",
+"743 365 OFFCURVE",
+"831 445 CURVE",
+"831 483 LINE",
+"761 545 LINE"
+);
+}
+);
+};
+components = (
+{
+name = "aaMatra-deva";
+transform = "{1, 0, 0, 1, 674, 0}";
+}
+);
+layerId = "E07B5D26-C0CD-4D0E-A705-659FB2222D21";
+name = Regular;
+paths = (
+{
+closed = 1;
+nodes = (
+"671 -10 OFFCURVE",
+"715 25 OFFCURVE",
+"715 70 CURVE SMOOTH",
+"715 151 OFFCURVE",
+"607 248 OFFCURVE",
+"526 248 CURVE SMOOTH",
+"441 248 OFFCURVE",
+"468 141 OFFCURVE",
+"491 61 CURVE",
+"521 113 LINE",
+"409 81 OFFCURVE",
+"325 149 OFFCURVE",
+"325 260 CURVE SMOOTH",
+"325 363 OFFCURVE",
+"387 430 OFFCURVE",
+"483 430 CURVE SMOOTH",
+"611 430 LINE",
+"611 530 LINE",
+"420 530 LINE SMOOTH",
+"304 530 OFFCURVE",
+"207 431 OFFCURVE",
+"207 313 CURVE SMOOTH",
+"207 144 OFFCURVE",
+"395 -10 OFFCURVE",
+"601 -10 CURVE SMOOTH"
+);
+},
+{
+closed = 1;
+nodes = (
+"797 -155 LINE",
+"497 110 LINE",
+"465 72 LINE",
+"764 -192 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"904 430 LINE",
+"904 468 LINE",
+"830 530 LINE",
+"34 530 LINE",
+"34 492 LINE",
+"108 430 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"904 686 LINE",
+"904 724 LINE",
+"830 786 LINE",
+"-60 786 LINE",
+"-60 748 LINE",
+"14 686 LINE"
+);
+}
+);
+width = 1002;
+},
+{
+anchors = (
+{
+name = nukta;
+position = "{391, -120}";
+}
+);
+background = {
+paths = (
+{
+closed = 1;
+nodes = (
+"361 806 OFFCURVE",
+"289 738 OFFCURVE",
+"289 670 CURVE SMOOTH",
+"289 530 OFFCURVE",
+"462 459 OFFCURVE",
+"608 402 CURVE SMOOTH",
+"995 251 LINE",
+"1047 346 LINE",
+"662 496 LINE SMOOTH",
+"534 546 OFFCURVE",
+"505 569 OFFCURVE",
+"505 632 CURVE SMOOTH",
+"505 663 OFFCURVE",
+"514 681 OFFCURVE",
+"535 681 CURVE SMOOTH",
+"550 681 OFFCURVE",
+"564 661 OFFCURVE",
+"564 633 CURVE SMOOTH",
+"564 501 OFFCURVE",
+"251 429 OFFCURVE",
+"250 248 CURVE SMOOTH",
+"251 118 OFFCURVE",
+"463 -10 OFFCURVE",
+"693 -10 CURVE SMOOTH",
+"815 -10 OFFCURVE",
+"887 45 OFFCURVE",
+"887 101 CURVE SMOOTH",
+"887 204 OFFCURVE",
+"719 306 OFFCURVE",
+"610 306 CURVE SMOOTH",
+"513 306 OFFCURVE",
+"527 164 OFFCURVE",
+"564 73 CURVE",
+"615 147 LINE",
+"538 82 OFFCURVE",
+"464 133 OFFCURVE",
+"462 199 CURVE SMOOTH",
+"459 306 OFFCURVE",
+"759 421 OFFCURVE",
+"762 545 CURVE SMOOTH",
+"763 684 OFFCURVE",
+"595 806 OFFCURVE",
+"465 806 CURVE SMOOTH"
+);
+},
+{
+closed = 1;
+nodes = (
+"543 44 LINE",
+"856 -209 LINE",
+"913 -149 LINE",
+"605 99 LINE"
+);
+}
+);
+};
+components = (
+{
+name = "aaMatra-deva";
+transform = "{1, 0, 0, 1, 896, 0}";
+}
+);
+layerId = "2CCCAF06-0AAA-44C6-8F00-0A68246BB68E";
+name = Bold;
+paths = (
+{
+closed = 1;
+nodes = (
+"845 -10 OFFCURVE",
+"917 45 OFFCURVE",
+"917 101 CURVE SMOOTH",
+"917 204 OFFCURVE",
+"749 306 OFFCURVE",
+"640 306 CURVE SMOOTH",
+"543 306 OFFCURVE",
+"557 164 OFFCURVE",
+"594 73 CURVE",
+"615 137 LINE",
+"532 71 OFFCURVE",
+"400 171 OFFCURVE",
+"400 266 CURVE SMOOTH",
+"400 329 OFFCURVE",
+"449 363 OFFCURVE",
+"539 363 CURVE SMOOTH",
+"898 363 LINE",
+"898 533 LINE",
+"433 533 LINE SMOOTH",
+"321 533 OFFCURVE",
+"228 447 OFFCURVE",
+"228 344 CURVE SMOOTH",
+"228 157 OFFCURVE",
+"461 -10 OFFCURVE",
+"723 -10 CURVE SMOOTH"
+);
+},
+{
+closed = 1;
+nodes = (
+"1057 -115 LINE",
+"676 87 LINE",
+"626 22 LINE",
+"1007 -180 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"1125 363 LINE",
+"1125 441 LINE",
+"1013 533 LINE",
+"25 533 LINE",
+"25 455 LINE",
+"137 363 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"1125 616 LINE",
+"1125 694 LINE",
+"1013 786 LINE",
+"-165 786 LINE",
+"-165 708 LINE",
+"-53 616 LINE"
+);
+}
+);
+width = 1255;
+}
+);
+leftKerningGroup = "k_ssa-deva";
+rightKerningGroup = "aaMatra-deva";
+rightMetricsKey = "aaMatra-deva";
 },
 {
 color = 5;
@@ -66566,21 +66879,21 @@ rightMetricsKey = "ra-deva";
 {
 color = 8;
 glyphname = "ng_k_ssa-deva";
-lastChange = "2014-10-09 18:19:15 +0000";
+lastChange = "2014-10-25 16:07:31 +0000";
 layers = (
 {
 anchors = (
 {
 name = bottom;
-position = "{515, -748}";
+position = "{535, -338}";
 },
 {
 name = leg;
-position = "{529, -377}";
+position = "{529, -147}";
 },
 {
 name = "leg-low";
-position = "{529, -387}";
+position = "{529, -157}";
 }
 );
 background = {
@@ -66685,87 +66998,87 @@ paths = (
 {
 closed = 1;
 nodes = (
-"96 58 OFFCURVE",
-"18 -14 OFFCURVE",
-"18 -90 CURVE SMOOTH",
-"18 -168 OFFCURVE",
-"83 -217 OFFCURVE",
-"192 -304 CURVE",
-"223 -258 LINE",
-"171 -216 OFFCURVE",
-"148 -187 OFFCURVE",
-"148 -118 CURVE SMOOTH",
-"148 -79 OFFCURVE",
-"173 -22 OFFCURVE",
-"218 -22 CURVE SMOOTH",
-"245 -22 OFFCURVE",
-"259 -55 OFFCURVE",
-"259 -77 CURVE SMOOTH",
-"259 -222 OFFCURVE",
-"-49 -320 OFFCURVE",
-"-51 -474 CURVE SMOOTH",
-"-53 -628 OFFCURVE",
-"119 -758 OFFCURVE",
-"312 -758 CURVE SMOOTH",
-"382 -758 OFFCURVE",
-"426 -723 OFFCURVE",
-"426 -678 CURVE SMOOTH",
-"426 -597 OFFCURVE",
-"318 -500 OFFCURVE",
-"237 -500 CURVE SMOOTH",
-"152 -500 OFFCURVE",
-"179 -607 OFFCURVE",
-"202 -687 CURVE",
-"232 -635 LINE",
-"145 -664 OFFCURVE",
-"66 -634 OFFCURVE",
-"67 -529 CURVE SMOOTH",
-"68 -391 OFFCURVE",
-"373 -281 OFFCURVE",
-"373 -145 CURVE SMOOTH",
-"373 -58 OFFCURVE",
-"268 58 OFFCURVE",
-"168 58 CURVE SMOOTH"
+"-15 148 OFFCURVE",
+"-92 77 OFFCURVE",
+"-92 -3 CURVE SMOOTH",
+"-92 -77 OFFCURVE",
+"-25 -129 OFFCURVE",
+"82 -214 CURVE",
+"113 -168 LINE",
+"62 -128 OFFCURVE",
+"38 -92 OFFCURVE",
+"38 -37 CURVE SMOOTH",
+"38 32 OFFCURVE",
+"75 68 OFFCURVE",
+"106 68 CURVE SMOOTH",
+"136 68 OFFCURVE",
+"149 36 OFFCURVE",
+"149 12 CURVE SMOOTH",
+"149 -81 OFFCURVE",
+"-51 -165 OFFCURVE",
+"-51 -275 CURVE SMOOTH",
+"-51 -382 OFFCURVE",
+"136 -488 OFFCURVE",
+"298 -488 CURVE SMOOTH",
+"391 -488 OFFCURVE",
+"426 -453 OFFCURVE",
+"426 -407 CURVE SMOOTH",
+"426 -328 OFFCURVE",
+"318 -230 OFFCURVE",
+"237 -230 CURVE SMOOTH",
+"152 -230 OFFCURVE",
+"179 -337 OFFCURVE",
+"202 -417 CURVE",
+"232 -365 LINE",
+"147 -433 OFFCURVE",
+"67 -377 OFFCURVE",
+"67 -314 CURVE SMOOTH",
+"67 -216 OFFCURVE",
+"263 -150 OFFCURVE",
+"263 -48 CURVE SMOOTH",
+"263 27 OFFCURVE",
+"158 148 OFFCURVE",
+"60 148 CURVE SMOOTH"
 );
 },
 {
 closed = 1;
 nodes = (
-"176 -676 LINE",
-"485 -940 LINE",
-"519 -904 LINE",
-"208 -638 LINE"
+"220 -444 LINE",
+"485 -670 LINE",
+"519 -634 LINE",
+"252 -406 LINE"
 );
 },
 {
 closed = 1;
 nodes = (
-"450 -277 OFFCURVE",
-"393 -306 OFFCURVE",
-"339 -306 CURVE SMOOTH",
-"309 -306 OFFCURVE",
-"286 -302 OFFCURVE",
-"241 -271 CURVE",
-"205 -320 LINE",
-"325 -414 LINE",
-"336 -418 OFFCURVE",
-"354 -422 OFFCURVE",
-"379 -422 CURVE SMOOTH",
-"425 -422 OFFCURVE",
-"502 -401 OFFCURVE",
-"599 -313 CURVE",
-"599 -275 LINE",
-"529 -213 LINE"
+"447 -19 OFFCURVE",
+"394 -46 OFFCURVE",
+"335 -46 CURVE SMOOTH",
+"310 -46 OFFCURVE",
+"284 -41 OFFCURVE",
+"241 -11 CURVE",
+"205 -60 LINE",
+"325 -154 LINE",
+"336 -158 OFFCURVE",
+"355 -162 OFFCURVE",
+"377 -162 CURVE SMOOTH",
+"426 -162 OFFCURVE",
+"502 -141 OFFCURVE",
+"599 -53 CURVE",
+"599 -15 LINE",
+"529 47 LINE"
 );
 },
 {
 closed = 1;
 nodes = (
 "515 179 LINE",
-"515 -622 LINE",
-"484 -658 LINE",
-"597 -758 LINE",
-"635 -758 LINE",
+"515 -392 LINE",
+"484 -428 LINE",
+"597 -528 LINE",
+"635 -528 LINE",
 "635 237 LINE"
 );
 }
@@ -66776,15 +67089,15 @@ width = 792;
 anchors = (
 {
 name = bottom;
-position = "{592, -695}";
+position = "{632, -385}";
 },
 {
 name = leg;
-position = "{596, -259}";
+position = "{596, -79}";
 },
 {
 name = "leg-low";
-position = "{611, -363}";
+position = "{611, -183}";
 }
 );
 background = {
@@ -66889,6 +67202,325 @@ paths = (
 {
 closed = 1;
 nodes = (
+"-64 171 OFFCURVE",
+"-124 112 OFFCURVE",
+"-124 42 CURVE SMOOTH",
+"-124 -67 OFFCURVE",
+"22 -137 OFFCURVE",
+"195 -223 CURVE",
+"239 -159 LINE",
+"119 -98 OFFCURVE",
+"92 -65 OFFCURVE",
+"92 0 CURVE SMOOTH",
+"92 38 OFFCURVE",
+"101 56 OFFCURVE",
+"120 56 CURVE SMOOTH",
+"144 56 OFFCURVE",
+"151 25 OFFCURVE",
+"151 11 CURVE SMOOTH",
+"151 -68 OFFCURVE",
+"-83 -190 OFFCURVE",
+"-83 -314 CURVE SMOOTH",
+"-83 -437 OFFCURVE",
+"147 -565 OFFCURVE",
+"340 -565 CURVE SMOOTH",
+"467 -565 OFFCURVE",
+"512 -510 OFFCURVE",
+"513 -454 CURVE SMOOTH",
+"515 -350 OFFCURVE",
+"366 -249 OFFCURVE",
+"280 -249 CURVE SMOOTH",
+"177 -249 OFFCURVE",
+"195 -392 OFFCURVE",
+"231 -482 CURVE",
+"282 -408 LINE",
+"206 -473 OFFCURVE",
+"129 -420 OFFCURVE",
+"129 -360 CURVE SMOOTH",
+"129 -263 OFFCURVE",
+"329 -165 OFFCURVE",
+"329 -64 CURVE SMOOTH",
+"329 31 OFFCURVE",
+"151 171 OFFCURVE",
+"21 171 CURVE SMOOTH"
+);
+},
+{
+closed = 1;
+nodes = (
+"210 -511 LINE",
+"523 -764 LINE",
+"580 -704 LINE",
+"272 -456 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"539 -41 OFFCURVE",
+"480 -58 OFFCURVE",
+"412 -58 CURVE SMOOTH",
+"372 -58 OFFCURVE",
+"350 -52 OFFCURVE",
+"268 -23 CURVE",
+"254 -79 LINE",
+"425 -216 LINE",
+"442 -219 OFFCURVE",
+"459 -221 OFFCURVE",
+"476 -221 CURVE SMOOTH",
+"558 -221 OFFCURVE",
+"630 -220 OFFCURVE",
+"774 -146 CURVE",
+"774 -68 LINE",
+"607 4 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"592 171 LINE",
+"592 -410 LINE",
+"542 -475 LINE",
+"714 -565 LINE",
+"792 -565 LINE",
+"792 171 LINE"
+);
+}
+);
+width = 969;
+}
+);
+leftMetricsKey = "ng-deva";
+rightKerningGroup = "nga-deva";
+rightMetricsKey = "nga-deva.top";
+},
+{
+color = 7;
+glyphname = "ng_k_ssa-deva.ss11";
+layers = (
+{
+anchors = (
+{
+name = bottom;
+position = "{575, -270}";
+}
+);
+background = {
+anchors = (
+{
+name = leg;
+position = "{529, -377}";
+},
+{
+name = bottom;
+position = "{515, -748}";
+},
+{
+name = "leg-low";
+position = "{529, -387}";
+}
+);
+components = (
+{
+name = "ng-deva.top";
+transform = "{1, 0, 0, 1, 0, 0}";
+}
+);
+paths = (
+{
+closed = 1;
+nodes = (
+"96 58 OFFCURVE",
+"18 -14 OFFCURVE",
+"18 -90 CURVE SMOOTH",
+"18 -168 OFFCURVE",
+"83 -217 OFFCURVE",
+"192 -304 CURVE",
+"223 -258 LINE",
+"171 -216 OFFCURVE",
+"148 -187 OFFCURVE",
+"148 -118 CURVE SMOOTH",
+"148 -79 OFFCURVE",
+"173 -22 OFFCURVE",
+"218 -22 CURVE SMOOTH",
+"245 -22 OFFCURVE",
+"259 -55 OFFCURVE",
+"259 -77 CURVE SMOOTH",
+"259 -222 OFFCURVE",
+"-49 -320 OFFCURVE",
+"-51 -474 CURVE SMOOTH",
+"-53 -628 OFFCURVE",
+"119 -758 OFFCURVE",
+"312 -758 CURVE SMOOTH",
+"382 -758 OFFCURVE",
+"426 -723 OFFCURVE",
+"426 -678 CURVE SMOOTH",
+"426 -597 OFFCURVE",
+"318 -500 OFFCURVE",
+"237 -500 CURVE SMOOTH",
+"152 -500 OFFCURVE",
+"179 -607 OFFCURVE",
+"202 -687 CURVE",
+"232 -635 LINE",
+"145 -664 OFFCURVE",
+"66 -634 OFFCURVE",
+"67 -529 CURVE SMOOTH",
+"68 -391 OFFCURVE",
+"373 -281 OFFCURVE",
+"373 -145 CURVE SMOOTH",
+"373 -58 OFFCURVE",
+"268 58 OFFCURVE",
+"168 58 CURVE SMOOTH"
+);
+},
+{
+closed = 1;
+nodes = (
+"176 -676 LINE",
+"485 -940 LINE",
+"519 -904 LINE",
+"208 -638 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"450 -277 OFFCURVE",
+"393 -306 OFFCURVE",
+"339 -306 CURVE SMOOTH",
+"309 -306 OFFCURVE",
+"286 -302 OFFCURVE",
+"241 -271 CURVE",
+"205 -320 LINE",
+"325 -414 LINE",
+"336 -418 OFFCURVE",
+"354 -422 OFFCURVE",
+"379 -422 CURVE SMOOTH",
+"425 -422 OFFCURVE",
+"502 -401 OFFCURVE",
+"599 -313 CURVE",
+"599 -275 LINE",
+"529 -213 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"515 179 LINE",
+"515 -622 LINE",
+"484 -658 LINE",
+"597 -758 LINE",
+"635 -758 LINE",
+"635 237 LINE"
+);
+}
+);
+};
+components = (
+{
+name = "ng-deva.top";
+transform = "{1, 0, 0, 1, 0, 0}";
+}
+);
+layerId = "E07B5D26-C0CD-4D0E-A705-659FB2222D21";
+name = Regular;
+paths = (
+{
+closed = 1;
+nodes = (
+"411 -433 OFFCURVE",
+"450 -398 OFFCURVE",
+"450 -351 CURVE SMOOTH",
+"450 -273 OFFCURVE",
+"342 -175 OFFCURVE",
+"261 -175 CURVE SMOOTH",
+"176 -175 OFFCURVE",
+"203 -282 OFFCURVE",
+"226 -362 CURVE",
+"256 -310 LINE",
+"176 -344 OFFCURVE",
+"114 -286 OFFCURVE",
+"110 -193 CURVE SMOOTH",
+"107 -130 OFFCURVE",
+"149 -83 OFFCURVE",
+"248 -83 CURVE SMOOTH",
+"396 -83 LINE",
+"396 17 LINE",
+"205 17 LINE SMOOTH",
+"90 17 OFFCURVE",
+"-8 -50 OFFCURVE",
+"-8 -144 CURVE SMOOTH",
+"-8 -291 OFFCURVE",
+"162 -433 OFFCURVE",
+"328 -433 CURVE SMOOTH"
+);
+},
+{
+closed = 1;
+nodes = (
+"532 -578 LINE",
+"232 -313 LINE",
+"200 -351 LINE",
+"499 -615 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"619 -83 LINE",
+"619 -45 LINE",
+"545 17 LINE",
+"-181 17 LINE",
+"-181 -21 LINE",
+"-107 -83 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"517 233 LINE",
+"517 -397 LINE",
+"486 -433 LINE",
+"599 -533 LINE",
+"637 -533 LINE",
+"637 233 LINE"
+);
+}
+);
+width = 792;
+},
+{
+anchors = (
+{
+name = bottom;
+position = "{722, -310}";
+}
+);
+background = {
+anchors = (
+{
+name = leg;
+position = "{596, -259}";
+},
+{
+name = bottom;
+position = "{592, -695}";
+},
+{
+name = "leg-low";
+position = "{611, -363}";
+}
+);
+components = (
+{
+name = "ng-deva.top";
+transform = "{1, 0, 0, 1, 0, 0}";
+}
+);
+paths = (
+{
+closed = 1;
+nodes = (
 "28 71 OFFCURVE",
 "-44 3 OFFCURVE",
 "-44 -65 CURVE SMOOTH",
@@ -66974,10 +67606,81 @@ nodes = (
 );
 }
 );
+};
+components = (
+{
+name = "ng-deva.top";
+transform = "{1, 0, 0, 1, 0, 0}";
+}
+);
+layerId = "2CCCAF06-0AAA-44C6-8F00-0A68246BB68E";
+name = Bold;
+paths = (
+{
+closed = 1;
+nodes = (
+"453 -512 OFFCURVE",
+"526 -459 OFFCURVE",
+"526 -396 CURVE SMOOTH",
+"526 -300 OFFCURVE",
+"353 -196 OFFCURVE",
+"257 -196 CURVE SMOOTH",
+"145 -196 OFFCURVE",
+"168 -339 OFFCURVE",
+"203 -429 CURVE",
+"224 -365 LINE",
+"160 -419 OFFCURVE",
+"99 -360 OFFCURVE",
+"99 -261 CURVE SMOOTH",
+"99 -194 OFFCURVE",
+"131 -159 OFFCURVE",
+"218 -159 CURVE SMOOTH",
+"507 -159 LINE",
+"507 11 LINE",
+"132 11 LINE SMOOTH",
+"24 11 OFFCURVE",
+"-73 -66 OFFCURVE",
+"-73 -188 CURVE SMOOTH",
+"-73 -350 OFFCURVE",
+"119 -512 OFFCURVE",
+"334 -512 CURVE SMOOTH"
+);
+},
+{
+closed = 1;
+nodes = (
+"666 -617 LINE",
+"285 -415 LINE",
+"235 -480 LINE",
+"616 -682 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"734 -159 LINE",
+"734 -81 LINE",
+"622 11 LINE",
+"-276 11 LINE",
+"-276 -67 LINE",
+"-164 -159 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"593 174 LINE",
+"593 -417 LINE",
+"543 -482 LINE",
+"715 -572 LINE",
+"793 -572 LINE",
+"793 174 LINE"
+);
+}
+);
 width = 969;
 }
 );
-leftMetricsKey = "ng-deva";
 rightKerningGroup = "nga-deva";
 rightMetricsKey = "nga-deva.top";
 },
@@ -68946,7 +69649,7 @@ rightMetricsKey = "ja-deva";
 {
 color = 5;
 glyphname = "j_j_nya-deva";
-lastChange = "2014-09-21 17:42:51 +0000";
+lastChange = "2014-10-25 15:30:31 +0000";
 layers = (
 {
 components = (
@@ -68961,7 +69664,7 @@ transform = "{1, 0, 0, 1, 540, 0}";
 );
 layerId = "E07B5D26-C0CD-4D0E-A705-659FB2222D21";
 name = Regular;
-width = 1328;
+width = 1298;
 },
 {
 components = (
@@ -69165,7 +69868,7 @@ rightMetricsKey = "jha-deva";
 {
 color = 5;
 glyphname = "j_nya-deva";
-lastChange = "2014-09-21 17:42:51 +0000";
+lastChange = "2014-10-25 15:30:31 +0000";
 layers = (
 {
 background = {
@@ -69236,12 +69939,12 @@ transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = "aaMatra-deva";
-transform = "{1, 0, 0, 1, 460, 0}";
+transform = "{1, 0, 0, 1, 430, 0}";
 }
 );
 layerId = "E07B5D26-C0CD-4D0E-A705-659FB2222D21";
 name = Regular;
-width = 788;
+width = 758;
 },
 {
 background = {
@@ -69328,17 +70031,17 @@ rightMetricsKey = "nya-deva";
 {
 color = 7;
 glyphname = "j_ny-deva";
-lastChange = "2014-09-01 13:51:43 +0000";
+lastChange = "2014-10-25 15:30:36 +0000";
 layers = (
 {
 anchors = (
 {
 name = bottom;
-position = "{296, 0}";
+position = "{266, 0}";
 },
 {
 name = nukta;
-position = "{288, -174}";
+position = "{258, -174}";
 }
 );
 background = {
@@ -69346,77 +70049,77 @@ paths = (
 {
 closed = 1;
 nodes = (
-"959 -175 LINE",
-"1312 -471 LINE",
-"1345 -434 LINE",
-"991 -137 LINE"
+"929 -175 LINE",
+"1282 -471 LINE",
+"1315 -434 LINE",
+"961 -137 LINE"
 );
 },
 {
 closed = 0;
 nodes = (
-"969 -125 LINE",
-"925 -116 OFFCURVE",
-"888 -112 OFFCURVE",
-"858 -112 CURVE SMOOTH",
-"792 -112 OFFCURVE",
-"755 -130 OFFCURVE",
-"755 -153 CURVE SMOOTH",
-"755 -220 OFFCURVE",
-"892 -329 OFFCURVE",
-"975 -329 CURVE SMOOTH",
-"1041 -329 OFFCURVE",
-"1109 -251 OFFCURVE",
-"1109 -97 CURVE"
+"939 -125 LINE",
+"895 -116 OFFCURVE",
+"858 -112 OFFCURVE",
+"828 -112 CURVE SMOOTH",
+"762 -112 OFFCURVE",
+"725 -130 OFFCURVE",
+"725 -153 CURVE SMOOTH",
+"725 -220 OFFCURVE",
+"862 -329 OFFCURVE",
+"945 -329 CURVE SMOOTH",
+"1011 -329 OFFCURVE",
+"1079 -251 OFFCURVE",
+"1079 -97 CURVE"
 );
 },
 {
 closed = 1;
 nodes = (
-"140 411 LINE",
-"278 292 LINE SMOOTH",
-"338 240 OFFCURVE",
-"356 193 OFFCURVE",
-"356 166 CURVE SMOOTH",
-"356 110 OFFCURVE",
-"317 75 OFFCURVE",
-"258 75 CURVE SMOOTH",
-"205 75 OFFCURVE",
-"154 96 OFFCURVE",
-"76 157 CURVE",
-"46 119 LINE",
-"200 -2 LINE",
-"235 -9 OFFCURVE",
-"269 -10 OFFCURVE",
-"296 -10 CURVE SMOOTH",
-"406 -10 OFFCURVE",
-"486 52 OFFCURVE",
-"486 128 CURVE SMOOTH",
-"486 142 OFFCURVE",
-"484 166 OFFCURVE",
-"478 184 CURVE",
-"172 448 LINE"
+"110 411 LINE",
+"248 292 LINE SMOOTH",
+"308 240 OFFCURVE",
+"326 193 OFFCURVE",
+"326 166 CURVE SMOOTH",
+"326 110 OFFCURVE",
+"287 75 OFFCURVE",
+"228 75 CURVE SMOOTH",
+"175 75 OFFCURVE",
+"124 96 OFFCURVE",
+"46 157 CURVE",
+"16 119 LINE",
+"170 -2 LINE",
+"205 -9 OFFCURVE",
+"239 -10 OFFCURVE",
+"266 -10 CURVE SMOOTH",
+"376 -10 OFFCURVE",
+"456 52 OFFCURVE",
+"456 128 CURVE SMOOTH",
+"456 142 OFFCURVE",
+"454 166 OFFCURVE",
+"448 184 CURVE",
+"142 448 LINE"
 );
 },
 {
 closed = 1;
 nodes = (
-"172 448 LINE",
-"266 348 LINE",
-"706 348 LINE",
-"706 386 LINE",
-"636 448 LINE"
+"142 448 LINE",
+"236 348 LINE",
+"676 348 LINE",
+"676 386 LINE",
+"606 448 LINE"
 );
 },
 {
 closed = 1;
 nodes = (
-"-60 786 LINE",
-"-60 748 LINE",
-"10 686 LINE",
-"708 686 LINE",
-"708 724 LINE",
-"638 786 LINE"
+"-90 786 LINE",
+"-90 748 LINE",
+"-20 686 LINE",
+"678 686 LINE",
+"678 724 LINE",
+"608 786 LINE"
 );
 }
 );
@@ -69427,47 +70130,47 @@ paths = (
 {
 closed = 1;
 nodes = (
-"140 411 LINE",
-"278 292 LINE SMOOTH",
-"338 240 OFFCURVE",
-"369 186 OFFCURVE",
-"350 131 CURVE",
-"394 145 LINE",
-"290 188 OFFCURVE",
+"110 411 LINE",
+"248 292 LINE SMOOTH",
+"308 240 OFFCURVE",
+"339 186 OFFCURVE",
+"320 131 CURVE",
+"364 145 LINE",
+"277 188 OFFCURVE",
 "203 207 OFFCURVE",
-"132 207 CURVE SMOOTH",
-"66 207 OFFCURVE",
-"29 189 OFFCURVE",
-"29 166 CURVE SMOOTH",
-"29 99 OFFCURVE",
-"166 -10 OFFCURVE",
-"281 -10 CURVE SMOOTH",
-"406 -10 OFFCURVE",
-"486 52 OFFCURVE",
-"486 128 CURVE SMOOTH",
-"486 142 OFFCURVE",
-"484 166 OFFCURVE",
-"478 184 CURVE",
-"172 448 LINE"
+"142 207 CURVE SMOOTH",
+"76 207 OFFCURVE",
+"39 189 OFFCURVE",
+"39 166 CURVE SMOOTH",
+"39 99 OFFCURVE",
+"155 -10 OFFCURVE",
+"251 -10 CURVE SMOOTH",
+"376 -10 OFFCURVE",
+"456 52 OFFCURVE",
+"456 128 CURVE SMOOTH",
+"456 142 OFFCURVE",
+"454 166 OFFCURVE",
+"448 184 CURVE",
+"142 448 LINE"
 );
 },
 {
 closed = 1;
 nodes = (
-"233 144 LINE",
-"586 -152 LINE",
-"619 -115 LINE",
-"265 182 LINE"
+"203 144 LINE",
+"556 -152 LINE",
+"589 -115 LINE",
+"235 182 LINE"
 );
 },
 {
 closed = 1;
 nodes = (
-"172 448 LINE",
-"266 348 LINE",
-"706 348 LINE",
-"706 386 LINE",
-"636 448 LINE"
+"142 448 LINE",
+"236 348 LINE",
+"676 348 LINE",
+"676 386 LINE",
+"606 448 LINE"
 );
 },
 {
@@ -69476,13 +70179,13 @@ nodes = (
 "-60 786 LINE",
 "-60 748 LINE",
 "10 686 LINE",
-"708 686 LINE",
-"708 724 LINE",
-"638 786 LINE"
+"678 686 LINE",
+"678 724 LINE",
+"608 786 LINE"
 );
 }
 );
-width = 460;
+width = 430;
 },
 {
 anchors = (
@@ -69645,16 +70348,17 @@ leftMetricsKey = "j-deva";
 {
 color = 7;
 glyphname = "j_ny-deva.short";
+lastChange = "2014-10-25 15:30:46 +0000";
 layers = (
 {
 anchors = (
 {
 name = bottom;
-position = "{296, 0}";
+position = "{266, 0}";
 },
 {
 name = nukta;
-position = "{288, -174}";
+position = "{258, -174}";
 }
 );
 background = {
@@ -69662,77 +70366,77 @@ paths = (
 {
 closed = 1;
 nodes = (
-"959 -175 LINE",
-"1312 -471 LINE",
-"1345 -434 LINE",
-"991 -137 LINE"
+"929 -175 LINE",
+"1282 -471 LINE",
+"1315 -434 LINE",
+"961 -137 LINE"
 );
 },
 {
 closed = 0;
 nodes = (
-"969 -125 LINE",
-"925 -116 OFFCURVE",
-"888 -112 OFFCURVE",
-"858 -112 CURVE SMOOTH",
-"792 -112 OFFCURVE",
-"755 -130 OFFCURVE",
-"755 -153 CURVE SMOOTH",
-"755 -220 OFFCURVE",
-"892 -329 OFFCURVE",
-"975 -329 CURVE SMOOTH",
-"1041 -329 OFFCURVE",
-"1109 -251 OFFCURVE",
-"1109 -97 CURVE"
+"939 -125 LINE",
+"895 -116 OFFCURVE",
+"858 -112 OFFCURVE",
+"828 -112 CURVE SMOOTH",
+"762 -112 OFFCURVE",
+"725 -130 OFFCURVE",
+"725 -153 CURVE SMOOTH",
+"725 -220 OFFCURVE",
+"862 -329 OFFCURVE",
+"945 -329 CURVE SMOOTH",
+"1011 -329 OFFCURVE",
+"1079 -251 OFFCURVE",
+"1079 -97 CURVE"
 );
 },
 {
 closed = 1;
 nodes = (
-"140 411 LINE",
-"278 292 LINE SMOOTH",
-"338 240 OFFCURVE",
-"356 193 OFFCURVE",
-"356 166 CURVE SMOOTH",
-"356 110 OFFCURVE",
-"317 75 OFFCURVE",
-"258 75 CURVE SMOOTH",
-"205 75 OFFCURVE",
-"154 96 OFFCURVE",
-"76 157 CURVE",
-"46 119 LINE",
-"200 -2 LINE",
-"235 -9 OFFCURVE",
-"269 -10 OFFCURVE",
-"296 -10 CURVE SMOOTH",
-"406 -10 OFFCURVE",
-"486 52 OFFCURVE",
-"486 128 CURVE SMOOTH",
-"486 142 OFFCURVE",
-"484 166 OFFCURVE",
-"478 184 CURVE",
-"172 448 LINE"
+"110 411 LINE",
+"248 292 LINE SMOOTH",
+"308 240 OFFCURVE",
+"326 193 OFFCURVE",
+"326 166 CURVE SMOOTH",
+"326 110 OFFCURVE",
+"287 75 OFFCURVE",
+"228 75 CURVE SMOOTH",
+"175 75 OFFCURVE",
+"124 96 OFFCURVE",
+"46 157 CURVE",
+"16 119 LINE",
+"170 -2 LINE",
+"205 -9 OFFCURVE",
+"239 -10 OFFCURVE",
+"266 -10 CURVE SMOOTH",
+"376 -10 OFFCURVE",
+"456 52 OFFCURVE",
+"456 128 CURVE SMOOTH",
+"456 142 OFFCURVE",
+"454 166 OFFCURVE",
+"448 184 CURVE",
+"142 448 LINE"
 );
 },
 {
 closed = 1;
 nodes = (
-"172 448 LINE",
-"266 348 LINE",
-"706 348 LINE",
-"706 386 LINE",
-"636 448 LINE"
+"142 448 LINE",
+"236 348 LINE",
+"676 348 LINE",
+"676 386 LINE",
+"606 448 LINE"
 );
 },
 {
 closed = 1;
 nodes = (
-"-60 786 LINE",
-"-60 748 LINE",
-"10 686 LINE",
-"708 686 LINE",
-"708 724 LINE",
-"638 786 LINE"
+"-90 786 LINE",
+"-90 748 LINE",
+"-20 686 LINE",
+"678 686 LINE",
+"678 724 LINE",
+"608 786 LINE"
 );
 }
 );
@@ -69743,47 +70447,47 @@ paths = (
 {
 closed = 1;
 nodes = (
-"140 411 LINE",
-"278 292 LINE SMOOTH",
-"338 240 OFFCURVE",
-"369 186 OFFCURVE",
-"350 131 CURVE",
-"394 145 LINE",
-"290 188 OFFCURVE",
+"110 411 LINE",
+"248 292 LINE SMOOTH",
+"308 240 OFFCURVE",
+"339 186 OFFCURVE",
+"320 131 CURVE",
+"364 145 LINE",
+"277 188 OFFCURVE",
 "203 207 OFFCURVE",
-"132 207 CURVE SMOOTH",
-"66 207 OFFCURVE",
-"29 189 OFFCURVE",
-"29 166 CURVE SMOOTH",
-"29 99 OFFCURVE",
-"166 -10 OFFCURVE",
-"281 -10 CURVE SMOOTH",
-"406 -10 OFFCURVE",
-"486 52 OFFCURVE",
-"486 128 CURVE SMOOTH",
-"486 142 OFFCURVE",
-"484 166 OFFCURVE",
-"478 184 CURVE",
-"172 448 LINE"
+"142 207 CURVE SMOOTH",
+"76 207 OFFCURVE",
+"39 189 OFFCURVE",
+"39 166 CURVE SMOOTH",
+"39 99 OFFCURVE",
+"155 -10 OFFCURVE",
+"251 -10 CURVE SMOOTH",
+"376 -10 OFFCURVE",
+"456 52 OFFCURVE",
+"456 128 CURVE SMOOTH",
+"456 142 OFFCURVE",
+"454 166 OFFCURVE",
+"448 184 CURVE",
+"142 448 LINE"
 );
 },
 {
 closed = 1;
 nodes = (
-"233 144 LINE",
-"586 -152 LINE",
-"619 -115 LINE",
-"265 182 LINE"
+"203 144 LINE",
+"556 -152 LINE",
+"589 -115 LINE",
+"235 182 LINE"
 );
 },
 {
 closed = 1;
 nodes = (
-"172 448 LINE",
-"266 348 LINE",
-"566 348 LINE",
-"566 386 LINE",
-"496 448 LINE"
+"142 448 LINE",
+"236 348 LINE",
+"536 348 LINE",
+"536 386 LINE",
+"466 448 LINE"
 );
 },
 {
@@ -69792,13 +70496,13 @@ nodes = (
 "-60 786 LINE",
 "-60 748 LINE",
 "10 686 LINE",
-"568 686 LINE",
-"568 724 LINE",
-"498 786 LINE"
+"538 686 LINE",
+"538 724 LINE",
+"468 786 LINE"
 );
 }
 );
-width = 360;
+width = 330;
 },
 {
 anchors = (
@@ -69961,7 +70665,7 @@ leftMetricsKey = "j-deva";
 {
 color = 1;
 glyphname = "j_ny_ya-deva";
-lastChange = "2014-09-21 17:45:04 +0000";
+lastChange = "2014-10-25 15:30:43 +0000";
 layers = (
 {
 components = (
@@ -69971,12 +70675,12 @@ transform = "{1, 0, 0, 1, 0, 0}";
 },
 {
 name = "ya-deva";
-transform = "{1, 0, 0, 1, 360, 0}";
+transform = "{1, 0, 0, 1, 330, 0}";
 }
 );
 layerId = "E07B5D26-C0CD-4D0E-A705-659FB2222D21";
 name = Regular;
-width = 1092;
+width = 1062;
 },
 {
 components = (
@@ -74836,7 +75540,7 @@ rightMetricsKey = "ma-deva";
 {
 color = 5;
 glyphname = "ddh_ya-deva";
-lastChange = "2014-09-21 17:45:04 +0000";
+lastChange = "2014-10-25 15:37:41 +0000";
 layers = (
 {
 components = (
@@ -75979,7 +76683,7 @@ rightMetricsKey = "t-deva";
 {
 color = 8;
 glyphname = "t_t-deva.short";
-lastChange = "2014-09-21 16:31:53 +0000";
+lastChange = "2014-10-25 15:35:32 +0000";
 layers = (
 {
 components = (
@@ -92239,7 +92943,7 @@ rightMetricsKey = "cha-deva";
 {
 color = 7;
 glyphname = "s_ja-deva";
-lastChange = "2014-10-24 12:22:39 +0000";
+lastChange = "2014-10-25 15:26:54 +0000";
 layers = (
 {
 background = {
@@ -92277,14 +92981,14 @@ nodes = (
 "902 464 OFFCURVE",
 "993 393 CURVE",
 "1023 431 LINE",
-"824 587 LINE",
-"811 592 OFFCURVE",
-"779 595 OFFCURVE",
-"738 595 CURVE SMOOTH",
-"569 595 OFFCURVE",
-"449 545 OFFCURVE",
-"292 410 CURVE",
-"292 372 LINE",
+"832 581 LINE",
+"812 586 OFFCURVE",
+"787 589 OFFCURVE",
+"746 589 CURVE SMOOTH",
+"574 589 OFFCURVE",
+"452 543 OFFCURVE",
+"292 430 CURVE",
+"292 392 LINE",
 "352 320 LINE"
 );
 },
@@ -92369,8 +93073,8 @@ nodes = (
 "883 556 CURVE SMOOTH",
 "720 556 OFFCURVE",
 "581 517 OFFCURVE",
-"418 427 CURVE",
-"418 349 LINE",
+"418 437 CURVE",
+"418 359 LINE",
 "505 257 LINE"
 );
 },
@@ -180185,7 +180889,7 @@ period = "-190";
 "@MMK_R_th-deva" = "-90";
 "@MMK_R_tta-deva" = "-30";
 "@MMK_R_u-deva" = "-70";
-"@MMK_R_va-deva" = "-90";
+"@MMK_R_va-deva" = "-80";
 "@MMK_R_ya-deva" = "-120";
 "@MMK_R_ya-deva.connect-low" = "-80";
 "ra-deva" = "-90";
@@ -180513,6 +181217,7 @@ fraction = "-20";
 "@MMK_R_pa-deva" = 35;
 "@MMK_R_ta-deva" = "-60";
 "@MMK_R_va-deva" = "-50";
+"@MMK_R_da-deva" = 10;
 };
 "@MMK_L_t-deva.short" = {
 "@MMK_R_rr-deva.short" = 19;
@@ -181342,6 +182047,7 @@ fraction = "-20";
 "@MMK_R_pa-deva" = 0;
 "@MMK_R_ta-deva" = "-60";
 "@MMK_R_va-deva" = "-80";
+"@MMK_R_da-deva" = 40;
 };
 "@MMK_L_t-deva.short" = {
 "@MMK_R_gha-deva" = 40;

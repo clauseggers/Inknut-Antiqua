@@ -1512,6 +1512,8 @@
 	<string>k_ss_ya-deva.glif</string>
 	<key>k_ssa-deva</key>
 	<string>k_ssa-deva.glif</string>
+	<key>k_ssa-deva.ss11</key>
+	<string>k_ssa-deva.ss11.glif</string>
 	<key>k_ssa_ra-deva</key>
 	<string>k_ssa_ra-deva.glif</string>
 	<key>k_t_ta-deva</key>
@@ -1942,6 +1944,8 @@
 	<string>ng_gha_ra-deva.glif</string>
 	<key>ng_k_ssa-deva</key>
 	<string>ng_k_ssa-deva.glif</string>
+	<key>ng_k_ssa-deva.ss11</key>
+	<string>ng_k_ssa-deva.ss11.glif</string>
 	<key>ng_k_t_ta-deva</key>
 	<string>ng_k_t_ta-deva.glif</string>
 	<key>ng_ka-deva</key>

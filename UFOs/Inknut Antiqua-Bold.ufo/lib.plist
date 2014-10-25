@@ -566,6 +566,7 @@
 		<string>k_ya-deva</string>
 		<string>k_r-deva</string>
 		<string>k_ssa-deva</string>
+		<string>k_ssa-deva.ss11</string>
 		<string>k_ssa_ra-deva</string>
 		<string>k_ss-deva</string>
 		<string>k_ss-deva.long</string>
@@ -595,6 +596,7 @@
 		<string>ng_ka-deva</string>
 		<string>ng_ka_ra-deva</string>
 		<string>ng_k_ssa-deva</string>
+		<string>ng_k_ssa-deva.ss11</string>
 		<string>ng_kha-deva</string>
 		<string>ng_ga-deva</string>
 		<string>ng_ga_ra-deva</string>

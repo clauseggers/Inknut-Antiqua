@@ -233,7 +233,7 @@
 		<key>@MMK_R_u-deva</key>
 		<integer>-70</integer>
 		<key>@MMK_R_va-deva</key>
-		<integer>-90</integer>
+		<integer>-80</integer>
 		<key>@MMK_R_ya-deva</key>
 		<integer>-120</integer>
 		<key>@MMK_R_ya-deva.connect-low</key>
@@ -828,6 +828,8 @@
 	</dict>
 	<key>@MMK_L_t-deva</key>
 	<dict>
+		<key>@MMK_R_da-deva</key>
+		<integer>10</integer>
 		<key>@MMK_R_k_ssa-deva</key>
 		<integer>-40</integer>
 		<key>@MMK_R_pa-deva</key>

@@ -349,6 +349,7 @@
 		<string>k_ma-deva</string>
 		<string>k_ya-deva</string>
 		<string>k_ssa-deva</string>
+		<string>k_ssa-deva.ss11</string>
 		<string>k_ssa_ra-deva</string>
 		<string>k_ss_ma-deva</string>
 		<string>k_ss_ya-deva</string>
@@ -1151,6 +1152,7 @@
 		<string>nga-deva</string>
 		<string>ng_ka-deva</string>
 		<string>ng_k_ssa-deva</string>
+		<string>ng_k_ssa-deva.ss11</string>
 		<string>ng_ga-deva</string>
 		<string>ng_gha-deva</string>
 		<string>ng_r-deva</string>
@@ -2501,6 +2503,7 @@
 	<key>@MMK_R_k_ssa-deva</key>
 	<array>
 		<string>k_ssa-deva</string>
+		<string>k_ssa-deva.ss11</string>
 		<string>k_ssa_ra-deva</string>
 		<string>k_ss-deva</string>
 		<string>k_ss-deva.long</string>

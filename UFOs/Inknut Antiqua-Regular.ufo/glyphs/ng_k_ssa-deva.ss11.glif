@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="ng_k_ssa-deva.ss11" format="1">
+  <advance width="792"/>
+  <outline>
+    <contour>
+      <point x="411" y="-433"/>
+      <point x="450" y="-398"/>
+      <point x="450" y="-351" type="curve" smooth="yes"/>
+      <point x="450" y="-273"/>
+      <point x="342" y="-175"/>
+      <point x="261" y="-175" type="curve" smooth="yes"/>
+      <point x="176" y="-175"/>
+      <point x="203" y="-282"/>
+      <point x="226" y="-362" type="curve"/>
+      <point x="256" y="-310" type="line"/>
+      <point x="176" y="-344"/>
+      <point x="114" y="-286"/>
+      <point x="110" y="-193" type="curve" smooth="yes"/>
+      <point x="107" y="-130"/>
+      <point x="149" y="-83"/>
+      <point x="248" y="-83" type="curve" smooth="yes"/>
+      <point x="396" y="-83" type="line"/>
+      <point x="396" y="17" type="line"/>
+      <point x="205" y="17" type="line" smooth="yes"/>
+      <point x="90" y="17"/>
+      <point x="-8" y="-50"/>
+      <point x="-8" y="-144" type="curve" smooth="yes"/>
+      <point x="-8" y="-291"/>
+      <point x="162" y="-433"/>
+      <point x="328" y="-433" type="curve" smooth="yes"/>
+    </contour>
+    <contour>
+      <point x="532" y="-578" type="line"/>
+      <point x="232" y="-313" type="line"/>
+      <point x="200" y="-351" type="line"/>
+      <point x="499" y="-615" type="line"/>
+    </contour>
+    <contour>
+      <point x="619" y="-83" type="line"/>
+      <point x="619" y="-45" type="line"/>
+      <point x="545" y="17" type="line"/>
+      <point x="-181" y="17" type="line"/>
+      <point x="-181" y="-21" type="line"/>
+      <point x="-107" y="-83" type="line"/>
+    </contour>
+    <contour>
+      <point x="517" y="233" type="line"/>
+      <point x="517" y="-397" type="line"/>
+      <point x="486" y="-433" type="line"/>
+      <point x="599" y="-533" type="line"/>
+      <point x="637" y="-533" type="line"/>
+      <point x="637" y="233" type="line"/>
+    </contour>
+    <component base="ng-deva.top"/>
+    <contour>
+      <point x="575" y="-270" type="move" name="bottom"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+      <integer>7</integer>
+      <key>public.markColor</key>
+      <string>0.18,0.16,0.78,1</string>
+    </dict>
+  </lib>
+</glyph>

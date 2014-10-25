@@ -126,6 +126,7 @@ feature frac;
 feature ordn;
 feature calt;
 feature case;
+feature rlig;
 feature salt;
 feature ss01;
 feature ss02;
@@ -139,10 +140,10 @@ feature rkrf;
 feature blwf;
 feature half;
 feature vatu;
-feature blws;
 feature haln;
-feature pres;
+feature blws;
 feature abvs;
+feature pres;
 } aalt;
 
 feature ccmp {
@@ -468,6 +469,8 @@ sub jha-deva by jha-deva.ss11;
 sub nna-deva by nna-deva.ss11;
 sub la-deva by la-deva.ss11;
 sub k_nna-deva by k_nna-deva.ss11;
+sub k_ssa-deva by k_ssa-deva.ss11;
+sub ng_k_ssa-deva by ng_k_ssa-deva.ss11;
 sub j_jha-deva by j_jha-deva.ss11;
 sub jha_ra-deva by jha_ra-deva.ss11;
 sub jh_na-deva by jh_na-deva.ss11;
@@ -894,56 +897,6 @@ sub ha-deva rVocalicMatra-deva by ha_rVocalicMatra-deva;
 
 sub sha-deva' [rVocalicMatra-deva rrVocalicMatra-deva] by sha_VocalicMatra-deva;
 } blws;
-
-feature abvs {
-# automatic
-script dev2;
-lookup Abvs1_devanagari {
-	sub eCandraMatra-deva anusvara-deva by candraBindu-deva;
-	sub eShortMatra-deva eCandraMatra-deva by eShortMatra_eCandraMatra-deva;
-	sub eShortMatra-deva candraBindu-deva by eShortMatra_candraBindu-deva;
-	sub eMatra-deva eCandraMatra-deva by eMatra_eCandraMatra-deva;
-	sub eMatra-deva candraBindu-deva by eMatra_candraBindu-deva;
-	sub eMatra-deva reph-deva anusvara-deva by eMatra_reph_anusvara-deva;
-	sub aiMatra-deva eCandraMatra-deva by aiMatra_eCandraMatra-deva;
-	sub aiMatra-deva candraBindu-deva by aiMatra_candraBindu-deva;
-	sub aiMatra-deva anusvara-deva by aiMatra_anusvara-deva;
-	sub aiMatra-deva reph-deva anusvara-deva by aiMatra_reph_anusvara-deva;
-	sub nukta-deva uMatra-deva by nukta_uMatra-deva;
-	sub nukta-deva uuMatra-deva by nukta_uuMatra-deva;
-	sub nukta-deva rVocalicMatra-deva by nukta_rVocalicMatra-deva;
-	sub nukta-deva rrVocalicMatra-deva by nukta_rrVocalicMatra-deva;
-	sub nukta-deva lVocalicMatra-deva by nukta_lVocalicMatra-deva;
-	sub nukta-deva llVocalicMatra-deva by nukta_llVocalicMatra-deva;
-	sub nukta-deva rakar-deva by nukta_rakar-deva;
-	sub nukta-deva rakar-deva uMatra-deva by nukta_rakar_uMatra-deva;
-	sub nukta-deva rakar-deva uuMatra-deva by nukta_rakar_uuMatra-deva;
-	sub nukta-deva ueMatra-deva by nukta_ueMatra-deva;
-	sub nukta-deva uueMatra-deva by nukta_uueMatra-deva;
-	sub reph-deva eCandraMatra-deva by reph_eCandraMatra-deva;
-	sub reph-deva candraBindu-deva by reph_candraBindu-deva;
-	sub reph-deva anusvara-deva by reph_anusvara-deva;
-	sub rakar-deva uMatra-deva by rakar_uMatra-deva;
-	sub rakar-deva uuMatra-deva by rakar_uuMatra-deva;
-	sub rakar-deva halant-deva by rakar_halant-deva;
-} Abvs1_devanagari;
-
-language MAR;
-lookup Abvs1_devanagari;
-language SAN;
-lookup Abvs1_devanagari;
-language NEP;
-lookup Abvs1_devanagari;
-
-script deva;
-lookup Abvs1_devanagari;
-language MAR;
-lookup Abvs1_devanagari;
-language SAN;
-lookup Abvs1_devanagari;
-language NEP;
-lookup Abvs1_devanagari;
-} abvs;
 
 feature pres {
 script dev2;
@@ -1537,6 +1490,56 @@ language NEP;
 lookup Imatra2_devanagari;
 lookup Iimatra_devanagari;
 } pres;
+
+feature abvs {
+# automatic
+script dev2;
+lookup Abvs1_devanagari {
+	sub eCandraMatra-deva anusvara-deva by candraBindu-deva;
+	sub eShortMatra-deva eCandraMatra-deva by eShortMatra_eCandraMatra-deva;
+	sub eShortMatra-deva candraBindu-deva by eShortMatra_candraBindu-deva;
+	sub eMatra-deva eCandraMatra-deva by eMatra_eCandraMatra-deva;
+	sub eMatra-deva candraBindu-deva by eMatra_candraBindu-deva;
+	sub eMatra-deva reph-deva anusvara-deva by eMatra_reph_anusvara-deva;
+	sub aiMatra-deva eCandraMatra-deva by aiMatra_eCandraMatra-deva;
+	sub aiMatra-deva candraBindu-deva by aiMatra_candraBindu-deva;
+	sub aiMatra-deva anusvara-deva by aiMatra_anusvara-deva;
+	sub aiMatra-deva reph-deva anusvara-deva by aiMatra_reph_anusvara-deva;
+	sub nukta-deva uMatra-deva by nukta_uMatra-deva;
+	sub nukta-deva uuMatra-deva by nukta_uuMatra-deva;
+	sub nukta-deva rVocalicMatra-deva by nukta_rVocalicMatra-deva;
+	sub nukta-deva rrVocalicMatra-deva by nukta_rrVocalicMatra-deva;
+	sub nukta-deva lVocalicMatra-deva by nukta_lVocalicMatra-deva;
+	sub nukta-deva llVocalicMatra-deva by nukta_llVocalicMatra-deva;
+	sub nukta-deva rakar-deva by nukta_rakar-deva;
+	sub nukta-deva rakar-deva uMatra-deva by nukta_rakar_uMatra-deva;
+	sub nukta-deva rakar-deva uuMatra-deva by nukta_rakar_uuMatra-deva;
+	sub nukta-deva ueMatra-deva by nukta_ueMatra-deva;
+	sub nukta-deva uueMatra-deva by nukta_uueMatra-deva;
+	sub reph-deva eCandraMatra-deva by reph_eCandraMatra-deva;
+	sub reph-deva candraBindu-deva by reph_candraBindu-deva;
+	sub reph-deva anusvara-deva by reph_anusvara-deva;
+	sub rakar-deva uMatra-deva by rakar_uMatra-deva;
+	sub rakar-deva uuMatra-deva by rakar_uuMatra-deva;
+	sub rakar-deva halant-deva by rakar_halant-deva;
+} Abvs1_devanagari;
+
+language MAR;
+lookup Abvs1_devanagari;
+language SAN;
+lookup Abvs1_devanagari;
+language NEP;
+lookup Abvs1_devanagari;
+
+script deva;
+lookup Abvs1_devanagari;
+language MAR;
+lookup Abvs1_devanagari;
+language SAN;
+lookup Abvs1_devanagari;
+language NEP;
+lookup Abvs1_devanagari;
+} abvs;
 
 feature hwid {
 

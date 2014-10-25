@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="j_nya-deva" format="1">
-  <advance width="788"/>
+  <advance width="758"/>
   <outline>
     <component base="j_ny-deva"/>
-    <component base="aaMatra-deva" xOffset="460"/>
+    <component base="aaMatra-deva" xOffset="430"/>
   </outline>
   <lib>
     <dict>
