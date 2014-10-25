@@ -160,6 +160,10 @@ code = "";
 name = fina;
 },
 {
+code = "script latn;\012language NLD;\012sub i j by ij;\012sub I J by IJ;\012language CAT;\012sub  l' periodcentered' l by ldot;\012sub  L' periodcentered' L by Ldot;";
+name = rlig;
+},
+{
 automatic = 1;
 code = "sub T h by T_h;\012sub c t by c_t;\012sub s t by s_t;\012";
 name = dlig;

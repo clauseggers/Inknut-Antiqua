@@ -348,6 +348,16 @@ feature fina {
 
 } fina;
 
+feature rlig {
+script latn;
+language NLD;
+sub i j by ij;
+sub I J by IJ;
+language CAT;
+sub  l' periodcentered' l by ldot;
+sub  L' periodcentered' L by Ldot;
+} rlig;
+
 feature dlig {
 # automatic
 sub T h by T_h;
