@@ -2,21 +2,21 @@
 <glyph name="period.deva" format="1">
   <advance width="327"/>
   <outline>
-    <contour>
-      <point x="110" y="93" type="line"/>
-      <point x="110" y="55" type="line"/>
-      <point x="194" y="-19" type="line"/>
-      <point x="272" y="71" type="line"/>
-      <point x="272" y="109" type="line"/>
-      <point x="188" y="183" type="line"/>
-    </contour>
+	<contour>
+	  <point x="110" y="93" type="line"/>
+	  <point x="110" y="55" type="line"/>
+	  <point x="194" y="-19" type="line"/>
+	  <point x="272" y="71" type="line"/>
+	  <point x="272" y="109" type="line"/>
+	  <point x="188" y="183" type="line"/>
+	</contour>
   </outline>
   <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
-      <integer>7</integer>
-      <key>public.markColor</key>
-      <string>0.18,0.16,0.78,1</string>
-    </dict>
+	<dict>
+	  <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+	  <integer>7</integer>
+	  <key>public.markColor</key>
+	  <string>0.18,0.16,0.78,1</string>
+	</dict>
   </lib>
 </glyph>

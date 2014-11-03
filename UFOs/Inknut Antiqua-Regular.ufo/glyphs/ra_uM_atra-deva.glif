@@ -2,49 +2,49 @@
 <glyph name="ra_uMatra-deva" format="1">
   <advance width="832"/>
   <outline>
-    <contour>
-      <point x="378" y="549"/>
-      <point x="354" y="499"/>
-      <point x="306" y="444" type="curve"/>
-      <point x="306" y="406" type="line"/>
-      <point x="376" y="344" type="line"/>
-      <point x="415" y="399"/>
-      <point x="448" y="469"/>
-      <point x="526" y="469" type="curve" smooth="yes"/>
-      <point x="581" y="469"/>
-      <point x="607" y="430"/>
-      <point x="607" y="364" type="curve" smooth="yes"/>
-      <point x="607" y="305"/>
-      <point x="572" y="255"/>
-      <point x="502" y="255" type="curve" smooth="yes"/>
-      <point x="491" y="255"/>
-      <point x="479" y="256"/>
-      <point x="467" y="258" type="curve"/>
-      <point x="467" y="220" type="line"/>
-      <point x="537" y="158" type="line"/>
-      <point x="653" y="158"/>
-      <point x="737" y="229"/>
-      <point x="737" y="316" type="curve" smooth="yes"/>
-      <point x="737" y="444"/>
-      <point x="585" y="549"/>
-      <point x="466" y="549" type="curve" smooth="yes"/>
-    </contour>
-    <contour>
-      <point x="243" y="786" type="line"/>
-      <point x="243" y="748" type="line"/>
-      <point x="313" y="686" type="line"/>
-      <point x="892" y="686" type="line"/>
-      <point x="892" y="724" type="line"/>
-      <point x="822" y="786" type="line"/>
-    </contour>
-    <component base="ra-deva"/>
+	<contour>
+	  <point x="378" y="549"/>
+	  <point x="354" y="499"/>
+	  <point x="306" y="444" type="curve"/>
+	  <point x="306" y="406" type="line"/>
+	  <point x="376" y="344" type="line"/>
+	  <point x="415" y="399"/>
+	  <point x="448" y="469"/>
+	  <point x="526" y="469" type="curve" smooth="yes"/>
+	  <point x="581" y="469"/>
+	  <point x="607" y="430"/>
+	  <point x="607" y="364" type="curve" smooth="yes"/>
+	  <point x="607" y="305"/>
+	  <point x="572" y="255"/>
+	  <point x="502" y="255" type="curve" smooth="yes"/>
+	  <point x="491" y="255"/>
+	  <point x="479" y="256"/>
+	  <point x="467" y="258" type="curve"/>
+	  <point x="467" y="220" type="line"/>
+	  <point x="537" y="158" type="line"/>
+	  <point x="653" y="158"/>
+	  <point x="737" y="229"/>
+	  <point x="737" y="316" type="curve" smooth="yes"/>
+	  <point x="737" y="444"/>
+	  <point x="585" y="549"/>
+	  <point x="466" y="549" type="curve" smooth="yes"/>
+	</contour>
+	<contour>
+	  <point x="243" y="786" type="line"/>
+	  <point x="243" y="748" type="line"/>
+	  <point x="313" y="686" type="line"/>
+	  <point x="892" y="686" type="line"/>
+	  <point x="892" y="724" type="line"/>
+	  <point x="822" y="786" type="line"/>
+	</contour>
+	<component base="ra-deva"/>
   </outline>
   <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
-      <integer>7</integer>
-      <key>public.markColor</key>
-      <string>0.18,0.16,0.78,1</string>
-    </dict>
+	<dict>
+	  <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+	  <integer>7</integer>
+	  <key>public.markColor</key>
+	  <string>0.18,0.16,0.78,1</string>
+	</dict>
   </lib>
 </glyph>

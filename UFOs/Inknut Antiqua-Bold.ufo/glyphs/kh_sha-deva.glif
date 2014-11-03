@@ -2,16 +2,16 @@
 <glyph name="kh_sha-deva" format="1">
   <advance width="1953"/>
   <outline>
-    <component base="ra-deva"/>
-    <component base="v-deva.short2" xOffset="587"/>
-    <component base="sha-deva" xOffset="964"/>
+	<component base="ra-deva"/>
+	<component base="v-deva.short2" xOffset="587"/>
+	<component base="sha-deva" xOffset="964"/>
   </outline>
   <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
-      <integer>5</integer>
-      <key>public.markColor</key>
-      <string>0.04,0.57,0.04,1</string>
-    </dict>
+	<dict>
+	  <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+	  <integer>5</integer>
+	  <key>public.markColor</key>
+	  <string>0.04,0.57,0.04,1</string>
+	</dict>
   </lib>
 </glyph>

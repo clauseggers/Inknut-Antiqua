@@ -2,18 +2,18 @@
 <glyph name="kh-deva.long" format="1">
   <advance width="1007"/>
   <outline>
-    <component base="ra-deva"/>
-    <component base="v-deva.long" xOffset="587"/>
-    <contour>
-      <point x="292" y="-120" type="move" name="nukta"/>
-    </contour>
+	<component base="ra-deva"/>
+	<component base="v-deva.long" xOffset="587"/>
+	<contour>
+	  <point x="292" y="-120" type="move" name="nukta"/>
+	</contour>
   </outline>
   <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
-      <integer>5</integer>
-      <key>public.markColor</key>
-      <string>0.04,0.57,0.04,1</string>
-    </dict>
+	<dict>
+	  <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+	  <integer>5</integer>
+	  <key>public.markColor</key>
+	  <string>0.04,0.57,0.04,1</string>
+	</dict>
   </lib>
 </glyph>

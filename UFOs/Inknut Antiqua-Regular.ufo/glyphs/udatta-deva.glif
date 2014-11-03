@@ -3,16 +3,16 @@
   <advance width="240"/>
   <unicode hex="0951"/>
   <outline>
-    <contour>
-      <point x="60" y="1333" type="line"/>
-      <point x="98" y="1333" type="line"/>
-      <point x="180" y="1293" type="line"/>
-      <point x="180" y="912" type="line"/>
-      <point x="142" y="912" type="line"/>
-      <point x="60" y="952" type="line"/>
-    </contour>
-    <contour>
-      <point x="60" y="786" type="move" name="_top"/>
-    </contour>
+	<contour>
+	  <point x="60" y="1333" type="line"/>
+	  <point x="98" y="1333" type="line"/>
+	  <point x="180" y="1293" type="line"/>
+	  <point x="180" y="912" type="line"/>
+	  <point x="142" y="912" type="line"/>
+	  <point x="60" y="952" type="line"/>
+	</contour>
+	<contour>
+	  <point x="60" y="786" type="move" name="_top"/>
+	</contour>
   </outline>
 </glyph>

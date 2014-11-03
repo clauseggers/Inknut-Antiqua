@@ -3,9 +3,9 @@
   <advance width="600"/>
   <unicode hex="0953"/>
   <outline>
-    <component base="halant-deva" xOffset="-20" yOffset="1266"/>
-    <contour>
-      <point x="328" y="786" type="move" name="_top"/>
-    </contour>
+	<component base="halant-deva" xOffset="-20" yOffset="1266"/>
+	<contour>
+	  <point x="328" y="786" type="move" name="_top"/>
+	</contour>
   </outline>
 </glyph>

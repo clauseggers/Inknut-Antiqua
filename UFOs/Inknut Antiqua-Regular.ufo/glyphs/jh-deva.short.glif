@@ -2,32 +2,32 @@
 <glyph name="jh-deva.short" format="1">
   <advance width="713"/>
   <outline>
-    <contour>
-      <point x="704" y="385"/>
-      <point x="653" y="359"/>
-      <point x="604" y="359" type="curve" smooth="yes"/>
-      <point x="574" y="359"/>
-      <point x="551" y="363"/>
-      <point x="515" y="380" type="curve"/>
-      <point x="499" y="323" type="line"/>
-      <point x="592" y="251" type="line"/>
-      <point x="603" y="247"/>
-      <point x="621" y="243"/>
-      <point x="646" y="243" type="curve" smooth="yes"/>
-      <point x="688" y="243"/>
-      <point x="756" y="262"/>
-      <point x="844" y="342" type="curve"/>
-      <point x="844" y="380" type="line"/>
-      <point x="774" y="442" type="line"/>
-    </contour>
-    <component base="i-deva"/>
+	<contour>
+	  <point x="704" y="385"/>
+	  <point x="653" y="359"/>
+	  <point x="604" y="359" type="curve" smooth="yes"/>
+	  <point x="574" y="359"/>
+	  <point x="551" y="363"/>
+	  <point x="515" y="380" type="curve"/>
+	  <point x="499" y="323" type="line"/>
+	  <point x="592" y="251" type="line"/>
+	  <point x="603" y="247"/>
+	  <point x="621" y="243"/>
+	  <point x="646" y="243" type="curve" smooth="yes"/>
+	  <point x="688" y="243"/>
+	  <point x="756" y="262"/>
+	  <point x="844" y="342" type="curve"/>
+	  <point x="844" y="380" type="line"/>
+	  <point x="774" y="442" type="line"/>
+	</contour>
+	<component base="i-deva"/>
   </outline>
   <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
-      <integer>8</integer>
-      <key>public.markColor</key>
-      <string>0.5,0.09,0.79,1</string>
-    </dict>
+	<dict>
+	  <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+	  <integer>8</integer>
+	  <key>public.markColor</key>
+	  <string>0.5,0.09,0.79,1</string>
+	</dict>
   </lib>
 </glyph>

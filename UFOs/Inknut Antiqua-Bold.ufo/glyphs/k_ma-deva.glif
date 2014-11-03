@@ -2,15 +2,15 @@
 <glyph name="k_ma-deva" format="1">
   <advance width="1412"/>
   <outline>
-    <component base="k-deva.long"/>
-    <component base="na-deva.low" xOffset="607"/>
+	<component base="k-deva.long"/>
+	<component base="na-deva.low" xOffset="607"/>
   </outline>
   <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
-      <integer>5</integer>
-      <key>public.markColor</key>
-      <string>0.04,0.57,0.04,1</string>
-    </dict>
+	<dict>
+	  <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+	  <integer>5</integer>
+	  <key>public.markColor</key>
+	  <string>0.04,0.57,0.04,1</string>
+	</dict>
   </lib>
 </glyph>

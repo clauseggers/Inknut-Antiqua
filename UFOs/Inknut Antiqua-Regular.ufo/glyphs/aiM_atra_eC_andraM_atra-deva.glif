@@ -2,18 +2,18 @@
 <glyph name="aiMatra_eCandraMatra-deva" format="1">
   <advance width="600"/>
   <outline>
-    <component base="aiMatra-deva"/>
-    <component base="eCandraMatra-deva" xOffset="313"/>
-    <contour>
-      <point x="384" y="786" type="move" name="_top"/>
-    </contour>
+	<component base="aiMatra-deva"/>
+	<component base="eCandraMatra-deva" xOffset="313"/>
+	<contour>
+	  <point x="384" y="786" type="move" name="_top"/>
+	</contour>
   </outline>
   <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
-      <integer>3</integer>
-      <key>public.markColor</key>
-      <string>0.97,1,0,1</string>
-    </dict>
+	<dict>
+	  <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+	  <integer>3</integer>
+	  <key>public.markColor</key>
+	  <string>0.97,1,0,1</string>
+	</dict>
   </lib>
 </glyph>

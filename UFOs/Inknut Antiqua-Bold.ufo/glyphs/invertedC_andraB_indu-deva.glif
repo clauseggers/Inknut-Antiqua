@@ -3,17 +3,17 @@
   <advance width="836"/>
   <unicode hex="0900"/>
   <outline>
-    <component base="candraBindu-deva" xOffset="836" yOffset="2296" xScale="-1" yScale="-1"/>
-    <contour>
-      <point x="313" y="786" type="move" name="_top"/>
-    </contour>
+	<component base="candraBindu-deva" xOffset="836" yOffset="2296" xScale="-1" yScale="-1"/>
+	<contour>
+	  <point x="313" y="786" type="move" name="_top"/>
+	</contour>
   </outline>
   <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
-      <integer>1</integer>
-      <key>public.markColor</key>
-      <string>0.99,0.62,0.11,1</string>
-    </dict>
+	<dict>
+	  <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+	  <integer>1</integer>
+	  <key>public.markColor</key>
+	  <string>0.99,0.62,0.11,1</string>
+	</dict>
   </lib>
 </glyph>

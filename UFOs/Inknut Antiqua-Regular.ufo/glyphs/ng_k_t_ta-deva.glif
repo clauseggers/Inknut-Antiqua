@@ -2,19 +2,19 @@
 <glyph name="ng_k_t_ta-deva" format="1">
   <advance width="2435"/>
   <outline>
-    <component base="ng-deva"/>
-    <component base="k-deva" xOffset="842"/>
-    <component base="t-deva" xOffset="1499"/>
-    <component base="ta-deva" xOffset="1773"/>
+	<component base="ng-deva"/>
+	<component base="k-deva" xOffset="842"/>
+	<component base="t-deva" xOffset="1499"/>
+	<component base="ta-deva" xOffset="1773"/>
   </outline>
   <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.Export</key>
-      <false/>
-      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
-      <integer>0</integer>
-      <key>public.markColor</key>
-      <string>0.85,0.26,0.06,1</string>
-    </dict>
+	<dict>
+	  <key>com.schriftgestaltung.Glyphs.Export</key>
+	  <false/>
+	  <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+	  <integer>0</integer>
+	  <key>public.markColor</key>
+	  <string>0.85,0.26,0.06,1</string>
+	</dict>
   </lib>
 </glyph>

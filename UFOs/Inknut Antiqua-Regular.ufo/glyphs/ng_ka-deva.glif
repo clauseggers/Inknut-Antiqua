@@ -2,15 +2,15 @@
 <glyph name="ng_ka-deva" format="1">
   <advance width="792"/>
   <outline>
-    <component base="ng-deva.top"/>
-    <component base="ka-deva.bottom" xOffset="-56" yOffset="-76"/>
+	<component base="ng-deva.top"/>
+	<component base="ka-deva.bottom" xOffset="-56" yOffset="-76"/>
   </outline>
   <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
-      <integer>1</integer>
-      <key>public.markColor</key>
-      <string>0.99,0.62,0.11,1</string>
-    </dict>
+	<dict>
+	  <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+	  <integer>1</integer>
+	  <key>public.markColor</key>
+	  <string>0.99,0.62,0.11,1</string>
+	</dict>
   </lib>
 </glyph>

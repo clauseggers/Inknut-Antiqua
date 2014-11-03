@@ -2,7 +2,7 @@
 <glyph name="amacron.ss01" format="1">
   <advance width="715"/>
   <outline>
-    <component base="a.ss01"/>
-    <component base="macron" xOffset="43"/>
+	<component base="a.ss01"/>
+	<component base="macron" xOffset="43"/>
   </outline>
 </glyph>

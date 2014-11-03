@@ -3,9 +3,9 @@
   <advance width="568"/>
   <unicode hex="02C6"/>
   <outline>
-    <component base="caron" xOffset="568" yOffset="1553" xScale="-1" yScale="-1"/>
-    <contour>
-      <point x="284" y="531" type="move" name="_top"/>
-    </contour>
+	<component base="caron" xOffset="568" yOffset="1553" xScale="-1" yScale="-1"/>
+	<contour>
+	  <point x="284" y="531" type="move" name="_top"/>
+	</contour>
   </outline>
 </glyph>

@@ -2,34 +2,34 @@
 <glyph name="j-deva.long-up2" format="1">
   <advance width="570"/>
   <outline>
-    <contour>
-      <point x="295" y="553" type="line"/>
-      <point x="387" y="383" type="line"/>
-      <point x="854" y="383" type="line"/>
-      <point x="967" y="553" type="line"/>
-    </contour>
-    <contour>
-      <point x="-165" y="786" type="line"/>
-      <point x="-165" y="708" type="line"/>
-      <point x="12" y="616" type="line"/>
-      <point x="956" y="616" type="line"/>
-      <point x="956" y="694" type="line"/>
-      <point x="779" y="786" type="line"/>
-    </contour>
-    <component base="j_hook-deva" yOffset="131"/>
-    <contour>
-      <point x="309" y="-163" type="move" name="nukta"/>
-    </contour>
-    <contour>
-      <point x="308" y="0" type="move" name="bottom"/>
-    </contour>
+	<contour>
+	  <point x="295" y="553" type="line"/>
+	  <point x="387" y="383" type="line"/>
+	  <point x="854" y="383" type="line"/>
+	  <point x="967" y="553" type="line"/>
+	</contour>
+	<contour>
+	  <point x="-165" y="786" type="line"/>
+	  <point x="-165" y="708" type="line"/>
+	  <point x="12" y="616" type="line"/>
+	  <point x="956" y="616" type="line"/>
+	  <point x="956" y="694" type="line"/>
+	  <point x="779" y="786" type="line"/>
+	</contour>
+	<component base="j_hook-deva" yOffset="131"/>
+	<contour>
+	  <point x="309" y="-163" type="move" name="nukta"/>
+	</contour>
+	<contour>
+	  <point x="308" y="0" type="move" name="bottom"/>
+	</contour>
   </outline>
   <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
-      <integer>8</integer>
-      <key>public.markColor</key>
-      <string>0.5,0.09,0.79,1</string>
-    </dict>
+	<dict>
+	  <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+	  <integer>8</integer>
+	  <key>public.markColor</key>
+	  <string>0.5,0.09,0.79,1</string>
+	</dict>
   </lib>
 </glyph>

@@ -2,15 +2,15 @@
 <glyph name="tt_tta-deva" format="1">
   <advance width="861"/>
   <outline>
-    <component base="tt-deva.top"/>
-    <component base="tt-deva.bottom" xOffset="30" yOffset="-1"/>
+	<component base="tt-deva.top"/>
+	<component base="tt-deva.bottom" xOffset="30" yOffset="-1"/>
   </outline>
   <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
-      <integer>5</integer>
-      <key>public.markColor</key>
-      <string>0.04,0.57,0.04,1</string>
-    </dict>
+	<dict>
+	  <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+	  <integer>5</integer>
+	  <key>public.markColor</key>
+	  <string>0.04,0.57,0.04,1</string>
+	</dict>
   </lib>
 </glyph>

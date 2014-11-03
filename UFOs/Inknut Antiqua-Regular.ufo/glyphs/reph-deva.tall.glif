@@ -2,48 +2,48 @@
 <glyph name="reph-deva.tall" format="1">
   <advance width="600"/>
   <outline>
-    <contour>
-      <point x="200" y="1256"/>
-      <point x="103" y="1168"/>
-      <point x="103" y="1027" type="curve" smooth="yes"/>
-      <point x="103" y="1007"/>
-      <point x="105" y="968"/>
-      <point x="111" y="939" type="curve"/>
-      <point x="364" y="721" type="line"/>
-      <point x="396" y="758" type="line"/>
-      <point x="311" y="831" type="line" smooth="yes"/>
-      <point x="246" y="887"/>
-      <point x="233" y="953"/>
-      <point x="233" y="998" type="curve" smooth="yes"/>
-      <point x="233" y="1103"/>
-      <point x="295" y="1171"/>
-      <point x="383" y="1170" type="curve" smooth="yes"/>
-      <point x="428" y="1170"/>
-      <point x="461" y="1156"/>
-      <point x="505" y="1126" type="curve"/>
-      <point x="535" y="1164" type="line"/>
-      <point x="429" y="1249" type="line"/>
-      <point x="400" y="1254"/>
-      <point x="368" y="1256"/>
-      <point x="344" y="1256" type="curve" smooth="yes"/>
-    </contour>
-    <contour>
-      <point x="262" y="1136" type="move" name="right"/>
-    </contour>
-    <contour>
-      <point x="289" y="786" type="move" name="_imatra"/>
-    </contour>
-    <contour>
-      <point x="286" y="1177" type="move" name="top"/>
-    </contour>
-    <contour>
-      <point x="425" y="961" type="move" name="anusvara"/>
-    </contour>
-    <contour>
-      <point x="282" y="786" type="move" name="_top"/>
-    </contour>
-    <contour>
-      <point x="369" y="959" type="move" name="left"/>
-    </contour>
+	<contour>
+	  <point x="200" y="1256"/>
+	  <point x="103" y="1168"/>
+	  <point x="103" y="1027" type="curve" smooth="yes"/>
+	  <point x="103" y="1007"/>
+	  <point x="105" y="968"/>
+	  <point x="111" y="939" type="curve"/>
+	  <point x="364" y="721" type="line"/>
+	  <point x="396" y="758" type="line"/>
+	  <point x="311" y="831" type="line" smooth="yes"/>
+	  <point x="246" y="887"/>
+	  <point x="233" y="953"/>
+	  <point x="233" y="998" type="curve" smooth="yes"/>
+	  <point x="233" y="1103"/>
+	  <point x="295" y="1171"/>
+	  <point x="383" y="1170" type="curve" smooth="yes"/>
+	  <point x="428" y="1170"/>
+	  <point x="461" y="1156"/>
+	  <point x="505" y="1126" type="curve"/>
+	  <point x="535" y="1164" type="line"/>
+	  <point x="429" y="1249" type="line"/>
+	  <point x="400" y="1254"/>
+	  <point x="368" y="1256"/>
+	  <point x="344" y="1256" type="curve" smooth="yes"/>
+	</contour>
+	<contour>
+	  <point x="262" y="1136" type="move" name="right"/>
+	</contour>
+	<contour>
+	  <point x="289" y="786" type="move" name="_imatra"/>
+	</contour>
+	<contour>
+	  <point x="286" y="1177" type="move" name="top"/>
+	</contour>
+	<contour>
+	  <point x="425" y="961" type="move" name="anusvara"/>
+	</contour>
+	<contour>
+	  <point x="282" y="786" type="move" name="_top"/>
+	</contour>
+	<contour>
+	  <point x="369" y="959" type="move" name="left"/>
+	</contour>
   </outline>
 </glyph>

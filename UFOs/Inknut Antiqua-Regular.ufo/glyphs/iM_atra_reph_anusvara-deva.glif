@@ -2,18 +2,18 @@
 <glyph name="iMatra_reph_anusvara-deva" format="1">
   <advance width="328"/>
   <outline>
-    <component base="iMatra-deva"/>
-    <component base="reph-deva.tall" xOffset="-144"/>
-    <component base="anusvara-deva" xOffset="72" yOffset="391"/>
+	<component base="iMatra-deva"/>
+	<component base="reph-deva.tall" xOffset="385"/>
+	<component base="anusvara-deva" xOffset="601" yOffset="391"/>
   </outline>
   <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.Export</key>
-      <false/>
-      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
-      <integer>5</integer>
-      <key>public.markColor</key>
-      <string>0.04,0.57,0.04,1</string>
-    </dict>
+	<dict>
+	  <key>com.schriftgestaltung.Glyphs.Export</key>
+	  <false/>
+	  <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+	  <integer>5</integer>
+	  <key>public.markColor</key>
+	  <string>0.04,0.57,0.04,1</string>
+	</dict>
   </lib>
 </glyph>

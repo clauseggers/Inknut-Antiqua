@@ -3,27 +3,27 @@
   <advance width="758"/>
   <unicode hex="097D"/>
   <outline>
-    <contour>
-      <point x="251" y="226" type="line"/>
-      <point x="251" y="30" type="line"/>
-      <point x="333" y="-10" type="line"/>
-      <point x="371" y="-10" type="line"/>
-      <point x="371" y="226" type="line"/>
-    </contour>
-    <component base="tta-headless-deva" xOffset="758" yOffset="796" xScale="-1" yScale="-1"/>
-    <contour>
-      <point x="251" y="786" type="move" name="top"/>
-    </contour>
-    <contour>
-      <point x="251" y="0" type="move" name="bottom"/>
-    </contour>
+	<contour>
+	  <point x="251" y="226" type="line"/>
+	  <point x="251" y="30" type="line"/>
+	  <point x="333" y="-10" type="line"/>
+	  <point x="371" y="-10" type="line"/>
+	  <point x="371" y="226" type="line"/>
+	</contour>
+	<component base="tta-headless-deva" xOffset="758" yOffset="796" xScale="-1" yScale="-1"/>
+	<contour>
+	  <point x="251" y="786" type="move" name="top"/>
+	</contour>
+	<contour>
+	  <point x="251" y="0" type="move" name="bottom"/>
+	</contour>
   </outline>
   <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
-      <integer>8</integer>
-      <key>public.markColor</key>
-      <string>0.5,0.09,0.79,1</string>
-    </dict>
+	<dict>
+	  <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+	  <integer>8</integer>
+	  <key>public.markColor</key>
+	  <string>0.5,0.09,0.79,1</string>
+	</dict>
   </lib>
 </glyph>

@@ -2,30 +2,30 @@
 <glyph name="ng-deva.top" format="1">
   <advance width="792"/>
   <outline>
-    <contour>
-      <point x="705" y="556" type="line"/>
-      <point x="705" y="420" type="line"/>
-      <point x="787" y="380" type="line"/>
-      <point x="825" y="380" type="line"/>
-      <point x="825" y="516" type="line"/>
-      <point x="743" y="556" type="line"/>
-    </contour>
-    <contour>
-      <point x="574" y="786" type="line"/>
-      <point x="574" y="748" type="line"/>
-      <point x="644" y="686" type="line"/>
-      <point x="912" y="686" type="line"/>
-      <point x="912" y="724" type="line"/>
-      <point x="842" y="786" type="line"/>
-    </contour>
-    <component base="dd-deva.top"/>
+	<contour>
+	  <point x="705" y="556" type="line"/>
+	  <point x="705" y="420" type="line"/>
+	  <point x="787" y="380" type="line"/>
+	  <point x="825" y="380" type="line"/>
+	  <point x="825" y="516" type="line"/>
+	  <point x="743" y="556" type="line"/>
+	</contour>
+	<contour>
+	  <point x="574" y="786" type="line"/>
+	  <point x="574" y="748" type="line"/>
+	  <point x="644" y="686" type="line"/>
+	  <point x="912" y="686" type="line"/>
+	  <point x="912" y="724" type="line"/>
+	  <point x="842" y="786" type="line"/>
+	</contour>
+	<component base="dd-deva.top"/>
   </outline>
   <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
-      <integer>5</integer>
-      <key>public.markColor</key>
-      <string>0.04,0.57,0.04,1</string>
-    </dict>
+	<dict>
+	  <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+	  <integer>5</integer>
+	  <key>public.markColor</key>
+	  <string>0.04,0.57,0.04,1</string>
+	</dict>
   </lib>
 </glyph>

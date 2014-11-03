@@ -2,20 +2,20 @@
 <glyph name="m_pa_ra-deva" format="1">
   <advance width="1134"/>
   <outline>
-    <component base="m-deva"/>
-    <component base="pa_ra-deva" xOffset="486"/>
-    <contour>
-      <point x="248" y="0" type="move" name="nukta"/>
-    </contour>
+	<component base="m-deva"/>
+	<component base="pa_ra-deva" xOffset="486"/>
+	<contour>
+	  <point x="248" y="0" type="move" name="nukta"/>
+	</contour>
   </outline>
   <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.Export</key>
-      <false/>
-      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
-      <integer>5</integer>
-      <key>public.markColor</key>
-      <string>0.04,0.57,0.04,1</string>
-    </dict>
+	<dict>
+	  <key>com.schriftgestaltung.Glyphs.Export</key>
+	  <false/>
+	  <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+	  <integer>5</integer>
+	  <key>public.markColor</key>
+	  <string>0.04,0.57,0.04,1</string>
+	</dict>
   </lib>
 </glyph>

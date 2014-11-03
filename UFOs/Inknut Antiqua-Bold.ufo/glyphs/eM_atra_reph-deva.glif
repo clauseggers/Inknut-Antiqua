@@ -2,20 +2,20 @@
 <glyph name="eMatra_reph-deva" format="1">
   <advance width="600"/>
   <outline>
-    <component base="eMatra-deva"/>
-    <component base="reph-deva" xOffset="34"/>
-    <contour>
-      <point x="302" y="786" type="move" name="_top"/>
-    </contour>
+	<component base="eMatra-deva"/>
+	<component base="reph-deva" xOffset="34"/>
+	<contour>
+	  <point x="302" y="786" type="move" name="_top"/>
+	</contour>
   </outline>
   <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.Export</key>
-      <false/>
-      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
-      <integer>5</integer>
-      <key>public.markColor</key>
-      <string>0.04,0.57,0.04,1</string>
-    </dict>
+	<dict>
+	  <key>com.schriftgestaltung.Glyphs.Export</key>
+	  <false/>
+	  <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+	  <integer>5</integer>
+	  <key>public.markColor</key>
+	  <string>0.04,0.57,0.04,1</string>
+	</dict>
   </lib>
 </glyph>

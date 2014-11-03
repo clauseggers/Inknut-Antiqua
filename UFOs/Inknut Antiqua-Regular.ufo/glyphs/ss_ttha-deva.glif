@@ -2,20 +2,20 @@
 <glyph name="ss_ttha-deva" format="1">
   <advance width="678"/>
   <outline>
-    <contour>
-      <point x="197" y="652" type="line"/>
-      <point x="522" y="379" type="line"/>
-      <point x="555" y="416" type="line"/>
-      <point x="229" y="690" type="line"/>
-    </contour>
-    <component base="p_ttha-deva"/>
+	<contour>
+	  <point x="197" y="652" type="line"/>
+	  <point x="522" y="379" type="line"/>
+	  <point x="555" y="416" type="line"/>
+	  <point x="229" y="690" type="line"/>
+	</contour>
+	<component base="p_ttha-deva"/>
   </outline>
   <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
-      <integer>8</integer>
-      <key>public.markColor</key>
-      <string>0.5,0.09,0.79,1</string>
-    </dict>
+	<dict>
+	  <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+	  <integer>8</integer>
+	  <key>public.markColor</key>
+	  <string>0.5,0.09,0.79,1</string>
+	</dict>
   </lib>
 </glyph>

@@ -2,67 +2,67 @@
 <glyph name="f_adieresis.liga" format="1">
   <advance width="1169"/>
   <outline>
-    <contour>
-      <point x="319" y="883"/>
-      <point x="124" y="752"/>
-      <point x="124" y="584" type="curve" smooth="yes"/>
-      <point x="124" y="0" type="line"/>
-      <point x="324" y="0" type="line"/>
-      <point x="324" y="656" type="line" smooth="yes"/>
-      <point x="324" y="719"/>
-      <point x="358" y="753"/>
-      <point x="414" y="753" type="curve" smooth="yes"/>
-      <point x="489" y="753"/>
-      <point x="524" y="743"/>
-      <point x="553" y="702" type="curve" smooth="yes"/>
-      <point x="568" y="681"/>
-      <point x="590" y="660"/>
-      <point x="633" y="660" type="curve" smooth="yes"/>
-      <point x="697" y="660"/>
-      <point x="763" y="717"/>
-      <point x="763" y="766" type="curve" smooth="yes"/>
-      <point x="763" y="808"/>
-      <point x="740" y="846"/>
-      <point x="701" y="861" type="curve" smooth="yes"/>
-      <point x="660" y="878"/>
-      <point x="536" y="883"/>
-      <point x="458" y="883" type="curve" smooth="yes"/>
-    </contour>
-    <contour>
-      <point x="25" y="513" type="line"/>
-      <point x="25" y="432" type="line"/>
-      <point x="485" y="432" type="line"/>
-      <point x="485" y="513" type="line"/>
-    </contour>
-    <contour>
-      <point x="35" y="71" type="line"/>
-      <point x="35" y="0" type="line"/>
-      <point x="444" y="0" type="line"/>
-      <point x="484" y="80" type="line"/>
-      <point x="141" y="164" type="line"/>
-    </contour>
-    <contour>
-      <point x="920" y="867"/>
-      <point x="848" y="817"/>
-      <point x="848" y="756" type="curve" smooth="yes"/>
-      <point x="848" y="702"/>
-      <point x="889" y="660"/>
-      <point x="945" y="660" type="curve" smooth="yes"/>
-      <point x="1001" y="660"/>
-      <point x="1073" y="709"/>
-      <point x="1073" y="770" type="curve" smooth="yes"/>
-      <point x="1073" y="824"/>
-      <point x="1033" y="867"/>
-      <point x="975" y="867" type="curve" smooth="yes"/>
-    </contour>
-    <component base="a" xOffset="478"/>
+	<contour>
+	  <point x="319" y="883"/>
+	  <point x="124" y="752"/>
+	  <point x="124" y="584" type="curve" smooth="yes"/>
+	  <point x="124" y="0" type="line"/>
+	  <point x="324" y="0" type="line"/>
+	  <point x="324" y="656" type="line" smooth="yes"/>
+	  <point x="324" y="719"/>
+	  <point x="358" y="753"/>
+	  <point x="414" y="753" type="curve" smooth="yes"/>
+	  <point x="489" y="753"/>
+	  <point x="524" y="743"/>
+	  <point x="553" y="702" type="curve" smooth="yes"/>
+	  <point x="568" y="681"/>
+	  <point x="590" y="660"/>
+	  <point x="633" y="660" type="curve" smooth="yes"/>
+	  <point x="697" y="660"/>
+	  <point x="763" y="717"/>
+	  <point x="763" y="766" type="curve" smooth="yes"/>
+	  <point x="763" y="808"/>
+	  <point x="740" y="846"/>
+	  <point x="701" y="861" type="curve" smooth="yes"/>
+	  <point x="660" y="878"/>
+	  <point x="536" y="883"/>
+	  <point x="458" y="883" type="curve" smooth="yes"/>
+	</contour>
+	<contour>
+	  <point x="25" y="513" type="line"/>
+	  <point x="25" y="432" type="line"/>
+	  <point x="485" y="432" type="line"/>
+	  <point x="485" y="513" type="line"/>
+	</contour>
+	<contour>
+	  <point x="35" y="71" type="line"/>
+	  <point x="35" y="0" type="line"/>
+	  <point x="444" y="0" type="line"/>
+	  <point x="484" y="80" type="line"/>
+	  <point x="141" y="164" type="line"/>
+	</contour>
+	<contour>
+	  <point x="920" y="867"/>
+	  <point x="848" y="817"/>
+	  <point x="848" y="756" type="curve" smooth="yes"/>
+	  <point x="848" y="702"/>
+	  <point x="889" y="660"/>
+	  <point x="945" y="660" type="curve" smooth="yes"/>
+	  <point x="1001" y="660"/>
+	  <point x="1073" y="709"/>
+	  <point x="1073" y="770" type="curve" smooth="yes"/>
+	  <point x="1073" y="824"/>
+	  <point x="1033" y="867"/>
+	  <point x="975" y="867" type="curve" smooth="yes"/>
+	</contour>
+	<component base="a" xOffset="478"/>
   </outline>
   <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
-      <integer>8</integer>
-      <key>public.markColor</key>
-      <string>0.5,0.09,0.79,1</string>
-    </dict>
+	<dict>
+	  <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+	  <integer>8</integer>
+	  <key>public.markColor</key>
+	  <string>0.5,0.09,0.79,1</string>
+	</dict>
   </lib>
 </glyph>

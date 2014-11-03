@@ -3,45 +3,45 @@
   <advance width="919"/>
   <unicode hex="097B"/>
   <outline>
-    <contour>
-      <point x="658" y="786" type="line"/>
-      <point x="658" y="-70" type="line"/>
-      <point x="780" y="-225" type="line"/>
-      <point x="858" y="-225" type="line"/>
-      <point x="858" y="786" type="line"/>
-    </contour>
-    <contour>
-      <point x="465" y="786" type="line"/>
-      <point x="465" y="708" type="line"/>
-      <point x="640" y="616" type="line"/>
-      <point x="1044" y="616" type="line"/>
-      <point x="1044" y="694" type="line"/>
-      <point x="869" y="786" type="line"/>
-    </contour>
-    <component base="g-deva"/>
-    <component base="anudatta-deva" xOffset="147"/>
-    <contour>
-      <point x="677" y="332" type="move" name="leg-low"/>
-    </contour>
-    <contour>
-      <point x="662" y="436" type="move" name="leg"/>
-    </contour>
-    <contour>
-      <point x="658" y="786" type="move" name="top"/>
-    </contour>
-    <contour>
-      <point x="658" y="786" type="move" name="right"/>
-    </contour>
-    <contour>
-      <point x="658" y="-254" type="move" name="bottom"/>
-    </contour>
+	<contour>
+	  <point x="658" y="786" type="line"/>
+	  <point x="658" y="-70" type="line"/>
+	  <point x="780" y="-225" type="line"/>
+	  <point x="858" y="-225" type="line"/>
+	  <point x="858" y="786" type="line"/>
+	</contour>
+	<contour>
+	  <point x="465" y="786" type="line"/>
+	  <point x="465" y="708" type="line"/>
+	  <point x="640" y="616" type="line"/>
+	  <point x="1044" y="616" type="line"/>
+	  <point x="1044" y="694" type="line"/>
+	  <point x="869" y="786" type="line"/>
+	</contour>
+	<component base="g-deva"/>
+	<component base="anudatta-deva" xOffset="147"/>
+	<contour>
+	  <point x="677" y="332" type="move" name="leg-low"/>
+	</contour>
+	<contour>
+	  <point x="662" y="436" type="move" name="leg"/>
+	</contour>
+	<contour>
+	  <point x="658" y="786" type="move" name="top"/>
+	</contour>
+	<contour>
+	  <point x="658" y="786" type="move" name="right"/>
+	</contour>
+	<contour>
+	  <point x="658" y="-254" type="move" name="bottom"/>
+	</contour>
   </outline>
   <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
-      <integer>8</integer>
-      <key>public.markColor</key>
-      <string>0.5,0.09,0.79,1</string>
-    </dict>
+	<dict>
+	  <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+	  <integer>8</integer>
+	  <key>public.markColor</key>
+	  <string>0.5,0.09,0.79,1</string>
+	</dict>
   </lib>
 </glyph>

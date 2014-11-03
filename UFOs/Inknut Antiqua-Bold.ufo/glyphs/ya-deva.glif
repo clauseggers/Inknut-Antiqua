@@ -3,18 +3,21 @@
   <advance width="784"/>
   <unicode hex="092F"/>
   <outline>
-    <component base="y-deva"/>
-    <component base="aaMatra-deva" xOffset="425"/>
-    <contour>
-      <point x="208" y="308" type="move" name="g-deva.leg"/>
-    </contour>
+	<component base="y-deva"/>
+	<component base="aaMatra-deva" xOffset="425"/>
+	<contour>
+	  <point x="462" y="336" type="move" name="leg"/>
+	</contour>
+	<contour>
+	  <point x="208" y="308" type="move" name="g-deva.leg"/>
+	</contour>
   </outline>
   <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
-      <integer>5</integer>
-      <key>public.markColor</key>
-      <string>0.04,0.57,0.04,1</string>
-    </dict>
+	<dict>
+	  <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+	  <integer>5</integer>
+	  <key>public.markColor</key>
+	  <string>0.04,0.57,0.04,1</string>
+	</dict>
   </lib>
 </glyph>

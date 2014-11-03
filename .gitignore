@@ -1,4 +1,5 @@
 *.otf
 *.ttf
+.DS_Store
 !/CFF-OTF/*.otf
 !/TTF-OTF/*.ttf

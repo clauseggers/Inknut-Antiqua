@@ -3,22 +3,22 @@
   <advance width="545"/>
   <unicode hex="02DC"/>
   <outline>
-    <contour>
-      <point x="11" y="759" type="line"/>
-      <point x="55" y="686" type="line"/>
-      <point x="115" y="723" type="line" smooth="yes"/>
-      <point x="161" y="751"/>
-      <point x="186" y="739"/>
-      <point x="279" y="645" type="curve"/>
-      <point x="531" y="800" type="line"/>
-      <point x="487" y="873" type="line"/>
-      <point x="426" y="835" type="line" smooth="yes"/>
-      <point x="382" y="808"/>
-      <point x="353" y="822"/>
-      <point x="263" y="914" type="curve"/>
-    </contour>
-    <contour>
-      <point x="273" y="543" type="move" name="_top"/>
-    </contour>
+	<contour>
+	  <point x="11" y="759" type="line"/>
+	  <point x="55" y="686" type="line"/>
+	  <point x="115" y="723" type="line" smooth="yes"/>
+	  <point x="161" y="751"/>
+	  <point x="186" y="739"/>
+	  <point x="279" y="645" type="curve"/>
+	  <point x="531" y="800" type="line"/>
+	  <point x="487" y="873" type="line"/>
+	  <point x="426" y="835" type="line" smooth="yes"/>
+	  <point x="382" y="808"/>
+	  <point x="353" y="822"/>
+	  <point x="263" y="914" type="curve"/>
+	</contour>
+	<contour>
+	  <point x="273" y="543" type="move" name="_top"/>
+	</contour>
   </outline>
 </glyph>

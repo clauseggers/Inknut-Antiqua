@@ -2,19 +2,19 @@
 <glyph name="r-deva.leg" format="1">
   <advance width="648"/>
   <outline>
-    <contour>
-      <point x="100" y="81" type="line"/>
-      <point x="100" y="43" type="line"/>
-      <point x="176" y="-19" type="line"/>
-      <point x="492" y="314" type="line"/>
-      <point x="492" y="352" type="line"/>
-      <point x="414" y="399" type="line"/>
-    </contour>
-    <contour>
-      <point x="414" y="399" type="move" name="_leg"/>
-    </contour>
-    <contour>
-      <point x="414" y="399" type="move" name="_leg-low"/>
-    </contour>
+	<contour>
+	  <point x="100" y="81" type="line"/>
+	  <point x="100" y="43" type="line"/>
+	  <point x="176" y="-19" type="line"/>
+	  <point x="492" y="314" type="line"/>
+	  <point x="492" y="352" type="line"/>
+	  <point x="414" y="399" type="line"/>
+	</contour>
+	<contour>
+	  <point x="414" y="399" type="move" name="_leg"/>
+	</contour>
+	<contour>
+	  <point x="414" y="399" type="move" name="_leg-low"/>
+	</contour>
   </outline>
 </glyph>

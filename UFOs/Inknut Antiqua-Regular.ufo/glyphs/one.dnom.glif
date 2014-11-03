@@ -2,14 +2,14 @@
 <glyph name="one.dnom" format="1">
   <advance width="393"/>
   <outline>
-    <component base="one.numr" xOffset="-24" yOffset="-494"/>
+	<component base="one.numr" xOffset="-24" yOffset="-494"/>
   </outline>
   <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
-      <integer>5</integer>
-      <key>public.markColor</key>
-      <string>0.04,0.57,0.04,1</string>
-    </dict>
+	<dict>
+	  <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+	  <integer>5</integer>
+	  <key>public.markColor</key>
+	  <string>0.04,0.57,0.04,1</string>
+	</dict>
   </lib>
 </glyph>

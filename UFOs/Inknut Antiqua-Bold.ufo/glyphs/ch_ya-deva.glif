@@ -2,24 +2,24 @@
 <glyph name="ch_ya-deva" format="1">
   <advance width="1535"/>
   <outline>
-    <contour>
-      <point x="717" y="786" type="line"/>
-      <point x="717" y="708" type="line"/>
-      <point x="894" y="616" type="line"/>
-      <point x="1411" y="616" type="line"/>
-      <point x="1411" y="694" type="line"/>
-      <point x="1234" y="786" type="line"/>
-    </contour>
-    <component base="cha-deva"/>
-    <component base="y-deva.loop-connect" xOffset="1176"/>
-    <component base="aaMatra-deva" xOffset="1176"/>
+	<contour>
+	  <point x="717" y="786" type="line"/>
+	  <point x="717" y="708" type="line"/>
+	  <point x="894" y="616" type="line"/>
+	  <point x="1411" y="616" type="line"/>
+	  <point x="1411" y="694" type="line"/>
+	  <point x="1234" y="786" type="line"/>
+	</contour>
+	<component base="cha-deva"/>
+	<component base="y-deva.loop-connect" xOffset="1176"/>
+	<component base="aaMatra-deva" xOffset="1176"/>
   </outline>
   <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
-      <integer>8</integer>
-      <key>public.markColor</key>
-      <string>0.5,0.09,0.79,1</string>
-    </dict>
+	<dict>
+	  <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+	  <integer>8</integer>
+	  <key>public.markColor</key>
+	  <string>0.5,0.09,0.79,1</string>
+	</dict>
   </lib>
 </glyph>

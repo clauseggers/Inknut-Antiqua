@@ -3,7 +3,7 @@
   <advance width="671"/>
   <unicode hex="014D"/>
   <outline>
-    <component base="o"/>
-    <component base="macron" xOffset="32"/>
+	<component base="o"/>
+	<component base="macron" xOffset="32"/>
   </outline>
 </glyph>

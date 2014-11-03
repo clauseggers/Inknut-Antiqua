@@ -2,21 +2,21 @@
 <glyph name="iiMatra-deva.04" format="1">
   <advance width="359"/>
   <outline>
-    <component base="aaMatra-deva"/>
-    <component base="velanti-deva.04" xOffset="-777"/>
-    <contour>
-      <point x="-677" y="786" type="move" name="iimatra"/>
-    </contour>
-    <contour>
-      <point x="269" y="786" type="move" name="top"/>
-    </contour>
+	<component base="aaMatra-deva"/>
+	<component base="velanti-deva.04" xOffset="-777"/>
+	<contour>
+	  <point x="-677" y="786" type="move" name="iimatra"/>
+	</contour>
+	<contour>
+	  <point x="269" y="786" type="move" name="top"/>
+	</contour>
   </outline>
   <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
-      <integer>5</integer>
-      <key>public.markColor</key>
-      <string>0.04,0.57,0.04,1</string>
-    </dict>
+	<dict>
+	  <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+	  <integer>5</integer>
+	  <key>public.markColor</key>
+	  <string>0.04,0.57,0.04,1</string>
+	</dict>
   </lib>
 </glyph>

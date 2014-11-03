@@ -2,32 +2,32 @@
 <glyph name="wMatra-deva" format="1">
   <advance width="482"/>
   <outline>
-    <contour>
-      <point x="422" y="907"/>
-      <point x="258" y="916"/>
-      <point x="258" y="992" type="curve" smooth="yes"/>
-      <point x="258" y="1025"/>
-      <point x="281" y="1045"/>
-      <point x="335" y="1060" type="curve"/>
-      <point x="335" y="1138" type="line"/>
-      <point x="168" y="1230" type="line"/>
-      <point x="83" y="1189"/>
-      <point x="42" y="1138"/>
-      <point x="42" y="1078" type="curve" smooth="yes"/>
-      <point x="42" y="975"/>
-      <point x="206" y="960"/>
-      <point x="206" y="870" type="curve" smooth="yes"/>
-      <point x="206" y="822"/>
-      <point x="185" y="788"/>
-      <point x="154" y="755" type="curve"/>
-      <point x="236" y="671" type="line"/>
-      <point x="353" y="694"/>
-      <point x="422" y="752"/>
-      <point x="422" y="807" type="curve" smooth="yes"/>
-    </contour>
-    <component base="eShortMatra-deva" xOffset="-212"/>
-    <contour>
-      <point x="98" y="786" type="move" name="_top"/>
-    </contour>
+	<contour>
+	  <point x="422" y="907"/>
+	  <point x="258" y="916"/>
+	  <point x="258" y="992" type="curve" smooth="yes"/>
+	  <point x="258" y="1025"/>
+	  <point x="281" y="1045"/>
+	  <point x="335" y="1060" type="curve"/>
+	  <point x="335" y="1138" type="line"/>
+	  <point x="168" y="1230" type="line"/>
+	  <point x="83" y="1189"/>
+	  <point x="42" y="1138"/>
+	  <point x="42" y="1078" type="curve" smooth="yes"/>
+	  <point x="42" y="975"/>
+	  <point x="206" y="960"/>
+	  <point x="206" y="870" type="curve" smooth="yes"/>
+	  <point x="206" y="822"/>
+	  <point x="185" y="788"/>
+	  <point x="154" y="755" type="curve"/>
+	  <point x="236" y="671" type="line"/>
+	  <point x="353" y="694"/>
+	  <point x="422" y="752"/>
+	  <point x="422" y="807" type="curve" smooth="yes"/>
+	</contour>
+	<component base="eShortMatra-deva" xOffset="-212"/>
+	<contour>
+	  <point x="98" y="786" type="move" name="_top"/>
+	</contour>
   </outline>
 </glyph>

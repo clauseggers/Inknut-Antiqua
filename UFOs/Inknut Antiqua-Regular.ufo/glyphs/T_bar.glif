@@ -3,20 +3,20 @@
   <advance width="832"/>
   <unicode hex="0166"/>
   <outline>
-    <contour>
-      <point x="667" y="414" type="line"/>
-      <point x="165" y="414" type="line"/>
-      <point x="165" y="369" type="line"/>
-      <point x="667" y="369" type="line"/>
-    </contour>
-    <component base="T"/>
+	<contour>
+	  <point x="667" y="414" type="line"/>
+	  <point x="165" y="414" type="line"/>
+	  <point x="165" y="369" type="line"/>
+	  <point x="667" y="369" type="line"/>
+	</contour>
+	<component base="T"/>
   </outline>
   <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
-      <integer>8</integer>
-      <key>public.markColor</key>
-      <string>0.5,0.09,0.79,1</string>
-    </dict>
+	<dict>
+	  <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+	  <integer>8</integer>
+	  <key>public.markColor</key>
+	  <string>0.5,0.09,0.79,1</string>
+	</dict>
   </lib>
 </glyph>

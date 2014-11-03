@@ -2,15 +2,15 @@
 <glyph name="l_tha-deva" format="1">
   <advance width="1421"/>
   <outline>
-    <component base="l-deva.low"/>
-    <component base="tha-deva" xOffset="639"/>
+	<component base="l-deva.low"/>
+	<component base="tha-deva" xOffset="639"/>
   </outline>
   <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
-      <integer>5</integer>
-      <key>public.markColor</key>
-      <string>0.04,0.57,0.04,1</string>
-    </dict>
+	<dict>
+	  <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+	  <integer>5</integer>
+	  <key>public.markColor</key>
+	  <string>0.04,0.57,0.04,1</string>
+	</dict>
   </lib>
 </glyph>

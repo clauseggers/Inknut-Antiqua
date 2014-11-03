@@ -3,27 +3,27 @@
   <advance width="1528"/>
   <unicode hex="2116"/>
   <outline>
-    <contour>
-      <point x="951" y="238" type="line"/>
-      <point x="930" y="197" type="line"/>
-      <point x="1456" y="197" type="line"/>
-      <point x="1477" y="238" type="line"/>
-    </contour>
-    <contour>
-      <point x="950" y="41" type="line"/>
-      <point x="929" y="0" type="line"/>
-      <point x="1457" y="0" type="line"/>
-      <point x="1478" y="41" type="line"/>
-    </contour>
-    <component base="N"/>
-    <component base="o" xOffset="902" yOffset="373" xScale="0.9" yScale="0.8"/>
+	<contour>
+	  <point x="951" y="238" type="line"/>
+	  <point x="930" y="197" type="line"/>
+	  <point x="1456" y="197" type="line"/>
+	  <point x="1477" y="238" type="line"/>
+	</contour>
+	<contour>
+	  <point x="950" y="41" type="line"/>
+	  <point x="929" y="0" type="line"/>
+	  <point x="1457" y="0" type="line"/>
+	  <point x="1478" y="41" type="line"/>
+	</contour>
+	<component base="N"/>
+	<component base="o" xOffset="902" yOffset="373" xScale="0.9" yScale="0.8"/>
   </outline>
   <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
-      <integer>8</integer>
-      <key>public.markColor</key>
-      <string>0.5,0.09,0.79,1</string>
-    </dict>
+	<dict>
+	  <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+	  <integer>8</integer>
+	  <key>public.markColor</key>
+	  <string>0.5,0.09,0.79,1</string>
+	</dict>
   </lib>
 </glyph>

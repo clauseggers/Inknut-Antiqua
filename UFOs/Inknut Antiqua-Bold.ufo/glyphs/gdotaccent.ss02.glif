@@ -2,7 +2,7 @@
 <glyph name="gdotaccent.ss02" format="1">
   <advance width="719"/>
   <outline>
-    <component base="g.ss02"/>
-    <component base="dotaccent" xOffset="194"/>
+	<component base="g.ss02"/>
+	<component base="dotaccent" xOffset="194"/>
   </outline>
 </glyph>

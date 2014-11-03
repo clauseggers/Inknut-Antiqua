@@ -3,25 +3,25 @@
   <advance width="600"/>
   <unicode hex="0955"/>
   <outline>
-    <contour>
-      <point x="-22" y="983" type="line"/>
-      <point x="-22" y="945" type="line"/>
-      <point x="54" y="883" type="line"/>
-      <point x="620" y="883" type="line"/>
-      <point x="620" y="921" type="line"/>
-      <point x="544" y="983" type="line"/>
-    </contour>
-    <component base="eCandraMatra-deva" xOffset="-51" yOffset="101"/>
-    <contour>
-      <point x="302" y="786" type="move" name="_top"/>
-    </contour>
+	<contour>
+	  <point x="-22" y="983" type="line"/>
+	  <point x="-22" y="945" type="line"/>
+	  <point x="54" y="883" type="line"/>
+	  <point x="620" y="883" type="line"/>
+	  <point x="620" y="921" type="line"/>
+	  <point x="544" y="983" type="line"/>
+	</contour>
+	<component base="eCandraMatra-deva" xOffset="-51" yOffset="101"/>
+	<contour>
+	  <point x="302" y="786" type="move" name="_top"/>
+	</contour>
   </outline>
   <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
-      <integer>8</integer>
-      <key>public.markColor</key>
-      <string>0.5,0.09,0.79,1</string>
-    </dict>
+	<dict>
+	  <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+	  <integer>8</integer>
+	  <key>public.markColor</key>
+	  <string>0.5,0.09,0.79,1</string>
+	</dict>
   </lib>
 </glyph>

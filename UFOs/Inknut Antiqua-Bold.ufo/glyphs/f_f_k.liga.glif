@@ -2,33 +2,33 @@
 <glyph name="f_f_k.liga" format="1">
   <advance width="1617"/>
   <outline>
-    <contour>
-      <point x="1585" y="472" type="line"/>
-      <point x="1585" y="543" type="line"/>
-      <point x="1266" y="543" type="line"/>
-      <point x="1226" y="463" type="line"/>
-      <point x="1393" y="385" type="line"/>
-      <point x="1475" y="486" type="line"/>
-      <point x="1195" y="270" type="line"/>
-      <point x="1343" y="0" type="line"/>
-      <point x="1572" y="0" type="line"/>
-      <point x="1612" y="80" type="line"/>
-      <point x="1419" y="154" type="line"/>
-      <point x="1555" y="43" type="line"/>
-      <point x="1381" y="340" type="line"/>
-      <point x="1365" y="296" type="line"/>
-    </contour>
-    <component base="f_f_l.liga"/>
-    <contour>
-      <point x="1273" y="0" type="move" name="bottom"/>
-    </contour>
+	<contour>
+	  <point x="1585" y="472" type="line"/>
+	  <point x="1585" y="543" type="line"/>
+	  <point x="1266" y="543" type="line"/>
+	  <point x="1226" y="463" type="line"/>
+	  <point x="1393" y="385" type="line"/>
+	  <point x="1475" y="486" type="line"/>
+	  <point x="1195" y="270" type="line"/>
+	  <point x="1343" y="0" type="line"/>
+	  <point x="1572" y="0" type="line"/>
+	  <point x="1612" y="80" type="line"/>
+	  <point x="1419" y="154" type="line"/>
+	  <point x="1555" y="43" type="line"/>
+	  <point x="1381" y="340" type="line"/>
+	  <point x="1365" y="296" type="line"/>
+	</contour>
+	<component base="f_f_l.liga"/>
+	<contour>
+	  <point x="1273" y="0" type="move" name="bottom"/>
+	</contour>
   </outline>
   <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
-      <integer>7</integer>
-      <key>public.markColor</key>
-      <string>0.18,0.16,0.78,1</string>
-    </dict>
+	<dict>
+	  <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+	  <integer>7</integer>
+	  <key>public.markColor</key>
+	  <string>0.18,0.16,0.78,1</string>
+	</dict>
   </lib>
 </glyph>

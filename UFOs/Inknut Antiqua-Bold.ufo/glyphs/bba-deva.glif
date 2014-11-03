@@ -3,52 +3,52 @@
   <advance width="769"/>
   <unicode hex="097F"/>
   <outline>
-    <contour>
-      <point x="508" y="786" type="line"/>
-      <point x="508" y="-70" type="line"/>
-      <point x="630" y="-225" type="line"/>
-      <point x="708" y="-225" type="line"/>
-      <point x="708" y="786" type="line"/>
-    </contour>
-    <contour>
-      <point x="107" y="-55" type="line"/>
-      <point x="107" y="-133" type="line"/>
-      <point x="223" y="-225" type="line"/>
-      <point x="708" y="-225" type="line"/>
-      <point x="708" y="-147" type="line"/>
-      <point x="592" y="-55" type="line"/>
-    </contour>
-    <contour>
-      <point x="315" y="786" type="line"/>
-      <point x="315" y="708" type="line"/>
-      <point x="490" y="616" type="line"/>
-      <point x="894" y="616" type="line"/>
-      <point x="894" y="694" type="line"/>
-      <point x="719" y="786" type="line"/>
-    </contour>
-    <component base="b-deva"/>
-    <contour>
-      <point x="527" y="332" type="move" name="leg-low"/>
-    </contour>
-    <contour>
-      <point x="512" y="436" type="move" name="leg"/>
-    </contour>
-    <contour>
-      <point x="508" y="786" type="move" name="top"/>
-    </contour>
-    <contour>
-      <point x="508" y="786" type="move" name="right"/>
-    </contour>
-    <contour>
-      <point x="508" y="-254" type="move" name="bottom"/>
-    </contour>
+	<contour>
+	  <point x="508" y="786" type="line"/>
+	  <point x="508" y="-70" type="line"/>
+	  <point x="630" y="-225" type="line"/>
+	  <point x="708" y="-225" type="line"/>
+	  <point x="708" y="786" type="line"/>
+	</contour>
+	<contour>
+	  <point x="107" y="-55" type="line"/>
+	  <point x="107" y="-133" type="line"/>
+	  <point x="223" y="-225" type="line"/>
+	  <point x="708" y="-225" type="line"/>
+	  <point x="708" y="-147" type="line"/>
+	  <point x="592" y="-55" type="line"/>
+	</contour>
+	<contour>
+	  <point x="315" y="786" type="line"/>
+	  <point x="315" y="708" type="line"/>
+	  <point x="490" y="616" type="line"/>
+	  <point x="894" y="616" type="line"/>
+	  <point x="894" y="694" type="line"/>
+	  <point x="719" y="786" type="line"/>
+	</contour>
+	<component base="b-deva"/>
+	<contour>
+	  <point x="527" y="332" type="move" name="leg-low"/>
+	</contour>
+	<contour>
+	  <point x="512" y="436" type="move" name="leg"/>
+	</contour>
+	<contour>
+	  <point x="508" y="786" type="move" name="top"/>
+	</contour>
+	<contour>
+	  <point x="508" y="786" type="move" name="right"/>
+	</contour>
+	<contour>
+	  <point x="508" y="-254" type="move" name="bottom"/>
+	</contour>
   </outline>
   <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
-      <integer>8</integer>
-      <key>public.markColor</key>
-      <string>0.5,0.09,0.79,1</string>
-    </dict>
+	<dict>
+	  <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+	  <integer>8</integer>
+	  <key>public.markColor</key>
+	  <string>0.5,0.09,0.79,1</string>
+	</dict>
   </lib>
 </glyph>

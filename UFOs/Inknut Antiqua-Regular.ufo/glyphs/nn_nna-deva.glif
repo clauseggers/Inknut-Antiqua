@@ -2,17 +2,17 @@
 <glyph name="nn_nna-deva" format="1">
   <advance width="1490"/>
   <outline>
-    <component base="nn-deva"/>
-    <component base="nna-deva" xOffset="601"/>
+	<component base="nn-deva"/>
+	<component base="nna-deva" xOffset="601"/>
   </outline>
   <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.Export</key>
-      <false/>
-      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
-      <integer>5</integer>
-      <key>public.markColor</key>
-      <string>0.04,0.57,0.04,1</string>
-    </dict>
+	<dict>
+	  <key>com.schriftgestaltung.Glyphs.Export</key>
+	  <false/>
+	  <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+	  <integer>5</integer>
+	  <key>public.markColor</key>
+	  <string>0.04,0.57,0.04,1</string>
+	</dict>
   </lib>
 </glyph>

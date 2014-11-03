@@ -2,16 +2,16 @@
 <glyph name="k_ss_ma-deva" format="1">
   <advance width="1270"/>
   <outline>
-    <component base="k_ss-deva.low"/>
-    <component base="m-deva.front-short" xOffset="486"/>
-    <component base="aaMatra-deva" xOffset="942"/>
+	<component base="k_ss-deva.low"/>
+	<component base="m-deva.front-short" xOffset="486"/>
+	<component base="aaMatra-deva" xOffset="942"/>
   </outline>
   <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
-      <integer>5</integer>
-      <key>public.markColor</key>
-      <string>0.04,0.57,0.04,1</string>
-    </dict>
+	<dict>
+	  <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+	  <integer>5</integer>
+	  <key>public.markColor</key>
+	  <string>0.04,0.57,0.04,1</string>
+	</dict>
   </lib>
 </glyph>

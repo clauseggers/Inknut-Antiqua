@@ -2,16 +2,16 @@
 <glyph name="ellipsis.deva" format="1">
   <advance width="1403"/>
   <outline>
-    <component base="period.deva" xOffset="108"/>
-    <component base="period.deva" xOffset="538"/>
-    <component base="period.deva" xOffset="968"/>
+	<component base="period.deva" xOffset="108"/>
+	<component base="period.deva" xOffset="538"/>
+	<component base="period.deva" xOffset="968"/>
   </outline>
   <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
-      <integer>8</integer>
-      <key>public.markColor</key>
-      <string>0.5,0.09,0.79,1</string>
-    </dict>
+	<dict>
+	  <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+	  <integer>8</integer>
+	  <key>public.markColor</key>
+	  <string>0.5,0.09,0.79,1</string>
+	</dict>
   </lib>
 </glyph>

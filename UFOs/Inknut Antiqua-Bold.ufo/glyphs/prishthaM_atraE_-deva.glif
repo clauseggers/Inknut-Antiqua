@@ -3,22 +3,22 @@
   <advance width="359"/>
   <unicode hex="094E"/>
   <outline>
-    <contour>
-      <point x="108" y="786" type="line"/>
-      <point x="108" y="708" type="line"/>
-      <point x="283" y="616" type="line"/>
-      <point x="484" y="616" type="line"/>
-      <point x="484" y="694" type="line"/>
-      <point x="309" y="786" type="line"/>
-    </contour>
-    <component base="stem-deva"/>
+	<contour>
+	  <point x="108" y="786" type="line"/>
+	  <point x="108" y="708" type="line"/>
+	  <point x="283" y="616" type="line"/>
+	  <point x="484" y="616" type="line"/>
+	  <point x="484" y="694" type="line"/>
+	  <point x="309" y="786" type="line"/>
+	</contour>
+	<component base="stem-deva"/>
   </outline>
   <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
-      <integer>8</integer>
-      <key>public.markColor</key>
-      <string>0.5,0.09,0.79,1</string>
-    </dict>
+	<dict>
+	  <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+	  <integer>8</integer>
+	  <key>public.markColor</key>
+	  <string>0.5,0.09,0.79,1</string>
+	</dict>
   </lib>
 </glyph>

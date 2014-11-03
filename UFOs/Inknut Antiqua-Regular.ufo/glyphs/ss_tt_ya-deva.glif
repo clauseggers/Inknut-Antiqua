@@ -2,16 +2,16 @@
 <glyph name="ss_tt_ya-deva" format="1">
   <advance width="1056"/>
   <outline>
-    <component base="ss_tta-deva"/>
-    <component base="rr-deva.long-high" xOffset="688"/>
-    <component base="aaMatra-deva" xOffset="728"/>
+	<component base="ss_tta-deva"/>
+	<component base="rr-deva.long-high" xOffset="688"/>
+	<component base="aaMatra-deva" xOffset="728"/>
   </outline>
   <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
-      <integer>5</integer>
-      <key>public.markColor</key>
-      <string>0.04,0.57,0.04,1</string>
-    </dict>
+	<dict>
+	  <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+	  <integer>5</integer>
+	  <key>public.markColor</key>
+	  <string>0.04,0.57,0.04,1</string>
+	</dict>
   </lib>
 </glyph>

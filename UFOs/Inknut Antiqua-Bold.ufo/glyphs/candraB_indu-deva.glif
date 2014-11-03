@@ -3,24 +3,24 @@
   <advance width="836"/>
   <unicode hex="0901"/>
   <outline>
-    <component base="eCandraMatra-deva"/>
-    <component base="anusvara-deva" xOffset="284" yOffset="209"/>
-    <contour>
-      <point x="64" y="1158" type="move" name="_left"/>
-    </contour>
-    <contour>
-      <point x="327" y="1275" type="move" name="top"/>
-    </contour>
-    <contour>
-      <point x="327" y="786" type="move" name="_top"/>
-    </contour>
+	<component base="eCandraMatra-deva"/>
+	<component base="anusvara-deva" xOffset="284" yOffset="209"/>
+	<contour>
+	  <point x="64" y="1158" type="move" name="_left"/>
+	</contour>
+	<contour>
+	  <point x="327" y="1275" type="move" name="top"/>
+	</contour>
+	<contour>
+	  <point x="327" y="786" type="move" name="_top"/>
+	</contour>
   </outline>
   <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
-      <integer>5</integer>
-      <key>public.markColor</key>
-      <string>0.04,0.57,0.04,1</string>
-    </dict>
+	<dict>
+	  <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+	  <integer>5</integer>
+	  <key>public.markColor</key>
+	  <string>0.04,0.57,0.04,1</string>
+	</dict>
   </lib>
 </glyph>

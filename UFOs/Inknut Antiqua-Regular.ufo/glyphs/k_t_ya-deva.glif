@@ -2,19 +2,19 @@
 <glyph name="k_t_ya-deva" format="1">
   <advance width="1509"/>
   <outline>
-    <component base="t_t-deva.high"/>
-    <component base="aaMatra-deva" xOffset="488"/>
-    <component base="ya-deva.connect-low-short" xOffset="776"/>
-    <contour>
-      <point x="285" y="0" type="move" name="nukta"/>
-    </contour>
+	<component base="t_t-deva.high"/>
+	<component base="aaMatra-deva" xOffset="488"/>
+	<component base="ya-deva.connect-low-short" xOffset="776"/>
+	<contour>
+	  <point x="285" y="0" type="move" name="nukta"/>
+	</contour>
   </outline>
   <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
-      <integer>5</integer>
-      <key>public.markColor</key>
-      <string>0.04,0.57,0.04,1</string>
-    </dict>
+	<dict>
+	  <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+	  <integer>5</integer>
+	  <key>public.markColor</key>
+	  <string>0.04,0.57,0.04,1</string>
+	</dict>
   </lib>
 </glyph>

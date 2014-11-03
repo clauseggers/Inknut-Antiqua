@@ -3,15 +3,15 @@
   <advance width="909"/>
   <unicode hex="091C"/>
   <outline>
-    <component base="j-deva"/>
-    <component base="aaMatra-deva" xOffset="550"/>
+	<component base="j-deva"/>
+	<component base="aaMatra-deva" xOffset="550"/>
   </outline>
   <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
-      <integer>5</integer>
-      <key>public.markColor</key>
-      <string>0.04,0.57,0.04,1</string>
-    </dict>
+	<dict>
+	  <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+	  <integer>5</integer>
+	  <key>public.markColor</key>
+	  <string>0.04,0.57,0.04,1</string>
+	</dict>
   </lib>
 </glyph>

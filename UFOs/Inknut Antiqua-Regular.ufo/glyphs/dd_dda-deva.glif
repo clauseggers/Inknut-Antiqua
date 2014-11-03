@@ -2,15 +2,15 @@
 <glyph name="dd_dda-deva" format="1">
   <advance width="712"/>
   <outline>
-    <component base="dd-deva.top"/>
-    <component base="dd-deva.bottom" xOffset="21" yOffset="4"/>
+	<component base="dd-deva.top"/>
+	<component base="dd-deva.bottom" xOffset="21" yOffset="4"/>
   </outline>
   <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
-      <integer>5</integer>
-      <key>public.markColor</key>
-      <string>0.04,0.57,0.04,1</string>
-    </dict>
+	<dict>
+	  <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+	  <integer>5</integer>
+	  <key>public.markColor</key>
+	  <string>0.04,0.57,0.04,1</string>
+	</dict>
   </lib>
 </glyph>

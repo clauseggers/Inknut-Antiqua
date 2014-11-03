@@ -2,18 +2,18 @@
 <glyph name="bha-deva.fina" format="1">
   <advance width="743"/>
   <outline>
-    <component base="bh-deva.medi"/>
-    <component base="aaMatra-deva" xOffset="415"/>
-    <contour>
-      <point x="578" y="397" type="move" name="leg"/>
-    </contour>
+	<component base="bh-deva.medi"/>
+	<component base="aaMatra-deva" xOffset="415"/>
+	<contour>
+	  <point x="578" y="397" type="move" name="leg"/>
+	</contour>
   </outline>
   <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
-      <integer>5</integer>
-      <key>public.markColor</key>
-      <string>0.04,0.57,0.04,1</string>
-    </dict>
+	<dict>
+	  <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+	  <integer>5</integer>
+	  <key>public.markColor</key>
+	  <string>0.04,0.57,0.04,1</string>
+	</dict>
   </lib>
 </glyph>

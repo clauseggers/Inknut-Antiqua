@@ -2,32 +2,32 @@
 <glyph name="j-deva" format="1">
   <advance width="500"/>
   <outline>
-    <contour>
-      <point x="212" y="448" type="line"/>
-      <point x="306" y="348" type="line"/>
-      <point x="746" y="348" type="line"/>
-      <point x="746" y="386" type="line"/>
-      <point x="676" y="448" type="line"/>
-    </contour>
-    <contour>
-      <point x="-60" y="786" type="line"/>
-      <point x="-60" y="748" type="line"/>
-      <point x="10" y="686" type="line"/>
-      <point x="748" y="686" type="line"/>
-      <point x="748" y="724" type="line"/>
-      <point x="678" y="786" type="line"/>
-    </contour>
-    <component base="j_hook-deva" xOffset="40"/>
-    <contour>
-      <point x="648" y="99" type="move" name="leg"/>
-    </contour>
+	<contour>
+	  <point x="212" y="448" type="line"/>
+	  <point x="306" y="348" type="line"/>
+	  <point x="746" y="348" type="line"/>
+	  <point x="746" y="386" type="line"/>
+	  <point x="676" y="448" type="line"/>
+	</contour>
+	<contour>
+	  <point x="-60" y="786" type="line"/>
+	  <point x="-60" y="748" type="line"/>
+	  <point x="10" y="686" type="line"/>
+	  <point x="748" y="686" type="line"/>
+	  <point x="748" y="724" type="line"/>
+	  <point x="678" y="786" type="line"/>
+	</contour>
+	<component base="j_hook-deva" xOffset="40"/>
+	<contour>
+	  <point x="648" y="99" type="move" name="leg"/>
+	</contour>
   </outline>
   <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
-      <integer>8</integer>
-      <key>public.markColor</key>
-      <string>0.5,0.09,0.79,1</string>
-    </dict>
+	<dict>
+	  <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+	  <integer>8</integer>
+	  <key>public.markColor</key>
+	  <string>0.5,0.09,0.79,1</string>
+	</dict>
   </lib>
 </glyph>

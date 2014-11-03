@@ -3,62 +3,62 @@
   <advance width="753"/>
   <unicode hex="014B"/>
   <outline>
-    <contour>
-      <point x="461" y="553"/>
-      <point x="438" y="550"/>
-      <point x="421" y="545" type="curve"/>
-      <point x="284" y="435" type="line"/>
-      <point x="314" y="362" type="line"/>
-      <point x="349" y="382"/>
-      <point x="383" y="388"/>
-      <point x="408" y="388" type="curve" smooth="yes"/>
-      <point x="450" y="388"/>
-      <point x="464" y="366"/>
-      <point x="464" y="309" type="curve" smooth="yes"/>
-      <point x="464" y="41" type="line" smooth="yes"/>
-      <point x="464" y="-57"/>
-      <point x="443" y="-109"/>
-      <point x="363" y="-204" type="curve"/>
-      <point x="441" y="-264" type="line"/>
-      <point x="673" y="-20" type="line"/>
-      <point x="668" y="-4"/>
-      <point x="664" y="45"/>
-      <point x="664" y="99" type="curve" smooth="yes"/>
-      <point x="664" y="399" type="line" smooth="yes"/>
-      <point x="664" y="493"/>
-      <point x="595" y="553"/>
-      <point x="486" y="553" type="curve" smooth="yes"/>
-    </contour>
-    <contour>
-      <point x="35" y="71" type="line"/>
-      <point x="35" y="0" type="line"/>
-      <point x="374" y="0" type="line"/>
-      <point x="414" y="80" type="line"/>
-      <point x="141" y="164" type="line"/>
-    </contour>
-    <contour>
-      <point x="124" y="0" type="line"/>
-      <point x="324" y="0" type="line"/>
-      <point x="324" y="411" type="line"/>
-      <point x="124" y="468" type="line"/>
-    </contour>
-    <contour>
-      <point x="35" y="473" type="line"/>
-      <point x="35" y="402" type="line"/>
-      <point x="287" y="237" type="line"/>
-      <point x="324" y="411" type="line"/>
-      <point x="266" y="562" type="line"/>
-    </contour>
-    <contour>
-      <point x="370" y="543" type="move" name="top"/>
-    </contour>
+	<contour>
+	  <point x="461" y="553"/>
+	  <point x="438" y="550"/>
+	  <point x="421" y="545" type="curve"/>
+	  <point x="284" y="435" type="line"/>
+	  <point x="314" y="362" type="line"/>
+	  <point x="349" y="382"/>
+	  <point x="383" y="388"/>
+	  <point x="408" y="388" type="curve" smooth="yes"/>
+	  <point x="450" y="388"/>
+	  <point x="464" y="366"/>
+	  <point x="464" y="309" type="curve" smooth="yes"/>
+	  <point x="464" y="41" type="line" smooth="yes"/>
+	  <point x="464" y="-57"/>
+	  <point x="443" y="-109"/>
+	  <point x="363" y="-204" type="curve"/>
+	  <point x="441" y="-264" type="line"/>
+	  <point x="673" y="-20" type="line"/>
+	  <point x="668" y="-4"/>
+	  <point x="664" y="45"/>
+	  <point x="664" y="99" type="curve" smooth="yes"/>
+	  <point x="664" y="399" type="line" smooth="yes"/>
+	  <point x="664" y="493"/>
+	  <point x="595" y="553"/>
+	  <point x="486" y="553" type="curve" smooth="yes"/>
+	</contour>
+	<contour>
+	  <point x="35" y="71" type="line"/>
+	  <point x="35" y="0" type="line"/>
+	  <point x="374" y="0" type="line"/>
+	  <point x="414" y="80" type="line"/>
+	  <point x="141" y="164" type="line"/>
+	</contour>
+	<contour>
+	  <point x="124" y="0" type="line"/>
+	  <point x="324" y="0" type="line"/>
+	  <point x="324" y="411" type="line"/>
+	  <point x="124" y="468" type="line"/>
+	</contour>
+	<contour>
+	  <point x="35" y="473" type="line"/>
+	  <point x="35" y="402" type="line"/>
+	  <point x="287" y="237" type="line"/>
+	  <point x="324" y="411" type="line"/>
+	  <point x="266" y="562" type="line"/>
+	</contour>
+	<contour>
+	  <point x="370" y="543" type="move" name="top"/>
+	</contour>
   </outline>
   <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
-      <integer>7</integer>
-      <key>public.markColor</key>
-      <string>0.18,0.16,0.78,1</string>
-    </dict>
+	<dict>
+	  <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+	  <integer>7</integer>
+	  <key>public.markColor</key>
+	  <string>0.18,0.16,0.78,1</string>
+	</dict>
   </lib>
 </glyph>

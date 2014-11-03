@@ -2,18 +2,18 @@
 <glyph name="la-deva.ss11" format="1">
   <advance width="989"/>
   <outline>
-    <component base="l-deva.halfform"/>
-    <component base="aaMatra-deva" xOffset="630"/>
-    <contour>
-      <point x="713" y="232" type="move" name="leg"/>
-    </contour>
+	<component base="l-deva.halfform"/>
+	<component base="aaMatra-deva" xOffset="630"/>
+	<contour>
+	  <point x="713" y="232" type="move" name="leg"/>
+	</contour>
   </outline>
   <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
-      <integer>5</integer>
-      <key>public.markColor</key>
-      <string>0.04,0.57,0.04,1</string>
-    </dict>
+	<dict>
+	  <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+	  <integer>5</integer>
+	  <key>public.markColor</key>
+	  <string>0.04,0.57,0.04,1</string>
+	</dict>
   </lib>
 </glyph>

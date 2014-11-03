@@ -2,52 +2,52 @@
 <glyph name="dd_dd_ya-deva" format="1">
   <advance width="952"/>
   <outline>
-    <contour>
-      <point x="451" y="-27" type="line"/>
-      <point x="481" y="-47"/>
-      <point x="571" y="-78"/>
-      <point x="603" y="-78" type="curve" smooth="yes"/>
-      <point x="679" y="-78"/>
-      <point x="737" y="-45"/>
-      <point x="867" y="83" type="curve"/>
-      <point x="770" y="142" type="line"/>
-      <point x="664" y="25"/>
-      <point x="610" y="2"/>
-      <point x="543" y="2" type="curve" smooth="yes"/>
-      <point x="518" y="2"/>
-      <point x="486" y="10"/>
-      <point x="464" y="18" type="curve"/>
-    </contour>
-    <contour>
-      <point x="540" y="786" type="line"/>
-      <point x="540" y="748" type="line"/>
-      <point x="610" y="686" type="line"/>
-      <point x="1042" y="686" type="line"/>
-      <point x="1042" y="724" type="line"/>
-      <point x="972" y="786" type="line"/>
-    </contour>
-    <contour>
-      <point x="762" y="786" type="line"/>
-      <point x="762" y="-174" type="line"/>
-      <point x="731" y="-210" type="line"/>
-      <point x="844" y="-310" type="line"/>
-      <point x="882" y="-310" type="line"/>
-      <point x="882" y="786" type="line"/>
-    </contour>
-    <component base="dd_dda-deva"/>
-    <contour>
-      <point x="762" y="786" type="move" name="top"/>
-    </contour>
-    <contour>
-      <point x="762" y="-300" type="move" name="bottom"/>
-    </contour>
+	<contour>
+	  <point x="451" y="-27" type="line"/>
+	  <point x="481" y="-47"/>
+	  <point x="571" y="-78"/>
+	  <point x="603" y="-78" type="curve" smooth="yes"/>
+	  <point x="679" y="-78"/>
+	  <point x="737" y="-45"/>
+	  <point x="867" y="83" type="curve"/>
+	  <point x="770" y="142" type="line"/>
+	  <point x="664" y="25"/>
+	  <point x="610" y="2"/>
+	  <point x="543" y="2" type="curve" smooth="yes"/>
+	  <point x="518" y="2"/>
+	  <point x="486" y="10"/>
+	  <point x="464" y="18" type="curve"/>
+	</contour>
+	<contour>
+	  <point x="540" y="786" type="line"/>
+	  <point x="540" y="748" type="line"/>
+	  <point x="610" y="686" type="line"/>
+	  <point x="1042" y="686" type="line"/>
+	  <point x="1042" y="724" type="line"/>
+	  <point x="972" y="786" type="line"/>
+	</contour>
+	<contour>
+	  <point x="762" y="786" type="line"/>
+	  <point x="762" y="-174" type="line"/>
+	  <point x="731" y="-210" type="line"/>
+	  <point x="844" y="-310" type="line"/>
+	  <point x="882" y="-310" type="line"/>
+	  <point x="882" y="786" type="line"/>
+	</contour>
+	<component base="dd_dda-deva"/>
+	<contour>
+	  <point x="762" y="786" type="move" name="top"/>
+	</contour>
+	<contour>
+	  <point x="762" y="-300" type="move" name="bottom"/>
+	</contour>
   </outline>
   <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
-      <integer>8</integer>
-      <key>public.markColor</key>
-      <string>0.5,0.09,0.79,1</string>
-    </dict>
+	<dict>
+	  <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+	  <integer>8</integer>
+	  <key>public.markColor</key>
+	  <string>0.5,0.09,0.79,1</string>
+	</dict>
   </lib>
 </glyph>

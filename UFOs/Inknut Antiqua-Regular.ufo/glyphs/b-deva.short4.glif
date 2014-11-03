@@ -2,20 +2,20 @@
 <glyph name="b-deva.short4" format="1">
   <advance width="372"/>
   <outline>
-    <contour>
-      <point x="213" y="439" type="line"/>
-      <point x="429" y="258" type="line"/>
-      <point x="462" y="295" type="line"/>
-      <point x="245" y="477" type="line"/>
-    </contour>
-    <component base="v-deva.short2"/>
+	<contour>
+	  <point x="213" y="439" type="line"/>
+	  <point x="429" y="258" type="line"/>
+	  <point x="462" y="295" type="line"/>
+	  <point x="245" y="477" type="line"/>
+	</contour>
+	<component base="v-deva.short2"/>
   </outline>
   <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
-      <integer>8</integer>
-      <key>public.markColor</key>
-      <string>0.5,0.09,0.79,1</string>
-    </dict>
+	<dict>
+	  <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+	  <integer>8</integer>
+	  <key>public.markColor</key>
+	  <string>0.5,0.09,0.79,1</string>
+	</dict>
   </lib>
 </glyph>

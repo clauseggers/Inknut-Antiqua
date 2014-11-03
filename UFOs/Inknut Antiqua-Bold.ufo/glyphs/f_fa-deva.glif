@@ -2,17 +2,17 @@
 <glyph name="f_fa-deva" format="1">
   <advance width="1838"/>
   <outline>
-    <component base="ph-deva"/>
-    <component base="nukta-deva" xOffset="93" yOffset="139"/>
-    <component base="pha-deva" xOffset="731"/>
-    <component base="nukta-deva" xOffset="824" yOffset="139"/>
+	<component base="ph-deva"/>
+	<component base="nukta-deva" xOffset="93" yOffset="139"/>
+	<component base="pha-deva" xOffset="731"/>
+	<component base="nukta-deva" xOffset="824" yOffset="139"/>
   </outline>
   <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
-      <integer>5</integer>
-      <key>public.markColor</key>
-      <string>0.04,0.57,0.04,1</string>
-    </dict>
+	<dict>
+	  <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+	  <integer>5</integer>
+	  <key>public.markColor</key>
+	  <string>0.04,0.57,0.04,1</string>
+	</dict>
   </lib>
 </glyph>

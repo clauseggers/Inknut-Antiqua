@@ -3,39 +3,39 @@
   <advance width="1390"/>
   <unicode hex="A8F7"/>
   <outline>
-    <contour>
-      <point x="731" y="323" type="line" smooth="yes"/>
-      <point x="637" y="323"/>
-      <point x="508" y="217"/>
-      <point x="508" y="143" type="curve" smooth="yes"/>
-      <point x="508" y="78"/>
-      <point x="711" y="10"/>
-      <point x="711" y="-49" type="curve" smooth="yes"/>
-      <point x="711" y="-79"/>
-      <point x="668" y="-110"/>
-      <point x="623" y="-113" type="curve" smooth="yes"/>
-      <point x="568" y="-113"/>
-      <point x="494" y="-82"/>
-      <point x="434" y="-34" type="curve" smooth="yes"/>
-      <point x="355" y="29" type="line"/>
-      <point x="302" y="-34" type="line"/>
-      <point x="578" y="-257" type="line"/>
-      <point x="606" y="-262"/>
-      <point x="634" y="-264"/>
-      <point x="660" y="-264" type="curve" smooth="yes"/>
-      <point x="786" y="-263"/>
-      <point x="927" y="-167"/>
-      <point x="927" y="-82" type="curve" smooth="yes"/>
-      <point x="927" y="-16"/>
-      <point x="724" y="42"/>
-      <point x="724" y="95" type="curve" smooth="yes"/>
-      <point x="724" y="124"/>
-      <point x="753" y="155"/>
-      <point x="791" y="155" type="curve" smooth="yes"/>
-      <point x="1074" y="153" type="line"/>
-      <point x="1074" y="231" type="line"/>
-      <point x="899" y="323" type="line"/>
-    </contour>
-    <component base="spacingCandraBindu-deva"/>
+	<contour>
+	  <point x="731" y="323" type="line" smooth="yes"/>
+	  <point x="637" y="323"/>
+	  <point x="508" y="217"/>
+	  <point x="508" y="143" type="curve" smooth="yes"/>
+	  <point x="508" y="78"/>
+	  <point x="711" y="10"/>
+	  <point x="711" y="-49" type="curve" smooth="yes"/>
+	  <point x="711" y="-79"/>
+	  <point x="668" y="-110"/>
+	  <point x="623" y="-113" type="curve" smooth="yes"/>
+	  <point x="568" y="-113"/>
+	  <point x="494" y="-82"/>
+	  <point x="434" y="-34" type="curve" smooth="yes"/>
+	  <point x="355" y="29" type="line"/>
+	  <point x="302" y="-34" type="line"/>
+	  <point x="578" y="-257" type="line"/>
+	  <point x="606" y="-262"/>
+	  <point x="634" y="-264"/>
+	  <point x="660" y="-264" type="curve" smooth="yes"/>
+	  <point x="786" y="-263"/>
+	  <point x="927" y="-167"/>
+	  <point x="927" y="-82" type="curve" smooth="yes"/>
+	  <point x="927" y="-16"/>
+	  <point x="724" y="42"/>
+	  <point x="724" y="95" type="curve" smooth="yes"/>
+	  <point x="724" y="124"/>
+	  <point x="753" y="155"/>
+	  <point x="791" y="155" type="curve" smooth="yes"/>
+	  <point x="1074" y="153" type="line"/>
+	  <point x="1074" y="231" type="line"/>
+	  <point x="899" y="323" type="line"/>
+	</contour>
+	<component base="spacingCandraBindu-deva"/>
   </outline>
 </glyph>

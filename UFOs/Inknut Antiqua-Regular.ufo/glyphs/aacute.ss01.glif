@@ -2,7 +2,7 @@
 <glyph name="aacute.ss01" format="1">
   <advance width="715"/>
   <outline>
-    <component base="a.ss01"/>
-    <component base="acute" xOffset="187"/>
+	<component base="a.ss01"/>
+	<component base="acute" xOffset="187"/>
   </outline>
 </glyph>

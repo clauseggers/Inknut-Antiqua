@@ -2,23 +2,23 @@
 <glyph name="comma.deva" format="1">
   <advance width="300"/>
   <outline>
-    <contour>
-      <point x="107" y="99" type="line"/>
-      <point x="148" y="-30"/>
-      <point x="139" y="-100"/>
-      <point x="40" y="-234" type="curve"/>
-      <point x="78" y="-264" type="line"/>
-      <point x="270" y="-20" type="line"/>
-      <point x="270" y="18" type="line"/>
-      <point x="138" y="135" type="line"/>
-    </contour>
+	<contour>
+	  <point x="107" y="99" type="line"/>
+	  <point x="148" y="-30"/>
+	  <point x="139" y="-100"/>
+	  <point x="40" y="-234" type="curve"/>
+	  <point x="78" y="-264" type="line"/>
+	  <point x="270" y="-20" type="line"/>
+	  <point x="270" y="18" type="line"/>
+	  <point x="138" y="135" type="line"/>
+	</contour>
   </outline>
   <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
-      <integer>7</integer>
-      <key>public.markColor</key>
-      <string>0.18,0.16,0.78,1</string>
-    </dict>
+	<dict>
+	  <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+	  <integer>7</integer>
+	  <key>public.markColor</key>
+	  <string>0.18,0.16,0.78,1</string>
+	</dict>
   </lib>
 </glyph>

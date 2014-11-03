@@ -2,29 +2,29 @@
 <glyph name="c-deva.long" format="1">
   <advance width="460"/>
   <outline>
-    <contour>
-      <point x="-80" y="786" type="line"/>
-      <point x="-80" y="748" type="line"/>
-      <point x="-10" y="686" type="line"/>
-      <point x="428" y="686" type="line"/>
-      <point x="428" y="724" type="line"/>
-      <point x="358" y="786" type="line"/>
-    </contour>
-    <contour>
-      <point x="40" y="549" type="line"/>
-      <point x="40" y="511" type="line"/>
-      <point x="110" y="449" type="line"/>
-      <point x="358" y="449" type="line"/>
-      <point x="427" y="549" type="line"/>
-    </contour>
-    <component base="v-deva.long" xOffset="140"/>
+	<contour>
+	  <point x="-80" y="786" type="line"/>
+	  <point x="-80" y="748" type="line"/>
+	  <point x="-10" y="686" type="line"/>
+	  <point x="428" y="686" type="line"/>
+	  <point x="428" y="724" type="line"/>
+	  <point x="358" y="786" type="line"/>
+	</contour>
+	<contour>
+	  <point x="40" y="549" type="line"/>
+	  <point x="40" y="511" type="line"/>
+	  <point x="110" y="449" type="line"/>
+	  <point x="358" y="449" type="line"/>
+	  <point x="427" y="549" type="line"/>
+	</contour>
+	<component base="v-deva.long" xOffset="140"/>
   </outline>
   <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
-      <integer>8</integer>
-      <key>public.markColor</key>
-      <string>0.5,0.09,0.79,1</string>
-    </dict>
+	<dict>
+	  <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+	  <integer>8</integer>
+	  <key>public.markColor</key>
+	  <string>0.5,0.09,0.79,1</string>
+	</dict>
   </lib>
 </glyph>

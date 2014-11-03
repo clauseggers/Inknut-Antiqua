@@ -2,45 +2,45 @@
 <glyph name="d_bha-deva" format="1">
   <advance width="848"/>
   <outline>
-    <contour>
-      <point x="160" y="203"/>
-      <point x="122" y="199"/>
-      <point x="83" y="191" type="curve"/>
-      <point x="83" y="153" type="line"/>
-      <point x="153" y="91" type="line"/>
-      <point x="195" y="100"/>
-      <point x="228" y="104"/>
-      <point x="260" y="104" type="curve" smooth="yes"/>
-      <point x="332" y="104"/>
-      <point x="386" y="83"/>
-      <point x="441" y="36" type="curve" smooth="yes"/>
-      <point x="472" y="10" type="line"/>
-      <point x="504" y="48" type="line"/>
-      <point x="453" y="91" type="line" smooth="yes"/>
-      <point x="351" y="178"/>
-      <point x="295" y="203"/>
-      <point x="198" y="203" type="curve" smooth="yes"/>
-    </contour>
-    <contour>
-      <point x="-60" y="786" type="line"/>
-      <point x="-60" y="748" type="line"/>
-      <point x="10" y="686" type="line"/>
-      <point x="444" y="686" type="line"/>
-      <point x="444" y="724" type="line"/>
-      <point x="374" y="786" type="line"/>
-    </contour>
-    <component base="d-deva.top" xOffset="170"/>
-    <component base="g-deva.leg" xOffset="194" yOffset="-102"/>
-    <contour>
-      <point x="673" y="0" type="move" name="bottom"/>
-    </contour>
+	<contour>
+	  <point x="160" y="203"/>
+	  <point x="122" y="199"/>
+	  <point x="83" y="191" type="curve"/>
+	  <point x="83" y="153" type="line"/>
+	  <point x="153" y="91" type="line"/>
+	  <point x="195" y="100"/>
+	  <point x="228" y="104"/>
+	  <point x="260" y="104" type="curve" smooth="yes"/>
+	  <point x="332" y="104"/>
+	  <point x="386" y="83"/>
+	  <point x="441" y="36" type="curve" smooth="yes"/>
+	  <point x="472" y="10" type="line"/>
+	  <point x="504" y="48" type="line"/>
+	  <point x="453" y="91" type="line" smooth="yes"/>
+	  <point x="351" y="178"/>
+	  <point x="295" y="203"/>
+	  <point x="198" y="203" type="curve" smooth="yes"/>
+	</contour>
+	<contour>
+	  <point x="-60" y="786" type="line"/>
+	  <point x="-60" y="748" type="line"/>
+	  <point x="10" y="686" type="line"/>
+	  <point x="444" y="686" type="line"/>
+	  <point x="444" y="724" type="line"/>
+	  <point x="374" y="786" type="line"/>
+	</contour>
+	<component base="d-deva.top" xOffset="170"/>
+	<component base="g-deva.leg" xOffset="194" yOffset="-102"/>
+	<contour>
+	  <point x="673" y="0" type="move" name="bottom"/>
+	</contour>
   </outline>
   <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
-      <integer>8</integer>
-      <key>public.markColor</key>
-      <string>0.5,0.09,0.79,1</string>
-    </dict>
+	<dict>
+	  <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+	  <integer>8</integer>
+	  <key>public.markColor</key>
+	  <string>0.5,0.09,0.79,1</string>
+	</dict>
   </lib>
 </glyph>

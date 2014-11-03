@@ -2,15 +2,15 @@
 <glyph name="j_ba-deva" format="1">
   <advance width="1088"/>
   <outline>
-    <component base="j-deva.short"/>
-    <component base="ba-deva" xOffset="440"/>
+	<component base="j-deva.short"/>
+	<component base="ba-deva" xOffset="440"/>
   </outline>
   <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
-      <integer>5</integer>
-      <key>public.markColor</key>
-      <string>0.04,0.57,0.04,1</string>
-    </dict>
+	<dict>
+	  <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+	  <integer>5</integer>
+	  <key>public.markColor</key>
+	  <string>0.04,0.57,0.04,1</string>
+	</dict>
   </lib>
 </glyph>

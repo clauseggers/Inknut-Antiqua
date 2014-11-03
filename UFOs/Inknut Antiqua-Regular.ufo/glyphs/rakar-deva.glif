@@ -2,33 +2,33 @@
 <glyph name="rakar-deva" format="1">
   <advance width="600"/>
   <outline>
-    <contour>
-      <point x="72" y="-207" type="line"/>
-      <point x="154" y="-247" type="line"/>
-      <point x="192" y="-247" type="line"/>
-      <point x="314" y="-6" type="line"/>
-      <point x="201" y="49" type="line"/>
-    </contour>
-    <contour>
-      <point x="282" y="-44" type="line"/>
-      <point x="532" y="-264" type="line"/>
-      <point x="565" y="-227" type="line"/>
-      <point x="314" y="-6" type="line"/>
-    </contour>
-    <contour>
-      <point x="341" y="-254" type="move" name="halant"/>
-    </contour>
-    <contour>
-      <point x="354" y="-310" type="move" name="nukta"/>
-    </contour>
-    <contour>
-      <point x="175" y="0" type="move" name="_bottom"/>
-    </contour>
-    <contour>
-      <point x="207" y="0" type="move" name="_rakar"/>
-    </contour>
-    <contour>
-      <point x="304" y="-150" type="move" name="bottom"/>
-    </contour>
+	<contour>
+	  <point x="72" y="-207" type="line"/>
+	  <point x="154" y="-247" type="line"/>
+	  <point x="192" y="-247" type="line"/>
+	  <point x="314" y="-6" type="line"/>
+	  <point x="201" y="49" type="line"/>
+	</contour>
+	<contour>
+	  <point x="282" y="-44" type="line"/>
+	  <point x="532" y="-264" type="line"/>
+	  <point x="565" y="-227" type="line"/>
+	  <point x="314" y="-6" type="line"/>
+	</contour>
+	<contour>
+	  <point x="341" y="-254" type="move" name="halant"/>
+	</contour>
+	<contour>
+	  <point x="354" y="-310" type="move" name="nukta"/>
+	</contour>
+	<contour>
+	  <point x="175" y="0" type="move" name="_bottom"/>
+	</contour>
+	<contour>
+	  <point x="207" y="0" type="move" name="_rakar"/>
+	</contour>
+	<contour>
+	  <point x="304" y="-150" type="move" name="bottom"/>
+	</contour>
   </outline>
 </glyph>

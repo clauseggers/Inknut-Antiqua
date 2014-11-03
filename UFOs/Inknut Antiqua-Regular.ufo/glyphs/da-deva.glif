@@ -3,29 +3,29 @@
   <advance width="678"/>
   <unicode hex="0926"/>
   <outline>
-    <contour>
-      <point x="383" y="72" type="line"/>
-      <point x="682" y="-192" type="line"/>
-      <point x="715" y="-155" type="line"/>
-      <point x="415" y="110" type="line"/>
-    </contour>
-    <component base="da-deva.strokeless"/>
-    <contour>
-      <point x="465" y="0" type="move" name="rakar"/>
-    </contour>
-    <contour>
-      <point x="249" y="0" type="move" name="bottom"/>
-    </contour>
-    <contour>
-      <point x="684" y="-128" type="move" name="outstroke"/>
-    </contour>
+	<contour>
+	  <point x="383" y="72" type="line"/>
+	  <point x="682" y="-192" type="line"/>
+	  <point x="715" y="-155" type="line"/>
+	  <point x="415" y="110" type="line"/>
+	</contour>
+	<component base="da-deva.strokeless"/>
+	<contour>
+	  <point x="465" y="0" type="move" name="rakar"/>
+	</contour>
+	<contour>
+	  <point x="358" y="0" type="move" name="bottom"/>
+	</contour>
+	<contour>
+	  <point x="684" y="-128" type="move" name="outstroke"/>
+	</contour>
   </outline>
   <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
-      <integer>8</integer>
-      <key>public.markColor</key>
-      <string>0.5,0.09,0.79,1</string>
-    </dict>
+	<dict>
+	  <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+	  <integer>8</integer>
+	  <key>public.markColor</key>
+	  <string>0.5,0.09,0.79,1</string>
+	</dict>
   </lib>
 </glyph>

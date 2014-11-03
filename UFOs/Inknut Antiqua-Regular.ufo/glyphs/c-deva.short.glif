@@ -2,22 +2,22 @@
 <glyph name="c-deva.short" format="1">
   <advance width="460"/>
   <outline>
-    <contour>
-      <point x="-70" y="786" type="line"/>
-      <point x="-70" y="748" type="line"/>
-      <point x="0" y="686" type="line"/>
-      <point x="428" y="686" type="line"/>
-      <point x="428" y="724" type="line"/>
-      <point x="358" y="786" type="line"/>
-    </contour>
-    <contour>
-      <point x="40" y="549" type="line"/>
-      <point x="40" y="511" type="line"/>
-      <point x="110" y="449" type="line"/>
-      <point x="697" y="449" type="line"/>
-      <point x="697" y="487" type="line"/>
-      <point x="627" y="549" type="line"/>
-    </contour>
-    <component base="v-deva.short" xOffset="140"/>
+	<contour>
+	  <point x="-70" y="786" type="line"/>
+	  <point x="-70" y="748" type="line"/>
+	  <point x="0" y="686" type="line"/>
+	  <point x="428" y="686" type="line"/>
+	  <point x="428" y="724" type="line"/>
+	  <point x="358" y="786" type="line"/>
+	</contour>
+	<contour>
+	  <point x="40" y="549" type="line"/>
+	  <point x="40" y="511" type="line"/>
+	  <point x="110" y="449" type="line"/>
+	  <point x="697" y="449" type="line"/>
+	  <point x="697" y="487" type="line"/>
+	  <point x="627" y="549" type="line"/>
+	</contour>
+	<component base="v-deva.short" xOffset="140"/>
   </outline>
 </glyph>

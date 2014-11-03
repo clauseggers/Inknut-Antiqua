@@ -2,15 +2,15 @@
 <glyph name="v_ya-deva" format="1">
   <advance width="1132"/>
   <outline>
-    <component base="v-deva.long"/>
-    <component base="ya-deva" xOffset="400"/>
+	<component base="v-deva.long"/>
+	<component base="ya-deva" xOffset="400"/>
   </outline>
   <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
-      <integer>5</integer>
-      <key>public.markColor</key>
-      <string>0.04,0.57,0.04,1</string>
-    </dict>
+	<dict>
+	  <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+	  <integer>5</integer>
+	  <key>public.markColor</key>
+	  <string>0.04,0.57,0.04,1</string>
+	</dict>
   </lib>
 </glyph>

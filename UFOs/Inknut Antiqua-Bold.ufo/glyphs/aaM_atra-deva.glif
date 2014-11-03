@@ -3,14 +3,14 @@
   <advance width="359"/>
   <unicode hex="093E"/>
   <outline>
-    <contour>
-      <point x="-95" y="786" type="line"/>
-      <point x="-95" y="708" type="line"/>
-      <point x="80" y="616" type="line"/>
-      <point x="484" y="616" type="line"/>
-      <point x="484" y="694" type="line"/>
-      <point x="309" y="786" type="line"/>
-    </contour>
-    <component base="stem-deva"/>
+	<contour>
+	  <point x="-95" y="786" type="line"/>
+	  <point x="-95" y="708" type="line"/>
+	  <point x="80" y="616" type="line"/>
+	  <point x="484" y="616" type="line"/>
+	  <point x="484" y="694" type="line"/>
+	  <point x="309" y="786" type="line"/>
+	</contour>
+	<component base="stem-deva"/>
   </outline>
 </glyph>

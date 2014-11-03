@@ -2,15 +2,15 @@
 <glyph name="da_ra_ya-deva" format="1">
   <advance width="854"/>
   <outline>
-    <component base="d_ya-deva"/>
-    <component base="r-deva.leg-short" xOffset="-202" yOffset="-65"/>
+	<component base="d_ya-deva"/>
+	<component base="r-deva.leg-short" xOffset="-202" yOffset="-65"/>
   </outline>
   <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
-      <integer>5</integer>
-      <key>public.markColor</key>
-      <string>0.04,0.57,0.04,1</string>
-    </dict>
+	<dict>
+	  <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+	  <integer>5</integer>
+	  <key>public.markColor</key>
+	  <string>0.04,0.57,0.04,1</string>
+	</dict>
   </lib>
 </glyph>

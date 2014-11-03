@@ -3,29 +3,29 @@
   <advance width="873"/>
   <unicode hex="0056"/>
   <outline>
-    <contour>
-      <point x="392" y="-19" type="line"/>
-      <point x="496" y="32" type="line"/>
-      <point x="811" y="755" type="line"/>
-      <point x="740" y="721" type="line"/>
-      <point x="439" y="27" type="line"/>
-      <point x="493" y="49" type="line"/>
-      <point x="214" y="721" type="line"/>
-      <point x="66" y="768" type="line"/>
-    </contour>
-    <contour>
-      <point x="20" y="786" type="line"/>
-      <point x="0" y="746" type="line"/>
-      <point x="175" y="640" type="line"/>
-      <point x="324" y="755" type="line"/>
-      <point x="324" y="786" type="line"/>
-    </contour>
-    <contour>
-      <point x="569" y="786" type="line"/>
-      <point x="549" y="746" type="line"/>
-      <point x="767" y="672" type="line"/>
-      <point x="873" y="755" type="line"/>
-      <point x="873" y="786" type="line"/>
-    </contour>
+	<contour>
+	  <point x="392" y="-19" type="line"/>
+	  <point x="496" y="32" type="line"/>
+	  <point x="811" y="755" type="line"/>
+	  <point x="740" y="721" type="line"/>
+	  <point x="439" y="27" type="line"/>
+	  <point x="493" y="49" type="line"/>
+	  <point x="214" y="721" type="line"/>
+	  <point x="66" y="768" type="line"/>
+	</contour>
+	<contour>
+	  <point x="20" y="786" type="line"/>
+	  <point x="0" y="746" type="line"/>
+	  <point x="175" y="640" type="line"/>
+	  <point x="324" y="755" type="line"/>
+	  <point x="324" y="786" type="line"/>
+	</contour>
+	<contour>
+	  <point x="569" y="786" type="line"/>
+	  <point x="549" y="746" type="line"/>
+	  <point x="767" y="672" type="line"/>
+	  <point x="873" y="755" type="line"/>
+	  <point x="873" y="786" type="line"/>
+	</contour>
   </outline>
 </glyph>

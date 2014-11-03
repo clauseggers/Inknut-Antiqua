@@ -2,28 +2,28 @@
 <glyph name="stem-deva" format="1">
   <advance width="328"/>
   <outline>
-    <contour>
-      <point x="138" y="786" type="line"/>
-      <point x="138" y="126" type="line"/>
-      <point x="107" y="90" type="line"/>
-      <point x="220" y="-10" type="line"/>
-      <point x="258" y="-10" type="line"/>
-      <point x="258" y="786" type="line"/>
-    </contour>
-    <contour>
-      <point x="152" y="361" type="move" name="leg-low"/>
-    </contour>
-    <contour>
-      <point x="152" y="371" type="move" name="leg"/>
-    </contour>
-    <contour>
-      <point x="138" y="786" type="move" name="top"/>
-    </contour>
-    <contour>
-      <point x="138" y="786" type="move" name="right"/>
-    </contour>
-    <contour>
-      <point x="138" y="0" type="move" name="bottom"/>
-    </contour>
+	<contour>
+	  <point x="138" y="786" type="line"/>
+	  <point x="138" y="126" type="line"/>
+	  <point x="107" y="90" type="line"/>
+	  <point x="220" y="-10" type="line"/>
+	  <point x="258" y="-10" type="line"/>
+	  <point x="258" y="786" type="line"/>
+	</contour>
+	<contour>
+	  <point x="152" y="361" type="move" name="leg-low"/>
+	</contour>
+	<contour>
+	  <point x="152" y="371" type="move" name="leg"/>
+	</contour>
+	<contour>
+	  <point x="138" y="786" type="move" name="top"/>
+	</contour>
+	<contour>
+	  <point x="138" y="786" type="move" name="right"/>
+	</contour>
+	<contour>
+	  <point x="138" y="0" type="move" name="bottom"/>
+	</contour>
   </outline>
 </glyph>

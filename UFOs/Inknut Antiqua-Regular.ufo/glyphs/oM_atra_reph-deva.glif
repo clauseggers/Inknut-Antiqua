@@ -2,17 +2,17 @@
 <glyph name="oMatra_reph-deva" format="1">
   <advance width="328"/>
   <outline>
-    <component base="oMatra-deva"/>
-    <component base="reph-deva" xOffset="-138"/>
+	<component base="oMatra-deva"/>
+	<component base="reph-deva" xOffset="-138"/>
   </outline>
   <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.Export</key>
-      <false/>
-      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
-      <integer>5</integer>
-      <key>public.markColor</key>
-      <string>0.04,0.57,0.04,1</string>
-    </dict>
+	<dict>
+	  <key>com.schriftgestaltung.Glyphs.Export</key>
+	  <false/>
+	  <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+	  <integer>5</integer>
+	  <key>public.markColor</key>
+	  <string>0.04,0.57,0.04,1</string>
+	</dict>
   </lib>
 </glyph>

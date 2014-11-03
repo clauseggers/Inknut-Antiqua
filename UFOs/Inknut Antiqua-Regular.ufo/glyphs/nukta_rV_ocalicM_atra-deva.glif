@@ -2,10 +2,10 @@
 <glyph name="nukta_rVocalicMatra-deva" format="1">
   <advance width="600"/>
   <outline>
-    <component base="nukta-deva"/>
-    <component base="rVocalicMatra-deva" xOffset="148"/>
-    <contour>
-      <point x="131" y="-137" type="move" name="_nukta"/>
-    </contour>
+	<component base="nukta-deva"/>
+	<component base="rVocalicMatra-deva" xOffset="148"/>
+	<contour>
+	  <point x="131" y="-137" type="move" name="_nukta"/>
+	</contour>
   </outline>
 </glyph>

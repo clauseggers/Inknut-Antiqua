@@ -2,40 +2,40 @@
 <glyph name="n-deva.low" format="1">
   <advance width="350"/>
   <outline>
-    <contour>
-      <point x="229" y="348" type="line" smooth="yes"/>
-      <point x="105" y="348"/>
-      <point x="65" y="339"/>
-      <point x="65" y="310" type="curve" smooth="yes"/>
-      <point x="65" y="248"/>
-      <point x="165" y="124"/>
-      <point x="225" y="124" type="curve" smooth="yes"/>
-      <point x="272" y="124"/>
-      <point x="339" y="216"/>
-      <point x="339" y="282" type="curve"/>
-      <point x="302" y="248" type="line"/>
-      <point x="590" y="248" type="line"/>
-      <point x="590" y="286" type="line"/>
-      <point x="513" y="348" type="line"/>
-    </contour>
-    <contour>
-      <point x="-110" y="786" type="line"/>
-      <point x="-110" y="748" type="line"/>
-      <point x="-34" y="686" type="line"/>
-      <point x="588" y="686" type="line"/>
-      <point x="588" y="724" type="line"/>
-      <point x="511" y="786" type="line"/>
-    </contour>
-    <contour>
-      <point x="231" y="-120" type="move" name="nukta"/>
-    </contour>
+	<contour>
+	  <point x="229" y="348" type="line" smooth="yes"/>
+	  <point x="105" y="348"/>
+	  <point x="65" y="339"/>
+	  <point x="65" y="310" type="curve" smooth="yes"/>
+	  <point x="65" y="248"/>
+	  <point x="165" y="124"/>
+	  <point x="225" y="124" type="curve" smooth="yes"/>
+	  <point x="272" y="124"/>
+	  <point x="339" y="216"/>
+	  <point x="339" y="282" type="curve"/>
+	  <point x="302" y="248" type="line"/>
+	  <point x="590" y="248" type="line"/>
+	  <point x="590" y="286" type="line"/>
+	  <point x="513" y="348" type="line"/>
+	</contour>
+	<contour>
+	  <point x="-110" y="786" type="line"/>
+	  <point x="-110" y="748" type="line"/>
+	  <point x="-34" y="686" type="line"/>
+	  <point x="588" y="686" type="line"/>
+	  <point x="588" y="724" type="line"/>
+	  <point x="511" y="786" type="line"/>
+	</contour>
+	<contour>
+	  <point x="231" y="-120" type="move" name="nukta"/>
+	</contour>
   </outline>
   <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
-      <integer>7</integer>
-      <key>public.markColor</key>
-      <string>0.18,0.16,0.78,1</string>
-    </dict>
+	<dict>
+	  <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+	  <integer>7</integer>
+	  <key>public.markColor</key>
+	  <string>0.18,0.16,0.78,1</string>
+	</dict>
   </lib>
 </glyph>

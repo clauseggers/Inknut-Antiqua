@@ -2,16 +2,16 @@
 <glyph name="n_m_ya-deva" format="1">
   <advance width="1438"/>
   <outline>
-    <component base="n-deva.short"/>
-    <component base="m-deva.short" xOffset="330"/>
-    <component base="ya-deva" xOffset="706"/>
+	<component base="n-deva.short"/>
+	<component base="m-deva.short" xOffset="330"/>
+	<component base="ya-deva" xOffset="706"/>
   </outline>
   <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
-      <integer>5</integer>
-      <key>public.markColor</key>
-      <string>0.04,0.57,0.04,1</string>
-    </dict>
+	<dict>
+	  <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+	  <integer>5</integer>
+	  <key>public.markColor</key>
+	  <string>0.04,0.57,0.04,1</string>
+	</dict>
   </lib>
 </glyph>

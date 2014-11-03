@@ -2,29 +2,29 @@
 <glyph name="j-deva.short" format="1">
   <advance width="440"/>
   <outline>
-    <contour>
-      <point x="172" y="448" type="line"/>
-      <point x="266" y="348" type="line"/>
-      <point x="646" y="348" type="line"/>
-      <point x="646" y="386" type="line"/>
-      <point x="576" y="448" type="line"/>
-    </contour>
-    <contour>
-      <point x="-60" y="786" type="line"/>
-      <point x="-60" y="748" type="line"/>
-      <point x="10" y="686" type="line"/>
-      <point x="648" y="686" type="line"/>
-      <point x="648" y="724" type="line"/>
-      <point x="578" y="786" type="line"/>
-    </contour>
-    <component base="j_hook-deva"/>
+	<contour>
+	  <point x="172" y="448" type="line"/>
+	  <point x="266" y="348" type="line"/>
+	  <point x="646" y="348" type="line"/>
+	  <point x="646" y="386" type="line"/>
+	  <point x="576" y="448" type="line"/>
+	</contour>
+	<contour>
+	  <point x="-60" y="786" type="line"/>
+	  <point x="-60" y="748" type="line"/>
+	  <point x="10" y="686" type="line"/>
+	  <point x="648" y="686" type="line"/>
+	  <point x="648" y="724" type="line"/>
+	  <point x="578" y="786" type="line"/>
+	</contour>
+	<component base="j_hook-deva"/>
   </outline>
   <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
-      <integer>8</integer>
-      <key>public.markColor</key>
-      <string>0.5,0.09,0.79,1</string>
-    </dict>
+	<dict>
+	  <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+	  <integer>8</integer>
+	  <key>public.markColor</key>
+	  <string>0.5,0.09,0.79,1</string>
+	</dict>
   </lib>
 </glyph>

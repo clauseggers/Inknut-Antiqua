@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="l_ra-deva" format="1">
+  <advance width="630"/>
+  <outline>
+	<component base="l-deva.halfform"/>
+	<component base="r-deva.leg" xOffset="297" yOffset="-166"/>
+	<contour>
+	  <point x="228" y="-69" type="move" name="nukta"/>
+	</contour>
+	<contour>
+	  <point x="810" y="0" type="move" name="bottom"/>
+	</contour>
+  </outline>
+  <lib>
+	<dict>
+	  <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+	  <integer>5</integer>
+	  <key>public.markColor</key>
+	  <string>0.04,0.57,0.04,1</string>
+	</dict>
+  </lib>
+</glyph>

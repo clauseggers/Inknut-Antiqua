@@ -2,16 +2,16 @@
 <glyph name="t_p_la-deva" format="1">
   <advance width="1579"/>
   <outline>
-    <component base="t-deva.short"/>
-    <component base="p-deva.short2" xOffset="291"/>
-    <component base="la-deva" xOffset="590"/>
+	<component base="t-deva.short"/>
+	<component base="p-deva.short2" xOffset="291"/>
+	<component base="la-deva" xOffset="590"/>
   </outline>
   <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
-      <integer>5</integer>
-      <key>public.markColor</key>
-      <string>0.04,0.57,0.04,1</string>
-    </dict>
+	<dict>
+	  <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+	  <integer>5</integer>
+	  <key>public.markColor</key>
+	  <string>0.04,0.57,0.04,1</string>
+	</dict>
   </lib>
 </glyph>

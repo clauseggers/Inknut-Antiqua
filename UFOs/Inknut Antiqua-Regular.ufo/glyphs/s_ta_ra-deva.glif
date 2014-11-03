@@ -2,69 +2,69 @@
 <glyph name="s_ta_ra-deva" format="1">
   <advance width="1005"/>
   <outline>
-    <contour>
-      <point x="724" y="494"/>
-      <point x="586" y="390"/>
-      <point x="466" y="304" type="curve"/>
-      <point x="466" y="266" type="line"/>
-      <point x="536" y="204" type="line"/>
-      <point x="660" y="298"/>
-      <point x="805" y="408"/>
-      <point x="903" y="498" type="curve"/>
-      <point x="903" y="536" type="line"/>
-      <point x="824" y="586" type="line"/>
-    </contour>
-    <contour>
-      <point x="773" y="282"/>
-      <point x="695" y="213"/>
-      <point x="613" y="147" type="curve"/>
-      <point x="613" y="109" type="line"/>
-      <point x="686" y="46" type="line"/>
-      <point x="769" y="118"/>
-      <point x="850" y="191"/>
-      <point x="918" y="273" type="curve"/>
-      <point x="918" y="311" type="line"/>
-      <point x="840" y="358" type="line"/>
-    </contour>
-    <contour>
-      <point x="546" y="620"/>
-      <point x="450" y="562"/>
-      <point x="291" y="420" type="curve"/>
-      <point x="291" y="382" type="line"/>
-      <point x="361" y="320" type="line"/>
-      <point x="518" y="464"/>
-      <point x="595" y="530"/>
-      <point x="694" y="530" type="curve" smooth="yes"/>
-      <point x="718" y="530"/>
-      <point x="742" y="522"/>
-      <point x="778" y="491" type="curve" smooth="yes"/>
-      <point x="818" y="456" type="line"/>
-      <point x="853" y="492" type="line"/>
-      <point x="785" y="549" type="line" smooth="yes"/>
-      <point x="711" y="611"/>
-      <point x="677" y="620"/>
-      <point x="624" y="620" type="curve" smooth="yes"/>
-    </contour>
-    <contour>
-      <point x="230" y="786" type="line"/>
-      <point x="230" y="748" type="line"/>
-      <point x="300" y="686" type="line"/>
-      <point x="903" y="686" type="line"/>
-      <point x="903" y="724" type="line"/>
-      <point x="833" y="786" type="line"/>
-    </contour>
-    <component base="ra-deva"/>
-    <component base="aaMatra-deva" xOffset="677"/>
-    <contour>
-      <point x="180" y="0" type="move" name="nukta"/>
-    </contour>
+	<contour>
+	  <point x="724" y="494"/>
+	  <point x="586" y="390"/>
+	  <point x="466" y="304" type="curve"/>
+	  <point x="466" y="266" type="line"/>
+	  <point x="536" y="204" type="line"/>
+	  <point x="660" y="298"/>
+	  <point x="805" y="408"/>
+	  <point x="903" y="498" type="curve"/>
+	  <point x="903" y="536" type="line"/>
+	  <point x="824" y="586" type="line"/>
+	</contour>
+	<contour>
+	  <point x="773" y="282"/>
+	  <point x="695" y="213"/>
+	  <point x="613" y="147" type="curve"/>
+	  <point x="613" y="109" type="line"/>
+	  <point x="686" y="46" type="line"/>
+	  <point x="769" y="118"/>
+	  <point x="850" y="191"/>
+	  <point x="918" y="273" type="curve"/>
+	  <point x="918" y="311" type="line"/>
+	  <point x="840" y="358" type="line"/>
+	</contour>
+	<contour>
+	  <point x="546" y="620"/>
+	  <point x="450" y="562"/>
+	  <point x="291" y="420" type="curve"/>
+	  <point x="291" y="382" type="line"/>
+	  <point x="361" y="320" type="line"/>
+	  <point x="518" y="464"/>
+	  <point x="595" y="530"/>
+	  <point x="694" y="530" type="curve" smooth="yes"/>
+	  <point x="718" y="530"/>
+	  <point x="742" y="522"/>
+	  <point x="778" y="491" type="curve" smooth="yes"/>
+	  <point x="818" y="456" type="line"/>
+	  <point x="853" y="492" type="line"/>
+	  <point x="785" y="549" type="line" smooth="yes"/>
+	  <point x="711" y="611"/>
+	  <point x="677" y="620"/>
+	  <point x="624" y="620" type="curve" smooth="yes"/>
+	</contour>
+	<contour>
+	  <point x="230" y="786" type="line"/>
+	  <point x="230" y="748" type="line"/>
+	  <point x="300" y="686" type="line"/>
+	  <point x="903" y="686" type="line"/>
+	  <point x="903" y="724" type="line"/>
+	  <point x="833" y="786" type="line"/>
+	</contour>
+	<component base="ra-deva"/>
+	<component base="aaMatra-deva" xOffset="677"/>
+	<contour>
+	  <point x="180" y="0" type="move" name="nukta"/>
+	</contour>
   </outline>
   <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
-      <integer>8</integer>
-      <key>public.markColor</key>
-      <string>0.5,0.09,0.79,1</string>
-    </dict>
+	<dict>
+	  <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+	  <integer>8</integer>
+	  <key>public.markColor</key>
+	  <string>0.5,0.09,0.79,1</string>
+	</dict>
   </lib>
 </glyph>

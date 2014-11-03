@@ -3,19 +3,19 @@
   <advance width="280"/>
   <unicode hex="0902"/>
   <outline>
-    <contour>
-      <point x="40" y="1160" type="line"/>
-      <point x="40" y="1002" type="line"/>
-      <point x="162" y="955" type="line"/>
-      <point x="240" y="955" type="line"/>
-      <point x="240" y="1113" type="line"/>
-      <point x="118" y="1160" type="line"/>
-    </contour>
-    <contour>
-      <point x="143" y="1057" type="move" name="_anusvara"/>
-    </contour>
-    <contour>
-      <point x="40" y="786" type="move" name="_top"/>
-    </contour>
+	<contour>
+	  <point x="40" y="1160" type="line"/>
+	  <point x="40" y="1002" type="line"/>
+	  <point x="162" y="955" type="line"/>
+	  <point x="240" y="955" type="line"/>
+	  <point x="240" y="1113" type="line"/>
+	  <point x="118" y="1160" type="line"/>
+	</contour>
+	<contour>
+	  <point x="143" y="1057" type="move" name="_anusvara"/>
+	</contour>
+	<contour>
+	  <point x="40" y="786" type="move" name="_top"/>
+	</contour>
   </outline>
 </glyph>

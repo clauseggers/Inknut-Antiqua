@@ -2,10 +2,10 @@
 <glyph name="rakar_halant-deva" format="1">
   <advance width="600"/>
   <outline>
-    <component base="rakar-deva"/>
-    <component base="halant-deva" xOffset="249" yOffset="-136"/>
-    <contour>
-      <point x="207" y="0" type="move" name="_rakar"/>
-    </contour>
+	<component base="rakar-deva"/>
+	<component base="halant-deva" xOffset="249" yOffset="-136"/>
+	<contour>
+	  <point x="207" y="0" type="move" name="_rakar"/>
+	</contour>
   </outline>
 </glyph>

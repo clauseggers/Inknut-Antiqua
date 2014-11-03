@@ -2,56 +2,56 @@
 <glyph name="b-deva.short-low" format="1">
   <advance width="350"/>
   <outline>
-    <contour>
-      <point x="520" y="351" type="line"/>
-      <point x="447" y="296"/>
-      <point x="405" y="248"/>
-      <point x="338" y="248" type="curve" smooth="yes"/>
-      <point x="311" y="248"/>
-      <point x="297" y="269"/>
-      <point x="297" y="309" type="curve" smooth="yes"/>
-      <point x="297" y="360"/>
-      <point x="319" y="391"/>
-      <point x="359" y="391" type="curve" smooth="yes"/>
-      <point x="377" y="391"/>
-      <point x="393" y="389"/>
-      <point x="414" y="385" type="curve"/>
-      <point x="414" y="463" type="line"/>
-      <point x="247" y="555" type="line"/>
-      <point x="146" y="530"/>
-      <point x="81" y="458"/>
-      <point x="81" y="367" type="curve" smooth="yes"/>
-      <point x="81" y="225"/>
-      <point x="269" y="116"/>
-      <point x="408" y="116" type="curve" smooth="yes"/>
-      <point x="535" y="116"/>
-      <point x="595" y="151"/>
-      <point x="657" y="199" type="curve"/>
-    </contour>
-    <contour>
-      <point x="-165" y="786" type="line"/>
-      <point x="-165" y="708" type="line"/>
-      <point x="11" y="616" type="line"/>
-      <point x="515" y="616" type="line"/>
-      <point x="515" y="694" type="line"/>
-      <point x="339" y="786" type="line"/>
-    </contour>
-    <contour>
-      <point x="219" y="403" type="line"/>
-      <point x="507" y="170" type="line"/>
-      <point x="564" y="230" type="line"/>
-      <point x="281" y="458" type="line"/>
-    </contour>
-    <contour>
-      <point x="164" y="0" type="move" name="nukta"/>
-    </contour>
+	<contour>
+	  <point x="520" y="351" type="line"/>
+	  <point x="447" y="296"/>
+	  <point x="405" y="248"/>
+	  <point x="338" y="248" type="curve" smooth="yes"/>
+	  <point x="311" y="248"/>
+	  <point x="297" y="269"/>
+	  <point x="297" y="309" type="curve" smooth="yes"/>
+	  <point x="297" y="360"/>
+	  <point x="319" y="391"/>
+	  <point x="359" y="391" type="curve" smooth="yes"/>
+	  <point x="377" y="391"/>
+	  <point x="393" y="389"/>
+	  <point x="414" y="385" type="curve"/>
+	  <point x="414" y="463" type="line"/>
+	  <point x="247" y="555" type="line"/>
+	  <point x="146" y="530"/>
+	  <point x="81" y="458"/>
+	  <point x="81" y="367" type="curve" smooth="yes"/>
+	  <point x="81" y="225"/>
+	  <point x="269" y="116"/>
+	  <point x="408" y="116" type="curve" smooth="yes"/>
+	  <point x="535" y="116"/>
+	  <point x="595" y="151"/>
+	  <point x="657" y="199" type="curve"/>
+	</contour>
+	<contour>
+	  <point x="-165" y="786" type="line"/>
+	  <point x="-165" y="708" type="line"/>
+	  <point x="11" y="616" type="line"/>
+	  <point x="515" y="616" type="line"/>
+	  <point x="515" y="694" type="line"/>
+	  <point x="339" y="786" type="line"/>
+	</contour>
+	<contour>
+	  <point x="219" y="403" type="line"/>
+	  <point x="507" y="170" type="line"/>
+	  <point x="564" y="230" type="line"/>
+	  <point x="281" y="458" type="line"/>
+	</contour>
+	<contour>
+	  <point x="164" y="0" type="move" name="nukta"/>
+	</contour>
   </outline>
   <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
-      <integer>7</integer>
-      <key>public.markColor</key>
-      <string>0.18,0.16,0.78,1</string>
-    </dict>
+	<dict>
+	  <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+	  <integer>7</integer>
+	  <key>public.markColor</key>
+	  <string>0.18,0.16,0.78,1</string>
+	</dict>
   </lib>
 </glyph>

@@ -2,18 +2,18 @@
 <glyph name="pa_ra-deva" format="1">
   <advance width="728"/>
   <outline>
-    <component base="pa-deva"/>
-    <component base="r-deva.leg" xOffset="2" yOffset="1"/>
-    <contour>
-      <point x="475" y="-163" type="move" name="nukta"/>
-    </contour>
+	<component base="pa-deva"/>
+	<component base="r-deva.leg" xOffset="2" yOffset="1"/>
+	<contour>
+	  <point x="475" y="-163" type="move" name="nukta"/>
+	</contour>
   </outline>
   <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
-      <integer>5</integer>
-      <key>public.markColor</key>
-      <string>0.04,0.57,0.04,1</string>
-    </dict>
+	<dict>
+	  <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+	  <integer>5</integer>
+	  <key>public.markColor</key>
+	  <string>0.04,0.57,0.04,1</string>
+	</dict>
   </lib>
 </glyph>

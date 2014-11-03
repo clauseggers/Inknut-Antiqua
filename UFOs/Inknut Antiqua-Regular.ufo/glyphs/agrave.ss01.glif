@@ -2,7 +2,7 @@
 <glyph name="agrave.ss01" format="1">
   <advance width="715"/>
   <outline>
-    <component base="a.ss01"/>
-    <component base="grave" xOffset="88"/>
+	<component base="a.ss01"/>
+	<component base="grave" xOffset="88"/>
   </outline>
 </glyph>

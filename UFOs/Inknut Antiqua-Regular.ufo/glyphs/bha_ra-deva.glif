@@ -2,19 +2,19 @@
 <glyph name="bha_ra-deva" format="1">
   <advance width="758"/>
   <outline>
-    <component base="bh-deva.init"/>
-    <component base="r-deva.leg" xOffset="186" yOffset="-27"/>
-    <component base="aaMatra-deva" xOffset="430"/>
-    <contour>
-      <point x="543" y="-176" type="move" name="nukta"/>
-    </contour>
+	<component base="bh-deva.init"/>
+	<component base="r-deva.leg" xOffset="186" yOffset="-27"/>
+	<component base="aaMatra-deva" xOffset="430"/>
+	<contour>
+	  <point x="543" y="-176" type="move" name="nukta"/>
+	</contour>
   </outline>
   <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
-      <integer>5</integer>
-      <key>public.markColor</key>
-      <string>0.04,0.57,0.04,1</string>
-    </dict>
+	<dict>
+	  <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+	  <integer>5</integer>
+	  <key>public.markColor</key>
+	  <string>0.04,0.57,0.04,1</string>
+	</dict>
   </lib>
 </glyph>

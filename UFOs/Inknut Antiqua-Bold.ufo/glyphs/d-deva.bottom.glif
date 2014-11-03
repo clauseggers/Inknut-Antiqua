@@ -2,65 +2,65 @@
 <glyph name="d-deva.bottom" format="1">
   <advance width="875"/>
   <outline>
-    <contour>
-      <point x="265" y="119" type="line" smooth="yes"/>
-      <point x="160" y="119"/>
-      <point x="60" y="42"/>
-      <point x="60" y="-46" type="curve" smooth="yes"/>
-      <point x="60" y="-189"/>
-      <point x="291" y="-324"/>
-      <point x="553" y="-324" type="curve" smooth="yes"/>
-      <point x="675" y="-324"/>
-      <point x="747" y="-269"/>
-      <point x="747" y="-213" type="curve" smooth="yes"/>
-      <point x="747" y="-139"/>
-      <point x="579" y="-68"/>
-      <point x="470" y="-68" type="curve" smooth="yes"/>
-      <point x="415" y="-68"/>
-      <point x="396" y="-83"/>
-      <point x="396" y="-108" type="curve" smooth="yes"/>
-      <point x="396" y="-152"/>
-      <point x="408" y="-201"/>
-      <point x="424" y="-241" type="curve"/>
-      <point x="475" y="-127" type="line"/>
-      <point x="424" y="-176"/>
-      <point x="397" y="-203"/>
-      <point x="336" y="-203" type="curve" smooth="yes"/>
-      <point x="268" y="-203"/>
-      <point x="232" y="-152"/>
-      <point x="232" y="-113" type="curve" smooth="yes"/>
-      <point x="232" y="-75"/>
-      <point x="265" y="-51"/>
-      <point x="331" y="-51" type="curve" smooth="yes"/>
-      <point x="567" y="-51" type="line"/>
-      <point x="567" y="119" type="line"/>
-    </contour>
-    <contour>
-      <point x="384" y="-270" type="line"/>
-      <point x="765" y="-472" type="line"/>
-      <point x="815" y="-407" type="line"/>
-      <point x="434" y="-205" type="line"/>
-    </contour>
-    <contour>
-      <point x="367" y="180" type="line"/>
-      <point x="367" y="42" type="line"/>
-      <point x="489" y="-5" type="line"/>
-      <point x="567" y="-5" type="line"/>
-      <point x="567" y="180" type="line"/>
-    </contour>
-    <contour>
-      <point x="367" y="130" type="move" name="_bottom"/>
-    </contour>
-    <contour>
-      <point x="467" y="-324" type="move" name="rakar"/>
-    </contour>
+	<contour>
+	  <point x="265" y="119" type="line" smooth="yes"/>
+	  <point x="160" y="119"/>
+	  <point x="60" y="42"/>
+	  <point x="60" y="-46" type="curve" smooth="yes"/>
+	  <point x="60" y="-189"/>
+	  <point x="291" y="-324"/>
+	  <point x="553" y="-324" type="curve" smooth="yes"/>
+	  <point x="675" y="-324"/>
+	  <point x="747" y="-269"/>
+	  <point x="747" y="-213" type="curve" smooth="yes"/>
+	  <point x="747" y="-139"/>
+	  <point x="579" y="-68"/>
+	  <point x="470" y="-68" type="curve" smooth="yes"/>
+	  <point x="415" y="-68"/>
+	  <point x="396" y="-83"/>
+	  <point x="396" y="-108" type="curve" smooth="yes"/>
+	  <point x="396" y="-152"/>
+	  <point x="408" y="-201"/>
+	  <point x="424" y="-241" type="curve"/>
+	  <point x="475" y="-127" type="line"/>
+	  <point x="424" y="-176"/>
+	  <point x="397" y="-203"/>
+	  <point x="336" y="-203" type="curve" smooth="yes"/>
+	  <point x="268" y="-203"/>
+	  <point x="232" y="-152"/>
+	  <point x="232" y="-113" type="curve" smooth="yes"/>
+	  <point x="232" y="-75"/>
+	  <point x="265" y="-51"/>
+	  <point x="331" y="-51" type="curve" smooth="yes"/>
+	  <point x="567" y="-51" type="line"/>
+	  <point x="567" y="119" type="line"/>
+	</contour>
+	<contour>
+	  <point x="384" y="-270" type="line"/>
+	  <point x="765" y="-472" type="line"/>
+	  <point x="815" y="-407" type="line"/>
+	  <point x="434" y="-205" type="line"/>
+	</contour>
+	<contour>
+	  <point x="367" y="180" type="line"/>
+	  <point x="367" y="42" type="line"/>
+	  <point x="489" y="-5" type="line"/>
+	  <point x="567" y="-5" type="line"/>
+	  <point x="567" y="180" type="line"/>
+	</contour>
+	<contour>
+	  <point x="367" y="130" type="move" name="_bottom"/>
+	</contour>
+	<contour>
+	  <point x="467" y="-324" type="move" name="rakar"/>
+	</contour>
   </outline>
   <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
-      <integer>7</integer>
-      <key>public.markColor</key>
-      <string>0.18,0.16,0.78,1</string>
-    </dict>
+	<dict>
+	  <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+	  <integer>7</integer>
+	  <key>public.markColor</key>
+	  <string>0.18,0.16,0.78,1</string>
+	</dict>
   </lib>
 </glyph>

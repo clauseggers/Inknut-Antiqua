@@ -2,18 +2,18 @@
 <glyph name="rakar_uuMatra-deva" format="1">
   <advance width="600"/>
   <outline>
-    <component base="rakar-deva"/>
-    <component base="uuMatra-deva" xOffset="40" yOffset="-170"/>
-    <contour>
-      <point x="207" y="0" type="move" name="_bottom"/>
-    </contour>
+	<component base="rakar-deva"/>
+	<component base="uuMatra-deva" xOffset="40" yOffset="-170"/>
+	<contour>
+	  <point x="207" y="0" type="move" name="_bottom"/>
+	</contour>
   </outline>
   <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
-      <integer>5</integer>
-      <key>public.markColor</key>
-      <string>0.04,0.57,0.04,1</string>
-    </dict>
+	<dict>
+	  <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+	  <integer>5</integer>
+	  <key>public.markColor</key>
+	  <string>0.04,0.57,0.04,1</string>
+	</dict>
   </lib>
 </glyph>

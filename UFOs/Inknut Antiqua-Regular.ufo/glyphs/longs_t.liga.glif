@@ -2,45 +2,45 @@
 <glyph name="longs_t.liga" format="1">
   <advance width="869"/>
   <outline>
-    <contour>
-      <point x="319" y="853"/>
-      <point x="143" y="722"/>
-      <point x="143" y="560" type="curve" smooth="yes"/>
-      <point x="143" y="0" type="line"/>
-      <point x="263" y="0" type="line"/>
-      <point x="263" y="608" type="line" smooth="yes"/>
-      <point x="263" y="713"/>
-      <point x="319" y="769"/>
-      <point x="386" y="769" type="curve" smooth="yes"/>
-      <point x="443" y="769"/>
-      <point x="520" y="712"/>
-      <point x="557" y="614" type="curve"/>
-      <point x="657" y="722" type="line"/>
-      <point x="620" y="785"/>
-      <point x="519" y="853"/>
-      <point x="454" y="853" type="curve" smooth="yes"/>
-    </contour>
-    <contour>
-      <point x="25" y="501" type="line"/>
-      <point x="25" y="460" type="line"/>
-      <point x="203" y="460" type="line"/>
-      <point x="203" y="501" type="line"/>
-    </contour>
-    <contour>
-      <point x="54" y="31" type="line"/>
-      <point x="54" y="0" type="line"/>
-      <point x="383" y="0" type="line"/>
-      <point x="403" y="40" type="line"/>
-      <point x="160" y="114" type="line"/>
-    </contour>
-    <component base="t" xOffset="413"/>
+	<contour>
+	  <point x="319" y="853"/>
+	  <point x="143" y="722"/>
+	  <point x="143" y="560" type="curve" smooth="yes"/>
+	  <point x="143" y="0" type="line"/>
+	  <point x="263" y="0" type="line"/>
+	  <point x="263" y="608" type="line" smooth="yes"/>
+	  <point x="263" y="713"/>
+	  <point x="319" y="769"/>
+	  <point x="386" y="769" type="curve" smooth="yes"/>
+	  <point x="443" y="769"/>
+	  <point x="520" y="712"/>
+	  <point x="557" y="614" type="curve"/>
+	  <point x="657" y="722" type="line"/>
+	  <point x="620" y="785"/>
+	  <point x="519" y="853"/>
+	  <point x="454" y="853" type="curve" smooth="yes"/>
+	</contour>
+	<contour>
+	  <point x="25" y="501" type="line"/>
+	  <point x="25" y="460" type="line"/>
+	  <point x="203" y="460" type="line"/>
+	  <point x="203" y="501" type="line"/>
+	</contour>
+	<contour>
+	  <point x="54" y="31" type="line"/>
+	  <point x="54" y="0" type="line"/>
+	  <point x="383" y="0" type="line"/>
+	  <point x="403" y="40" type="line"/>
+	  <point x="160" y="114" type="line"/>
+	</contour>
+	<component base="t" xOffset="413"/>
   </outline>
   <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
-      <integer>8</integer>
-      <key>public.markColor</key>
-      <string>0.5,0.09,0.79,1</string>
-    </dict>
+	<dict>
+	  <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+	  <integer>8</integer>
+	  <key>public.markColor</key>
+	  <string>0.5,0.09,0.79,1</string>
+	</dict>
   </lib>
 </glyph>

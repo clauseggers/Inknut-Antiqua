@@ -438,8 +438,8 @@
 	<string>b_la-deva.glif</string>
 	<key>b_na-deva</key>
 	<string>b_na-deva.glif</string>
-	<key>b_r-deva</key>
-	<string>b_r-deva.glif</string>
+	<key>b_ra-deva</key>
+	<string>b_ra-deva.glif</string>
 	<key>b_sa-deva</key>
 	<string>b_sa-deva.glif</string>
 	<key>b_sha-deva</key>
@@ -470,8 +470,8 @@
 	<string>bh-deva.medi.glif</string>
 	<key>bh_na-deva</key>
 	<string>bh_na-deva.glif</string>
-	<key>bh_r-deva</key>
-	<string>bh_r-deva.glif</string>
+	<key>bh_ra-deva</key>
+	<string>bh_ra-deva.glif</string>
 	<key>bh_va-deva</key>
 	<string>bh_va-deva.glif</string>
 	<key>bh_ya-deva</key>
@@ -484,10 +484,6 @@
 	<string>bha_ra-deva.glif</string>
 	<key>bha_ra_ya-deva</key>
 	<string>bha_ra_ya-deva.glif</string>
-	<key>blackLeftPointingIndex</key>
-	<string>blackL_eftP_ointingI_ndex.glif</string>
-	<key>blackRightPointingIndex</key>
-	<string>blackR_ightP_ointingI_ndex.glif</string>
 	<key>braceleft</key>
 	<string>braceleft.glif</string>
 	<key>braceright</key>
@@ -530,8 +526,8 @@
 	<string>c_ma-deva.glif</string>
 	<key>c_na-deva</key>
 	<string>c_na-deva.glif</string>
-	<key>c_r-deva</key>
-	<string>c_r-deva.glif</string>
+	<key>c_ra-deva</key>
+	<string>c_ra-deva.glif</string>
 	<key>c_t</key>
 	<string>c_t.glif</string>
 	<key>c_ya-deva</key>
@@ -570,8 +566,8 @@
 	<string>ch-deva.glif</string>
 	<key>ch_na-deva</key>
 	<string>ch_na-deva.glif</string>
-	<key>ch_r-deva</key>
-	<string>ch_r-deva.glif</string>
+	<key>ch_ra-deva</key>
+	<string>ch_ra-deva.glif</string>
 	<key>ch_va-deva</key>
 	<string>ch_va-deva.glif</string>
 	<key>ch_ya-deva</key>
@@ -636,8 +632,8 @@
 	<string>d_na-deva.glif</string>
 	<key>d_na-deva.ss12</key>
 	<string>d_na-deva.ss12.glif</string>
-	<key>d_r-deva</key>
-	<string>d_r-deva.glif</string>
+	<key>d_ra-deva</key>
+	<string>d_ra-deva.glif</string>
 	<key>d_v_ya-deva</key>
 	<string>d_v_ya-deva.glif</string>
 	<key>d_va-deva</key>
@@ -694,8 +690,8 @@
 	<string>dd_ma-deva.glif</string>
 	<key>dd_na-deva</key>
 	<string>dd_na-deva.glif</string>
-	<key>dd_r-deva</key>
-	<string>dd_r-deva.glif</string>
+	<key>dd_ra-deva</key>
+	<string>dd_ra-deva.glif</string>
 	<key>dd_tta-deva</key>
 	<string>dd_tta-deva.glif</string>
 	<key>dd_ttha-deva</key>
@@ -730,8 +726,8 @@
 	<string>ddh_ma-deva.glif</string>
 	<key>ddh_na-deva</key>
 	<string>ddh_na-deva.glif</string>
-	<key>ddh_r-deva</key>
-	<string>ddh_r-deva.glif</string>
+	<key>ddh_ra-deva</key>
+	<string>ddh_ra-deva.glif</string>
 	<key>ddh_ya-deva</key>
 	<string>ddh_ya-deva.glif</string>
 	<key>ddha-deva</key>
@@ -748,8 +744,8 @@
 	<string>dh_n_ya-deva.glif</string>
 	<key>dh_na-deva</key>
 	<string>dh_na-deva.glif</string>
-	<key>dh_r-deva</key>
-	<string>dh_r-deva.glif</string>
+	<key>dh_ra-deva</key>
+	<string>dh_ra-deva.glif</string>
 	<key>dh_va-deva</key>
 	<string>dh_va-deva.glif</string>
 	<key>dh_va_ra-deva</key>
@@ -774,16 +770,14 @@
 	<string>dollar.glif</string>
 	<key>dotaccent</key>
 	<string>dotaccent.glif</string>
-	<key>dotlessi</key>
-	<string>dotlessi.glif</string>
-	<key>dotlessj</key>
-	<string>dotlessj.glif</string>
 	<key>dottedCircle</key>
 	<string>dottedC_ircle.glif</string>
 	<key>downArrow</key>
 	<string>downA_rrow.glif</string>
 	<key>downArrow.case</key>
 	<string>downA_rrow.case.glif</string>
+	<key>downWhitePointingindex</key>
+	<string>downW_hiteP_ointingindex.glif</string>
 	<key>e</key>
 	<string>e.glif</string>
 	<key>e-deva</key>
@@ -1038,8 +1032,8 @@
 	<string>g_nna-deva.glif</string>
 	<key>g_nna-deva.ss11</key>
 	<string>g_nna-deva.ss11.glif</string>
-	<key>g_r-deva</key>
-	<string>g_r-deva.glif</string>
+	<key>g_ra-deva</key>
+	<string>g_ra-deva.glif</string>
 	<key>g_sa-deva</key>
 	<string>g_sa-deva.glif</string>
 	<key>g_va-deva</key>
@@ -1078,8 +1072,8 @@
 	<string>gh_ma-deva.glif</string>
 	<key>gh_na-deva</key>
 	<string>gh_na-deva.glif</string>
-	<key>gh_r-deva</key>
-	<string>gh_r-deva.glif</string>
+	<key>gh_ra-deva</key>
+	<string>gh_ra-deva.glif</string>
 	<key>gh_ya-deva</key>
 	<string>gh_ya-deva.glif</string>
 	<key>gha-deva</key>
@@ -1128,8 +1122,8 @@
 	<string>h.glif</string>
 	<key>h-deva</key>
 	<string>h-deva.glif</string>
-	<key>h-deva.half</key>
-	<string>h-deva.half.glif</string>
+	<key>h-deva.connect</key>
+	<string>h-deva.connect.glif</string>
 	<key>h-deva.up</key>
 	<string>h-deva.up.glif</string>
 	<key>h_la-deva</key>
@@ -1144,8 +1138,8 @@
 	<string>h_nna-deva.glif</string>
 	<key>h_nna-deva.ss11</key>
 	<string>h_nna-deva.ss11.glif</string>
-	<key>h_r-deva</key>
-	<string>h_r-deva.glif</string>
+	<key>h_ra-deva</key>
+	<string>h_ra-deva.glif</string>
 	<key>h_va-deva</key>
 	<string>h_va-deva.glif</string>
 	<key>h_ya-deva</key>
@@ -1264,6 +1258,8 @@
 	<string>idieresis.glif</string>
 	<key>idotaccent</key>
 	<string>idotaccent.glif</string>
+	<key>idotless</key>
+	<string>idotless.glif</string>
 	<key>igrave</key>
 	<string>igrave.glif</string>
 	<key>ii-deva</key>
@@ -1400,8 +1396,8 @@
 	<string>j_ny_ya-deva.glif</string>
 	<key>j_nya-deva</key>
 	<string>j_nya-deva.glif</string>
-	<key>j_r-deva</key>
-	<string>j_r-deva.glif</string>
+	<key>j_ra-deva</key>
+	<string>j_ra-deva.glif</string>
 	<key>j_ta-deva</key>
 	<string>j_ta-deva.glif</string>
 	<key>j_tta-deva</key>
@@ -1414,6 +1410,8 @@
 	<string>ja-deva.glif</string>
 	<key>ja_ra-deva</key>
 	<string>ja_ra-deva.glif</string>
+	<key>jdotless</key>
+	<string>jdotless.glif</string>
 	<key>jh-deva</key>
 	<string>jh-deva.glif</string>
 	<key>jh-deva.high.ss11</key>
@@ -1430,8 +1428,8 @@
 	<string>jh_na-deva.glif</string>
 	<key>jh_na-deva.ss11</key>
 	<string>jh_na-deva.ss11.glif</string>
-	<key>jh_r-deva</key>
-	<string>jh_r-deva.glif</string>
+	<key>jh_ra-deva</key>
+	<string>jh_ra-deva.glif</string>
 	<key>jh_ya-deva</key>
 	<string>jh_ya-deva.glif</string>
 	<key>jh_ya-deva.ss11</key>
@@ -1480,8 +1478,8 @@
 	<string>k_pa_ra-deva.glif</string>
 	<key>k_pha-deva</key>
 	<string>k_pha-deva.glif</string>
-	<key>k_r-deva</key>
-	<string>k_r-deva.glif</string>
+	<key>k_ra-deva</key>
+	<string>k_ra-deva.glif</string>
 	<key>k_s_dda-deva</key>
 	<string>k_s_dda-deva.glif</string>
 	<key>k_s_p_la-deva</key>
@@ -1556,8 +1554,8 @@
 	<string>kh_ma-deva.glif</string>
 	<key>kh_na-deva</key>
 	<string>kh_na-deva.glif</string>
-	<key>kh_r-deva</key>
-	<string>kh_r-deva.glif</string>
+	<key>kh_ra-deva</key>
+	<string>kh_ra-deva.glif</string>
 	<key>kh_sha-deva</key>
 	<string>kh_sha-deva.glif</string>
 	<key>kh_ta-deva</key>
@@ -1640,8 +1638,8 @@
 	<string>l_pa-deva.glif</string>
 	<key>l_pha-deva</key>
 	<string>l_pha-deva.glif</string>
-	<key>l_r-deva</key>
-	<string>l_r-deva.glif</string>
+	<key>l_ra-deva</key>
+	<string>l_ra-deva.glif</string>
 	<key>l_sa-deva</key>
 	<string>l_sa-deva.glif</string>
 	<key>l_ta-deva</key>
@@ -1686,6 +1684,8 @@
 	<string>leftA_rrow.glif</string>
 	<key>leftArrow.case</key>
 	<string>leftA_rrow.case.glif</string>
+	<key>leftBlackPointingIndex</key>
+	<string>leftB_lackP_ointingI_ndex.glif</string>
 	<key>leftFacingSvasti</key>
 	<string>leftF_acingS_vasti.glif</string>
 	<key>leftFacingSvastiWithDots</key>
@@ -1694,6 +1694,8 @@
 	<string>leftR_ightA_rrow.glif</string>
 	<key>leftRightArrow.case</key>
 	<string>leftR_ightA_rrow.case.glif</string>
+	<key>leftWhitePointingindex</key>
+	<string>leftW_hiteP_ointingindex.glif</string>
 	<key>less</key>
 	<string>less.glif</string>
 	<key>less.case</key>
@@ -1710,8 +1712,8 @@
 	<string>llV_ocalic-deva.glif</string>
 	<key>llVocalicMatra-deva</key>
 	<string>llV_ocalicM_atra-deva.glif</string>
-	<key>ll_r-deva</key>
-	<string>ll_r-deva.glif</string>
+	<key>ll_ra-deva</key>
+	<string>ll_ra-deva.glif</string>
 	<key>ll_ya-deva</key>
 	<string>ll_ya-deva.glif</string>
 	<key>lla-deva</key>
@@ -1720,8 +1722,8 @@
 	<string>lla_ra-deva.glif</string>
 	<key>lll-deva</key>
 	<string>lll-deva.glif</string>
-	<key>lll_r-deva</key>
-	<string>lll_r-deva.glif</string>
+	<key>lll_ra-deva</key>
+	<string>lll_ra-deva.glif</string>
 	<key>llla-deva</key>
 	<string>llla-deva.glif</string>
 	<key>logicalnot</key>
@@ -1788,8 +1790,8 @@
 	<string>m_pa-deva.glif</string>
 	<key>m_pa_ra-deva</key>
 	<string>m_pa_ra-deva.glif</string>
-	<key>m_r-deva</key>
-	<string>m_r-deva.glif</string>
+	<key>m_ra-deva</key>
+	<string>m_ra-deva.glif</string>
 	<key>m_sa-deva</key>
 	<string>m_sa-deva.glif</string>
 	<key>m_sha-deva</key>
@@ -1854,14 +1856,14 @@
 	<string>n_da_ra-deva.glif</string>
 	<key>n_dda-deva</key>
 	<string>n_dda-deva.glif</string>
-	<key>n_dh_ra-deva</key>
-	<string>n_dh_ra-deva.glif</string>
 	<key>n_dh_va-deva</key>
 	<string>n_dh_va-deva.glif</string>
 	<key>n_dh_ya-deva</key>
 	<string>n_dh_ya-deva.glif</string>
 	<key>n_dha-deva</key>
 	<string>n_dha-deva.glif</string>
+	<key>n_dha_ra-deva</key>
+	<string>n_dha_ra-deva.glif</string>
 	<key>n_h_ya-deva</key>
 	<string>n_h_ya-deva.glif</string>
 	<key>n_ha-deva</key>
@@ -1886,8 +1888,8 @@
 	<string>n_pa_ra-deva.glif</string>
 	<key>n_pha-deva</key>
 	<string>n_pha-deva.glif</string>
-	<key>n_r-deva</key>
-	<string>n_r-deva.glif</string>
+	<key>n_ra-deva</key>
+	<string>n_ra-deva.glif</string>
 	<key>n_s_tta-deva</key>
 	<string>n_s_tta-deva.glif</string>
 	<key>n_sa-deva</key>
@@ -1958,8 +1960,8 @@
 	<string>ng_ma-deva.glif</string>
 	<key>ng_ma-deva.001</key>
 	<string>ng_ma-deva.001.glif</string>
-	<key>ng_r-deva</key>
-	<string>ng_r-deva.glif</string>
+	<key>ng_ra-deva</key>
+	<string>ng_ra-deva.glif</string>
 	<key>ng_ya-deva</key>
 	<string>ng_ya-deva.glif</string>
 	<key>nga-deva</key>
@@ -1998,8 +2000,8 @@
 	<string>nn_nna-deva.glif</string>
 	<key>nn_nna-deva.ss11</key>
 	<string>nn_nna-deva.ss11.glif</string>
-	<key>nn_r-deva</key>
-	<string>nn_r-deva.glif</string>
+	<key>nn_ra-deva</key>
+	<string>nn_ra-deva.glif</string>
 	<key>nn_tta-deva</key>
 	<string>nn_tta-deva.glif</string>
 	<key>nn_tta-deva.ss11</key>
@@ -2026,8 +2028,8 @@
 	<string>nna_ra-deva.ss11.glif</string>
 	<key>nnn-deva</key>
 	<string>nnn-deva.glif</string>
-	<key>nnn_r-deva</key>
-	<string>nnn_r-deva.glif</string>
+	<key>nnn_ra-deva</key>
+	<string>nnn_ra-deva.glif</string>
 	<key>nnna-deva</key>
 	<string>nnna-deva.glif</string>
 	<key>northEastArrow</key>
@@ -2090,12 +2092,14 @@
 	<string>ny_ca-deva.glif</string>
 	<key>ny_cha-deva</key>
 	<string>ny_cha-deva.glif</string>
+	<key>ny_j_nya-deva</key>
+	<string>ny_j_nya-deva.glif</string>
 	<key>ny_j_ya-deva</key>
 	<string>ny_j_ya-deva.glif</string>
 	<key>ny_ja-deva</key>
 	<string>ny_ja-deva.glif</string>
-	<key>ny_r-deva</key>
-	<string>ny_r-deva.glif</string>
+	<key>ny_ra-deva</key>
+	<string>ny_ra-deva.glif</string>
 	<key>ny_sha-deva</key>
 	<string>ny_sha-deva.glif</string>
 	<key>nya-deva</key>
@@ -2202,8 +2206,8 @@
 	<string>p_pa-deva.glif</string>
 	<key>p_pha-deva</key>
 	<string>p_pha-deva.glif</string>
-	<key>p_r-deva</key>
-	<string>p_r-deva.glif</string>
+	<key>p_ra-deva</key>
+	<string>p_ra-deva.glif</string>
 	<key>p_ra_pa-deva</key>
 	<string>p_ra_pa-deva.glif</string>
 	<key>p_sa-deva</key>
@@ -2262,8 +2266,8 @@
 	<string>ph_pa-deva.glif</string>
 	<key>ph_pha-deva</key>
 	<string>ph_pha-deva.glif</string>
-	<key>ph_r-deva</key>
-	<string>ph_r-deva.glif</string>
+	<key>ph_ra-deva</key>
+	<string>ph_ra-deva.glif</string>
 	<key>ph_sha-deva</key>
 	<string>ph_sha-deva.glif</string>
 	<key>ph_ta-deva</key>
@@ -2286,14 +2290,6 @@
 	<string>plusminus.glif</string>
 	<key>plusminus.case</key>
 	<string>plusminus.case.glif</string>
-	<key>pointingindexdownwhite</key>
-	<string>pointingindexdownwhite.glif</string>
-	<key>pointingindexleftwhite</key>
-	<string>pointingindexleftwhite.glif</string>
-	<key>pointingindexrightwhite</key>
-	<string>pointingindexrightwhite.glif</string>
-	<key>pointingindexupwhite</key>
-	<string>pointingindexupwhite.glif</string>
 	<key>prishthaMatraE-deva</key>
 	<string>prishthaM_atraE_-deva.glif</string>
 	<key>product</key>
@@ -2318,8 +2314,8 @@
 	<string>q_pha-deva.glif</string>
 	<key>q_qa-deva</key>
 	<string>q_qa-deva.glif</string>
-	<key>q_r-deva</key>
-	<string>q_r-deva.glif</string>
+	<key>q_ra-deva</key>
+	<string>q_ra-deva.glif</string>
 	<key>q_ta-deva</key>
 	<string>q_ta-deva.glif</string>
 	<key>qa-deva</key>
@@ -2428,10 +2424,14 @@
 	<string>rightA_rrow.glif</string>
 	<key>rightArrow.case</key>
 	<string>rightA_rrow.case.glif</string>
+	<key>rightBlackPointingIndex</key>
+	<string>rightB_lackP_ointingI_ndex.glif</string>
 	<key>rightFacingSvasti</key>
 	<string>rightF_acingS_vasti.glif</string>
 	<key>rightFacingSvastiWithDots</key>
 	<string>rightF_acingS_vastiW_ithD_ots.glif</string>
+	<key>rightWhitePointingindex</key>
+	<string>rightW_hiteP_ointingindex.glif</string>
 	<key>ring</key>
 	<string>ring.glif</string>
 	<key>rotatedFloralHeartBullet</key>
@@ -2508,16 +2508,20 @@
 	<string>s_pa_ra-deva.glif</string>
 	<key>s_pha-deva</key>
 	<string>s_pha-deva.glif</string>
-	<key>s_r-deva</key>
-	<string>s_r-deva.glif</string>
+	<key>s_ra-deva</key>
+	<string>s_ra-deva.glif</string>
 	<key>s_sa-deva</key>
 	<string>s_sa-deva.glif</string>
 	<key>s_t</key>
 	<string>s_t.glif</string>
-	<key>s_t_r-deva</key>
-	<string>s_t_r-deva.glif</string>
-	<key>s_t_r-deva.loclMAR</key>
-	<string>s_t_r-deva.loclM_A_R_.glif</string>
+	<key>s_t_ra-deva</key>
+	<string>s_t_ra-deva.glif</string>
+	<key>s_t_ra-deva.loclMAR</key>
+	<string>s_t_ra-deva.loclM_A_R_.glif</string>
+	<key>s_t_ra_ya-deva</key>
+	<string>s_t_ra_ya-deva.glif</string>
+	<key>s_t_ra_ya-deva.loclMAR</key>
+	<string>s_t_ra_ya-deva.loclM_A_R_.glif</string>
 	<key>s_t_va-deva</key>
 	<string>s_t_va-deva.glif</string>
 	<key>s_t_ya-deva</key>
@@ -2526,10 +2530,6 @@
 	<string>s_ta-deva.glif</string>
 	<key>s_ta_ra-deva</key>
 	<string>s_ta_ra-deva.glif</string>
-	<key>s_ta_ra_ya-deva</key>
-	<string>s_ta_ra_ya-deva.glif</string>
-	<key>s_ta_ra_ya-deva.loclMAR</key>
-	<string>s_ta_ra_ya-deva.loclM_A_R_.glif</string>
 	<key>s_th_ya-deva</key>
 	<string>s_th_ya-deva.glif</string>
 	<key>s_tha-deva</key>
@@ -2602,8 +2602,10 @@
 	<string>sh_na-deva.glif</string>
 	<key>sh_qa-deva</key>
 	<string>sh_qa-deva.glif</string>
-	<key>sh_r-deva</key>
-	<string>sh_r-deva.glif</string>
+	<key>sh_ra-deva</key>
+	<string>sh_ra-deva.glif</string>
+	<key>sh_ra_ya-deva</key>
+	<string>sh_ra_ya-deva.glif</string>
 	<key>sh_sha-deva</key>
 	<string>sh_sha-deva.glif</string>
 	<key>sh_ta-deva</key>
@@ -2622,8 +2624,6 @@
 	<string>sha_V_ocalicM_atra-deva.glif</string>
 	<key>sha_ra-deva</key>
 	<string>sha_ra-deva.glif</string>
-	<key>sha_ra_ya-deva</key>
-	<string>sha_ra_ya-deva.glif</string>
 	<key>six</key>
 	<string>six.glif</string>
 	<key>six-deva</key>
@@ -2688,8 +2688,8 @@
 	<string>ss_pa_ra-deva.glif</string>
 	<key>ss_pha-deva</key>
 	<string>ss_pha-deva.glif</string>
-	<key>ss_r-deva</key>
-	<string>ss_r-deva.glif</string>
+	<key>ss_ra-deva</key>
+	<string>ss_ra-deva.glif</string>
 	<key>ss_ssa-deva</key>
 	<string>ss_ssa-deva.glif</string>
 	<key>ss_tt_va-deva</key>
@@ -2762,12 +2762,12 @@
 	<string>t_pa_ra-deva.glif</string>
 	<key>t_pha-deva</key>
 	<string>t_pha-deva.glif</string>
-	<key>t_r-deva</key>
-	<string>t_r-deva.glif</string>
-	<key>t_r-deva.low</key>
-	<string>t_r-deva.low.glif</string>
-	<key>t_r-deva.short</key>
-	<string>t_r-deva.short.glif</string>
+	<key>t_ra-deva</key>
+	<string>t_ra-deva.glif</string>
+	<key>t_ra-deva.low</key>
+	<string>t_ra-deva.low.glif</string>
+	<key>t_ra-deva.short</key>
+	<string>t_ra-deva.short.glif</string>
 	<key>t_s_na-deva</key>
 	<string>t_s_na-deva.glif</string>
 	<key>t_s_va-deva</key>
@@ -2818,8 +2818,8 @@
 	<string>th-deva.short.glif</string>
 	<key>th_na-deva</key>
 	<string>th_na-deva.glif</string>
-	<key>th_r-deva</key>
-	<string>th_r-deva.glif</string>
+	<key>th_ra-deva</key>
+	<string>th_ra-deva.glif</string>
 	<key>th_va-deva</key>
 	<string>th_va-deva.glif</string>
 	<key>th_ya-deva</key>
@@ -2866,8 +2866,8 @@
 	<string>tt_ma-deva.glif</string>
 	<key>tt_na-deva</key>
 	<string>tt_na-deva.glif</string>
-	<key>tt_r-deva</key>
-	<string>tt_r-deva.glif</string>
+	<key>tt_ra-deva</key>
+	<string>tt_ra-deva.glif</string>
 	<key>tt_tt_ya-deva</key>
 	<string>tt_tt_ya-deva.glif</string>
 	<key>tt_tta-deva</key>
@@ -2892,8 +2892,8 @@
 	<string>tth_ma-deva.glif</string>
 	<key>tth_na-deva</key>
 	<string>tth_na-deva.glif</string>
-	<key>tth_r-deva</key>
-	<string>tth_r-deva.glif</string>
+	<key>tth_ra-deva</key>
+	<string>tth_ra-deva.glif</string>
 	<key>tth_tth_ya-deva</key>
 	<string>tth_tth_ya-deva.glif</string>
 	<key>tth_ttha-deva</key>
@@ -2958,6 +2958,8 @@
 	<string>upD_ownA_rrow.glif</string>
 	<key>upDownArrow.case</key>
 	<string>upD_ownA_rrow.case.glif</string>
+	<key>upWhitePointingindex</key>
+	<string>upW_hiteP_ointingindex.glif</string>
 	<key>uring</key>
 	<string>uring.glif</string>
 	<key>uu-deva</key>
@@ -2992,8 +2994,8 @@
 	<string>v_la-deva.glif</string>
 	<key>v_na-deva</key>
 	<string>v_na-deva.glif</string>
-	<key>v_r-deva</key>
-	<string>v_r-deva.glif</string>
+	<key>v_ra-deva</key>
+	<string>v_ra-deva.glif</string>
 	<key>v_va-deva</key>
 	<string>v_va-deva.glif</string>
 	<key>v_ya-deva</key>
@@ -3094,8 +3096,8 @@
 	<string>y-deva.short.glif</string>
 	<key>y_na-deva</key>
 	<string>y_na-deva.glif</string>
-	<key>y_r-deva</key>
-	<string>y_r-deva.glif</string>
+	<key>y_ra-deva</key>
+	<string>y_ra-deva.glif</string>
 	<key>y_ya-deva</key>
 	<string>y_ya-deva.glif</string>
 	<key>ya-deva</key>

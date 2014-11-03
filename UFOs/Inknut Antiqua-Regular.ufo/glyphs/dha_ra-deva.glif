@@ -2,19 +2,19 @@
 <glyph name="dha_ra-deva" format="1">
   <advance width="852"/>
   <outline>
-    <component base="dh-deva"/>
-    <component base="r-deva.leg" xOffset="230" yOffset="2"/>
-    <component base="aaMatra-deva" xOffset="524"/>
-    <contour>
-      <point x="589" y="-176" type="move" name="nukta"/>
-    </contour>
+	<component base="dh-deva"/>
+	<component base="r-deva.leg" xOffset="230" yOffset="2"/>
+	<component base="aaMatra-deva" xOffset="524"/>
+	<contour>
+	  <point x="589" y="-176" type="move" name="nukta"/>
+	</contour>
   </outline>
   <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
-      <integer>5</integer>
-      <key>public.markColor</key>
-      <string>0.04,0.57,0.04,1</string>
-    </dict>
+	<dict>
+	  <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+	  <integer>5</integer>
+	  <key>public.markColor</key>
+	  <string>0.04,0.57,0.04,1</string>
+	</dict>
   </lib>
 </glyph>

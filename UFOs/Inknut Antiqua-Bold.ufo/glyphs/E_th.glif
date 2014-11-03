@@ -3,16 +3,16 @@
   <advance width="939"/>
   <unicode hex="00D0"/>
   <outline>
-    <component base="D"/>
-    <component base="macron" xOffset="269" yOffset="436" xScale="0" yScale="0"/>
-    <component base="macron.case" xOffset="-35" yOffset="-380"/>
+	<component base="D"/>
+	<component base="macron" xOffset="269" yOffset="436" xScale="0" yScale="0"/>
+	<component base="macron.case" xOffset="-35" yOffset="-380"/>
   </outline>
   <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
-      <integer>5</integer>
-      <key>public.markColor</key>
-      <string>0.04,0.57,0.04,1</string>
-    </dict>
+	<dict>
+	  <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+	  <integer>5</integer>
+	  <key>public.markColor</key>
+	  <string>0.04,0.57,0.04,1</string>
+	</dict>
   </lib>
 </glyph>

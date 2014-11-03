@@ -2,20 +2,20 @@
 <glyph name="eShortMatra_reph_anusvara-deva" format="1">
   <advance width="600"/>
   <outline>
-    <component base="eShortMatra-deva"/>
-    <component base="reph_anusvara-deva" xOffset="27" yOffset="5"/>
-    <contour>
-      <point x="321" y="786" type="move" name="_top"/>
-    </contour>
+	<component base="eShortMatra-deva"/>
+	<component base="reph_anusvara-deva" xOffset="27" yOffset="5"/>
+	<contour>
+	  <point x="321" y="786" type="move" name="_top"/>
+	</contour>
   </outline>
   <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.Export</key>
-      <false/>
-      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
-      <integer>8</integer>
-      <key>public.markColor</key>
-      <string>0.5,0.09,0.79,1</string>
-    </dict>
+	<dict>
+	  <key>com.schriftgestaltung.Glyphs.Export</key>
+	  <false/>
+	  <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+	  <integer>8</integer>
+	  <key>public.markColor</key>
+	  <string>0.5,0.09,0.79,1</string>
+	</dict>
   </lib>
 </glyph>

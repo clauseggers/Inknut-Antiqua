@@ -3,34 +3,34 @@
   <advance width="369"/>
   <unicode hex="006C"/>
   <outline>
-    <contour>
-      <point x="124" y="779" type="line"/>
-      <point x="124" y="0" type="line"/>
-      <point x="244" y="0" type="line"/>
-      <point x="244" y="873" type="line"/>
-    </contour>
-    <contour>
-      <point x="35" y="31" type="line"/>
-      <point x="35" y="0" type="line"/>
-      <point x="314" y="0" type="line"/>
-      <point x="334" y="40" type="line"/>
-      <point x="141" y="114" type="line"/>
-    </contour>
-    <contour>
-      <point x="206" y="873" type="line"/>
-      <point x="35" y="809" type="line"/>
-      <point x="35" y="778" type="line"/>
-      <point x="207" y="658" type="line"/>
-      <point x="244" y="873" type="line"/>
-    </contour>
-    <contour>
-      <point x="180" y="823" type="move" name="top"/>
-    </contour>
-    <contour>
-      <point x="180" y="0" type="move" name="bottom"/>
-    </contour>
-    <contour>
-      <point x="324" y="531" type="move" name="topright"/>
-    </contour>
+	<contour>
+	  <point x="124" y="779" type="line"/>
+	  <point x="124" y="0" type="line"/>
+	  <point x="244" y="0" type="line"/>
+	  <point x="244" y="873" type="line"/>
+	</contour>
+	<contour>
+	  <point x="35" y="31" type="line"/>
+	  <point x="35" y="0" type="line"/>
+	  <point x="314" y="0" type="line"/>
+	  <point x="334" y="40" type="line"/>
+	  <point x="141" y="114" type="line"/>
+	</contour>
+	<contour>
+	  <point x="206" y="873" type="line"/>
+	  <point x="35" y="809" type="line"/>
+	  <point x="35" y="778" type="line"/>
+	  <point x="207" y="658" type="line"/>
+	  <point x="244" y="873" type="line"/>
+	</contour>
+	<contour>
+	  <point x="180" y="823" type="move" name="top"/>
+	</contour>
+	<contour>
+	  <point x="180" y="0" type="move" name="bottom"/>
+	</contour>
+	<contour>
+	  <point x="324" y="531" type="move" name="topright"/>
+	</contour>
   </outline>
 </glyph>

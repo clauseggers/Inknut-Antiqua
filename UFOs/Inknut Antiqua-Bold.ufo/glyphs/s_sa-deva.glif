@@ -2,32 +2,32 @@
 <glyph name="s_sa-deva" format="1">
   <advance width="1494"/>
   <outline>
-    <contour>
-      <point x="734" y="385" type="line"/>
-      <point x="705" y="370"/>
-      <point x="673" y="361"/>
-      <point x="644" y="361" type="curve" smooth="yes"/>
-      <point x="595" y="361"/>
-      <point x="539" y="377"/>
-      <point x="455" y="413" type="curve"/>
-      <point x="425" y="345" type="line"/>
-      <point x="562" y="235" type="line"/>
-      <point x="600" y="222"/>
-      <point x="642" y="216"/>
-      <point x="695" y="216" type="curve" smooth="yes"/>
-      <point x="756" y="216"/>
-      <point x="815" y="225"/>
-      <point x="868" y="240" type="curve"/>
-    </contour>
-    <component base="ra-deva"/>
-    <component base="sa-deva" xOffset="518"/>
+	<contour>
+	  <point x="734" y="385" type="line"/>
+	  <point x="705" y="370"/>
+	  <point x="673" y="361"/>
+	  <point x="644" y="361" type="curve" smooth="yes"/>
+	  <point x="595" y="361"/>
+	  <point x="539" y="377"/>
+	  <point x="455" y="413" type="curve"/>
+	  <point x="425" y="345" type="line"/>
+	  <point x="562" y="235" type="line"/>
+	  <point x="600" y="222"/>
+	  <point x="642" y="216"/>
+	  <point x="695" y="216" type="curve" smooth="yes"/>
+	  <point x="756" y="216"/>
+	  <point x="815" y="225"/>
+	  <point x="868" y="240" type="curve"/>
+	</contour>
+	<component base="ra-deva"/>
+	<component base="sa-deva" xOffset="518"/>
   </outline>
   <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
-      <integer>8</integer>
-      <key>public.markColor</key>
-      <string>0.5,0.09,0.79,1</string>
-    </dict>
+	<dict>
+	  <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+	  <integer>8</integer>
+	  <key>public.markColor</key>
+	  <string>0.5,0.09,0.79,1</string>
+	</dict>
   </lib>
 </glyph>

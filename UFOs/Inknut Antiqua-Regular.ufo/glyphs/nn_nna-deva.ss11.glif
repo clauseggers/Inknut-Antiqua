@@ -2,26 +2,26 @@
 <glyph name="nn_nna-deva.ss11" format="1">
   <advance width="943"/>
   <outline>
-    <contour>
-      <point x="569" y="448" type="line"/>
-      <point x="800" y="244" type="line"/>
-      <point x="833" y="281" type="line"/>
-      <point x="569" y="514" type="line"/>
-    </contour>
-    <contour>
-      <point x="569" y="444" type="line"/>
-      <point x="353" y="635" type="line"/>
-      <point x="321" y="597" type="line"/>
-      <point x="569" y="378" type="line"/>
-    </contour>
-    <component base="nna-deva.ss11"/>
+	<contour>
+	  <point x="569" y="448" type="line"/>
+	  <point x="800" y="244" type="line"/>
+	  <point x="833" y="281" type="line"/>
+	  <point x="569" y="514" type="line"/>
+	</contour>
+	<contour>
+	  <point x="569" y="444" type="line"/>
+	  <point x="353" y="635" type="line"/>
+	  <point x="321" y="597" type="line"/>
+	  <point x="569" y="378" type="line"/>
+	</contour>
+	<component base="nna-deva.ss11"/>
   </outline>
   <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
-      <integer>7</integer>
-      <key>public.markColor</key>
-      <string>0.18,0.16,0.78,1</string>
-    </dict>
+	<dict>
+	  <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+	  <integer>7</integer>
+	  <key>public.markColor</key>
+	  <string>0.18,0.16,0.78,1</string>
+	</dict>
   </lib>
 </glyph>

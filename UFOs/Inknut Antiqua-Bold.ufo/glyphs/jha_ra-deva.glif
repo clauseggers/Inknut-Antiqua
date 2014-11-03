@@ -2,29 +2,29 @@
 <glyph name="jha_ra-deva" format="1">
   <advance width="1158"/>
   <outline>
-    <contour>
-      <point x="889" y="67"/>
-      <point x="768" y="4"/>
-      <point x="573" y="-61" type="curve"/>
-      <point x="573" y="-139" type="line"/>
-      <point x="748" y="-231" type="line"/>
-      <point x="912" y="-155"/>
-      <point x="1014" y="-91"/>
-      <point x="1097" y="-10" type="curve"/>
-      <point x="1097" y="68" type="line"/>
-      <point x="971" y="126" type="line"/>
-    </contour>
-    <component base="jha-deva"/>
-    <contour>
-      <point x="909" y="-180" type="move" name="bottom"/>
-    </contour>
+	<contour>
+	  <point x="889" y="67"/>
+	  <point x="768" y="4"/>
+	  <point x="573" y="-61" type="curve"/>
+	  <point x="573" y="-139" type="line"/>
+	  <point x="748" y="-231" type="line"/>
+	  <point x="912" y="-155"/>
+	  <point x="1014" y="-91"/>
+	  <point x="1097" y="-10" type="curve"/>
+	  <point x="1097" y="68" type="line"/>
+	  <point x="971" y="126" type="line"/>
+	</contour>
+	<component base="jha-deva"/>
+	<contour>
+	  <point x="909" y="-180" type="move" name="bottom"/>
+	</contour>
   </outline>
   <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
-      <integer>1</integer>
-      <key>public.markColor</key>
-      <string>0.99,0.62,0.11,1</string>
-    </dict>
+	<dict>
+	  <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+	  <integer>1</integer>
+	  <key>public.markColor</key>
+	  <string>0.99,0.62,0.11,1</string>
+	</dict>
   </lib>
 </glyph>

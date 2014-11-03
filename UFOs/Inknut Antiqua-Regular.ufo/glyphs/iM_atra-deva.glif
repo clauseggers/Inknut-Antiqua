@@ -3,18 +3,21 @@
   <advance width="328"/>
   <unicode hex="093F"/>
   <outline>
-    <component base="iMatra_stem-deva"/>
-    <component base="velanti-deva" xOffset="180"/>
-    <contour>
-      <point x="881" y="786" type="move" name="imatra"/>
-    </contour>
+	<component base="iMatra_stem-deva"/>
+	<component base="velanti-deva" xOffset="180"/>
+	<contour>
+	  <point x="427" y="786" type="move" name="imatra"/>
+	</contour>
+	<contour>
+	  <point x="667" y="786" type="move" name="top"/>
+	</contour>
   </outline>
   <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
-      <integer>5</integer>
-      <key>public.markColor</key>
-      <string>0.04,0.57,0.04,1</string>
-    </dict>
+	<dict>
+	  <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+	  <integer>5</integer>
+	  <key>public.markColor</key>
+	  <string>0.04,0.57,0.04,1</string>
+	</dict>
   </lib>
 </glyph>

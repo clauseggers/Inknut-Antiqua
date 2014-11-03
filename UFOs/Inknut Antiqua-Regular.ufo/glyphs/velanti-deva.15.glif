@@ -2,35 +2,35 @@
 <glyph name="velanti-deva.15" format="1">
   <advance width="321"/>
   <outline>
-    <contour>
-      <point x="479" y="1069"/>
-      <point x="263" y="953"/>
-      <point x="125" y="741" type="curve"/>
-      <point x="245" y="701" type="line"/>
-      <point x="363" y="877"/>
-      <point x="546" y="969"/>
-      <point x="786" y="969" type="curve" smooth="yes"/>
-      <point x="996" y="969"/>
-      <point x="1244" y="889"/>
-      <point x="1501" y="738" type="curve"/>
-      <point x="1501" y="776" type="line"/>
-      <point x="1201" y="979"/>
-      <point x="967" y="1069"/>
-      <point x="751" y="1069" type="curve" smooth="yes"/>
-    </contour>
-    <contour>
-      <point x="157" y="786" type="move" name="_left"/>
-    </contour>
-    <contour>
-      <point x="1415" y="786" type="move" name="_right"/>
-    </contour>
+	<contour>
+	  <point x="479" y="1069"/>
+	  <point x="263" y="953"/>
+	  <point x="125" y="741" type="curve"/>
+	  <point x="245" y="701" type="line"/>
+	  <point x="363" y="877"/>
+	  <point x="546" y="969"/>
+	  <point x="786" y="969" type="curve" smooth="yes"/>
+	  <point x="996" y="969"/>
+	  <point x="1244" y="889"/>
+	  <point x="1501" y="738" type="curve"/>
+	  <point x="1501" y="776" type="line"/>
+	  <point x="1201" y="979"/>
+	  <point x="967" y="1069"/>
+	  <point x="751" y="1069" type="curve" smooth="yes"/>
+	</contour>
+	<contour>
+	  <point x="157" y="786" type="move" name="_left"/>
+	</contour>
+	<contour>
+	  <point x="1415" y="786" type="move" name="_right"/>
+	</contour>
   </outline>
   <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
-      <integer>4</integer>
-      <key>public.markColor</key>
-      <string>0.67,0.95,0.38,1</string>
-    </dict>
+	<dict>
+	  <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+	  <integer>4</integer>
+	  <key>public.markColor</key>
+	  <string>0.67,0.95,0.38,1</string>
+	</dict>
   </lib>
 </glyph>

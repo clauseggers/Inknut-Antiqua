@@ -2,9 +2,9 @@
 <glyph name="halant-deva.raPos" format="1">
   <advance width="355"/>
   <outline>
-    <component base="halant-deva"/>
-    <contour>
-      <point x="92" y="-119" type="move" name="_bottom"/>
-    </contour>
+	<component base="halant-deva"/>
+	<contour>
+	  <point x="92" y="-119" type="move" name="_bottom"/>
+	</contour>
   </outline>
 </glyph>

@@ -2,18 +2,18 @@
 <glyph name="g_dh_ya-deva" format="1">
   <advance width="1636"/>
   <outline>
-    <component base="g-deva"/>
-    <component base="dh-deva.short" xOffset="440"/>
-    <component base="ya-deva" xOffset="904"/>
+	<component base="g-deva"/>
+	<component base="dh-deva.short" xOffset="440"/>
+	<component base="ya-deva" xOffset="904"/>
   </outline>
   <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.Export</key>
-      <false/>
-      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
-      <integer>5</integer>
-      <key>public.markColor</key>
-      <string>0.04,0.57,0.04,1</string>
-    </dict>
+	<dict>
+	  <key>com.schriftgestaltung.Glyphs.Export</key>
+	  <false/>
+	  <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+	  <integer>5</integer>
+	  <key>public.markColor</key>
+	  <string>0.04,0.57,0.04,1</string>
+	</dict>
   </lib>
 </glyph>

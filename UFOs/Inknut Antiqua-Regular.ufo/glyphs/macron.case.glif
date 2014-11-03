@@ -2,20 +2,20 @@
 <glyph name="macron.case" format="1">
   <advance width="600"/>
   <outline>
-    <contour>
-      <point x="533" y="794" type="line"/>
-      <point x="75" y="794" type="line"/>
-      <point x="75" y="753" type="line"/>
-      <point x="533" y="753" type="line"/>
-    </contour>
-    <contour>
-      <point x="304" y="796" type="move" name="_centre"/>
-    </contour>
-    <contour>
-      <point x="533" y="794" type="move" name="_topright"/>
-    </contour>
-    <contour>
-      <point x="304" y="531" type="move" name="_top"/>
-    </contour>
+	<contour>
+	  <point x="533" y="794" type="line"/>
+	  <point x="75" y="794" type="line"/>
+	  <point x="75" y="753" type="line"/>
+	  <point x="533" y="753" type="line"/>
+	</contour>
+	<contour>
+	  <point x="304" y="796" type="move" name="_centre"/>
+	</contour>
+	<contour>
+	  <point x="533" y="794" type="move" name="_topright"/>
+	</contour>
+	<contour>
+	  <point x="304" y="531" type="move" name="_top"/>
+	</contour>
   </outline>
 </glyph>

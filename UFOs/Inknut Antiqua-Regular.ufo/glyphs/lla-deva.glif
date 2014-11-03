@@ -3,24 +3,24 @@
   <advance width="1037"/>
   <unicode hex="0933"/>
   <outline>
-    <contour>
-      <point x="642" y="786" type="line"/>
-      <point x="642" y="530" type="line"/>
-      <point x="724" y="490" type="line"/>
-      <point x="762" y="490" type="line"/>
-      <point x="762" y="786" type="line"/>
-    </contour>
-    <component base="ll-deva"/>
-    <contour>
-      <point x="642" y="786" type="move" name="top"/>
-    </contour>
+	<contour>
+	  <point x="642" y="786" type="line"/>
+	  <point x="642" y="530" type="line"/>
+	  <point x="724" y="490" type="line"/>
+	  <point x="762" y="490" type="line"/>
+	  <point x="762" y="786" type="line"/>
+	</contour>
+	<component base="ll-deva"/>
+	<contour>
+	  <point x="642" y="786" type="move" name="top"/>
+	</contour>
   </outline>
   <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
-      <integer>8</integer>
-      <key>public.markColor</key>
-      <string>0.5,0.09,0.79,1</string>
-    </dict>
+	<dict>
+	  <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+	  <integer>8</integer>
+	  <key>public.markColor</key>
+	  <string>0.5,0.09,0.79,1</string>
+	</dict>
   </lib>
 </glyph>

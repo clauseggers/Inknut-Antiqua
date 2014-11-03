@@ -2,36 +2,36 @@
 <glyph name="reph-deva" format="1">
   <advance width="600"/>
   <outline>
-    <contour>
-      <point x="200" y="1256"/>
-      <point x="103" y="1168"/>
-      <point x="103" y="1027" type="curve" smooth="yes"/>
-      <point x="103" y="1007"/>
-      <point x="105" y="968"/>
-      <point x="111" y="939" type="curve"/>
-      <point x="364" y="721" type="line"/>
-      <point x="396" y="758" type="line"/>
-      <point x="311" y="831" type="line" smooth="yes"/>
-      <point x="246" y="887"/>
-      <point x="233" y="953"/>
-      <point x="233" y="998" type="curve" smooth="yes"/>
-      <point x="233" y="1097"/>
-      <point x="288" y="1162"/>
-      <point x="373" y="1162" type="curve" smooth="yes"/>
-      <point x="428" y="1162"/>
-      <point x="481" y="1140"/>
-      <point x="553" y="1090" type="curve"/>
-      <point x="583" y="1128" type="line"/>
-      <point x="429" y="1249" type="line"/>
-      <point x="400" y="1254"/>
-      <point x="368" y="1256"/>
-      <point x="344" y="1256" type="curve" smooth="yes"/>
-    </contour>
-    <contour>
-      <point x="277" y="1028" type="move" name="top"/>
-    </contour>
-    <contour>
-      <point x="276" y="786" type="move" name="_top"/>
-    </contour>
+	<contour>
+	  <point x="200" y="1256"/>
+	  <point x="103" y="1168"/>
+	  <point x="103" y="1027" type="curve" smooth="yes"/>
+	  <point x="103" y="1007"/>
+	  <point x="105" y="968"/>
+	  <point x="111" y="939" type="curve"/>
+	  <point x="364" y="721" type="line"/>
+	  <point x="396" y="758" type="line"/>
+	  <point x="311" y="831" type="line" smooth="yes"/>
+	  <point x="246" y="887"/>
+	  <point x="233" y="953"/>
+	  <point x="233" y="998" type="curve" smooth="yes"/>
+	  <point x="233" y="1097"/>
+	  <point x="288" y="1162"/>
+	  <point x="373" y="1162" type="curve" smooth="yes"/>
+	  <point x="428" y="1162"/>
+	  <point x="481" y="1140"/>
+	  <point x="553" y="1090" type="curve"/>
+	  <point x="583" y="1128" type="line"/>
+	  <point x="429" y="1249" type="line"/>
+	  <point x="400" y="1254"/>
+	  <point x="368" y="1256"/>
+	  <point x="344" y="1256" type="curve" smooth="yes"/>
+	</contour>
+	<contour>
+	  <point x="277" y="1028" type="move" name="top"/>
+	</contour>
+	<contour>
+	  <point x="276" y="786" type="move" name="_top"/>
+	</contour>
   </outline>
 </glyph>

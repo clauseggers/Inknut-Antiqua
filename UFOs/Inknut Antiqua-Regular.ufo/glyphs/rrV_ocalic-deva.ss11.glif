@@ -2,33 +2,33 @@
 <glyph name="rrVocalic-deva.ss11" format="1">
   <advance width="1031"/>
   <outline>
-    <contour>
-      <point x="512" y="448" type="line"/>
-      <point x="512" y="410" type="line"/>
-      <point x="586" y="348" type="line"/>
-      <point x="936" y="348" type="line"/>
-      <point x="936" y="386" type="line"/>
-      <point x="862" y="448" type="line"/>
-    </contour>
-    <contour>
-      <point x="512" y="786" type="line"/>
-      <point x="512" y="748" type="line"/>
-      <point x="586" y="686" type="line"/>
-      <point x="936" y="686" type="line"/>
-      <point x="936" y="724" type="line"/>
-      <point x="862" y="786" type="line"/>
-    </contour>
-    <component base="t_r-deva"/>
-    <component base="aaMatra-deva" xOffset="364"/>
-    <component base="aaMatra-deva" xOffset="703"/>
-    <component base="rrVocalicMatra-deva" xOffset="578" yOffset="203"/>
+	<contour>
+	  <point x="512" y="448" type="line"/>
+	  <point x="512" y="410" type="line"/>
+	  <point x="586" y="348" type="line"/>
+	  <point x="936" y="348" type="line"/>
+	  <point x="936" y="386" type="line"/>
+	  <point x="862" y="448" type="line"/>
+	</contour>
+	<contour>
+	  <point x="512" y="786" type="line"/>
+	  <point x="512" y="748" type="line"/>
+	  <point x="586" y="686" type="line"/>
+	  <point x="936" y="686" type="line"/>
+	  <point x="936" y="724" type="line"/>
+	  <point x="862" y="786" type="line"/>
+	</contour>
+	<component base="t_ra-deva"/>
+	<component base="aaMatra-deva" xOffset="364"/>
+	<component base="aaMatra-deva" xOffset="703"/>
+	<component base="rrVocalicMatra-deva" xOffset="578" yOffset="203"/>
   </outline>
   <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
-      <integer>8</integer>
-      <key>public.markColor</key>
-      <string>0.5,0.09,0.79,1</string>
-    </dict>
+	<dict>
+	  <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+	  <integer>8</integer>
+	  <key>public.markColor</key>
+	  <string>0.5,0.09,0.79,1</string>
+	</dict>
   </lib>
 </glyph>

@@ -2,39 +2,39 @@
 <glyph name="jh-deva.ss11" format="1">
   <advance width="769"/>
   <outline>
-    <contour>
-      <point x="643" y="448" type="line"/>
-      <point x="643" y="348" type="line"/>
-      <point x="844" y="348" type="line" smooth="yes"/>
-      <point x="911" y="348"/>
-      <point x="938" y="335"/>
-      <point x="993" y="295" type="curve"/>
-      <point x="1023" y="333" type="line"/>
-      <point x="886" y="440" type="line"/>
-      <point x="847" y="447"/>
-      <point x="808" y="448"/>
-      <point x="788" y="448" type="curve" smooth="yes"/>
-    </contour>
-    <contour>
-      <point x="620" y="786" type="line"/>
-      <point x="620" y="748" type="line"/>
-      <point x="690" y="686" type="line"/>
-      <point x="1033" y="686" type="line"/>
-      <point x="1033" y="724" type="line"/>
-      <point x="963" y="786" type="line"/>
-    </contour>
-    <component base="aaMatra-deva" xOffset="430"/>
-    <component base="bh-deva.medi"/>
-    <contour>
-      <point x="242" y="0" type="move" name="nukta"/>
-    </contour>
+	<contour>
+	  <point x="643" y="448" type="line"/>
+	  <point x="643" y="348" type="line"/>
+	  <point x="844" y="348" type="line" smooth="yes"/>
+	  <point x="911" y="348"/>
+	  <point x="938" y="335"/>
+	  <point x="993" y="295" type="curve"/>
+	  <point x="1023" y="333" type="line"/>
+	  <point x="886" y="440" type="line"/>
+	  <point x="847" y="447"/>
+	  <point x="808" y="448"/>
+	  <point x="788" y="448" type="curve" smooth="yes"/>
+	</contour>
+	<contour>
+	  <point x="620" y="786" type="line"/>
+	  <point x="620" y="748" type="line"/>
+	  <point x="690" y="686" type="line"/>
+	  <point x="1033" y="686" type="line"/>
+	  <point x="1033" y="724" type="line"/>
+	  <point x="963" y="786" type="line"/>
+	</contour>
+	<component base="aaMatra-deva" xOffset="430"/>
+	<component base="bh-deva.medi"/>
+	<contour>
+	  <point x="242" y="0" type="move" name="nukta"/>
+	</contour>
   </outline>
   <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
-      <integer>8</integer>
-      <key>public.markColor</key>
-      <string>0.5,0.09,0.79,1</string>
-    </dict>
+	<dict>
+	  <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+	  <integer>8</integer>
+	  <key>public.markColor</key>
+	  <string>0.5,0.09,0.79,1</string>
+	</dict>
   </lib>
 </glyph>

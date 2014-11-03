@@ -2,30 +2,30 @@
 <glyph name="r-deva.leg-short" format="1">
   <advance width="728"/>
   <outline>
-    <contour>
-      <point x="221" y="155" type="line"/>
-      <point x="221" y="77" type="line"/>
-      <point x="363" y="5" type="line"/>
-      <point x="579" y="262" type="line"/>
-      <point x="579" y="340" type="line"/>
-      <point x="446" y="398" type="line"/>
-    </contour>
-    <contour>
-      <point x="436" y="248" type="move" name="_bottom"/>
-    </contour>
-    <contour>
-      <point x="446" y="398" type="move" name="_leg"/>
-    </contour>
-    <contour>
-      <point x="446" y="398" type="move" name="_leg-low"/>
-    </contour>
+	<contour>
+	  <point x="221" y="155" type="line"/>
+	  <point x="221" y="77" type="line"/>
+	  <point x="363" y="5" type="line"/>
+	  <point x="579" y="262" type="line"/>
+	  <point x="579" y="340" type="line"/>
+	  <point x="446" y="398" type="line"/>
+	</contour>
+	<contour>
+	  <point x="436" y="248" type="move" name="_bottom"/>
+	</contour>
+	<contour>
+	  <point x="446" y="398" type="move" name="_leg"/>
+	</contour>
+	<contour>
+	  <point x="446" y="398" type="move" name="_leg-low"/>
+	</contour>
   </outline>
   <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
-      <integer>7</integer>
-      <key>public.markColor</key>
-      <string>0.18,0.16,0.78,1</string>
-    </dict>
+	<dict>
+	  <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+	  <integer>7</integer>
+	  <key>public.markColor</key>
+	  <string>0.18,0.16,0.78,1</string>
+	</dict>
   </lib>
 </glyph>

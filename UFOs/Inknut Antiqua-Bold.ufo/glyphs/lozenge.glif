@@ -3,21 +3,21 @@
   <advance width="629"/>
   <unicode hex="25CA"/>
   <outline>
-    <contour>
-      <point x="217" y="842" type="line"/>
-      <point x="33" y="384" type="line"/>
-      <point x="198" y="-19" type="line"/>
-      <point x="412" y="32" type="line"/>
-      <point x="596" y="490" type="line"/>
-      <point x="431" y="893" type="line"/>
-    </contour>
-    <contour>
-      <point x="262" y="752" type="line"/>
-      <point x="425" y="352" type="line"/>
-      <point x="333" y="122" type="line"/>
-      <point x="367" y="122" type="line"/>
-      <point x="204" y="522" type="line"/>
-      <point x="296" y="752" type="line"/>
-    </contour>
+	<contour>
+	  <point x="217" y="842" type="line"/>
+	  <point x="33" y="384" type="line"/>
+	  <point x="198" y="-19" type="line"/>
+	  <point x="412" y="32" type="line"/>
+	  <point x="596" y="490" type="line"/>
+	  <point x="431" y="893" type="line"/>
+	</contour>
+	<contour>
+	  <point x="262" y="752" type="line"/>
+	  <point x="425" y="352" type="line"/>
+	  <point x="333" y="122" type="line"/>
+	  <point x="367" y="122" type="line"/>
+	  <point x="204" y="522" type="line"/>
+	  <point x="296" y="752" type="line"/>
+	</contour>
   </outline>
 </glyph>
