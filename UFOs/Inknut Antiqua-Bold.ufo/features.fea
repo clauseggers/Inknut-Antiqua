@@ -91,6 +91,7 @@ lookup removeReph {
 	sub jja-deva [ reph-deva reph_anusvara-deva ] by jja-deva;
 	sub ddda-deva [ reph-deva reph_anusvara-deva ] by ddda-deva;
 	sub bba-deva [ reph-deva reph_anusvara-deva ] by bba-deva;
+	sub headstroked-deva [ reph-deva reph_anusvara-deva ] by headstroked-deva;
 } removeReph;
 
 # automatic
@@ -100,7 +101,7 @@ lookup removeReph {
 @DevaIMatras = [ iMatra-deva iMatra-deva.01 iMatra-deva.02 iMatra-deva.03 iMatra-deva.04 iMatra-deva.05 iMatra-deva.06 iMatra-deva.07 iMatra-deva.08 iMatra-deva.09 iMatra-deva.10 iMatra-deva.11 iMatra-deva.12 iMatra-deva.13 iMatra-deva.14 iMatra-deva.15 iMatra-deva.16 iMatra-deva.17 iMatra-deva.18 iMatra-deva.19 iMatra-deva.20 iMatra-deva.21 iMatra-deva.22 iMatra-deva.23 iMatra-deva.24 iMatra-deva.25 iMatra-deva.26 iMatra-deva.27 iMatra-deva.28 iMatra-deva.29 iMatra-deva.30 ];
 
 # automatic
-@DevaFullforms = [ ka-deva ka-deva.bottom kha-deva ga-deva gha-deva gha-deva.bottom nga-deva ca-deva cha-deva ja-deva jha-deva jha-deva.ss11 nya-deva tta-deva ttha-deva dda-deva dda-deva.short dda-deva.short2 ddha-deva nna-deva nna-deva.ss11 ta-deva tha-deva tha-deva.high da-deva da-deva.knotless da-deva.strokeless dha-deva na-deva na-deva.bottom na-deva.low nnna-deva pa-deva pha-deva ba-deva bha-deva bha-deva.fina ma-deva ma-deva.bottom ya-deva ya-deva.connect ya-deva.connect-low ya-deva.connect-low-short ya-deva.connect-short ra-deva rra-deva la-deva la-deva.loclMAR la-deva.ss11 lla-deva llla-deva va-deva va-deva.bottom sha-deva sha-deva.loclMAR ssa-deva sa-deva ha-deva qa-deva khha-deva ghha-deva za-deva dddha-deva rha-deva fa-deva yya-deva zha-deva gga-deva jja-deva ddda-deva bba-deva ];
+@DevaFullforms = [ ka-deva ka-deva.bottom kha-deva ga-deva gha-deva gha-deva.bottom nga-deva ca-deva cha-deva ja-deva jha-deva jha-deva.ss11 nya-deva tta-deva ttha-deva dda-deva dda-deva.short dda-deva.short2 ddha-deva nna-deva nna-deva.ss11 ta-deva tha-deva tha-deva.high da-deva da-deva.knotless da-deva.strokeless dha-deva na-deva na-deva.bottom na-deva.low nnna-deva pa-deva pha-deva ba-deva bha-deva bha-deva.fina ma-deva ma-deva.bottom ya-deva ya-deva.connect ya-deva.connect-low ya-deva.connect-low-short ya-deva.connect-short ra-deva rra-deva la-deva la-deva.loclMAR la-deva.ss11 lla-deva llla-deva va-deva va-deva.bottom sha-deva sha-deva.loclMAR ssa-deva sa-deva ha-deva qa-deva khha-deva ghha-deva za-deva dddha-deva rha-deva fa-deva yya-deva zha-deva gga-deva jja-deva ddda-deva bba-deva headstroked-deva ];
 
 # automatic
 @DevaHalfforms = [ k-deva k-deva.long k-deva.short kh-deva kh-deva.long g-deva g-deva.bottom g-deva.leg g-deva.leg-short gh-deva ng-deva ng-deva.top c-deva c-deva.long c-deva.long2 c-deva.low c-deva.short ch-deva j-deva j-deva.long j-deva.long-up j-deva.long-up2 j-deva.long2 j-deva.short j-deva.short2 jh-deva jh-deva.high.ss11 jh-deva.short jh-deva.ss11 ny-deva ny-deva.long ny-deva.low ny-deva.low-short ny-deva.no-link tt-deva tt-deva.bottom tt-deva.top tth-deva tth-deva.bottom tth-deva.top dd-deva dd-deva.bottom dd-deva.top ddh-deva ddh-deva.bottom ddh-deva.top nn-deva nn-deva.ss11 t-deva t-deva.long t-deva.low t-deva.short th-deva th-deva.high th-deva.high-short th-deva.short d-deva d-deva.bottom d-deva.top dh-deva dh-deva.short n-deva n-deva.long n-deva.low n-deva.short n-deva.short2 n-deva.short3 n-deva.short4 n-deva.up nnn-deva p-deva p-deva.short p-deva.short2 p-deva.short3 ph-deva b-deva b-deva.long b-deva.short-low b-deva.short2 b-deva.short3 b-deva.short4 b-deva.up bh-deva bh-deva.init bh-deva.medi m-deva m-deva.front-short m-deva.short m-deva.short-low m-deva.short2 y-deva y-deva.loop-connect y-deva.short r-deva.leg r-deva.leg-short rr-deva rr-deva.long rr-deva.long-high rr-deva.low rr-deva.short rr-deva.short-high rr-deva.short2 l-deva l-deva.halfform l-deva.loclMAR l-deva.low ll-deva lll-deva v-deva v-deva.long v-deva.long2 v-deva.low v-deva.short v-deva.short-low v-deva.short2 sh-deva sh-deva.down sh-deva.high sh-deva.high2 sh-deva.high3 sh-deva.high4 sh-deva.loclMAR ss-deva ss-deva.short ss-deva.short2 ss-deva.short3 s-deva s-deva.long s-deva.low s-deva.short s-deva.short2 h-deva h-deva.connect h-deva.up q-deva q-deva.short khh-deva ghh-deva z-deva f-deva yy-deva ];
@@ -116,8 +117,6 @@ lookup removeReph {
 @DevaYa = [ ya-deva yya-deva y-deva y-deva.short y_na-deva y_ya-deva ];
 
 feature aalt {
-# automatic
-feature ccmp;
 feature locl;
 feature subs;
 feature sups;
@@ -127,7 +126,7 @@ feature frac;
 feature ordn;
 feature calt;
 feature case;
-feature rlig;
+# feature rlig;
 feature salt;
 feature ss01;
 feature ss02;
@@ -138,7 +137,7 @@ feature nukt;
 feature akhn;
 feature rphf;
 feature rkrf;
-feature blwf;
+# feature blwf;
 feature half;
 feature cjct;
 feature pres;

@@ -537,6 +537,7 @@
 		<string>jja-deva</string>
 		<string>ddda-deva</string>
 		<string>bba-deva</string>
+		<string>headstroked-deva</string>
 		<string>ka_ra-deva</string>
 		<string>k_ca-deva</string>
 		<string>k_nna-deva</string>
@@ -1382,13 +1383,14 @@
 		<string>quoteright</string>
 		<string>quotesinglbase</string>
 		<string>tripleprime</string>
+		<string>caret-deva</string>
 		<string>glottalstop-deva</string>
 		<string>danda-deva</string>
 		<string>dbldanda-deva</string>
 		<string>abbreviation-deva</string>
+		<string>gapfiller-deva</string>
+		<string>pushpika-deva</string>
 		<string>highspacingdot-deva</string>
-		<string>caret-deva</string>
-		<string>headstroked-deva</string>
 		<string>space.deva</string>
 		<string>nbspace.deva</string>
 		<string>space</string>
@@ -1509,8 +1511,6 @@
 		<string>second</string>
 		<string>avagraha-deva</string>
 		<string>om-deva</string>
-		<string>pushpika-deva</string>
-		<string>gapfiller-deva</string>
 		<string>acute</string>
 		<string>breve</string>
 		<string>caron</string>
@@ -1530,13 +1530,13 @@
 		<string>tilde</string>
 		<string>commaaccent</string>
 		<string>apostrophemod</string>
+		<string>candraBinduAvagraha-deva</string>
+		<string>candraBinduHalant-deva</string>
+		<string>candraBinduThree-deva</string>
+		<string>candraBinduTwo-deva</string>
+		<string>dblcandraBinduHalant-deva</string>
 		<string>visarga-deva</string>
 		<string>spacingCandraBindu-deva</string>
-		<string>candraBinduHalant-deva</string>
-		<string>dblcandraBinduHalant-deva</string>
-		<string>candraBinduTwo-deva</string>
-		<string>candraBinduThree-deva</string>
-		<string>candraBinduAvagraha-deva</string>
 		<string>uMatra-deva</string>
 		<string>uuMatra-deva</string>
 		<string>rVocalicMatra-deva</string>

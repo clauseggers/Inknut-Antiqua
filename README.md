@@ -1,8 +1,10 @@
-»Inknut Antiqua« is an Antiqua typeface for literature and long-form text. It is designed to evoke Venetian incunabula and humanist manuscripts. It comes with a complement of typographical sorts and OpenType features for the purpose. The proportions of Inknut Antiqua make it well suited for low-resolution screens.
+»Inknut Antiqua« is an Antiqua typeface for literature and long-form text. Approaching the idea of web-publishing as a modern day [private press](http://en.wikipedia.org/wiki/Private_press), it is designed to evoke Venetian incunabula and humanist manuscripts, but with the quirks and idiosyncrasies of the kinds of typefaces you find in this artisanal tradition.
+
+It comes with a complement of typographical sorts and OpenType features for the purpose. The proportions of Inknut Antiqua make it well suited for low-resolution screens.
 
 ![Inknut Antique specimen](https://rawgithub.com/clauseggers/Inknut-Antiqua/master/Images/gallow-specimen.svg)
 
-The Inknut (Terminalia chebula) called »harad« in Hindi, is a nut-like fruit that can be used for ink making and is purported to cure blindness. The tree it grows from is native to the Indian sub-continent and south-east Asia.
+The [Inknut](http://en.wikipedia.org/wiki/Terminalia_chebula) (Terminalia chebula) called »harad« in Hindi, is a nut-like fruit that can be used for ink making and is purported to cure blindness. The tree it grows from is native to the Indian sub-continent and south-east Asia.
 
 ## Supported languages
 
