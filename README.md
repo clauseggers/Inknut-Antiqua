@@ -2,7 +2,7 @@
 
 It comes with a complement of typographical sorts and OpenType features for the purpose. The proportions of Inknut Antiqua make it well suited for low-resolution screens.
 
-![Inknut Antique specimen](https://rawgithub.com/clauseggers/Inknut-Antiqua/master/Images/gallow-specimen.svg)
+![Inknut Antiqua specimen](https://rawgithub.com/clauseggers/Inknut-Antiqua/master/Images/gallow-specimen.svg)
 
 The [Inknut](http://en.wikipedia.org/wiki/Terminalia_chebula) (Terminalia chebula) called »harad« in Hindi, is a nut-like fruit that can be used for ink making and is purported to cure blindness. The tree it grows from is native to the Indian sub-continent and south-east Asia.
 
