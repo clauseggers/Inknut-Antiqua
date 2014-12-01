@@ -4,7 +4,7 @@
   <outline>
 	<component base="ll-deva"/>
 	<component base="halant-deva" xOffset="505" yOffset="197"/>
-	<component base="nukta-deva" xOffset="43" yOffset="137"/>
+	<component base="nukta-deva" xOffset="396" yOffset="137"/>
   </outline>
   <lib>
 	<dict>

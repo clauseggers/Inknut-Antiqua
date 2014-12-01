@@ -3,7 +3,7 @@
   <advance width="1077"/>
   <outline>
 	<component base="ll-deva"/>
-	<component base="nukta-deva" xOffset="9" yOffset="58"/>
+	<component base="nukta-deva" xOffset="417" yOffset="58"/>
 	<component base="rakar-deva" xOffset="437" yOffset="30"/>
 	<component base="halant-deva" xOffset="728" yOffset="-127"/>
   </outline>

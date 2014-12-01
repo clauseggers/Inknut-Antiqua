@@ -68,6 +68,9 @@
 	  <point x="628" y="30" type="move" name="rakar"/>
 	</contour>
 	<contour>
+	  <point x="626" y="1057" type="move" name="anusvara"/>
+	</contour>
+	<contour>
 	  <point x="149" y="-81" type="move" name="nukta-left"/>
 	</contour>
 	<contour>

@@ -2,10 +2,10 @@
 <glyph name="reph_anusvara-deva" format="1">
   <advance width="600"/>
   <outline>
-	<component base="reph-deva.tall"/>
-	<component base="anusvara-deva" xOffset="364" yOffset="-109"/>
+	<component base="reph-deva"/>
+	<component base="anusvara-deva" xOffset="467" yOffset="-109"/>
 	<contour>
-	  <point x="-144" y="786" type="move" name="top"/>
+	  <point x="-160" y="786" type="move" name="top"/>
 	</contour>
 	<contour>
 	  <point x="262" y="786" type="move" name="_top"/>

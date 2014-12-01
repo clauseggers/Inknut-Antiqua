@@ -9,7 +9,7 @@
 	  <point x="-151" y="786" type="move" name="iimatra"/>
 	</contour>
 	<contour>
-	  <point x="326" y="786" type="move" name="top"/>
+	  <point x="178" y="786" type="move" name="top"/>
 	</contour>
   </outline>
   <lib>

@@ -44,6 +44,9 @@
 	<contour>
 	  <point x="378" y="786" type="move" name="top"/>
 	</contour>
+	<contour>
+	  <point x="377" y="1042" type="move" name="anusvara"/>
+	</contour>
   </outline>
   <lib>
 	<dict>

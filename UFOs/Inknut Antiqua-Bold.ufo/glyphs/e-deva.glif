@@ -56,5 +56,8 @@
 	<contour>
 	  <point x="418" y="786" type="move" name="top"/>
 	</contour>
+	<contour>
+	  <point x="431" y="1057" type="move" name="anusvara"/>
+	</contour>
   </outline>
 </glyph>

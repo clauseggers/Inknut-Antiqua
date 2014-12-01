@@ -3,7 +3,7 @@
   <advance width="600"/>
   <outline>
 	<component base="aiMatra-deva"/>
-	<component base="anusvara-deva" xOffset="468" yOffset="105"/>
+	<component base="anusvara-deva" xOffset="571" yOffset="105"/>
 	<contour>
 	  <point x="517" y="786" type="move" name="_top"/>
 	</contour>

@@ -12,10 +12,7 @@
 	  <point x="118" y="1160" type="line"/>
 	</contour>
 	<contour>
-	  <point x="143" y="1057" type="move" name="_anusvara"/>
-	</contour>
-	<contour>
-	  <point x="40" y="786" type="move" name="_top"/>
+	  <point x="40" y="1057" type="move" name="_anusvara"/>
 	</contour>
   </outline>
 </glyph>

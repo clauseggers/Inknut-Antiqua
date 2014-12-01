@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="nukta-deva" format="1">
+<glyph name="nukta-deva.left" format="1">
   <advance width="280"/>
-  <unicode hex="093C"/>
   <outline>
 	<contour>
 	  <point x="40" y="-35" type="line"/>
@@ -12,7 +11,15 @@
 	  <point x="118" y="-35" type="line"/>
 	</contour>
 	<contour>
-	  <point x="140" y="-139" type="move" name="_nukta"/>
+	  <point x="140" y="-139" type="move" name="_nukta-left"/>
 	</contour>
   </outline>
+  <lib>
+	<dict>
+	  <key>com.schriftgestaltung.Glyphs.ColorIndex</key>
+	  <integer>7</integer>
+	  <key>public.markColor</key>
+	  <string>0.18,0.16,0.78,1</string>
+	</dict>
+  </lib>
 </glyph>

@@ -4,7 +4,7 @@
   <outline>
 	<component base="reph-deva.low"/>
 	<component base="eCandraMatra-deva" xOffset="-72" yOffset="334"/>
-	<component base="anusvara-deva" xOffset="212" yOffset="543"/>
+	<component base="anusvara-deva" xOffset="223" yOffset="543"/>
 	<contour>
 	  <point x="260" y="786" type="move" name="_top"/>
 	</contour>

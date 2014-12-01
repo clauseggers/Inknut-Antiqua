@@ -73,9 +73,6 @@
 	  <point x="835" y="786" type="line"/>
 	</contour>
 	<component base="aaMatra-deva" xOffset="764"/>
-	<contour>
-	  <point x="720" y="0" type="move" name="center-bottom"/>
-	</contour>
   </outline>
   <lib>
 	<dict>

@@ -4,7 +4,7 @@
   <unicode hex="0901"/>
   <outline>
 	<component base="eCandraMatra-deva"/>
-	<component base="anusvara-deva" xOffset="284" yOffset="209"/>
+	<component base="anusvara-deva" xOffset="295" yOffset="209"/>
 	<contour>
 	  <point x="64" y="1158" type="move" name="_left"/>
 	</contour>

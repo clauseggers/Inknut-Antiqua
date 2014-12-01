@@ -23,7 +23,7 @@
 	<key>licenseURL</key>
 	<string>http://scripts.sil.org/OFL</string>
 	<key>openTypeHeadCreated</key>
-	<string>2014/09/29 16:52:40</string>
+	<string>2014/12/01 20:30:15</string>
 	<key>openTypeNameDesigner</key>
 	<string>Claus Eggers Sørensen</string>
 	<key>openTypeNameDesignerURL</key>
@@ -81,7 +81,7 @@
 	<key>versionMajor</key>
 	<integer>1</integer>
 	<key>versionMinor</key>
-	<integer>0</integer>
+	<integer>1</integer>
 	<key>xHeight</key>
 	<integer>531</integer>
 </dict>

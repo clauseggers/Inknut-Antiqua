@@ -28,6 +28,9 @@
 	  <point x="365" y="1299" type="curve" smooth="yes"/>
 	</contour>
 	<contour>
+	  <point x="507" y="948" type="move" name="anusvara"/>
+	</contour>
+	<contour>
 	  <point x="262" y="1036" type="move" name="top"/>
 	</contour>
 	<contour>

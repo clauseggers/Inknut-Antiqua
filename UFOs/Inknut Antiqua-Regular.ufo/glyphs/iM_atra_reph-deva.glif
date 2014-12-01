@@ -3,7 +3,7 @@
   <advance width="328"/>
   <outline>
 	<component base="iMatra-deva"/>
-	<component base="reph-deva.tall" xOffset="385"/>
+	<component base="reph-deva" xOffset="198"/>
   </outline>
   <lib>
 	<dict>

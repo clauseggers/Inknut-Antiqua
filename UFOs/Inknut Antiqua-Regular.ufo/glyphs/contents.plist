@@ -2048,6 +2048,8 @@
 	<string>ntilde.glif</string>
 	<key>nukta-deva</key>
 	<string>nukta-deva.glif</string>
+	<key>nukta-deva.left</key>
+	<string>nukta-deva.left.glif</string>
 	<key>nukta_lVocalicMatra-deva</key>
 	<string>nukta_lV_ocalicM_atra-deva.glif</string>
 	<key>nukta_llVocalicMatra-deva</key>

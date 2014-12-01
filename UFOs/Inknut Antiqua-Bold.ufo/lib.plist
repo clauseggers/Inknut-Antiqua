@@ -1182,8 +1182,6 @@
 		<string>y-deva</string>
 		<string>y-deva.loop-connect</string>
 		<string>y-deva.short</string>
-		<string>r-deva.leg</string>
-		<string>r-deva.leg-short</string>
 		<string>rr-deva</string>
 		<string>rr-deva.long</string>
 		<string>rr-deva.long-high</string>
@@ -1548,6 +1546,7 @@
 		<string>dblcandraBinduHalant-deva</string>
 		<string>visarga-deva</string>
 		<string>spacingCandraBindu-deva</string>
+		<string>anusvara-deva</string>
 		<string>uMatra-deva</string>
 		<string>uuMatra-deva</string>
 		<string>rVocalicMatra-deva</string>
@@ -1562,13 +1561,13 @@
 		<string>eMatra-deva</string>
 		<string>eMatra_eCandraMatra-deva</string>
 		<string>eMatra_candraBindu-deva</string>
+		<string>eMatra_anusvara-deva</string>
 		<string>eMatra_reph_anusvara-deva</string>
 		<string>aiMatra-deva</string>
 		<string>aiMatra_eCandraMatra-deva</string>
 		<string>aiMatra_candraBindu-deva</string>
 		<string>aiMatra_anusvara-deva</string>
 		<string>aiMatra_reph_anusvara-deva</string>
-		<string>anusvara-deva</string>
 		<string>halant-deva</string>
 		<string>nukta-deva</string>
 		<string>nukta_uMatra-deva</string>
@@ -1599,14 +1598,16 @@
 		<string>anudatta-deva</string>
 		<string>grave-deva</string>
 		<string>acute-deva</string>
+		<string>nukta-deva.left</string>
 		<string>reph-deva.low</string>
 		<string>halant-deva.raPos</string>
-		<string>reph-deva.tall</string>
 		<string>eShortMatra_reph-deva</string>
 		<string>eShortMatra_reph_anusvara-deva</string>
-		<string>eMatra_anusvara-deva</string>
 		<string>eMatra_reph-deva</string>
 		<string>aiMatra_reph-deva</string>
+		<string>reph-deva.tall</string>
+		<string>r-deva.leg</string>
+		<string>r-deva.leg-short</string>
 		<string>raEyelash-deva</string>
 		<string>tta-headless-deva</string>
 		<string>ttha-headless-deva</string>

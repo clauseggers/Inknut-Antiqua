@@ -79,6 +79,9 @@
 	  <point x="348" y="786" type="move" name="top"/>
 	</contour>
 	<contour>
+	  <point x="347" y="1042" type="move" name="anusvara"/>
+	</contour>
+	<contour>
 	  <point x="307" y="-40" type="move" name="outstroke"/>
 	</contour>
 	<contour>

@@ -90,7 +90,10 @@
 	  <point x="200" y="-141" type="move" name="nukta"/>
 	</contour>
 	<contour>
-	  <point x="756" y="786" type="move" name="top"/>
+	  <point x="696" y="786" type="move" name="top"/>
+	</contour>
+	<contour>
+	  <point x="696" y="1057" type="move" name="anusvara"/>
 	</contour>
 	<contour>
 	  <point x="568" y="0" type="move" name="bottom"/>

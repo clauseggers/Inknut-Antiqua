@@ -3,7 +3,7 @@
   <advance width="328"/>
   <outline>
 	<component base="iiMatra-deva"/>
-	<component base="reph_anusvara-deva" xOffset="50"/>
+	<component base="reph_anusvara-deva" xOffset="-98"/>
   </outline>
   <lib>
 	<dict>

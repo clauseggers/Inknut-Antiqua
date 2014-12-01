@@ -20,6 +20,9 @@
 	  <point x="138" y="786" type="move" name="top"/>
 	</contour>
 	<contour>
+	  <point x="138" y="1042" type="move" name="anusvara"/>
+	</contour>
+	<contour>
 	  <point x="138" y="786" type="move" name="right"/>
 	</contour>
 	<contour>

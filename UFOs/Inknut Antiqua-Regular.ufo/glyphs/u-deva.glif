@@ -53,10 +53,13 @@
 	  <point x="131" y="-120" type="move" name="nukta"/>
 	</contour>
 	<contour>
-	  <point x="372" y="0" type="move" name="bottom"/>
+	  <point x="287" y="786" type="move" name="top"/>
 	</contour>
 	<contour>
-	  <point x="287" y="786" type="move" name="top"/>
+	  <point x="286" y="1042" type="move" name="anusvara"/>
+	</contour>
+	<contour>
+	  <point x="372" y="0" type="move" name="bottom"/>
 	</contour>
   </outline>
 </glyph>

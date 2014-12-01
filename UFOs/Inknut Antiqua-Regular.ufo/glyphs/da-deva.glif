@@ -14,10 +14,10 @@
 	  <point x="465" y="0" type="move" name="rakar"/>
 	</contour>
 	<contour>
-	  <point x="358" y="0" type="move" name="bottom"/>
+	  <point x="684" y="-128" type="move" name="outstroke"/>
 	</contour>
 	<contour>
-	  <point x="684" y="-128" type="move" name="outstroke"/>
+	  <point x="358" y="0" type="move" name="bottom"/>
 	</contour>
   </outline>
   <lib>
