@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="Seven-roman" format="1">
+  <advance width="1759"/>
+  <unicode hex="2166"/>
+  <outline>
+    <component base="Five-roman"/>
+    <component base="One-roman" xOffset="771"/>
+    <component base="One-roman" xOffset="1265"/>
+  </outline>
+</glyph>

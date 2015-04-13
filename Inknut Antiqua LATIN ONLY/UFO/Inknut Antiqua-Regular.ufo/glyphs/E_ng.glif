@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="Eng" format="1">
+  <advance width="874"/>
+  <unicode hex="014A"/>
+  <outline>
+    <contour>
+      <point x="654" y="-15"/>
+      <point x="663" y="-51"/>
+      <point x="518" y="-234" type="curve"/>
+      <point x="556" y="-264" type="line"/>
+      <point x="748" y="-20" type="line"/>
+      <point x="743" y="-4"/>
+      <point x="739" y="45"/>
+      <point x="739" y="99" type="curve"/>
+      <point x="647" y="97" type="line"/>
+    </contour>
+    <component base="N"/>
+  </outline>
+</glyph>

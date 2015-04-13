@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="One-roman" format="1">
+  <advance width="494"/>
+  <unicode hex="2160"/>
+  <outline>
+    <component base="one"/>
+  </outline>
+</glyph>

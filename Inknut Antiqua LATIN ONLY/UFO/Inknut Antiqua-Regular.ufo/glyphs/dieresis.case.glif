@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="dieresis.case" format="1">
+  <advance width="633"/>
+  <outline>
+    <component base="period" xOffset="9" yOffset="699" xScale="0.9" yScale="0.95"/>
+    <component base="period" xOffset="319" yOffset="699" xScale="0.9" yScale="0.95"/>
+    <contour>
+      <point x="317" y="531" type="move" name="_top"/>
+    </contour>
+  </outline>
+</glyph>

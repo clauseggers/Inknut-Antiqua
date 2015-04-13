@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="f_eth.liga" format="1">
+  <advance width="1149"/>
+  <outline>
+    <contour>
+      <point x="494" y="883" type="line"/>
+      <point x="339" y="883"/>
+      <point x="124" y="768"/>
+      <point x="124" y="574" type="curve" smooth="yes"/>
+      <point x="124" y="0" type="line"/>
+      <point x="324" y="0" type="line"/>
+      <point x="324" y="616" type="line" smooth="yes"/>
+      <point x="324" y="698"/>
+      <point x="387" y="765"/>
+      <point x="457" y="765" type="curve" smooth="yes"/>
+      <point x="491" y="765"/>
+      <point x="521" y="767"/>
+      <point x="619" y="726" type="curve"/>
+      <point x="698" y="883" type="line"/>
+    </contour>
+    <contour>
+      <point x="25" y="513" type="line"/>
+      <point x="25" y="432" type="line"/>
+      <point x="466" y="432" type="line"/>
+      <point x="466" y="513" type="line"/>
+    </contour>
+    <contour>
+      <point x="35" y="71" type="line"/>
+      <point x="35" y="0" type="line"/>
+      <point x="444" y="0" type="line"/>
+      <point x="484" y="80" type="line"/>
+      <point x="141" y="164" type="line"/>
+    </contour>
+    <component base="eth" xOffset="478"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>disableAlignment</key>
+          <true/>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>eth</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>
