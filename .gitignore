@@ -3,3 +3,5 @@
 .DS_Store
 !/CFF-OTF/*.otf
 !/TTF-OTF/*.ttf
+!/Inknut\ Antiqua\ LATIN\ ONLY/CFF-OTF/*.otf
+!/Inknut\ Antiqua\ LATIN\ ONLY/TTF-OTF/*.ttf
