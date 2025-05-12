@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<glyph name="infinity.case" format="1">
-  <advance width="1059"/>
-  <outline>
-    <component base="infinity" yOffset="100"/>
-  </outline>
-</glyph>

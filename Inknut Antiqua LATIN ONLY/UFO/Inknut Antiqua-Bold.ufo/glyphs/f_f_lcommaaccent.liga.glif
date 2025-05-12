@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<glyph name="f_f_lcommaaccent.liga" format="1">
-  <advance width="1257"/>
-  <outline>
-    <component base="f_f_l.liga"/>
-    <component base="commaaccent" xOffset="854"/>
-  </outline>
-</glyph>

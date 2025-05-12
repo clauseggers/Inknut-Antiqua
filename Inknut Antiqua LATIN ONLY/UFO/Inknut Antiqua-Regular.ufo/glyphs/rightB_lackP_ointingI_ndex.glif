@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<glyph name="rightBlackPointingIndex" format="1">
-  <advance width="1787"/>
-  <unicode hex="261B"/>
-  <outline>
-    <component base="leftBlackPointingIndex" xOffset="1787" xScale="-1"/>
-  </outline>
-</glyph>

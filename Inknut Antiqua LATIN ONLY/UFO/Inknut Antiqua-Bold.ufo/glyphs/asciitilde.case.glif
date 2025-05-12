@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<glyph name="asciitilde.case" format="1">
-  <advance width="675"/>
-  <outline>
-    <component base="asciitilde" yOffset="100"/>
-  </outline>
-</glyph>

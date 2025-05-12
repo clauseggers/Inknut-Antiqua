@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<glyph name="f_lcaron.liga" format="1">
-  <advance width="838"/>
-  <outline>
-    <component base="fl"/>
-    <component base="hacek" xOffset="726"/>
-  </outline>
-</glyph>

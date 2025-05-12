@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<glyph name="Eleven-roman" format="1">
-  <advance width="1265"/>
-  <unicode hex="216A"/>
-  <outline>
-    <component base="Five-roman"/>
-    <component base="One-roman" xOffset="771"/>
-  </outline>
-</glyph>
