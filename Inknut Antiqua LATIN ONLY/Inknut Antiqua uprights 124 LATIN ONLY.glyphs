@@ -1,6 +1,9 @@
 {
 .appVersion = "3414";
 .formatVersion = 3;
+DisplayStrings = (
+"¡fill!"
+);
 axes = (
 {
 name = Weight;
@@ -220,6 +223,33 @@ tag = locl;
 },
 {
 automatic = 1;
+code = "lookup ccmp_Other_1 {
+	lookupflag 0;
+	@Markscomb = [dieresis hungarumlaut macron];
+	@MarkscombCase = [dieresis.case hungarumlaut.case macron.case];
+	sub @Markscomb @Markscomb' by @MarkscombCase;
+	sub @Uppercase @Markscomb' by @MarkscombCase;
+} ccmp_Other_1;
+
+lookup ccmp_Other_2 {
+	lookupflag 0;
+	sub @Markscomb' @MarkscombCase by @MarkscombCase;
+	sub @MarkscombCase @Markscomb' by @MarkscombCase;
+} ccmp_Other_2;
+
+lookup ccmp_latn_1 {
+	lookupflag 0;
+	sub fi by f i;
+	sub fl by f l;
+} ccmp_latn_1;
+
+script latn;
+lookup ccmp_latn_1;
+";
+tag = ccmp;
+},
+{
+automatic = 1;
 code = "sub zero by zeroinferior;
 sub one by oneinferior;
 sub two by twoinferior;
@@ -300,6 +330,21 @@ sub [zero one two three four five six seven eight nine] [O o]' by ordmasculine;
 sub N o period by numero;
 ";
 tag = ordn;
+},
+{
+automatic = 1;
+code = "sub zero by zeroinferior;
+sub one by oneinferior;
+sub two by twoinferior;
+sub three by threeinferior;
+sub four by fourinferior;
+sub five by fiveinferior;
+sub six by sixinferior;
+sub seven by seveninferior;
+sub eight by eightinferior;
+sub nine by nineinferior;
+";
+tag = sinf;
 },
 {
 code = "sub @Uppercase germandbls' @Uppercase by germandbls.calt;
@@ -473,6 +518,12 @@ sub aring by aring.ss01;
 sub atilde by atilde.ss01;
 sub ae by ae.ss01;
 ";
+labels = (
+{
+language = dflt;
+value = "";
+}
+);
 tag = ss01;
 },
 {
@@ -482,6 +533,12 @@ sub gbreve by gbreve.ss02;
 sub gcommaaccent by gcommaaccent.ss02;
 sub gdotaccent by gdotaccent.ss02;
 ";
+labels = (
+{
+language = dflt;
+value = "";
+}
+);
 tag = ss02;
 },
 {
@@ -490,48 +547,6 @@ pos @Space <240 0 240 0>;
 ";
 notes = "GPOS spacing for Latin script does not work in browsers. For Devanagari it does work.";
 tag = cpsp;
-},
-{
-automatic = 1;
-code = "lookup ccmp_Other_1 {
-	lookupflag 0;
-	@Markscomb = [dieresis hungarumlaut macron];
-	@MarkscombCase = [dieresis.case hungarumlaut.case macron.case];
-	sub @Markscomb @Markscomb' by @MarkscombCase;
-	sub @Uppercase @Markscomb' by @MarkscombCase;
-} ccmp_Other_1;
-
-lookup ccmp_Other_2 {
-	lookupflag 0;
-	sub @Markscomb' @MarkscombCase by @MarkscombCase;
-	sub @MarkscombCase @Markscomb' by @MarkscombCase;
-} ccmp_Other_2;
-
-lookup ccmp_latn_1 {
-	lookupflag 0;
-	sub fi by f i;
-	sub fl by f l;
-} ccmp_latn_1;
-
-script latn;
-lookup ccmp_latn_1;
-";
-tag = ccmp;
-},
-{
-automatic = 1;
-code = "sub zero by zeroinferior;
-sub one by oneinferior;
-sub two by twoinferior;
-sub three by threeinferior;
-sub four by fourinferior;
-sub five by fiveinferior;
-sub six by sixinferior;
-sub seven by seveninferior;
-sub eight by eightinferior;
-sub nine by nineinferior;
-";
-tag = sinf;
 }
 );
 fontMaster = (
@@ -10366,7 +10381,7 @@ color = 7;
 glyphname = Uogonek;
 kernLeft = U;
 kernRight = U;
-lastChange = "2014-07-08 10:34:24 +0000";
+lastChange = "2025-05-12 06:36:11 +0000";
 layers = (
 {
 background = {
@@ -10423,7 +10438,7 @@ nodes = (
 ref = U;
 }
 );
-width = 898;
+width = 908;
 },
 {
 background = {
@@ -10477,7 +10492,7 @@ nodes = (
 ref = U;
 }
 );
-width = 898;
+width = 918;
 }
 );
 metricLeft = U;
@@ -15244,7 +15259,7 @@ unicode = 100;
 glyphname = eth;
 kernLeft = eth;
 kernRight = eth;
-lastChange = "2014-07-05 11:08:10 +0000";
+lastChange = "2025-05-12 06:36:20 +0000";
 layers = (
 {
 background = {
@@ -15302,26 +15317,6 @@ shapes = (
 {
 closed = 1;
 nodes = (
-(544,883,l),
-(98,613,l),
-(119,577,l),
-(566,847,l)
-);
-},
-{
-closed = 1;
-nodes = (
-(545,457,l),
-(545,504,l),
-(513,523,o),
-(426,541,o),
-(371,541,cs),
-(222,541,o),
-(70,393,o),
-(70,248,cs),
-(70,101,o),
-(169,-10,o),
-(300,-10,cs),
 (460,-10,o),
 (601,155,o),
 (601,343,cs),
@@ -15341,7 +15336,27 @@ nodes = (
 (200,296,cs),
 (200,403,o),
 (238,457,o),
-(313,457,cs)
+(313,457,cs),
+(545,457,l),
+(545,504,l),
+(513,523,o),
+(426,541,o),
+(371,541,cs),
+(222,541,o),
+(70,393,o),
+(70,248,cs),
+(70,101,o),
+(169,-10,o),
+(300,-10,cs)
+);
+},
+{
+closed = 1;
+nodes = (
+(566,847,l),
+(544,883,l),
+(98,613,l),
+(119,577,l)
 );
 }
 );
@@ -15403,26 +15418,6 @@ shapes = (
 {
 closed = 1;
 nodes = (
-(606,883,l),
-(39,580,l),
-(58,543,l),
-(626,846,l)
-);
-},
-{
-closed = 1;
-nodes = (
-(545,419,l),
-(545,516,l),
-(513,535,o),
-(426,553,o),
-(371,553,cs),
-(200,553,o),
-(24,401,o),
-(24,254,cs),
-(24,102,o),
-(142,-10,o),
-(300,-10,cs),
 (486,-10,o),
 (652,156,o),
 (652,343,cs),
@@ -15442,7 +15437,27 @@ nodes = (
 (240,302,cs),
 (240,378,o),
 (265,419,o),
-(313,419,cs)
+(313,419,cs),
+(545,419,l),
+(545,516,l),
+(513,535,o),
+(426,553,o),
+(371,553,cs),
+(200,553,o),
+(24,401,o),
+(24,254,cs),
+(24,102,o),
+(142,-10,o),
+(300,-10,cs)
+);
+},
+{
+closed = 1;
+nodes = (
+(626,846,l),
+(606,883,l),
+(39,580,l),
+(58,543,l)
 );
 }
 );
@@ -45721,7 +45736,7 @@ color = 8;
 glyphname = quotedblleft;
 kernLeft = quotesingle;
 kernRight = quotesingle;
-lastChange = "2025-05-12 05:53:23 +0000";
+lastChange = "2025-05-12 06:34:20 +0000";
 layers = (
 {
 layerId = "E07B5D26-C0CD-4D0E-A705-659FB2222D21";
@@ -45730,11 +45745,10 @@ metricRight = "=|comma";
 name = Regular;
 shapes = (
 {
-pos = (267,0);
+pos = (260,0);
 ref = quoteleft;
 },
 {
-pos = (7,0);
 ref = quoteleft;
 }
 );
@@ -51690,7 +51704,7 @@ unicode = 8594;
 {
 color = 8;
 glyphname = southEastArrow;
-lastChange = "2025-05-12 05:53:29 +0000";
+lastChange = "2025-05-12 06:34:30 +0000";
 layers = (
 {
 layerId = "E07B5D26-C0CD-4D0E-A705-659FB2222D21";
@@ -51718,7 +51732,7 @@ pos = (850,188);
 ref = leftArrow;
 }
 );
-width = 666;
+width = 665;
 }
 );
 metricLeft = northEastArrow;
@@ -51998,7 +52012,7 @@ unicode = 8592;
 {
 color = 8;
 glyphname = northWestArrow;
-lastChange = "2025-05-12 05:53:29 +0000";
+lastChange = "2025-05-12 06:34:30 +0000";
 layers = (
 {
 layerId = "E07B5D26-C0CD-4D0E-A705-659FB2222D21";
@@ -52022,11 +52036,11 @@ name = Bold;
 shapes = (
 {
 angle = -45;
-pos = (-184,358);
+pos = (-185,358);
 ref = leftArrow;
 }
 );
-width = 666;
+width = 665;
 }
 );
 metricLeft = "=|northEastArrow";
@@ -52399,7 +52413,7 @@ pos = (0,100);
 ref = southEastArrow;
 }
 );
-width = 666;
+width = 665;
 }
 );
 },
@@ -52515,7 +52529,7 @@ pos = (0,100);
 ref = northWestArrow;
 }
 );
-width = 666;
+width = 665;
 }
 );
 },
