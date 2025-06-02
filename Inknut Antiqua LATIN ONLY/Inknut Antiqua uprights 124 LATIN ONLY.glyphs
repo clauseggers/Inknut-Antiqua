@@ -521,7 +521,7 @@ sub ae by ae.ss01;
 labels = (
 {
 language = dflt;
-value = "";
+value = "Monocameral a";
 }
 );
 tag = ss01;
@@ -536,7 +536,7 @@ sub gdotaccent by gdotaccent.ss02;
 labels = (
 {
 language = dflt;
-value = "";
+value = "Monocameral g";
 }
 );
 tag = ss02;
