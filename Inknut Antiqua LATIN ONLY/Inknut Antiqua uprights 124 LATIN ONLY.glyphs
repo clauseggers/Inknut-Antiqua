@@ -1,9 +1,6 @@
 {
-.appVersion = "3414";
+.appVersion = "3421";
 .formatVersion = 3;
-DisplayStrings = (
-"¡fill!"
-);
 axes = (
 {
 name = Weight;
@@ -37606,9 +37603,18 @@ color = 1;
 glyphname = zero.numr;
 kernLeft = zero.numr;
 kernRight = zero.numr;
-lastChange = "2014-11-01 14:54:45 +0000";
+lastChange = "2025-07-31 06:35:49 +0000";
 layers = (
 {
+anchors = (
+{
+name = "#entry";
+},
+{
+name = "#exit";
+pos = (658,0);
+}
+);
 background = {
 shapes = (
 {
@@ -37655,41 +37661,50 @@ shapes = (
 {
 closed = 1;
 nodes = (
-(227,830,o),
-(50,733,o),
-(50,607,cs),
-(50,493,o),
-(152,408,o),
-(300,408,cs),
 (431,408,o),
 (608,505,o),
 (608,631,cs),
 (608,744,o),
 (506,830,o),
-(357,830,cs)
+(357,830,cs),
+(227,830,o),
+(50,733,o),
+(50,607,cs),
+(50,493,o),
+(152,408,o),
+(300,408,cs)
 );
 },
 {
 closed = 1;
 nodes = (
-(394,733,o),
-(435,672,o),
-(435,598,cs),
-(435,537,o),
-(405,505,o),
-(347,505,cs),
 (264,505,o),
 (223,566,o),
 (223,640,cs),
 (223,701,o),
 (252,733,o),
-(311,733,cs)
+(311,733,cs),
+(394,733,o),
+(435,672,o),
+(435,598,cs),
+(435,537,o),
+(405,505,o),
+(347,505,cs)
 );
 }
 );
 width = 658;
 },
 {
+anchors = (
+{
+name = "#entry";
+},
+{
+name = "#exit";
+pos = (629,0);
+}
+);
 background = {
 shapes = (
 {
@@ -37734,35 +37749,35 @@ shapes = (
 {
 closed = 1;
 nodes = (
-(225,822,o),
-(70,724,o),
-(70,603,cs),
-(70,493,o),
-(160,408,o),
-(286,408,cs),
 (404,408,o),
 (559,505,o),
 (559,627,cs),
 (559,736,o),
 (470,822,o),
-(343,822,cs)
+(343,822,cs),
+(225,822,o),
+(70,724,o),
+(70,603,cs),
+(70,493,o),
+(160,408,o),
+(286,408,cs)
 );
 },
 {
 closed = 1;
 nodes = (
-(404,753,o),
-(455,679,o),
-(455,594,cs),
-(455,517,o),
-(416,477,o),
-(332,477,cs),
 (224,477,o),
 (174,552,o),
 (174,636,cs),
 (174,712,o),
 (213,753,o),
-(296,753,cs)
+(296,753,cs),
+(404,753,o),
+(455,679,o),
+(455,594,cs),
+(455,517,o),
+(416,477,o),
+(332,477,cs)
 );
 }
 );
@@ -50800,7 +50815,7 @@ color = 8;
 glyphname = perthousand;
 kernLeft = percent;
 kernRight = percent;
-lastChange = "2014-07-06 12:06:23 +0000";
+lastChange = "2025-07-31 06:35:57 +0000";
 layers = (
 {
 layerId = "2CCCAF06-0AAA-44C6-8F00-0A68246BB68E";
@@ -50812,11 +50827,11 @@ shapes = (
 ref = percent;
 },
 {
-pos = (1133,-40);
+pos = (1150,-40);
 ref = zero.dnom;
 }
 );
-width = 1781;
+width = 1798;
 },
 {
 layerId = "E07B5D26-C0CD-4D0E-A705-659FB2222D21";
@@ -50826,11 +50841,11 @@ shapes = (
 ref = percent;
 },
 {
-pos = (1068,-31);
+pos = (1097,-30);
 ref = zero.dnom;
 }
 );
-width = 1677;
+width = 1706;
 }
 );
 metricLeft = percent;
@@ -67319,13 +67334,13 @@ key = licenses;
 values = (
 {
 language = dflt;
-value = "This Font Software is licensed under the SIL Open Font License Version 1.1. This license is available with a FAQ at http://scripts.sil.org/OFL";
+value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org";
 }
 );
 },
 {
 key = licenseURL;
-value = "http://scripts.sil.org/OFL";
+value = "https://openfontlicense.org";
 },
 {
 key = manufacturers;
